@@ -1,0 +1,12 @@
+{
+  "Name":           "metrics-jersey",
+  "Title":          "Metrics Integration for Jersey 1.x",
+  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/metrics/metrics-jersey/",
+  "Maintainer":     "Dropwizard Metrics Committers",
+  "MaintainerUrl":  "https://metrics.dropwizard.io/",
+  "Changelog":      "On",
+  "Graph":          "On",
+  "PkgDiff":        "On",
+
+  "Versions": []
+}

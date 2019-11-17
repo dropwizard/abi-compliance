@@ -1,0 +1,12 @@
+{
+  "Name":           "dropwizard-java8",
+  "Title":          "Dropwizard with Java 8 support",
+  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/modules/dropwizard-java8/",
+  "Maintainer":     "Dropwizard Committers",
+  "MaintainerUrl":  "https://www.dropwizard.io/",
+  "Changelog":      "On",
+  "Graph":          "On",
+  "PkgDiff":        "On",
+
+  "Versions": []
+}

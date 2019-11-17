@@ -1,0 +1,12 @@
+{
+  "Name":           "dropwizard-views",
+  "Title":          "Dropwizard Views",
+  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/dropwizard-views/",
+  "Maintainer":     "Dropwizard Committers",
+  "MaintainerUrl":  "https://www.dropwizard.io/",
+  "Changelog":      "On",
+  "Graph":          "On",
+  "PkgDiff":        "On",
+
+  "Versions": []
+}

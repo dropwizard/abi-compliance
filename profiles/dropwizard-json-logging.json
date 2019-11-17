@@ -1,0 +1,12 @@
+{
+  "Name":           "dropwizard-json-logging",
+  "Title":          "Dropwizard JSON logging",
+  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/dropwizard-json-logging/",
+  "Maintainer":     "Dropwizard Committers",
+  "MaintainerUrl":  "https://www.dropwizard.io/",
+  "Changelog":      "On",
+  "Graph":          "On",
+  "PkgDiff":        "On",
+
+  "Versions": []
+}

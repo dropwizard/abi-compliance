@@ -1,0 +1,12 @@
+{
+  "Name":           "metrics-core",
+  "Title":          "Metrics Core",
+  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/metrics/metrics-core/",
+  "Maintainer":     "Dropwizard Metrics Committers",
+  "MaintainerUrl":  "https://metrics.dropwizard.io/",
+  "Changelog":      "On",
+  "Graph":          "On",
+  "PkgDiff":        "On",
+
+  "Versions": []
+}

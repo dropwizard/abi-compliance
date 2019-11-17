@@ -1,0 +1,12 @@
+{
+  "Name":           "metrics-httpclient",
+  "Title":          "Metrics Integration for Apache HttpClient",
+  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/metrics/metrics-httpclient/",
+  "Maintainer":     "Dropwizard Metrics Committers",
+  "MaintainerUrl":  "https://metrics.dropwizard.io/",
+  "Changelog":      "On",
+  "Graph":          "On",
+  "PkgDiff":        "On",
+
+  "Versions": []
+}

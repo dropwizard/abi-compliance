@@ -1,0 +1,12 @@
+{
+  "Name":           "dropwizard-jdbi3",
+  "Title":          "Dropwizard JDBI3 Support",
+  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/dropwizard-jdbi3/",
+  "Maintainer":     "Dropwizard Committers",
+  "MaintainerUrl":  "https://www.dropwizard.io/",
+  "Changelog":      "On",
+  "Graph":          "On",
+  "PkgDiff":        "On",
+
+  "Versions": []
+}

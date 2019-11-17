@@ -1,0 +1,12 @@
+{
+  "Name":           "dropwizard-vavr",
+  "Title":          "Dropwizard Vavr Bundle",
+  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/modules/dropwizard-vavr/",
+  "Maintainer":     "Dropwizard Committers",
+  "MaintainerUrl":  "https://www.dropwizard.io/",
+  "Changelog":      "On",
+  "Graph":          "On",
+  "PkgDiff":        "On",
+
+  "Versions": []
+}

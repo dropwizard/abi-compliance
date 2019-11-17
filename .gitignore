@@ -1,0 +1,17 @@
+public/
+
+# japi-monitor
+build_logs/
+db/
+installed/
+src/
+
+# japi-tracker
+css/
+images/
+js/
+
+api_dump/
+archives_report/
+compat_report/
+package_diff/

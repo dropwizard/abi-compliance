@@ -1,0 +1,12 @@
+{
+  "Name":           "dropwizard-redis",
+  "Title":          "Dropwizard Redis",
+  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/modules/dropwizard-redis/",
+  "Maintainer":     "Dropwizard Committers",
+  "MaintainerUrl":  "https://www.dropwizard.io/",
+  "Changelog":      "On",
+  "Graph":          "On",
+  "PkgDiff":        "On",
+
+  "Versions": []
+}

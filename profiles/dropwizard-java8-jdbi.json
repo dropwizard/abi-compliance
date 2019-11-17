@@ -1,0 +1,12 @@
+{
+  "Name":           "dropwizard-java8-jdbi",
+  "Title":          "Dropwizard JDBI with Java 8 support",
+  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/modules/dropwizard-java8-jdbi/",
+  "Maintainer":     "Dropwizard Committers",
+  "MaintainerUrl":  "https://www.dropwizard.io/",
+  "Changelog":      "On",
+  "Graph":          "On",
+  "PkgDiff":        "On",
+
+  "Versions": []
+}

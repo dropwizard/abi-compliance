@@ -1,0 +1,12 @@
+{
+  "Name":           "dropwizard-web",
+  "Title":          "Dropwizard Web",
+  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/modules/dropwizard-web/",
+  "Maintainer":     "Dropwizard Committers",
+  "MaintainerUrl":  "https://www.dropwizard.io/",
+  "Changelog":      "On",
+  "Graph":          "On",
+  "PkgDiff":        "On",
+
+  "Versions": []
+}

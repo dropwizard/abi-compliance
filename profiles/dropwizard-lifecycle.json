@@ -1,0 +1,12 @@
+{
+  "Name":           "dropwizard-lifecycle",
+  "Title":          "Dropwizard Lifecycle Support",
+  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/dropwizard-lifecycle/",
+  "Maintainer":     "Dropwizard Committers",
+  "MaintainerUrl":  "https://www.dropwizard.io/",
+  "Changelog":      "On",
+  "Graph":          "On",
+  "PkgDiff":        "On",
+
+  "Versions": []
+}

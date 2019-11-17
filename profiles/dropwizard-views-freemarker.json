@@ -1,0 +1,12 @@
+{
+  "Name":           "dropwizard-views-freemarker",
+  "Title":          "Dropwizard Freemarker Views",
+  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/dropwizard-views-freemarker/",
+  "Maintainer":     "Dropwizard Committers",
+  "MaintainerUrl":  "https://www.dropwizard.io/",
+  "Changelog":      "On",
+  "Graph":          "On",
+  "PkgDiff":        "On",
+
+  "Versions": []
+}

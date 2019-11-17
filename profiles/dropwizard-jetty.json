@@ -1,0 +1,12 @@
+{
+  "Name":           "dropwizard-jetty",
+  "Title":          "Dropwizard Jetty Support",
+  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/dropwizard-jetty/",
+  "Maintainer":     "Dropwizard Committers",
+  "MaintainerUrl":  "https://www.dropwizard.io/",
+  "Changelog":      "On",
+  "Graph":          "On",
+  "PkgDiff":        "On",
+
+  "Versions": []
+}

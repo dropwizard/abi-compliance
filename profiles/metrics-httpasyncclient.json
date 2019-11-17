@@ -1,0 +1,12 @@
+{
+  "Name":           "metrics-httpasyncclient",
+  "Title":          "Metrics Integration for Apache HttpAsyncClient",
+  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/metrics/metrics-httpasyncclient/",
+  "Maintainer":     "Dropwizard Metrics Committers",
+  "MaintainerUrl":  "https://metrics.dropwizard.io/",
+  "Changelog":      "On",
+  "Graph":          "On",
+  "PkgDiff":        "On",
+
+  "Versions": []
+}

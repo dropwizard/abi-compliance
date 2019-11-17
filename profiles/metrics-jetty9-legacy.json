@@ -1,0 +1,12 @@
+{
+  "Name":           "metrics-jetty9-legacy",
+  "Title":          "Metrics Integration for Jetty 9.0",
+  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/metrics/metrics-jetty9-legacy/",
+  "Maintainer":     "Dropwizard Metrics Committers",
+  "MaintainerUrl":  "https://metrics.dropwizard.io/",
+  "Changelog":      "On",
+  "Graph":          "On",
+  "PkgDiff":        "On",
+
+  "Versions": []
+}

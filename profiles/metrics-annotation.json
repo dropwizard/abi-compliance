@@ -1,0 +1,12 @@
+{
+  "Name":           "metrics-annotation",
+  "Title":          "Annotations for Metrics",
+  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/metrics/metrics-annotation/",
+  "Maintainer":     "Dropwizard Metrics Committers",
+  "MaintainerUrl":  "https://metrics.dropwizard.io/",
+  "Changelog":      "On",
+  "Graph":          "On",
+  "PkgDiff":        "On",
+
+  "Versions": []
+}

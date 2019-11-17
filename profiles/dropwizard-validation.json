@@ -1,0 +1,12 @@
+{
+  "Name":           "dropwizard-validation",
+  "Title":          "Dropwizard Validation Support",
+  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/dropwizard-validation/",
+  "Maintainer":     "Dropwizard Committers",
+  "MaintainerUrl":  "https://www.dropwizard.io/",
+  "Changelog":      "On",
+  "Graph":          "On",
+  "PkgDiff":        "On",
+
+  "Versions": []
+}

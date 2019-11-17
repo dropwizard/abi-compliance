@@ -1,0 +1,12 @@
+{
+  "Name":           "metrics-graphite",
+  "Title":          "Graphite Integration for Metrics",
+  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/metrics/metrics-graphite/",
+  "Maintainer":     "Dropwizard Metrics Committers",
+  "MaintainerUrl":  "https://metrics.dropwizard.io/",
+  "Changelog":      "On",
+  "Graph":          "On",
+  "PkgDiff":        "On",
+
+  "Versions": []
+}

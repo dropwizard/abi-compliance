@@ -1,0 +1,12 @@
+{
+  "Name":           "metrics-jdbi3",
+  "Title":          "Metrics Integration for JDBI3",
+  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/metrics/metrics-jdbi3/",
+  "Maintainer":     "Dropwizard Metrics Committers",
+  "MaintainerUrl":  "https://metrics.dropwizard.io/",
+  "Changelog":      "On",
+  "Graph":          "On",
+  "PkgDiff":        "On",
+
+  "Versions": []
+}

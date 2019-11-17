@@ -1,0 +1,12 @@
+{
+  "Name":           "metrics-jmx",
+  "Title":          "Metrics Integration with JMX",
+  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/metrics/metrics-jmx/",
+  "Maintainer":     "Dropwizard Metrics Committers",
+  "MaintainerUrl":  "https://metrics.dropwizard.io/",
+  "Changelog":      "On",
+  "Graph":          "On",
+  "PkgDiff":        "On",
+
+  "Versions": []
+}

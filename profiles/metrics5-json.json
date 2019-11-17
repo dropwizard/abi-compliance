@@ -1,0 +1,12 @@
+{
+  "Name":           "metrics5-json",
+  "Title":          "Jackson Integration for Metrics 5.x",
+  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/metrics5/metrics-json/",
+  "Maintainer":     "Dropwizard Metrics Committers",
+  "MaintainerUrl":  "https://metrics.dropwizard.io/",
+  "Changelog":      "On",
+  "Graph":          "On",
+  "PkgDiff":        "On",
+
+  "Versions": []
+}

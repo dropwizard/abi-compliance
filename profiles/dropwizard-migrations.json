@@ -1,0 +1,12 @@
+{
+  "Name":           "dropwizard-migrations",
+  "Title":          "Dropwizard Migrations",
+  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/dropwizard-migrations/",
+  "Maintainer":     "Dropwizard Committers",
+  "MaintainerUrl":  "https://www.dropwizard.io/",
+  "Changelog":      "On",
+  "Graph":          "On",
+  "PkgDiff":        "On",
+
+  "Versions": []
+}

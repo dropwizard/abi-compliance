@@ -1,0 +1,12 @@
+{
+  "Name":           "dropwizard-http2",
+  "Title":          "Dropwizard HTTP/2 Support",
+  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/dropwizard-http2/",
+  "Maintainer":     "Dropwizard Committers",
+  "MaintainerUrl":  "https://www.dropwizard.io/",
+  "Changelog":      "On",
+  "Graph":          "On",
+  "PkgDiff":        "On",
+
+  "Versions": []
+}

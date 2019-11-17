@@ -1,0 +1,12 @@
+{
+  "Name":           "dropwizard-auth",
+  "Title":          "Dropwizard Authentication",
+  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/dropwizard-auth/",
+  "Maintainer":     "Dropwizard Committers",
+  "MaintainerUrl":  "https://www.dropwizard.io/",
+  "Changelog":      "On",
+  "Graph":          "On",
+  "PkgDiff":        "On",
+
+  "Versions": []
+}

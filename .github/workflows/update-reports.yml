@@ -1,0 +1,57 @@
+name: Update JAPI Tracker reports
+on:
+  schedule:
+    - cron:  '0 0 * * 0'
+  push:
+    branches:    
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      BUILD_DIR: public
+    steps:
+      - uses: actions/checkout@v1
+      - name: Set up JDK
+        uses: joschi/setup-jdk@v1
+        with:
+          java-version: openjdk11
+      - uses: actions/cache@v1
+        with:
+          path: db
+          key: ${{ runner.os }}-db
+          restore-keys: |
+            ${{ runner.os }}-db
+      - uses: actions/cache@v1
+        with:
+          path: installed
+          key: ${{ runner.os }}-installed
+          restore-keys: |
+            ${{ runner.os }}-installed
+      - uses: actions/cache@v1
+        with:
+          path: src
+          key: ${{ runner.os }}-src
+          restore-keys: |
+            ${{ runner.os }}-src
+      - name: Install dependencies
+        run: sudo bin/install.sh
+      - name: Update profiles
+        run: bin/update-profiles.sh
+      - name: Commit updated profiles
+        uses: github-actions-x/commit@v2.1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          push-branch: 'master'
+          commit-message: 'Update profiles'
+          files: 'profiles/*.json'
+      - name: Update reports
+        run: bin/update-reports.sh
+      - name: Deploy
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v1
+        with:
+          target_branch: gh-pages
+          build_dir: ${{ env.BUILD_DIR }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_PAGES_TOKEN }}

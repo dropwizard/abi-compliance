@@ -1,0 +1,12 @@
+{
+  "Name":           "metrics-jvm",
+  "Title":          "JVM Integration for Metrics",
+  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/metrics/metrics-jvm/",
+  "Maintainer":     "Dropwizard Metrics Committers",
+  "MaintainerUrl":  "https://metrics.dropwizard.io/",
+  "Changelog":      "On",
+  "Graph":          "On",
+  "PkgDiff":        "On",
+
+  "Versions": []
+}
