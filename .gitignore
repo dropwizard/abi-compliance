@@ -15,3 +15,5 @@ api_dump/
 archives_report/
 compat_report/
 package_diff/
+rss/
+timeline/
