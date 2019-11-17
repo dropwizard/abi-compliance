@@ -8,5 +8,40 @@
   "Graph":          "On",
   "PkgDiff":        "On",
 
-  "Versions": []
+  "Versions": [
+  {
+    "Number":         "0.9.0-1",
+    "Installed":      "src/dropwizard-java8-jdbi/0.9.0-1",
+    "Source":         "src/dropwizard-java8-jdbi/0.9.0-1/dropwizard-java8-jdbi-0.9.0-1.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "0.8.0-2",
+    "Installed":      "src/dropwizard-java8-jdbi/0.8.0-2",
+    "Source":         "src/dropwizard-java8-jdbi/0.8.0-2/dropwizard-java8-jdbi-0.8.0-2.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "0.8.0-1",
+    "Installed":      "src/dropwizard-java8-jdbi/0.8.0-1",
+    "Source":         "src/dropwizard-java8-jdbi/0.8.0-1/dropwizard-java8-jdbi-0.8.0-1.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "0.7.1-1",
+    "Installed":      "src/dropwizard-java8-jdbi/0.7.1-1",
+    "Source":         "src/dropwizard-java8-jdbi/0.7.1-1/dropwizard-java8-jdbi-0.7.1-1.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "0.7.0-1",
+    "Installed":      "src/dropwizard-java8-jdbi/0.7.0-1",
+    "Source":         "src/dropwizard-java8-jdbi/0.7.0-1/dropwizard-java8-jdbi-0.7.0-1.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  }]
 }

@@ -8,5 +8,166 @@
   "Graph":          "On",
   "PkgDiff":        "On",
 
-  "Versions": []
+  "Versions": [
+  {
+    "Number":         "4.1.1",
+    "Installed":      "src/metrics-json/4.1.1",
+    "Source":         "src/metrics-json/4.1.1/metrics-json-4.1.1.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.0",
+    "Installed":      "src/metrics-json/4.1.0",
+    "Source":         "src/metrics-json/4.1.0/metrics-json-4.1.0.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.0.7",
+    "Installed":      "src/metrics-json/4.0.7",
+    "Source":         "src/metrics-json/4.0.7/metrics-json-4.0.7.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.0.6",
+    "Installed":      "src/metrics-json/4.0.6",
+    "Source":         "src/metrics-json/4.0.6/metrics-json-4.0.6.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.0.5",
+    "Installed":      "src/metrics-json/4.0.5",
+    "Source":         "src/metrics-json/4.0.5/metrics-json-4.0.5.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.0.4",
+    "Installed":      "src/metrics-json/4.0.4",
+    "Source":         "src/metrics-json/4.0.4/metrics-json-4.0.4.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.0.3",
+    "Installed":      "src/metrics-json/4.0.3",
+    "Source":         "src/metrics-json/4.0.3/metrics-json-4.0.3.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.0.2",
+    "Installed":      "src/metrics-json/4.0.2",
+    "Source":         "src/metrics-json/4.0.2/metrics-json-4.0.2.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.0.1",
+    "Installed":      "src/metrics-json/4.0.1",
+    "Source":         "src/metrics-json/4.0.1/metrics-json-4.0.1.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.0.0",
+    "Installed":      "src/metrics-json/4.0.0",
+    "Source":         "src/metrics-json/4.0.0/metrics-json-4.0.0.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "3.2.6",
+    "Installed":      "src/metrics-json/3.2.6",
+    "Source":         "src/metrics-json/3.2.6/metrics-json-3.2.6.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "3.2.5",
+    "Installed":      "src/metrics-json/3.2.5",
+    "Source":         "src/metrics-json/3.2.5/metrics-json-3.2.5.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "3.2.4",
+    "Installed":      "src/metrics-json/3.2.4",
+    "Source":         "src/metrics-json/3.2.4/metrics-json-3.2.4.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "3.2.3",
+    "Installed":      "src/metrics-json/3.2.3",
+    "Source":         "src/metrics-json/3.2.3/metrics-json-3.2.3.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "3.2.2",
+    "Installed":      "src/metrics-json/3.2.2",
+    "Source":         "src/metrics-json/3.2.2/metrics-json-3.2.2.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "3.2.1",
+    "Installed":      "src/metrics-json/3.2.1",
+    "Source":         "src/metrics-json/3.2.1/metrics-json-3.2.1.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "3.2.0",
+    "Installed":      "src/metrics-json/3.2.0",
+    "Source":         "src/metrics-json/3.2.0/metrics-json-3.2.0.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "3.1.5",
+    "Installed":      "src/metrics-json/3.1.5",
+    "Source":         "src/metrics-json/3.1.5/metrics-json-3.1.5.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "3.1.4",
+    "Installed":      "src/metrics-json/3.1.4",
+    "Source":         "src/metrics-json/3.1.4/metrics-json-3.1.4.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "3.1.3",
+    "Installed":      "src/metrics-json/3.1.3",
+    "Source":         "src/metrics-json/3.1.3/metrics-json-3.1.3.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "3.1.2",
+    "Installed":      "src/metrics-json/3.1.2",
+    "Source":         "src/metrics-json/3.1.2/metrics-json-3.1.2.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "3.1.1",
+    "Installed":      "src/metrics-json/3.1.1",
+    "Source":         "src/metrics-json/3.1.1/metrics-json-3.1.1.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "3.1.0",
+    "Installed":      "src/metrics-json/3.1.0",
+    "Source":         "src/metrics-json/3.1.0/metrics-json-3.1.0.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  }]
 }

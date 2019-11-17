@@ -8,5 +8,12 @@
   "Graph":          "On",
   "PkgDiff":        "On",
 
-  "Versions": []
+  "Versions": [
+  {
+    "Number":         "1.3.12-1",
+    "Installed":      "src/dropwizard-cassandra/1.3.12-1",
+    "Source":         "src/dropwizard-cassandra/1.3.12-1/dropwizard-cassandra-1.3.12-1.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  }]
 }

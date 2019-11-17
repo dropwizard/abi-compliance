@@ -8,5 +8,12 @@
   "Graph":          "On",
   "PkgDiff":        "On",
 
-  "Versions": []
+  "Versions": [
+  {
+    "Number":         "0.9.0-1",
+    "Installed":      "src/dropwizard-java8-testing/0.9.0-1",
+    "Source":         "src/dropwizard-java8-testing/0.9.0-1/dropwizard-java8-testing-0.9.0-1.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  }]
 }
