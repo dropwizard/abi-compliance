@@ -10,11 +10,19 @@
 
   "Versions": [
   {
+    "Number":         "2.0.0-rc13",
+    "Installed":      "src/dropwizard-lifecycle/2.0.0-rc13",
+    "Source":         "src/dropwizard-lifecycle/2.0.0-rc13/dropwizard-lifecycle-2.0.0-rc13.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "2.0.0-rc12",
     "Installed":      "src/dropwizard-lifecycle/2.0.0-rc12",
     "Source":         "src/dropwizard-lifecycle/2.0.0-rc12/dropwizard-lifecycle-2.0.0-rc12.jar",
     "Changelog":      "On",
-    "PkgDiff":        "On"
+    "PkgDiff":        "On",
+    "Deleted":        1
   },
   {
     "Number":         "1.3.16",
