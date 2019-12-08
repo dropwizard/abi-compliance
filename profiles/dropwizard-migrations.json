@@ -25,6 +25,13 @@
     "Deleted":        1
   },
   {
+    "Number":         "1.3.17",
+    "Installed":      "src/dropwizard-migrations/1.3.17",
+    "Source":         "src/dropwizard-migrations/1.3.17/dropwizard-migrations-1.3.17.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "1.3.16",
     "Installed":      "src/dropwizard-migrations/1.3.16",
     "Source":         "src/dropwizard-migrations/1.3.16/dropwizard-migrations-1.3.16.jar",
