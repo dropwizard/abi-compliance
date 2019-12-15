@@ -10,11 +10,19 @@
 
   "Versions": [
   {
+    "Number":         "2.0.0",
+    "Installed":      "src/dropwizard-request-logging/2.0.0",
+    "Source":         "src/dropwizard-request-logging/2.0.0/dropwizard-request-logging-2.0.0.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "2.0.0-rc13",
     "Installed":      "src/dropwizard-request-logging/2.0.0-rc13",
     "Source":         "src/dropwizard-request-logging/2.0.0-rc13/dropwizard-request-logging-2.0.0-rc13.jar",
     "Changelog":      "On",
-    "PkgDiff":        "On"
+    "PkgDiff":        "On",
+    "Deleted":        1
   },
   {
     "Number":         "2.0.0-rc12",
