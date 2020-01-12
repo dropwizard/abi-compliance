@@ -10,6 +10,13 @@
 
   "Versions": [
   {
+    "Number":         "1.5.0",
+    "Installed":      "src/dropwizard-redis/1.5.0",
+    "Source":         "src/dropwizard-redis/1.5.0/dropwizard-redis-1.5.0.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "1.4.0",
     "Installed":      "src/dropwizard-redis/1.4.0",
     "Source":         "src/dropwizard-redis/1.4.0/dropwizard-redis-1.4.0.jar",

@@ -10,6 +10,13 @@
 
   "Versions": [
   {
+    "Number":         "1.5.0",
+    "Installed":      "src/dropwizard-health/1.5.0",
+    "Source":         "src/dropwizard-health/1.5.0/dropwizard-health-1.5.0.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "1.4.0",
     "Installed":      "src/dropwizard-health/1.4.0",
     "Source":         "src/dropwizard-health/1.4.0/dropwizard-health-1.4.0.jar",
