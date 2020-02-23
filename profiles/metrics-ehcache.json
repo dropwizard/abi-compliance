@@ -1,7 +1,7 @@
 {
   "Name":           "metrics-ehcache",
   "Title":          "Metrics Integration for Ehcache",
-  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/metrics/metrics-ehcache/",
+  "SourceUrl":      "https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-ehcache/",
   "Maintainer":     "Dropwizard Metrics Committers",
   "MaintainerUrl":  "https://metrics.dropwizard.io/",
   "Changelog":      "On",

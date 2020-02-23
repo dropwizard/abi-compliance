@@ -1,7 +1,7 @@
 {
   "Name":           "dropwizard-request-logging",
   "Title":          "Dropwizard Request Logging Support",
-  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/dropwizard-request-logging/",
+  "SourceUrl":      "https://repo1.maven.org/maven2/io/dropwizard/dropwizard-request-logging/",
   "Maintainer":     "Dropwizard Committers",
   "MaintainerUrl":  "https://www.dropwizard.io/",
   "Changelog":      "On",

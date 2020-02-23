@@ -1,7 +1,7 @@
 {
   "Name":           "metrics5-influxdb",
   "Title":          "InfluxDB 5.x integration for Metrics",
-  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/metrics5/metrics-influxdb/",
+  "SourceUrl":      "https://repo1.maven.org/maven2/io/dropwizard/metrics5/metrics-influxdb/",
   "Maintainer":     "Dropwizard Metrics Committers",
   "MaintainerUrl":  "https://metrics.dropwizard.io/",
   "Changelog":      "On",

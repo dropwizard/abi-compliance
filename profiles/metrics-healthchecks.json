@@ -1,7 +1,7 @@
 {
   "Name":           "metrics-healthchecks",
   "Title":          "Metrics Health Checks",
-  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/metrics/metrics-healthchecks/",
+  "SourceUrl":      "https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-healthchecks/",
   "Maintainer":     "Dropwizard Metrics Committers",
   "MaintainerUrl":  "https://metrics.dropwizard.io/",
   "Changelog":      "On",

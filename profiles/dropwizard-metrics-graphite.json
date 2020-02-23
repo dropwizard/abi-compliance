@@ -1,7 +1,7 @@
 {
   "Name":           "dropwizard-metrics-graphite",
   "Title":          "Dropwizard Metrics Support for Graphite",
-  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/dropwizard-metrics-graphite/",
+  "SourceUrl":      "https://repo1.maven.org/maven2/io/dropwizard/dropwizard-metrics-graphite/",
   "Maintainer":     "Dropwizard Committers",
   "MaintainerUrl":  "https://www.dropwizard.io/",
   "Changelog":      "On",

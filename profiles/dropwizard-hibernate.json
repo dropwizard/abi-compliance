@@ -1,7 +1,7 @@
 {
   "Name":           "dropwizard-hibernate",
   "Title":          "Dropwizard Hibernate Support",
-  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/dropwizard-hibernate/",
+  "SourceUrl":      "https://repo1.maven.org/maven2/io/dropwizard/dropwizard-hibernate/",
   "Maintainer":     "Dropwizard Committers",
   "MaintainerUrl":  "https://www.dropwizard.io/",
   "Changelog":      "On",

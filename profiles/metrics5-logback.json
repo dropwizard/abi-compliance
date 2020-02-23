@@ -1,7 +1,7 @@
 {
   "Name":           "metrics5-logback",
   "Title":          "Metrics 5.x Integration for Logback",
-  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/metrics5/metrics-logback/",
+  "SourceUrl":      "https://repo1.maven.org/maven2/io/dropwizard/metrics5/metrics-logback/",
   "Maintainer":     "Dropwizard Metrics Committers",
   "MaintainerUrl":  "https://metrics.dropwizard.io/",
   "Changelog":      "On",

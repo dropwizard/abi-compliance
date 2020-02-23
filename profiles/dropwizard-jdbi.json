@@ -1,7 +1,7 @@
 {
   "Name":           "dropwizard-jdbi",
   "Title":          "Dropwizard JDBI 2.x Support",
-  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/dropwizard-jdbi/",
+  "SourceUrl":      "https://repo1.maven.org/maven2/io/dropwizard/dropwizard-jdbi/",
   "Maintainer":     "Dropwizard Committers",
   "MaintainerUrl":  "https://www.dropwizard.io/",
   "Changelog":      "On",

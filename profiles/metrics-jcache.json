@@ -1,7 +1,7 @@
 {
   "Name":           "metrics-jcache",
   "Title":          "Metrics Integration for JCache",
-  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/metrics/metrics-jcache/",
+  "SourceUrl":      "https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-jcache/",
   "Maintainer":     "Dropwizard Metrics Committers",
   "MaintainerUrl":  "https://metrics.dropwizard.io/",
   "Changelog":      "On",

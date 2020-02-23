@@ -1,7 +1,7 @@
 {
   "Name":           "dropwizard-util",
   "Title":          "Dropwizard Utility Classes",
-  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/dropwizard-util/",
+  "SourceUrl":      "https://repo1.maven.org/maven2/io/dropwizard/dropwizard-util/",
   "Maintainer":     "Dropwizard Committers",
   "MaintainerUrl":  "https://www.dropwizard.io/",
   "Changelog":      "On",

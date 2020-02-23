@@ -1,7 +1,7 @@
 {
   "Name":           "dropwizard-db",
   "Title":          "Dropwizard Database Support",
-  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/dropwizard-db/",
+  "SourceUrl":      "https://repo1.maven.org/maven2/io/dropwizard/dropwizard-db/",
   "Maintainer":     "Dropwizard Committers",
   "MaintainerUrl":  "https://www.dropwizard.io/",
   "Changelog":      "On",

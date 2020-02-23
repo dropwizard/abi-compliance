@@ -1,7 +1,7 @@
 {
   "Name":           "metrics-jetty9",
   "Title":          "Metrics Integration for Jetty 9.1 and higher",
-  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/metrics/metrics-jetty9/",
+  "SourceUrl":      "https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-jetty9/",
   "Maintainer":     "Dropwizard Metrics Committers",
   "MaintainerUrl":  "https://metrics.dropwizard.io/",
   "Changelog":      "On",

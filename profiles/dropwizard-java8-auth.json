@@ -1,7 +1,7 @@
 {
   "Name":           "dropwizard-java8-auth",
   "Title":          "Dropwizard Authentication with Java 8 support",
-  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/modules/dropwizard-java8-auth/",
+  "SourceUrl":      "https://repo1.maven.org/maven2/io/dropwizard/modules/dropwizard-java8-auth/",
   "Maintainer":     "Dropwizard Committers",
   "MaintainerUrl":  "https://www.dropwizard.io/",
   "Changelog":      "On",

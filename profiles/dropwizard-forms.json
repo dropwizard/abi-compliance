@@ -1,7 +1,7 @@
 {
   "Name":           "dropwizard-forms",
   "Title":          "Dropwizard Multipart Form Support",
-  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/dropwizard-forms/",
+  "SourceUrl":      "https://repo1.maven.org/maven2/io/dropwizard/dropwizard-forms/",
   "Maintainer":     "Dropwizard Committers",
   "MaintainerUrl":  "https://www.dropwizard.io/",
   "Changelog":      "On",

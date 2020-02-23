@@ -1,7 +1,7 @@
 {
   "Name":           "dropwizard-health",
   "Title":          "Dropwizard Health",
-  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/modules/dropwizard-health/",
+  "SourceUrl":      "https://repo1.maven.org/maven2/io/dropwizard/modules/dropwizard-health/",
   "Maintainer":     "Dropwizard Committers",
   "MaintainerUrl":  "https://www.dropwizard.io/",
   "Changelog":      "On",

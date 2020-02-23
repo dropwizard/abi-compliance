@@ -1,7 +1,7 @@
 {
   "Name":           "metrics-servlet",
   "Title":          "Metrics Integration for Servlets",
-  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/metrics/metrics-servlet/",
+  "SourceUrl":      "https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-servlet/",
   "Maintainer":     "Dropwizard Metrics Committers",
   "MaintainerUrl":  "https://metrics.dropwizard.io/",
   "Changelog":      "On",

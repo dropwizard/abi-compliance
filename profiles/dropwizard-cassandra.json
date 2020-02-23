@@ -1,7 +1,7 @@
 {
   "Name":           "dropwizard-cassandra",
   "Title":          "Dropwizard Cassandra",
-  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/modules/dropwizard-cassandra/",
+  "SourceUrl":      "https://repo1.maven.org/maven2/io/dropwizard/modules/dropwizard-cassandra/",
   "Maintainer":     "Dropwizard Committers",
   "MaintainerUrl":  "https://www.dropwizard.io/",
   "Changelog":      "On",

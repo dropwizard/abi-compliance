@@ -1,7 +1,7 @@
 {
   "Name":           "dropwizard-core",
   "Title":          "Dropwizard",
-  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/dropwizard-core/",
+  "SourceUrl":      "https://repo1.maven.org/maven2/io/dropwizard/dropwizard-core/",
   "Maintainer":     "Dropwizard Committers",
   "MaintainerUrl":  "https://www.dropwizard.io/",
   "Changelog":      "On",

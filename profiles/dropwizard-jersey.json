@@ -1,7 +1,7 @@
 {
   "Name":           "dropwizard-jersey",
   "Title":          "Dropwizard Jersey Support",
-  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/dropwizard-jersey/",
+  "SourceUrl":      "https://repo1.maven.org/maven2/io/dropwizard/dropwizard-jersey/",
   "Maintainer":     "Dropwizard Committers",
   "MaintainerUrl":  "https://www.dropwizard.io/",
   "Changelog":      "On",

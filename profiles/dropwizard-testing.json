@@ -1,7 +1,7 @@
 {
   "Name":           "dropwizard-testing",
   "Title":          "Dropwizard Test Helpers",
-  "SourceUrl":      "http://central.maven.org/maven2/io/dropwizard/dropwizard-testing/",
+  "SourceUrl":      "https://repo1.maven.org/maven2/io/dropwizard/dropwizard-testing/",
   "Maintainer":     "Dropwizard Committers",
   "MaintainerUrl":  "https://www.dropwizard.io/",
   "Changelog":      "On",
