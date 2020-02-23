@@ -10,6 +10,13 @@
 
   "Versions": [
   {
+    "Number":         "2.0.1-1",
+    "Installed":      "src/dropwizard-flyway/2.0.1-1",
+    "Source":         "src/dropwizard-flyway/2.0.1-1/dropwizard-flyway-2.0.1-1.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "2.0.0-1",
     "Installed":      "src/dropwizard-flyway/2.0.0-1",
     "Source":         "src/dropwizard-flyway/2.0.0-1/dropwizard-flyway-2.0.0-1.jar",

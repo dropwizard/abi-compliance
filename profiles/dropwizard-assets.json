@@ -10,6 +10,20 @@
 
   "Versions": [
   {
+    "Number":         "2.0.2",
+    "Installed":      "src/dropwizard-assets/2.0.2",
+    "Source":         "src/dropwizard-assets/2.0.2/dropwizard-assets-2.0.2.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "2.0.1",
+    "Installed":      "src/dropwizard-assets/2.0.1",
+    "Source":         "src/dropwizard-assets/2.0.1/dropwizard-assets-2.0.1.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "2.0.0",
     "Installed":      "src/dropwizard-assets/2.0.0",
     "Source":         "src/dropwizard-assets/2.0.0/dropwizard-assets-2.0.0.jar",
@@ -31,6 +45,20 @@
     "Changelog":      "On",
     "PkgDiff":        "On",
     "Deleted":        1
+  },
+  {
+    "Number":         "1.3.19",
+    "Installed":      "src/dropwizard-assets/1.3.19",
+    "Source":         "src/dropwizard-assets/1.3.19/dropwizard-assets-1.3.19.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "1.3.18",
+    "Installed":      "src/dropwizard-assets/1.3.18",
+    "Source":         "src/dropwizard-assets/1.3.18/dropwizard-assets-1.3.18.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
   },
   {
     "Number":         "1.3.17",
