@@ -47,6 +47,13 @@
     "Deleted":        1
   },
   {
+    "Number":         "1.3.20",
+    "Installed":      "src/dropwizard-views-freemarker/1.3.20",
+    "Source":         "src/dropwizard-views-freemarker/1.3.20/dropwizard-views-freemarker-1.3.20.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "1.3.19",
     "Installed":      "src/dropwizard-views-freemarker/1.3.19",
     "Source":         "src/dropwizard-views-freemarker/1.3.19/dropwizard-views-freemarker-1.3.19.jar",
