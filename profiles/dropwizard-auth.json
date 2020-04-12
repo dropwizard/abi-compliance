@@ -10,6 +10,13 @@
 
   "Versions": [
   {
+    "Number":         "2.0.7",
+    "Installed":      "src/dropwizard-auth/2.0.7",
+    "Source":         "src/dropwizard-auth/2.0.7/dropwizard-auth-2.0.7.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "2.0.6",
     "Installed":      "src/dropwizard-auth/2.0.6",
     "Source":         "src/dropwizard-auth/2.0.6/dropwizard-auth-2.0.6.jar",

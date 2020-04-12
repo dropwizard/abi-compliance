@@ -10,6 +10,13 @@
 
   "Versions": [
   {
+    "Number":         "2.0.7",
+    "Installed":      "src/dropwizard-client/2.0.7",
+    "Source":         "src/dropwizard-client/2.0.7/dropwizard-client-2.0.7.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "2.0.6",
     "Installed":      "src/dropwizard-client/2.0.6",
     "Source":         "src/dropwizard-client/2.0.6/dropwizard-client-2.0.6.jar",
