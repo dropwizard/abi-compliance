@@ -10,6 +10,13 @@
 
   "Versions": [
   {
+    "Number":         "4.1.7",
+    "Installed":      "src/metrics-healthchecks/4.1.7",
+    "Source":         "src/metrics-healthchecks/4.1.7/metrics-healthchecks-4.1.7.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "4.1.6",
     "Installed":      "src/metrics-healthchecks/4.1.6",
     "Source":         "src/metrics-healthchecks/4.1.6/metrics-healthchecks-4.1.6.jar",
