@@ -10,6 +10,13 @@
 
   "Versions": [
   {
+    "Number":         "2.0.9",
+    "Installed":      "src/dropwizard-configuration/2.0.9",
+    "Source":         "src/dropwizard-configuration/2.0.9/dropwizard-configuration-2.0.9.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "2.0.8",
     "Installed":      "src/dropwizard-configuration/2.0.8",
     "Source":         "src/dropwizard-configuration/2.0.8/dropwizard-configuration-2.0.8.jar",

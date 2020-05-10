@@ -10,6 +10,13 @@
 
   "Versions": [
   {
+    "Number":         "2.0.9",
+    "Installed":      "src/dropwizard-views-freemarker/2.0.9",
+    "Source":         "src/dropwizard-views-freemarker/2.0.9/dropwizard-views-freemarker-2.0.9.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "2.0.8",
     "Installed":      "src/dropwizard-views-freemarker/2.0.8",
     "Source":         "src/dropwizard-views-freemarker/2.0.8/dropwizard-views-freemarker-2.0.8.jar",

@@ -10,6 +10,13 @@
 
   "Versions": [
   {
+    "Number":         "2.0.9",
+    "Installed":      "src/dropwizard-db/2.0.9",
+    "Source":         "src/dropwizard-db/2.0.9/dropwizard-db-2.0.9.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "2.0.8",
     "Installed":      "src/dropwizard-db/2.0.8",
     "Source":         "src/dropwizard-db/2.0.8/dropwizard-db-2.0.8.jar",
