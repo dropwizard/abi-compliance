@@ -10,6 +10,13 @@
 
   "Versions": [
   {
+    "Number":         "4.1.8",
+    "Installed":      "src/metrics-jmx/4.1.8",
+    "Source":         "src/metrics-jmx/4.1.8/metrics-jmx-4.1.8.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "4.1.7",
     "Installed":      "src/metrics-jmx/4.1.7",
     "Source":         "src/metrics-jmx/4.1.7/metrics-jmx-4.1.7.jar",
