@@ -10,6 +10,13 @@
 
   "Versions": [
   {
+    "Number":         "2.0.10",
+    "Installed":      "src/dropwizard-jersey/2.0.10",
+    "Source":         "src/dropwizard-jersey/2.0.10/dropwizard-jersey-2.0.10.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "2.0.9",
     "Installed":      "src/dropwizard-jersey/2.0.9",
     "Source":         "src/dropwizard-jersey/2.0.9/dropwizard-jersey-2.0.9.jar",
