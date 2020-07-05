@@ -103,6 +103,13 @@
     "Deleted":        1
   },
   {
+    "Number":         "1.3.24",
+    "Installed":      "src/dropwizard-migrations/1.3.24",
+    "Source":         "src/dropwizard-migrations/1.3.24/dropwizard-migrations-1.3.24.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "1.3.23",
     "Installed":      "src/dropwizard-migrations/1.3.23",
     "Source":         "src/dropwizard-migrations/1.3.23/dropwizard-migrations-1.3.23.jar",
