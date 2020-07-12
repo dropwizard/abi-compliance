@@ -10,6 +10,13 @@
 
   "Versions": [
   {
+    "Number":         "2.0.11",
+    "Installed":      "src/dropwizard-validation/2.0.11",
+    "Source":         "src/dropwizard-validation/2.0.11/dropwizard-validation-2.0.11.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "2.0.10",
     "Installed":      "src/dropwizard-validation/2.0.10",
     "Source":         "src/dropwizard-validation/2.0.10/dropwizard-validation-2.0.10.jar",

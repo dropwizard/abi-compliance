@@ -10,6 +10,13 @@
 
   "Versions": [
   {
+    "Number":         "2.0.11",
+    "Installed":      "src/dropwizard-jackson/2.0.11",
+    "Source":         "src/dropwizard-jackson/2.0.11/dropwizard-jackson-2.0.11.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "2.0.10",
     "Installed":      "src/dropwizard-jackson/2.0.10",
     "Source":         "src/dropwizard-jackson/2.0.10/dropwizard-jackson-2.0.10.jar",
