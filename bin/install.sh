@@ -4,6 +4,7 @@ set -euxo pipefail
 INSTALLER_DIR='installer-4j'
 INSTALLER_VERSION='0.5'
 
+apt-get update --quiet
 apt-get --no-install-recommends --quiet --assume-yes install \
 	curl make file gawk binutils diffutils rfcdiff wdiff perl gnuplot
 
