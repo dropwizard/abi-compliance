@@ -10,6 +10,13 @@
 
   "Versions": [
   {
+    "Number":         "4.1.11",
+    "Installed":      "src/metrics-httpclient/4.1.11",
+    "Source":         "src/metrics-httpclient/4.1.11/metrics-httpclient-4.1.11.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "4.1.10.1",
     "Installed":      "src/metrics-httpclient/4.1.10.1",
     "Source":         "src/metrics-httpclient/4.1.10.1/metrics-httpclient-4.1.10.1.jar",
