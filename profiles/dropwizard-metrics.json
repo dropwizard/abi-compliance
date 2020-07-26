@@ -10,6 +10,13 @@
 
   "Versions": [
   {
+    "Number":         "2.0.12",
+    "Installed":      "src/dropwizard-metrics/2.0.12",
+    "Source":         "src/dropwizard-metrics/2.0.12/dropwizard-metrics-2.0.12.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "2.0.11",
     "Installed":      "src/dropwizard-metrics/2.0.11",
     "Source":         "src/dropwizard-metrics/2.0.11/dropwizard-metrics-2.0.11.jar",
