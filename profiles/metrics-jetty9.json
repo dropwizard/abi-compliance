@@ -10,6 +10,13 @@
 
   "Versions": [
   {
+    "Number":         "4.1.12",
+    "Installed":      "src/metrics-jetty9/4.1.12",
+    "Source":         "src/metrics-jetty9/4.1.12/metrics-jetty9-4.1.12.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "4.1.11",
     "Installed":      "src/metrics-jetty9/4.1.11",
     "Source":         "src/metrics-jetty9/4.1.11/metrics-jetty9-4.1.11.jar",
