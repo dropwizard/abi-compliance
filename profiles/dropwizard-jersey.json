@@ -10,6 +10,13 @@
 
   "Versions": [
   {
+    "Number":         "2.0.13",
+    "Installed":      "src/dropwizard-jersey/2.0.13",
+    "Source":         "src/dropwizard-jersey/2.0.13/dropwizard-jersey-2.0.13.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "2.0.12",
     "Installed":      "src/dropwizard-jersey/2.0.12",
     "Source":         "src/dropwizard-jersey/2.0.12/dropwizard-jersey-2.0.12.jar",
@@ -115,6 +122,13 @@
     "Changelog":      "On",
     "PkgDiff":        "On",
     "Deleted":        1
+  },
+  {
+    "Number":         "1.3.25",
+    "Installed":      "src/dropwizard-jersey/1.3.25",
+    "Source":         "src/dropwizard-jersey/1.3.25/dropwizard-jersey-1.3.25.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
   },
   {
     "Number":         "1.3.24",
