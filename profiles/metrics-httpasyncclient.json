@@ -10,6 +10,13 @@
 
   "Versions": [
   {
+    "Number":         "4.1.13",
+    "Installed":      "src/metrics-httpasyncclient/4.1.13",
+    "Source":         "src/metrics-httpasyncclient/4.1.13/metrics-httpasyncclient-4.1.13.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "4.1.12.1",
     "Installed":      "src/metrics-httpasyncclient/4.1.12.1",
     "Source":         "src/metrics-httpasyncclient/4.1.12.1/metrics-httpasyncclient-4.1.12.1.jar",
