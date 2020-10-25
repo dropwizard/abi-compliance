@@ -10,6 +10,13 @@
 
   "Versions": [
   {
+    "Number":         "2.0.14",
+    "Installed":      "src/dropwizard-auth/2.0.14",
+    "Source":         "src/dropwizard-auth/2.0.14/dropwizard-auth-2.0.14.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "2.0.13",
     "Installed":      "src/dropwizard-auth/2.0.13",
     "Source":         "src/dropwizard-auth/2.0.13/dropwizard-auth-2.0.13.jar",
@@ -122,6 +129,13 @@
     "Changelog":      "On",
     "PkgDiff":        "On",
     "Deleted":        1
+  },
+  {
+    "Number":         "1.3.26",
+    "Installed":      "src/dropwizard-auth/1.3.26",
+    "Source":         "src/dropwizard-auth/1.3.26/dropwizard-auth-1.3.26.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
   },
   {
     "Number":         "1.3.25",

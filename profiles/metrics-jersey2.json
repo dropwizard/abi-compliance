@@ -10,6 +10,13 @@
 
   "Versions": [
   {
+    "Number":         "4.1.14",
+    "Installed":      "src/metrics-jersey2/4.1.14",
+    "Source":         "src/metrics-jersey2/4.1.14/metrics-jersey2-4.1.14.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "4.1.13",
     "Installed":      "src/metrics-jersey2/4.1.13",
     "Source":         "src/metrics-jersey2/4.1.13/metrics-jersey2-4.1.13.jar",
