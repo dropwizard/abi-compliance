@@ -131,6 +131,13 @@
     "Deleted":        1
   },
   {
+    "Number":         "1.3.27",
+    "Installed":      "src/dropwizard-validation/1.3.27",
+    "Source":         "src/dropwizard-validation/1.3.27/dropwizard-validation-1.3.27.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "1.3.26",
     "Installed":      "src/dropwizard-validation/1.3.26",
     "Source":         "src/dropwizard-validation/1.3.26/dropwizard-validation-1.3.26.jar",
