@@ -10,6 +10,13 @@
 
   "Versions": [
   {
+    "Number":         "2.0.15",
+    "Installed":      "src/dropwizard-jdbi3/2.0.15",
+    "Source":         "src/dropwizard-jdbi3/2.0.15/dropwizard-jdbi3-2.0.15.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "2.0.14",
     "Installed":      "src/dropwizard-jdbi3/2.0.14",
     "Source":         "src/dropwizard-jdbi3/2.0.14/dropwizard-jdbi3-2.0.14.jar",
