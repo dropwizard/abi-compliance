@@ -10,6 +10,13 @@
 
   "Versions": [
   {
+    "Number":         "4.1.15",
+    "Installed":      "src/metrics-core/4.1.15",
+    "Source":         "src/metrics-core/4.1.15/metrics-core-4.1.15.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "4.1.14",
     "Installed":      "src/metrics-core/4.1.14",
     "Source":         "src/metrics-core/4.1.14/metrics-core-4.1.14.jar",
