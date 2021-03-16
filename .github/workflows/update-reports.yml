@@ -79,7 +79,7 @@ jobs:
         run: bin/update-reports.sh
       - name: Deploy
         if: success()
-        uses: crazy-max/ghaction-github-pages@v2.2.0
+        uses: crazy-max/ghaction-github-pages@v2.3.0
         with:
           target_branch: gh-pages
           build_dir: ${{ env.BUILD_DIR }}
