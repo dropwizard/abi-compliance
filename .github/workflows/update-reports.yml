@@ -69,7 +69,7 @@ jobs:
       - name: Update profiles
         run: bin/update-profiles.sh
       - name: Commit updated profiles
-        uses: github-actions-x/commit@v2.7
+        uses: github-actions-x/commit@v2.8
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           push-branch: 'master'
