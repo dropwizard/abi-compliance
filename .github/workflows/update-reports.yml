@@ -16,49 +16,49 @@ jobs:
         uses: joschi/setup-jdk@v2.3.0
         with:
           java-version: 11
-      - uses: actions/cache@v2.1.5
+      - uses: actions/cache@v2.1.6
         with:
           path: db
           key: ${{ runner.os }}-db
           restore-keys: |
             ${{ runner.os }}-db
-      - uses: actions/cache@v2.1.5
+      - uses: actions/cache@v2.1.6
         with:
           path: installed
           key: ${{ runner.os }}-installed
           restore-keys: |
             ${{ runner.os }}-installed
-      - uses: actions/cache@v2.1.5
+      - uses: actions/cache@v2.1.6
         with:
           path: src
           key: ${{ runner.os }}-src
           restore-keys: |
             ${{ runner.os }}-src
-      - uses: actions/cache@v2.1.5
+      - uses: actions/cache@v2.1.6
         with:
           path: api_dump
           key: ${{ runner.os }}-api_dump
           restore-keys: |
             ${{ runner.os }}-api_dump
-      - uses: actions/cache@v2.1.5
+      - uses: actions/cache@v2.1.6
         with:
           path: archives_report
           key: ${{ runner.os }}-archives_report
           restore-keys: |
             ${{ runner.os }}-archives_report
-      - uses: actions/cache@v2.1.5
+      - uses: actions/cache@v2.1.6
         with:
           path: compat_report
           key: ${{ runner.os }}-compat_report
           restore-keys: |
             ${{ runner.os }}-compat_report
-      - uses: actions/cache@v2.1.5
+      - uses: actions/cache@v2.1.6
         with:
           path: package_diff
           key: ${{ runner.os }}-package_diff
           restore-keys: |
             ${{ runner.os }}-package_diff
-      - uses: actions/cache@v2.1.5
+      - uses: actions/cache@v2.1.6
         with:
           path: timeline
           key: ${{ runner.os }}-timeline
