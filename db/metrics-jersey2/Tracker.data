@@ -1,0 +1,2416 @@
+$VAR1 = {
+          'APIDump' => {
+                         '3.1.0' => {
+                                      'aa3df' => {
+                                                   'Archive' => 'metrics-jersey2-3.1.0.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/3.1.0/aa3df/API.dump.tar.gz',
+                                                   'TotalSymbols' => '7'
+                                                 }
+                                    },
+                         '3.1.1' => {
+                                      '3d2b6' => {
+                                                   'Archive' => 'metrics-jersey2-3.1.1.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/3.1.1/3d2b6/API.dump.tar.gz',
+                                                   'TotalSymbols' => '7'
+                                                 }
+                                    },
+                         '3.1.2' => {
+                                      'd9431' => {
+                                                   'Archive' => 'metrics-jersey2-3.1.2.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/3.1.2/d9431/API.dump.tar.gz',
+                                                   'TotalSymbols' => '7'
+                                                 }
+                                    },
+                         '3.1.3' => {
+                                      'd3824' => {
+                                                   'Archive' => 'metrics-jersey2-3.1.3.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/3.1.3/d3824/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '3.1.4' => {
+                                      '0d050' => {
+                                                   'Archive' => 'metrics-jersey2-3.1.4.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/3.1.4/0d050/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '3.1.5' => {
+                                      'e1ce7' => {
+                                                   'Archive' => 'metrics-jersey2-3.1.5.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/3.1.5/e1ce7/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '3.2.0' => {
+                                      '66d5d' => {
+                                                   'Archive' => 'metrics-jersey2-3.2.0.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/3.2.0/66d5d/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '3.2.1' => {
+                                      'a627f' => {
+                                                   'Archive' => 'metrics-jersey2-3.2.1.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/3.2.1/a627f/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '3.2.2' => {
+                                      '999f9' => {
+                                                   'Archive' => 'metrics-jersey2-3.2.2.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/3.2.2/999f9/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '3.2.3' => {
+                                      'c6507' => {
+                                                   'Archive' => 'metrics-jersey2-3.2.3.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/3.2.3/c6507/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '3.2.4' => {
+                                      '4f5be' => {
+                                                   'Archive' => 'metrics-jersey2-3.2.4.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/3.2.4/4f5be/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '3.2.5' => {
+                                      '677ca' => {
+                                                   'Archive' => 'metrics-jersey2-3.2.5.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/3.2.5/677ca/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '3.2.6' => {
+                                      '7e76c' => {
+                                                   'Archive' => 'metrics-jersey2-3.2.6.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/3.2.6/7e76c/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '4.0.0' => {
+                                      '1e332' => {
+                                                   'Archive' => 'metrics-jersey2-4.0.0.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/4.0.0/1e332/API.dump.tar.gz',
+                                                   'TotalSymbols' => '12'
+                                                 }
+                                    },
+                         '4.0.1' => {
+                                      '74994' => {
+                                                   'Archive' => 'metrics-jersey2-4.0.1.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/4.0.1/74994/API.dump.tar.gz',
+                                                   'TotalSymbols' => '12'
+                                                 }
+                                    },
+                         '4.0.2' => {
+                                      '20c95' => {
+                                                   'Archive' => 'metrics-jersey2-4.0.2.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/4.0.2/20c95/API.dump.tar.gz',
+                                                   'TotalSymbols' => '12'
+                                                 }
+                                    },
+                         '4.0.3' => {
+                                      '75d4b' => {
+                                                   'Archive' => 'metrics-jersey2-4.0.3.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/4.0.3/75d4b/API.dump.tar.gz',
+                                                   'TotalSymbols' => '12'
+                                                 }
+                                    },
+                         '4.0.4' => {
+                                      '82bbc' => {
+                                                   'Archive' => 'metrics-jersey2-4.0.4.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/4.0.4/82bbc/API.dump.tar.gz',
+                                                   'TotalSymbols' => '12'
+                                                 }
+                                    },
+                         '4.0.5' => {
+                                      '6d284' => {
+                                                   'Archive' => 'metrics-jersey2-4.0.5.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/4.0.5/6d284/API.dump.tar.gz',
+                                                   'TotalSymbols' => '12'
+                                                 }
+                                    },
+                         '4.0.6' => {
+                                      'd33bd' => {
+                                                   'Archive' => 'metrics-jersey2-4.0.6.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/4.0.6/d33bd/API.dump.tar.gz',
+                                                   'TotalSymbols' => '12'
+                                                 }
+                                    },
+                         '4.0.7' => {
+                                      '94da7' => {
+                                                   'Archive' => 'metrics-jersey2-4.0.7.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/4.0.7/94da7/API.dump.tar.gz',
+                                                   'TotalSymbols' => '12'
+                                                 }
+                                    },
+                         '4.1.0' => {
+                                      'd0163' => {
+                                                   'Archive' => 'metrics-jersey2-4.1.0.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/4.1.0/d0163/API.dump.tar.gz',
+                                                   'TotalSymbols' => '12'
+                                                 }
+                                    },
+                         '4.1.1' => {
+                                      '5768d' => {
+                                                   'Archive' => 'metrics-jersey2-4.1.1.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/4.1.1/5768d/API.dump.tar.gz',
+                                                   'TotalSymbols' => '12'
+                                                 }
+                                    },
+                         '4.1.10' => {
+                                       '2006f' => {
+                                                    'Archive' => 'metrics-jersey2-4.1.10.jar',
+                                                    'Path' => 'api_dump/metrics-jersey2/4.1.10/2006f/API.dump.tar.gz',
+                                                    'TotalSymbols' => '12'
+                                                  }
+                                     },
+                         '4.1.10.1' => {
+                                         '2996d' => {
+                                                      'Archive' => 'metrics-jersey2-4.1.10.1.jar',
+                                                      'Path' => 'api_dump/metrics-jersey2/4.1.10.1/2996d/API.dump.tar.gz',
+                                                      'TotalSymbols' => '12'
+                                                    }
+                                       },
+                         '4.1.11' => {
+                                       '6906a' => {
+                                                    'Archive' => 'metrics-jersey2-4.1.11.jar',
+                                                    'Path' => 'api_dump/metrics-jersey2/4.1.11/6906a/API.dump.tar.gz',
+                                                    'TotalSymbols' => '12'
+                                                  }
+                                     },
+                         '4.1.12' => {
+                                       '12567' => {
+                                                    'Archive' => 'metrics-jersey2-4.1.12.jar',
+                                                    'Path' => 'api_dump/metrics-jersey2/4.1.12/12567/API.dump.tar.gz',
+                                                    'TotalSymbols' => '12'
+                                                  }
+                                     },
+                         '4.1.12.1' => {
+                                         '2b825' => {
+                                                      'Archive' => 'metrics-jersey2-4.1.12.1.jar',
+                                                      'Path' => 'api_dump/metrics-jersey2/4.1.12.1/2b825/API.dump.tar.gz',
+                                                      'TotalSymbols' => '12'
+                                                    }
+                                       },
+                         '4.1.13' => {
+                                       '4c765' => {
+                                                    'Archive' => 'metrics-jersey2-4.1.13.jar',
+                                                    'Path' => 'api_dump/metrics-jersey2/4.1.13/4c765/API.dump.tar.gz',
+                                                    'TotalSymbols' => '12'
+                                                  }
+                                     },
+                         '4.1.14' => {
+                                       '7f2fc' => {
+                                                    'Archive' => 'metrics-jersey2-4.1.14.jar',
+                                                    'Path' => 'api_dump/metrics-jersey2/4.1.14/7f2fc/API.dump.tar.gz',
+                                                    'TotalSymbols' => '15'
+                                                  }
+                                     },
+                         '4.1.15' => {
+                                       '2243a' => {
+                                                    'Archive' => 'metrics-jersey2-4.1.15.jar',
+                                                    'Path' => 'api_dump/metrics-jersey2/4.1.15/2243a/API.dump.tar.gz',
+                                                    'TotalSymbols' => '15'
+                                                  }
+                                     },
+                         '4.1.16' => {
+                                       '596cd' => {
+                                                    'Archive' => 'metrics-jersey2-4.1.16.jar',
+                                                    'Path' => 'api_dump/metrics-jersey2/4.1.16/596cd/API.dump.tar.gz',
+                                                    'TotalSymbols' => '15'
+                                                  }
+                                     },
+                         '4.1.17' => {
+                                       '019b5' => {
+                                                    'Archive' => 'metrics-jersey2-4.1.17.jar',
+                                                    'Path' => 'api_dump/metrics-jersey2/4.1.17/019b5/API.dump.tar.gz',
+                                                    'TotalSymbols' => '15'
+                                                  }
+                                     },
+                         '4.1.18' => {
+                                       '19a03' => {
+                                                    'Archive' => 'metrics-jersey2-4.1.18.jar',
+                                                    'Path' => 'api_dump/metrics-jersey2/4.1.18/19a03/API.dump.tar.gz',
+                                                    'TotalSymbols' => '15'
+                                                  }
+                                     },
+                         '4.1.19' => {
+                                       '0c051' => {
+                                                    'Archive' => 'metrics-jersey2-4.1.19.jar',
+                                                    'Path' => 'api_dump/metrics-jersey2/4.1.19/0c051/API.dump.tar.gz',
+                                                    'TotalSymbols' => '15'
+                                                  }
+                                     },
+                         '4.1.2' => {
+                                      'bccf1' => {
+                                                   'Archive' => 'metrics-jersey2-4.1.2.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/4.1.2/bccf1/API.dump.tar.gz',
+                                                   'TotalSymbols' => '12'
+                                                 }
+                                    },
+                         '4.1.20' => {
+                                       'b9a98' => {
+                                                    'Archive' => 'metrics-jersey2-4.1.20.jar',
+                                                    'Path' => 'api_dump/metrics-jersey2/4.1.20/b9a98/API.dump.tar.gz',
+                                                    'TotalSymbols' => '15'
+                                                  }
+                                     },
+                         '4.1.21' => {
+                                       'd454e' => {
+                                                    'Archive' => 'metrics-jersey2-4.1.21.jar',
+                                                    'Path' => 'api_dump/metrics-jersey2/4.1.21/d454e/API.dump.tar.gz',
+                                                    'TotalSymbols' => '15'
+                                                  }
+                                     },
+                         '4.1.22' => {
+                                       'a0470' => {
+                                                    'Archive' => 'metrics-jersey2-4.1.22.jar',
+                                                    'Path' => 'api_dump/metrics-jersey2/4.1.22/a0470/API.dump.tar.gz',
+                                                    'TotalSymbols' => '15'
+                                                  }
+                                     },
+                         '4.1.23' => {
+                                       '9ca50' => {
+                                                    'Archive' => 'metrics-jersey2-4.1.23.jar',
+                                                    'Path' => 'api_dump/metrics-jersey2/4.1.23/9ca50/API.dump.tar.gz',
+                                                    'TotalSymbols' => '15'
+                                                  }
+                                     },
+                         '4.1.24' => {
+                                       '84df8' => {
+                                                    'Archive' => 'metrics-jersey2-4.1.24.jar',
+                                                    'Path' => 'api_dump/metrics-jersey2/4.1.24/84df8/API.dump.tar.gz',
+                                                    'TotalSymbols' => '15'
+                                                  }
+                                     },
+                         '4.1.25' => {
+                                       '6c0d2' => {
+                                                    'Archive' => 'metrics-jersey2-4.1.25.jar',
+                                                    'Path' => 'api_dump/metrics-jersey2/4.1.25/6c0d2/API.dump.tar.gz',
+                                                    'TotalSymbols' => '15'
+                                                  }
+                                     },
+                         '4.1.3' => {
+                                      'f37cd' => {
+                                                   'Archive' => 'metrics-jersey2-4.1.3.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/4.1.3/f37cd/API.dump.tar.gz',
+                                                   'TotalSymbols' => '12'
+                                                 }
+                                    },
+                         '4.1.4' => {
+                                      '402e7' => {
+                                                   'Archive' => 'metrics-jersey2-4.1.4.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/4.1.4/402e7/API.dump.tar.gz',
+                                                   'TotalSymbols' => '12'
+                                                 }
+                                    },
+                         '4.1.5' => {
+                                      'd9c93' => {
+                                                   'Archive' => 'metrics-jersey2-4.1.5.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/4.1.5/d9c93/API.dump.tar.gz',
+                                                   'TotalSymbols' => '12'
+                                                 }
+                                    },
+                         '4.1.6' => {
+                                      '8e40b' => {
+                                                   'Archive' => 'metrics-jersey2-4.1.6.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/4.1.6/8e40b/API.dump.tar.gz',
+                                                   'TotalSymbols' => '12'
+                                                 }
+                                    },
+                         '4.1.7' => {
+                                      '2e9c5' => {
+                                                   'Archive' => 'metrics-jersey2-4.1.7.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/4.1.7/2e9c5/API.dump.tar.gz',
+                                                   'TotalSymbols' => '12'
+                                                 }
+                                    },
+                         '4.1.8' => {
+                                      'acf9a' => {
+                                                   'Archive' => 'metrics-jersey2-4.1.8.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/4.1.8/acf9a/API.dump.tar.gz',
+                                                   'TotalSymbols' => '12'
+                                                 }
+                                    },
+                         '4.1.9' => {
+                                      '33f16' => {
+                                                   'Archive' => 'metrics-jersey2-4.1.9.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/4.1.9/33f16/API.dump.tar.gz',
+                                                   'TotalSymbols' => '12'
+                                                 }
+                                    },
+                         '4.2.0' => {
+                                      '6f792' => {
+                                                   'Archive' => 'metrics-jersey2-4.2.0.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/4.2.0/6f792/API.dump.tar.gz',
+                                                   'TotalSymbols' => '15'
+                                                 }
+                                    },
+                         '4.2.1' => {
+                                      '74046' => {
+                                                   'Archive' => 'metrics-jersey2-4.2.1.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/4.2.1/74046/API.dump.tar.gz',
+                                                   'TotalSymbols' => '15'
+                                                 }
+                                    },
+                         '4.2.2' => {
+                                      '3e800' => {
+                                                   'Archive' => 'metrics-jersey2-4.2.2.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/4.2.2/3e800/API.dump.tar.gz',
+                                                   'TotalSymbols' => '15'
+                                                 }
+                                    },
+                         '4.2.3' => {
+                                      '07a8e' => {
+                                                   'Archive' => 'metrics-jersey2-4.2.3.jar',
+                                                   'Path' => 'api_dump/metrics-jersey2/4.2.3/07a8e/API.dump.tar.gz',
+                                                   'TotalSymbols' => '15'
+                                                 }
+                                    }
+                       },
+          'APIReport' => {
+                           '3.1.0' => {
+                                        '3.1.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/3.1.0/3.1.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.1.1' => {
+                                        '3.1.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/3.1.1/3.1.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.1.2' => {
+                                        '3.1.3' => {
+                                                     'Added' => 2,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/3.1.2/3.1.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.1.3' => {
+                                        '3.1.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/3.1.3/3.1.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.1.4' => {
+                                        '3.1.5' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/3.1.4/3.1.5/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.1.5' => {
+                                        '3.2.0' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/3.1.5/3.2.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.2.0' => {
+                                        '3.2.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/3.2.0/3.2.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.2.1' => {
+                                        '3.2.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/3.2.1/3.2.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.2.2' => {
+                                        '3.2.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/3.2.2/3.2.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.2.3' => {
+                                        '3.2.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/3.2.3/3.2.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.2.4' => {
+                                        '3.2.5' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/3.2.4/3.2.5/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.2.5' => {
+                                        '3.2.6' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/3.2.5/3.2.6/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.2.6' => {
+                                        '4.0.0' => {
+                                                     'Added' => 3,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/3.2.6/4.0.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.0' => {
+                                        '4.0.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/4.0.0/4.0.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.1' => {
+                                        '4.0.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/4.0.1/4.0.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.2' => {
+                                        '4.0.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/4.0.2/4.0.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.3' => {
+                                        '4.0.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/4.0.3/4.0.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.4' => {
+                                        '4.0.5' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/4.0.4/4.0.5/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.5' => {
+                                        '4.0.6' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/4.0.5/4.0.6/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.6' => {
+                                        '4.0.7' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/4.0.6/4.0.7/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.7' => {
+                                        '4.1.0' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/4.0.7/4.1.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.0' => {
+                                        '4.1.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/4.1.0/4.1.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.1' => {
+                                        '4.1.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/4.1.1/4.1.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.10' => {
+                                         '4.1.10.1' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/metrics-jersey2/4.1.10/4.1.10.1/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                       },
+                           '4.1.10.1' => {
+                                           '4.1.11' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/metrics-jersey2/4.1.10.1/4.1.11/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                         },
+                           '4.1.11' => {
+                                         '4.1.12' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jersey2/4.1.11/4.1.12/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.12' => {
+                                         '4.1.12.1' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/metrics-jersey2/4.1.12/4.1.12.1/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                       },
+                           '4.1.12.1' => {
+                                           '4.1.13' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/metrics-jersey2/4.1.12.1/4.1.13/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                         },
+                           '4.1.13' => {
+                                         '4.1.14' => {
+                                                       'Added' => 3,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jersey2/4.1.13/4.1.14/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.14' => {
+                                         '4.1.15' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jersey2/4.1.14/4.1.15/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.15' => {
+                                         '4.1.16' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jersey2/4.1.15/4.1.16/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.16' => {
+                                         '4.1.17' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jersey2/4.1.16/4.1.17/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.17' => {
+                                         '4.1.18' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jersey2/4.1.17/4.1.18/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.18' => {
+                                         '4.1.19' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jersey2/4.1.18/4.1.19/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.19' => {
+                                         '4.1.20' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jersey2/4.1.19/4.1.20/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.2' => {
+                                        '4.1.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/4.1.2/4.1.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.20' => {
+                                         '4.1.21' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jersey2/4.1.20/4.1.21/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.21' => {
+                                         '4.1.22' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jersey2/4.1.21/4.1.22/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.22' => {
+                                         '4.1.23' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jersey2/4.1.22/4.1.23/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.23' => {
+                                         '4.1.24' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jersey2/4.1.23/4.1.24/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.24' => {
+                                         '4.1.25' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jersey2/4.1.24/4.1.25/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.25' => {
+                                         '4.2.0' => {
+                                                      'Added' => 0,
+                                                      'ArchivesAdded' => 0,
+                                                      'ArchivesAddedSymbols' => 0,
+                                                      'ArchivesRemoved' => 0,
+                                                      'ArchivesRemovedSymbols' => 0,
+                                                      'BC' => 100,
+                                                      'Path' => 'archives_report/metrics-jersey2/4.1.25/4.2.0/report.html',
+                                                      'Removed' => 0,
+                                                      'Source_BC' => 100,
+                                                      'Source_TotalProblems' => 0,
+                                                      'TotalArchives' => 1,
+                                                      'TotalProblems' => 0
+                                                    }
+                                       },
+                           '4.1.3' => {
+                                        '4.1.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/4.1.3/4.1.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.4' => {
+                                        '4.1.5' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/4.1.4/4.1.5/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.5' => {
+                                        '4.1.6' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/4.1.5/4.1.6/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.6' => {
+                                        '4.1.7' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/4.1.6/4.1.7/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.7' => {
+                                        '4.1.8' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/4.1.7/4.1.8/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.8' => {
+                                        '4.1.9' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/4.1.8/4.1.9/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.9' => {
+                                        '4.1.10' => {
+                                                      'Added' => 0,
+                                                      'ArchivesAdded' => 0,
+                                                      'ArchivesAddedSymbols' => 0,
+                                                      'ArchivesRemoved' => 0,
+                                                      'ArchivesRemovedSymbols' => 0,
+                                                      'BC' => 100,
+                                                      'Path' => 'archives_report/metrics-jersey2/4.1.9/4.1.10/report.html',
+                                                      'Removed' => 0,
+                                                      'Source_BC' => 100,
+                                                      'Source_TotalProblems' => 0,
+                                                      'TotalArchives' => 1,
+                                                      'TotalProblems' => 0
+                                                    }
+                                      },
+                           '4.2.0' => {
+                                        '4.2.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/4.2.0/4.2.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.2.1' => {
+                                        '4.2.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/4.2.1/4.2.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.2.2' => {
+                                        '4.2.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jersey2/4.2.2/4.2.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      }
+                         },
+          'APIReport_D' => {
+                             '3.1.0' => {
+                                          '3.1.1' => {
+                                                       '5de91' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-3.1.0.jar',
+                                                                    'Archive2' => 'metrics-jersey2-3.1.1.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/3.1.0/3.1.1/5de91/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/3.1.0/3.1.1/5de91/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.1.1' => {
+                                          '3.1.2' => {
+                                                       'aec73' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-3.1.1.jar',
+                                                                    'Archive2' => 'metrics-jersey2-3.1.2.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/3.1.1/3.1.2/aec73/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/3.1.1/3.1.2/aec73/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.1.2' => {
+                                          '3.1.3' => {
+                                                       '36d26' => {
+                                                                    'Added' => 2,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-3.1.2.jar',
+                                                                    'Archive2' => 'metrics-jersey2-3.1.3.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/3.1.2/3.1.3/36d26/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/3.1.2/3.1.3/36d26/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.1.3' => {
+                                          '3.1.4' => {
+                                                       'b73b8' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-3.1.3.jar',
+                                                                    'Archive2' => 'metrics-jersey2-3.1.4.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/3.1.3/3.1.4/b73b8/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/3.1.3/3.1.4/b73b8/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.1.4' => {
+                                          '3.1.5' => {
+                                                       'bc872' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-3.1.4.jar',
+                                                                    'Archive2' => 'metrics-jersey2-3.1.5.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/3.1.4/3.1.5/bc872/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/3.1.4/3.1.5/bc872/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.1.5' => {
+                                          '3.2.0' => {
+                                                       '06fc2' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-3.1.5.jar',
+                                                                    'Archive2' => 'metrics-jersey2-3.2.0.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/3.1.5/3.2.0/06fc2/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/3.1.5/3.2.0/06fc2/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.2.0' => {
+                                          '3.2.1' => {
+                                                       'cef74' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-3.2.0.jar',
+                                                                    'Archive2' => 'metrics-jersey2-3.2.1.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/3.2.0/3.2.1/cef74/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/3.2.0/3.2.1/cef74/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.2.1' => {
+                                          '3.2.2' => {
+                                                       'e821b' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-3.2.1.jar',
+                                                                    'Archive2' => 'metrics-jersey2-3.2.2.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/3.2.1/3.2.2/e821b/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/3.2.1/3.2.2/e821b/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.2.2' => {
+                                          '3.2.3' => {
+                                                       'ad1cc' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-3.2.2.jar',
+                                                                    'Archive2' => 'metrics-jersey2-3.2.3.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/3.2.2/3.2.3/ad1cc/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/3.2.2/3.2.3/ad1cc/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.2.3' => {
+                                          '3.2.4' => {
+                                                       '357a3' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-3.2.3.jar',
+                                                                    'Archive2' => 'metrics-jersey2-3.2.4.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/3.2.3/3.2.4/357a3/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/3.2.3/3.2.4/357a3/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.2.4' => {
+                                          '3.2.5' => {
+                                                       'c8658' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-3.2.4.jar',
+                                                                    'Archive2' => 'metrics-jersey2-3.2.5.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/3.2.4/3.2.5/c8658/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/3.2.4/3.2.5/c8658/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.2.5' => {
+                                          '3.2.6' => {
+                                                       '45021' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-3.2.5.jar',
+                                                                    'Archive2' => 'metrics-jersey2-3.2.6.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/3.2.5/3.2.6/45021/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/3.2.5/3.2.6/45021/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.2.6' => {
+                                          '4.0.0' => {
+                                                       '1fd6e' => {
+                                                                    'Added' => 3,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-3.2.6.jar',
+                                                                    'Archive2' => 'metrics-jersey2-4.0.0.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/3.2.6/4.0.0/1fd6e/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/3.2.6/4.0.0/1fd6e/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.0' => {
+                                          '4.0.1' => {
+                                                       '552aa' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-4.0.0.jar',
+                                                                    'Archive2' => 'metrics-jersey2-4.0.1.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/4.0.0/4.0.1/552aa/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/4.0.0/4.0.1/552aa/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.1' => {
+                                          '4.0.2' => {
+                                                       'bc6e0' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-4.0.1.jar',
+                                                                    'Archive2' => 'metrics-jersey2-4.0.2.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/4.0.1/4.0.2/bc6e0/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/4.0.1/4.0.2/bc6e0/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.2' => {
+                                          '4.0.3' => {
+                                                       'b6a5e' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-4.0.2.jar',
+                                                                    'Archive2' => 'metrics-jersey2-4.0.3.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/4.0.2/4.0.3/b6a5e/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/4.0.2/4.0.3/b6a5e/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.3' => {
+                                          '4.0.4' => {
+                                                       '691f8' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-4.0.3.jar',
+                                                                    'Archive2' => 'metrics-jersey2-4.0.4.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/4.0.3/4.0.4/691f8/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/4.0.3/4.0.4/691f8/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.4' => {
+                                          '4.0.5' => {
+                                                       '787b4' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-4.0.4.jar',
+                                                                    'Archive2' => 'metrics-jersey2-4.0.5.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/4.0.4/4.0.5/787b4/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/4.0.4/4.0.5/787b4/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.5' => {
+                                          '4.0.6' => {
+                                                       '4cbbe' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-4.0.5.jar',
+                                                                    'Archive2' => 'metrics-jersey2-4.0.6.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/4.0.5/4.0.6/4cbbe/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/4.0.5/4.0.6/4cbbe/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.6' => {
+                                          '4.0.7' => {
+                                                       '552e9' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-4.0.6.jar',
+                                                                    'Archive2' => 'metrics-jersey2-4.0.7.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/4.0.6/4.0.7/552e9/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/4.0.6/4.0.7/552e9/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.7' => {
+                                          '4.1.0' => {
+                                                       '33d1d' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-4.0.7.jar',
+                                                                    'Archive2' => 'metrics-jersey2-4.1.0.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/4.0.7/4.1.0/33d1d/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/4.0.7/4.1.0/33d1d/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.0' => {
+                                          '4.1.1' => {
+                                                       '0293d' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-4.1.0.jar',
+                                                                    'Archive2' => 'metrics-jersey2-4.1.1.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/4.1.0/4.1.1/0293d/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.0/4.1.1/0293d/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.1' => {
+                                          '4.1.2' => {
+                                                       'cd30e' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-4.1.1.jar',
+                                                                    'Archive2' => 'metrics-jersey2-4.1.2.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/4.1.1/4.1.2/cd30e/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.1/4.1.2/cd30e/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.10' => {
+                                           '4.1.10.1' => {
+                                                           'b7392' => {
+                                                                        'Added' => 0,
+                                                                        'Affected' => 0,
+                                                                        'Archive1' => 'metrics-jersey2-4.1.10.jar',
+                                                                        'Archive2' => 'metrics-jersey2-4.1.10.1.jar',
+                                                                        'Path' => 'compat_report/metrics-jersey2/4.1.10/4.1.10.1/b7392/bin_compat_report.html',
+                                                                        'Removed' => 0,
+                                                                        'Source_Affected' => 0,
+                                                                        'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.10/4.1.10.1/b7392/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                         },
+                             '4.1.10.1' => {
+                                             '4.1.11' => {
+                                                           '2cc2c' => {
+                                                                        'Added' => 0,
+                                                                        'Affected' => 0,
+                                                                        'Archive1' => 'metrics-jersey2-4.1.10.1.jar',
+                                                                        'Archive2' => 'metrics-jersey2-4.1.11.jar',
+                                                                        'Path' => 'compat_report/metrics-jersey2/4.1.10.1/4.1.11/2cc2c/bin_compat_report.html',
+                                                                        'Removed' => 0,
+                                                                        'Source_Affected' => 0,
+                                                                        'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.10.1/4.1.11/2cc2c/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                           },
+                             '4.1.11' => {
+                                           '4.1.12' => {
+                                                         '11a65' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jersey2-4.1.11.jar',
+                                                                      'Archive2' => 'metrics-jersey2-4.1.12.jar',
+                                                                      'Path' => 'compat_report/metrics-jersey2/4.1.11/4.1.12/11a65/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.11/4.1.12/11a65/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.12' => {
+                                           '4.1.12.1' => {
+                                                           '7bc9f' => {
+                                                                        'Added' => 0,
+                                                                        'Affected' => 0,
+                                                                        'Archive1' => 'metrics-jersey2-4.1.12.jar',
+                                                                        'Archive2' => 'metrics-jersey2-4.1.12.1.jar',
+                                                                        'Path' => 'compat_report/metrics-jersey2/4.1.12/4.1.12.1/7bc9f/bin_compat_report.html',
+                                                                        'Removed' => 0,
+                                                                        'Source_Affected' => 0,
+                                                                        'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.12/4.1.12.1/7bc9f/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                         },
+                             '4.1.12.1' => {
+                                             '4.1.13' => {
+                                                           'a3632' => {
+                                                                        'Added' => 0,
+                                                                        'Affected' => 0,
+                                                                        'Archive1' => 'metrics-jersey2-4.1.12.1.jar',
+                                                                        'Archive2' => 'metrics-jersey2-4.1.13.jar',
+                                                                        'Path' => 'compat_report/metrics-jersey2/4.1.12.1/4.1.13/a3632/bin_compat_report.html',
+                                                                        'Removed' => 0,
+                                                                        'Source_Affected' => 0,
+                                                                        'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.12.1/4.1.13/a3632/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                           },
+                             '4.1.13' => {
+                                           '4.1.14' => {
+                                                         '4ce9f' => {
+                                                                      'Added' => 3,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jersey2-4.1.13.jar',
+                                                                      'Archive2' => 'metrics-jersey2-4.1.14.jar',
+                                                                      'Path' => 'compat_report/metrics-jersey2/4.1.13/4.1.14/4ce9f/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.13/4.1.14/4ce9f/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.14' => {
+                                           '4.1.15' => {
+                                                         '44ed9' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jersey2-4.1.14.jar',
+                                                                      'Archive2' => 'metrics-jersey2-4.1.15.jar',
+                                                                      'Path' => 'compat_report/metrics-jersey2/4.1.14/4.1.15/44ed9/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.14/4.1.15/44ed9/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.15' => {
+                                           '4.1.16' => {
+                                                         '4636f' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jersey2-4.1.15.jar',
+                                                                      'Archive2' => 'metrics-jersey2-4.1.16.jar',
+                                                                      'Path' => 'compat_report/metrics-jersey2/4.1.15/4.1.16/4636f/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.15/4.1.16/4636f/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.16' => {
+                                           '4.1.17' => {
+                                                         '8afc5' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jersey2-4.1.16.jar',
+                                                                      'Archive2' => 'metrics-jersey2-4.1.17.jar',
+                                                                      'Path' => 'compat_report/metrics-jersey2/4.1.16/4.1.17/8afc5/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.16/4.1.17/8afc5/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.17' => {
+                                           '4.1.18' => {
+                                                         '1242b' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jersey2-4.1.17.jar',
+                                                                      'Archive2' => 'metrics-jersey2-4.1.18.jar',
+                                                                      'Path' => 'compat_report/metrics-jersey2/4.1.17/4.1.18/1242b/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.17/4.1.18/1242b/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.18' => {
+                                           '4.1.19' => {
+                                                         '69f44' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jersey2-4.1.18.jar',
+                                                                      'Archive2' => 'metrics-jersey2-4.1.19.jar',
+                                                                      'Path' => 'compat_report/metrics-jersey2/4.1.18/4.1.19/69f44/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.18/4.1.19/69f44/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.19' => {
+                                           '4.1.20' => {
+                                                         '944ad' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jersey2-4.1.19.jar',
+                                                                      'Archive2' => 'metrics-jersey2-4.1.20.jar',
+                                                                      'Path' => 'compat_report/metrics-jersey2/4.1.19/4.1.20/944ad/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.19/4.1.20/944ad/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.2' => {
+                                          '4.1.3' => {
+                                                       'b5cd9' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-4.1.2.jar',
+                                                                    'Archive2' => 'metrics-jersey2-4.1.3.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/4.1.2/4.1.3/b5cd9/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.2/4.1.3/b5cd9/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.20' => {
+                                           '4.1.21' => {
+                                                         '59191' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jersey2-4.1.20.jar',
+                                                                      'Archive2' => 'metrics-jersey2-4.1.21.jar',
+                                                                      'Path' => 'compat_report/metrics-jersey2/4.1.20/4.1.21/59191/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.20/4.1.21/59191/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.21' => {
+                                           '4.1.22' => {
+                                                         'd21ef' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jersey2-4.1.21.jar',
+                                                                      'Archive2' => 'metrics-jersey2-4.1.22.jar',
+                                                                      'Path' => 'compat_report/metrics-jersey2/4.1.21/4.1.22/d21ef/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.21/4.1.22/d21ef/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.22' => {
+                                           '4.1.23' => {
+                                                         '9e069' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jersey2-4.1.22.jar',
+                                                                      'Archive2' => 'metrics-jersey2-4.1.23.jar',
+                                                                      'Path' => 'compat_report/metrics-jersey2/4.1.22/4.1.23/9e069/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.22/4.1.23/9e069/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.23' => {
+                                           '4.1.24' => {
+                                                         '59de5' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jersey2-4.1.23.jar',
+                                                                      'Archive2' => 'metrics-jersey2-4.1.24.jar',
+                                                                      'Path' => 'compat_report/metrics-jersey2/4.1.23/4.1.24/59de5/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.23/4.1.24/59de5/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.24' => {
+                                           '4.1.25' => {
+                                                         '6ab40' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jersey2-4.1.24.jar',
+                                                                      'Archive2' => 'metrics-jersey2-4.1.25.jar',
+                                                                      'Path' => 'compat_report/metrics-jersey2/4.1.24/4.1.25/6ab40/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.24/4.1.25/6ab40/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.25' => {
+                                           '4.2.0' => {
+                                                        '3d4a6' => {
+                                                                     'Added' => 0,
+                                                                     'Affected' => 0,
+                                                                     'Archive1' => 'metrics-jersey2-4.1.25.jar',
+                                                                     'Archive2' => 'metrics-jersey2-4.2.0.jar',
+                                                                     'Path' => 'compat_report/metrics-jersey2/4.1.25/4.2.0/3d4a6/bin_compat_report.html',
+                                                                     'Removed' => 0,
+                                                                     'Source_Affected' => 0,
+                                                                     'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.25/4.2.0/3d4a6/src_compat_report.html',
+                                                                     'Source_TotalProblems' => 0,
+                                                                     'TotalProblems' => 0
+                                                                   }
+                                                      }
+                                         },
+                             '4.1.3' => {
+                                          '4.1.4' => {
+                                                       '1bb69' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-4.1.3.jar',
+                                                                    'Archive2' => 'metrics-jersey2-4.1.4.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/4.1.3/4.1.4/1bb69/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.3/4.1.4/1bb69/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.4' => {
+                                          '4.1.5' => {
+                                                       'c9efc' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-4.1.4.jar',
+                                                                    'Archive2' => 'metrics-jersey2-4.1.5.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/4.1.4/4.1.5/c9efc/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.4/4.1.5/c9efc/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.5' => {
+                                          '4.1.6' => {
+                                                       '79e40' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-4.1.5.jar',
+                                                                    'Archive2' => 'metrics-jersey2-4.1.6.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/4.1.5/4.1.6/79e40/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.5/4.1.6/79e40/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.6' => {
+                                          '4.1.7' => {
+                                                       '9bb73' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-4.1.6.jar',
+                                                                    'Archive2' => 'metrics-jersey2-4.1.7.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/4.1.6/4.1.7/9bb73/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.6/4.1.7/9bb73/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.7' => {
+                                          '4.1.8' => {
+                                                       'e4348' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-4.1.7.jar',
+                                                                    'Archive2' => 'metrics-jersey2-4.1.8.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/4.1.7/4.1.8/e4348/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.7/4.1.8/e4348/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.8' => {
+                                          '4.1.9' => {
+                                                       '222d9' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-4.1.8.jar',
+                                                                    'Archive2' => 'metrics-jersey2-4.1.9.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/4.1.8/4.1.9/222d9/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.8/4.1.9/222d9/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.9' => {
+                                          '4.1.10' => {
+                                                        'cf923' => {
+                                                                     'Added' => 0,
+                                                                     'Affected' => 0,
+                                                                     'Archive1' => 'metrics-jersey2-4.1.9.jar',
+                                                                     'Archive2' => 'metrics-jersey2-4.1.10.jar',
+                                                                     'Path' => 'compat_report/metrics-jersey2/4.1.9/4.1.10/cf923/bin_compat_report.html',
+                                                                     'Removed' => 0,
+                                                                     'Source_Affected' => 0,
+                                                                     'Source_ReportPath' => 'compat_report/metrics-jersey2/4.1.9/4.1.10/cf923/src_compat_report.html',
+                                                                     'Source_TotalProblems' => 0,
+                                                                     'TotalProblems' => 0
+                                                                   }
+                                                      }
+                                        },
+                             '4.2.0' => {
+                                          '4.2.1' => {
+                                                       '1333e' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-4.2.0.jar',
+                                                                    'Archive2' => 'metrics-jersey2-4.2.1.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/4.2.0/4.2.1/1333e/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/4.2.0/4.2.1/1333e/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.2.1' => {
+                                          '4.2.2' => {
+                                                       '30646' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-4.2.1.jar',
+                                                                    'Archive2' => 'metrics-jersey2-4.2.2.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/4.2.1/4.2.2/30646/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/4.2.1/4.2.2/30646/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.2.2' => {
+                                          '4.2.3' => {
+                                                       '79b7e' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jersey2-4.2.2.jar',
+                                                                    'Archive2' => 'metrics-jersey2-4.2.3.jar',
+                                                                    'Path' => 'compat_report/metrics-jersey2/4.2.2/4.2.3/79b7e/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jersey2/4.2.2/4.2.3/79b7e/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        }
+                           },
+          'Changelog' => {},
+          'Date' => {
+                      '3.1.0' => '04-2014-09 11:03',
+                      '3.1.1' => '06-2015-03 20:37',
+                      '3.1.2' => '26-2015-04 00:00',
+                      '3.1.3' => '24-2017-02 15:00',
+                      '3.1.4' => '10-2017-03 14:28',
+                      '3.1.5' => '02-2017-06 20:04',
+                      '3.2.0' => '24-2017-02 15:23',
+                      '3.2.1' => '10-2017-03 16:45',
+                      '3.2.2' => '20-2017-03 15:22',
+                      '3.2.3' => '28-2017-06 10:03',
+                      '3.2.4' => '03-2017-08 20:07',
+                      '3.2.5' => '15-2017-09 10:43',
+                      '3.2.6' => '24-2017-12 21:57',
+                      '4.0.0' => '24-2017-12 21:40',
+                      '4.0.1' => '03-2018-01 18:32',
+                      '4.0.2' => '05-2018-01 19:56',
+                      '4.0.3' => '19-2018-07 00:34',
+                      '4.0.4' => '26-2018-12 19:43',
+                      '4.0.5' => '27-2018-12 20:15',
+                      '4.0.6' => '10-2019-08 12:43',
+                      '4.0.7' => '19-2019-10 15:32',
+                      '4.1.0' => '05-2019-05 22:41',
+                      '4.1.1' => '19-2019-10 13:14',
+                      '4.1.10' => '03-2020-07 07:45',
+                      '4.1.10.1' => '04-2020-07 08:35',
+                      '4.1.11' => '01-1980-02 00:00',
+                      '4.1.12' => '01-1980-02 00:00',
+                      '4.1.12.1' => '01-1980-02 00:00',
+                      '4.1.13' => '01-1980-02 00:00',
+                      '4.1.14' => '01-1980-02 00:00',
+                      '4.1.15' => '01-1980-02 00:00',
+                      '4.1.16' => '01-1980-02 00:00',
+                      '4.1.17' => '01-1980-02 00:00',
+                      '4.1.18' => '01-1980-02 00:00',
+                      '4.1.19' => '01-1980-02 00:00',
+                      '4.1.2' => '07-2019-12 13:51',
+                      '4.1.20' => '01-1980-02 00:00',
+                      '4.1.21' => '01-1980-02 00:00',
+                      '4.1.22' => '01-1980-02 00:00',
+                      '4.1.23' => '01-1980-02 00:00',
+                      '4.1.24' => '01-1980-02 00:00',
+                      '4.1.25' => '01-1980-02 00:00',
+                      '4.1.3' => '24-2020-02 00:49',
+                      '4.1.4' => '27-2020-02 15:39',
+                      '4.1.5' => '09-2020-03 07:27',
+                      '4.1.6' => '09-2020-04 18:59',
+                      '4.1.7' => '02-2020-05 21:22',
+                      '4.1.8' => '14-2020-05 20:14',
+                      '4.1.9' => '24-2020-05 13:55',
+                      '4.2.0' => '01-1980-02 00:00',
+                      '4.2.1' => '01-1980-02 00:00',
+                      '4.2.2' => '01-1980-02 00:00',
+                      '4.2.3' => '01-1980-02 00:00'
+                    },
+          'Maintainer' => 'Dropwizard Metrics Committers',
+          'MaintainerUrl' => 'https://metrics.dropwizard.io/',
+          'PackageDiff' => {
+                             '3.1.0' => {
+                                          '3.1.1' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jersey2/3.1.0/3.1.1/report.html'
+                                                     }
+                                        },
+                             '3.1.1' => {
+                                          '3.1.2' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jersey2/3.1.1/3.1.2/report.html'
+                                                     }
+                                        },
+                             '3.1.2' => {
+                                          '3.1.3' => {
+                                                       'Changed' => '19.3',
+                                                       'Path' => 'package_diff/metrics-jersey2/3.1.2/3.1.3/report.html'
+                                                     }
+                                        },
+                             '3.1.3' => {
+                                          '3.1.4' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-jersey2/3.1.3/3.1.4/report.html'
+                                                     }
+                                        },
+                             '3.1.4' => {
+                                          '3.1.5' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-jersey2/3.1.4/3.1.5/report.html'
+                                                     }
+                                        },
+                             '3.1.5' => {
+                                          '3.2.0' => {
+                                                       'Changed' => '0.7',
+                                                       'Path' => 'package_diff/metrics-jersey2/3.1.5/3.2.0/report.html'
+                                                     }
+                                        },
+                             '3.2.0' => {
+                                          '3.2.1' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-jersey2/3.2.0/3.2.1/report.html'
+                                                     }
+                                        },
+                             '3.2.1' => {
+                                          '3.2.2' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-jersey2/3.2.1/3.2.2/report.html'
+                                                     }
+                                        },
+                             '3.2.2' => {
+                                          '3.2.3' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-jersey2/3.2.2/3.2.3/report.html'
+                                                     }
+                                        },
+                             '3.2.3' => {
+                                          '3.2.4' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-jersey2/3.2.3/3.2.4/report.html'
+                                                     }
+                                        },
+                             '3.2.4' => {
+                                          '3.2.5' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-jersey2/3.2.4/3.2.5/report.html'
+                                                     }
+                                        },
+                             '3.2.5' => {
+                                          '3.2.6' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-jersey2/3.2.5/3.2.6/report.html'
+                                                     }
+                                        },
+                             '3.2.6' => {
+                                          '4.0.0' => {
+                                                       'Changed' => '21.5',
+                                                       'Path' => 'package_diff/metrics-jersey2/3.2.6/4.0.0/report.html'
+                                                     }
+                                        },
+                             '4.0.0' => {
+                                          '4.0.1' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jersey2/4.0.0/4.0.1/report.html'
+                                                     }
+                                        },
+                             '4.0.1' => {
+                                          '4.0.2' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jersey2/4.0.1/4.0.2/report.html'
+                                                     }
+                                        },
+                             '4.0.2' => {
+                                          '4.0.3' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jersey2/4.0.2/4.0.3/report.html'
+                                                     }
+                                        },
+                             '4.0.3' => {
+                                          '4.0.4' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jersey2/4.0.3/4.0.4/report.html'
+                                                     }
+                                        },
+                             '4.0.4' => {
+                                          '4.0.5' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-jersey2/4.0.4/4.0.5/report.html'
+                                                     }
+                                        },
+                             '4.0.5' => {
+                                          '4.0.6' => {
+                                                       'Changed' => '0.5',
+                                                       'Path' => 'package_diff/metrics-jersey2/4.0.5/4.0.6/report.html'
+                                                     }
+                                        },
+                             '4.0.6' => {
+                                          '4.0.7' => {
+                                                       'Changed' => '0.5',
+                                                       'Path' => 'package_diff/metrics-jersey2/4.0.6/4.0.7/report.html'
+                                                     }
+                                        },
+                             '4.0.7' => {
+                                          '4.1.0' => {
+                                                       'Changed' => '1.6',
+                                                       'Path' => 'package_diff/metrics-jersey2/4.0.7/4.1.0/report.html'
+                                                     }
+                                        },
+                             '4.1.0' => {
+                                          '4.1.1' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-jersey2/4.1.0/4.1.1/report.html'
+                                                     }
+                                        },
+                             '4.1.1' => {
+                                          '4.1.2' => {
+                                                       'Changed' => '1.1',
+                                                       'Path' => 'package_diff/metrics-jersey2/4.1.1/4.1.2/report.html'
+                                                     }
+                                        },
+                             '4.1.10' => {
+                                           '4.1.10.1' => {
+                                                           'Changed' => '0.2',
+                                                           'Path' => 'package_diff/metrics-jersey2/4.1.10/4.1.10.1/report.html'
+                                                         }
+                                         },
+                             '4.1.10.1' => {
+                                             '4.1.11' => {
+                                                           'Changed' => '0.7',
+                                                           'Path' => 'package_diff/metrics-jersey2/4.1.10.1/4.1.11/report.html'
+                                                         }
+                                           },
+                             '4.1.11' => {
+                                           '4.1.12' => {
+                                                         'Changed' => '0.3',
+                                                         'Path' => 'package_diff/metrics-jersey2/4.1.11/4.1.12/report.html'
+                                                       }
+                                         },
+                             '4.1.12' => {
+                                           '4.1.12.1' => {
+                                                           'Changed' => '0.2',
+                                                           'Path' => 'package_diff/metrics-jersey2/4.1.12/4.1.12.1/report.html'
+                                                         }
+                                         },
+                             '4.1.12.1' => {
+                                             '4.1.13' => {
+                                                           'Changed' => '0.5',
+                                                           'Path' => 'package_diff/metrics-jersey2/4.1.12.1/4.1.13/report.html'
+                                                         }
+                                           },
+                             '4.1.13' => {
+                                           '4.1.14' => {
+                                                         'Changed' => '4.8',
+                                                         'Path' => 'package_diff/metrics-jersey2/4.1.13/4.1.14/report.html'
+                                                       }
+                                         },
+                             '4.1.14' => {
+                                           '4.1.15' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jersey2/4.1.14/4.1.15/report.html'
+                                                       }
+                                         },
+                             '4.1.15' => {
+                                           '4.1.16' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jersey2/4.1.15/4.1.16/report.html'
+                                                       }
+                                         },
+                             '4.1.16' => {
+                                           '4.1.17' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jersey2/4.1.16/4.1.17/report.html'
+                                                       }
+                                         },
+                             '4.1.17' => {
+                                           '4.1.18' => {
+                                                         'Changed' => '0.4',
+                                                         'Path' => 'package_diff/metrics-jersey2/4.1.17/4.1.18/report.html'
+                                                       }
+                                         },
+                             '4.1.18' => {
+                                           '4.1.19' => {
+                                                         'Changed' => '0.4',
+                                                         'Path' => 'package_diff/metrics-jersey2/4.1.18/4.1.19/report.html'
+                                                       }
+                                         },
+                             '4.1.19' => {
+                                           '4.1.20' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jersey2/4.1.19/4.1.20/report.html'
+                                                       }
+                                         },
+                             '4.1.2' => {
+                                          '4.1.3' => {
+                                                       'Changed' => '0.8',
+                                                       'Path' => 'package_diff/metrics-jersey2/4.1.2/4.1.3/report.html'
+                                                     }
+                                        },
+                             '4.1.20' => {
+                                           '4.1.21' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jersey2/4.1.20/4.1.21/report.html'
+                                                       }
+                                         },
+                             '4.1.21' => {
+                                           '4.1.22' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jersey2/4.1.21/4.1.22/report.html'
+                                                       }
+                                         },
+                             '4.1.22' => {
+                                           '4.1.23' => {
+                                                         'Changed' => '1.6',
+                                                         'Path' => 'package_diff/metrics-jersey2/4.1.22/4.1.23/report.html'
+                                                       }
+                                         },
+                             '4.1.23' => {
+                                           '4.1.24' => {
+                                                         'Changed' => '0.4',
+                                                         'Path' => 'package_diff/metrics-jersey2/4.1.23/4.1.24/report.html'
+                                                       }
+                                         },
+                             '4.1.24' => {
+                                           '4.1.25' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jersey2/4.1.24/4.1.25/report.html'
+                                                       }
+                                         },
+                             '4.1.25' => {
+                                           '4.2.0' => {
+                                                        'Changed' => '2.2',
+                                                        'Path' => 'package_diff/metrics-jersey2/4.1.25/4.2.0/report.html'
+                                                      }
+                                         },
+                             '4.1.3' => {
+                                          '4.1.4' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jersey2/4.1.3/4.1.4/report.html'
+                                                     }
+                                        },
+                             '4.1.4' => {
+                                          '4.1.5' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jersey2/4.1.4/4.1.5/report.html'
+                                                     }
+                                        },
+                             '4.1.5' => {
+                                          '4.1.6' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jersey2/4.1.5/4.1.6/report.html'
+                                                     }
+                                        },
+                             '4.1.6' => {
+                                          '4.1.7' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jersey2/4.1.6/4.1.7/report.html'
+                                                     }
+                                        },
+                             '4.1.7' => {
+                                          '4.1.8' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jersey2/4.1.7/4.1.8/report.html'
+                                                     }
+                                        },
+                             '4.1.8' => {
+                                          '4.1.9' => {
+                                                       'Changed' => '0.5',
+                                                       'Path' => 'package_diff/metrics-jersey2/4.1.8/4.1.9/report.html'
+                                                     }
+                                        },
+                             '4.1.9' => {
+                                          '4.1.10' => {
+                                                        'Changed' => '0.3',
+                                                        'Path' => 'package_diff/metrics-jersey2/4.1.9/4.1.10/report.html'
+                                                      }
+                                        },
+                             '4.2.0' => {
+                                          '4.2.1' => {
+                                                       'Changed' => '1.6',
+                                                       'Path' => 'package_diff/metrics-jersey2/4.2.0/4.2.1/report.html'
+                                                     }
+                                        },
+                             '4.2.1' => {
+                                          '4.2.2' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-jersey2/4.2.1/4.2.2/report.html'
+                                                     }
+                                        },
+                             '4.2.2' => {
+                                          '4.2.3' => {
+                                                       'Changed' => '0.2',
+                                                       'Path' => 'package_diff/metrics-jersey2/4.2.2/4.2.3/report.html'
+                                                     }
+                                        }
+                           },
+          'Title' => 'Metrics Integration for Jersey 2.x'
+        };

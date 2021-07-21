@@ -1,0 +1,208 @@
+$VAR1 = {
+          'APIDump' => {
+                         '1.3.11-2' => {
+                                         'fb29d' => {
+                                                      'Archive' => 'dropwizard-foundationdb-1.3.11-2.jar',
+                                                      'Path' => 'api_dump/dropwizard-foundationdb/1.3.11-2/fb29d/API.dump.tar.gz',
+                                                      'TotalSymbols' => '109'
+                                                    }
+                                       },
+                         '1.3.12-1' => {
+                                         'c5f7a' => {
+                                                      'Archive' => 'dropwizard-foundationdb-1.3.12-1.jar',
+                                                      'Path' => 'api_dump/dropwizard-foundationdb/1.3.12-1/c5f7a/API.dump.tar.gz',
+                                                      'TotalSymbols' => '118'
+                                                    }
+                                       },
+                         '1.3.15-1' => {
+                                         '05839' => {
+                                                      'Archive' => 'dropwizard-foundationdb-1.3.15-1.jar',
+                                                      'Path' => 'api_dump/dropwizard-foundationdb/1.3.15-1/05839/API.dump.tar.gz',
+                                                      'TotalSymbols' => '118'
+                                                    }
+                                       },
+                         '1.4.0' => {
+                                      'b9f9b' => {
+                                                   'Archive' => 'dropwizard-foundationdb-1.4.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-foundationdb/1.4.0/b9f9b/API.dump.tar.gz',
+                                                   'TotalSymbols' => '118'
+                                                 }
+                                    },
+                         '1.5.0' => {
+                                      '45b52' => {
+                                                   'Archive' => 'dropwizard-foundationdb-1.5.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-foundationdb/1.5.0/45b52/API.dump.tar.gz',
+                                                   'TotalSymbols' => '118'
+                                                 }
+                                    }
+                       },
+          'APIReport' => {
+                           '1.3.11-2' => {
+                                           '1.3.12-1' => {
+                                                           'Added' => 9,
+                                                           'ArchivesAdded' => 0,
+                                                           'ArchivesAddedSymbols' => 0,
+                                                           'ArchivesRemoved' => 0,
+                                                           'ArchivesRemovedSymbols' => 0,
+                                                           'BC' => 100,
+                                                           'Path' => 'archives_report/dropwizard-foundationdb/1.3.11-2/1.3.12-1/report.html',
+                                                           'Removed' => 0,
+                                                           'Source_BC' => 100,
+                                                           'Source_TotalProblems' => 0,
+                                                           'TotalArchives' => 1,
+                                                           'TotalProblems' => 0
+                                                         }
+                                         },
+                           '1.3.12-1' => {
+                                           '1.3.15-1' => {
+                                                           'Added' => 0,
+                                                           'ArchivesAdded' => 0,
+                                                           'ArchivesAddedSymbols' => 0,
+                                                           'ArchivesRemoved' => 0,
+                                                           'ArchivesRemovedSymbols' => 0,
+                                                           'BC' => 100,
+                                                           'Path' => 'archives_report/dropwizard-foundationdb/1.3.12-1/1.3.15-1/report.html',
+                                                           'Removed' => 0,
+                                                           'Source_BC' => 100,
+                                                           'Source_TotalProblems' => 0,
+                                                           'TotalArchives' => 1,
+                                                           'TotalProblems' => 0
+                                                         }
+                                         },
+                           '1.3.15-1' => {
+                                           '1.4.0' => {
+                                                        'Added' => 0,
+                                                        'ArchivesAdded' => 0,
+                                                        'ArchivesAddedSymbols' => 0,
+                                                        'ArchivesRemoved' => 0,
+                                                        'ArchivesRemovedSymbols' => 0,
+                                                        'BC' => 100,
+                                                        'Path' => 'archives_report/dropwizard-foundationdb/1.3.15-1/1.4.0/report.html',
+                                                        'Removed' => 0,
+                                                        'Source_BC' => 100,
+                                                        'Source_TotalProblems' => 0,
+                                                        'TotalArchives' => 1,
+                                                        'TotalProblems' => 0
+                                                      }
+                                         },
+                           '1.4.0' => {
+                                        '1.5.0' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-foundationdb/1.4.0/1.5.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      }
+                         },
+          'APIReport_D' => {
+                             '1.3.11-2' => {
+                                             '1.3.12-1' => {
+                                                             'e6988' => {
+                                                                          'Added' => 9,
+                                                                          'Affected' => 0,
+                                                                          'Archive1' => 'dropwizard-foundationdb-1.3.11-2.jar',
+                                                                          'Archive2' => 'dropwizard-foundationdb-1.3.12-1.jar',
+                                                                          'Path' => 'compat_report/dropwizard-foundationdb/1.3.11-2/1.3.12-1/e6988/bin_compat_report.html',
+                                                                          'Removed' => 0,
+                                                                          'Source_Affected' => 0,
+                                                                          'Source_ReportPath' => 'compat_report/dropwizard-foundationdb/1.3.11-2/1.3.12-1/e6988/src_compat_report.html',
+                                                                          'Source_TotalProblems' => 0,
+                                                                          'TotalProblems' => 0
+                                                                        }
+                                                           }
+                                           },
+                             '1.3.12-1' => {
+                                             '1.3.15-1' => {
+                                                             '77fad' => {
+                                                                          'Added' => 0,
+                                                                          'Affected' => 0,
+                                                                          'Archive1' => 'dropwizard-foundationdb-1.3.12-1.jar',
+                                                                          'Archive2' => 'dropwizard-foundationdb-1.3.15-1.jar',
+                                                                          'Path' => 'compat_report/dropwizard-foundationdb/1.3.12-1/1.3.15-1/77fad/bin_compat_report.html',
+                                                                          'Removed' => 0,
+                                                                          'Source_Affected' => 0,
+                                                                          'Source_ReportPath' => 'compat_report/dropwizard-foundationdb/1.3.12-1/1.3.15-1/77fad/src_compat_report.html',
+                                                                          'Source_TotalProblems' => 0,
+                                                                          'TotalProblems' => 0
+                                                                        }
+                                                           }
+                                           },
+                             '1.3.15-1' => {
+                                             '1.4.0' => {
+                                                          '32b75' => {
+                                                                       'Added' => 0,
+                                                                       'Affected' => 0,
+                                                                       'Archive1' => 'dropwizard-foundationdb-1.3.15-1.jar',
+                                                                       'Archive2' => 'dropwizard-foundationdb-1.4.0.jar',
+                                                                       'Path' => 'compat_report/dropwizard-foundationdb/1.3.15-1/1.4.0/32b75/bin_compat_report.html',
+                                                                       'Removed' => 0,
+                                                                       'Source_Affected' => 0,
+                                                                       'Source_ReportPath' => 'compat_report/dropwizard-foundationdb/1.3.15-1/1.4.0/32b75/src_compat_report.html',
+                                                                       'Source_TotalProblems' => 0,
+                                                                       'TotalProblems' => 0
+                                                                     }
+                                                        }
+                                           },
+                             '1.4.0' => {
+                                          '1.5.0' => {
+                                                       '210bc' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-foundationdb-1.4.0.jar',
+                                                                    'Archive2' => 'dropwizard-foundationdb-1.5.0.jar',
+                                                                    'Path' => 'compat_report/dropwizard-foundationdb/1.4.0/1.5.0/210bc/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-foundationdb/1.4.0/1.5.0/210bc/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        }
+                           },
+          'Changelog' => {},
+          'Date' => {
+                      '1.3.11-2' => '25-2019-05 17:10',
+                      '1.3.12-1' => '14-2019-06 18:08',
+                      '1.3.15-1' => '30-2019-09 18:40',
+                      '1.4.0' => '11-2019-11 21:33',
+                      '1.5.0' => '05-2020-01 21:38'
+                    },
+          'Maintainer' => 'Dropwizard Committers',
+          'MaintainerUrl' => 'https://www.dropwizard.io/',
+          'PackageDiff' => {
+                             '1.3.11-2' => {
+                                             '1.3.12-1' => {
+                                                             'Changed' => '6.8',
+                                                             'Path' => 'package_diff/dropwizard-foundationdb/1.3.11-2/1.3.12-1/report.html'
+                                                           }
+                                           },
+                             '1.3.12-1' => {
+                                             '1.3.15-1' => {
+                                                             'Changed' => '0.8',
+                                                             'Path' => 'package_diff/dropwizard-foundationdb/1.3.12-1/1.3.15-1/report.html'
+                                                           }
+                                           },
+                             '1.3.15-1' => {
+                                             '1.4.0' => {
+                                                          'Changed' => '0.3',
+                                                          'Path' => 'package_diff/dropwizard-foundationdb/1.3.15-1/1.4.0/report.html'
+                                                        }
+                                           },
+                             '1.4.0' => {
+                                          '1.5.0' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/dropwizard-foundationdb/1.4.0/1.5.0/report.html'
+                                                     }
+                                        }
+                           },
+          'Title' => 'Dropwizard FoundationDB'
+        };

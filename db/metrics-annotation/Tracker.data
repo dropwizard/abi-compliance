@@ -1,0 +1,1583 @@
+$VAR1 = {
+          'APIDump' => {
+                         '3.1.0' => {
+                                      'eb18a' => {
+                                                   'Archive' => 'metrics-annotation-3.1.0.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/3.1.0/eb18a/API.dump.tar.gz',
+                                                   'TotalSymbols' => '18'
+                                                 }
+                                    },
+                         '3.1.1' => {
+                                      '6ca6f' => {
+                                                   'Archive' => 'metrics-annotation-3.1.1.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/3.1.1/6ca6f/API.dump.tar.gz',
+                                                   'TotalSymbols' => '18'
+                                                 }
+                                    },
+                         '3.1.2' => {
+                                      'e3695' => {
+                                                   'Archive' => 'metrics-annotation-3.1.2.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/3.1.2/e3695/API.dump.tar.gz',
+                                                   'TotalSymbols' => '18'
+                                                 }
+                                    },
+                         '3.1.3' => {
+                                      '2c35f' => {
+                                                   'Archive' => 'metrics-annotation-3.1.3.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/3.1.3/2c35f/API.dump.tar.gz',
+                                                   'TotalSymbols' => '18'
+                                                 }
+                                    },
+                         '3.1.4' => {
+                                      'a3f3a' => {
+                                                   'Archive' => 'metrics-annotation-3.1.4.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/3.1.4/a3f3a/API.dump.tar.gz',
+                                                   'TotalSymbols' => '18'
+                                                 }
+                                    },
+                         '3.1.5' => {
+                                      'b48de' => {
+                                                   'Archive' => 'metrics-annotation-3.1.5.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/3.1.5/b48de/API.dump.tar.gz',
+                                                   'TotalSymbols' => '18'
+                                                 }
+                                    },
+                         '3.2.0' => {
+                                      'e0d1b' => {
+                                                   'Archive' => 'metrics-annotation-3.2.0.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/3.2.0/e0d1b/API.dump.tar.gz',
+                                                   'TotalSymbols' => '18'
+                                                 }
+                                    },
+                         '3.2.1' => {
+                                      'e2258' => {
+                                                   'Archive' => 'metrics-annotation-3.2.1.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/3.2.1/e2258/API.dump.tar.gz',
+                                                   'TotalSymbols' => '18'
+                                                 }
+                                    },
+                         '3.2.2' => {
+                                      'bb499' => {
+                                                   'Archive' => 'metrics-annotation-3.2.2.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/3.2.2/bb499/API.dump.tar.gz',
+                                                   'TotalSymbols' => '18'
+                                                 }
+                                    },
+                         '3.2.3' => {
+                                      '22fa1' => {
+                                                   'Archive' => 'metrics-annotation-3.2.3.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/3.2.3/22fa1/API.dump.tar.gz',
+                                                   'TotalSymbols' => '18'
+                                                 }
+                                    },
+                         '3.2.4' => {
+                                      '1e06c' => {
+                                                   'Archive' => 'metrics-annotation-3.2.4.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/3.2.4/1e06c/API.dump.tar.gz',
+                                                   'TotalSymbols' => '18'
+                                                 }
+                                    },
+                         '3.2.5' => {
+                                      '5c80b' => {
+                                                   'Archive' => 'metrics-annotation-3.2.5.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/3.2.5/5c80b/API.dump.tar.gz',
+                                                   'TotalSymbols' => '18'
+                                                 }
+                                    },
+                         '3.2.6' => {
+                                      '8f210' => {
+                                                   'Archive' => 'metrics-annotation-3.2.6.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/3.2.6/8f210/API.dump.tar.gz',
+                                                   'TotalSymbols' => '18'
+                                                 }
+                                    },
+                         '4.0.0' => {
+                                      'dc402' => {
+                                                   'Archive' => 'metrics-annotation-4.0.0.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/4.0.0/dc402/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '4.0.1' => {
+                                      '2bb1c' => {
+                                                   'Archive' => 'metrics-annotation-4.0.1.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/4.0.1/2bb1c/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '4.0.2' => {
+                                      '9a7bc' => {
+                                                   'Archive' => 'metrics-annotation-4.0.2.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/4.0.2/9a7bc/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '4.0.3' => {
+                                      '6c8db' => {
+                                                   'Archive' => 'metrics-annotation-4.0.3.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/4.0.3/6c8db/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '4.0.4' => {
+                                      '7983b' => {
+                                                   'Archive' => 'metrics-annotation-4.0.4.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/4.0.4/7983b/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '4.0.5' => {
+                                      'a31fc' => {
+                                                   'Archive' => 'metrics-annotation-4.0.5.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/4.0.5/a31fc/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '4.0.6' => {
+                                      'b69a5' => {
+                                                   'Archive' => 'metrics-annotation-4.0.6.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/4.0.6/b69a5/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '4.0.7' => {
+                                      'ab272' => {
+                                                   'Archive' => 'metrics-annotation-4.0.7.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/4.0.7/ab272/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '4.1.0' => {
+                                      'd9c58' => {
+                                                   'Archive' => 'metrics-annotation-4.1.0.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/4.1.0/d9c58/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '4.1.1' => {
+                                      '0ef4e' => {
+                                                   'Archive' => 'metrics-annotation-4.1.1.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/4.1.1/0ef4e/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '4.1.10' => {
+                                       '4b876' => {
+                                                    'Archive' => 'metrics-annotation-4.1.10.jar',
+                                                    'Path' => 'api_dump/metrics-annotation/4.1.10/4b876/API.dump.tar.gz',
+                                                    'TotalSymbols' => '20'
+                                                  }
+                                     },
+                         '4.1.10.1' => {
+                                         '069c8' => {
+                                                      'Archive' => 'metrics-annotation-4.1.10.1.jar',
+                                                      'Path' => 'api_dump/metrics-annotation/4.1.10.1/069c8/API.dump.tar.gz',
+                                                      'TotalSymbols' => '20'
+                                                    }
+                                       },
+                         '4.1.11' => {
+                                       '82682' => {
+                                                    'Archive' => 'metrics-annotation-4.1.11.jar',
+                                                    'Path' => 'api_dump/metrics-annotation/4.1.11/82682/API.dump.tar.gz',
+                                                    'TotalSymbols' => '20'
+                                                  }
+                                     },
+                         '4.1.12' => {
+                                       '9ab9b' => {
+                                                    'Archive' => 'metrics-annotation-4.1.12.jar',
+                                                    'Path' => 'api_dump/metrics-annotation/4.1.12/9ab9b/API.dump.tar.gz',
+                                                    'TotalSymbols' => '20'
+                                                  }
+                                     },
+                         '4.1.12.1' => {
+                                         'ca9a5' => {
+                                                      'Archive' => 'metrics-annotation-4.1.12.1.jar',
+                                                      'Path' => 'api_dump/metrics-annotation/4.1.12.1/ca9a5/API.dump.tar.gz',
+                                                      'TotalSymbols' => '20'
+                                                    }
+                                       },
+                         '4.1.13' => {
+                                       'd4d7e' => {
+                                                    'Archive' => 'metrics-annotation-4.1.13.jar',
+                                                    'Path' => 'api_dump/metrics-annotation/4.1.13/d4d7e/API.dump.tar.gz',
+                                                    'TotalSymbols' => '20'
+                                                  }
+                                     },
+                         '4.1.14' => {
+                                       '2ab57' => {
+                                                    'Archive' => 'metrics-annotation-4.1.14.jar',
+                                                    'Path' => 'api_dump/metrics-annotation/4.1.14/2ab57/API.dump.tar.gz',
+                                                    'TotalSymbols' => '20'
+                                                  }
+                                     },
+                         '4.1.15' => {
+                                       'd06ef' => {
+                                                    'Archive' => 'metrics-annotation-4.1.15.jar',
+                                                    'Path' => 'api_dump/metrics-annotation/4.1.15/d06ef/API.dump.tar.gz',
+                                                    'TotalSymbols' => '20'
+                                                  }
+                                     },
+                         '4.1.16' => {
+                                       'c323c' => {
+                                                    'Archive' => 'metrics-annotation-4.1.16.jar',
+                                                    'Path' => 'api_dump/metrics-annotation/4.1.16/c323c/API.dump.tar.gz',
+                                                    'TotalSymbols' => '20'
+                                                  }
+                                     },
+                         '4.1.17' => {
+                                       '021f5' => {
+                                                    'Archive' => 'metrics-annotation-4.1.17.jar',
+                                                    'Path' => 'api_dump/metrics-annotation/4.1.17/021f5/API.dump.tar.gz',
+                                                    'TotalSymbols' => '20'
+                                                  }
+                                     },
+                         '4.1.18' => {
+                                       'eba48' => {
+                                                    'Archive' => 'metrics-annotation-4.1.18.jar',
+                                                    'Path' => 'api_dump/metrics-annotation/4.1.18/eba48/API.dump.tar.gz',
+                                                    'TotalSymbols' => '20'
+                                                  }
+                                     },
+                         '4.1.19' => {
+                                       '78d7a' => {
+                                                    'Archive' => 'metrics-annotation-4.1.19.jar',
+                                                    'Path' => 'api_dump/metrics-annotation/4.1.19/78d7a/API.dump.tar.gz',
+                                                    'TotalSymbols' => '20'
+                                                  }
+                                     },
+                         '4.1.2' => {
+                                      '70d27' => {
+                                                   'Archive' => 'metrics-annotation-4.1.2.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/4.1.2/70d27/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '4.1.20' => {
+                                       '890d4' => {
+                                                    'Archive' => 'metrics-annotation-4.1.20.jar',
+                                                    'Path' => 'api_dump/metrics-annotation/4.1.20/890d4/API.dump.tar.gz',
+                                                    'TotalSymbols' => '20'
+                                                  }
+                                     },
+                         '4.1.21' => {
+                                       '2d5c0' => {
+                                                    'Archive' => 'metrics-annotation-4.1.21.jar',
+                                                    'Path' => 'api_dump/metrics-annotation/4.1.21/2d5c0/API.dump.tar.gz',
+                                                    'TotalSymbols' => '20'
+                                                  }
+                                     },
+                         '4.1.22' => {
+                                       'afe1e' => {
+                                                    'Archive' => 'metrics-annotation-4.1.22.jar',
+                                                    'Path' => 'api_dump/metrics-annotation/4.1.22/afe1e/API.dump.tar.gz',
+                                                    'TotalSymbols' => '20'
+                                                  }
+                                     },
+                         '4.1.23' => {
+                                       '427f2' => {
+                                                    'Archive' => 'metrics-annotation-4.1.23.jar',
+                                                    'Path' => 'api_dump/metrics-annotation/4.1.23/427f2/API.dump.tar.gz',
+                                                    'TotalSymbols' => '20'
+                                                  }
+                                     },
+                         '4.1.24' => {
+                                       '27e5f' => {
+                                                    'Archive' => 'metrics-annotation-4.1.24.jar',
+                                                    'Path' => 'api_dump/metrics-annotation/4.1.24/27e5f/API.dump.tar.gz',
+                                                    'TotalSymbols' => '20'
+                                                  }
+                                     },
+                         '4.1.25' => {
+                                       '54532' => {
+                                                    'Archive' => 'metrics-annotation-4.1.25.jar',
+                                                    'Path' => 'api_dump/metrics-annotation/4.1.25/54532/API.dump.tar.gz',
+                                                    'TotalSymbols' => '20'
+                                                  }
+                                     },
+                         '4.1.3' => {
+                                      'fd240' => {
+                                                   'Archive' => 'metrics-annotation-4.1.3.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/4.1.3/fd240/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '4.1.4' => {
+                                      '89150' => {
+                                                   'Archive' => 'metrics-annotation-4.1.4.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/4.1.4/89150/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '4.1.5' => {
+                                      '3dead' => {
+                                                   'Archive' => 'metrics-annotation-4.1.5.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/4.1.5/3dead/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '4.1.6' => {
+                                      'fc926' => {
+                                                   'Archive' => 'metrics-annotation-4.1.6.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/4.1.6/fc926/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '4.1.7' => {
+                                      'bad58' => {
+                                                   'Archive' => 'metrics-annotation-4.1.7.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/4.1.7/bad58/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '4.1.8' => {
+                                      '40b4a' => {
+                                                   'Archive' => 'metrics-annotation-4.1.8.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/4.1.8/40b4a/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '4.1.9' => {
+                                      '5966a' => {
+                                                   'Archive' => 'metrics-annotation-4.1.9.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/4.1.9/5966a/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '4.2.0' => {
+                                      'fa8d8' => {
+                                                   'Archive' => 'metrics-annotation-4.2.0.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/4.2.0/fa8d8/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '4.2.1' => {
+                                      '210f9' => {
+                                                   'Archive' => 'metrics-annotation-4.2.1.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/4.2.1/210f9/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '4.2.2' => {
+                                      '143d1' => {
+                                                   'Archive' => 'metrics-annotation-4.2.2.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/4.2.2/143d1/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '4.2.3' => {
+                                      'fb498' => {
+                                                   'Archive' => 'metrics-annotation-4.2.3.jar',
+                                                   'Path' => 'api_dump/metrics-annotation/4.2.3/fb498/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    }
+                       },
+          'APIReport' => {
+                           '3.1.0' => {
+                                        '3.1.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/3.1.0/3.1.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.1.1' => {
+                                        '3.1.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/3.1.1/3.1.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.1.2' => {
+                                        '3.1.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/3.1.2/3.1.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.1.3' => {
+                                        '3.1.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/3.1.3/3.1.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.1.4' => {
+                                        '3.1.5' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/3.1.4/3.1.5/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.1.5' => {
+                                        '3.2.0' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/3.1.5/3.2.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.2.0' => {
+                                        '3.2.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/3.2.0/3.2.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.2.1' => {
+                                        '3.2.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/3.2.1/3.2.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.2.2' => {
+                                        '3.2.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/3.2.2/3.2.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.2.3' => {
+                                        '3.2.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/3.2.3/3.2.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.2.4' => {
+                                        '3.2.5' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/3.2.4/3.2.5/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.2.5' => {
+                                        '3.2.6' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/3.2.5/3.2.6/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.2.6' => {
+                                        '4.0.0' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/3.2.6/4.0.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.0' => {
+                                        '4.0.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/4.0.0/4.0.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.1' => {
+                                        '4.0.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/4.0.1/4.0.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.2' => {
+                                        '4.0.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/4.0.2/4.0.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.3' => {
+                                        '4.0.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/4.0.3/4.0.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.4' => {
+                                        '4.0.5' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/4.0.4/4.0.5/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.5' => {
+                                        '4.0.6' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/4.0.5/4.0.6/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.6' => {
+                                        '4.0.7' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/4.0.6/4.0.7/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.7' => {
+                                        '4.1.0' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/4.0.7/4.1.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.0' => {
+                                        '4.1.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/4.1.0/4.1.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.1' => {
+                                        '4.1.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/4.1.1/4.1.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.10' => {
+                                         '4.1.10.1' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/metrics-annotation/4.1.10/4.1.10.1/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                       },
+                           '4.1.10.1' => {
+                                           '4.1.11' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/metrics-annotation/4.1.10.1/4.1.11/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                         },
+                           '4.1.11' => {
+                                         '4.1.12' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-annotation/4.1.11/4.1.12/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.12' => {
+                                         '4.1.12.1' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/metrics-annotation/4.1.12/4.1.12.1/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                       },
+                           '4.1.12.1' => {
+                                           '4.1.13' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/metrics-annotation/4.1.12.1/4.1.13/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                         },
+                           '4.1.13' => {
+                                         '4.1.14' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-annotation/4.1.13/4.1.14/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.14' => {
+                                         '4.1.15' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-annotation/4.1.14/4.1.15/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.15' => {
+                                         '4.1.16' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-annotation/4.1.15/4.1.16/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.16' => {
+                                         '4.1.17' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-annotation/4.1.16/4.1.17/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.17' => {
+                                         '4.1.18' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-annotation/4.1.17/4.1.18/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.18' => {
+                                         '4.1.19' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-annotation/4.1.18/4.1.19/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.19' => {
+                                         '4.1.20' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-annotation/4.1.19/4.1.20/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.2' => {
+                                        '4.1.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/4.1.2/4.1.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.20' => {
+                                         '4.1.21' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-annotation/4.1.20/4.1.21/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.21' => {
+                                         '4.1.22' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-annotation/4.1.21/4.1.22/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.22' => {
+                                         '4.1.23' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-annotation/4.1.22/4.1.23/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.23' => {
+                                         '4.1.24' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-annotation/4.1.23/4.1.24/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.24' => {
+                                         '4.1.25' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-annotation/4.1.24/4.1.25/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.25' => {
+                                         '4.2.0' => {
+                                                      'Added' => 0,
+                                                      'ArchivesAdded' => 0,
+                                                      'ArchivesAddedSymbols' => 0,
+                                                      'ArchivesRemoved' => 0,
+                                                      'ArchivesRemovedSymbols' => 0,
+                                                      'BC' => 100,
+                                                      'Path' => 'archives_report/metrics-annotation/4.1.25/4.2.0/report.html',
+                                                      'Removed' => 0,
+                                                      'Source_BC' => 100,
+                                                      'Source_TotalProblems' => 0,
+                                                      'TotalArchives' => 1,
+                                                      'TotalProblems' => 0
+                                                    }
+                                       },
+                           '4.1.3' => {
+                                        '4.1.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/4.1.3/4.1.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.4' => {
+                                        '4.1.5' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/4.1.4/4.1.5/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.5' => {
+                                        '4.1.6' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/4.1.5/4.1.6/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.6' => {
+                                        '4.1.7' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/4.1.6/4.1.7/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.7' => {
+                                        '4.1.8' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/4.1.7/4.1.8/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.8' => {
+                                        '4.1.9' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/4.1.8/4.1.9/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.9' => {
+                                        '4.1.10' => {
+                                                      'Added' => 0,
+                                                      'ArchivesAdded' => 0,
+                                                      'ArchivesAddedSymbols' => 0,
+                                                      'ArchivesRemoved' => 0,
+                                                      'ArchivesRemovedSymbols' => 0,
+                                                      'BC' => 100,
+                                                      'Path' => 'archives_report/metrics-annotation/4.1.9/4.1.10/report.html',
+                                                      'Removed' => 0,
+                                                      'Source_BC' => 100,
+                                                      'Source_TotalProblems' => 0,
+                                                      'TotalArchives' => 1,
+                                                      'TotalProblems' => 0
+                                                    }
+                                      },
+                           '4.2.0' => {
+                                        '4.2.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/4.2.0/4.2.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.2.1' => {
+                                        '4.2.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/4.2.1/4.2.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.2.2' => {
+                                        '4.2.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-annotation/4.2.2/4.2.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      }
+                         },
+          'APIReport_D' => {},
+          'Changelog' => {},
+          'Date' => {
+                      '3.1.0' => '04-2014-09 11:01',
+                      '3.1.1' => '06-2015-03 20:35',
+                      '3.1.2' => '25-2015-04 23:58',
+                      '3.1.3' => '24-2017-02 14:57',
+                      '3.1.4' => '10-2017-03 14:24',
+                      '3.1.5' => '02-2017-06 19:59',
+                      '3.2.0' => '24-2017-02 15:19',
+                      '3.2.1' => '10-2017-03 16:41',
+                      '3.2.2' => '20-2017-03 15:17',
+                      '3.2.3' => '28-2017-06 09:53',
+                      '3.2.4' => '03-2017-08 20:00',
+                      '3.2.5' => '15-2017-09 10:35',
+                      '3.2.6' => '24-2017-12 21:52',
+                      '4.0.0' => '24-2017-12 21:37',
+                      '4.0.1' => '03-2018-01 18:28',
+                      '4.0.2' => '05-2018-01 19:51',
+                      '4.0.3' => '19-2018-07 00:28',
+                      '4.0.4' => '26-2018-12 19:33',
+                      '4.0.5' => '27-2018-12 20:10',
+                      '4.0.6' => '10-2019-08 12:38',
+                      '4.0.7' => '19-2019-10 15:28',
+                      '4.1.0' => '05-2019-05 22:35',
+                      '4.1.1' => '19-2019-10 13:10',
+                      '4.1.10' => '03-2020-07 07:38',
+                      '4.1.10.1' => '04-2020-07 08:30',
+                      '4.1.11' => '01-1980-02 00:00',
+                      '4.1.12' => '01-1980-02 00:00',
+                      '4.1.12.1' => '01-1980-02 00:00',
+                      '4.1.13' => '01-1980-02 00:00',
+                      '4.1.14' => '01-1980-02 00:00',
+                      '4.1.15' => '01-1980-02 00:00',
+                      '4.1.16' => '01-1980-02 00:00',
+                      '4.1.17' => '01-1980-02 00:00',
+                      '4.1.18' => '01-1980-02 00:00',
+                      '4.1.19' => '01-1980-02 00:00',
+                      '4.1.2' => '07-2019-12 13:47',
+                      '4.1.20' => '01-1980-02 00:00',
+                      '4.1.21' => '01-1980-02 00:00',
+                      '4.1.22' => '01-1980-02 00:00',
+                      '4.1.23' => '01-1980-02 00:00',
+                      '4.1.24' => '01-1980-02 00:00',
+                      '4.1.25' => '01-1980-02 00:00',
+                      '4.1.3' => '24-2020-02 00:46',
+                      '4.1.4' => '27-2020-02 15:36',
+                      '4.1.5' => '09-2020-03 07:24',
+                      '4.1.6' => '09-2020-04 18:54',
+                      '4.1.7' => '02-2020-05 21:20',
+                      '4.1.8' => '14-2020-05 20:10',
+                      '4.1.9' => '24-2020-05 13:52',
+                      '4.2.0' => '01-1980-02 00:00',
+                      '4.2.1' => '01-1980-02 00:00',
+                      '4.2.2' => '01-1980-02 00:00',
+                      '4.2.3' => '01-1980-02 00:00'
+                    },
+          'Maintainer' => 'Dropwizard Metrics Committers',
+          'MaintainerUrl' => 'https://metrics.dropwizard.io/',
+          'PackageDiff' => {
+                             '3.1.0' => {
+                                          '3.1.1' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-annotation/3.1.0/3.1.1/report.html'
+                                                     }
+                                        },
+                             '3.1.1' => {
+                                          '3.1.2' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-annotation/3.1.1/3.1.2/report.html'
+                                                     }
+                                        },
+                             '3.1.2' => {
+                                          '3.1.3' => {
+                                                       'Changed' => '0.7',
+                                                       'Path' => 'package_diff/metrics-annotation/3.1.2/3.1.3/report.html'
+                                                     }
+                                        },
+                             '3.1.3' => {
+                                          '3.1.4' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-annotation/3.1.3/3.1.4/report.html'
+                                                     }
+                                        },
+                             '3.1.4' => {
+                                          '3.1.5' => {
+                                                       'Changed' => '0.7',
+                                                       'Path' => 'package_diff/metrics-annotation/3.1.4/3.1.5/report.html'
+                                                     }
+                                        },
+                             '3.1.5' => {
+                                          '3.2.0' => {
+                                                       'Changed' => '0.7',
+                                                       'Path' => 'package_diff/metrics-annotation/3.1.5/3.2.0/report.html'
+                                                     }
+                                        },
+                             '3.2.0' => {
+                                          '3.2.1' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-annotation/3.2.0/3.2.1/report.html'
+                                                     }
+                                        },
+                             '3.2.1' => {
+                                          '3.2.2' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-annotation/3.2.1/3.2.2/report.html'
+                                                     }
+                                        },
+                             '3.2.2' => {
+                                          '3.2.3' => {
+                                                       'Changed' => '0.7',
+                                                       'Path' => 'package_diff/metrics-annotation/3.2.2/3.2.3/report.html'
+                                                     }
+                                        },
+                             '3.2.3' => {
+                                          '3.2.4' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-annotation/3.2.3/3.2.4/report.html'
+                                                     }
+                                        },
+                             '3.2.4' => {
+                                          '3.2.5' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-annotation/3.2.4/3.2.5/report.html'
+                                                     }
+                                        },
+                             '3.2.5' => {
+                                          '3.2.6' => {
+                                                       'Changed' => '0.7',
+                                                       'Path' => 'package_diff/metrics-annotation/3.2.5/3.2.6/report.html'
+                                                     }
+                                        },
+                             '3.2.6' => {
+                                          '4.0.0' => {
+                                                       'Changed' => '3',
+                                                       'Path' => 'package_diff/metrics-annotation/3.2.6/4.0.0/report.html'
+                                                     }
+                                        },
+                             '4.0.0' => {
+                                          '4.0.1' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-annotation/4.0.0/4.0.1/report.html'
+                                                     }
+                                        },
+                             '4.0.1' => {
+                                          '4.0.2' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-annotation/4.0.1/4.0.2/report.html'
+                                                     }
+                                        },
+                             '4.0.2' => {
+                                          '4.0.3' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-annotation/4.0.2/4.0.3/report.html'
+                                                     }
+                                        },
+                             '4.0.3' => {
+                                          '4.0.4' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-annotation/4.0.3/4.0.4/report.html'
+                                                     }
+                                        },
+                             '4.0.4' => {
+                                          '4.0.5' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-annotation/4.0.4/4.0.5/report.html'
+                                                     }
+                                        },
+                             '4.0.5' => {
+                                          '4.0.6' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-annotation/4.0.5/4.0.6/report.html'
+                                                     }
+                                        },
+                             '4.0.6' => {
+                                          '4.0.7' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-annotation/4.0.6/4.0.7/report.html'
+                                                     }
+                                        },
+                             '4.0.7' => {
+                                          '4.1.0' => {
+                                                       'Changed' => '1.1',
+                                                       'Path' => 'package_diff/metrics-annotation/4.0.7/4.1.0/report.html'
+                                                     }
+                                        },
+                             '4.1.0' => {
+                                          '4.1.1' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-annotation/4.1.0/4.1.1/report.html'
+                                                     }
+                                        },
+                             '4.1.1' => {
+                                          '4.1.2' => {
+                                                       'Changed' => '1',
+                                                       'Path' => 'package_diff/metrics-annotation/4.1.1/4.1.2/report.html'
+                                                     }
+                                        },
+                             '4.1.10' => {
+                                           '4.1.10.1' => {
+                                                           'Changed' => '0.5',
+                                                           'Path' => 'package_diff/metrics-annotation/4.1.10/4.1.10.1/report.html'
+                                                         }
+                                         },
+                             '4.1.10.1' => {
+                                             '4.1.11' => {
+                                                           'Changed' => '1.4',
+                                                           'Path' => 'package_diff/metrics-annotation/4.1.10.1/4.1.11/report.html'
+                                                         }
+                                           },
+                             '4.1.11' => {
+                                           '4.1.12' => {
+                                                         'Changed' => '0.6',
+                                                         'Path' => 'package_diff/metrics-annotation/4.1.11/4.1.12/report.html'
+                                                       }
+                                         },
+                             '4.1.12' => {
+                                           '4.1.12.1' => {
+                                                           'Changed' => '0.3',
+                                                           'Path' => 'package_diff/metrics-annotation/4.1.12/4.1.12.1/report.html'
+                                                         }
+                                         },
+                             '4.1.12.1' => {
+                                             '4.1.13' => {
+                                                           'Changed' => '0.5',
+                                                           'Path' => 'package_diff/metrics-annotation/4.1.12.1/4.1.13/report.html'
+                                                         }
+                                           },
+                             '4.1.13' => {
+                                           '4.1.14' => {
+                                                         'Changed' => '0.4',
+                                                         'Path' => 'package_diff/metrics-annotation/4.1.13/4.1.14/report.html'
+                                                       }
+                                         },
+                             '4.1.14' => {
+                                           '4.1.15' => {
+                                                         'Changed' => '0.4',
+                                                         'Path' => 'package_diff/metrics-annotation/4.1.14/4.1.15/report.html'
+                                                       }
+                                         },
+                             '4.1.15' => {
+                                           '4.1.16' => {
+                                                         'Changed' => '0.4',
+                                                         'Path' => 'package_diff/metrics-annotation/4.1.15/4.1.16/report.html'
+                                                       }
+                                         },
+                             '4.1.16' => {
+                                           '4.1.17' => {
+                                                         'Changed' => '0.5',
+                                                         'Path' => 'package_diff/metrics-annotation/4.1.16/4.1.17/report.html'
+                                                       }
+                                         },
+                             '4.1.17' => {
+                                           '4.1.18' => {
+                                                         'Changed' => '0.4',
+                                                         'Path' => 'package_diff/metrics-annotation/4.1.17/4.1.18/report.html'
+                                                       }
+                                         },
+                             '4.1.18' => {
+                                           '4.1.19' => {
+                                                         'Changed' => '0.8',
+                                                         'Path' => 'package_diff/metrics-annotation/4.1.18/4.1.19/report.html'
+                                                       }
+                                         },
+                             '4.1.19' => {
+                                           '4.1.20' => {
+                                                         'Changed' => '0.5',
+                                                         'Path' => 'package_diff/metrics-annotation/4.1.19/4.1.20/report.html'
+                                                       }
+                                         },
+                             '4.1.2' => {
+                                          '4.1.3' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-annotation/4.1.2/4.1.3/report.html'
+                                                     }
+                                        },
+                             '4.1.20' => {
+                                           '4.1.21' => {
+                                                         'Changed' => '0.4',
+                                                         'Path' => 'package_diff/metrics-annotation/4.1.20/4.1.21/report.html'
+                                                       }
+                                         },
+                             '4.1.21' => {
+                                           '4.1.22' => {
+                                                         'Changed' => '0.4',
+                                                         'Path' => 'package_diff/metrics-annotation/4.1.21/4.1.22/report.html'
+                                                       }
+                                         },
+                             '4.1.22' => {
+                                           '4.1.23' => {
+                                                         'Changed' => '0.4',
+                                                         'Path' => 'package_diff/metrics-annotation/4.1.22/4.1.23/report.html'
+                                                       }
+                                         },
+                             '4.1.23' => {
+                                           '4.1.24' => {
+                                                         'Changed' => '0.4',
+                                                         'Path' => 'package_diff/metrics-annotation/4.1.23/4.1.24/report.html'
+                                                       }
+                                         },
+                             '4.1.24' => {
+                                           '4.1.25' => {
+                                                         'Changed' => '0.4',
+                                                         'Path' => 'package_diff/metrics-annotation/4.1.24/4.1.25/report.html'
+                                                       }
+                                         },
+                             '4.1.25' => {
+                                           '4.2.0' => {
+                                                        'Changed' => '0.5',
+                                                        'Path' => 'package_diff/metrics-annotation/4.1.25/4.2.0/report.html'
+                                                      }
+                                         },
+                             '4.1.3' => {
+                                          '4.1.4' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-annotation/4.1.3/4.1.4/report.html'
+                                                     }
+                                        },
+                             '4.1.4' => {
+                                          '4.1.5' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-annotation/4.1.4/4.1.5/report.html'
+                                                     }
+                                        },
+                             '4.1.5' => {
+                                          '4.1.6' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-annotation/4.1.5/4.1.6/report.html'
+                                                     }
+                                        },
+                             '4.1.6' => {
+                                          '4.1.7' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-annotation/4.1.6/4.1.7/report.html'
+                                                     }
+                                        },
+                             '4.1.7' => {
+                                          '4.1.8' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-annotation/4.1.7/4.1.8/report.html'
+                                                     }
+                                        },
+                             '4.1.8' => {
+                                          '4.1.9' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-annotation/4.1.8/4.1.9/report.html'
+                                                     }
+                                        },
+                             '4.1.9' => {
+                                          '4.1.10' => {
+                                                        'Changed' => '0.6',
+                                                        'Path' => 'package_diff/metrics-annotation/4.1.9/4.1.10/report.html'
+                                                      }
+                                        },
+                             '4.2.0' => {
+                                          '4.2.1' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-annotation/4.2.0/4.2.1/report.html'
+                                                     }
+                                        },
+                             '4.2.1' => {
+                                          '4.2.2' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-annotation/4.2.1/4.2.2/report.html'
+                                                     }
+                                        },
+                             '4.2.2' => {
+                                          '4.2.3' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-annotation/4.2.2/4.2.3/report.html'
+                                                     }
+                                        }
+                           },
+          'Title' => 'Annotations for Metrics'
+        };

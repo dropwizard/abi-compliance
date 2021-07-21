@@ -1,0 +1,240 @@
+$VAR1 = {
+          'APIDump' => {
+                         '1.3.12-1' => {
+                                         '420b0' => {
+                                                      'Archive' => 'dropwizard-web-1.3.12-1.jar',
+                                                      'Path' => 'api_dump/dropwizard-web/1.3.12-1/420b0/API.dump.tar.gz',
+                                                      'TotalSymbols' => '77'
+                                                    }
+                                       },
+                         '1.3.29-1' => {
+                                         '2d703' => {
+                                                      'Archive' => 'dropwizard-web-1.3.29-1.jar',
+                                                      'Path' => 'api_dump/dropwizard-web/1.3.29-1/2d703/API.dump.tar.gz',
+                                                      'TotalSymbols' => '77'
+                                                    }
+                                       },
+                         '1.3.29-2' => {
+                                         'dd7b9' => {
+                                                      'Archive' => 'dropwizard-web-1.3.29-2.jar',
+                                                      'Path' => 'api_dump/dropwizard-web/1.3.29-2/dd7b9/API.dump.tar.gz',
+                                                      'TotalSymbols' => '77'
+                                                    }
+                                       },
+                         '1.4.0' => {
+                                      '3a176' => {
+                                                   'Archive' => 'dropwizard-web-1.4.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-web/1.4.0/3a176/API.dump.tar.gz',
+                                                   'TotalSymbols' => '77'
+                                                 }
+                                    },
+                         '1.4.2' => {
+                                      '10e8e' => {
+                                                   'Archive' => 'dropwizard-web-1.4.2.jar',
+                                                   'Path' => 'api_dump/dropwizard-web/1.4.2/10e8e/API.dump.tar.gz',
+                                                   'TotalSymbols' => '77'
+                                                 }
+                                    }
+                       },
+          'APIReport' => {
+                           '1.3.12-1' => {
+                                           '1.3.29-1' => {
+                                                           'Added' => 0,
+                                                           'ArchivesAdded' => 0,
+                                                           'ArchivesAddedSymbols' => 0,
+                                                           'ArchivesRemoved' => 0,
+                                                           'ArchivesRemovedSymbols' => 0,
+                                                           'BC' => 100,
+                                                           'Path' => 'archives_report/dropwizard-web/1.3.12-1/1.3.29-1/report.html',
+                                                           'Removed' => 0,
+                                                           'Source_BC' => 100,
+                                                           'Source_TotalProblems' => 0,
+                                                           'TotalArchives' => 1,
+                                                           'TotalProblems' => 0
+                                                         },
+                                           '1.4.0' => {
+                                                        'Added' => 0,
+                                                        'ArchivesAdded' => 0,
+                                                        'ArchivesAddedSymbols' => 0,
+                                                        'ArchivesRemoved' => 0,
+                                                        'ArchivesRemovedSymbols' => 0,
+                                                        'BC' => 100,
+                                                        'Path' => 'archives_report/dropwizard-web/1.3.12-1/1.4.0/report.html',
+                                                        'Removed' => 0,
+                                                        'Source_BC' => 100,
+                                                        'Source_TotalProblems' => 0,
+                                                        'TotalArchives' => 1,
+                                                        'TotalProblems' => 0
+                                                      }
+                                         },
+                           '1.3.29-1' => {
+                                           '1.3.29-2' => {
+                                                           'Added' => 1,
+                                                           'ArchivesAdded' => 0,
+                                                           'ArchivesAddedSymbols' => 0,
+                                                           'ArchivesRemoved' => 0,
+                                                           'ArchivesRemovedSymbols' => 0,
+                                                           'BC' => '98.7',
+                                                           'Path' => 'archives_report/dropwizard-web/1.3.29-1/1.3.29-2/report.html',
+                                                           'Removed' => 1,
+                                                           'Source_BC' => '98.7',
+                                                           'Source_TotalProblems' => 0,
+                                                           'TotalArchives' => 1,
+                                                           'TotalProblems' => 0
+                                                         }
+                                         },
+                           '1.3.29-2' => {
+                                           '1.4.0' => {
+                                                        'Added' => 1,
+                                                        'ArchivesAdded' => 0,
+                                                        'ArchivesAddedSymbols' => 0,
+                                                        'ArchivesRemoved' => 0,
+                                                        'ArchivesRemovedSymbols' => 0,
+                                                        'BC' => '98.7',
+                                                        'Path' => 'archives_report/dropwizard-web/1.3.29-2/1.4.0/report.html',
+                                                        'Removed' => 1,
+                                                        'Source_BC' => '98.7',
+                                                        'Source_TotalProblems' => 0,
+                                                        'TotalArchives' => 1,
+                                                        'TotalProblems' => 0
+                                                      }
+                                         },
+                           '1.4.0' => {
+                                        '1.4.2' => {
+                                                     'Added' => 1,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => '98.7',
+                                                     'Path' => 'archives_report/dropwizard-web/1.4.0/1.4.2/report.html',
+                                                     'Removed' => 1,
+                                                     'Source_BC' => '98.7',
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      }
+                         },
+          'APIReport_D' => {
+                             '1.3.12-1' => {
+                                             '1.3.29-1' => {
+                                                             '702cf' => {
+                                                                          'Added' => 0,
+                                                                          'Affected' => 0,
+                                                                          'Archive1' => 'dropwizard-web-1.3.12-1.jar',
+                                                                          'Archive2' => 'dropwizard-web-1.3.29-1.jar',
+                                                                          'Path' => 'compat_report/dropwizard-web/1.3.12-1/1.3.29-1/702cf/bin_compat_report.html',
+                                                                          'Removed' => 0,
+                                                                          'Source_Affected' => 0,
+                                                                          'Source_ReportPath' => 'compat_report/dropwizard-web/1.3.12-1/1.3.29-1/702cf/src_compat_report.html',
+                                                                          'Source_TotalProblems' => 0,
+                                                                          'TotalProblems' => 0
+                                                                        }
+                                                           },
+                                             '1.4.0' => {
+                                                          'e47bf' => {
+                                                                       'Added' => 0,
+                                                                       'Affected' => 0,
+                                                                       'Archive1' => 'dropwizard-web-1.3.12-1.jar',
+                                                                       'Archive2' => 'dropwizard-web-1.4.0.jar',
+                                                                       'Path' => 'compat_report/dropwizard-web/1.3.12-1/1.4.0/e47bf/bin_compat_report.html',
+                                                                       'Removed' => 0,
+                                                                       'Source_Affected' => 0,
+                                                                       'Source_ReportPath' => 'compat_report/dropwizard-web/1.3.12-1/1.4.0/e47bf/src_compat_report.html',
+                                                                       'Source_TotalProblems' => 0,
+                                                                       'TotalProblems' => 0
+                                                                     }
+                                                        }
+                                           },
+                             '1.3.29-1' => {
+                                             '1.3.29-2' => {
+                                                             '98e15' => {
+                                                                          'Added' => 1,
+                                                                          'Affected' => '1.3',
+                                                                          'Archive1' => 'dropwizard-web-1.3.29-1.jar',
+                                                                          'Archive2' => 'dropwizard-web-1.3.29-2.jar',
+                                                                          'Path' => 'compat_report/dropwizard-web/1.3.29-1/1.3.29-2/98e15/bin_compat_report.html',
+                                                                          'Removed' => 1,
+                                                                          'Source_Affected' => '1.3',
+                                                                          'Source_ReportPath' => 'compat_report/dropwizard-web/1.3.29-1/1.3.29-2/98e15/src_compat_report.html',
+                                                                          'Source_TotalProblems' => 0,
+                                                                          'TotalProblems' => 0
+                                                                        }
+                                                           }
+                                           },
+                             '1.3.29-2' => {
+                                             '1.4.0' => {
+                                                          'a75fe' => {
+                                                                       'Added' => 1,
+                                                                       'Affected' => '1.3',
+                                                                       'Archive1' => 'dropwizard-web-1.3.29-2.jar',
+                                                                       'Archive2' => 'dropwizard-web-1.4.0.jar',
+                                                                       'Path' => 'compat_report/dropwizard-web/1.3.29-2/1.4.0/a75fe/bin_compat_report.html',
+                                                                       'Removed' => 1,
+                                                                       'Source_Affected' => '1.3',
+                                                                       'Source_ReportPath' => 'compat_report/dropwizard-web/1.3.29-2/1.4.0/a75fe/src_compat_report.html',
+                                                                       'Source_TotalProblems' => 0,
+                                                                       'TotalProblems' => 0
+                                                                     }
+                                                        }
+                                           },
+                             '1.4.0' => {
+                                          '1.4.2' => {
+                                                       '9dfdd' => {
+                                                                    'Added' => 1,
+                                                                    'Affected' => '1.3',
+                                                                    'Archive1' => 'dropwizard-web-1.4.0.jar',
+                                                                    'Archive2' => 'dropwizard-web-1.4.2.jar',
+                                                                    'Path' => 'compat_report/dropwizard-web/1.4.0/1.4.2/9dfdd/bin_compat_report.html',
+                                                                    'Removed' => 1,
+                                                                    'Source_Affected' => '1.3',
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-web/1.4.0/1.4.2/9dfdd/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        }
+                           },
+          'Changelog' => {},
+          'Date' => {
+                      '1.3.12-1' => '22-2019-06 05:17',
+                      '1.3.29-1' => '27-2021-06 14:26',
+                      '1.3.29-2' => '29-2021-06 06:06',
+                      '1.4.0' => '18-2020-02 02:58',
+                      '1.4.2' => '29-2021-06 10:24'
+                    },
+          'Maintainer' => 'Dropwizard Committers',
+          'MaintainerUrl' => 'https://www.dropwizard.io/',
+          'PackageDiff' => {
+                             '1.3.12-1' => {
+                                             '1.3.29-1' => {
+                                                             'Changed' => '2.9',
+                                                             'Path' => 'package_diff/dropwizard-web/1.3.12-1/1.3.29-1/report.html'
+                                                           },
+                                             '1.4.0' => {
+                                                          'Changed' => '1.7',
+                                                          'Path' => 'package_diff/dropwizard-web/1.3.12-1/1.4.0/report.html'
+                                                        }
+                                           },
+                             '1.3.29-1' => {
+                                             '1.3.29-2' => {
+                                                             'Changed' => '2.2',
+                                                             'Path' => 'package_diff/dropwizard-web/1.3.29-1/1.3.29-2/report.html'
+                                                           }
+                                           },
+                             '1.3.29-2' => {
+                                             '1.4.0' => {
+                                                          'Changed' => '3.7',
+                                                          'Path' => 'package_diff/dropwizard-web/1.3.29-2/1.4.0/report.html'
+                                                        }
+                                           },
+                             '1.4.0' => {
+                                          '1.4.2' => {
+                                                       'Changed' => '3.7',
+                                                       'Path' => 'package_diff/dropwizard-web/1.4.0/1.4.2/report.html'
+                                                     }
+                                        }
+                           },
+          'Title' => 'Dropwizard Web'
+        };

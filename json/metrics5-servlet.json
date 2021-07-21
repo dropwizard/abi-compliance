@@ -1,0 +1,9 @@
+{
+  "Title":      "Metrics 5.x Integration for Servlets",
+  "SourceUrl":  "https://repo1.maven.org/maven2/io/dropwizard/metrics5/metrics-servlet/",
+  "Tracker":    "https://abi-laboratory.pro/java/tracker/timeline/metrics5-servlet/",
+  "Maintainer": "Dropwizard Metrics Committers",
+
+  "Reports": [
+  ]
+}

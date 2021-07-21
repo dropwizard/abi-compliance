@@ -1,0 +1,2416 @@
+$VAR1 = {
+          'APIDump' => {
+                         '3.1.0' => {
+                                      '56e7d' => {
+                                                   'Archive' => 'metrics-json-3.1.0.jar',
+                                                   'Path' => 'api_dump/metrics-json/3.1.0/56e7d/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '3.1.1' => {
+                                      '57be4' => {
+                                                   'Archive' => 'metrics-json-3.1.1.jar',
+                                                   'Path' => 'api_dump/metrics-json/3.1.1/57be4/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '3.1.2' => {
+                                      'a7d00' => {
+                                                   'Archive' => 'metrics-json-3.1.2.jar',
+                                                   'Path' => 'api_dump/metrics-json/3.1.2/a7d00/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '3.1.3' => {
+                                      '630c7' => {
+                                                   'Archive' => 'metrics-json-3.1.3.jar',
+                                                   'Path' => 'api_dump/metrics-json/3.1.3/630c7/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '3.1.4' => {
+                                      '37a00' => {
+                                                   'Archive' => 'metrics-json-3.1.4.jar',
+                                                   'Path' => 'api_dump/metrics-json/3.1.4/37a00/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '3.1.5' => {
+                                      '5054b' => {
+                                                   'Archive' => 'metrics-json-3.1.5.jar',
+                                                   'Path' => 'api_dump/metrics-json/3.1.5/5054b/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '3.2.0' => {
+                                      '12782' => {
+                                                   'Archive' => 'metrics-json-3.2.0.jar',
+                                                   'Path' => 'api_dump/metrics-json/3.2.0/12782/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '3.2.1' => {
+                                      '7520a' => {
+                                                   'Archive' => 'metrics-json-3.2.1.jar',
+                                                   'Path' => 'api_dump/metrics-json/3.2.1/7520a/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '3.2.2' => {
+                                      '380cb' => {
+                                                   'Archive' => 'metrics-json-3.2.2.jar',
+                                                   'Path' => 'api_dump/metrics-json/3.2.2/380cb/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '3.2.3' => {
+                                      '33dc8' => {
+                                                   'Archive' => 'metrics-json-3.2.3.jar',
+                                                   'Path' => 'api_dump/metrics-json/3.2.3/33dc8/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '3.2.4' => {
+                                      '834d1' => {
+                                                   'Archive' => 'metrics-json-3.2.4.jar',
+                                                   'Path' => 'api_dump/metrics-json/3.2.4/834d1/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '3.2.5' => {
+                                      '4cfc4' => {
+                                                   'Archive' => 'metrics-json-3.2.5.jar',
+                                                   'Path' => 'api_dump/metrics-json/3.2.5/4cfc4/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '3.2.6' => {
+                                      '45ad4' => {
+                                                   'Archive' => 'metrics-json-3.2.6.jar',
+                                                   'Path' => 'api_dump/metrics-json/3.2.6/45ad4/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '4.0.0' => {
+                                      'c82e6' => {
+                                                   'Archive' => 'metrics-json-4.0.0.jar',
+                                                   'Path' => 'api_dump/metrics-json/4.0.0/c82e6/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '4.0.1' => {
+                                      '5bd60' => {
+                                                   'Archive' => 'metrics-json-4.0.1.jar',
+                                                   'Path' => 'api_dump/metrics-json/4.0.1/5bd60/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '4.0.2' => {
+                                      '6fa63' => {
+                                                   'Archive' => 'metrics-json-4.0.2.jar',
+                                                   'Path' => 'api_dump/metrics-json/4.0.2/6fa63/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '4.0.3' => {
+                                      '04d28' => {
+                                                   'Archive' => 'metrics-json-4.0.3.jar',
+                                                   'Path' => 'api_dump/metrics-json/4.0.3/04d28/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '4.0.4' => {
+                                      'c3ade' => {
+                                                   'Archive' => 'metrics-json-4.0.4.jar',
+                                                   'Path' => 'api_dump/metrics-json/4.0.4/c3ade/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '4.0.5' => {
+                                      'afc72' => {
+                                                   'Archive' => 'metrics-json-4.0.5.jar',
+                                                   'Path' => 'api_dump/metrics-json/4.0.5/afc72/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '4.0.6' => {
+                                      'eeb9f' => {
+                                                   'Archive' => 'metrics-json-4.0.6.jar',
+                                                   'Path' => 'api_dump/metrics-json/4.0.6/eeb9f/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '4.0.7' => {
+                                      'c2073' => {
+                                                   'Archive' => 'metrics-json-4.0.7.jar',
+                                                   'Path' => 'api_dump/metrics-json/4.0.7/c2073/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '4.1.0' => {
+                                      '795ab' => {
+                                                   'Archive' => 'metrics-json-4.1.0.jar',
+                                                   'Path' => 'api_dump/metrics-json/4.1.0/795ab/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '4.1.1' => {
+                                      'c6302' => {
+                                                   'Archive' => 'metrics-json-4.1.1.jar',
+                                                   'Path' => 'api_dump/metrics-json/4.1.1/c6302/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '4.1.10' => {
+                                       '75040' => {
+                                                    'Archive' => 'metrics-json-4.1.10.jar',
+                                                    'Path' => 'api_dump/metrics-json/4.1.10/75040/API.dump.tar.gz',
+                                                    'TotalSymbols' => '9'
+                                                  }
+                                     },
+                         '4.1.10.1' => {
+                                         'be2a4' => {
+                                                      'Archive' => 'metrics-json-4.1.10.1.jar',
+                                                      'Path' => 'api_dump/metrics-json/4.1.10.1/be2a4/API.dump.tar.gz',
+                                                      'TotalSymbols' => '9'
+                                                    }
+                                       },
+                         '4.1.11' => {
+                                       '3a150' => {
+                                                    'Archive' => 'metrics-json-4.1.11.jar',
+                                                    'Path' => 'api_dump/metrics-json/4.1.11/3a150/API.dump.tar.gz',
+                                                    'TotalSymbols' => '9'
+                                                  }
+                                     },
+                         '4.1.12' => {
+                                       'bf493' => {
+                                                    'Archive' => 'metrics-json-4.1.12.jar',
+                                                    'Path' => 'api_dump/metrics-json/4.1.12/bf493/API.dump.tar.gz',
+                                                    'TotalSymbols' => '9'
+                                                  }
+                                     },
+                         '4.1.12.1' => {
+                                         '657c1' => {
+                                                      'Archive' => 'metrics-json-4.1.12.1.jar',
+                                                      'Path' => 'api_dump/metrics-json/4.1.12.1/657c1/API.dump.tar.gz',
+                                                      'TotalSymbols' => '9'
+                                                    }
+                                       },
+                         '4.1.13' => {
+                                       '125e5' => {
+                                                    'Archive' => 'metrics-json-4.1.13.jar',
+                                                    'Path' => 'api_dump/metrics-json/4.1.13/125e5/API.dump.tar.gz',
+                                                    'TotalSymbols' => '9'
+                                                  }
+                                     },
+                         '4.1.14' => {
+                                       'aab1d' => {
+                                                    'Archive' => 'metrics-json-4.1.14.jar',
+                                                    'Path' => 'api_dump/metrics-json/4.1.14/aab1d/API.dump.tar.gz',
+                                                    'TotalSymbols' => '9'
+                                                  }
+                                     },
+                         '4.1.15' => {
+                                       '59cf9' => {
+                                                    'Archive' => 'metrics-json-4.1.15.jar',
+                                                    'Path' => 'api_dump/metrics-json/4.1.15/59cf9/API.dump.tar.gz',
+                                                    'TotalSymbols' => '9'
+                                                  }
+                                     },
+                         '4.1.16' => {
+                                       '4739c' => {
+                                                    'Archive' => 'metrics-json-4.1.16.jar',
+                                                    'Path' => 'api_dump/metrics-json/4.1.16/4739c/API.dump.tar.gz',
+                                                    'TotalSymbols' => '9'
+                                                  }
+                                     },
+                         '4.1.17' => {
+                                       'f7748' => {
+                                                    'Archive' => 'metrics-json-4.1.17.jar',
+                                                    'Path' => 'api_dump/metrics-json/4.1.17/f7748/API.dump.tar.gz',
+                                                    'TotalSymbols' => '9'
+                                                  }
+                                     },
+                         '4.1.18' => {
+                                       '1f1cd' => {
+                                                    'Archive' => 'metrics-json-4.1.18.jar',
+                                                    'Path' => 'api_dump/metrics-json/4.1.18/1f1cd/API.dump.tar.gz',
+                                                    'TotalSymbols' => '9'
+                                                  }
+                                     },
+                         '4.1.19' => {
+                                       '3ed27' => {
+                                                    'Archive' => 'metrics-json-4.1.19.jar',
+                                                    'Path' => 'api_dump/metrics-json/4.1.19/3ed27/API.dump.tar.gz',
+                                                    'TotalSymbols' => '9'
+                                                  }
+                                     },
+                         '4.1.2' => {
+                                      '1686b' => {
+                                                   'Archive' => 'metrics-json-4.1.2.jar',
+                                                   'Path' => 'api_dump/metrics-json/4.1.2/1686b/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '4.1.20' => {
+                                       'b507e' => {
+                                                    'Archive' => 'metrics-json-4.1.20.jar',
+                                                    'Path' => 'api_dump/metrics-json/4.1.20/b507e/API.dump.tar.gz',
+                                                    'TotalSymbols' => '9'
+                                                  }
+                                     },
+                         '4.1.21' => {
+                                       '63a03' => {
+                                                    'Archive' => 'metrics-json-4.1.21.jar',
+                                                    'Path' => 'api_dump/metrics-json/4.1.21/63a03/API.dump.tar.gz',
+                                                    'TotalSymbols' => '9'
+                                                  }
+                                     },
+                         '4.1.22' => {
+                                       '0467e' => {
+                                                    'Archive' => 'metrics-json-4.1.22.jar',
+                                                    'Path' => 'api_dump/metrics-json/4.1.22/0467e/API.dump.tar.gz',
+                                                    'TotalSymbols' => '9'
+                                                  }
+                                     },
+                         '4.1.23' => {
+                                       'd1959' => {
+                                                    'Archive' => 'metrics-json-4.1.23.jar',
+                                                    'Path' => 'api_dump/metrics-json/4.1.23/d1959/API.dump.tar.gz',
+                                                    'TotalSymbols' => '9'
+                                                  }
+                                     },
+                         '4.1.24' => {
+                                       '70cef' => {
+                                                    'Archive' => 'metrics-json-4.1.24.jar',
+                                                    'Path' => 'api_dump/metrics-json/4.1.24/70cef/API.dump.tar.gz',
+                                                    'TotalSymbols' => '9'
+                                                  }
+                                     },
+                         '4.1.25' => {
+                                       '5bada' => {
+                                                    'Archive' => 'metrics-json-4.1.25.jar',
+                                                    'Path' => 'api_dump/metrics-json/4.1.25/5bada/API.dump.tar.gz',
+                                                    'TotalSymbols' => '9'
+                                                  }
+                                     },
+                         '4.1.3' => {
+                                      'dcab4' => {
+                                                   'Archive' => 'metrics-json-4.1.3.jar',
+                                                   'Path' => 'api_dump/metrics-json/4.1.3/dcab4/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '4.1.4' => {
+                                      '39dff' => {
+                                                   'Archive' => 'metrics-json-4.1.4.jar',
+                                                   'Path' => 'api_dump/metrics-json/4.1.4/39dff/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '4.1.5' => {
+                                      'a9d68' => {
+                                                   'Archive' => 'metrics-json-4.1.5.jar',
+                                                   'Path' => 'api_dump/metrics-json/4.1.5/a9d68/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '4.1.6' => {
+                                      '2ccac' => {
+                                                   'Archive' => 'metrics-json-4.1.6.jar',
+                                                   'Path' => 'api_dump/metrics-json/4.1.6/2ccac/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '4.1.7' => {
+                                      '50936' => {
+                                                   'Archive' => 'metrics-json-4.1.7.jar',
+                                                   'Path' => 'api_dump/metrics-json/4.1.7/50936/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '4.1.8' => {
+                                      '720d6' => {
+                                                   'Archive' => 'metrics-json-4.1.8.jar',
+                                                   'Path' => 'api_dump/metrics-json/4.1.8/720d6/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '4.1.9' => {
+                                      '1fb4e' => {
+                                                   'Archive' => 'metrics-json-4.1.9.jar',
+                                                   'Path' => 'api_dump/metrics-json/4.1.9/1fb4e/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '4.2.0' => {
+                                      'f394e' => {
+                                                   'Archive' => 'metrics-json-4.2.0.jar',
+                                                   'Path' => 'api_dump/metrics-json/4.2.0/f394e/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '4.2.1' => {
+                                      '15bbd' => {
+                                                   'Archive' => 'metrics-json-4.2.1.jar',
+                                                   'Path' => 'api_dump/metrics-json/4.2.1/15bbd/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '4.2.2' => {
+                                      '7773e' => {
+                                                   'Archive' => 'metrics-json-4.2.2.jar',
+                                                   'Path' => 'api_dump/metrics-json/4.2.2/7773e/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    },
+                         '4.2.3' => {
+                                      '1460e' => {
+                                                   'Archive' => 'metrics-json-4.2.3.jar',
+                                                   'Path' => 'api_dump/metrics-json/4.2.3/1460e/API.dump.tar.gz',
+                                                   'TotalSymbols' => '9'
+                                                 }
+                                    }
+                       },
+          'APIReport' => {
+                           '3.1.0' => {
+                                        '3.1.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/3.1.0/3.1.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.1.1' => {
+                                        '3.1.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/3.1.1/3.1.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.1.2' => {
+                                        '3.1.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/3.1.2/3.1.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.1.3' => {
+                                        '3.1.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/3.1.3/3.1.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.1.4' => {
+                                        '3.1.5' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/3.1.4/3.1.5/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.1.5' => {
+                                        '3.2.0' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/3.1.5/3.2.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.2.0' => {
+                                        '3.2.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/3.2.0/3.2.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.2.1' => {
+                                        '3.2.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/3.2.1/3.2.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.2.2' => {
+                                        '3.2.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/3.2.2/3.2.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.2.3' => {
+                                        '3.2.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/3.2.3/3.2.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.2.4' => {
+                                        '3.2.5' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/3.2.4/3.2.5/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.2.5' => {
+                                        '3.2.6' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/3.2.5/3.2.6/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.2.6' => {
+                                        '4.0.0' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/3.2.6/4.0.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.0' => {
+                                        '4.0.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/4.0.0/4.0.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.1' => {
+                                        '4.0.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/4.0.1/4.0.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.2' => {
+                                        '4.0.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/4.0.2/4.0.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.3' => {
+                                        '4.0.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/4.0.3/4.0.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.4' => {
+                                        '4.0.5' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/4.0.4/4.0.5/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.5' => {
+                                        '4.0.6' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/4.0.5/4.0.6/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.6' => {
+                                        '4.0.7' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/4.0.6/4.0.7/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.7' => {
+                                        '4.1.0' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/4.0.7/4.1.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.0' => {
+                                        '4.1.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/4.1.0/4.1.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.1' => {
+                                        '4.1.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/4.1.1/4.1.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.10' => {
+                                         '4.1.10.1' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/metrics-json/4.1.10/4.1.10.1/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                       },
+                           '4.1.10.1' => {
+                                           '4.1.11' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/metrics-json/4.1.10.1/4.1.11/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                         },
+                           '4.1.11' => {
+                                         '4.1.12' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-json/4.1.11/4.1.12/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.12' => {
+                                         '4.1.12.1' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/metrics-json/4.1.12/4.1.12.1/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                       },
+                           '4.1.12.1' => {
+                                           '4.1.13' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/metrics-json/4.1.12.1/4.1.13/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                         },
+                           '4.1.13' => {
+                                         '4.1.14' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-json/4.1.13/4.1.14/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.14' => {
+                                         '4.1.15' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-json/4.1.14/4.1.15/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.15' => {
+                                         '4.1.16' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-json/4.1.15/4.1.16/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.16' => {
+                                         '4.1.17' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-json/4.1.16/4.1.17/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.17' => {
+                                         '4.1.18' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-json/4.1.17/4.1.18/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.18' => {
+                                         '4.1.19' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-json/4.1.18/4.1.19/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.19' => {
+                                         '4.1.20' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-json/4.1.19/4.1.20/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.2' => {
+                                        '4.1.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/4.1.2/4.1.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.20' => {
+                                         '4.1.21' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-json/4.1.20/4.1.21/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.21' => {
+                                         '4.1.22' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-json/4.1.21/4.1.22/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.22' => {
+                                         '4.1.23' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-json/4.1.22/4.1.23/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.23' => {
+                                         '4.1.24' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-json/4.1.23/4.1.24/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.24' => {
+                                         '4.1.25' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-json/4.1.24/4.1.25/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.25' => {
+                                         '4.2.0' => {
+                                                      'Added' => 0,
+                                                      'ArchivesAdded' => 0,
+                                                      'ArchivesAddedSymbols' => 0,
+                                                      'ArchivesRemoved' => 0,
+                                                      'ArchivesRemovedSymbols' => 0,
+                                                      'BC' => 100,
+                                                      'Path' => 'archives_report/metrics-json/4.1.25/4.2.0/report.html',
+                                                      'Removed' => 0,
+                                                      'Source_BC' => 100,
+                                                      'Source_TotalProblems' => 0,
+                                                      'TotalArchives' => 1,
+                                                      'TotalProblems' => 0
+                                                    }
+                                       },
+                           '4.1.3' => {
+                                        '4.1.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/4.1.3/4.1.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.4' => {
+                                        '4.1.5' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/4.1.4/4.1.5/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.5' => {
+                                        '4.1.6' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/4.1.5/4.1.6/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.6' => {
+                                        '4.1.7' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/4.1.6/4.1.7/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.7' => {
+                                        '4.1.8' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/4.1.7/4.1.8/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.8' => {
+                                        '4.1.9' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/4.1.8/4.1.9/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.9' => {
+                                        '4.1.10' => {
+                                                      'Added' => 0,
+                                                      'ArchivesAdded' => 0,
+                                                      'ArchivesAddedSymbols' => 0,
+                                                      'ArchivesRemoved' => 0,
+                                                      'ArchivesRemovedSymbols' => 0,
+                                                      'BC' => 100,
+                                                      'Path' => 'archives_report/metrics-json/4.1.9/4.1.10/report.html',
+                                                      'Removed' => 0,
+                                                      'Source_BC' => 100,
+                                                      'Source_TotalProblems' => 0,
+                                                      'TotalArchives' => 1,
+                                                      'TotalProblems' => 0
+                                                    }
+                                      },
+                           '4.2.0' => {
+                                        '4.2.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/4.2.0/4.2.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.2.1' => {
+                                        '4.2.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/4.2.1/4.2.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.2.2' => {
+                                        '4.2.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-json/4.2.2/4.2.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      }
+                         },
+          'APIReport_D' => {
+                             '3.1.0' => {
+                                          '3.1.1' => {
+                                                       'ab411' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-3.1.0.jar',
+                                                                    'Archive2' => 'metrics-json-3.1.1.jar',
+                                                                    'Path' => 'compat_report/metrics-json/3.1.0/3.1.1/ab411/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/3.1.0/3.1.1/ab411/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.1.1' => {
+                                          '3.1.2' => {
+                                                       '3a6d9' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-3.1.1.jar',
+                                                                    'Archive2' => 'metrics-json-3.1.2.jar',
+                                                                    'Path' => 'compat_report/metrics-json/3.1.1/3.1.2/3a6d9/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/3.1.1/3.1.2/3a6d9/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.1.2' => {
+                                          '3.1.3' => {
+                                                       '8ce7c' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-3.1.2.jar',
+                                                                    'Archive2' => 'metrics-json-3.1.3.jar',
+                                                                    'Path' => 'compat_report/metrics-json/3.1.2/3.1.3/8ce7c/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/3.1.2/3.1.3/8ce7c/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.1.3' => {
+                                          '3.1.4' => {
+                                                       'ec7b3' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-3.1.3.jar',
+                                                                    'Archive2' => 'metrics-json-3.1.4.jar',
+                                                                    'Path' => 'compat_report/metrics-json/3.1.3/3.1.4/ec7b3/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/3.1.3/3.1.4/ec7b3/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.1.4' => {
+                                          '3.1.5' => {
+                                                       'd6dcf' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-3.1.4.jar',
+                                                                    'Archive2' => 'metrics-json-3.1.5.jar',
+                                                                    'Path' => 'compat_report/metrics-json/3.1.4/3.1.5/d6dcf/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/3.1.4/3.1.5/d6dcf/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.1.5' => {
+                                          '3.2.0' => {
+                                                       '60e44' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-3.1.5.jar',
+                                                                    'Archive2' => 'metrics-json-3.2.0.jar',
+                                                                    'Path' => 'compat_report/metrics-json/3.1.5/3.2.0/60e44/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/3.1.5/3.2.0/60e44/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.2.0' => {
+                                          '3.2.1' => {
+                                                       'e69dd' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-3.2.0.jar',
+                                                                    'Archive2' => 'metrics-json-3.2.1.jar',
+                                                                    'Path' => 'compat_report/metrics-json/3.2.0/3.2.1/e69dd/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/3.2.0/3.2.1/e69dd/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.2.1' => {
+                                          '3.2.2' => {
+                                                       '3f6c0' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-3.2.1.jar',
+                                                                    'Archive2' => 'metrics-json-3.2.2.jar',
+                                                                    'Path' => 'compat_report/metrics-json/3.2.1/3.2.2/3f6c0/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/3.2.1/3.2.2/3f6c0/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.2.2' => {
+                                          '3.2.3' => {
+                                                       '7d4ba' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-3.2.2.jar',
+                                                                    'Archive2' => 'metrics-json-3.2.3.jar',
+                                                                    'Path' => 'compat_report/metrics-json/3.2.2/3.2.3/7d4ba/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/3.2.2/3.2.3/7d4ba/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.2.3' => {
+                                          '3.2.4' => {
+                                                       'f6a55' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-3.2.3.jar',
+                                                                    'Archive2' => 'metrics-json-3.2.4.jar',
+                                                                    'Path' => 'compat_report/metrics-json/3.2.3/3.2.4/f6a55/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/3.2.3/3.2.4/f6a55/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.2.4' => {
+                                          '3.2.5' => {
+                                                       'c24d7' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-3.2.4.jar',
+                                                                    'Archive2' => 'metrics-json-3.2.5.jar',
+                                                                    'Path' => 'compat_report/metrics-json/3.2.4/3.2.5/c24d7/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/3.2.4/3.2.5/c24d7/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.2.5' => {
+                                          '3.2.6' => {
+                                                       '59a9b' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-3.2.5.jar',
+                                                                    'Archive2' => 'metrics-json-3.2.6.jar',
+                                                                    'Path' => 'compat_report/metrics-json/3.2.5/3.2.6/59a9b/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/3.2.5/3.2.6/59a9b/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.2.6' => {
+                                          '4.0.0' => {
+                                                       '6dbd7' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-3.2.6.jar',
+                                                                    'Archive2' => 'metrics-json-4.0.0.jar',
+                                                                    'Path' => 'compat_report/metrics-json/3.2.6/4.0.0/6dbd7/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/3.2.6/4.0.0/6dbd7/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.0' => {
+                                          '4.0.1' => {
+                                                       'c86a1' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-4.0.0.jar',
+                                                                    'Archive2' => 'metrics-json-4.0.1.jar',
+                                                                    'Path' => 'compat_report/metrics-json/4.0.0/4.0.1/c86a1/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/4.0.0/4.0.1/c86a1/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.1' => {
+                                          '4.0.2' => {
+                                                       'b6986' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-4.0.1.jar',
+                                                                    'Archive2' => 'metrics-json-4.0.2.jar',
+                                                                    'Path' => 'compat_report/metrics-json/4.0.1/4.0.2/b6986/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/4.0.1/4.0.2/b6986/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.2' => {
+                                          '4.0.3' => {
+                                                       '6a68e' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-4.0.2.jar',
+                                                                    'Archive2' => 'metrics-json-4.0.3.jar',
+                                                                    'Path' => 'compat_report/metrics-json/4.0.2/4.0.3/6a68e/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/4.0.2/4.0.3/6a68e/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.3' => {
+                                          '4.0.4' => {
+                                                       '9d0dd' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-4.0.3.jar',
+                                                                    'Archive2' => 'metrics-json-4.0.4.jar',
+                                                                    'Path' => 'compat_report/metrics-json/4.0.3/4.0.4/9d0dd/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/4.0.3/4.0.4/9d0dd/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.4' => {
+                                          '4.0.5' => {
+                                                       'd693b' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-4.0.4.jar',
+                                                                    'Archive2' => 'metrics-json-4.0.5.jar',
+                                                                    'Path' => 'compat_report/metrics-json/4.0.4/4.0.5/d693b/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/4.0.4/4.0.5/d693b/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.5' => {
+                                          '4.0.6' => {
+                                                       'b5637' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-4.0.5.jar',
+                                                                    'Archive2' => 'metrics-json-4.0.6.jar',
+                                                                    'Path' => 'compat_report/metrics-json/4.0.5/4.0.6/b5637/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/4.0.5/4.0.6/b5637/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.6' => {
+                                          '4.0.7' => {
+                                                       '8d0a7' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-4.0.6.jar',
+                                                                    'Archive2' => 'metrics-json-4.0.7.jar',
+                                                                    'Path' => 'compat_report/metrics-json/4.0.6/4.0.7/8d0a7/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/4.0.6/4.0.7/8d0a7/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.7' => {
+                                          '4.1.0' => {
+                                                       'b3b21' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-4.0.7.jar',
+                                                                    'Archive2' => 'metrics-json-4.1.0.jar',
+                                                                    'Path' => 'compat_report/metrics-json/4.0.7/4.1.0/b3b21/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/4.0.7/4.1.0/b3b21/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.0' => {
+                                          '4.1.1' => {
+                                                       '97747' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-4.1.0.jar',
+                                                                    'Archive2' => 'metrics-json-4.1.1.jar',
+                                                                    'Path' => 'compat_report/metrics-json/4.1.0/4.1.1/97747/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/4.1.0/4.1.1/97747/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.1' => {
+                                          '4.1.2' => {
+                                                       'b9707' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-4.1.1.jar',
+                                                                    'Archive2' => 'metrics-json-4.1.2.jar',
+                                                                    'Path' => 'compat_report/metrics-json/4.1.1/4.1.2/b9707/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/4.1.1/4.1.2/b9707/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.10' => {
+                                           '4.1.10.1' => {
+                                                           '4cc46' => {
+                                                                        'Added' => 0,
+                                                                        'Affected' => 0,
+                                                                        'Archive1' => 'metrics-json-4.1.10.jar',
+                                                                        'Archive2' => 'metrics-json-4.1.10.1.jar',
+                                                                        'Path' => 'compat_report/metrics-json/4.1.10/4.1.10.1/4cc46/bin_compat_report.html',
+                                                                        'Removed' => 0,
+                                                                        'Source_Affected' => 0,
+                                                                        'Source_ReportPath' => 'compat_report/metrics-json/4.1.10/4.1.10.1/4cc46/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                         },
+                             '4.1.10.1' => {
+                                             '4.1.11' => {
+                                                           '46f12' => {
+                                                                        'Added' => 0,
+                                                                        'Affected' => 0,
+                                                                        'Archive1' => 'metrics-json-4.1.10.1.jar',
+                                                                        'Archive2' => 'metrics-json-4.1.11.jar',
+                                                                        'Path' => 'compat_report/metrics-json/4.1.10.1/4.1.11/46f12/bin_compat_report.html',
+                                                                        'Removed' => 0,
+                                                                        'Source_Affected' => 0,
+                                                                        'Source_ReportPath' => 'compat_report/metrics-json/4.1.10.1/4.1.11/46f12/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                           },
+                             '4.1.11' => {
+                                           '4.1.12' => {
+                                                         'fbc31' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-json-4.1.11.jar',
+                                                                      'Archive2' => 'metrics-json-4.1.12.jar',
+                                                                      'Path' => 'compat_report/metrics-json/4.1.11/4.1.12/fbc31/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-json/4.1.11/4.1.12/fbc31/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.12' => {
+                                           '4.1.12.1' => {
+                                                           '1933c' => {
+                                                                        'Added' => 0,
+                                                                        'Affected' => 0,
+                                                                        'Archive1' => 'metrics-json-4.1.12.jar',
+                                                                        'Archive2' => 'metrics-json-4.1.12.1.jar',
+                                                                        'Path' => 'compat_report/metrics-json/4.1.12/4.1.12.1/1933c/bin_compat_report.html',
+                                                                        'Removed' => 0,
+                                                                        'Source_Affected' => 0,
+                                                                        'Source_ReportPath' => 'compat_report/metrics-json/4.1.12/4.1.12.1/1933c/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                         },
+                             '4.1.12.1' => {
+                                             '4.1.13' => {
+                                                           '25b34' => {
+                                                                        'Added' => 0,
+                                                                        'Affected' => 0,
+                                                                        'Archive1' => 'metrics-json-4.1.12.1.jar',
+                                                                        'Archive2' => 'metrics-json-4.1.13.jar',
+                                                                        'Path' => 'compat_report/metrics-json/4.1.12.1/4.1.13/25b34/bin_compat_report.html',
+                                                                        'Removed' => 0,
+                                                                        'Source_Affected' => 0,
+                                                                        'Source_ReportPath' => 'compat_report/metrics-json/4.1.12.1/4.1.13/25b34/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                           },
+                             '4.1.13' => {
+                                           '4.1.14' => {
+                                                         '3a0a0' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-json-4.1.13.jar',
+                                                                      'Archive2' => 'metrics-json-4.1.14.jar',
+                                                                      'Path' => 'compat_report/metrics-json/4.1.13/4.1.14/3a0a0/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-json/4.1.13/4.1.14/3a0a0/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.14' => {
+                                           '4.1.15' => {
+                                                         'c3b73' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-json-4.1.14.jar',
+                                                                      'Archive2' => 'metrics-json-4.1.15.jar',
+                                                                      'Path' => 'compat_report/metrics-json/4.1.14/4.1.15/c3b73/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-json/4.1.14/4.1.15/c3b73/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.15' => {
+                                           '4.1.16' => {
+                                                         'f40e3' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-json-4.1.15.jar',
+                                                                      'Archive2' => 'metrics-json-4.1.16.jar',
+                                                                      'Path' => 'compat_report/metrics-json/4.1.15/4.1.16/f40e3/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-json/4.1.15/4.1.16/f40e3/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.16' => {
+                                           '4.1.17' => {
+                                                         '7f582' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-json-4.1.16.jar',
+                                                                      'Archive2' => 'metrics-json-4.1.17.jar',
+                                                                      'Path' => 'compat_report/metrics-json/4.1.16/4.1.17/7f582/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-json/4.1.16/4.1.17/7f582/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.17' => {
+                                           '4.1.18' => {
+                                                         '93eb8' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-json-4.1.17.jar',
+                                                                      'Archive2' => 'metrics-json-4.1.18.jar',
+                                                                      'Path' => 'compat_report/metrics-json/4.1.17/4.1.18/93eb8/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-json/4.1.17/4.1.18/93eb8/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.18' => {
+                                           '4.1.19' => {
+                                                         '4085b' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-json-4.1.18.jar',
+                                                                      'Archive2' => 'metrics-json-4.1.19.jar',
+                                                                      'Path' => 'compat_report/metrics-json/4.1.18/4.1.19/4085b/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-json/4.1.18/4.1.19/4085b/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.19' => {
+                                           '4.1.20' => {
+                                                         '0bb66' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-json-4.1.19.jar',
+                                                                      'Archive2' => 'metrics-json-4.1.20.jar',
+                                                                      'Path' => 'compat_report/metrics-json/4.1.19/4.1.20/0bb66/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-json/4.1.19/4.1.20/0bb66/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.2' => {
+                                          '4.1.3' => {
+                                                       'dbfc0' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-4.1.2.jar',
+                                                                    'Archive2' => 'metrics-json-4.1.3.jar',
+                                                                    'Path' => 'compat_report/metrics-json/4.1.2/4.1.3/dbfc0/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/4.1.2/4.1.3/dbfc0/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.20' => {
+                                           '4.1.21' => {
+                                                         '1b17b' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-json-4.1.20.jar',
+                                                                      'Archive2' => 'metrics-json-4.1.21.jar',
+                                                                      'Path' => 'compat_report/metrics-json/4.1.20/4.1.21/1b17b/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-json/4.1.20/4.1.21/1b17b/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.21' => {
+                                           '4.1.22' => {
+                                                         'f5ffe' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-json-4.1.21.jar',
+                                                                      'Archive2' => 'metrics-json-4.1.22.jar',
+                                                                      'Path' => 'compat_report/metrics-json/4.1.21/4.1.22/f5ffe/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-json/4.1.21/4.1.22/f5ffe/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.22' => {
+                                           '4.1.23' => {
+                                                         'ba51f' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-json-4.1.22.jar',
+                                                                      'Archive2' => 'metrics-json-4.1.23.jar',
+                                                                      'Path' => 'compat_report/metrics-json/4.1.22/4.1.23/ba51f/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-json/4.1.22/4.1.23/ba51f/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.23' => {
+                                           '4.1.24' => {
+                                                         '4dd5f' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-json-4.1.23.jar',
+                                                                      'Archive2' => 'metrics-json-4.1.24.jar',
+                                                                      'Path' => 'compat_report/metrics-json/4.1.23/4.1.24/4dd5f/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-json/4.1.23/4.1.24/4dd5f/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.24' => {
+                                           '4.1.25' => {
+                                                         '84402' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-json-4.1.24.jar',
+                                                                      'Archive2' => 'metrics-json-4.1.25.jar',
+                                                                      'Path' => 'compat_report/metrics-json/4.1.24/4.1.25/84402/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-json/4.1.24/4.1.25/84402/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.25' => {
+                                           '4.2.0' => {
+                                                        'ffd4e' => {
+                                                                     'Added' => 0,
+                                                                     'Affected' => 0,
+                                                                     'Archive1' => 'metrics-json-4.1.25.jar',
+                                                                     'Archive2' => 'metrics-json-4.2.0.jar',
+                                                                     'Path' => 'compat_report/metrics-json/4.1.25/4.2.0/ffd4e/bin_compat_report.html',
+                                                                     'Removed' => 0,
+                                                                     'Source_Affected' => 0,
+                                                                     'Source_ReportPath' => 'compat_report/metrics-json/4.1.25/4.2.0/ffd4e/src_compat_report.html',
+                                                                     'Source_TotalProblems' => 0,
+                                                                     'TotalProblems' => 0
+                                                                   }
+                                                      }
+                                         },
+                             '4.1.3' => {
+                                          '4.1.4' => {
+                                                       '0186d' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-4.1.3.jar',
+                                                                    'Archive2' => 'metrics-json-4.1.4.jar',
+                                                                    'Path' => 'compat_report/metrics-json/4.1.3/4.1.4/0186d/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/4.1.3/4.1.4/0186d/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.4' => {
+                                          '4.1.5' => {
+                                                       '546c0' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-4.1.4.jar',
+                                                                    'Archive2' => 'metrics-json-4.1.5.jar',
+                                                                    'Path' => 'compat_report/metrics-json/4.1.4/4.1.5/546c0/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/4.1.4/4.1.5/546c0/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.5' => {
+                                          '4.1.6' => {
+                                                       '8d2ef' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-4.1.5.jar',
+                                                                    'Archive2' => 'metrics-json-4.1.6.jar',
+                                                                    'Path' => 'compat_report/metrics-json/4.1.5/4.1.6/8d2ef/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/4.1.5/4.1.6/8d2ef/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.6' => {
+                                          '4.1.7' => {
+                                                       '0307a' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-4.1.6.jar',
+                                                                    'Archive2' => 'metrics-json-4.1.7.jar',
+                                                                    'Path' => 'compat_report/metrics-json/4.1.6/4.1.7/0307a/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/4.1.6/4.1.7/0307a/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.7' => {
+                                          '4.1.8' => {
+                                                       '3f1d5' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-4.1.7.jar',
+                                                                    'Archive2' => 'metrics-json-4.1.8.jar',
+                                                                    'Path' => 'compat_report/metrics-json/4.1.7/4.1.8/3f1d5/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/4.1.7/4.1.8/3f1d5/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.8' => {
+                                          '4.1.9' => {
+                                                       '02c15' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-4.1.8.jar',
+                                                                    'Archive2' => 'metrics-json-4.1.9.jar',
+                                                                    'Path' => 'compat_report/metrics-json/4.1.8/4.1.9/02c15/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/4.1.8/4.1.9/02c15/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.9' => {
+                                          '4.1.10' => {
+                                                        '46f84' => {
+                                                                     'Added' => 0,
+                                                                     'Affected' => 0,
+                                                                     'Archive1' => 'metrics-json-4.1.9.jar',
+                                                                     'Archive2' => 'metrics-json-4.1.10.jar',
+                                                                     'Path' => 'compat_report/metrics-json/4.1.9/4.1.10/46f84/bin_compat_report.html',
+                                                                     'Removed' => 0,
+                                                                     'Source_Affected' => 0,
+                                                                     'Source_ReportPath' => 'compat_report/metrics-json/4.1.9/4.1.10/46f84/src_compat_report.html',
+                                                                     'Source_TotalProblems' => 0,
+                                                                     'TotalProblems' => 0
+                                                                   }
+                                                      }
+                                        },
+                             '4.2.0' => {
+                                          '4.2.1' => {
+                                                       'f20b5' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-4.2.0.jar',
+                                                                    'Archive2' => 'metrics-json-4.2.1.jar',
+                                                                    'Path' => 'compat_report/metrics-json/4.2.0/4.2.1/f20b5/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/4.2.0/4.2.1/f20b5/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.2.1' => {
+                                          '4.2.2' => {
+                                                       '1f69b' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-4.2.1.jar',
+                                                                    'Archive2' => 'metrics-json-4.2.2.jar',
+                                                                    'Path' => 'compat_report/metrics-json/4.2.1/4.2.2/1f69b/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/4.2.1/4.2.2/1f69b/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.2.2' => {
+                                          '4.2.3' => {
+                                                       'ff17b' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-json-4.2.2.jar',
+                                                                    'Archive2' => 'metrics-json-4.2.3.jar',
+                                                                    'Path' => 'compat_report/metrics-json/4.2.2/4.2.3/ff17b/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-json/4.2.2/4.2.3/ff17b/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        }
+                           },
+          'Changelog' => {},
+          'Date' => {
+                      '3.1.0' => '04-2014-09 11:03',
+                      '3.1.1' => '06-2015-03 20:38',
+                      '3.1.2' => '26-2015-04 00:01',
+                      '3.1.3' => '24-2017-02 15:01',
+                      '3.1.4' => '10-2017-03 14:30',
+                      '3.1.5' => '02-2017-06 20:06',
+                      '3.2.0' => '24-2017-02 15:24',
+                      '3.2.1' => '10-2017-03 16:47',
+                      '3.2.2' => '20-2017-03 15:24',
+                      '3.2.3' => '28-2017-06 10:05',
+                      '3.2.4' => '03-2017-08 20:09',
+                      '3.2.5' => '15-2017-09 10:45',
+                      '3.2.6' => '24-2017-12 21:58',
+                      '4.0.0' => '24-2017-12 21:41',
+                      '4.0.1' => '03-2018-01 18:33',
+                      '4.0.2' => '05-2018-01 19:56',
+                      '4.0.3' => '19-2018-07 00:35',
+                      '4.0.4' => '26-2018-12 19:44',
+                      '4.0.5' => '27-2018-12 20:15',
+                      '4.0.6' => '10-2019-08 12:43',
+                      '4.0.7' => '19-2019-10 15:32',
+                      '4.1.0' => '05-2019-05 22:42',
+                      '4.1.1' => '19-2019-10 13:14',
+                      '4.1.10' => '03-2020-07 07:46',
+                      '4.1.10.1' => '04-2020-07 08:35',
+                      '4.1.11' => '01-1980-02 00:00',
+                      '4.1.12' => '01-1980-02 00:00',
+                      '4.1.12.1' => '01-1980-02 00:00',
+                      '4.1.13' => '01-1980-02 00:00',
+                      '4.1.14' => '01-1980-02 00:00',
+                      '4.1.15' => '01-1980-02 00:00',
+                      '4.1.16' => '01-1980-02 00:00',
+                      '4.1.17' => '01-1980-02 00:00',
+                      '4.1.18' => '01-1980-02 00:00',
+                      '4.1.19' => '01-1980-02 00:00',
+                      '4.1.2' => '07-2019-12 13:52',
+                      '4.1.20' => '01-1980-02 00:00',
+                      '4.1.21' => '01-1980-02 00:00',
+                      '4.1.22' => '01-1980-02 00:00',
+                      '4.1.23' => '01-1980-02 00:00',
+                      '4.1.24' => '01-1980-02 00:00',
+                      '4.1.25' => '01-1980-02 00:00',
+                      '4.1.3' => '24-2020-02 00:50',
+                      '4.1.4' => '27-2020-02 15:41',
+                      '4.1.5' => '09-2020-03 07:28',
+                      '4.1.6' => '09-2020-04 19:00',
+                      '4.1.7' => '02-2020-05 21:23',
+                      '4.1.8' => '14-2020-05 20:14',
+                      '4.1.9' => '24-2020-05 13:56',
+                      '4.2.0' => '01-1980-02 00:00',
+                      '4.2.1' => '01-1980-02 00:00',
+                      '4.2.2' => '01-1980-02 00:00',
+                      '4.2.3' => '01-1980-02 00:00'
+                    },
+          'Maintainer' => 'Dropwizard Metrics Committers',
+          'MaintainerUrl' => 'https://metrics.dropwizard.io/',
+          'PackageDiff' => {
+                             '3.1.0' => {
+                                          '3.1.1' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-json/3.1.0/3.1.1/report.html'
+                                                     }
+                                        },
+                             '3.1.1' => {
+                                          '3.1.2' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-json/3.1.1/3.1.2/report.html'
+                                                     }
+                                        },
+                             '3.1.2' => {
+                                          '3.1.3' => {
+                                                       'Changed' => '0.5',
+                                                       'Path' => 'package_diff/metrics-json/3.1.2/3.1.3/report.html'
+                                                     }
+                                        },
+                             '3.1.3' => {
+                                          '3.1.4' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-json/3.1.3/3.1.4/report.html'
+                                                     }
+                                        },
+                             '3.1.4' => {
+                                          '3.1.5' => {
+                                                       'Changed' => '0.5',
+                                                       'Path' => 'package_diff/metrics-json/3.1.4/3.1.5/report.html'
+                                                     }
+                                        },
+                             '3.1.5' => {
+                                          '3.2.0' => {
+                                                       'Changed' => '10.5',
+                                                       'Path' => 'package_diff/metrics-json/3.1.5/3.2.0/report.html'
+                                                     }
+                                        },
+                             '3.2.0' => {
+                                          '3.2.1' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-json/3.2.0/3.2.1/report.html'
+                                                     }
+                                        },
+                             '3.2.1' => {
+                                          '3.2.2' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-json/3.2.1/3.2.2/report.html'
+                                                     }
+                                        },
+                             '3.2.2' => {
+                                          '3.2.3' => {
+                                                       'Changed' => '0.5',
+                                                       'Path' => 'package_diff/metrics-json/3.2.2/3.2.3/report.html'
+                                                     }
+                                        },
+                             '3.2.3' => {
+                                          '3.2.4' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-json/3.2.3/3.2.4/report.html'
+                                                     }
+                                        },
+                             '3.2.4' => {
+                                          '3.2.5' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-json/3.2.4/3.2.5/report.html'
+                                                     }
+                                        },
+                             '3.2.5' => {
+                                          '3.2.6' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-json/3.2.5/3.2.6/report.html'
+                                                     }
+                                        },
+                             '3.2.6' => {
+                                          '4.0.0' => {
+                                                       'Changed' => '2.3',
+                                                       'Path' => 'package_diff/metrics-json/3.2.6/4.0.0/report.html'
+                                                     }
+                                        },
+                             '4.0.0' => {
+                                          '4.0.1' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-json/4.0.0/4.0.1/report.html'
+                                                     }
+                                        },
+                             '4.0.1' => {
+                                          '4.0.2' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-json/4.0.1/4.0.2/report.html'
+                                                     }
+                                        },
+                             '4.0.2' => {
+                                          '4.0.3' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-json/4.0.2/4.0.3/report.html'
+                                                     }
+                                        },
+                             '4.0.3' => {
+                                          '4.0.4' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-json/4.0.3/4.0.4/report.html'
+                                                     }
+                                        },
+                             '4.0.4' => {
+                                          '4.0.5' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-json/4.0.4/4.0.5/report.html'
+                                                     }
+                                        },
+                             '4.0.5' => {
+                                          '4.0.6' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-json/4.0.5/4.0.6/report.html'
+                                                     }
+                                        },
+                             '4.0.6' => {
+                                          '4.0.7' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-json/4.0.6/4.0.7/report.html'
+                                                     }
+                                        },
+                             '4.0.7' => {
+                                          '4.1.0' => {
+                                                       'Changed' => '2.7',
+                                                       'Path' => 'package_diff/metrics-json/4.0.7/4.1.0/report.html'
+                                                     }
+                                        },
+                             '4.1.0' => {
+                                          '4.1.1' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-json/4.1.0/4.1.1/report.html'
+                                                     }
+                                        },
+                             '4.1.1' => {
+                                          '4.1.2' => {
+                                                       'Changed' => '0.9',
+                                                       'Path' => 'package_diff/metrics-json/4.1.1/4.1.2/report.html'
+                                                     }
+                                        },
+                             '4.1.10' => {
+                                           '4.1.10.1' => {
+                                                           'Changed' => '0.3',
+                                                           'Path' => 'package_diff/metrics-json/4.1.10/4.1.10.1/report.html'
+                                                         }
+                                         },
+                             '4.1.10.1' => {
+                                             '4.1.11' => {
+                                                           'Changed' => '0.9',
+                                                           'Path' => 'package_diff/metrics-json/4.1.10.1/4.1.11/report.html'
+                                                         }
+                                           },
+                             '4.1.11' => {
+                                           '4.1.12' => {
+                                                         'Changed' => '0.3',
+                                                         'Path' => 'package_diff/metrics-json/4.1.11/4.1.12/report.html'
+                                                       }
+                                         },
+                             '4.1.12' => {
+                                           '4.1.12.1' => {
+                                                           'Changed' => '0.2',
+                                                           'Path' => 'package_diff/metrics-json/4.1.12/4.1.12.1/report.html'
+                                                         }
+                                         },
+                             '4.1.12.1' => {
+                                             '4.1.13' => {
+                                                           'Changed' => '0.2',
+                                                           'Path' => 'package_diff/metrics-json/4.1.12.1/4.1.13/report.html'
+                                                         }
+                                           },
+                             '4.1.13' => {
+                                           '4.1.14' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-json/4.1.13/4.1.14/report.html'
+                                                       }
+                                         },
+                             '4.1.14' => {
+                                           '4.1.15' => {
+                                                         'Changed' => '0.3',
+                                                         'Path' => 'package_diff/metrics-json/4.1.14/4.1.15/report.html'
+                                                       }
+                                         },
+                             '4.1.15' => {
+                                           '4.1.16' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-json/4.1.15/4.1.16/report.html'
+                                                       }
+                                         },
+                             '4.1.16' => {
+                                           '4.1.17' => {
+                                                         'Changed' => '0.3',
+                                                         'Path' => 'package_diff/metrics-json/4.1.16/4.1.17/report.html'
+                                                       }
+                                         },
+                             '4.1.17' => {
+                                           '4.1.18' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-json/4.1.17/4.1.18/report.html'
+                                                       }
+                                         },
+                             '4.1.18' => {
+                                           '4.1.19' => {
+                                                         'Changed' => '0.6',
+                                                         'Path' => 'package_diff/metrics-json/4.1.18/4.1.19/report.html'
+                                                       }
+                                         },
+                             '4.1.19' => {
+                                           '4.1.20' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-json/4.1.19/4.1.20/report.html'
+                                                       }
+                                         },
+                             '4.1.2' => {
+                                          '4.1.3' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-json/4.1.2/4.1.3/report.html'
+                                                     }
+                                        },
+                             '4.1.20' => {
+                                           '4.1.21' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-json/4.1.20/4.1.21/report.html'
+                                                       }
+                                         },
+                             '4.1.21' => {
+                                           '4.1.22' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-json/4.1.21/4.1.22/report.html'
+                                                       }
+                                         },
+                             '4.1.22' => {
+                                           '4.1.23' => {
+                                                         'Changed' => '2',
+                                                         'Path' => 'package_diff/metrics-json/4.1.22/4.1.23/report.html'
+                                                       }
+                                         },
+                             '4.1.23' => {
+                                           '4.1.24' => {
+                                                         'Changed' => '0.5',
+                                                         'Path' => 'package_diff/metrics-json/4.1.23/4.1.24/report.html'
+                                                       }
+                                         },
+                             '4.1.24' => {
+                                           '4.1.25' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-json/4.1.24/4.1.25/report.html'
+                                                       }
+                                         },
+                             '4.1.25' => {
+                                           '4.2.0' => {
+                                                        'Changed' => '2.9',
+                                                        'Path' => 'package_diff/metrics-json/4.1.25/4.2.0/report.html'
+                                                      }
+                                         },
+                             '4.1.3' => {
+                                          '4.1.4' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-json/4.1.3/4.1.4/report.html'
+                                                     }
+                                        },
+                             '4.1.4' => {
+                                          '4.1.5' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-json/4.1.4/4.1.5/report.html'
+                                                     }
+                                        },
+                             '4.1.5' => {
+                                          '4.1.6' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-json/4.1.5/4.1.6/report.html'
+                                                     }
+                                        },
+                             '4.1.6' => {
+                                          '4.1.7' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-json/4.1.6/4.1.7/report.html'
+                                                     }
+                                        },
+                             '4.1.7' => {
+                                          '4.1.8' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-json/4.1.7/4.1.8/report.html'
+                                                     }
+                                        },
+                             '4.1.8' => {
+                                          '4.1.9' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-json/4.1.8/4.1.9/report.html'
+                                                     }
+                                        },
+                             '4.1.9' => {
+                                          '4.1.10' => {
+                                                        'Changed' => '0.4',
+                                                        'Path' => 'package_diff/metrics-json/4.1.9/4.1.10/report.html'
+                                                      }
+                                        },
+                             '4.2.0' => {
+                                          '4.2.1' => {
+                                                       'Changed' => '1.9',
+                                                       'Path' => 'package_diff/metrics-json/4.2.0/4.2.1/report.html'
+                                                     }
+                                        },
+                             '4.2.1' => {
+                                          '4.2.2' => {
+                                                       'Changed' => '0.5',
+                                                       'Path' => 'package_diff/metrics-json/4.2.1/4.2.2/report.html'
+                                                     }
+                                        },
+                             '4.2.2' => {
+                                          '4.2.3' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-json/4.2.2/4.2.3/report.html'
+                                                     }
+                                        }
+                           },
+          'Title' => 'Jackson Integration for Metrics'
+        };

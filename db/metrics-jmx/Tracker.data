@@ -1,0 +1,1818 @@
+$VAR1 = {
+          'APIDump' => {
+                         '4.0.0' => {
+                                      'ce965' => {
+                                                   'Archive' => 'metrics-jmx-4.0.0.jar',
+                                                   'Path' => 'api_dump/metrics-jmx/4.0.0/ce965/API.dump.tar.gz',
+                                                   'TotalSymbols' => '50'
+                                                 }
+                                    },
+                         '4.0.1' => {
+                                      '9ef8a' => {
+                                                   'Archive' => 'metrics-jmx-4.0.1.jar',
+                                                   'Path' => 'api_dump/metrics-jmx/4.0.1/9ef8a/API.dump.tar.gz',
+                                                   'TotalSymbols' => '50'
+                                                 }
+                                    },
+                         '4.0.2' => {
+                                      '34814' => {
+                                                   'Archive' => 'metrics-jmx-4.0.2.jar',
+                                                   'Path' => 'api_dump/metrics-jmx/4.0.2/34814/API.dump.tar.gz',
+                                                   'TotalSymbols' => '50'
+                                                 }
+                                    },
+                         '4.0.3' => {
+                                      '15615' => {
+                                                   'Archive' => 'metrics-jmx-4.0.3.jar',
+                                                   'Path' => 'api_dump/metrics-jmx/4.0.3/15615/API.dump.tar.gz',
+                                                   'TotalSymbols' => '50'
+                                                 }
+                                    },
+                         '4.0.4' => {
+                                      '14a7d' => {
+                                                   'Archive' => 'metrics-jmx-4.0.4.jar',
+                                                   'Path' => 'api_dump/metrics-jmx/4.0.4/14a7d/API.dump.tar.gz',
+                                                   'TotalSymbols' => '50'
+                                                 }
+                                    },
+                         '4.0.5' => {
+                                      '9e163' => {
+                                                   'Archive' => 'metrics-jmx-4.0.5.jar',
+                                                   'Path' => 'api_dump/metrics-jmx/4.0.5/9e163/API.dump.tar.gz',
+                                                   'TotalSymbols' => '50'
+                                                 }
+                                    },
+                         '4.0.6' => {
+                                      'df45c' => {
+                                                   'Archive' => 'metrics-jmx-4.0.6.jar',
+                                                   'Path' => 'api_dump/metrics-jmx/4.0.6/df45c/API.dump.tar.gz',
+                                                   'TotalSymbols' => '51'
+                                                 }
+                                    },
+                         '4.0.7' => {
+                                      '32b19' => {
+                                                   'Archive' => 'metrics-jmx-4.0.7.jar',
+                                                   'Path' => 'api_dump/metrics-jmx/4.0.7/32b19/API.dump.tar.gz',
+                                                   'TotalSymbols' => '51'
+                                                 }
+                                    },
+                         '4.1.0' => {
+                                      'dc2ca' => {
+                                                   'Archive' => 'metrics-jmx-4.1.0.jar',
+                                                   'Path' => 'api_dump/metrics-jmx/4.1.0/dc2ca/API.dump.tar.gz',
+                                                   'TotalSymbols' => '50'
+                                                 }
+                                    },
+                         '4.1.1' => {
+                                      'ac28f' => {
+                                                   'Archive' => 'metrics-jmx-4.1.1.jar',
+                                                   'Path' => 'api_dump/metrics-jmx/4.1.1/ac28f/API.dump.tar.gz',
+                                                   'TotalSymbols' => '51'
+                                                 }
+                                    },
+                         '4.1.10' => {
+                                       '228b3' => {
+                                                    'Archive' => 'metrics-jmx-4.1.10.jar',
+                                                    'Path' => 'api_dump/metrics-jmx/4.1.10/228b3/API.dump.tar.gz',
+                                                    'TotalSymbols' => '51'
+                                                  }
+                                     },
+                         '4.1.10.1' => {
+                                         '5edea' => {
+                                                      'Archive' => 'metrics-jmx-4.1.10.1.jar',
+                                                      'Path' => 'api_dump/metrics-jmx/4.1.10.1/5edea/API.dump.tar.gz',
+                                                      'TotalSymbols' => '51'
+                                                    }
+                                       },
+                         '4.1.11' => {
+                                       '52c37' => {
+                                                    'Archive' => 'metrics-jmx-4.1.11.jar',
+                                                    'Path' => 'api_dump/metrics-jmx/4.1.11/52c37/API.dump.tar.gz',
+                                                    'TotalSymbols' => '51'
+                                                  }
+                                     },
+                         '4.1.12' => {
+                                       'cfdb1' => {
+                                                    'Archive' => 'metrics-jmx-4.1.12.jar',
+                                                    'Path' => 'api_dump/metrics-jmx/4.1.12/cfdb1/API.dump.tar.gz',
+                                                    'TotalSymbols' => '51'
+                                                  }
+                                     },
+                         '4.1.12.1' => {
+                                         '411ba' => {
+                                                      'Archive' => 'metrics-jmx-4.1.12.1.jar',
+                                                      'Path' => 'api_dump/metrics-jmx/4.1.12.1/411ba/API.dump.tar.gz',
+                                                      'TotalSymbols' => '51'
+                                                    }
+                                       },
+                         '4.1.13' => {
+                                       'e4f62' => {
+                                                    'Archive' => 'metrics-jmx-4.1.13.jar',
+                                                    'Path' => 'api_dump/metrics-jmx/4.1.13/e4f62/API.dump.tar.gz',
+                                                    'TotalSymbols' => '51'
+                                                  }
+                                     },
+                         '4.1.14' => {
+                                       '435bd' => {
+                                                    'Archive' => 'metrics-jmx-4.1.14.jar',
+                                                    'Path' => 'api_dump/metrics-jmx/4.1.14/435bd/API.dump.tar.gz',
+                                                    'TotalSymbols' => '51'
+                                                  }
+                                     },
+                         '4.1.15' => {
+                                       '201ee' => {
+                                                    'Archive' => 'metrics-jmx-4.1.15.jar',
+                                                    'Path' => 'api_dump/metrics-jmx/4.1.15/201ee/API.dump.tar.gz',
+                                                    'TotalSymbols' => '51'
+                                                  }
+                                     },
+                         '4.1.16' => {
+                                       '97896' => {
+                                                    'Archive' => 'metrics-jmx-4.1.16.jar',
+                                                    'Path' => 'api_dump/metrics-jmx/4.1.16/97896/API.dump.tar.gz',
+                                                    'TotalSymbols' => '51'
+                                                  }
+                                     },
+                         '4.1.17' => {
+                                       'a8917' => {
+                                                    'Archive' => 'metrics-jmx-4.1.17.jar',
+                                                    'Path' => 'api_dump/metrics-jmx/4.1.17/a8917/API.dump.tar.gz',
+                                                    'TotalSymbols' => '51'
+                                                  }
+                                     },
+                         '4.1.18' => {
+                                       '48008' => {
+                                                    'Archive' => 'metrics-jmx-4.1.18.jar',
+                                                    'Path' => 'api_dump/metrics-jmx/4.1.18/48008/API.dump.tar.gz',
+                                                    'TotalSymbols' => '51'
+                                                  }
+                                     },
+                         '4.1.19' => {
+                                       'c98aa' => {
+                                                    'Archive' => 'metrics-jmx-4.1.19.jar',
+                                                    'Path' => 'api_dump/metrics-jmx/4.1.19/c98aa/API.dump.tar.gz',
+                                                    'TotalSymbols' => '51'
+                                                  }
+                                     },
+                         '4.1.2' => {
+                                      '093c8' => {
+                                                   'Archive' => 'metrics-jmx-4.1.2.jar',
+                                                   'Path' => 'api_dump/metrics-jmx/4.1.2/093c8/API.dump.tar.gz',
+                                                   'TotalSymbols' => '51'
+                                                 }
+                                    },
+                         '4.1.20' => {
+                                       '15664' => {
+                                                    'Archive' => 'metrics-jmx-4.1.20.jar',
+                                                    'Path' => 'api_dump/metrics-jmx/4.1.20/15664/API.dump.tar.gz',
+                                                    'TotalSymbols' => '51'
+                                                  }
+                                     },
+                         '4.1.21' => {
+                                       '2a449' => {
+                                                    'Archive' => 'metrics-jmx-4.1.21.jar',
+                                                    'Path' => 'api_dump/metrics-jmx/4.1.21/2a449/API.dump.tar.gz',
+                                                    'TotalSymbols' => '51'
+                                                  }
+                                     },
+                         '4.1.22' => {
+                                       '3e032' => {
+                                                    'Archive' => 'metrics-jmx-4.1.22.jar',
+                                                    'Path' => 'api_dump/metrics-jmx/4.1.22/3e032/API.dump.tar.gz',
+                                                    'TotalSymbols' => '51'
+                                                  }
+                                     },
+                         '4.1.23' => {
+                                       '7815c' => {
+                                                    'Archive' => 'metrics-jmx-4.1.23.jar',
+                                                    'Path' => 'api_dump/metrics-jmx/4.1.23/7815c/API.dump.tar.gz',
+                                                    'TotalSymbols' => '51'
+                                                  }
+                                     },
+                         '4.1.24' => {
+                                       '75069' => {
+                                                    'Archive' => 'metrics-jmx-4.1.24.jar',
+                                                    'Path' => 'api_dump/metrics-jmx/4.1.24/75069/API.dump.tar.gz',
+                                                    'TotalSymbols' => '51'
+                                                  }
+                                     },
+                         '4.1.25' => {
+                                       '5a912' => {
+                                                    'Archive' => 'metrics-jmx-4.1.25.jar',
+                                                    'Path' => 'api_dump/metrics-jmx/4.1.25/5a912/API.dump.tar.gz',
+                                                    'TotalSymbols' => '51'
+                                                  }
+                                     },
+                         '4.1.3' => {
+                                      '54ce2' => {
+                                                   'Archive' => 'metrics-jmx-4.1.3.jar',
+                                                   'Path' => 'api_dump/metrics-jmx/4.1.3/54ce2/API.dump.tar.gz',
+                                                   'TotalSymbols' => '51'
+                                                 }
+                                    },
+                         '4.1.4' => {
+                                      'ed2b4' => {
+                                                   'Archive' => 'metrics-jmx-4.1.4.jar',
+                                                   'Path' => 'api_dump/metrics-jmx/4.1.4/ed2b4/API.dump.tar.gz',
+                                                   'TotalSymbols' => '51'
+                                                 }
+                                    },
+                         '4.1.5' => {
+                                      '301c5' => {
+                                                   'Archive' => 'metrics-jmx-4.1.5.jar',
+                                                   'Path' => 'api_dump/metrics-jmx/4.1.5/301c5/API.dump.tar.gz',
+                                                   'TotalSymbols' => '51'
+                                                 }
+                                    },
+                         '4.1.6' => {
+                                      '4c099' => {
+                                                   'Archive' => 'metrics-jmx-4.1.6.jar',
+                                                   'Path' => 'api_dump/metrics-jmx/4.1.6/4c099/API.dump.tar.gz',
+                                                   'TotalSymbols' => '51'
+                                                 }
+                                    },
+                         '4.1.7' => {
+                                      '53b33' => {
+                                                   'Archive' => 'metrics-jmx-4.1.7.jar',
+                                                   'Path' => 'api_dump/metrics-jmx/4.1.7/53b33/API.dump.tar.gz',
+                                                   'TotalSymbols' => '51'
+                                                 }
+                                    },
+                         '4.1.8' => {
+                                      'c66ad' => {
+                                                   'Archive' => 'metrics-jmx-4.1.8.jar',
+                                                   'Path' => 'api_dump/metrics-jmx/4.1.8/c66ad/API.dump.tar.gz',
+                                                   'TotalSymbols' => '51'
+                                                 }
+                                    },
+                         '4.1.9' => {
+                                      '2298f' => {
+                                                   'Archive' => 'metrics-jmx-4.1.9.jar',
+                                                   'Path' => 'api_dump/metrics-jmx/4.1.9/2298f/API.dump.tar.gz',
+                                                   'TotalSymbols' => '51'
+                                                 }
+                                    },
+                         '4.2.0' => {
+                                      '945d2' => {
+                                                   'Archive' => 'metrics-jmx-4.2.0.jar',
+                                                   'Path' => 'api_dump/metrics-jmx/4.2.0/945d2/API.dump.tar.gz',
+                                                   'TotalSymbols' => '51'
+                                                 }
+                                    },
+                         '4.2.1' => {
+                                      '50716' => {
+                                                   'Archive' => 'metrics-jmx-4.2.1.jar',
+                                                   'Path' => 'api_dump/metrics-jmx/4.2.1/50716/API.dump.tar.gz',
+                                                   'TotalSymbols' => '51'
+                                                 }
+                                    },
+                         '4.2.2' => {
+                                      '2e1c6' => {
+                                                   'Archive' => 'metrics-jmx-4.2.2.jar',
+                                                   'Path' => 'api_dump/metrics-jmx/4.2.2/2e1c6/API.dump.tar.gz',
+                                                   'TotalSymbols' => '51'
+                                                 }
+                                    },
+                         '4.2.3' => {
+                                      'eb0d3' => {
+                                                   'Archive' => 'metrics-jmx-4.2.3.jar',
+                                                   'Path' => 'api_dump/metrics-jmx/4.2.3/eb0d3/API.dump.tar.gz',
+                                                   'TotalSymbols' => '51'
+                                                 }
+                                    }
+                       },
+          'APIReport' => {
+                           '4.0.0' => {
+                                        '4.0.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jmx/4.0.0/4.0.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.1' => {
+                                        '4.0.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jmx/4.0.1/4.0.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.2' => {
+                                        '4.0.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jmx/4.0.2/4.0.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.3' => {
+                                        '4.0.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jmx/4.0.3/4.0.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.4' => {
+                                        '4.0.5' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jmx/4.0.4/4.0.5/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.5' => {
+                                        '4.0.6' => {
+                                                     'Added' => 1,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jmx/4.0.5/4.0.6/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 98,
+                                                     'Source_TotalProblems' => 1,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.6' => {
+                                        '4.0.7' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jmx/4.0.6/4.0.7/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.7' => {
+                                        '4.1.0' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => '96.1',
+                                                     'Path' => 'archives_report/metrics-jmx/4.0.7/4.1.0/report.html',
+                                                     'Removed' => 1,
+                                                     'Source_BC' => '96.1',
+                                                     'Source_TotalProblems' => 1,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 1
+                                                   }
+                                      },
+                           '4.1.0' => {
+                                        '4.1.1' => {
+                                                     'Added' => 1,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jmx/4.1.0/4.1.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 98,
+                                                     'Source_TotalProblems' => 1,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.1' => {
+                                        '4.1.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jmx/4.1.1/4.1.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.10' => {
+                                         '4.1.10.1' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/metrics-jmx/4.1.10/4.1.10.1/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                       },
+                           '4.1.10.1' => {
+                                           '4.1.11' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/metrics-jmx/4.1.10.1/4.1.11/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                         },
+                           '4.1.11' => {
+                                         '4.1.12' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jmx/4.1.11/4.1.12/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.12' => {
+                                         '4.1.12.1' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/metrics-jmx/4.1.12/4.1.12.1/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                       },
+                           '4.1.12.1' => {
+                                           '4.1.13' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/metrics-jmx/4.1.12.1/4.1.13/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                         },
+                           '4.1.13' => {
+                                         '4.1.14' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jmx/4.1.13/4.1.14/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.14' => {
+                                         '4.1.15' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jmx/4.1.14/4.1.15/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.15' => {
+                                         '4.1.16' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jmx/4.1.15/4.1.16/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.16' => {
+                                         '4.1.17' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jmx/4.1.16/4.1.17/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.17' => {
+                                         '4.1.18' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jmx/4.1.17/4.1.18/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.18' => {
+                                         '4.1.19' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jmx/4.1.18/4.1.19/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.19' => {
+                                         '4.1.20' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jmx/4.1.19/4.1.20/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.2' => {
+                                        '4.1.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jmx/4.1.2/4.1.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.20' => {
+                                         '4.1.21' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jmx/4.1.20/4.1.21/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.21' => {
+                                         '4.1.22' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jmx/4.1.21/4.1.22/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.22' => {
+                                         '4.1.23' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jmx/4.1.22/4.1.23/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.23' => {
+                                         '4.1.24' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jmx/4.1.23/4.1.24/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.24' => {
+                                         '4.1.25' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jmx/4.1.24/4.1.25/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.1.25' => {
+                                         '4.2.0' => {
+                                                      'Added' => 0,
+                                                      'ArchivesAdded' => 0,
+                                                      'ArchivesAddedSymbols' => 0,
+                                                      'ArchivesRemoved' => 0,
+                                                      'ArchivesRemovedSymbols' => 0,
+                                                      'BC' => 100,
+                                                      'Path' => 'archives_report/metrics-jmx/4.1.25/4.2.0/report.html',
+                                                      'Removed' => 0,
+                                                      'Source_BC' => 100,
+                                                      'Source_TotalProblems' => 0,
+                                                      'TotalArchives' => 1,
+                                                      'TotalProblems' => 0
+                                                    }
+                                       },
+                           '4.1.3' => {
+                                        '4.1.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jmx/4.1.3/4.1.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.4' => {
+                                        '4.1.5' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jmx/4.1.4/4.1.5/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.5' => {
+                                        '4.1.6' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jmx/4.1.5/4.1.6/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.6' => {
+                                        '4.1.7' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jmx/4.1.6/4.1.7/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.7' => {
+                                        '4.1.8' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jmx/4.1.7/4.1.8/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.8' => {
+                                        '4.1.9' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jmx/4.1.8/4.1.9/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.1.9' => {
+                                        '4.1.10' => {
+                                                      'Added' => 0,
+                                                      'ArchivesAdded' => 0,
+                                                      'ArchivesAddedSymbols' => 0,
+                                                      'ArchivesRemoved' => 0,
+                                                      'ArchivesRemovedSymbols' => 0,
+                                                      'BC' => 100,
+                                                      'Path' => 'archives_report/metrics-jmx/4.1.9/4.1.10/report.html',
+                                                      'Removed' => 0,
+                                                      'Source_BC' => 100,
+                                                      'Source_TotalProblems' => 0,
+                                                      'TotalArchives' => 1,
+                                                      'TotalProblems' => 0
+                                                    }
+                                      },
+                           '4.2.0' => {
+                                        '4.2.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jmx/4.2.0/4.2.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.2.1' => {
+                                        '4.2.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jmx/4.2.1/4.2.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.2.2' => {
+                                        '4.2.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jmx/4.2.2/4.2.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      }
+                         },
+          'APIReport_D' => {
+                             '4.0.0' => {
+                                          '4.0.1' => {
+                                                       'f6502' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jmx-4.0.0.jar',
+                                                                    'Archive2' => 'metrics-jmx-4.0.1.jar',
+                                                                    'Path' => 'compat_report/metrics-jmx/4.0.0/4.0.1/f6502/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jmx/4.0.0/4.0.1/f6502/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.1' => {
+                                          '4.0.2' => {
+                                                       'b06d0' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jmx-4.0.1.jar',
+                                                                    'Archive2' => 'metrics-jmx-4.0.2.jar',
+                                                                    'Path' => 'compat_report/metrics-jmx/4.0.1/4.0.2/b06d0/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jmx/4.0.1/4.0.2/b06d0/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.2' => {
+                                          '4.0.3' => {
+                                                       '755f2' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jmx-4.0.2.jar',
+                                                                    'Archive2' => 'metrics-jmx-4.0.3.jar',
+                                                                    'Path' => 'compat_report/metrics-jmx/4.0.2/4.0.3/755f2/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jmx/4.0.2/4.0.3/755f2/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.3' => {
+                                          '4.0.4' => {
+                                                       'fc1be' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jmx-4.0.3.jar',
+                                                                    'Archive2' => 'metrics-jmx-4.0.4.jar',
+                                                                    'Path' => 'compat_report/metrics-jmx/4.0.3/4.0.4/fc1be/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jmx/4.0.3/4.0.4/fc1be/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.4' => {
+                                          '4.0.5' => {
+                                                       '9f733' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jmx-4.0.4.jar',
+                                                                    'Archive2' => 'metrics-jmx-4.0.5.jar',
+                                                                    'Path' => 'compat_report/metrics-jmx/4.0.4/4.0.5/9f733/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jmx/4.0.4/4.0.5/9f733/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.5' => {
+                                          '4.0.6' => {
+                                                       '3f55d' => {
+                                                                    'Added' => 1,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jmx-4.0.5.jar',
+                                                                    'Archive2' => 'metrics-jmx-4.0.6.jar',
+                                                                    'Path' => 'compat_report/metrics-jmx/4.0.5/4.0.6/3f55d/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 2,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jmx/4.0.5/4.0.6/3f55d/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 1,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.6' => {
+                                          '4.0.7' => {
+                                                       '6894b' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jmx-4.0.6.jar',
+                                                                    'Archive2' => 'metrics-jmx-4.0.7.jar',
+                                                                    'Path' => 'compat_report/metrics-jmx/4.0.6/4.0.7/6894b/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jmx/4.0.6/4.0.7/6894b/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.7' => {
+                                          '4.1.0' => {
+                                                       '82909' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => '3.9',
+                                                                    'Archive1' => 'metrics-jmx-4.0.7.jar',
+                                                                    'Archive2' => 'metrics-jmx-4.1.0.jar',
+                                                                    'Path' => 'compat_report/metrics-jmx/4.0.7/4.1.0/82909/bin_compat_report.html',
+                                                                    'Removed' => 1,
+                                                                    'Source_Affected' => '3.9',
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jmx/4.0.7/4.1.0/82909/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 1,
+                                                                    'TotalProblems' => 1
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.0' => {
+                                          '4.1.1' => {
+                                                       '5762d' => {
+                                                                    'Added' => 1,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jmx-4.1.0.jar',
+                                                                    'Archive2' => 'metrics-jmx-4.1.1.jar',
+                                                                    'Path' => 'compat_report/metrics-jmx/4.1.0/4.1.1/5762d/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 2,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.0/4.1.1/5762d/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 1,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.1' => {
+                                          '4.1.2' => {
+                                                       'b5073' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jmx-4.1.1.jar',
+                                                                    'Archive2' => 'metrics-jmx-4.1.2.jar',
+                                                                    'Path' => 'compat_report/metrics-jmx/4.1.1/4.1.2/b5073/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.1/4.1.2/b5073/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.10' => {
+                                           '4.1.10.1' => {
+                                                           'dd6e4' => {
+                                                                        'Added' => 0,
+                                                                        'Affected' => 0,
+                                                                        'Archive1' => 'metrics-jmx-4.1.10.jar',
+                                                                        'Archive2' => 'metrics-jmx-4.1.10.1.jar',
+                                                                        'Path' => 'compat_report/metrics-jmx/4.1.10/4.1.10.1/dd6e4/bin_compat_report.html',
+                                                                        'Removed' => 0,
+                                                                        'Source_Affected' => 0,
+                                                                        'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.10/4.1.10.1/dd6e4/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                         },
+                             '4.1.10.1' => {
+                                             '4.1.11' => {
+                                                           'ecfc3' => {
+                                                                        'Added' => 0,
+                                                                        'Affected' => 0,
+                                                                        'Archive1' => 'metrics-jmx-4.1.10.1.jar',
+                                                                        'Archive2' => 'metrics-jmx-4.1.11.jar',
+                                                                        'Path' => 'compat_report/metrics-jmx/4.1.10.1/4.1.11/ecfc3/bin_compat_report.html',
+                                                                        'Removed' => 0,
+                                                                        'Source_Affected' => 0,
+                                                                        'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.10.1/4.1.11/ecfc3/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                           },
+                             '4.1.11' => {
+                                           '4.1.12' => {
+                                                         '166ed' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jmx-4.1.11.jar',
+                                                                      'Archive2' => 'metrics-jmx-4.1.12.jar',
+                                                                      'Path' => 'compat_report/metrics-jmx/4.1.11/4.1.12/166ed/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.11/4.1.12/166ed/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.12' => {
+                                           '4.1.12.1' => {
+                                                           '10821' => {
+                                                                        'Added' => 0,
+                                                                        'Affected' => 0,
+                                                                        'Archive1' => 'metrics-jmx-4.1.12.jar',
+                                                                        'Archive2' => 'metrics-jmx-4.1.12.1.jar',
+                                                                        'Path' => 'compat_report/metrics-jmx/4.1.12/4.1.12.1/10821/bin_compat_report.html',
+                                                                        'Removed' => 0,
+                                                                        'Source_Affected' => 0,
+                                                                        'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.12/4.1.12.1/10821/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                         },
+                             '4.1.12.1' => {
+                                             '4.1.13' => {
+                                                           '44638' => {
+                                                                        'Added' => 0,
+                                                                        'Affected' => 0,
+                                                                        'Archive1' => 'metrics-jmx-4.1.12.1.jar',
+                                                                        'Archive2' => 'metrics-jmx-4.1.13.jar',
+                                                                        'Path' => 'compat_report/metrics-jmx/4.1.12.1/4.1.13/44638/bin_compat_report.html',
+                                                                        'Removed' => 0,
+                                                                        'Source_Affected' => 0,
+                                                                        'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.12.1/4.1.13/44638/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                           },
+                             '4.1.13' => {
+                                           '4.1.14' => {
+                                                         'e3560' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jmx-4.1.13.jar',
+                                                                      'Archive2' => 'metrics-jmx-4.1.14.jar',
+                                                                      'Path' => 'compat_report/metrics-jmx/4.1.13/4.1.14/e3560/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.13/4.1.14/e3560/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.14' => {
+                                           '4.1.15' => {
+                                                         '6a41f' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jmx-4.1.14.jar',
+                                                                      'Archive2' => 'metrics-jmx-4.1.15.jar',
+                                                                      'Path' => 'compat_report/metrics-jmx/4.1.14/4.1.15/6a41f/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.14/4.1.15/6a41f/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.15' => {
+                                           '4.1.16' => {
+                                                         '07d54' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jmx-4.1.15.jar',
+                                                                      'Archive2' => 'metrics-jmx-4.1.16.jar',
+                                                                      'Path' => 'compat_report/metrics-jmx/4.1.15/4.1.16/07d54/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.15/4.1.16/07d54/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.16' => {
+                                           '4.1.17' => {
+                                                         '3db82' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jmx-4.1.16.jar',
+                                                                      'Archive2' => 'metrics-jmx-4.1.17.jar',
+                                                                      'Path' => 'compat_report/metrics-jmx/4.1.16/4.1.17/3db82/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.16/4.1.17/3db82/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.17' => {
+                                           '4.1.18' => {
+                                                         '7e96c' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jmx-4.1.17.jar',
+                                                                      'Archive2' => 'metrics-jmx-4.1.18.jar',
+                                                                      'Path' => 'compat_report/metrics-jmx/4.1.17/4.1.18/7e96c/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.17/4.1.18/7e96c/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.18' => {
+                                           '4.1.19' => {
+                                                         '96227' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jmx-4.1.18.jar',
+                                                                      'Archive2' => 'metrics-jmx-4.1.19.jar',
+                                                                      'Path' => 'compat_report/metrics-jmx/4.1.18/4.1.19/96227/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.18/4.1.19/96227/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.19' => {
+                                           '4.1.20' => {
+                                                         '71e37' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jmx-4.1.19.jar',
+                                                                      'Archive2' => 'metrics-jmx-4.1.20.jar',
+                                                                      'Path' => 'compat_report/metrics-jmx/4.1.19/4.1.20/71e37/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.19/4.1.20/71e37/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.2' => {
+                                          '4.1.3' => {
+                                                       'acd80' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jmx-4.1.2.jar',
+                                                                    'Archive2' => 'metrics-jmx-4.1.3.jar',
+                                                                    'Path' => 'compat_report/metrics-jmx/4.1.2/4.1.3/acd80/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.2/4.1.3/acd80/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.20' => {
+                                           '4.1.21' => {
+                                                         'e6424' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jmx-4.1.20.jar',
+                                                                      'Archive2' => 'metrics-jmx-4.1.21.jar',
+                                                                      'Path' => 'compat_report/metrics-jmx/4.1.20/4.1.21/e6424/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.20/4.1.21/e6424/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.21' => {
+                                           '4.1.22' => {
+                                                         '11139' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jmx-4.1.21.jar',
+                                                                      'Archive2' => 'metrics-jmx-4.1.22.jar',
+                                                                      'Path' => 'compat_report/metrics-jmx/4.1.21/4.1.22/11139/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.21/4.1.22/11139/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.22' => {
+                                           '4.1.23' => {
+                                                         '59906' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jmx-4.1.22.jar',
+                                                                      'Archive2' => 'metrics-jmx-4.1.23.jar',
+                                                                      'Path' => 'compat_report/metrics-jmx/4.1.22/4.1.23/59906/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.22/4.1.23/59906/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.23' => {
+                                           '4.1.24' => {
+                                                         'b8b0a' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jmx-4.1.23.jar',
+                                                                      'Archive2' => 'metrics-jmx-4.1.24.jar',
+                                                                      'Path' => 'compat_report/metrics-jmx/4.1.23/4.1.24/b8b0a/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.23/4.1.24/b8b0a/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.24' => {
+                                           '4.1.25' => {
+                                                         '90fca' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jmx-4.1.24.jar',
+                                                                      'Archive2' => 'metrics-jmx-4.1.25.jar',
+                                                                      'Path' => 'compat_report/metrics-jmx/4.1.24/4.1.25/90fca/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.24/4.1.25/90fca/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.1.25' => {
+                                           '4.2.0' => {
+                                                        '9a979' => {
+                                                                     'Added' => 0,
+                                                                     'Affected' => 0,
+                                                                     'Archive1' => 'metrics-jmx-4.1.25.jar',
+                                                                     'Archive2' => 'metrics-jmx-4.2.0.jar',
+                                                                     'Path' => 'compat_report/metrics-jmx/4.1.25/4.2.0/9a979/bin_compat_report.html',
+                                                                     'Removed' => 0,
+                                                                     'Source_Affected' => 0,
+                                                                     'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.25/4.2.0/9a979/src_compat_report.html',
+                                                                     'Source_TotalProblems' => 0,
+                                                                     'TotalProblems' => 0
+                                                                   }
+                                                      }
+                                         },
+                             '4.1.3' => {
+                                          '4.1.4' => {
+                                                       '0f4a3' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jmx-4.1.3.jar',
+                                                                    'Archive2' => 'metrics-jmx-4.1.4.jar',
+                                                                    'Path' => 'compat_report/metrics-jmx/4.1.3/4.1.4/0f4a3/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.3/4.1.4/0f4a3/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.4' => {
+                                          '4.1.5' => {
+                                                       '1fc4b' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jmx-4.1.4.jar',
+                                                                    'Archive2' => 'metrics-jmx-4.1.5.jar',
+                                                                    'Path' => 'compat_report/metrics-jmx/4.1.4/4.1.5/1fc4b/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.4/4.1.5/1fc4b/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.5' => {
+                                          '4.1.6' => {
+                                                       'd8955' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jmx-4.1.5.jar',
+                                                                    'Archive2' => 'metrics-jmx-4.1.6.jar',
+                                                                    'Path' => 'compat_report/metrics-jmx/4.1.5/4.1.6/d8955/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.5/4.1.6/d8955/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.6' => {
+                                          '4.1.7' => {
+                                                       '1f236' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jmx-4.1.6.jar',
+                                                                    'Archive2' => 'metrics-jmx-4.1.7.jar',
+                                                                    'Path' => 'compat_report/metrics-jmx/4.1.6/4.1.7/1f236/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.6/4.1.7/1f236/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.7' => {
+                                          '4.1.8' => {
+                                                       'e4a46' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jmx-4.1.7.jar',
+                                                                    'Archive2' => 'metrics-jmx-4.1.8.jar',
+                                                                    'Path' => 'compat_report/metrics-jmx/4.1.7/4.1.8/e4a46/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.7/4.1.8/e4a46/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.8' => {
+                                          '4.1.9' => {
+                                                       'e5cc0' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jmx-4.1.8.jar',
+                                                                    'Archive2' => 'metrics-jmx-4.1.9.jar',
+                                                                    'Path' => 'compat_report/metrics-jmx/4.1.8/4.1.9/e5cc0/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.8/4.1.9/e5cc0/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.1.9' => {
+                                          '4.1.10' => {
+                                                        '9b16e' => {
+                                                                     'Added' => 0,
+                                                                     'Affected' => 0,
+                                                                     'Archive1' => 'metrics-jmx-4.1.9.jar',
+                                                                     'Archive2' => 'metrics-jmx-4.1.10.jar',
+                                                                     'Path' => 'compat_report/metrics-jmx/4.1.9/4.1.10/9b16e/bin_compat_report.html',
+                                                                     'Removed' => 0,
+                                                                     'Source_Affected' => 0,
+                                                                     'Source_ReportPath' => 'compat_report/metrics-jmx/4.1.9/4.1.10/9b16e/src_compat_report.html',
+                                                                     'Source_TotalProblems' => 0,
+                                                                     'TotalProblems' => 0
+                                                                   }
+                                                      }
+                                        },
+                             '4.2.0' => {
+                                          '4.2.1' => {
+                                                       '4bdc6' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jmx-4.2.0.jar',
+                                                                    'Archive2' => 'metrics-jmx-4.2.1.jar',
+                                                                    'Path' => 'compat_report/metrics-jmx/4.2.0/4.2.1/4bdc6/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jmx/4.2.0/4.2.1/4bdc6/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.2.1' => {
+                                          '4.2.2' => {
+                                                       '62666' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jmx-4.2.1.jar',
+                                                                    'Archive2' => 'metrics-jmx-4.2.2.jar',
+                                                                    'Path' => 'compat_report/metrics-jmx/4.2.1/4.2.2/62666/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jmx/4.2.1/4.2.2/62666/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.2.2' => {
+                                          '4.2.3' => {
+                                                       '38421' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jmx-4.2.2.jar',
+                                                                    'Archive2' => 'metrics-jmx-4.2.3.jar',
+                                                                    'Path' => 'compat_report/metrics-jmx/4.2.2/4.2.3/38421/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jmx/4.2.2/4.2.3/38421/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        }
+                           },
+          'Changelog' => {},
+          'Date' => {
+                      '4.0.0' => '24-2017-12 21:42',
+                      '4.0.1' => '03-2018-01 18:34',
+                      '4.0.2' => '05-2018-01 19:58',
+                      '4.0.3' => '19-2018-07 00:36',
+                      '4.0.4' => '26-2018-12 19:46',
+                      '4.0.5' => '27-2018-12 20:17',
+                      '4.0.6' => '10-2019-08 12:45',
+                      '4.0.7' => '19-2019-10 15:34',
+                      '4.1.0' => '05-2019-05 22:44',
+                      '4.1.1' => '19-2019-10 13:16',
+                      '4.1.10' => '03-2020-07 07:46',
+                      '4.1.10.1' => '04-2020-07 08:35',
+                      '4.1.11' => '01-1980-02 00:00',
+                      '4.1.12' => '01-1980-02 00:00',
+                      '4.1.12.1' => '01-1980-02 00:00',
+                      '4.1.13' => '01-1980-02 00:00',
+                      '4.1.14' => '01-1980-02 00:00',
+                      '4.1.15' => '01-1980-02 00:00',
+                      '4.1.16' => '01-1980-02 00:00',
+                      '4.1.17' => '01-1980-02 00:00',
+                      '4.1.18' => '01-1980-02 00:00',
+                      '4.1.19' => '01-1980-02 00:00',
+                      '4.1.2' => '07-2019-12 13:52',
+                      '4.1.20' => '01-1980-02 00:00',
+                      '4.1.21' => '01-1980-02 00:00',
+                      '4.1.22' => '01-1980-02 00:00',
+                      '4.1.23' => '01-1980-02 00:00',
+                      '4.1.24' => '01-1980-02 00:00',
+                      '4.1.25' => '01-1980-02 00:00',
+                      '4.1.3' => '24-2020-02 00:49',
+                      '4.1.4' => '27-2020-02 15:40',
+                      '4.1.5' => '09-2020-03 07:28',
+                      '4.1.6' => '09-2020-04 19:00',
+                      '4.1.7' => '02-2020-05 21:23',
+                      '4.1.8' => '14-2020-05 20:14',
+                      '4.1.9' => '24-2020-05 13:55',
+                      '4.2.0' => '01-1980-02 00:00',
+                      '4.2.1' => '01-1980-02 00:00',
+                      '4.2.2' => '01-1980-02 00:00',
+                      '4.2.3' => '01-1980-02 00:00'
+                    },
+          'Maintainer' => 'Dropwizard Metrics Committers',
+          'MaintainerUrl' => 'https://metrics.dropwizard.io/',
+          'PackageDiff' => {
+                             '4.0.0' => {
+                                          '4.0.1' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jmx/4.0.0/4.0.1/report.html'
+                                                     }
+                                        },
+                             '4.0.1' => {
+                                          '4.0.2' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jmx/4.0.1/4.0.2/report.html'
+                                                     }
+                                        },
+                             '4.0.2' => {
+                                          '4.0.3' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jmx/4.0.2/4.0.3/report.html'
+                                                     }
+                                        },
+                             '4.0.3' => {
+                                          '4.0.4' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jmx/4.0.3/4.0.4/report.html'
+                                                     }
+                                        },
+                             '4.0.4' => {
+                                          '4.0.5' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jmx/4.0.4/4.0.5/report.html'
+                                                     }
+                                        },
+                             '4.0.5' => {
+                                          '4.0.6' => {
+                                                       'Changed' => '0.7',
+                                                       'Path' => 'package_diff/metrics-jmx/4.0.5/4.0.6/report.html'
+                                                     }
+                                        },
+                             '4.0.6' => {
+                                          '4.0.7' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-jmx/4.0.6/4.0.7/report.html'
+                                                     }
+                                        },
+                             '4.0.7' => {
+                                          '4.1.0' => {
+                                                       'Changed' => '1',
+                                                       'Path' => 'package_diff/metrics-jmx/4.0.7/4.1.0/report.html'
+                                                     }
+                                        },
+                             '4.1.0' => {
+                                          '4.1.1' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-jmx/4.1.0/4.1.1/report.html'
+                                                     }
+                                        },
+                             '4.1.1' => {
+                                          '4.1.2' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/metrics-jmx/4.1.1/4.1.2/report.html'
+                                                     }
+                                        },
+                             '4.1.10' => {
+                                           '4.1.10.1' => {
+                                                           'Changed' => '0.3',
+                                                           'Path' => 'package_diff/metrics-jmx/4.1.10/4.1.10.1/report.html'
+                                                         }
+                                         },
+                             '4.1.10.1' => {
+                                             '4.1.11' => {
+                                                           'Changed' => '0.8',
+                                                           'Path' => 'package_diff/metrics-jmx/4.1.10.1/4.1.11/report.html'
+                                                         }
+                                           },
+                             '4.1.11' => {
+                                           '4.1.12' => {
+                                                         'Changed' => '0.3',
+                                                         'Path' => 'package_diff/metrics-jmx/4.1.11/4.1.12/report.html'
+                                                       }
+                                         },
+                             '4.1.12' => {
+                                           '4.1.12.1' => {
+                                                           'Changed' => '0.2',
+                                                           'Path' => 'package_diff/metrics-jmx/4.1.12/4.1.12.1/report.html'
+                                                         }
+                                         },
+                             '4.1.12.1' => {
+                                             '4.1.13' => {
+                                                           'Changed' => '0.2',
+                                                           'Path' => 'package_diff/metrics-jmx/4.1.12.1/4.1.13/report.html'
+                                                         }
+                                           },
+                             '4.1.13' => {
+                                           '4.1.14' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jmx/4.1.13/4.1.14/report.html'
+                                                       }
+                                         },
+                             '4.1.14' => {
+                                           '4.1.15' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jmx/4.1.14/4.1.15/report.html'
+                                                       }
+                                         },
+                             '4.1.15' => {
+                                           '4.1.16' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jmx/4.1.15/4.1.16/report.html'
+                                                       }
+                                         },
+                             '4.1.16' => {
+                                           '4.1.17' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jmx/4.1.16/4.1.17/report.html'
+                                                       }
+                                         },
+                             '4.1.17' => {
+                                           '4.1.18' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jmx/4.1.17/4.1.18/report.html'
+                                                       }
+                                         },
+                             '4.1.18' => {
+                                           '4.1.19' => {
+                                                         'Changed' => '0.6',
+                                                         'Path' => 'package_diff/metrics-jmx/4.1.18/4.1.19/report.html'
+                                                       }
+                                         },
+                             '4.1.19' => {
+                                           '4.1.20' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jmx/4.1.19/4.1.20/report.html'
+                                                       }
+                                         },
+                             '4.1.2' => {
+                                          '4.1.3' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-jmx/4.1.2/4.1.3/report.html'
+                                                     }
+                                        },
+                             '4.1.20' => {
+                                           '4.1.21' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jmx/4.1.20/4.1.21/report.html'
+                                                       }
+                                         },
+                             '4.1.21' => {
+                                           '4.1.22' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jmx/4.1.21/4.1.22/report.html'
+                                                       }
+                                         },
+                             '4.1.22' => {
+                                           '4.1.23' => {
+                                                         'Changed' => '1.3',
+                                                         'Path' => 'package_diff/metrics-jmx/4.1.22/4.1.23/report.html'
+                                                       }
+                                         },
+                             '4.1.23' => {
+                                           '4.1.24' => {
+                                                         'Changed' => '0.5',
+                                                         'Path' => 'package_diff/metrics-jmx/4.1.23/4.1.24/report.html'
+                                                       }
+                                         },
+                             '4.1.24' => {
+                                           '4.1.25' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jmx/4.1.24/4.1.25/report.html'
+                                                       }
+                                         },
+                             '4.1.25' => {
+                                           '4.2.0' => {
+                                                        'Changed' => '1.7',
+                                                        'Path' => 'package_diff/metrics-jmx/4.1.25/4.2.0/report.html'
+                                                      }
+                                         },
+                             '4.1.3' => {
+                                          '4.1.4' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jmx/4.1.3/4.1.4/report.html'
+                                                     }
+                                        },
+                             '4.1.4' => {
+                                          '4.1.5' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jmx/4.1.4/4.1.5/report.html'
+                                                     }
+                                        },
+                             '4.1.5' => {
+                                          '4.1.6' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jmx/4.1.5/4.1.6/report.html'
+                                                     }
+                                        },
+                             '4.1.6' => {
+                                          '4.1.7' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jmx/4.1.6/4.1.7/report.html'
+                                                     }
+                                        },
+                             '4.1.7' => {
+                                          '4.1.8' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jmx/4.1.7/4.1.8/report.html'
+                                                     }
+                                        },
+                             '4.1.8' => {
+                                          '4.1.9' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jmx/4.1.8/4.1.9/report.html'
+                                                     }
+                                        },
+                             '4.1.9' => {
+                                          '4.1.10' => {
+                                                        'Changed' => '0.3',
+                                                        'Path' => 'package_diff/metrics-jmx/4.1.9/4.1.10/report.html'
+                                                      }
+                                        },
+                             '4.2.0' => {
+                                          '4.2.1' => {
+                                                       'Changed' => '1.3',
+                                                       'Path' => 'package_diff/metrics-jmx/4.2.0/4.2.1/report.html'
+                                                     }
+                                        },
+                             '4.2.1' => {
+                                          '4.2.2' => {
+                                                       'Changed' => '0.5',
+                                                       'Path' => 'package_diff/metrics-jmx/4.2.1/4.2.2/report.html'
+                                                     }
+                                        },
+                             '4.2.2' => {
+                                          '4.2.3' => {
+                                                       'Changed' => '0.2',
+                                                       'Path' => 'package_diff/metrics-jmx/4.2.2/4.2.3/report.html'
+                                                     }
+                                        }
+                           },
+          'Title' => 'Metrics Integration with JMX'
+        };
