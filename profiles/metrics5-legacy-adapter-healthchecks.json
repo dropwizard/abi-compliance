@@ -1,5 +1,5 @@
 {
-  "Name":           "metrics5-legacy-adapter-healthchecks",
+  "Name":           "metrics-legacy-adapter-healthchecks",
   "Title":          "metrics5-legacy-adapter-healthchecks",
   "SourceUrl":      "https://repo1.maven.org/maven2/io/dropwizard/metrics5/metrics-legacy-adapter-healthchecks/",
   "Maintainer":     "Dropwizard Metrics Committers",
@@ -9,5 +9,11 @@
   "PkgDiff":        "On",
 
   "Versions": [
-  ]
+  {
+    "Number":         "5.0.0",
+    "Installed":      "src/metrics-legacy-adapter-healthchecks/5.0.0",
+    "Source":         "src/metrics-legacy-adapter-healthchecks/5.0.0/metrics-legacy-adapter-healthchecks-5.0.0.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  }]
 }

@@ -1,0 +1,82 @@
+{
+  "Name":           "metrics-jakarta-servlet",
+  "Title":          "Metrics Integration for Jakarta Servlets",
+  "SourceUrl":      "https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-jakarta-servlet/",
+  "Maintainer":     "Dropwizard Metrics Committers",
+  "MaintainerUrl":  "https://metrics.dropwizard.io/",
+  "Changelog":      "On",
+  "Graph":          "On",
+  "PkgDiff":        "On",
+
+  "Versions": [
+  {
+    "Number":         "4.2.9",
+    "Installed":      "src/metrics-jakarta-servlet/4.2.9",
+    "Source":         "src/metrics-jakarta-servlet/4.2.9/metrics-jakarta-servlet-4.2.9.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.8",
+    "Installed":      "src/metrics-jakarta-servlet/4.2.8",
+    "Source":         "src/metrics-jakarta-servlet/4.2.8/metrics-jakarta-servlet-4.2.8.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.7",
+    "Installed":      "src/metrics-jakarta-servlet/4.2.7",
+    "Source":         "src/metrics-jakarta-servlet/4.2.7/metrics-jakarta-servlet-4.2.7.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.6",
+    "Installed":      "src/metrics-jakarta-servlet/4.2.6",
+    "Source":         "src/metrics-jakarta-servlet/4.2.6/metrics-jakarta-servlet-4.2.6.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.5",
+    "Installed":      "src/metrics-jakarta-servlet/4.2.5",
+    "Source":         "src/metrics-jakarta-servlet/4.2.5/metrics-jakarta-servlet-4.2.5.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.4",
+    "Installed":      "src/metrics-jakarta-servlet/4.2.4",
+    "Source":         "src/metrics-jakarta-servlet/4.2.4/metrics-jakarta-servlet-4.2.4.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.3",
+    "Installed":      "src/metrics-jakarta-servlet/4.2.3",
+    "Source":         "src/metrics-jakarta-servlet/4.2.3/metrics-jakarta-servlet-4.2.3.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.2",
+    "Installed":      "src/metrics-jakarta-servlet/4.2.2",
+    "Source":         "src/metrics-jakarta-servlet/4.2.2/metrics-jakarta-servlet-4.2.2.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.1",
+    "Installed":      "src/metrics-jakarta-servlet/4.2.1",
+    "Source":         "src/metrics-jakarta-servlet/4.2.1/metrics-jakarta-servlet-4.2.1.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.0",
+    "Installed":      "src/metrics-jakarta-servlet/4.2.0",
+    "Source":         "src/metrics-jakarta-servlet/4.2.0/metrics-jakarta-servlet-4.2.0.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  }]
+}

@@ -10,6 +10,111 @@
 
   "Versions": [
   {
+    "Number":         "4.0.0-beta.1",
+    "Installed":      "src/dropwizard-db/4.0.0-beta.1",
+    "Source":         "src/dropwizard-db/4.0.0-beta.1/dropwizard-db-4.0.0-beta.1.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "2.0.29",
+    "Installed":      "src/dropwizard-db/2.0.29",
+    "Source":         "src/dropwizard-db/2.0.29/dropwizard-db-2.0.29.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "2.0.28",
+    "Installed":      "src/dropwizard-db/2.0.28",
+    "Source":         "src/dropwizard-db/2.0.28/dropwizard-db-2.0.28.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "2.0.27",
+    "Installed":      "src/dropwizard-db/2.0.27",
+    "Source":         "src/dropwizard-db/2.0.27/dropwizard-db-2.0.27.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "2.0.26",
+    "Installed":      "src/dropwizard-db/2.0.26",
+    "Source":         "src/dropwizard-db/2.0.26/dropwizard-db-2.0.26.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "2.0.25",
+    "Installed":      "src/dropwizard-db/2.0.25",
+    "Source":         "src/dropwizard-db/2.0.25/dropwizard-db-2.0.25.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "2.0.24",
+    "Installed":      "src/dropwizard-db/2.0.24",
+    "Source":         "src/dropwizard-db/2.0.24/dropwizard-db-2.0.24.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "2.0.23",
+    "Installed":      "src/dropwizard-db/2.0.23",
+    "Source":         "src/dropwizard-db/2.0.23/dropwizard-db-2.0.23.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "2.0.22",
+    "Installed":      "src/dropwizard-db/2.0.22",
+    "Source":         "src/dropwizard-db/2.0.22/dropwizard-db-2.0.22.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "2.0.21",
+    "Installed":      "src/dropwizard-db/2.0.21",
+    "Source":         "src/dropwizard-db/2.0.21/dropwizard-db-2.0.21.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "2.0.20",
+    "Installed":      "src/dropwizard-db/2.0.20",
+    "Source":         "src/dropwizard-db/2.0.20/dropwizard-db-2.0.20.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "2.0.19",
+    "Installed":      "src/dropwizard-db/2.0.19",
+    "Source":         "src/dropwizard-db/2.0.19/dropwizard-db-2.0.19.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "2.0.18",
+    "Installed":      "src/dropwizard-db/2.0.18",
+    "Source":         "src/dropwizard-db/2.0.18/dropwizard-db-2.0.18.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "2.0.17",
+    "Installed":      "src/dropwizard-db/2.0.17",
+    "Source":         "src/dropwizard-db/2.0.17/dropwizard-db-2.0.17.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "2.0.16",
+    "Installed":      "src/dropwizard-db/2.0.16",
+    "Source":         "src/dropwizard-db/2.0.16/dropwizard-db-2.0.16.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "2.0.15",
     "Installed":      "src/dropwizard-db/2.0.15",
     "Source":         "src/dropwizard-db/2.0.15/dropwizard-db-2.0.15.jar",
@@ -136,6 +241,20 @@
     "Changelog":      "On",
     "PkgDiff":        "On",
     "Deleted":        1
+  },
+  {
+    "Number":         "1.3.29",
+    "Installed":      "src/dropwizard-db/1.3.29",
+    "Source":         "src/dropwizard-db/1.3.29/dropwizard-db-1.3.29.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "1.3.28",
+    "Installed":      "src/dropwizard-db/1.3.28",
+    "Source":         "src/dropwizard-db/1.3.28/dropwizard-db-1.3.28.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
   },
   {
     "Number":         "1.3.27",

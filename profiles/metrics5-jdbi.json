@@ -1,5 +1,5 @@
 {
-  "Name":           "metrics5-jdbi",
+  "Name":           "metrics-jdbi",
   "Title":          "Metrics 5.x Integration for JDBI",
   "SourceUrl":      "https://repo1.maven.org/maven2/io/dropwizard/metrics5/metrics-jdbi/",
   "Maintainer":     "Dropwizard Metrics Committers",
@@ -9,5 +9,466 @@
   "PkgDiff":        "On",
 
   "Versions": [
-  ]
+  {
+    "Number":         "5.0.0",
+    "Installed":      "src/metrics-jdbi/5.0.0",
+    "Source":         "src/metrics-jdbi/5.0.0/metrics-jdbi-5.0.0.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.9",
+    "Installed":      "src/metrics-jdbi/4.2.9",
+    "Source":         "src/metrics-jdbi/4.2.9/metrics-jdbi-4.2.9.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.8",
+    "Installed":      "src/metrics-jdbi/4.2.8",
+    "Source":         "src/metrics-jdbi/4.2.8/metrics-jdbi-4.2.8.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.7",
+    "Installed":      "src/metrics-jdbi/4.2.7",
+    "Source":         "src/metrics-jdbi/4.2.7/metrics-jdbi-4.2.7.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.6",
+    "Installed":      "src/metrics-jdbi/4.2.6",
+    "Source":         "src/metrics-jdbi/4.2.6/metrics-jdbi-4.2.6.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.5",
+    "Installed":      "src/metrics-jdbi/4.2.5",
+    "Source":         "src/metrics-jdbi/4.2.5/metrics-jdbi-4.2.5.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.4",
+    "Installed":      "src/metrics-jdbi/4.2.4",
+    "Source":         "src/metrics-jdbi/4.2.4/metrics-jdbi-4.2.4.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.3",
+    "Installed":      "src/metrics-jdbi/4.2.3",
+    "Source":         "src/metrics-jdbi/4.2.3/metrics-jdbi-4.2.3.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.2",
+    "Installed":      "src/metrics-jdbi/4.2.2",
+    "Source":         "src/metrics-jdbi/4.2.2/metrics-jdbi-4.2.2.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.1",
+    "Installed":      "src/metrics-jdbi/4.2.1",
+    "Source":         "src/metrics-jdbi/4.2.1/metrics-jdbi-4.2.1.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.0",
+    "Installed":      "src/metrics-jdbi/4.2.0",
+    "Source":         "src/metrics-jdbi/4.2.0/metrics-jdbi-4.2.0.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.31",
+    "Installed":      "src/metrics-jdbi/4.1.31",
+    "Source":         "src/metrics-jdbi/4.1.31/metrics-jdbi-4.1.31.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.30",
+    "Installed":      "src/metrics-jdbi/4.1.30",
+    "Source":         "src/metrics-jdbi/4.1.30/metrics-jdbi-4.1.30.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.29",
+    "Installed":      "src/metrics-jdbi/4.1.29",
+    "Source":         "src/metrics-jdbi/4.1.29/metrics-jdbi-4.1.29.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.28",
+    "Installed":      "src/metrics-jdbi/4.1.28",
+    "Source":         "src/metrics-jdbi/4.1.28/metrics-jdbi-4.1.28.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.27",
+    "Installed":      "src/metrics-jdbi/4.1.27",
+    "Source":         "src/metrics-jdbi/4.1.27/metrics-jdbi-4.1.27.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.26",
+    "Installed":      "src/metrics-jdbi/4.1.26",
+    "Source":         "src/metrics-jdbi/4.1.26/metrics-jdbi-4.1.26.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.25",
+    "Installed":      "src/metrics-jdbi/4.1.25",
+    "Source":         "src/metrics-jdbi/4.1.25/metrics-jdbi-4.1.25.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.24",
+    "Installed":      "src/metrics-jdbi/4.1.24",
+    "Source":         "src/metrics-jdbi/4.1.24/metrics-jdbi-4.1.24.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.23",
+    "Installed":      "src/metrics-jdbi/4.1.23",
+    "Source":         "src/metrics-jdbi/4.1.23/metrics-jdbi-4.1.23.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.22",
+    "Installed":      "src/metrics-jdbi/4.1.22",
+    "Source":         "src/metrics-jdbi/4.1.22/metrics-jdbi-4.1.22.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.21",
+    "Installed":      "src/metrics-jdbi/4.1.21",
+    "Source":         "src/metrics-jdbi/4.1.21/metrics-jdbi-4.1.21.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.20",
+    "Installed":      "src/metrics-jdbi/4.1.20",
+    "Source":         "src/metrics-jdbi/4.1.20/metrics-jdbi-4.1.20.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.19",
+    "Installed":      "src/metrics-jdbi/4.1.19",
+    "Source":         "src/metrics-jdbi/4.1.19/metrics-jdbi-4.1.19.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.18",
+    "Installed":      "src/metrics-jdbi/4.1.18",
+    "Source":         "src/metrics-jdbi/4.1.18/metrics-jdbi-4.1.18.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.17",
+    "Installed":      "src/metrics-jdbi/4.1.17",
+    "Source":         "src/metrics-jdbi/4.1.17/metrics-jdbi-4.1.17.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.16",
+    "Installed":      "src/metrics-jdbi/4.1.16",
+    "Source":         "src/metrics-jdbi/4.1.16/metrics-jdbi-4.1.16.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.15",
+    "Installed":      "src/metrics-jdbi/4.1.15",
+    "Source":         "src/metrics-jdbi/4.1.15/metrics-jdbi-4.1.15.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.14",
+    "Installed":      "src/metrics-jdbi/4.1.14",
+    "Source":         "src/metrics-jdbi/4.1.14/metrics-jdbi-4.1.14.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.13",
+    "Installed":      "src/metrics-jdbi/4.1.13",
+    "Source":         "src/metrics-jdbi/4.1.13/metrics-jdbi-4.1.13.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.12.1",
+    "Installed":      "src/metrics-jdbi/4.1.12.1",
+    "Source":         "src/metrics-jdbi/4.1.12.1/metrics-jdbi-4.1.12.1.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.12",
+    "Installed":      "src/metrics-jdbi/4.1.12",
+    "Source":         "src/metrics-jdbi/4.1.12/metrics-jdbi-4.1.12.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.11",
+    "Installed":      "src/metrics-jdbi/4.1.11",
+    "Source":         "src/metrics-jdbi/4.1.11/metrics-jdbi-4.1.11.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.10.1",
+    "Installed":      "src/metrics-jdbi/4.1.10.1",
+    "Source":         "src/metrics-jdbi/4.1.10.1/metrics-jdbi-4.1.10.1.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.10",
+    "Installed":      "src/metrics-jdbi/4.1.10",
+    "Source":         "src/metrics-jdbi/4.1.10/metrics-jdbi-4.1.10.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.9",
+    "Installed":      "src/metrics-jdbi/4.1.9",
+    "Source":         "src/metrics-jdbi/4.1.9/metrics-jdbi-4.1.9.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.8",
+    "Installed":      "src/metrics-jdbi/4.1.8",
+    "Source":         "src/metrics-jdbi/4.1.8/metrics-jdbi-4.1.8.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.7",
+    "Installed":      "src/metrics-jdbi/4.1.7",
+    "Source":         "src/metrics-jdbi/4.1.7/metrics-jdbi-4.1.7.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.6",
+    "Installed":      "src/metrics-jdbi/4.1.6",
+    "Source":         "src/metrics-jdbi/4.1.6/metrics-jdbi-4.1.6.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.5",
+    "Installed":      "src/metrics-jdbi/4.1.5",
+    "Source":         "src/metrics-jdbi/4.1.5/metrics-jdbi-4.1.5.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.4",
+    "Installed":      "src/metrics-jdbi/4.1.4",
+    "Source":         "src/metrics-jdbi/4.1.4/metrics-jdbi-4.1.4.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.3",
+    "Installed":      "src/metrics-jdbi/4.1.3",
+    "Source":         "src/metrics-jdbi/4.1.3/metrics-jdbi-4.1.3.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.2",
+    "Installed":      "src/metrics-jdbi/4.1.2",
+    "Source":         "src/metrics-jdbi/4.1.2/metrics-jdbi-4.1.2.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.1",
+    "Installed":      "src/metrics-jdbi/4.1.1",
+    "Source":         "src/metrics-jdbi/4.1.1/metrics-jdbi-4.1.1.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.0",
+    "Installed":      "src/metrics-jdbi/4.1.0",
+    "Source":         "src/metrics-jdbi/4.1.0/metrics-jdbi-4.1.0.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.0.7",
+    "Installed":      "src/metrics-jdbi/4.0.7",
+    "Source":         "src/metrics-jdbi/4.0.7/metrics-jdbi-4.0.7.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.0.6",
+    "Installed":      "src/metrics-jdbi/4.0.6",
+    "Source":         "src/metrics-jdbi/4.0.6/metrics-jdbi-4.0.6.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.0.5",
+    "Installed":      "src/metrics-jdbi/4.0.5",
+    "Source":         "src/metrics-jdbi/4.0.5/metrics-jdbi-4.0.5.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.0.4",
+    "Installed":      "src/metrics-jdbi/4.0.4",
+    "Source":         "src/metrics-jdbi/4.0.4/metrics-jdbi-4.0.4.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.0.3",
+    "Installed":      "src/metrics-jdbi/4.0.3",
+    "Source":         "src/metrics-jdbi/4.0.3/metrics-jdbi-4.0.3.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.0.2",
+    "Installed":      "src/metrics-jdbi/4.0.2",
+    "Source":         "src/metrics-jdbi/4.0.2/metrics-jdbi-4.0.2.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.0.1",
+    "Installed":      "src/metrics-jdbi/4.0.1",
+    "Source":         "src/metrics-jdbi/4.0.1/metrics-jdbi-4.0.1.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.0.0",
+    "Installed":      "src/metrics-jdbi/4.0.0",
+    "Source":         "src/metrics-jdbi/4.0.0/metrics-jdbi-4.0.0.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "3.2.6",
+    "Installed":      "src/metrics-jdbi/3.2.6",
+    "Source":         "src/metrics-jdbi/3.2.6/metrics-jdbi-3.2.6.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "3.2.5",
+    "Installed":      "src/metrics-jdbi/3.2.5",
+    "Source":         "src/metrics-jdbi/3.2.5/metrics-jdbi-3.2.5.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "3.2.4",
+    "Installed":      "src/metrics-jdbi/3.2.4",
+    "Source":         "src/metrics-jdbi/3.2.4/metrics-jdbi-3.2.4.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "3.2.3",
+    "Installed":      "src/metrics-jdbi/3.2.3",
+    "Source":         "src/metrics-jdbi/3.2.3/metrics-jdbi-3.2.3.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "3.2.2",
+    "Installed":      "src/metrics-jdbi/3.2.2",
+    "Source":         "src/metrics-jdbi/3.2.2/metrics-jdbi-3.2.2.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "3.2.1",
+    "Installed":      "src/metrics-jdbi/3.2.1",
+    "Source":         "src/metrics-jdbi/3.2.1/metrics-jdbi-3.2.1.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "3.2.0",
+    "Installed":      "src/metrics-jdbi/3.2.0",
+    "Source":         "src/metrics-jdbi/3.2.0/metrics-jdbi-3.2.0.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "3.1.5",
+    "Installed":      "src/metrics-jdbi/3.1.5",
+    "Source":         "src/metrics-jdbi/3.1.5/metrics-jdbi-3.1.5.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "3.1.4",
+    "Installed":      "src/metrics-jdbi/3.1.4",
+    "Source":         "src/metrics-jdbi/3.1.4/metrics-jdbi-3.1.4.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "3.1.3",
+    "Installed":      "src/metrics-jdbi/3.1.3",
+    "Source":         "src/metrics-jdbi/3.1.3/metrics-jdbi-3.1.3.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "3.1.2",
+    "Installed":      "src/metrics-jdbi/3.1.2",
+    "Source":         "src/metrics-jdbi/3.1.2/metrics-jdbi-3.1.2.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "3.1.1",
+    "Installed":      "src/metrics-jdbi/3.1.1",
+    "Source":         "src/metrics-jdbi/3.1.1/metrics-jdbi-3.1.1.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "3.1.0",
+    "Installed":      "src/metrics-jdbi/3.1.0",
+    "Source":         "src/metrics-jdbi/3.1.0/metrics-jdbi-3.1.0.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  }]
 }

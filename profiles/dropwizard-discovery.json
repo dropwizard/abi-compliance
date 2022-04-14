@@ -10,6 +10,13 @@
 
   "Versions": [
   {
+    "Number":         "2.0.0",
+    "Installed":      "src/dropwizard-discovery/2.0.0",
+    "Source":         "src/dropwizard-discovery/2.0.0/dropwizard-discovery-2.0.0.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "1.3.11",
     "Installed":      "src/dropwizard-discovery/1.3.11",
     "Source":         "src/dropwizard-discovery/1.3.11/dropwizard-discovery-1.3.11.jar",

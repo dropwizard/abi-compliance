@@ -10,6 +10,188 @@
 
   "Versions": [
   {
+    "Number":         "4.2.9",
+    "Installed":      "src/metrics-logback/4.2.9",
+    "Source":         "src/metrics-logback/4.2.9/metrics-logback-4.2.9.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.8",
+    "Installed":      "src/metrics-logback/4.2.8",
+    "Source":         "src/metrics-logback/4.2.8/metrics-logback-4.2.8.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.7",
+    "Installed":      "src/metrics-logback/4.2.7",
+    "Source":         "src/metrics-logback/4.2.7/metrics-logback-4.2.7.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.6",
+    "Installed":      "src/metrics-logback/4.2.6",
+    "Source":         "src/metrics-logback/4.2.6/metrics-logback-4.2.6.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.5",
+    "Installed":      "src/metrics-logback/4.2.5",
+    "Source":         "src/metrics-logback/4.2.5/metrics-logback-4.2.5.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.4",
+    "Installed":      "src/metrics-logback/4.2.4",
+    "Source":         "src/metrics-logback/4.2.4/metrics-logback-4.2.4.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.3",
+    "Installed":      "src/metrics-logback/4.2.3",
+    "Source":         "src/metrics-logback/4.2.3/metrics-logback-4.2.3.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.2",
+    "Installed":      "src/metrics-logback/4.2.2",
+    "Source":         "src/metrics-logback/4.2.2/metrics-logback-4.2.2.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.1",
+    "Installed":      "src/metrics-logback/4.2.1",
+    "Source":         "src/metrics-logback/4.2.1/metrics-logback-4.2.1.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.2.0",
+    "Installed":      "src/metrics-logback/4.2.0",
+    "Source":         "src/metrics-logback/4.2.0/metrics-logback-4.2.0.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.31",
+    "Installed":      "src/metrics-logback/4.1.31",
+    "Source":         "src/metrics-logback/4.1.31/metrics-logback-4.1.31.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.30",
+    "Installed":      "src/metrics-logback/4.1.30",
+    "Source":         "src/metrics-logback/4.1.30/metrics-logback-4.1.30.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.29",
+    "Installed":      "src/metrics-logback/4.1.29",
+    "Source":         "src/metrics-logback/4.1.29/metrics-logback-4.1.29.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.28",
+    "Installed":      "src/metrics-logback/4.1.28",
+    "Source":         "src/metrics-logback/4.1.28/metrics-logback-4.1.28.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.27",
+    "Installed":      "src/metrics-logback/4.1.27",
+    "Source":         "src/metrics-logback/4.1.27/metrics-logback-4.1.27.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.26",
+    "Installed":      "src/metrics-logback/4.1.26",
+    "Source":         "src/metrics-logback/4.1.26/metrics-logback-4.1.26.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.25",
+    "Installed":      "src/metrics-logback/4.1.25",
+    "Source":         "src/metrics-logback/4.1.25/metrics-logback-4.1.25.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.24",
+    "Installed":      "src/metrics-logback/4.1.24",
+    "Source":         "src/metrics-logback/4.1.24/metrics-logback-4.1.24.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.23",
+    "Installed":      "src/metrics-logback/4.1.23",
+    "Source":         "src/metrics-logback/4.1.23/metrics-logback-4.1.23.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.22",
+    "Installed":      "src/metrics-logback/4.1.22",
+    "Source":         "src/metrics-logback/4.1.22/metrics-logback-4.1.22.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.21",
+    "Installed":      "src/metrics-logback/4.1.21",
+    "Source":         "src/metrics-logback/4.1.21/metrics-logback-4.1.21.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.20",
+    "Installed":      "src/metrics-logback/4.1.20",
+    "Source":         "src/metrics-logback/4.1.20/metrics-logback-4.1.20.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.19",
+    "Installed":      "src/metrics-logback/4.1.19",
+    "Source":         "src/metrics-logback/4.1.19/metrics-logback-4.1.19.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.18",
+    "Installed":      "src/metrics-logback/4.1.18",
+    "Source":         "src/metrics-logback/4.1.18/metrics-logback-4.1.18.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.17",
+    "Installed":      "src/metrics-logback/4.1.17",
+    "Source":         "src/metrics-logback/4.1.17/metrics-logback-4.1.17.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
+    "Number":         "4.1.16",
+    "Installed":      "src/metrics-logback/4.1.16",
+    "Source":         "src/metrics-logback/4.1.16/metrics-logback-4.1.16.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  },
+  {
     "Number":         "4.1.15",
     "Installed":      "src/metrics-logback/4.1.15",
     "Source":         "src/metrics-logback/4.1.15/metrics-logback-4.1.15.jar",

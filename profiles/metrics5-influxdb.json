@@ -1,5 +1,5 @@
 {
-  "Name":           "metrics5-influxdb",
+  "Name":           "metrics-influxdb",
   "Title":          "InfluxDB 5.x integration for Metrics",
   "SourceUrl":      "https://repo1.maven.org/maven2/io/dropwizard/metrics5/metrics-influxdb/",
   "Maintainer":     "Dropwizard Metrics Committers",
@@ -9,5 +9,11 @@
   "PkgDiff":        "On",
 
   "Versions": [
-  ]
+  {
+    "Number":         "5.0.0-rc11",
+    "Installed":      "src/metrics-influxdb/5.0.0-rc11",
+    "Source":         "src/metrics-influxdb/5.0.0-rc11/metrics-influxdb-5.0.0-rc11.jar",
+    "Changelog":      "On",
+    "PkgDiff":        "On"
+  }]
 }
