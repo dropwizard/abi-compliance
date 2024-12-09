@@ -16,49 +16,49 @@ jobs:
         uses: joschi/setup-jdk@fdc8726d3eaee700a67647704c396f71fe773eed # v2.5.1
         with:
           java-version: 11
-      - uses: actions/cache@6849a6489940f00c2f30c0fb92c6274307ccb58a # v4
+      - uses: actions/cache@1bd1e32a3bdc45362d1e726936510720a7c30a57 # v4
         with:
           path: db
           key: ${{ runner.os }}-db
           restore-keys: |
             ${{ runner.os }}-db
-      - uses: actions/cache@6849a6489940f00c2f30c0fb92c6274307ccb58a # v4
+      - uses: actions/cache@1bd1e32a3bdc45362d1e726936510720a7c30a57 # v4
         with:
           path: installed
           key: ${{ runner.os }}-installed
           restore-keys: |
             ${{ runner.os }}-installed
-      - uses: actions/cache@6849a6489940f00c2f30c0fb92c6274307ccb58a # v4
+      - uses: actions/cache@1bd1e32a3bdc45362d1e726936510720a7c30a57 # v4
         with:
           path: src
           key: ${{ runner.os }}-src
           restore-keys: |
             ${{ runner.os }}-src
-      - uses: actions/cache@6849a6489940f00c2f30c0fb92c6274307ccb58a # v4
+      - uses: actions/cache@1bd1e32a3bdc45362d1e726936510720a7c30a57 # v4
         with:
           path: api_dump
           key: ${{ runner.os }}-api_dump
           restore-keys: |
             ${{ runner.os }}-api_dump
-      - uses: actions/cache@6849a6489940f00c2f30c0fb92c6274307ccb58a # v4
+      - uses: actions/cache@1bd1e32a3bdc45362d1e726936510720a7c30a57 # v4
         with:
           path: archives_report
           key: ${{ runner.os }}-archives_report
           restore-keys: |
             ${{ runner.os }}-archives_report
-      - uses: actions/cache@6849a6489940f00c2f30c0fb92c6274307ccb58a # v4
+      - uses: actions/cache@1bd1e32a3bdc45362d1e726936510720a7c30a57 # v4
         with:
           path: compat_report
           key: ${{ runner.os }}-compat_report
           restore-keys: |
             ${{ runner.os }}-compat_report
-      - uses: actions/cache@6849a6489940f00c2f30c0fb92c6274307ccb58a # v4
+      - uses: actions/cache@1bd1e32a3bdc45362d1e726936510720a7c30a57 # v4
         with:
           path: package_diff
           key: ${{ runner.os }}-package_diff
           restore-keys: |
             ${{ runner.os }}-package_diff
-      - uses: actions/cache@6849a6489940f00c2f30c0fb92c6274307ccb58a # v4
+      - uses: actions/cache@1bd1e32a3bdc45362d1e726936510720a7c30a57 # v4
         with:
           path: timeline
           key: ${{ runner.os }}-timeline
