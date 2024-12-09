@@ -1,0 +1,11 @@
+{
+  "Affected": "100",
+  "Added": 28,
+  "Removed": 29,
+  "TotalProblems": 7,
+  "Source_Affected": "100",
+  "Source_TotalProblems": "7",
+  "Source_ReportPath": "compat_report/dropwizard-views/2.1.5/4.0.0-beta.4/c7c6b/src_compat_report.html",
+  "Archive1": "dropwizard-views-2.1.5.jar",
+  "Archive2": "dropwizard-views-4.0.0-beta.4.jar"
+}

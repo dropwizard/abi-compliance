@@ -1,0 +1,11 @@
+{
+  "Affected": "100",
+  "Added": 59,
+  "Removed": 58,
+  "TotalProblems": 9,
+  "Source_Affected": "100",
+  "Source_TotalProblems": "9",
+  "Source_ReportPath": "compat_report/dropwizard-metrics/2.1.5/4.0.0-beta.4/bde73/src_compat_report.html",
+  "Archive1": "dropwizard-metrics-2.1.5.jar",
+  "Archive2": "dropwizard-metrics-4.0.0-beta.4.jar"
+}
