@@ -1,0 +1,11 @@
+{
+  "Affected": "0",
+  "Added": 0,
+  "Removed": 0,
+  "TotalProblems": 0,
+  "Source_Affected": "0",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/metrics-ehcache/4.2.22/4.2.23/85f8e/src_compat_report.html",
+  "Archive1": "metrics-ehcache-4.2.22.jar",
+  "Archive2": "metrics-ehcache-4.2.23.jar"
+}

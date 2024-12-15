@@ -1,0 +1,8 @@
+$VAR1 = {
+          'Installed' => {
+                           '5.0.0' => 'src/metrics-legacy-adapter-healthchecks/5.0.0'
+                         },
+          'Source' => {
+                        '5.0.0' => 'src/metrics-legacy-adapter-healthchecks/5.0.0/metrics-legacy-adapter-healthchecks-5.0.0.jar'
+                      }
+        };

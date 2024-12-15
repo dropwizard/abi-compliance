@@ -1,0 +1,576 @@
+$VAR1 = {
+          'APIDump' => {
+                         '3.1.0' => {
+                                      '2d16f' => {
+                                                   'Archive' => 'metrics-ganglia-3.1.0.jar',
+                                                   'Path' => 'api_dump/metrics-ganglia/3.1.0/2d16f/API.dump.tar.gz',
+                                                   'TotalSymbols' => '10'
+                                                 }
+                                    },
+                         '3.1.1' => {
+                                      'de4fa' => {
+                                                   'Archive' => 'metrics-ganglia-3.1.1.jar',
+                                                   'Path' => 'api_dump/metrics-ganglia/3.1.1/de4fa/API.dump.tar.gz',
+                                                   'TotalSymbols' => '10'
+                                                 }
+                                    },
+                         '3.1.2' => {
+                                      'f2388' => {
+                                                   'Archive' => 'metrics-ganglia-3.1.2.jar',
+                                                   'Path' => 'api_dump/metrics-ganglia/3.1.2/f2388/API.dump.tar.gz',
+                                                   'TotalSymbols' => '10'
+                                                 }
+                                    },
+                         '3.1.3' => {
+                                      'c10af' => {
+                                                   'Archive' => 'metrics-ganglia-3.1.3.jar',
+                                                   'Path' => 'api_dump/metrics-ganglia/3.1.3/c10af/API.dump.tar.gz',
+                                                   'TotalSymbols' => '10'
+                                                 }
+                                    },
+                         '3.1.4' => {
+                                      'c4d78' => {
+                                                   'Archive' => 'metrics-ganglia-3.1.4.jar',
+                                                   'Path' => 'api_dump/metrics-ganglia/3.1.4/c4d78/API.dump.tar.gz',
+                                                   'TotalSymbols' => '10'
+                                                 }
+                                    },
+                         '3.1.5' => {
+                                      'e1657' => {
+                                                   'Archive' => 'metrics-ganglia-3.1.5.jar',
+                                                   'Path' => 'api_dump/metrics-ganglia/3.1.5/e1657/API.dump.tar.gz',
+                                                   'TotalSymbols' => '10'
+                                                 }
+                                    },
+                         '3.2.0' => {
+                                      '96e7a' => {
+                                                   'Archive' => 'metrics-ganglia-3.2.0.jar',
+                                                   'Path' => 'api_dump/metrics-ganglia/3.2.0/96e7a/API.dump.tar.gz',
+                                                   'TotalSymbols' => '13'
+                                                 }
+                                    },
+                         '3.2.1' => {
+                                      '92850' => {
+                                                   'Archive' => 'metrics-ganglia-3.2.1.jar',
+                                                   'Path' => 'api_dump/metrics-ganglia/3.2.1/92850/API.dump.tar.gz',
+                                                   'TotalSymbols' => '13'
+                                                 }
+                                    },
+                         '3.2.2' => {
+                                      'f4166' => {
+                                                   'Archive' => 'metrics-ganglia-3.2.2.jar',
+                                                   'Path' => 'api_dump/metrics-ganglia/3.2.2/f4166/API.dump.tar.gz',
+                                                   'TotalSymbols' => '13'
+                                                 }
+                                    },
+                         '3.2.3' => {
+                                      '8e697' => {
+                                                   'Archive' => 'metrics-ganglia-3.2.3.jar',
+                                                   'Path' => 'api_dump/metrics-ganglia/3.2.3/8e697/API.dump.tar.gz',
+                                                   'TotalSymbols' => '13'
+                                                 }
+                                    },
+                         '3.2.4' => {
+                                      'a41cc' => {
+                                                   'Archive' => 'metrics-ganglia-3.2.4.jar',
+                                                   'Path' => 'api_dump/metrics-ganglia/3.2.4/a41cc/API.dump.tar.gz',
+                                                   'TotalSymbols' => '13'
+                                                 }
+                                    },
+                         '3.2.5' => {
+                                      '33c93' => {
+                                                   'Archive' => 'metrics-ganglia-3.2.5.jar',
+                                                   'Path' => 'api_dump/metrics-ganglia/3.2.5/33c93/API.dump.tar.gz',
+                                                   'TotalSymbols' => '13'
+                                                 }
+                                    },
+                         '3.2.6' => {
+                                      '2b2cf' => {
+                                                   'Archive' => 'metrics-ganglia-3.2.6.jar',
+                                                   'Path' => 'api_dump/metrics-ganglia/3.2.6/2b2cf/API.dump.tar.gz',
+                                                   'TotalSymbols' => '13'
+                                                 }
+                                    }
+                       },
+          'APIReport' => {
+                           '3.1.0' => {
+                                        '3.1.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-ganglia/3.1.0/3.1.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.1.1' => {
+                                        '3.1.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-ganglia/3.1.1/3.1.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.1.2' => {
+                                        '3.1.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-ganglia/3.1.2/3.1.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.1.3' => {
+                                        '3.1.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-ganglia/3.1.3/3.1.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.1.4' => {
+                                        '3.1.5' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-ganglia/3.1.4/3.1.5/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.1.5' => {
+                                        '3.2.0' => {
+                                                     'Added' => 3,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-ganglia/3.1.5/3.2.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.2.0' => {
+                                        '3.2.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-ganglia/3.2.0/3.2.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.2.1' => {
+                                        '3.2.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-ganglia/3.2.1/3.2.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.2.2' => {
+                                        '3.2.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-ganglia/3.2.2/3.2.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.2.3' => {
+                                        '3.2.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-ganglia/3.2.3/3.2.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.2.4' => {
+                                        '3.2.5' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-ganglia/3.2.4/3.2.5/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.2.5' => {
+                                        '3.2.6' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-ganglia/3.2.5/3.2.6/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      }
+                         },
+          'APIReport_D' => {
+                             '3.1.0' => {
+                                          '3.1.1' => {
+                                                       'e9524' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-ganglia-3.1.0.jar',
+                                                                    'Archive2' => 'metrics-ganglia-3.1.1.jar',
+                                                                    'Path' => 'compat_report/metrics-ganglia/3.1.0/3.1.1/e9524/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-ganglia/3.1.0/3.1.1/e9524/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.1.1' => {
+                                          '3.1.2' => {
+                                                       '8e416' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-ganglia-3.1.1.jar',
+                                                                    'Archive2' => 'metrics-ganglia-3.1.2.jar',
+                                                                    'Path' => 'compat_report/metrics-ganglia/3.1.1/3.1.2/8e416/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-ganglia/3.1.1/3.1.2/8e416/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.1.2' => {
+                                          '3.1.3' => {
+                                                       '00d22' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-ganglia-3.1.2.jar',
+                                                                    'Archive2' => 'metrics-ganglia-3.1.3.jar',
+                                                                    'Path' => 'compat_report/metrics-ganglia/3.1.2/3.1.3/00d22/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-ganglia/3.1.2/3.1.3/00d22/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.1.3' => {
+                                          '3.1.4' => {
+                                                       '85415' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-ganglia-3.1.3.jar',
+                                                                    'Archive2' => 'metrics-ganglia-3.1.4.jar',
+                                                                    'Path' => 'compat_report/metrics-ganglia/3.1.3/3.1.4/85415/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-ganglia/3.1.3/3.1.4/85415/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.1.4' => {
+                                          '3.1.5' => {
+                                                       '28050' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-ganglia-3.1.4.jar',
+                                                                    'Archive2' => 'metrics-ganglia-3.1.5.jar',
+                                                                    'Path' => 'compat_report/metrics-ganglia/3.1.4/3.1.5/28050/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-ganglia/3.1.4/3.1.5/28050/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.1.5' => {
+                                          '3.2.0' => {
+                                                       '878d2' => {
+                                                                    'Added' => 3,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-ganglia-3.1.5.jar',
+                                                                    'Archive2' => 'metrics-ganglia-3.2.0.jar',
+                                                                    'Path' => 'compat_report/metrics-ganglia/3.1.5/3.2.0/878d2/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-ganglia/3.1.5/3.2.0/878d2/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.2.0' => {
+                                          '3.2.1' => {
+                                                       '1395e' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-ganglia-3.2.0.jar',
+                                                                    'Archive2' => 'metrics-ganglia-3.2.1.jar',
+                                                                    'Path' => 'compat_report/metrics-ganglia/3.2.0/3.2.1/1395e/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-ganglia/3.2.0/3.2.1/1395e/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.2.1' => {
+                                          '3.2.2' => {
+                                                       'c233f' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-ganglia-3.2.1.jar',
+                                                                    'Archive2' => 'metrics-ganglia-3.2.2.jar',
+                                                                    'Path' => 'compat_report/metrics-ganglia/3.2.1/3.2.2/c233f/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-ganglia/3.2.1/3.2.2/c233f/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.2.2' => {
+                                          '3.2.3' => {
+                                                       '0ee10' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-ganglia-3.2.2.jar',
+                                                                    'Archive2' => 'metrics-ganglia-3.2.3.jar',
+                                                                    'Path' => 'compat_report/metrics-ganglia/3.2.2/3.2.3/0ee10/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-ganglia/3.2.2/3.2.3/0ee10/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.2.3' => {
+                                          '3.2.4' => {
+                                                       'bd229' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-ganglia-3.2.3.jar',
+                                                                    'Archive2' => 'metrics-ganglia-3.2.4.jar',
+                                                                    'Path' => 'compat_report/metrics-ganglia/3.2.3/3.2.4/bd229/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-ganglia/3.2.3/3.2.4/bd229/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.2.4' => {
+                                          '3.2.5' => {
+                                                       '0eb9b' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-ganglia-3.2.4.jar',
+                                                                    'Archive2' => 'metrics-ganglia-3.2.5.jar',
+                                                                    'Path' => 'compat_report/metrics-ganglia/3.2.4/3.2.5/0eb9b/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-ganglia/3.2.4/3.2.5/0eb9b/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.2.5' => {
+                                          '3.2.6' => {
+                                                       '5f587' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-ganglia-3.2.5.jar',
+                                                                    'Archive2' => 'metrics-ganglia-3.2.6.jar',
+                                                                    'Path' => 'compat_report/metrics-ganglia/3.2.5/3.2.6/5f587/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-ganglia/3.2.5/3.2.6/5f587/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        }
+                           },
+          'Changelog' => {},
+          'Date' => {
+                      '3.1.0' => '04-2014-09 11:02',
+                      '3.1.1' => '06-2015-03 20:36',
+                      '3.1.2' => '25-2015-04 23:59',
+                      '3.1.3' => '24-2017-02 14:58',
+                      '3.1.4' => '10-2017-03 14:26',
+                      '3.1.5' => '02-2017-06 20:01',
+                      '3.2.0' => '24-2017-02 15:21',
+                      '3.2.1' => '10-2017-03 16:42',
+                      '3.2.2' => '20-2017-03 15:19',
+                      '3.2.3' => '28-2017-06 09:56',
+                      '3.2.4' => '03-2017-08 20:03',
+                      '3.2.5' => '15-2017-09 10:37',
+                      '3.2.6' => '24-2017-12 21:55'
+                    },
+          'Maintainer' => 'Dropwizard Metrics Committers',
+          'MaintainerUrl' => 'https://metrics.dropwizard.io/',
+          'PackageDiff' => {
+                             '3.1.0' => {
+                                          '3.1.1' => {
+                                                       'Changed' => '9.5',
+                                                       'Path' => 'package_diff/metrics-ganglia/3.1.0/3.1.1/report.html'
+                                                     }
+                                        },
+                             '3.1.1' => {
+                                          '3.1.2' => {
+                                                       'Changed' => '0.5',
+                                                       'Path' => 'package_diff/metrics-ganglia/3.1.1/3.1.2/report.html'
+                                                     }
+                                        },
+                             '3.1.2' => {
+                                          '3.1.3' => {
+                                                       'Changed' => '0.5',
+                                                       'Path' => 'package_diff/metrics-ganglia/3.1.2/3.1.3/report.html'
+                                                     }
+                                        },
+                             '3.1.3' => {
+                                          '3.1.4' => {
+                                                       'Changed' => '0.5',
+                                                       'Path' => 'package_diff/metrics-ganglia/3.1.3/3.1.4/report.html'
+                                                     }
+                                        },
+                             '3.1.4' => {
+                                          '3.1.5' => {
+                                                       'Changed' => '0.5',
+                                                       'Path' => 'package_diff/metrics-ganglia/3.1.4/3.1.5/report.html'
+                                                     }
+                                        },
+                             '3.1.5' => {
+                                          '3.2.0' => {
+                                                       'Changed' => '13.2',
+                                                       'Path' => 'package_diff/metrics-ganglia/3.1.5/3.2.0/report.html'
+                                                     }
+                                        },
+                             '3.2.0' => {
+                                          '3.2.1' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-ganglia/3.2.0/3.2.1/report.html'
+                                                     }
+                                        },
+                             '3.2.1' => {
+                                          '3.2.2' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-ganglia/3.2.1/3.2.2/report.html'
+                                                     }
+                                        },
+                             '3.2.2' => {
+                                          '3.2.3' => {
+                                                       'Changed' => '0.5',
+                                                       'Path' => 'package_diff/metrics-ganglia/3.2.2/3.2.3/report.html'
+                                                     }
+                                        },
+                             '3.2.3' => {
+                                          '3.2.4' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-ganglia/3.2.3/3.2.4/report.html'
+                                                     }
+                                        },
+                             '3.2.4' => {
+                                          '3.2.5' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-ganglia/3.2.4/3.2.5/report.html'
+                                                     }
+                                        },
+                             '3.2.5' => {
+                                          '3.2.6' => {
+                                                       'Changed' => '0.5',
+                                                       'Path' => 'package_diff/metrics-ganglia/3.2.5/3.2.6/report.html'
+                                                     }
+                                        }
+                           },
+          'Title' => 'Ganglia Integration for Metrics'
+        };

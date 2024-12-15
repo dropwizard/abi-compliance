@@ -1,0 +1,11 @@
+{
+  "Affected": "0",
+  "Added": 0,
+  "Removed": 0,
+  "TotalProblems": 0,
+  "Source_Affected": "0",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/metrics-servlets/3.2.4/3.2.5/e33b4/src_compat_report.html",
+  "Archive1": "metrics-servlets-3.2.4.jar",
+  "Archive2": "metrics-servlets-3.2.5.jar"
+}

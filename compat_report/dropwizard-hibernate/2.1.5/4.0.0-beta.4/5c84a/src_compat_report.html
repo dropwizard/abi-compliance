@@ -1,0 +1,816 @@
+<!-- kind:source;verdict:incompatible;affected:34.1;added:26;removed:32;type_problems_high:2;type_problems_medium:0;type_problems_low:0;method_problems_high:0;method_problems_medium:8;method_problems_low:0;checked_methods:142;checked_types:13;tool_version:2.4 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="dropwizard-hibernate, source, compatibility" />
+<meta name="description" content="Source compatibility report for the dropwizard-hibernate library between 2.1.5 and 4.0.0-beta.4 versions" />
+<title>dropwizard-hibernate: 2.1.5 to 4.0.0-beta.4 source compatibility report</title>
+<style type="text/css">
+body {
+    font-family:Arial, sans-serif;
+    background-color:White;
+    color:Black;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+    white-space:nowrap;
+}
+div.symbols {
+    color:#003E69;
+}
+div.symbols i {
+    color:Brown;
+}
+span.section {
+    font-weight:bold;
+    cursor:pointer;
+    color:#003E69;
+    white-space:nowrap;
+    margin-left:0.3125em;
+}
+span:hover.section {
+    color:#336699;
+}
+span.sect_aff {
+    cursor:pointer;
+    padding-left:1.55em;
+    font-size:0.875em;
+    color:#cc3300;
+}
+span.ext {
+    font-weight:normal;
+}
+span.jar {
+    color:#cc3300;
+    font-size:0.875em;
+    font-weight:bold;
+}
+div.jar_list {
+    padding-left:0.4em;
+    font-size:0.94em;
+}
+span.pkg_t {
+    color:#408080;
+    font-size:0.875em;
+}
+span.pkg {
+    color:#408080;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.cname {
+    color:Green;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.iname_b {
+    font-weight:bold;
+}
+span.iname_a {
+    color:#333333;
+    font-weight:bold;
+    font-size:0.94em;
+}
+span.sym_p {
+    font-weight:normal;
+    white-space:normal;
+}
+span.sym_pd {
+    white-space:normal;
+}
+span.sym_p span, span.sym_pd span {
+    white-space:nowrap;
+}
+span.attr {
+    color:Black;
+    font-weight:normal;
+}
+span.deprecated {
+    color:Red;
+    font-weight:bold;
+    font-family:Monaco, monospace;
+}
+div.affect {
+    padding-left:1em;
+    padding-bottom:10px;
+    font-size:0.87em;
+    font-style:italic;
+    line-height:0.9em;
+}
+div.affected {
+    padding-left:2em;
+    padding-top:10px;
+}
+table.ptable {
+    border-collapse:collapse;
+    border:1px outset black;
+    margin-left:0.95em;
+    margin-top:3px;
+    margin-bottom:3px;
+    width:56.25em;
+}
+table.ptable td {
+    border:1px solid Gray;
+    padding:3px;
+    font-size:0.875em;
+    text-align:left;
+    vertical-align:top;
+    max-width:28em;
+    word-wrap:break-word;
+}
+table.ptable th {
+    background-color:#eeeeee;
+    font-weight:bold;
+    color:#333333;
+    font-family:Verdana, Arial;
+    font-size:0.875em;
+    border:1px solid Gray;
+    text-align:center;
+    vertical-align:top;
+    white-space:nowrap;
+    padding:3px;
+}
+table.summary {
+    border-collapse:collapse;
+    border:1px outset black;
+}
+table.summary th {
+    background-color:#eeeeee;
+    font-weight:normal;
+    text-align:left;
+    font-size:0.94em;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px;
+}
+table.summary td {
+    text-align:right;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px 5px 3px 10px;
+}
+span.mngl {
+    padding-left:1em;
+    font-size:0.875em;
+    cursor:text;
+    color:#444444;
+    font-weight:bold;
+}
+span.pleft {
+    padding-left:2.5em;
+}
+span.color_p {
+    font-style:italic;
+    color:Brown;
+}
+span.param {
+    font-style:italic;
+}
+span.focus_p {
+    font-style:italic;
+    background-color:#DCDCDC;
+}
+span.ttype {
+    font-weight:normal;
+}
+span.nowrap {
+    white-space:nowrap;
+}
+span.value {
+    white-space:nowrap;
+    font-weight:bold;
+}
+.passed {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.warning {
+    background-color:#F4F4AF;
+    font-weight:normal;
+}
+.failed {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.new {
+    background-color:#C6DEFF;
+    font-weight:normal;
+}
+
+.compatible {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.almost_compatible {
+    background-color:#FFDAA3;
+    font-weight:normal;
+}
+.incompatible {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.gray {
+    background-color:#DCDCDC;
+    font-weight:normal;
+}
+
+.top_ref {
+    font-size:0.69em;
+}
+.footer {
+    font-size:0.8125em;
+}
+
+</style>
+<script type="text/javascript" language="JavaScript">
+<!--
+function sC(header, id)
+{
+    e = document.getElementById(id);
+    if(e.style.display == 'none')
+    {
+        e.style.display = 'block';
+        e.style.visibility = 'visible';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[&minus;]");
+    }
+    else
+    {
+        e.style.display = 'none';
+        e.style.visibility = 'hidden';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[+]");
+    }
+}
+
+-->
+</script>
+</head>
+<body><a name='Top'></a><h1>Source compatibility report for the <span style='color:Blue;'>dropwizard-hibernate</span> library between <span style='color:Red;'>2.1.5</span> and <span style='color:Red;'>4.0.0-beta.4</span> versions</h1>
+
+<h2>Test Info</h2><hr/>
+<table class='summary'>
+<tr><th>Library Name</th><td>dropwizard-hibernate</td></tr>
+<tr><th>Version #1</th><td>2.1.5</td></tr>
+<tr><th>Version #2</th><td>4.0.0-beta.4</td></tr>
+</table>
+<h2>Test Results</h2><hr/>
+<table class='summary'>
+<tr><th>Total Java Modules</th><td><a href='#Checked_Archives' style='color:Blue;'>1</a></td></tr>
+<tr><th>Total Methods / Classes</th><td>142 / 13</td></tr>
+<tr><th>Compatibility</th>
+<td class='incompatible'>65.9%</td>
+</tr>
+</table>
+<h2>Problem Summary</h2><hr/>
+<table class='summary'>
+<tr><th></th><th style='text-align:center;'>Severity</th><th style='text-align:center;'>Count</th></tr>
+<tr><th>Added Methods</th><td>-</td><td class='new'><a href='#Added' style='color:Blue;'>26</a></td></tr>
+<tr><th>Removed Methods</th><td>High</td><td class='failed'><a href='#Removed' style='color:Blue;'>32</a></td></tr>
+<tr><th rowspan='3'>Problems with<br/>Data Types</th><td>High</td><td class='failed'><a href='#Type_Problems_High' style='color:Blue;'>2</a></td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+<tr><th rowspan='3'>Problems with<br/>Methods</th><td>High</td><td>0</td></tr>
+<tr><td>Medium</td><td class='failed'><a href='#Method_Problems_Medium' style='color:Blue;'>8</a></td></tr>
+<tr><td>Low</td><td>0</td></tr>
+</table>
+
+<a name='Added'></a><h2>Added Methods <span class='new'>&nbsp;26&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-hibernate-4.0.0-beta.4.jar</span>, <span class='cname'>AbstractDAO.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.hibernate</span><br/>
+<span class="section" onclick="sC(this, 'c_71')">
+AbstractDAO&lt;E&gt;.criteriaQuery&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;CriteriaQuery&lt;E&gt;</span></span>
+<br/>
+<div id="c_71" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/AbstractDAO.criteriaQuery:()Ljakarta/persistence/criteria/CriteriaQuery;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_72')">
+AbstractDAO&lt;E&gt;.get&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>id</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;E</span></span>
+<br/>
+<div id="c_72" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/AbstractDAO.get:(Ljava/lang/Object;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_73')">
+AbstractDAO&lt;E&gt;.list&#160;<span class='sym_p'><span>(&#160;CriteriaQuery&lt;E&gt; <span class='color_p'>criteria</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;List&lt;E&gt;</span></span>
+<br/>
+<div id="c_73" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/AbstractDAO.list:(Ljakarta/persistence/criteria/CriteriaQuery;)Ljava/util/List;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_74')">
+AbstractDAO&lt;E&gt;.uniqueResult&#160;<span class='sym_p'><span>(&#160;CriteriaQuery&lt;E&gt; <span class='color_p'>criteriaQuery</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;E</span></span>
+<br/>
+<div id="c_74" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/AbstractDAO.uniqueResult:(Ljakarta/persistence/criteria/CriteriaQuery;)Ljava/lang/Object;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-hibernate-4.0.0-beta.4.jar</span>, <span class='cname'>DualSessionFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.hibernate.dual</span><br/>
+<span class="section" onclick="sC(this, 'c_75')">
+DualSessionFactory.addNamedEntityGraph&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>graphName</span></span>, <span>EntityGraph&lt;T&gt; <span class='color_p'>entityGraph</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_75" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.addNamedEntityGraph:(Ljava/lang/String;Ljakarta/persistence/EntityGraph;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_76')">
+DualSessionFactory.addNamedQuery&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>, <span>Query <span class='color_p'>query</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_76" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.addNamedQuery:(Ljava/lang/String;Ljakarta/persistence/Query;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_77')">
+DualSessionFactory.createEntityManager&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;EntityManager</span></span>
+<br/>
+<div id="c_77" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.createEntityManager:()Ljakarta/persistence/EntityManager;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_78')">
+DualSessionFactory.createEntityManager&#160;<span class='sym_p'><span>(&#160;Map <span class='color_p'>map</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;EntityManager</span></span>
+<br/>
+<div id="c_78" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.createEntityManager:(Ljava/util/Map;)Ljakarta/persistence/EntityManager;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_79')">
+DualSessionFactory.createEntityManager&#160;<span class='sym_p'><span>(&#160;SynchronizationType <span class='color_p'>synchronizationType</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;EntityManager</span></span>
+<br/>
+<div id="c_79" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.createEntityManager:(Ljakarta/persistence/SynchronizationType;)Ljakarta/persistence/EntityManager;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_80')">
+DualSessionFactory.createEntityManager&#160;<span class='sym_p'><span>(&#160;SynchronizationType <span class='color_p'>synchronizationType</span></span>, <span>Map <span class='color_p'>map</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;EntityManager</span></span>
+<br/>
+<div id="c_80" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.createEntityManager:(Ljakarta/persistence/SynchronizationType;Ljava/util/Map;)Ljakarta/persistence/EntityManager;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_81')">
+DualSessionFactory.fromSession&#160;<span class='sym_p'><span>(&#160;Function&lt;Session,R&gt; <span class='color_p'>action</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;R</span></span>
+<br/>
+<div id="c_81" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.fromSession:(Ljava/util/function/Function;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_82')">
+DualSessionFactory.fromTransaction&#160;<span class='sym_p'><span>(&#160;Function&lt;Session,R&gt; <span class='color_p'>action</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;R</span></span>
+<br/>
+<div id="c_82" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.fromTransaction:(Ljava/util/function/Function;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_83')">
+DualSessionFactory.getCache&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Cache</span></span>
+<br/>
+<div id="c_83" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getCache:()Ljakarta/persistence/Cache;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_84')">
+DualSessionFactory.getCriteriaBuilder&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;CriteriaBuilder</span></span>
+<br/>
+<div id="c_84" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getCriteriaBuilder:()Ljakarta/persistence/criteria/CriteriaBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_85')">
+DualSessionFactory.getMetamodel&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Metamodel</span></span>
+<br/>
+<div id="c_85" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getMetamodel:()Ljakarta/persistence/metamodel/Metamodel;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_86')">
+DualSessionFactory.getPersistenceUnitUtil&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;PersistenceUnitUtil</span></span>
+<br/>
+<div id="c_86" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getPersistenceUnitUtil:()Ljakarta/persistence/PersistenceUnitUtil;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_87')">
+DualSessionFactory.inSession&#160;<span class='sym_p'><span>(&#160;Consumer&lt;Session&gt; <span class='color_p'>action</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_87" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.inSession:(Ljava/util/function/Consumer;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_88')">
+DualSessionFactory.inTransaction&#160;<span class='sym_p'><span>(&#160;Consumer&lt;Session&gt; <span class='color_p'>action</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_88" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.inTransaction:(Ljava/util/function/Consumer;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-hibernate-4.0.0-beta.4.jar</span>, <span class='cname'>HibernateBundle.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.hibernate</span><br/>
+<span class="section" onclick="sC(this, 'c_89')">
+HibernateBundle&lt;T&gt;.createHibernate5Module&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Hibernate5JakartaModule</span></span>
+<br/>
+<div id="c_89" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/HibernateBundle.createHibernate5Module:()Lcom/fasterxml/jackson/datatype/hibernate5/jakarta/Hibernate5JakartaModule;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_90')">
+HibernateBundle&lt;T&gt;.initialize&#160;<span class='sym_p'><span>(&#160;Bootstrap&lt;?&gt; <span class='color_p'>bootstrap</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_90" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/HibernateBundle.initialize:(Lio/dropwizard/core/setup/Bootstrap;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_91')">
+HibernateBundle&lt;T&gt;.registerUnitOfWorkListenerIfAbsent&#160;<span class='sym_p'><span>(&#160;Environment <span class='color_p'>environment</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;UnitOfWorkApplicationListener</span></span>
+<br/>
+<div id="c_91" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/HibernateBundle.registerUnitOfWorkListenerIfAbsent:(Lio/dropwizard/core/setup/Environment;)Lio/dropwizard/hibernate/UnitOfWorkApplicationListener;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_92')">
+HibernateBundle&lt;T&gt;.run&#160;<span class='sym_p'><span>(&#160;T <span class='color_p'>configuration</span></span>, <span>Environment <span class='color_p'>environment</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_92" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/HibernateBundle.run:(Ljava/lang/Object;Lio/dropwizard/core/setup/Environment;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-hibernate-4.0.0-beta.4.jar</span>, <span class='cname'>HibernateBundle.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.hibernate.dual</span><br/>
+<span class="section" onclick="sC(this, 'c_93')">
+HibernateBundle&lt;T&gt;.run&#160;<span class='sym_p'><span>(&#160;T <span class='color_p'>configuration</span></span>, <span>Environment <span class='color_p'>environment</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_93" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/HibernateBundle.run:(Ljava/lang/Object;Lio/dropwizard/core/setup/Environment;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-hibernate-4.0.0-beta.4.jar</span>, <span class='cname'>SessionFactoryFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.hibernate</span><br/>
+<span class="section" onclick="sC(this, 'c_94')">
+SessionFactoryFactory.build&#160;<span class='sym_p'><span>(&#160;HibernateBundle&lt;?&gt; <span class='color_p'>bundle</span></span>, <span>Environment <span class='color_p'>environment</span></span>, <span>PooledDataSourceFactory <span class='color_p'>dbConfig</span></span>, <span>List&lt;Class&lt;?&gt;&gt; <span class='color_p'>entities</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;SessionFactory</span></span>
+<br/>
+<div id="c_94" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/SessionFactoryFactory.build:(Lio/dropwizard/hibernate/HibernateBundle;Lio/dropwizard/core/setup/Environment;Lio/dropwizard/db/PooledDataSourceFactory;Ljava/util/List;)Lorg/hibernate/SessionFactory;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_95')">
+SessionFactoryFactory.build&#160;<span class='sym_p'><span>(&#160;HibernateBundle&lt;?&gt; <span class='color_p'>bundle</span></span>, <span>Environment <span class='color_p'>environment</span></span>, <span>PooledDataSourceFactory <span class='color_p'>dbConfig</span></span>, <span>List&lt;Class&lt;?&gt;&gt; <span class='color_p'>entities</span></span>, <span>String <span class='color_p'>name</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;SessionFactory</span></span>
+<br/>
+<div id="c_95" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/SessionFactoryFactory.build:(Lio/dropwizard/hibernate/HibernateBundle;Lio/dropwizard/core/setup/Environment;Lio/dropwizard/db/PooledDataSourceFactory;Ljava/util/List;Ljava/lang/String;)Lorg/hibernate/SessionFactory;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_96')">
+SessionFactoryFactory.build&#160;<span class='sym_p'><span>(&#160;HibernateBundle&lt;?&gt; <span class='color_p'>bundle</span></span>, <span>Environment <span class='color_p'>environment</span></span>, <span>PooledDataSourceFactory <span class='color_p'>dbConfig</span></span>, <span>ManagedDataSource <span class='color_p'>dataSource</span></span>, <span>List&lt;Class&lt;?&gt;&gt; <span class='color_p'>entities</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;SessionFactory</span></span>
+<br/>
+<div id="c_96" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/SessionFactoryFactory.build:(Lio/dropwizard/hibernate/HibernateBundle;Lio/dropwizard/core/setup/Environment;Lio/dropwizard/db/PooledDataSourceFactory;Lio/dropwizard/db/ManagedDataSource;Ljava/util/List;)Lorg/hibernate/SessionFactory;</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Removed'></a><a name='Withdrawn'></a><h2>Removed Methods <span class='failed'>&nbsp;32&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-hibernate-2.1.5.jar</span>, <span class='cname'>AbstractDAO.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.hibernate</span><br/>
+<span class="section" onclick="sC(this, 'c_97')">
+AbstractDAO&lt;E&gt;.criteria&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Criteria</span> <span class='deprecated'>*DEPRECATED*</span></span>
+<br/>
+<div id="c_97" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/AbstractDAO.criteria:()Lorg/hibernate/Criteria;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_98')">
+AbstractDAO&lt;E&gt;.criteriaQuery&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;CriteriaQuery&lt;E&gt;</span></span>
+<br/>
+<div id="c_98" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/AbstractDAO.criteriaQuery:()Ljavax/persistence/criteria/CriteriaQuery;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_99')">
+AbstractDAO&lt;E&gt;.get&#160;<span class='sym_p'><span>(&#160;Serializable <span class='color_p'>id</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;E</span></span>
+<br/>
+<div id="c_99" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/AbstractDAO.get:(Ljava/io/Serializable;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_100')">
+AbstractDAO&lt;E&gt;.list&#160;<span class='sym_p'><span>(&#160;Criteria <span class='color_p'>criteria</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;List&lt;E&gt;</span></span>
+<br/>
+<div id="c_100" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/AbstractDAO.list:(Lorg/hibernate/Criteria;)Ljava/util/List;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_101')">
+AbstractDAO&lt;E&gt;.list&#160;<span class='sym_p'><span>(&#160;CriteriaQuery&lt;E&gt; <span class='color_p'>criteria</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;List&lt;E&gt;</span></span>
+<br/>
+<div id="c_101" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/AbstractDAO.list:(Ljavax/persistence/criteria/CriteriaQuery;)Ljava/util/List;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_102')">
+AbstractDAO&lt;E&gt;.uniqueResult&#160;<span class='sym_p'><span>(&#160;Criteria <span class='color_p'>criteria</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;E</span></span>
+<br/>
+<div id="c_102" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/AbstractDAO.uniqueResult:(Lorg/hibernate/Criteria;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_103')">
+AbstractDAO&lt;E&gt;.uniqueResult&#160;<span class='sym_p'><span>(&#160;CriteriaQuery&lt;E&gt; <span class='color_p'>criteriaQuery</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;E</span></span>
+<br/>
+<div id="c_103" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/AbstractDAO.uniqueResult:(Ljavax/persistence/criteria/CriteriaQuery;)Ljava/lang/Object;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-hibernate-2.1.5.jar</span>, <span class='cname'>DualSessionFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.hibernate.dual</span><br/>
+<span class="section" onclick="sC(this, 'c_104')">
+DualSessionFactory.addNamedEntityGraph&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>graphName</span></span>, <span>EntityGraph&lt;T&gt; <span class='color_p'>entityGraph</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_104" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.addNamedEntityGraph:(Ljava/lang/String;Ljavax/persistence/EntityGraph;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_105')">
+DualSessionFactory.addNamedQuery&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>, <span>Query <span class='color_p'>query</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_105" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.addNamedQuery:(Ljava/lang/String;Ljavax/persistence/Query;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_106')">
+DualSessionFactory.createEntityManager&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;EntityManager</span></span>
+<br/>
+<div id="c_106" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.createEntityManager:()Ljavax/persistence/EntityManager;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_107')">
+DualSessionFactory.createEntityManager&#160;<span class='sym_p'><span>(&#160;Map <span class='color_p'>map</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;EntityManager</span></span>
+<br/>
+<div id="c_107" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.createEntityManager:(Ljava/util/Map;)Ljavax/persistence/EntityManager;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_108')">
+DualSessionFactory.createEntityManager&#160;<span class='sym_p'><span>(&#160;SynchronizationType <span class='color_p'>synchronizationType</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;EntityManager</span></span>
+<br/>
+<div id="c_108" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.createEntityManager:(Ljavax/persistence/SynchronizationType;)Ljavax/persistence/EntityManager;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_109')">
+DualSessionFactory.createEntityManager&#160;<span class='sym_p'><span>(&#160;SynchronizationType <span class='color_p'>synchronizationType</span></span>, <span>Map <span class='color_p'>map</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;EntityManager</span></span>
+<br/>
+<div id="c_109" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.createEntityManager:(Ljavax/persistence/SynchronizationType;Ljava/util/Map;)Ljavax/persistence/EntityManager;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_110')">
+DualSessionFactory.getAllClassMetadata&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map&lt;String,ClassMetadata&gt;</span></span>
+<br/>
+<div id="c_110" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getAllClassMetadata:()Ljava/util/Map;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_111')">
+DualSessionFactory.getAllCollectionMetadata&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map</span></span>
+<br/>
+<div id="c_111" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getAllCollectionMetadata:()Ljava/util/Map;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_112')">
+DualSessionFactory.getCache&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Cache</span></span>
+<br/>
+<div id="c_112" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getCache:()Ljavax/persistence/Cache;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_113')">
+DualSessionFactory.getClassMetadata&#160;<span class='sym_p'><span>(&#160;Class <span class='color_p'>entityClass</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ClassMetadata</span></span>
+<br/>
+<div id="c_113" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getClassMetadata:(Ljava/lang/Class;)Lorg/hibernate/metadata/ClassMetadata;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_114')">
+DualSessionFactory.getClassMetadata&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>entityName</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ClassMetadata</span></span>
+<br/>
+<div id="c_114" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getClassMetadata:(Ljava/lang/String;)Lorg/hibernate/metadata/ClassMetadata;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_115')">
+DualSessionFactory.getCollectionMetadata&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>roleName</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;CollectionMetadata</span></span>
+<br/>
+<div id="c_115" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getCollectionMetadata:(Ljava/lang/String;)Lorg/hibernate/metadata/CollectionMetadata;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_116')">
+DualSessionFactory.getCriteriaBuilder&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;CriteriaBuilder</span></span>
+<br/>
+<div id="c_116" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getCriteriaBuilder:()Ljavax/persistence/criteria/CriteriaBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_117')">
+DualSessionFactory.getMetamodel&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Metamodel</span></span>
+<br/>
+<div id="c_117" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getMetamodel:()Ljavax/persistence/metamodel/Metamodel;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_118')">
+DualSessionFactory.getMetamodel&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Metamodel</span></span>
+<br/>
+<div id="c_118" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getMetamodel:()Lorg/hibernate/Metamodel;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_119')">
+DualSessionFactory.getPersistenceUnitUtil&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;PersistenceUnitUtil</span></span>
+<br/>
+<div id="c_119" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getPersistenceUnitUtil:()Ljavax/persistence/PersistenceUnitUtil;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_120')">
+DualSessionFactory.getTypeHelper&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;TypeHelper</span></span>
+<br/>
+<div id="c_120" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getTypeHelper:()Lorg/hibernate/TypeHelper;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-hibernate-2.1.5.jar</span>, <span class='cname'>HibernateBundle.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.hibernate</span><br/>
+<span class="section" onclick="sC(this, 'c_121')">
+HibernateBundle&lt;T&gt;.createHibernate5Module&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Hibernate5Module</span></span>
+<br/>
+<div id="c_121" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/HibernateBundle.createHibernate5Module:()Lcom/fasterxml/jackson/datatype/hibernate5/Hibernate5Module;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_122')">
+HibernateBundle&lt;T&gt;.initialize&#160;<span class='sym_p'><span>(&#160;Bootstrap&lt;?&gt; <span class='color_p'>bootstrap</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_122" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/HibernateBundle.initialize:(Lio/dropwizard/setup/Bootstrap;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_123')">
+HibernateBundle&lt;T&gt;.registerUnitOfWorkListenerIfAbsent&#160;<span class='sym_p'><span>(&#160;Environment <span class='color_p'>environment</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;UnitOfWorkApplicationListener</span></span>
+<br/>
+<div id="c_123" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/HibernateBundle.registerUnitOfWorkListenerIfAbsent:(Lio/dropwizard/setup/Environment;)Lio/dropwizard/hibernate/UnitOfWorkApplicationListener;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_124')">
+HibernateBundle&lt;T&gt;.run&#160;<span class='sym_p'><span>(&#160;T <span class='color_p'>configuration</span></span>, <span>Environment <span class='color_p'>environment</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_124" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/HibernateBundle.run:(Ljava/lang/Object;Lio/dropwizard/setup/Environment;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-hibernate-2.1.5.jar</span>, <span class='cname'>HibernateBundle.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.hibernate.dual</span><br/>
+<span class="section" onclick="sC(this, 'c_125')">
+HibernateBundle&lt;T&gt;.run&#160;<span class='sym_p'><span>(&#160;T <span class='color_p'>configuration</span></span>, <span>Environment <span class='color_p'>environment</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_125" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/HibernateBundle.run:(Ljava/lang/Object;Lio/dropwizard/setup/Environment;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-hibernate-2.1.5.jar</span>, <span class='cname'>SessionFactoryFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.hibernate</span><br/>
+<span class="section" onclick="sC(this, 'c_126')">
+SessionFactoryFactory.build&#160;<span class='sym_p'><span>(&#160;HibernateBundle&lt;?&gt; <span class='color_p'>bundle</span></span>, <span>Environment <span class='color_p'>environment</span></span>, <span>PooledDataSourceFactory <span class='color_p'>dbConfig</span></span>, <span>List&lt;Class&lt;?&gt;&gt; <span class='color_p'>entities</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;SessionFactory</span></span>
+<br/>
+<div id="c_126" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/SessionFactoryFactory.build:(Lio/dropwizard/hibernate/HibernateBundle;Lio/dropwizard/setup/Environment;Lio/dropwizard/db/PooledDataSourceFactory;Ljava/util/List;)Lorg/hibernate/SessionFactory;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_127')">
+SessionFactoryFactory.build&#160;<span class='sym_p'><span>(&#160;HibernateBundle&lt;?&gt; <span class='color_p'>bundle</span></span>, <span>Environment <span class='color_p'>environment</span></span>, <span>PooledDataSourceFactory <span class='color_p'>dbConfig</span></span>, <span>List&lt;Class&lt;?&gt;&gt; <span class='color_p'>entities</span></span>, <span>String <span class='color_p'>name</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;SessionFactory</span></span>
+<br/>
+<div id="c_127" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/SessionFactoryFactory.build:(Lio/dropwizard/hibernate/HibernateBundle;Lio/dropwizard/setup/Environment;Lio/dropwizard/db/PooledDataSourceFactory;Ljava/util/List;Ljava/lang/String;)Lorg/hibernate/SessionFactory;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_128')">
+SessionFactoryFactory.build&#160;<span class='sym_p'><span>(&#160;HibernateBundle&lt;?&gt; <span class='color_p'>bundle</span></span>, <span>Environment <span class='color_p'>environment</span></span>, <span>PooledDataSourceFactory <span class='color_p'>dbConfig</span></span>, <span>ManagedDataSource <span class='color_p'>dataSource</span></span>, <span>List&lt;Class&lt;?&gt;&gt; <span class='color_p'>entities</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;SessionFactory</span></span>
+<br/>
+<div id="c_128" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/SessionFactoryFactory.build:(Lio/dropwizard/hibernate/HibernateBundle;Lio/dropwizard/setup/Environment;Lio/dropwizard/db/PooledDataSourceFactory;Lio/dropwizard/db/ManagedDataSource;Ljava/util/List;)Lorg/hibernate/SessionFactory;</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='High_Risk_Problems'></a><a name='Type_Problems_High'></a>
+<h2>Problems with Data Types, High Severity <span class='failed'>&nbsp;2&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-hibernate-2.1.5.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.hibernate</span><br/>
+<span class="section" onclick="sC(this, 'c_129')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> HibernateBundle&lt;T&gt; <span class='failed'>&nbsp;2&nbsp;</span></span>
+<br/>
+<div id="c_129" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Added super-interface <b>io.dropwizard.core.ConfiguredBundle&lt;T&gt;</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: a client class C is not abstract and does not override abstract method in <b>io.dropwizard.core.ConfiguredBundle&lt;T&gt;</b>.</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Removed super-interface <b>io.dropwizard.ConfiguredBundle&lt;T&gt;</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find method in class <b>HibernateBundle&lt;T&gt;</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_130')">
+[+] affected methods: 7 (4.9%)</span>
+<div id="c_130" style="display:none;">
+<div class='affected'><span class='iname_a'>HibernateBundle&lt;T&gt;.HibernateBundle&lt;T&gt;&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>entity</i></span>, <span>Class&lt;?&gt;... <i>entities</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'HibernateBundle&lt;T&gt;' abstract class.</div>
+<span class='iname_a'>HibernateBundle&lt;T&gt;.HibernateBundle&lt;T&gt;&#160;<span class='sym_p'><span>(&#160;List&lt;Class&lt;?&gt;&gt; <i>entities</i></span>, <span>SessionFactoryFactory <i>sessionFactoryFactory</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'HibernateBundle&lt;T&gt;' abstract class.</div>
+<span class='iname_a'>HibernateBundle&lt;T&gt;.configure&#160;<span class='sym_p'><span>(&#160;Configuration <i>configuration</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'HibernateBundle&lt;T&gt;' abstract class.</div>
+<span class='iname_a'>HibernateBundle&lt;T&gt;.getSessionFactory&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'HibernateBundle&lt;T&gt;' abstract class.</div>
+<span class='iname_a'>HibernateBundle&lt;T&gt;.isLazyLoadingEnabled&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'HibernateBundle&lt;T&gt;' abstract class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Medium_Risk_Problems'></a><a name='Method_Problems_Medium'></a>
+<h2>Problems with Methods, Medium Severity <span class='failed'>&nbsp;8&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-hibernate-2.1.5.jar</span>, <span class='cname'>AbstractDAO.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.hibernate</span><br/>
+<span class="section" onclick="sC(this, 'c_131')">
+<span class='ext'>[+]</span> AbstractDAO&lt;E&gt;.criteriaQuery&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;CriteriaQuery&lt;E&gt;</span> <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_131" style="display:none;">
+<span class='mngl pleft'>io/dropwizard/hibernate/AbstractDAO.criteriaQuery:()Ljavax/persistence/criteria/CriteriaQuery;</span><br/>
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Return value type has been changed from <b>javax.persistence.criteria.CriteriaQuery&lt;E&gt;</b> to <b>jakarta.persistence.criteria.CriteriaQuery&lt;E&gt;</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: incompatible types: <b>jakarta.persistence.criteria.CriteriaQuery&lt;E&gt;</b> cannot be converted to <b>javax.persistence.criteria.CriteriaQuery&lt;E&gt;</b>.</td>
+</tr>
+</table><br/></div>
+
+<br/><span class='jar'>dropwizard-hibernate-2.1.5.jar</span>, <span class='cname'>DualSessionFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.hibernate.dual</span><br/>
+<span class="section" onclick="sC(this, 'c_132')">
+<span class='ext'>[+]</span> DualSessionFactory.createEntityManager&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;EntityManager</span> <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_132" style="display:none;">
+<span class='mngl pleft'>io/dropwizard/hibernate/dual/DualSessionFactory.createEntityManager:()Ljavax/persistence/EntityManager;</span><br/>
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Return value type has been changed from <b>javax.persistence.EntityManager</b> to <b>jakarta.persistence.EntityManager</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: incompatible types: <b>jakarta.persistence.EntityManager</b> cannot be converted to <b>javax.persistence.EntityManager</b>.</td>
+</tr>
+</table><br/></div>
+
+<span class="section" onclick="sC(this, 'c_133')">
+<span class='ext'>[+]</span> DualSessionFactory.createEntityManager&#160;<span class='sym_p'><span>(&#160;Map <span class='color_p'>map</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;EntityManager</span> <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_133" style="display:none;">
+<span class='mngl pleft'>io/dropwizard/hibernate/dual/DualSessionFactory.createEntityManager:(Ljava/util/Map;)Ljavax/persistence/EntityManager;</span><br/>
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Return value type has been changed from <b>javax.persistence.EntityManager</b> to <b>jakarta.persistence.EntityManager</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: incompatible types: <b>jakarta.persistence.EntityManager</b> cannot be converted to <b>javax.persistence.EntityManager</b>.</td>
+</tr>
+</table><br/></div>
+
+<span class="section" onclick="sC(this, 'c_134')">
+<span class='ext'>[+]</span> DualSessionFactory.getCache&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Cache</span> <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_134" style="display:none;">
+<span class='mngl pleft'>io/dropwizard/hibernate/dual/DualSessionFactory.getCache:()Lorg/hibernate/Cache;</span><br/>
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Return value type has been changed from <b>org.hibernate.Cache</b> to <b>jakarta.persistence.Cache</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: incompatible types: <b>jakarta.persistence.Cache</b> cannot be converted to <b>org.hibernate.Cache</b>.</td>
+</tr>
+</table><br/></div>
+
+<span class="section" onclick="sC(this, 'c_135')">
+<span class='ext'>[+]</span> DualSessionFactory.getCriteriaBuilder&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;CriteriaBuilder</span> <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_135" style="display:none;">
+<span class='mngl pleft'>io/dropwizard/hibernate/dual/DualSessionFactory.getCriteriaBuilder:()Ljavax/persistence/criteria/CriteriaBuilder;</span><br/>
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Return value type has been changed from <b>javax.persistence.criteria.CriteriaBuilder</b> to <b>jakarta.persistence.criteria.CriteriaBuilder</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: incompatible types: <b>jakarta.persistence.criteria.CriteriaBuilder</b> cannot be converted to <b>javax.persistence.criteria.CriteriaBuilder</b>.</td>
+</tr>
+</table><br/></div>
+
+<span class="section" onclick="sC(this, 'c_136')">
+<span class='ext'>[+]</span> DualSessionFactory.getMetamodel&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Metamodel</span> <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_136" style="display:none;">
+<span class='mngl pleft'>io/dropwizard/hibernate/dual/DualSessionFactory.getMetamodel:()Ljavax/persistence/metamodel/Metamodel;</span><br/>
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Return value type has been changed from <b>javax.persistence.metamodel.Metamodel</b> to <b>jakarta.persistence.metamodel.Metamodel</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: incompatible types: <b>jakarta.persistence.metamodel.Metamodel</b> cannot be converted to <b>javax.persistence.metamodel.Metamodel</b>.</td>
+</tr>
+</table><br/></div>
+
+<span class="section" onclick="sC(this, 'c_137')">
+<span class='ext'>[+]</span> DualSessionFactory.getPersistenceUnitUtil&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;PersistenceUnitUtil</span> <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_137" style="display:none;">
+<span class='mngl pleft'>io/dropwizard/hibernate/dual/DualSessionFactory.getPersistenceUnitUtil:()Ljavax/persistence/PersistenceUnitUtil;</span><br/>
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Return value type has been changed from <b>javax.persistence.PersistenceUnitUtil</b> to <b>jakarta.persistence.PersistenceUnitUtil</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: incompatible types: <b>jakarta.persistence.PersistenceUnitUtil</b> cannot be converted to <b>javax.persistence.PersistenceUnitUtil</b>.</td>
+</tr>
+</table><br/></div>
+
+<br/><span class='jar'>dropwizard-hibernate-2.1.5.jar</span>, <span class='cname'>HibernateBundle.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.hibernate</span><br/>
+<span class="section" onclick="sC(this, 'c_138')">
+<span class='ext'>[+]</span> HibernateBundle&lt;T&gt;.createHibernate5Module&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Hibernate5Module</span> <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_138" style="display:none;">
+<span class='mngl pleft'>io/dropwizard/hibernate/HibernateBundle.createHibernate5Module:()Lcom/fasterxml/jackson/datatype/hibernate5/Hibernate5Module;</span><br/>
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Return value type has been changed from <b>com.fasterxml.jackson.datatype.hibernate5.Hibernate5Module</b> to <b>com.fasterxml.jackson.datatype.hibernate5.jakarta.Hibernate5JakartaModule</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: incompatible types: <b>com.fasterxml.jackson.datatype.hibernate5.jakarta.Hibernate5JakartaModule</b> cannot be converted to <b>com.fasterxml.jackson.datatype.hibernate5.Hibernate5Module</b>.</td>
+</tr>
+</table><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Checked_Archives'></a><h2>Java Archives <span class='gray'>&nbsp;1&nbsp;</span></h2>
+<hr/><div class='jar_list'>
+dropwizard-hibernate-2.1.5.jar<br/>
+</div><br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<br/><br/><br/>
+<hr/><div class='footer' align='right'><i>Generated by <a href='https://github.com/lvc/japi-compliance-checker'>Java API Compliance Checker</a> 2.4 &#160;</i></div><br/>
+</body></html>

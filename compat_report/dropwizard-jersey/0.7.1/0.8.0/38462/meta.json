@@ -1,0 +1,11 @@
+{
+  "Affected": "22.8",
+  "Added": 46,
+  "Removed": 21,
+  "TotalProblems": 8,
+  "Source_Affected": "22.8",
+  "Source_TotalProblems": "8",
+  "Source_ReportPath": "compat_report/dropwizard-jersey/0.7.1/0.8.0/38462/src_compat_report.html",
+  "Archive1": "dropwizard-jersey-0.7.1.jar",
+  "Archive2": "dropwizard-jersey-0.8.0.jar"
+}
