@@ -1,0 +1,1534 @@
+<!-- kind:source;verdict:incompatible;affected:41.2;added:153;removed:14;type_problems_high:3;type_problems_medium:1;type_problems_low:0;method_problems_high:0;method_problems_medium:1;method_problems_low:0;checked_methods:210;checked_types:49;tool_version:2.4 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="dropwizard-jdbi, source, compatibility" />
+<meta name="description" content="Source compatibility report for the dropwizard-jdbi library between 0.9.3 and 1.0.0 versions" />
+<title>dropwizard-jdbi: 0.9.3 to 1.0.0 source compatibility report</title>
+<style type="text/css">
+body {
+    font-family:Arial, sans-serif;
+    background-color:White;
+    color:Black;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+    white-space:nowrap;
+}
+div.symbols {
+    color:#003E69;
+}
+div.symbols i {
+    color:Brown;
+}
+span.section {
+    font-weight:bold;
+    cursor:pointer;
+    color:#003E69;
+    white-space:nowrap;
+    margin-left:0.3125em;
+}
+span:hover.section {
+    color:#336699;
+}
+span.sect_aff {
+    cursor:pointer;
+    padding-left:1.55em;
+    font-size:0.875em;
+    color:#cc3300;
+}
+span.ext {
+    font-weight:normal;
+}
+span.jar {
+    color:#cc3300;
+    font-size:0.875em;
+    font-weight:bold;
+}
+div.jar_list {
+    padding-left:0.4em;
+    font-size:0.94em;
+}
+span.pkg_t {
+    color:#408080;
+    font-size:0.875em;
+}
+span.pkg {
+    color:#408080;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.cname {
+    color:Green;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.iname_b {
+    font-weight:bold;
+}
+span.iname_a {
+    color:#333333;
+    font-weight:bold;
+    font-size:0.94em;
+}
+span.sym_p {
+    font-weight:normal;
+    white-space:normal;
+}
+span.sym_pd {
+    white-space:normal;
+}
+span.sym_p span, span.sym_pd span {
+    white-space:nowrap;
+}
+span.attr {
+    color:Black;
+    font-weight:normal;
+}
+span.deprecated {
+    color:Red;
+    font-weight:bold;
+    font-family:Monaco, monospace;
+}
+div.affect {
+    padding-left:1em;
+    padding-bottom:10px;
+    font-size:0.87em;
+    font-style:italic;
+    line-height:0.9em;
+}
+div.affected {
+    padding-left:2em;
+    padding-top:10px;
+}
+table.ptable {
+    border-collapse:collapse;
+    border:1px outset black;
+    margin-left:0.95em;
+    margin-top:3px;
+    margin-bottom:3px;
+    width:56.25em;
+}
+table.ptable td {
+    border:1px solid Gray;
+    padding:3px;
+    font-size:0.875em;
+    text-align:left;
+    vertical-align:top;
+    max-width:28em;
+    word-wrap:break-word;
+}
+table.ptable th {
+    background-color:#eeeeee;
+    font-weight:bold;
+    color:#333333;
+    font-family:Verdana, Arial;
+    font-size:0.875em;
+    border:1px solid Gray;
+    text-align:center;
+    vertical-align:top;
+    white-space:nowrap;
+    padding:3px;
+}
+table.summary {
+    border-collapse:collapse;
+    border:1px outset black;
+}
+table.summary th {
+    background-color:#eeeeee;
+    font-weight:normal;
+    text-align:left;
+    font-size:0.94em;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px;
+}
+table.summary td {
+    text-align:right;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px 5px 3px 10px;
+}
+span.mngl {
+    padding-left:1em;
+    font-size:0.875em;
+    cursor:text;
+    color:#444444;
+    font-weight:bold;
+}
+span.pleft {
+    padding-left:2.5em;
+}
+span.color_p {
+    font-style:italic;
+    color:Brown;
+}
+span.param {
+    font-style:italic;
+}
+span.focus_p {
+    font-style:italic;
+    background-color:#DCDCDC;
+}
+span.ttype {
+    font-weight:normal;
+}
+span.nowrap {
+    white-space:nowrap;
+}
+span.value {
+    white-space:nowrap;
+    font-weight:bold;
+}
+.passed {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.warning {
+    background-color:#F4F4AF;
+    font-weight:normal;
+}
+.failed {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.new {
+    background-color:#C6DEFF;
+    font-weight:normal;
+}
+
+.compatible {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.almost_compatible {
+    background-color:#FFDAA3;
+    font-weight:normal;
+}
+.incompatible {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.gray {
+    background-color:#DCDCDC;
+    font-weight:normal;
+}
+
+.top_ref {
+    font-size:0.69em;
+}
+.footer {
+    font-size:0.8125em;
+}
+
+</style>
+<script type="text/javascript" language="JavaScript">
+<!--
+function sC(header, id)
+{
+    e = document.getElementById(id);
+    if(e.style.display == 'none')
+    {
+        e.style.display = 'block';
+        e.style.visibility = 'visible';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[&minus;]");
+    }
+    else
+    {
+        e.style.display = 'none';
+        e.style.visibility = 'hidden';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[+]");
+    }
+}
+
+-->
+</script>
+</head>
+<body><a name='Top'></a><h1>Source compatibility report for the <span style='color:Blue;'>dropwizard-jdbi</span> library between <span style='color:Red;'>0.9.3</span> and <span style='color:Red;'>1.0.0</span> versions</h1>
+
+<h2>Test Info</h2><hr/>
+<table class='summary'>
+<tr><th>Library Name</th><td>dropwizard-jdbi</td></tr>
+<tr><th>Version #1</th><td>0.9.3</td></tr>
+<tr><th>Version #2</th><td>1.0.0</td></tr>
+</table>
+<h2>Test Results</h2><hr/>
+<table class='summary'>
+<tr><th>Total Java Modules</th><td><a href='#Checked_Archives' style='color:Blue;'>1</a></td></tr>
+<tr><th>Total Methods / Classes</th><td>210 / 49</td></tr>
+<tr><th>Compatibility</th>
+<td class='incompatible'>58.8%</td>
+</tr>
+</table>
+<h2>Problem Summary</h2><hr/>
+<table class='summary'>
+<tr><th></th><th style='text-align:center;'>Severity</th><th style='text-align:center;'>Count</th></tr>
+<tr><th>Added Methods</th><td>-</td><td class='new'><a href='#Added' style='color:Blue;'>153</a></td></tr>
+<tr><th>Removed Methods</th><td>High</td><td class='failed'><a href='#Removed' style='color:Blue;'>14</a></td></tr>
+<tr><th rowspan='3'>Problems with<br/>Data Types</th><td>High</td><td class='failed'><a href='#Type_Problems_High' style='color:Blue;'>3</a></td></tr>
+<tr><td>Medium</td><td class='failed'><a href='#Type_Problems_Medium' style='color:Blue;'>1</a></td></tr>
+<tr><td>Low</td><td>0</td></tr>
+<tr><th rowspan='3'>Problems with<br/>Methods</th><td>High</td><td>0</td></tr>
+<tr><td>Medium</td><td class='failed'><a href='#Method_Problems_Medium' style='color:Blue;'>1</a></td></tr>
+<tr><td>Low</td><td>0</td></tr>
+</table>
+
+<a name='Added'></a><h2>Added Methods <span class='new'>&nbsp;153&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>DBIFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi</span><br/>
+<span class="section" onclick="sC(this, 'c_177')">
+DBIFactory.databaseTimeZone&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Optional&lt;TimeZone&gt;</span></span>
+<br/>
+<div id="c_177" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/DBIFactory.databaseTimeZone:()Ljava/util/Optional;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>GuavaOptionalArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_178')">
+GuavaOptionalArgumentFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Object <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_178" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalArgumentFactory.accepts:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_179')">
+GuavaOptionalArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class <span class='color_p'>p1</span></span>, <span>Object <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_179" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalArgumentFactory.build:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_180')">
+GuavaOptionalArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Optional&lt;Object&gt; <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_180" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalArgumentFactory.build:(Ljava/lang/Class;Lcom/google/common/base/Optional;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_181')">
+GuavaOptionalArgumentFactory.GuavaOptionalArgumentFactory&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>jdbcDriver</span></span>&#160;)</span></span>
+<br/>
+<div id="c_181" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalArgumentFactory.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>GuavaOptionalContainerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi</span><br/>
+<span class="section" onclick="sC(this, 'c_182')">
+GuavaOptionalContainerFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_182" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/GuavaOptionalContainerFactory.accepts:(Ljava/lang/Class;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_183')">
+GuavaOptionalContainerFactory.GuavaOptionalContainerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_183" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/GuavaOptionalContainerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_184')">
+GuavaOptionalContainerFactory.newContainerBuilderFor&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ContainerBuilder&lt;Optional&lt;?&gt;&gt;</span></span>
+<br/>
+<div id="c_184" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/GuavaOptionalContainerFactory.newContainerBuilderFor:(Ljava/lang/Class;)Lorg/skife/jdbi/v2/ContainerBuilder;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>GuavaOptionalInstantArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_185')">
+GuavaOptionalInstantArgumentFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Object <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_185" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalInstantArgumentFactory.accepts:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_186')">
+GuavaOptionalInstantArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class <span class='color_p'>p1</span></span>, <span>Object <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_186" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalInstantArgumentFactory.build:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_187')">
+GuavaOptionalInstantArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Optional&lt;Instant&gt; <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_187" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalInstantArgumentFactory.build:(Ljava/lang/Class;Lcom/google/common/base/Optional;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_188')">
+GuavaOptionalInstantArgumentFactory.GuavaOptionalInstantArgumentFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_188" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalInstantArgumentFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_189')">
+GuavaOptionalInstantArgumentFactory.GuavaOptionalInstantArgumentFactory&#160;<span class='sym_p'><span>(&#160;Optional&lt;TimeZone&gt; <span class='color_p'>timeZone</span></span>&#160;)</span></span>
+<br/>
+<div id="c_189" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalInstantArgumentFactory.&quot;&lt;init&gt;&quot;:(Ljava/util/Optional;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>GuavaOptionalJodaTimeArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_190')">
+GuavaOptionalJodaTimeArgumentFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Object <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_190" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalJodaTimeArgumentFactory.accepts:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_191')">
+GuavaOptionalJodaTimeArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class <span class='color_p'>p1</span></span>, <span>Object <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_191" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalJodaTimeArgumentFactory.build:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_192')">
+GuavaOptionalJodaTimeArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Optional&lt;DateTime&gt; <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_192" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalJodaTimeArgumentFactory.build:(Ljava/lang/Class;Lcom/google/common/base/Optional;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_193')">
+GuavaOptionalJodaTimeArgumentFactory.GuavaOptionalJodaTimeArgumentFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_193" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalJodaTimeArgumentFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_194')">
+GuavaOptionalJodaTimeArgumentFactory.GuavaOptionalJodaTimeArgumentFactory&#160;<span class='sym_p'><span>(&#160;Optional&lt;TimeZone&gt; <span class='color_p'>timeZone</span></span>&#160;)</span></span>
+<br/>
+<div id="c_194" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalJodaTimeArgumentFactory.&quot;&lt;init&gt;&quot;:(Ljava/util/Optional;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>GuavaOptionalLocalDateArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_195')">
+GuavaOptionalLocalDateArgumentFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Object <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_195" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalLocalDateArgumentFactory.accepts:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_196')">
+GuavaOptionalLocalDateArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class <span class='color_p'>p1</span></span>, <span>Object <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_196" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalLocalDateArgumentFactory.build:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_197')">
+GuavaOptionalLocalDateArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Optional&lt;LocalDate&gt; <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_197" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalLocalDateArgumentFactory.build:(Ljava/lang/Class;Lcom/google/common/base/Optional;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_198')">
+GuavaOptionalLocalDateArgumentFactory.GuavaOptionalLocalDateArgumentFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_198" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalLocalDateArgumentFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>GuavaOptionalLocalDateTimeArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_199')">
+GuavaOptionalLocalDateTimeArgumentFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Object <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_199" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalLocalDateTimeArgumentFactory.accepts:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_200')">
+GuavaOptionalLocalDateTimeArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class <span class='color_p'>p1</span></span>, <span>Object <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_200" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalLocalDateTimeArgumentFactory.build:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_201')">
+GuavaOptionalLocalDateTimeArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Optional&lt;LocalDateTime&gt; <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_201" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalLocalDateTimeArgumentFactory.build:(Ljava/lang/Class;Lcom/google/common/base/Optional;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_202')">
+GuavaOptionalLocalDateTimeArgumentFactory.GuavaOptionalLocalDateTimeArgumentFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_202" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalLocalDateTimeArgumentFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>GuavaOptionalOffsetTimeArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_203')">
+GuavaOptionalOffsetTimeArgumentFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Object <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_203" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalOffsetTimeArgumentFactory.accepts:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_204')">
+GuavaOptionalOffsetTimeArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class <span class='color_p'>p1</span></span>, <span>Object <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_204" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalOffsetTimeArgumentFactory.build:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_205')">
+GuavaOptionalOffsetTimeArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Optional&lt;OffsetDateTime&gt; <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_205" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalOffsetTimeArgumentFactory.build:(Ljava/lang/Class;Lcom/google/common/base/Optional;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_206')">
+GuavaOptionalOffsetTimeArgumentFactory.GuavaOptionalOffsetTimeArgumentFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_206" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalOffsetTimeArgumentFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_207')">
+GuavaOptionalOffsetTimeArgumentFactory.GuavaOptionalOffsetTimeArgumentFactory&#160;<span class='sym_p'><span>(&#160;Optional&lt;TimeZone&gt; <span class='color_p'>timeZone</span></span>&#160;)</span></span>
+<br/>
+<div id="c_207" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalOffsetTimeArgumentFactory.&quot;&lt;init&gt;&quot;:(Ljava/util/Optional;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>GuavaOptionalZonedTimeArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_208')">
+GuavaOptionalZonedTimeArgumentFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Object <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_208" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalZonedTimeArgumentFactory.accepts:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_209')">
+GuavaOptionalZonedTimeArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class <span class='color_p'>p1</span></span>, <span>Object <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_209" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalZonedTimeArgumentFactory.build:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_210')">
+GuavaOptionalZonedTimeArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Optional&lt;ZonedDateTime&gt; <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_210" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalZonedTimeArgumentFactory.build:(Ljava/lang/Class;Lcom/google/common/base/Optional;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_211')">
+GuavaOptionalZonedTimeArgumentFactory.GuavaOptionalZonedTimeArgumentFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_211" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalZonedTimeArgumentFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_212')">
+GuavaOptionalZonedTimeArgumentFactory.GuavaOptionalZonedTimeArgumentFactory&#160;<span class='sym_p'><span>(&#160;Optional&lt;TimeZone&gt; <span class='color_p'>timeZone</span></span>&#160;)</span></span>
+<br/>
+<div id="c_212" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/GuavaOptionalZonedTimeArgumentFactory.&quot;&lt;init&gt;&quot;:(Ljava/util/Optional;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>InstantArgument.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_213')">
+InstantArgument.apply&#160;<span class='sym_p'><span>(&#160;int <span class='color_p'>position</span></span>, <span>PreparedStatement <span class='color_p'>statement</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_213" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/InstantArgument.apply:(ILjava/sql/PreparedStatement;Lorg/skife/jdbi/v2/StatementContext;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_214')">
+InstantArgument.InstantArgument&#160;<span class='sym_p'><span>(&#160;Instant <span class='color_p'>instant</span></span>, <span>Optional&lt;Calendar&gt; <span class='color_p'>calendar</span></span>&#160;)</span></span>
+<br/>
+<div id="c_214" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/InstantArgument.&quot;&lt;init&gt;&quot;:(Ljava/time/Instant;Ljava/util/Optional;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>InstantArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_215')">
+InstantArgumentFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Object <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_215" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/InstantArgumentFactory.accepts:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_216')">
+InstantArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class <span class='color_p'>p1</span></span>, <span>Object <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_216" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/InstantArgumentFactory.build:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_217')">
+InstantArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Instant <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_217" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/InstantArgumentFactory.build:(Ljava/lang/Class;Ljava/time/Instant;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_218')">
+InstantArgumentFactory.InstantArgumentFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_218" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/InstantArgumentFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_219')">
+InstantArgumentFactory.InstantArgumentFactory&#160;<span class='sym_p'><span>(&#160;Optional&lt;TimeZone&gt; <span class='color_p'>tz</span></span>&#160;)</span></span>
+<br/>
+<div id="c_219" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/InstantArgumentFactory.&quot;&lt;init&gt;&quot;:(Ljava/util/Optional;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>InstantMapper.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_220')">
+InstantMapper.InstantMapper&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_220" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/InstantMapper.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_221')">
+InstantMapper.InstantMapper&#160;<span class='sym_p'><span>(&#160;Optional&lt;TimeZone&gt; <span class='color_p'>tz</span></span>&#160;)</span></span>
+<br/>
+<div id="c_221" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/InstantMapper.&quot;&lt;init&gt;&quot;:(Ljava/util/Optional;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_222')">
+InstantMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>p1</span></span>, <span>int <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_222" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/InstantMapper.mapColumn:(Ljava/sql/ResultSet;ILorg/skife/jdbi/v2/StatementContext;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_223')">
+InstantMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>p1</span></span>, <span>String <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_223" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/InstantMapper.mapColumn:(Ljava/sql/ResultSet;Ljava/lang/String;Lorg/skife/jdbi/v2/StatementContext;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_224')">
+InstantMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>r</span></span>, <span>int <span class='color_p'>columnNumber</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Instant</span></span>
+<br/>
+<div id="c_224" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/InstantMapper.mapColumn:(Ljava/sql/ResultSet;ILorg/skife/jdbi/v2/StatementContext;)Ljava/time/Instant;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_225')">
+InstantMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>r</span></span>, <span>String <span class='color_p'>columnLabel</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Instant</span></span>
+<br/>
+<div id="c_225" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/InstantMapper.mapColumn:(Ljava/sql/ResultSet;Ljava/lang/String;Lorg/skife/jdbi/v2/StatementContext;)Ljava/time/Instant;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>JodaDateTimeArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_226')">
+JodaDateTimeArgumentFactory.JodaDateTimeArgumentFactory&#160;<span class='sym_p'><span>(&#160;Optional&lt;TimeZone&gt; <span class='color_p'>timeZone</span></span>&#160;)</span></span>
+<br/>
+<div id="c_226" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/JodaDateTimeArgumentFactory.&quot;&lt;init&gt;&quot;:(Ljava/util/Optional;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>JodaDateTimeMapper.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_227')">
+JodaDateTimeMapper.JodaDateTimeMapper&#160;<span class='sym_p'><span>(&#160;Optional&lt;TimeZone&gt; <span class='color_p'>timeZone</span></span>&#160;)</span></span>
+<br/>
+<div id="c_227" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/JodaDateTimeMapper.&quot;&lt;init&gt;&quot;:(Ljava/util/Optional;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_228')">
+JodaDateTimeMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>p1</span></span>, <span>int <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_228" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/JodaDateTimeMapper.mapColumn:(Ljava/sql/ResultSet;ILorg/skife/jdbi/v2/StatementContext;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_229')">
+JodaDateTimeMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>p1</span></span>, <span>String <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_229" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/JodaDateTimeMapper.mapColumn:(Ljava/sql/ResultSet;Ljava/lang/String;Lorg/skife/jdbi/v2/StatementContext;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_230')">
+JodaDateTimeMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>r</span></span>, <span>int <span class='color_p'>columnNumber</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;DateTime</span></span>
+<br/>
+<div id="c_230" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/JodaDateTimeMapper.mapColumn:(Ljava/sql/ResultSet;ILorg/skife/jdbi/v2/StatementContext;)Lorg/joda/time/DateTime;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_231')">
+JodaDateTimeMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>r</span></span>, <span>String <span class='color_p'>columnLabel</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;DateTime</span></span>
+<br/>
+<div id="c_231" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/JodaDateTimeMapper.mapColumn:(Ljava/sql/ResultSet;Ljava/lang/String;Lorg/skife/jdbi/v2/StatementContext;)Lorg/joda/time/DateTime;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>LocalDateArgument.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_232')">
+LocalDateArgument.apply&#160;<span class='sym_p'><span>(&#160;int <span class='color_p'>position</span></span>, <span>PreparedStatement <span class='color_p'>statement</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_232" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/LocalDateArgument.apply:(ILjava/sql/PreparedStatement;Lorg/skife/jdbi/v2/StatementContext;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_233')">
+LocalDateArgument.LocalDateArgument&#160;<span class='sym_p'><span>(&#160;LocalDate <span class='color_p'>value</span></span>&#160;)</span></span>
+<br/>
+<div id="c_233" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/LocalDateArgument.&quot;&lt;init&gt;&quot;:(Ljava/time/LocalDate;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>LocalDateArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_234')">
+LocalDateArgumentFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Object <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_234" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/LocalDateArgumentFactory.accepts:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_235')">
+LocalDateArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class <span class='color_p'>p1</span></span>, <span>Object <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_235" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/LocalDateArgumentFactory.build:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_236')">
+LocalDateArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>LocalDate <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_236" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/LocalDateArgumentFactory.build:(Ljava/lang/Class;Ljava/time/LocalDate;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_237')">
+LocalDateArgumentFactory.LocalDateArgumentFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_237" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/LocalDateArgumentFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>LocalDateMapper.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_238')">
+LocalDateMapper.LocalDateMapper&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_238" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/LocalDateMapper.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_239')">
+LocalDateMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>p1</span></span>, <span>int <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_239" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/LocalDateMapper.mapColumn:(Ljava/sql/ResultSet;ILorg/skife/jdbi/v2/StatementContext;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_240')">
+LocalDateMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>p1</span></span>, <span>String <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_240" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/LocalDateMapper.mapColumn:(Ljava/sql/ResultSet;Ljava/lang/String;Lorg/skife/jdbi/v2/StatementContext;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_241')">
+LocalDateMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>r</span></span>, <span>int <span class='color_p'>columnNumber</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;LocalDate</span></span>
+<br/>
+<div id="c_241" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/LocalDateMapper.mapColumn:(Ljava/sql/ResultSet;ILorg/skife/jdbi/v2/StatementContext;)Ljava/time/LocalDate;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_242')">
+LocalDateMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>r</span></span>, <span>String <span class='color_p'>columnLabel</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;LocalDate</span></span>
+<br/>
+<div id="c_242" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/LocalDateMapper.mapColumn:(Ljava/sql/ResultSet;Ljava/lang/String;Lorg/skife/jdbi/v2/StatementContext;)Ljava/time/LocalDate;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>LocalDateTimeArgument.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_243')">
+LocalDateTimeArgument.apply&#160;<span class='sym_p'><span>(&#160;int <span class='color_p'>position</span></span>, <span>PreparedStatement <span class='color_p'>statement</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_243" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/LocalDateTimeArgument.apply:(ILjava/sql/PreparedStatement;Lorg/skife/jdbi/v2/StatementContext;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>LocalDateTimeArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_244')">
+LocalDateTimeArgumentFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Object <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_244" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/LocalDateTimeArgumentFactory.accepts:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_245')">
+LocalDateTimeArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class <span class='color_p'>p1</span></span>, <span>Object <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_245" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/LocalDateTimeArgumentFactory.build:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_246')">
+LocalDateTimeArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>LocalDateTime <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_246" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/LocalDateTimeArgumentFactory.build:(Ljava/lang/Class;Ljava/time/LocalDateTime;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_247')">
+LocalDateTimeArgumentFactory.LocalDateTimeArgumentFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_247" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/LocalDateTimeArgumentFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>LocalDateTimeMapper.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_248')">
+LocalDateTimeMapper.LocalDateTimeMapper&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_248" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/LocalDateTimeMapper.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_249')">
+LocalDateTimeMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>p1</span></span>, <span>int <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_249" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/LocalDateTimeMapper.mapColumn:(Ljava/sql/ResultSet;ILorg/skife/jdbi/v2/StatementContext;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_250')">
+LocalDateTimeMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>p1</span></span>, <span>String <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_250" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/LocalDateTimeMapper.mapColumn:(Ljava/sql/ResultSet;Ljava/lang/String;Lorg/skife/jdbi/v2/StatementContext;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_251')">
+LocalDateTimeMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>r</span></span>, <span>int <span class='color_p'>columnNumber</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;LocalDateTime</span></span>
+<br/>
+<div id="c_251" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/LocalDateTimeMapper.mapColumn:(Ljava/sql/ResultSet;ILorg/skife/jdbi/v2/StatementContext;)Ljava/time/LocalDateTime;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_252')">
+LocalDateTimeMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>r</span></span>, <span>String <span class='color_p'>columnLabel</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;LocalDateTime</span></span>
+<br/>
+<div id="c_252" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/LocalDateTimeMapper.mapColumn:(Ljava/sql/ResultSet;Ljava/lang/String;Lorg/skife/jdbi/v2/StatementContext;)Ljava/time/LocalDateTime;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>OffsetDateTimeArgument.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_253')">
+OffsetDateTimeArgument.apply&#160;<span class='sym_p'><span>(&#160;int <span class='color_p'>position</span></span>, <span>PreparedStatement <span class='color_p'>statement</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_253" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OffsetDateTimeArgument.apply:(ILjava/sql/PreparedStatement;Lorg/skife/jdbi/v2/StatementContext;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>OffsetDateTimeArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_254')">
+OffsetDateTimeArgumentFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Object <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_254" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OffsetDateTimeArgumentFactory.accepts:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_255')">
+OffsetDateTimeArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class <span class='color_p'>p1</span></span>, <span>Object <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_255" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OffsetDateTimeArgumentFactory.build:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_256')">
+OffsetDateTimeArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>OffsetDateTime <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_256" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OffsetDateTimeArgumentFactory.build:(Ljava/lang/Class;Ljava/time/OffsetDateTime;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_257')">
+OffsetDateTimeArgumentFactory.OffsetDateTimeArgumentFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_257" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OffsetDateTimeArgumentFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_258')">
+OffsetDateTimeArgumentFactory.OffsetDateTimeArgumentFactory&#160;<span class='sym_p'><span>(&#160;Optional&lt;TimeZone&gt; <span class='color_p'>timeZone</span></span>&#160;)</span></span>
+<br/>
+<div id="c_258" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OffsetDateTimeArgumentFactory.&quot;&lt;init&gt;&quot;:(Ljava/util/Optional;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>OffsetDateTimeMapper.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_259')">
+OffsetDateTimeMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>p1</span></span>, <span>int <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_259" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OffsetDateTimeMapper.mapColumn:(Ljava/sql/ResultSet;ILorg/skife/jdbi/v2/StatementContext;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_260')">
+OffsetDateTimeMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>p1</span></span>, <span>String <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_260" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OffsetDateTimeMapper.mapColumn:(Ljava/sql/ResultSet;Ljava/lang/String;Lorg/skife/jdbi/v2/StatementContext;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_261')">
+OffsetDateTimeMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>r</span></span>, <span>int <span class='color_p'>columnNumber</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;OffsetDateTime</span></span>
+<br/>
+<div id="c_261" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OffsetDateTimeMapper.mapColumn:(Ljava/sql/ResultSet;ILorg/skife/jdbi/v2/StatementContext;)Ljava/time/OffsetDateTime;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_262')">
+OffsetDateTimeMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>r</span></span>, <span>String <span class='color_p'>columnLabel</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;OffsetDateTime</span></span>
+<br/>
+<div id="c_262" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OffsetDateTimeMapper.mapColumn:(Ljava/sql/ResultSet;Ljava/lang/String;Lorg/skife/jdbi/v2/StatementContext;)Ljava/time/OffsetDateTime;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_263')">
+OffsetDateTimeMapper.OffsetDateTimeMapper&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_263" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OffsetDateTimeMapper.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_264')">
+OffsetDateTimeMapper.OffsetDateTimeMapper&#160;<span class='sym_p'><span>(&#160;Optional&lt;TimeZone&gt; <span class='color_p'>timeZone</span></span>&#160;)</span></span>
+<br/>
+<div id="c_264" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OffsetDateTimeMapper.&quot;&lt;init&gt;&quot;:(Ljava/util/Optional;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>OptionalArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_265')">
+OptionalArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Optional&lt;Object&gt; <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_265" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalArgumentFactory.build:(Ljava/lang/Class;Ljava/util/Optional;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>OptionalDoubleArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_266')">
+OptionalDoubleArgumentFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Object <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_266" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalDoubleArgumentFactory.accepts:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_267')">
+OptionalDoubleArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class <span class='color_p'>p1</span></span>, <span>Object <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_267" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalDoubleArgumentFactory.build:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_268')">
+OptionalDoubleArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>OptionalDouble <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_268" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalDoubleArgumentFactory.build:(Ljava/lang/Class;Ljava/util/OptionalDouble;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_269')">
+OptionalDoubleArgumentFactory.OptionalDoubleArgumentFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_269" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalDoubleArgumentFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>OptionalDoubleMapper.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_270')">
+OptionalDoubleMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>p1</span></span>, <span>int <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_270" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalDoubleMapper.mapColumn:(Ljava/sql/ResultSet;ILorg/skife/jdbi/v2/StatementContext;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_271')">
+OptionalDoubleMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>p1</span></span>, <span>String <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_271" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalDoubleMapper.mapColumn:(Ljava/sql/ResultSet;Ljava/lang/String;Lorg/skife/jdbi/v2/StatementContext;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_272')">
+OptionalDoubleMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>r</span></span>, <span>int <span class='color_p'>columnNumber</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;OptionalDouble</span></span>
+<br/>
+<div id="c_272" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalDoubleMapper.mapColumn:(Ljava/sql/ResultSet;ILorg/skife/jdbi/v2/StatementContext;)Ljava/util/OptionalDouble;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_273')">
+OptionalDoubleMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>r</span></span>, <span>String <span class='color_p'>columnLabel</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;OptionalDouble</span></span>
+<br/>
+<div id="c_273" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalDoubleMapper.mapColumn:(Ljava/sql/ResultSet;Ljava/lang/String;Lorg/skife/jdbi/v2/StatementContext;)Ljava/util/OptionalDouble;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_274')">
+OptionalDoubleMapper.OptionalDoubleMapper&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_274" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalDoubleMapper.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>OptionalInstantArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_275')">
+OptionalInstantArgumentFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Object <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_275" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalInstantArgumentFactory.accepts:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_276')">
+OptionalInstantArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class <span class='color_p'>p1</span></span>, <span>Object <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_276" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalInstantArgumentFactory.build:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_277')">
+OptionalInstantArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Optional&lt;Instant&gt; <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_277" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalInstantArgumentFactory.build:(Ljava/lang/Class;Ljava/util/Optional;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_278')">
+OptionalInstantArgumentFactory.OptionalInstantArgumentFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_278" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalInstantArgumentFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_279')">
+OptionalInstantArgumentFactory.OptionalInstantArgumentFactory&#160;<span class='sym_p'><span>(&#160;Optional&lt;TimeZone&gt; <span class='color_p'>timeZone</span></span>&#160;)</span></span>
+<br/>
+<div id="c_279" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalInstantArgumentFactory.&quot;&lt;init&gt;&quot;:(Ljava/util/Optional;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>OptionalIntArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_280')">
+OptionalIntArgumentFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Object <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_280" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalIntArgumentFactory.accepts:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_281')">
+OptionalIntArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class <span class='color_p'>p1</span></span>, <span>Object <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_281" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalIntArgumentFactory.build:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_282')">
+OptionalIntArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>OptionalInt <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_282" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalIntArgumentFactory.build:(Ljava/lang/Class;Ljava/util/OptionalInt;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_283')">
+OptionalIntArgumentFactory.OptionalIntArgumentFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_283" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalIntArgumentFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>OptionalIntMapper.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_284')">
+OptionalIntMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>p1</span></span>, <span>int <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_284" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalIntMapper.mapColumn:(Ljava/sql/ResultSet;ILorg/skife/jdbi/v2/StatementContext;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_285')">
+OptionalIntMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>p1</span></span>, <span>String <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_285" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalIntMapper.mapColumn:(Ljava/sql/ResultSet;Ljava/lang/String;Lorg/skife/jdbi/v2/StatementContext;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_286')">
+OptionalIntMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>r</span></span>, <span>int <span class='color_p'>columnNumber</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;OptionalInt</span></span>
+<br/>
+<div id="c_286" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalIntMapper.mapColumn:(Ljava/sql/ResultSet;ILorg/skife/jdbi/v2/StatementContext;)Ljava/util/OptionalInt;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_287')">
+OptionalIntMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>r</span></span>, <span>String <span class='color_p'>columnLabel</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;OptionalInt</span></span>
+<br/>
+<div id="c_287" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalIntMapper.mapColumn:(Ljava/sql/ResultSet;Ljava/lang/String;Lorg/skife/jdbi/v2/StatementContext;)Ljava/util/OptionalInt;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_288')">
+OptionalIntMapper.OptionalIntMapper&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_288" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalIntMapper.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>OptionalJodaTimeArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_289')">
+OptionalJodaTimeArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Optional&lt;DateTime&gt; <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_289" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalJodaTimeArgumentFactory.build:(Ljava/lang/Class;Ljava/util/Optional;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_290')">
+OptionalJodaTimeArgumentFactory.OptionalJodaTimeArgumentFactory&#160;<span class='sym_p'><span>(&#160;Optional&lt;TimeZone&gt; <span class='color_p'>timeZone</span></span>&#160;)</span></span>
+<br/>
+<div id="c_290" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalJodaTimeArgumentFactory.&quot;&lt;init&gt;&quot;:(Ljava/util/Optional;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>OptionalLocalDateArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_291')">
+OptionalLocalDateArgumentFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Object <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_291" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalLocalDateArgumentFactory.accepts:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_292')">
+OptionalLocalDateArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class <span class='color_p'>p1</span></span>, <span>Object <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_292" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalLocalDateArgumentFactory.build:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_293')">
+OptionalLocalDateArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Optional&lt;LocalDate&gt; <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_293" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalLocalDateArgumentFactory.build:(Ljava/lang/Class;Ljava/util/Optional;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_294')">
+OptionalLocalDateArgumentFactory.OptionalLocalDateArgumentFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_294" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalLocalDateArgumentFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>OptionalLocalDateTimeArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_295')">
+OptionalLocalDateTimeArgumentFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Object <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_295" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalLocalDateTimeArgumentFactory.accepts:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_296')">
+OptionalLocalDateTimeArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class <span class='color_p'>p1</span></span>, <span>Object <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_296" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalLocalDateTimeArgumentFactory.build:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_297')">
+OptionalLocalDateTimeArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Optional&lt;LocalDateTime&gt; <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_297" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalLocalDateTimeArgumentFactory.build:(Ljava/lang/Class;Ljava/util/Optional;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_298')">
+OptionalLocalDateTimeArgumentFactory.OptionalLocalDateTimeArgumentFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_298" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalLocalDateTimeArgumentFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>OptionalLongArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_299')">
+OptionalLongArgumentFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Object <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_299" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalLongArgumentFactory.accepts:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_300')">
+OptionalLongArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class <span class='color_p'>p1</span></span>, <span>Object <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_300" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalLongArgumentFactory.build:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_301')">
+OptionalLongArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>OptionalLong <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_301" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalLongArgumentFactory.build:(Ljava/lang/Class;Ljava/util/OptionalLong;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_302')">
+OptionalLongArgumentFactory.OptionalLongArgumentFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_302" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalLongArgumentFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>OptionalLongMapper.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_303')">
+OptionalLongMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>p1</span></span>, <span>int <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_303" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalLongMapper.mapColumn:(Ljava/sql/ResultSet;ILorg/skife/jdbi/v2/StatementContext;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_304')">
+OptionalLongMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>p1</span></span>, <span>String <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_304" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalLongMapper.mapColumn:(Ljava/sql/ResultSet;Ljava/lang/String;Lorg/skife/jdbi/v2/StatementContext;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_305')">
+OptionalLongMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>r</span></span>, <span>int <span class='color_p'>columnNumber</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;OptionalLong</span></span>
+<br/>
+<div id="c_305" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalLongMapper.mapColumn:(Ljava/sql/ResultSet;ILorg/skife/jdbi/v2/StatementContext;)Ljava/util/OptionalLong;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_306')">
+OptionalLongMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>r</span></span>, <span>String <span class='color_p'>columnLabel</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;OptionalLong</span></span>
+<br/>
+<div id="c_306" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalLongMapper.mapColumn:(Ljava/sql/ResultSet;Ljava/lang/String;Lorg/skife/jdbi/v2/StatementContext;)Ljava/util/OptionalLong;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_307')">
+OptionalLongMapper.OptionalLongMapper&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_307" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalLongMapper.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>OptionalOffsetDateTimeArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_308')">
+OptionalOffsetDateTimeArgumentFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Object <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_308" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalOffsetDateTimeArgumentFactory.accepts:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_309')">
+OptionalOffsetDateTimeArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class <span class='color_p'>p1</span></span>, <span>Object <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_309" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalOffsetDateTimeArgumentFactory.build:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_310')">
+OptionalOffsetDateTimeArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Optional&lt;OffsetDateTime&gt; <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_310" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalOffsetDateTimeArgumentFactory.build:(Ljava/lang/Class;Ljava/util/Optional;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_311')">
+OptionalOffsetDateTimeArgumentFactory.OptionalOffsetDateTimeArgumentFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_311" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalOffsetDateTimeArgumentFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_312')">
+OptionalOffsetDateTimeArgumentFactory.OptionalOffsetDateTimeArgumentFactory&#160;<span class='sym_p'><span>(&#160;Optional&lt;TimeZone&gt; <span class='color_p'>timeZone</span></span>&#160;)</span></span>
+<br/>
+<div id="c_312" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalOffsetDateTimeArgumentFactory.&quot;&lt;init&gt;&quot;:(Ljava/util/Optional;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>OptionalZonedDateTimeArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_313')">
+OptionalZonedDateTimeArgumentFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Object <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_313" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalZonedDateTimeArgumentFactory.accepts:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_314')">
+OptionalZonedDateTimeArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class <span class='color_p'>p1</span></span>, <span>Object <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_314" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalZonedDateTimeArgumentFactory.build:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_315')">
+OptionalZonedDateTimeArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Optional&lt;ZonedDateTime&gt; <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_315" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalZonedDateTimeArgumentFactory.build:(Ljava/lang/Class;Ljava/util/Optional;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_316')">
+OptionalZonedDateTimeArgumentFactory.OptionalZonedDateTimeArgumentFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_316" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalZonedDateTimeArgumentFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_317')">
+OptionalZonedDateTimeArgumentFactory.OptionalZonedDateTimeArgumentFactory&#160;<span class='sym_p'><span>(&#160;Optional&lt;TimeZone&gt; <span class='color_p'>timeZone</span></span>&#160;)</span></span>
+<br/>
+<div id="c_317" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalZonedDateTimeArgumentFactory.&quot;&lt;init&gt;&quot;:(Ljava/util/Optional;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>ZonedDateTimeArgument.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_318')">
+ZonedDateTimeArgument.apply&#160;<span class='sym_p'><span>(&#160;int <span class='color_p'>position</span></span>, <span>PreparedStatement <span class='color_p'>statement</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_318" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/ZonedDateTimeArgument.apply:(ILjava/sql/PreparedStatement;Lorg/skife/jdbi/v2/StatementContext;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>ZonedDateTimeArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_319')">
+ZonedDateTimeArgumentFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Object <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_319" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/ZonedDateTimeArgumentFactory.accepts:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_320')">
+ZonedDateTimeArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class <span class='color_p'>p1</span></span>, <span>Object <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_320" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/ZonedDateTimeArgumentFactory.build:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_321')">
+ZonedDateTimeArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>ZonedDateTime <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_321" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/ZonedDateTimeArgumentFactory.build:(Ljava/lang/Class;Ljava/time/ZonedDateTime;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_322')">
+ZonedDateTimeArgumentFactory.ZonedDateTimeArgumentFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_322" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/ZonedDateTimeArgumentFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_323')">
+ZonedDateTimeArgumentFactory.ZonedDateTimeArgumentFactory&#160;<span class='sym_p'><span>(&#160;Optional&lt;TimeZone&gt; <span class='color_p'>timeZone</span></span>&#160;)</span></span>
+<br/>
+<div id="c_323" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/ZonedDateTimeArgumentFactory.&quot;&lt;init&gt;&quot;:(Ljava/util/Optional;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-1.0.0.jar</span>, <span class='cname'>ZonedDateTimeMapper.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_324')">
+ZonedDateTimeMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>p1</span></span>, <span>int <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_324" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/ZonedDateTimeMapper.mapColumn:(Ljava/sql/ResultSet;ILorg/skife/jdbi/v2/StatementContext;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_325')">
+ZonedDateTimeMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>p1</span></span>, <span>String <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_325" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/ZonedDateTimeMapper.mapColumn:(Ljava/sql/ResultSet;Ljava/lang/String;Lorg/skife/jdbi/v2/StatementContext;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_326')">
+ZonedDateTimeMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>r</span></span>, <span>int <span class='color_p'>columnNumber</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ZonedDateTime</span></span>
+<br/>
+<div id="c_326" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/ZonedDateTimeMapper.mapColumn:(Ljava/sql/ResultSet;ILorg/skife/jdbi/v2/StatementContext;)Ljava/time/ZonedDateTime;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_327')">
+ZonedDateTimeMapper.mapColumn&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>r</span></span>, <span>String <span class='color_p'>columnLabel</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ZonedDateTime</span></span>
+<br/>
+<div id="c_327" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/ZonedDateTimeMapper.mapColumn:(Ljava/sql/ResultSet;Ljava/lang/String;Lorg/skife/jdbi/v2/StatementContext;)Ljava/time/ZonedDateTime;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_328')">
+ZonedDateTimeMapper.ZonedDateTimeMapper&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_328" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/ZonedDateTimeMapper.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_329')">
+ZonedDateTimeMapper.ZonedDateTimeMapper&#160;<span class='sym_p'><span>(&#160;Optional&lt;TimeZone&gt; <span class='color_p'>timeZone</span></span>&#160;)</span></span>
+<br/>
+<div id="c_329" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/ZonedDateTimeMapper.&quot;&lt;init&gt;&quot;:(Ljava/util/Optional;)V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Removed'></a><a name='Withdrawn'></a><h2>Removed Methods <span class='failed'>&nbsp;14&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-jdbi-0.9.3.jar</span>, <span class='cname'>DBIFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi</span><br/>
+<span class="section" onclick="sC(this, 'c_330')">
+DBIFactory.databaseTimeZone&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Optional&lt;TimeZone&gt;</span></span>
+<br/>
+<div id="c_330" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/DBIFactory.databaseTimeZone:()Lcom/google/common/base/Optional;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-0.9.3.jar</span>, <span class='cname'>JodaDateTimeArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_331')">
+JodaDateTimeArgumentFactory.JodaDateTimeArgumentFactory&#160;<span class='sym_p'><span>(&#160;Optional&lt;TimeZone&gt; <span class='color_p'>timeZone</span></span>&#160;)</span></span>
+<br/>
+<div id="c_331" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/JodaDateTimeArgumentFactory.&quot;&lt;init&gt;&quot;:(Lcom/google/common/base/Optional;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-0.9.3.jar</span>, <span class='cname'>JodaDateTimeMapper.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_332')">
+JodaDateTimeMapper.extractByIndex&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>p1</span></span>, <span>int <span class='color_p'>p2</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_332" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/JodaDateTimeMapper.extractByIndex:(Ljava/sql/ResultSet;I)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_333')">
+JodaDateTimeMapper.extractByIndex&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>r</span></span>, <span>int <span class='color_p'>index</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;DateTime</span></span>
+<br/>
+<div id="c_333" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/JodaDateTimeMapper.extractByIndex:(Ljava/sql/ResultSet;I)Lorg/joda/time/DateTime;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_334')">
+JodaDateTimeMapper.extractByName&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>p1</span></span>, <span>String <span class='color_p'>p2</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_334" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/JodaDateTimeMapper.extractByName:(Ljava/sql/ResultSet;Ljava/lang/String;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_335')">
+JodaDateTimeMapper.extractByName&#160;<span class='sym_p'><span>(&#160;ResultSet <span class='color_p'>r</span></span>, <span>String <span class='color_p'>name</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;DateTime</span></span>
+<br/>
+<div id="c_335" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/JodaDateTimeMapper.extractByName:(Ljava/sql/ResultSet;Ljava/lang/String;)Lorg/joda/time/DateTime;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_336')">
+JodaDateTimeMapper.JodaDateTimeMapper&#160;<span class='sym_p'><span>(&#160;int <span class='color_p'>index</span></span>&#160;)</span></span>
+<br/>
+<div id="c_336" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/JodaDateTimeMapper.&quot;&lt;init&gt;&quot;:(I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_337')">
+JodaDateTimeMapper.JodaDateTimeMapper&#160;<span class='sym_p'><span>(&#160;int <span class='color_p'>index</span></span>, <span>Optional&lt;TimeZone&gt; <span class='color_p'>timeZone</span></span>&#160;)</span></span>
+<br/>
+<div id="c_337" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/JodaDateTimeMapper.&quot;&lt;init&gt;&quot;:(ILcom/google/common/base/Optional;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_338')">
+JodaDateTimeMapper.JodaDateTimeMapper&#160;<span class='sym_p'><span>(&#160;Optional&lt;TimeZone&gt; <span class='color_p'>timeZone</span></span>&#160;)</span></span>
+<br/>
+<div id="c_338" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/JodaDateTimeMapper.&quot;&lt;init&gt;&quot;:(Lcom/google/common/base/Optional;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_339')">
+JodaDateTimeMapper.JodaDateTimeMapper&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span></span>
+<br/>
+<div id="c_339" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/JodaDateTimeMapper.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_340')">
+JodaDateTimeMapper.JodaDateTimeMapper&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>, <span>Optional&lt;TimeZone&gt; <span class='color_p'>timeZone</span></span>&#160;)</span></span>
+<br/>
+<div id="c_340" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/JodaDateTimeMapper.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;Lcom/google/common/base/Optional;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-0.9.3.jar</span>, <span class='cname'>OptionalArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_341')">
+OptionalArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Optional&lt;Object&gt; <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_341" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalArgumentFactory.build:(Ljava/lang/Class;Lcom/google/common/base/Optional;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jdbi-0.9.3.jar</span>, <span class='cname'>OptionalJodaTimeArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_342')">
+OptionalJodaTimeArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Optional&lt;DateTime&gt; <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_342" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalJodaTimeArgumentFactory.build:(Ljava/lang/Class;Lcom/google/common/base/Optional;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_343')">
+OptionalJodaTimeArgumentFactory.OptionalJodaTimeArgumentFactory&#160;<span class='sym_p'><span>(&#160;Optional&lt;TimeZone&gt; <span class='color_p'>timeZone</span></span>&#160;)</span></span>
+<br/>
+<div id="c_343" style="display:none;">
+<span class='mngl'>io/dropwizard/jdbi/args/OptionalJodaTimeArgumentFactory.&quot;&lt;init&gt;&quot;:(Lcom/google/common/base/Optional;)V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='High_Risk_Problems'></a><a name='Type_Problems_High'></a>
+<h2>Problems with Data Types, High Severity <span class='failed'>&nbsp;3&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-jdbi-0.9.3.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi</span><br/>
+<span class="section" onclick="sC(this, 'c_344')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> OptionalContainerFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_344" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Removed super-interface <b>org.skife.jdbi.v2.tweak.ContainerFactory&lt;com.google.common.base.Optional&lt;?&gt;&gt;</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find method in class <b>OptionalContainerFactory</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_345')">
+[+] affected methods: 3 (1.4%)</span>
+<div id="c_345" style="display:none;">
+<div class='affected'><span class='iname_a'>OptionalContainerFactory.OptionalContainerFactory&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'OptionalContainerFactory' class.</div>
+<span class='iname_a'>OptionalContainerFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>type</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'OptionalContainerFactory' class.</div>
+<span class='iname_a'>OptionalContainerFactory.newContainerBuilderFor&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>type</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'OptionalContainerFactory' class.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><span class='jar'>dropwizard-jdbi-0.9.3.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_346')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> OptionalArgumentFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_346" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Removed super-interface <b>org.skife.jdbi.v2.tweak.ArgumentFactory&lt;com.google.common.base.Optional&lt;java.lang.Object&gt;&gt;</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find method in class <b>OptionalArgumentFactory</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_347')">
+[+] affected methods: 3 (1.4%)</span>
+<div id="c_347" style="display:none;">
+<div class='affected'><span class='iname_a'>OptionalArgumentFactory.OptionalArgumentFactory&#160;<span class='sym_p'><span>(&#160;String <i>jdbcDriver</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'OptionalArgumentFactory' class.</div>
+<span class='iname_a'>OptionalArgumentFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>expectedType</i></span>, <span>Object <i>value</i></span>, <span>StatementContext <i>ctx</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'OptionalArgumentFactory' class.</div>
+<span class='iname_a'>OptionalArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class <i>p1</i></span>, <span>Object <i>p2</i></span>, <span>StatementContext <i>p3</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'OptionalArgumentFactory' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_348')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> OptionalJodaTimeArgumentFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_348" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Removed super-interface <b>org.skife.jdbi.v2.tweak.ArgumentFactory&lt;com.google.common.base.Optional&lt;org.joda.time.DateTime&gt;&gt;</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find method in class <b>OptionalJodaTimeArgumentFactory</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_349')">
+[+] affected methods: 3 (1.4%)</span>
+<div id="c_349" style="display:none;">
+<div class='affected'><span class='iname_a'>OptionalJodaTimeArgumentFactory.OptionalJodaTimeArgumentFactory&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'OptionalJodaTimeArgumentFactory' class.</div>
+<span class='iname_a'>OptionalJodaTimeArgumentFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>expectedType</i></span>, <span>Object <i>value</i></span>, <span>StatementContext <i>ctx</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'OptionalJodaTimeArgumentFactory' class.</div>
+<span class='iname_a'>OptionalJodaTimeArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class <i>p1</i></span>, <span>Object <i>p2</i></span>, <span>StatementContext <i>p3</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'OptionalJodaTimeArgumentFactory' class.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Medium_Risk_Problems'></a><a name='Type_Problems_Medium'></a>
+<h2>Problems with Data Types, Medium Severity <span class='failed'>&nbsp;1&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-jdbi-0.9.3.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi.args</span><br/>
+<span class="section" onclick="sC(this, 'c_350')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> JodaDateTimeMapper <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_350" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Removed super-class <b>org.skife.jdbi.v2.util.TypedMapper&lt;org.joda.time.DateTime&gt;</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find variable (or method) in <b>JodaDateTimeMapper</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_351')">
+[+] affected methods: 1 (0.5%)</span>
+<div id="c_351" style="display:none;">
+<div class='affected'><span class='iname_a'>JodaDateTimeMapper.JodaDateTimeMapper&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'JodaDateTimeMapper' class.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Method_Problems_Medium'></a>
+<h2>Problems with Methods, Medium Severity <span class='failed'>&nbsp;1&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-jdbi-0.9.3.jar</span>, <span class='cname'>DBIFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jdbi</span><br/>
+<span class="section" onclick="sC(this, 'c_352')">
+<span class='ext'>[+]</span> DBIFactory.databaseTimeZone&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Optional&lt;TimeZone&gt;</span> <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_352" style="display:none;">
+<span class='mngl pleft'>io/dropwizard/jdbi/DBIFactory.databaseTimeZone:()Lcom/google/common/base/Optional;</span><br/>
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Return value type has been changed from <b>com.google.common.base.Optional&lt;java.util.TimeZone&gt;</b> to <b>java.util.Optional&lt;java.util.TimeZone&gt;</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: incompatible types: <b>java.util.Optional&lt;java.util.TimeZone&gt;</b> cannot be converted to <b>com.google.common.base.Optional&lt;java.util.TimeZone&gt;</b>.</td>
+</tr>
+</table><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Checked_Archives'></a><h2>Java Archives <span class='gray'>&nbsp;1&nbsp;</span></h2>
+<hr/><div class='jar_list'>
+dropwizard-jdbi-0.9.3.jar<br/>
+</div><br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<br/><br/><br/>
+<hr/><div class='footer' align='right'><i>Generated by <a href='https://github.com/lvc/japi-compliance-checker'>Java API Compliance Checker</a> 2.4 &#160;</i></div><br/>
+</body></html>

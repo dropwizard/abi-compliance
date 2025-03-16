@@ -1,0 +1,11 @@
+{
+  "Affected": "23.8",
+  "Added": 4,
+  "Removed": 4,
+  "TotalProblems": 1,
+  "Source_Affected": "23.8",
+  "Source_TotalProblems": "1",
+  "Source_ReportPath": "compat_report/dropwizard-jdbi3/2.1.12/3.0.0/3c8b7/src_compat_report.html",
+  "Archive1": "dropwizard-jdbi3-2.1.12.jar",
+  "Archive2": "dropwizard-jdbi3-3.0.0.jar"
+}

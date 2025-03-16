@@ -1,0 +1,11 @@
+{
+  "Affected": "100",
+  "Added": 19,
+  "Removed": 41,
+  "TotalProblems": 4,
+  "Source_Affected": "100",
+  "Source_TotalProblems": "4",
+  "Source_ReportPath": "compat_report/metrics-jetty9/4.2.30/5.0.0/0f738/src_compat_report.html",
+  "Archive1": "metrics-jetty9-4.2.30.jar",
+  "Archive2": "metrics-jetty9-5.0.0.jar"
+}

@@ -1,0 +1,21 @@
+$VAR1 = {
+          'APIDump' => {
+                         '5.0.0' => {
+                                      '7ff49' => {
+                                                   'Archive' => 'metrics-legacy-adapter-healthchecks-5.0.0.jar',
+                                                   'Path' => 'api_dump/metrics-legacy-adapter-healthchecks/5.0.0/7ff49/API.dump.tar.gz',
+                                                   'TotalSymbols' => '55'
+                                                 }
+                                    }
+                       },
+          'APIReport' => {},
+          'APIReport_D' => {},
+          'Changelog' => {},
+          'Date' => {
+                      '5.0.0' => '01-2018-02 18:36'
+                    },
+          'Maintainer' => 'Dropwizard Metrics Committers',
+          'MaintainerUrl' => 'https://metrics.dropwizard.io/',
+          'PackageDiff' => {},
+          'Title' => 'metrics5-legacy-adapter-healthchecks'
+        };
