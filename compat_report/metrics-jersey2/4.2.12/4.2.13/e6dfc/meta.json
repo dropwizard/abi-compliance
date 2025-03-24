@@ -1,0 +1,11 @@
+{
+  "Affected": "0",
+  "Added": 0,
+  "Removed": 0,
+  "TotalProblems": 0,
+  "Source_Affected": "0",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/metrics-jersey2/4.2.12/4.2.13/e6dfc/src_compat_report.html",
+  "Archive1": "metrics-jersey2-4.2.12.jar",
+  "Archive2": "metrics-jersey2-4.2.13.jar"
+}
