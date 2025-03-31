@@ -1,0 +1,1058 @@
+<!-- kind:binary;verdict:incompatible;affected:30.2;added:48;removed:58;type_problems_high:4;type_problems_medium:0;type_problems_low:0;method_problems_high:0;method_problems_medium:0;method_problems_low:0;checked_methods:240;checked_types:17;tool_version:2.4 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="dropwizard-jetty, binary, compatibility" />
+<meta name="description" content="Binary compatibility report for the dropwizard-jetty library between 0.9.3 and 1.0.0 versions" />
+<title>dropwizard-jetty: 0.9.3 to 1.0.0 binary compatibility report</title>
+<style type="text/css">
+body {
+    font-family:Arial, sans-serif;
+    background-color:White;
+    color:Black;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+    white-space:nowrap;
+}
+div.symbols {
+    color:#003E69;
+}
+div.symbols i {
+    color:Brown;
+}
+span.section {
+    font-weight:bold;
+    cursor:pointer;
+    color:#003E69;
+    white-space:nowrap;
+    margin-left:0.3125em;
+}
+span:hover.section {
+    color:#336699;
+}
+span.sect_aff {
+    cursor:pointer;
+    padding-left:1.55em;
+    font-size:0.875em;
+    color:#cc3300;
+}
+span.ext {
+    font-weight:normal;
+}
+span.jar {
+    color:#cc3300;
+    font-size:0.875em;
+    font-weight:bold;
+}
+div.jar_list {
+    padding-left:0.4em;
+    font-size:0.94em;
+}
+span.pkg_t {
+    color:#408080;
+    font-size:0.875em;
+}
+span.pkg {
+    color:#408080;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.cname {
+    color:Green;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.iname_b {
+    font-weight:bold;
+}
+span.iname_a {
+    color:#333333;
+    font-weight:bold;
+    font-size:0.94em;
+}
+span.sym_p {
+    font-weight:normal;
+    white-space:normal;
+}
+span.sym_pd {
+    white-space:normal;
+}
+span.sym_p span, span.sym_pd span {
+    white-space:nowrap;
+}
+span.attr {
+    color:Black;
+    font-weight:normal;
+}
+span.deprecated {
+    color:Red;
+    font-weight:bold;
+    font-family:Monaco, monospace;
+}
+div.affect {
+    padding-left:1em;
+    padding-bottom:10px;
+    font-size:0.87em;
+    font-style:italic;
+    line-height:0.9em;
+}
+div.affected {
+    padding-left:2em;
+    padding-top:10px;
+}
+table.ptable {
+    border-collapse:collapse;
+    border:1px outset black;
+    margin-left:0.95em;
+    margin-top:3px;
+    margin-bottom:3px;
+    width:56.25em;
+}
+table.ptable td {
+    border:1px solid Gray;
+    padding:3px;
+    font-size:0.875em;
+    text-align:left;
+    vertical-align:top;
+    max-width:28em;
+    word-wrap:break-word;
+}
+table.ptable th {
+    background-color:#eeeeee;
+    font-weight:bold;
+    color:#333333;
+    font-family:Verdana, Arial;
+    font-size:0.875em;
+    border:1px solid Gray;
+    text-align:center;
+    vertical-align:top;
+    white-space:nowrap;
+    padding:3px;
+}
+table.summary {
+    border-collapse:collapse;
+    border:1px outset black;
+}
+table.summary th {
+    background-color:#eeeeee;
+    font-weight:normal;
+    text-align:left;
+    font-size:0.94em;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px;
+}
+table.summary td {
+    text-align:right;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px 5px 3px 10px;
+}
+span.mngl {
+    padding-left:1em;
+    font-size:0.875em;
+    cursor:text;
+    color:#444444;
+    font-weight:bold;
+}
+span.pleft {
+    padding-left:2.5em;
+}
+span.color_p {
+    font-style:italic;
+    color:Brown;
+}
+span.param {
+    font-style:italic;
+}
+span.focus_p {
+    font-style:italic;
+    background-color:#DCDCDC;
+}
+span.ttype {
+    font-weight:normal;
+}
+span.nowrap {
+    white-space:nowrap;
+}
+span.value {
+    white-space:nowrap;
+    font-weight:bold;
+}
+.passed {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.warning {
+    background-color:#F4F4AF;
+    font-weight:normal;
+}
+.failed {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.new {
+    background-color:#C6DEFF;
+    font-weight:normal;
+}
+
+.compatible {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.almost_compatible {
+    background-color:#FFDAA3;
+    font-weight:normal;
+}
+.incompatible {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.gray {
+    background-color:#DCDCDC;
+    font-weight:normal;
+}
+
+.top_ref {
+    font-size:0.69em;
+}
+.footer {
+    font-size:0.8125em;
+}
+
+</style>
+<script type="text/javascript" language="JavaScript">
+<!--
+function sC(header, id)
+{
+    e = document.getElementById(id);
+    if(e.style.display == 'none')
+    {
+        e.style.display = 'block';
+        e.style.visibility = 'visible';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[&minus;]");
+    }
+    else
+    {
+        e.style.display = 'none';
+        e.style.visibility = 'hidden';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[+]");
+    }
+}
+
+-->
+</script>
+</head>
+<body><a name='Top'></a><h1>Binary compatibility report for the <span style='color:Blue;'>dropwizard-jetty</span> library between <span style='color:Red;'>0.9.3</span> and <span style='color:Red;'>1.0.0</span> versions</h1>
+
+<h2>Test Info</h2><hr/>
+<table class='summary'>
+<tr><th>Library Name</th><td>dropwizard-jetty</td></tr>
+<tr><th>Version #1</th><td>0.9.3</td></tr>
+<tr><th>Version #2</th><td>1.0.0</td></tr>
+</table>
+<h2>Test Results</h2><hr/>
+<table class='summary'>
+<tr><th>Total Java Modules</th><td><a href='#Checked_Archives' style='color:Blue;'>1</a></td></tr>
+<tr><th>Total Methods / Classes</th><td>240 / 17</td></tr>
+<tr><th>Compatibility</th>
+<td class='incompatible'>69.8%</td>
+</tr>
+</table>
+<h2>Problem Summary</h2><hr/>
+<table class='summary'>
+<tr><th></th><th style='text-align:center;'>Severity</th><th style='text-align:center;'>Count</th></tr>
+<tr><th>Added Methods</th><td>-</td><td class='new'><a href='#Added' style='color:Blue;'>48</a></td></tr>
+<tr><th>Removed Methods</th><td>High</td><td class='failed'><a href='#Removed' style='color:Blue;'>58</a></td></tr>
+<tr><th rowspan='3'>Problems with<br/>Data Types</th><td>High</td><td class='failed'><a href='#Type_Problems_High' style='color:Blue;'>4</a></td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+<tr><th rowspan='3'>Problems with<br/>Methods</th><td>High</td><td>0</td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+</table>
+
+<a name='Added'></a><h2>Added Methods <span class='new'>&nbsp;48&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-jetty-1.0.0.jar</span>, <span class='cname'>BiDiGzipHandler.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jetty</span><br/>
+<span class="section" onclick="sC(this, 'c_1')">
+BiDiGzipHandler.BiDiGzipHandler&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_1" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/BiDiGzipHandler.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_2')">
+BiDiGzipHandler.handle&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>target</span></span>, <span>Request <span class='color_p'>baseRequest</span></span>, <span>HttpServletRequest <span class='color_p'>request</span></span>, <span>HttpServletResponse <span class='color_p'>response</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_2" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/BiDiGzipHandler.handle:(Ljava/lang/String;Lorg/eclipse/jetty/server/Request;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_3')">
+BiDiGzipHandler.isInflateNoWrap&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_3" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/BiDiGzipHandler.isInflateNoWrap:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_4')">
+BiDiGzipHandler.setInflateNoWrap&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>inflateNoWrap</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_4" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/BiDiGzipHandler.setInflateNoWrap:(Z)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_5')">
+BiDiGzipHandler.setInputBufferSize&#160;<span class='sym_p'><span>(&#160;int <span class='color_p'>inputBufferSize</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_5" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/BiDiGzipHandler.setInputBufferSize:(I)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jetty-1.0.0.jar</span>, <span class='cname'>GzipHandlerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jetty</span><br/>
+<span class="section" onclick="sC(this, 'c_6')">
+GzipHandlerFactory.build&#160;<span class='sym_p'><span>(&#160;Handler <span class='color_p'>handler</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;BiDiGzipHandler</span></span>
+<br/>
+<div id="c_6" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipHandlerFactory.build:(Lorg/eclipse/jetty/server/Handler;)Lio/dropwizard/jetty/BiDiGzipHandler;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_7')">
+GzipHandlerFactory.getBufferSize&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Size</span></span>
+<br/>
+<div id="c_7" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipHandlerFactory.getBufferSize:()Lio/dropwizard/util/Size;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_8')">
+GzipHandlerFactory.getCompressedMimeTypes&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;String&gt;</span></span>
+<br/>
+<div id="c_8" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipHandlerFactory.getCompressedMimeTypes:()Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_9')">
+GzipHandlerFactory.getDeflateCompressionLevel&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_9" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipHandlerFactory.getDeflateCompressionLevel:()I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_10')">
+GzipHandlerFactory.getExcludedUserAgentPatterns&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;String&gt;</span></span>
+<br/>
+<div id="c_10" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipHandlerFactory.getExcludedUserAgentPatterns:()Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_11')">
+GzipHandlerFactory.getIncludedMethods&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;String&gt;</span></span>
+<br/>
+<div id="c_11" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipHandlerFactory.getIncludedMethods:()Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_12')">
+GzipHandlerFactory.getMinimumEntitySize&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Size</span></span>
+<br/>
+<div id="c_12" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipHandlerFactory.getMinimumEntitySize:()Lio/dropwizard/util/Size;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_13')">
+GzipHandlerFactory.GzipHandlerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_13" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipHandlerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_14')">
+GzipHandlerFactory.isEnabled&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_14" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipHandlerFactory.isEnabled:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_15')">
+GzipHandlerFactory.isGzipCompatibleInflation&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_15" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipHandlerFactory.isGzipCompatibleInflation:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_16')">
+GzipHandlerFactory.setBufferSize&#160;<span class='sym_p'><span>(&#160;Size <span class='color_p'>size</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_16" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipHandlerFactory.setBufferSize:(Lio/dropwizard/util/Size;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_17')">
+GzipHandlerFactory.setCompressedMimeTypes&#160;<span class='sym_p'><span>(&#160;Set&lt;String&gt; <span class='color_p'>mimeTypes</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_17" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipHandlerFactory.setCompressedMimeTypes:(Ljava/util/Set;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_18')">
+GzipHandlerFactory.setDeflateCompressionLevel&#160;<span class='sym_p'><span>(&#160;int <span class='color_p'>level</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_18" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipHandlerFactory.setDeflateCompressionLevel:(I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_19')">
+GzipHandlerFactory.setEnabled&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>enabled</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_19" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipHandlerFactory.setEnabled:(Z)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_20')">
+GzipHandlerFactory.setExcludedUserAgentPatterns&#160;<span class='sym_p'><span>(&#160;Set&lt;String&gt; <span class='color_p'>excludedUserAgentPatterns</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_20" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipHandlerFactory.setExcludedUserAgentPatterns:(Ljava/util/Set;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_21')">
+GzipHandlerFactory.setGzipCompatibleInflation&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>gzipCompatibleInflation</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_21" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipHandlerFactory.setGzipCompatibleInflation:(Z)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_22')">
+GzipHandlerFactory.setIncludedMethods&#160;<span class='sym_p'><span>(&#160;Set&lt;String&gt; <span class='color_p'>methods</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_22" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipHandlerFactory.setIncludedMethods:(Ljava/util/Set;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_23')">
+GzipHandlerFactory.setMinimumEntitySize&#160;<span class='sym_p'><span>(&#160;Size <span class='color_p'>size</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_23" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipHandlerFactory.setMinimumEntitySize:(Lio/dropwizard/util/Size;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jetty-1.0.0.jar</span>, <span class='cname'>HttpConnectorFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jetty</span><br/>
+<span class="section" onclick="sC(this, 'c_24')">
+HttpConnectorFactory.isInheritChannel&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_24" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/HttpConnectorFactory.isInheritChannel:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_25')">
+HttpConnectorFactory.setInheritChannel&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>inheritChannel</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_25" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/HttpConnectorFactory.setInheritChannel:(Z)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jetty-1.0.0.jar</span>, <span class='cname'>Jetty93InstrumentedConnectionFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jetty</span><br/>
+<span class="section" onclick="sC(this, 'c_26')">
+Jetty93InstrumentedConnectionFactory.getConnectionFactory&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ConnectionFactory</span></span>
+<br/>
+<div id="c_26" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/Jetty93InstrumentedConnectionFactory.getConnectionFactory:()Lorg/eclipse/jetty/server/ConnectionFactory;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_27')">
+Jetty93InstrumentedConnectionFactory.getProtocol&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_27" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/Jetty93InstrumentedConnectionFactory.getProtocol:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_28')">
+Jetty93InstrumentedConnectionFactory.getProtocols&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;List&lt;String&gt;</span></span>
+<br/>
+<div id="c_28" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/Jetty93InstrumentedConnectionFactory.getProtocols:()Ljava/util/List;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_29')">
+Jetty93InstrumentedConnectionFactory.getTimer&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Timer</span></span>
+<br/>
+<div id="c_29" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/Jetty93InstrumentedConnectionFactory.getTimer:()Lcom/codahale/metrics/Timer;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_30')">
+Jetty93InstrumentedConnectionFactory.Jetty93InstrumentedConnectionFactory&#160;<span class='sym_p'><span>(&#160;ConnectionFactory <span class='color_p'>connectionFactory</span></span>, <span>Timer <span class='color_p'>timer</span></span>&#160;)</span></span>
+<br/>
+<div id="c_30" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/Jetty93InstrumentedConnectionFactory.&quot;&lt;init&gt;&quot;:(Lorg/eclipse/jetty/server/ConnectionFactory;Lcom/codahale/metrics/Timer;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_31')">
+Jetty93InstrumentedConnectionFactory.newConnection&#160;<span class='sym_p'><span>(&#160;Connector <span class='color_p'>connector</span></span>, <span>EndPoint <span class='color_p'>endPoint</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Connection</span></span>
+<br/>
+<div id="c_31" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/Jetty93InstrumentedConnectionFactory.newConnection:(Lorg/eclipse/jetty/server/Connector;Lorg/eclipse/jetty/io/EndPoint;)Lorg/eclipse/jetty/io/Connection;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jetty-1.0.0.jar</span>, <span class='cname'>NetUtil.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jetty</span><br/>
+<span class="section" onclick="sC(this, 'c_32')">
+NetUtil.getDefaultTcpBacklog&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_32" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/NetUtil.getDefaultTcpBacklog:()I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_33')">
+NetUtil.getTcpBacklog&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_33" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/NetUtil.getTcpBacklog:()I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_34')">
+NetUtil.getTcpBacklog&#160;<span class='sym_p'><span>(&#160;int <span class='color_p'>tcpBacklog</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_34" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/NetUtil.getTcpBacklog:(I)I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_35')">
+NetUtil.isWindows&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_35" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/NetUtil.isWindows:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_36')">
+NetUtil.NetUtil&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_36" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/NetUtil.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jetty-1.0.0.jar</span>, <span class='cname'>ServerPushFilterFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jetty</span><br/>
+<span class="section" onclick="sC(this, 'c_37')">
+ServerPushFilterFactory.addFilter&#160;<span class='sym_p'><span>(&#160;ServletContextHandler <span class='color_p'>handler</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_37" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/ServerPushFilterFactory.addFilter:(Lorg/eclipse/jetty/servlet/ServletContextHandler;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_38')">
+ServerPushFilterFactory.getAssociatePeriod&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Duration</span></span>
+<br/>
+<div id="c_38" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/ServerPushFilterFactory.getAssociatePeriod:()Lio/dropwizard/util/Duration;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_39')">
+ServerPushFilterFactory.getMaxAssociations&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_39" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/ServerPushFilterFactory.getMaxAssociations:()I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_40')">
+ServerPushFilterFactory.getRefererHosts&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;List&lt;String&gt;</span></span>
+<br/>
+<div id="c_40" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/ServerPushFilterFactory.getRefererHosts:()Ljava/util/List;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_41')">
+ServerPushFilterFactory.getRefererPorts&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;List&lt;Integer&gt;</span></span>
+<br/>
+<div id="c_41" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/ServerPushFilterFactory.getRefererPorts:()Ljava/util/List;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_42')">
+ServerPushFilterFactory.isEnabled&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_42" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/ServerPushFilterFactory.isEnabled:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_43')">
+ServerPushFilterFactory.ServerPushFilterFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_43" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/ServerPushFilterFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_44')">
+ServerPushFilterFactory.setAssociatePeriod&#160;<span class='sym_p'><span>(&#160;Duration <span class='color_p'>associatePeriod</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_44" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/ServerPushFilterFactory.setAssociatePeriod:(Lio/dropwizard/util/Duration;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_45')">
+ServerPushFilterFactory.setEnabled&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>enabled</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_45" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/ServerPushFilterFactory.setEnabled:(Z)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_46')">
+ServerPushFilterFactory.setMaxAssociations&#160;<span class='sym_p'><span>(&#160;int <span class='color_p'>maxAssociations</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_46" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/ServerPushFilterFactory.setMaxAssociations:(I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_47')">
+ServerPushFilterFactory.setRefererHosts&#160;<span class='sym_p'><span>(&#160;List&lt;String&gt; <span class='color_p'>refererHosts</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_47" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/ServerPushFilterFactory.setRefererHosts:(Ljava/util/List;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_48')">
+ServerPushFilterFactory.setRefererPorts&#160;<span class='sym_p'><span>(&#160;List&lt;Integer&gt; <span class='color_p'>refererPorts</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_48" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/ServerPushFilterFactory.setRefererPorts:(Ljava/util/List;)V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Removed'></a><a name='Withdrawn'></a><h2>Removed Methods <span class='failed'>&nbsp;58&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-jetty-0.9.3.jar</span>, <span class='cname'>BiDiGzipFilter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jetty</span><br/>
+<span class="section" onclick="sC(this, 'c_49')">
+BiDiGzipFilter.BiDiGzipFilter&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_49" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/BiDiGzipFilter.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_50')">
+BiDiGzipFilter.doFilter&#160;<span class='sym_p'><span>(&#160;ServletRequest <span class='color_p'>req</span></span>, <span>ServletResponse <span class='color_p'>res</span></span>, <span>FilterChain <span class='color_p'>chain</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_50" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/BiDiGzipFilter.doFilter:(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljavax/servlet/FilterChain;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_51')">
+BiDiGzipFilter.getBufferSize&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_51" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/BiDiGzipFilter.getBufferSize:()I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_52')">
+BiDiGzipFilter.getDeflateCompressionLevel&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_52" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/BiDiGzipFilter.getDeflateCompressionLevel:()I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_53')">
+BiDiGzipFilter.getExcludedAgentPatterns&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;Pattern&gt;</span></span>
+<br/>
+<div id="c_53" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/BiDiGzipFilter.getExcludedAgentPatterns:()Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_54')">
+BiDiGzipFilter.getExcludedAgents&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;String&gt;</span></span>
+<br/>
+<div id="c_54" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/BiDiGzipFilter.getExcludedAgents:()Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_55')">
+BiDiGzipFilter.getMethods&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;String&gt;</span></span>
+<br/>
+<div id="c_55" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/BiDiGzipFilter.getMethods:()Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_56')">
+BiDiGzipFilter.getMimeTypes&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;String&gt;</span></span>
+<br/>
+<div id="c_56" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/BiDiGzipFilter.getMimeTypes:()Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_57')">
+BiDiGzipFilter.getMinGzipSize&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_57" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/BiDiGzipFilter.getMinGzipSize:()I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_58')">
+BiDiGzipFilter.getVary&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_58" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/BiDiGzipFilter.getVary:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_59')">
+BiDiGzipFilter.isDeflateNoWrap&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_59" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/BiDiGzipFilter.isDeflateNoWrap:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_60')">
+BiDiGzipFilter.isInflateNoWrap&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_60" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/BiDiGzipFilter.isInflateNoWrap:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_61')">
+BiDiGzipFilter.setBufferSize&#160;<span class='sym_p'><span>(&#160;int <span class='color_p'>bufferSize</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_61" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/BiDiGzipFilter.setBufferSize:(I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_62')">
+BiDiGzipFilter.setDeflateCompressionLevel&#160;<span class='sym_p'><span>(&#160;int <span class='color_p'>level</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_62" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/BiDiGzipFilter.setDeflateCompressionLevel:(I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_63')">
+BiDiGzipFilter.setDeflateNoWrap&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>noWrap</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_63" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/BiDiGzipFilter.setDeflateNoWrap:(Z)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_64')">
+BiDiGzipFilter.setExcludedAgentPatterns&#160;<span class='sym_p'><span>(&#160;Set&lt;Pattern&gt; <span class='color_p'>userAgentPatterns</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_64" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/BiDiGzipFilter.setExcludedAgentPatterns:(Ljava/util/Set;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_65')">
+BiDiGzipFilter.setExcludedAgents&#160;<span class='sym_p'><span>(&#160;Set&lt;String&gt; <span class='color_p'>userAgents</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_65" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/BiDiGzipFilter.setExcludedAgents:(Ljava/util/Set;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_66')">
+BiDiGzipFilter.setInflateNoWrap&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>inflateNoWrap</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_66" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/BiDiGzipFilter.setInflateNoWrap:(Z)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_67')">
+BiDiGzipFilter.setMethods&#160;<span class='sym_p'><span>(&#160;Set&lt;String&gt; <span class='color_p'>methods</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_67" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/BiDiGzipFilter.setMethods:(Ljava/util/Set;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_68')">
+BiDiGzipFilter.setMimeTypes&#160;<span class='sym_p'><span>(&#160;Set&lt;String&gt; <span class='color_p'>mimeTypes</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_68" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/BiDiGzipFilter.setMimeTypes:(Ljava/util/Set;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_69')">
+BiDiGzipFilter.setMinGzipSize&#160;<span class='sym_p'><span>(&#160;int <span class='color_p'>minGzipSize</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_69" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/BiDiGzipFilter.setMinGzipSize:(I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_70')">
+BiDiGzipFilter.setVary&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>vary</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_70" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/BiDiGzipFilter.setVary:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jetty-0.9.3.jar</span>, <span class='cname'>GzipFilterFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jetty</span><br/>
+<span class="section" onclick="sC(this, 'c_71')">
+GzipFilterFactory.build&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;BiDiGzipFilter</span></span>
+<br/>
+<div id="c_71" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipFilterFactory.build:()Lio/dropwizard/jetty/BiDiGzipFilter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_72')">
+GzipFilterFactory.getBufferSize&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Size</span></span>
+<br/>
+<div id="c_72" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipFilterFactory.getBufferSize:()Lio/dropwizard/util/Size;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_73')">
+GzipFilterFactory.getCompressedMimeTypes&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;String&gt;</span></span>
+<br/>
+<div id="c_73" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipFilterFactory.getCompressedMimeTypes:()Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_74')">
+GzipFilterFactory.getDeflateCompressionLevel&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_74" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipFilterFactory.getDeflateCompressionLevel:()I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_75')">
+GzipFilterFactory.getExcludedUserAgentPatterns&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;Pattern&gt;</span></span>
+<br/>
+<div id="c_75" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipFilterFactory.getExcludedUserAgentPatterns:()Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_76')">
+GzipFilterFactory.getExcludedUserAgents&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;String&gt;</span></span>
+<br/>
+<div id="c_76" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipFilterFactory.getExcludedUserAgents:()Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_77')">
+GzipFilterFactory.getIncludedMethods&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;String&gt;</span></span>
+<br/>
+<div id="c_77" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipFilterFactory.getIncludedMethods:()Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_78')">
+GzipFilterFactory.getMinimumEntitySize&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Size</span></span>
+<br/>
+<div id="c_78" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipFilterFactory.getMinimumEntitySize:()Lio/dropwizard/util/Size;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_79')">
+GzipFilterFactory.getVary&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_79" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipFilterFactory.getVary:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_80')">
+GzipFilterFactory.GzipFilterFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_80" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipFilterFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_81')">
+GzipFilterFactory.isEnabled&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_81" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipFilterFactory.isEnabled:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_82')">
+GzipFilterFactory.isGzipCompatibleDeflation&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_82" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipFilterFactory.isGzipCompatibleDeflation:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_83')">
+GzipFilterFactory.isGzipCompatibleInflation&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_83" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipFilterFactory.isGzipCompatibleInflation:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_84')">
+GzipFilterFactory.setBufferSize&#160;<span class='sym_p'><span>(&#160;Size <span class='color_p'>size</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_84" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipFilterFactory.setBufferSize:(Lio/dropwizard/util/Size;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_85')">
+GzipFilterFactory.setCompressedMimeTypes&#160;<span class='sym_p'><span>(&#160;Set&lt;String&gt; <span class='color_p'>mimeTypes</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_85" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipFilterFactory.setCompressedMimeTypes:(Ljava/util/Set;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_86')">
+GzipFilterFactory.setDeflateCompressionLevel&#160;<span class='sym_p'><span>(&#160;int <span class='color_p'>level</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_86" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipFilterFactory.setDeflateCompressionLevel:(I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_87')">
+GzipFilterFactory.setEnabled&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>enabled</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_87" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipFilterFactory.setEnabled:(Z)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_88')">
+GzipFilterFactory.setExcludedUserAgentPatterns&#160;<span class='sym_p'><span>(&#160;Set&lt;Pattern&gt; <span class='color_p'>patterns</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_88" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipFilterFactory.setExcludedUserAgentPatterns:(Ljava/util/Set;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_89')">
+GzipFilterFactory.setExcludedUserAgents&#160;<span class='sym_p'><span>(&#160;Set&lt;String&gt; <span class='color_p'>userAgents</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_89" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipFilterFactory.setExcludedUserAgents:(Ljava/util/Set;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_90')">
+GzipFilterFactory.setGzipCompatibleDeflation&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>compatible</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_90" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipFilterFactory.setGzipCompatibleDeflation:(Z)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_91')">
+GzipFilterFactory.setGzipCompatibleInflation&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>gzipCompatibleInflation</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_91" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipFilterFactory.setGzipCompatibleInflation:(Z)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_92')">
+GzipFilterFactory.setIncludedMethods&#160;<span class='sym_p'><span>(&#160;Set&lt;String&gt; <span class='color_p'>methods</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_92" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipFilterFactory.setIncludedMethods:(Ljava/util/Set;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_93')">
+GzipFilterFactory.setMinimumEntitySize&#160;<span class='sym_p'><span>(&#160;Size <span class='color_p'>size</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_93" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipFilterFactory.setMinimumEntitySize:(Lio/dropwizard/util/Size;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_94')">
+GzipFilterFactory.setVary&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>vary</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_94" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/GzipFilterFactory.setVary:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jetty-0.9.3.jar</span>, <span class='cname'>RequestLogFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jetty</span><br/>
+<span class="section" onclick="sC(this, 'c_95')">
+RequestLogFactory.build&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;RequestLog</span></span>
+<br/>
+<div id="c_95" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/RequestLogFactory.build:(Ljava/lang/String;)Lorg/eclipse/jetty/server/RequestLog;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_96')">
+RequestLogFactory.getAppenders&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ImmutableList&lt;AppenderFactory&gt;</span></span>
+<br/>
+<div id="c_96" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/RequestLogFactory.getAppenders:()Lcom/google/common/collect/ImmutableList;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_97')">
+RequestLogFactory.getTimeZone&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;TimeZone</span></span>
+<br/>
+<div id="c_97" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/RequestLogFactory.getTimeZone:()Ljava/util/TimeZone;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_98')">
+RequestLogFactory.isEnabled&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_98" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/RequestLogFactory.isEnabled:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_99')">
+RequestLogFactory.RequestLogFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_99" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/RequestLogFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_100')">
+RequestLogFactory.setAppenders&#160;<span class='sym_p'><span>(&#160;ImmutableList&lt;AppenderFactory&gt; <span class='color_p'>appenders</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_100" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/RequestLogFactory.setAppenders:(Lcom/google/common/collect/ImmutableList;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_101')">
+RequestLogFactory.setTimeZone&#160;<span class='sym_p'><span>(&#160;TimeZone <span class='color_p'>timeZone</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_101" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/RequestLogFactory.setTimeZone:(Ljava/util/TimeZone;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jetty-0.9.3.jar</span>, <span class='cname'>Slf4jRequestLog.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jetty</span><br/>
+<span class="section" onclick="sC(this, 'c_102')">
+Slf4jRequestLog.doStop&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_102" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/Slf4jRequestLog.doStop:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_103')">
+Slf4jRequestLog.isEnabled&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_103" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/Slf4jRequestLog.isEnabled:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_104')">
+Slf4jRequestLog.setLogTimeZone&#160;<span class='sym_p'><span>(&#160;TimeZone <span class='color_p'>tz</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_104" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/Slf4jRequestLog.setLogTimeZone:(Ljava/util/TimeZone;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_105')">
+Slf4jRequestLog.Slf4jRequestLog&#160;<span class='sym_p'><span>(&#160;AppenderAttachableImpl&lt;ILoggingEvent&gt; <span class='color_p'>appenders</span></span>, <span>TimeZone <span class='color_p'>timeZone</span></span>&#160;)</span></span>
+<br/>
+<div id="c_105" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/Slf4jRequestLog.&quot;&lt;init&gt;&quot;:(Lch/qos/logback/core/spi/AppenderAttachableImpl;Ljava/util/TimeZone;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_106')">
+Slf4jRequestLog.write&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>entry</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_106" style="display:none;">
+<span class='mngl'>io/dropwizard/jetty/Slf4jRequestLog.write:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='High_Risk_Problems'></a><a name='Type_Problems_High'></a>
+<h2>Problems with Data Types, High Severity <span class='failed'>&nbsp;4&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-jetty-0.9.3.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jetty</span><br/>
+<span class="section" onclick="sC(this, 'c_107')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> BiDiGzipFilter <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_107" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_108')">
+[+] affected methods: 22 (9.2%)</span>
+<div id="c_108" style="display:none;">
+<div class='affected'><span class='iname_a'>BiDiGzipFilter.BiDiGzipFilter&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'BiDiGzipFilter' class.</div>
+<span class='iname_a'>BiDiGzipFilter.doFilter&#160;<span class='sym_p'><span>(&#160;ServletRequest <i>req</i></span>, <span>ServletResponse <i>res</i></span>, <span>FilterChain <i>chain</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'BiDiGzipFilter' class.</div>
+<span class='iname_a'>BiDiGzipFilter.getBufferSize&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'BiDiGzipFilter' class.</div>
+<span class='iname_a'>BiDiGzipFilter.getDeflateCompressionLevel&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'BiDiGzipFilter' class.</div>
+<span class='iname_a'>BiDiGzipFilter.getExcludedAgentPatterns&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'BiDiGzipFilter' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_109')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> GzipFilterFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_109" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_110')">
+[+] affected methods: 24 (10%)</span>
+<div id="c_110" style="display:none;">
+<div class='affected'><span class='iname_a'>GzipFilterFactory.GzipFilterFactory&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'GzipFilterFactory' class.</div>
+<span class='iname_a'>GzipFilterFactory.build&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'GzipFilterFactory' class.</div>
+<span class='iname_a'>GzipFilterFactory.getBufferSize&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'GzipFilterFactory' class.</div>
+<span class='iname_a'>GzipFilterFactory.getCompressedMimeTypes&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'GzipFilterFactory' class.</div>
+<span class='iname_a'>GzipFilterFactory.getDeflateCompressionLevel&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'GzipFilterFactory' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_111')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> RequestLogFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_111" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_112')">
+[+] affected methods: 7 (2.9%)</span>
+<div id="c_112" style="display:none;">
+<div class='affected'><span class='iname_a'>RequestLogFactory.RequestLogFactory&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'RequestLogFactory' class.</div>
+<span class='iname_a'>RequestLogFactory.build&#160;<span class='sym_p'><span>(&#160;String <i>name</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'RequestLogFactory' class.</div>
+<span class='iname_a'>RequestLogFactory.getAppenders&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'RequestLogFactory' class.</div>
+<span class='iname_a'>RequestLogFactory.getTimeZone&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'RequestLogFactory' class.</div>
+<span class='iname_a'>RequestLogFactory.isEnabled&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'RequestLogFactory' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_113')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> Slf4jRequestLog <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_113" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_114')">
+[+] affected methods: 5 (2.1%)</span>
+<div id="c_114" style="display:none;">
+<div class='affected'><span class='iname_a'>Slf4jRequestLog.Slf4jRequestLog&#160;<span class='sym_p'><span>(&#160;AppenderAttachableImpl&lt;ILoggingEvent&gt; <i>appenders</i></span>, <span>TimeZone <i>timeZone</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'Slf4jRequestLog' class.</div>
+<span class='iname_a'>Slf4jRequestLog.doStop&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'Slf4jRequestLog' class.</div>
+<span class='iname_a'>Slf4jRequestLog.isEnabled&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'Slf4jRequestLog' class.</div>
+<span class='iname_a'>Slf4jRequestLog.setLogTimeZone&#160;<span class='sym_p'><span>(&#160;TimeZone <i>tz</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'Slf4jRequestLog' class.</div>
+<span class='iname_a'>Slf4jRequestLog.write&#160;<span class='sym_p'><span>(&#160;String <i>entry</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'Slf4jRequestLog' class.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Checked_Archives'></a><h2>Java Archives <span class='gray'>&nbsp;1&nbsp;</span></h2>
+<hr/><div class='jar_list'>
+dropwizard-jetty-0.9.3.jar<br/>
+</div><br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<br/><br/><br/>
+<hr/><div class='footer' align='right'><i>Generated by <a href='https://github.com/lvc/japi-compliance-checker'>Java API Compliance Checker</a> 2.4 &#160;</i></div><br/>
+</body></html>

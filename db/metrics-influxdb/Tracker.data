@@ -1,0 +1,29 @@
+$VAR1 = {
+          'APIDump' => {
+                         '5.0.0-rc24' => {
+                                           '30d9c' => {
+                                                        'Archive' => 'metrics-influxdb-5.0.0-rc24.jar',
+                                                        'Path' => 'api_dump/metrics-influxdb/5.0.0-rc24/30d9c/API.dump.tar.gz',
+                                                        'TotalSymbols' => '27'
+                                                      }
+                                         },
+                         '5.0.0-rc25' => {
+                                           '575a7' => {
+                                                        'Archive' => 'metrics-influxdb-5.0.0-rc25.jar',
+                                                        'Path' => 'api_dump/metrics-influxdb/5.0.0-rc25/575a7/API.dump.tar.gz',
+                                                        'TotalSymbols' => '27'
+                                                      }
+                                         }
+                       },
+          'APIReport' => {},
+          'APIReport_D' => {},
+          'Changelog' => {},
+          'Date' => {
+                      '5.0.0-rc24' => '01-1980-02 00:00',
+                      '5.0.0-rc25' => '01-1980-02 00:00'
+                    },
+          'Maintainer' => 'Dropwizard Metrics Committers',
+          'MaintainerUrl' => 'https://metrics.dropwizard.io/',
+          'PackageDiff' => {},
+          'Title' => 'InfluxDB 5.x integration for Metrics'
+        };

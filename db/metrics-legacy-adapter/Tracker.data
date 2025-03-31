@@ -1,0 +1,21 @@
+$VAR1 = {
+          'APIDump' => {
+                         '5.0.0' => {
+                                      'c6e62' => {
+                                                   'Archive' => 'metrics-legacy-adapter-5.0.0.jar',
+                                                   'Path' => 'api_dump/metrics-legacy-adapter/5.0.0/c6e62/API.dump.tar.gz',
+                                                   'TotalSymbols' => '343'
+                                                 }
+                                    }
+                       },
+          'APIReport' => {},
+          'APIReport_D' => {},
+          'Changelog' => {},
+          'Date' => {
+                      '5.0.0' => '01-2018-02 18:33'
+                    },
+          'Maintainer' => 'Dropwizard Metrics Committers',
+          'MaintainerUrl' => 'https://metrics.dropwizard.io/',
+          'PackageDiff' => {},
+          'Title' => 'metrics5-legacy-adapter'
+        };

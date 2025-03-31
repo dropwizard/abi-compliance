@@ -1,0 +1,10 @@
+$VAR1 = {
+          'Installed' => {
+                           '5.0.0-rc24' => 'src/metrics-influxdb/5.0.0-rc24',
+                           '5.0.0-rc25' => 'src/metrics-influxdb/5.0.0-rc25'
+                         },
+          'Source' => {
+                        '5.0.0-rc24' => 'src/metrics-influxdb/5.0.0-rc24/metrics-influxdb-5.0.0-rc24.jar',
+                        '5.0.0-rc25' => 'src/metrics-influxdb/5.0.0-rc25/metrics-influxdb-5.0.0-rc25.jar'
+                      }
+        };

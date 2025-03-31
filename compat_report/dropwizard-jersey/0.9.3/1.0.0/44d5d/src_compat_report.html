@@ -1,0 +1,1104 @@
+<!-- kind:source;verdict:incompatible;affected:5.4;added:97;removed:7;type_problems_high:1;type_problems_medium:0;type_problems_low:1;method_problems_high:0;method_problems_medium:2;method_problems_low:0;checked_methods:237;checked_types:61;tool_version:2.4 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="dropwizard-jersey, source, compatibility" />
+<meta name="description" content="Source compatibility report for the dropwizard-jersey library between 0.9.3 and 1.0.0 versions" />
+<title>dropwizard-jersey: 0.9.3 to 1.0.0 source compatibility report</title>
+<style type="text/css">
+body {
+    font-family:Arial, sans-serif;
+    background-color:White;
+    color:Black;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+    white-space:nowrap;
+}
+div.symbols {
+    color:#003E69;
+}
+div.symbols i {
+    color:Brown;
+}
+span.section {
+    font-weight:bold;
+    cursor:pointer;
+    color:#003E69;
+    white-space:nowrap;
+    margin-left:0.3125em;
+}
+span:hover.section {
+    color:#336699;
+}
+span.sect_aff {
+    cursor:pointer;
+    padding-left:1.55em;
+    font-size:0.875em;
+    color:#cc3300;
+}
+span.ext {
+    font-weight:normal;
+}
+span.jar {
+    color:#cc3300;
+    font-size:0.875em;
+    font-weight:bold;
+}
+div.jar_list {
+    padding-left:0.4em;
+    font-size:0.94em;
+}
+span.pkg_t {
+    color:#408080;
+    font-size:0.875em;
+}
+span.pkg {
+    color:#408080;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.cname {
+    color:Green;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.iname_b {
+    font-weight:bold;
+}
+span.iname_a {
+    color:#333333;
+    font-weight:bold;
+    font-size:0.94em;
+}
+span.sym_p {
+    font-weight:normal;
+    white-space:normal;
+}
+span.sym_pd {
+    white-space:normal;
+}
+span.sym_p span, span.sym_pd span {
+    white-space:nowrap;
+}
+span.attr {
+    color:Black;
+    font-weight:normal;
+}
+span.deprecated {
+    color:Red;
+    font-weight:bold;
+    font-family:Monaco, monospace;
+}
+div.affect {
+    padding-left:1em;
+    padding-bottom:10px;
+    font-size:0.87em;
+    font-style:italic;
+    line-height:0.9em;
+}
+div.affected {
+    padding-left:2em;
+    padding-top:10px;
+}
+table.ptable {
+    border-collapse:collapse;
+    border:1px outset black;
+    margin-left:0.95em;
+    margin-top:3px;
+    margin-bottom:3px;
+    width:56.25em;
+}
+table.ptable td {
+    border:1px solid Gray;
+    padding:3px;
+    font-size:0.875em;
+    text-align:left;
+    vertical-align:top;
+    max-width:28em;
+    word-wrap:break-word;
+}
+table.ptable th {
+    background-color:#eeeeee;
+    font-weight:bold;
+    color:#333333;
+    font-family:Verdana, Arial;
+    font-size:0.875em;
+    border:1px solid Gray;
+    text-align:center;
+    vertical-align:top;
+    white-space:nowrap;
+    padding:3px;
+}
+table.summary {
+    border-collapse:collapse;
+    border:1px outset black;
+}
+table.summary th {
+    background-color:#eeeeee;
+    font-weight:normal;
+    text-align:left;
+    font-size:0.94em;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px;
+}
+table.summary td {
+    text-align:right;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px 5px 3px 10px;
+}
+span.mngl {
+    padding-left:1em;
+    font-size:0.875em;
+    cursor:text;
+    color:#444444;
+    font-weight:bold;
+}
+span.pleft {
+    padding-left:2.5em;
+}
+span.color_p {
+    font-style:italic;
+    color:Brown;
+}
+span.param {
+    font-style:italic;
+}
+span.focus_p {
+    font-style:italic;
+    background-color:#DCDCDC;
+}
+span.ttype {
+    font-weight:normal;
+}
+span.nowrap {
+    white-space:nowrap;
+}
+span.value {
+    white-space:nowrap;
+    font-weight:bold;
+}
+.passed {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.warning {
+    background-color:#F4F4AF;
+    font-weight:normal;
+}
+.failed {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.new {
+    background-color:#C6DEFF;
+    font-weight:normal;
+}
+
+.compatible {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.almost_compatible {
+    background-color:#FFDAA3;
+    font-weight:normal;
+}
+.incompatible {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.gray {
+    background-color:#DCDCDC;
+    font-weight:normal;
+}
+
+.top_ref {
+    font-size:0.69em;
+}
+.footer {
+    font-size:0.8125em;
+}
+
+</style>
+<script type="text/javascript" language="JavaScript">
+<!--
+function sC(header, id)
+{
+    e = document.getElementById(id);
+    if(e.style.display == 'none')
+    {
+        e.style.display = 'block';
+        e.style.visibility = 'visible';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[&minus;]");
+    }
+    else
+    {
+        e.style.display = 'none';
+        e.style.visibility = 'hidden';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[+]");
+    }
+}
+
+-->
+</script>
+</head>
+<body><a name='Top'></a><h1>Source compatibility report for the <span style='color:Blue;'>dropwizard-jersey</span> library between <span style='color:Red;'>0.9.3</span> and <span style='color:Red;'>1.0.0</span> versions</h1>
+
+<h2>Test Info</h2><hr/>
+<table class='summary'>
+<tr><th>Library Name</th><td>dropwizard-jersey</td></tr>
+<tr><th>Version #1</th><td>0.9.3</td></tr>
+<tr><th>Version #2</th><td>1.0.0</td></tr>
+</table>
+<h2>Test Results</h2><hr/>
+<table class='summary'>
+<tr><th>Total Java Modules</th><td><a href='#Checked_Archives' style='color:Blue;'>1</a></td></tr>
+<tr><th>Total Methods / Classes</th><td>237 / 61</td></tr>
+<tr><th>Compatibility</th>
+<td class='warning'>94.6%</td>
+</tr>
+</table>
+<h2>Problem Summary</h2><hr/>
+<table class='summary'>
+<tr><th></th><th style='text-align:center;'>Severity</th><th style='text-align:center;'>Count</th></tr>
+<tr><th>Added Methods</th><td>-</td><td class='new'><a href='#Added' style='color:Blue;'>97</a></td></tr>
+<tr><th>Removed Methods</th><td>High</td><td class='failed'><a href='#Removed' style='color:Blue;'>7</a></td></tr>
+<tr><th rowspan='3'>Problems with<br/>Data Types</th><td>High</td><td class='failed'><a href='#Type_Problems_High' style='color:Blue;'>1</a></td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td class='warning'><a href='#Type_Problems_Low' style='color:Blue;'>1</a></td></tr>
+<tr><th rowspan='3'>Problems with<br/>Methods</th><td>High</td><td>0</td></tr>
+<tr><td>Medium</td><td class='failed'><a href='#Method_Problems_Medium' style='color:Blue;'>2</a></td></tr>
+<tr><td>Low</td><td>0</td></tr>
+</table>
+
+<a name='Added'></a><h2>Added Methods <span class='new'>&nbsp;97&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>ConstraintMessage.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_111')">
+ConstraintMessage.determineStatus&#160;<span class='sym_p'><span>(&#160;Set&lt;T&gt; <span class='color_p'>violations</span></span>, <span>Invocable <span class='color_p'>invocable</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_111" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/ConstraintMessage.determineStatus:(Ljava/util/Set;Lorg/glassfish/jersey/server/model/Invocable;)I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_112')">
+ConstraintMessage.getMessage&#160;<span class='sym_p'><span>(&#160;ConstraintViolation&lt;?&gt; <span class='color_p'>v</span></span>, <span>Invocable <span class='color_p'>invocable</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_112" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/ConstraintMessage.getMessage:(Ljavax/validation/ConstraintViolation;Lorg/glassfish/jersey/server/model/Invocable;)Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_113')">
+ConstraintMessage.isRequestEntity&#160;<span class='sym_p'><span>(&#160;ConstraintViolation&lt;?&gt; <span class='color_p'>violation</span></span>, <span>Invocable <span class='color_p'>invocable</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Optional&lt;String&gt;</span></span>
+<br/>
+<div id="c_113" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/ConstraintMessage.isRequestEntity:(Ljavax/validation/ConstraintViolation;Lorg/glassfish/jersey/server/model/Invocable;)Ljava/util/Optional;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>DropwizardConfiguredValidator.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_114')">
+DropwizardConfiguredValidator.DropwizardConfiguredValidator&#160;<span class='sym_p'><span>(&#160;Validator <span class='color_p'>validator</span></span>&#160;)</span></span>
+<br/>
+<div id="c_114" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/DropwizardConfiguredValidator.&quot;&lt;init&gt;&quot;:(Ljavax/validation/Validator;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_115')">
+DropwizardConfiguredValidator.forExecutables&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ExecutableValidator</span></span>
+<br/>
+<div id="c_115" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/DropwizardConfiguredValidator.forExecutables:()Ljavax/validation/executable/ExecutableValidator;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_116')">
+DropwizardConfiguredValidator.getConstraintsForClass&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>aClass</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;BeanDescriptor</span></span>
+<br/>
+<div id="c_116" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/DropwizardConfiguredValidator.getConstraintsForClass:(Ljava/lang/Class;)Ljavax/validation/metadata/BeanDescriptor;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_117')">
+DropwizardConfiguredValidator.unwrap&#160;<span class='sym_p'><span>(&#160;Class&lt;T&gt; <span class='color_p'>aClass</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;T</span></span>
+<br/>
+<div id="c_117" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/DropwizardConfiguredValidator.unwrap:(Ljava/lang/Class;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_118')">
+DropwizardConfiguredValidator.validate&#160;<span class='sym_p'><span>(&#160;T <span class='color_p'>t</span></span>, <span>Class&lt;?&gt;... <span class='color_p'>classes</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;ConstraintViolation&lt;T&gt;&gt;</span></span>
+<br/>
+<div id="c_118" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/DropwizardConfiguredValidator.validate:(Ljava/lang/Object;[Ljava/lang/Class;)Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_119')">
+DropwizardConfiguredValidator.validateProperty&#160;<span class='sym_p'><span>(&#160;T <span class='color_p'>t</span></span>, <span>String <span class='color_p'>s</span></span>, <span>Class&lt;?&gt;... <span class='color_p'>classes</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;ConstraintViolation&lt;T&gt;&gt;</span></span>
+<br/>
+<div id="c_119" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/DropwizardConfiguredValidator.validateProperty:(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_120')">
+DropwizardConfiguredValidator.validateResourceAndInputParams&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>resource</span></span>, <span>Invocable <span class='color_p'>invocable</span></span>, <span>Object[&#160;] <span class='color_p'>objects</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_120" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/DropwizardConfiguredValidator.validateResourceAndInputParams:(Ljava/lang/Object;Lorg/glassfish/jersey/server/model/Invocable;[Ljava/lang/Object;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_121')">
+DropwizardConfiguredValidator.validateResult&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>resource</span></span>, <span>Invocable <span class='color_p'>invocable</span></span>, <span>Object <span class='color_p'>returnValue</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_121" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/DropwizardConfiguredValidator.validateResult:(Ljava/lang/Object;Lorg/glassfish/jersey/server/model/Invocable;Ljava/lang/Object;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_122')">
+DropwizardConfiguredValidator.validateValue&#160;<span class='sym_p'><span>(&#160;Class&lt;T&gt; <span class='color_p'>aClass</span></span>, <span>String <span class='color_p'>s</span></span>, <span>Object <span class='color_p'>o</span></span>, <span>Class&lt;?&gt;... <span class='color_p'>classes</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;ConstraintViolation&lt;T&gt;&gt;</span></span>
+<br/>
+<div id="c_122" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/DropwizardConfiguredValidator.validateValue:(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Class;)Ljava/util/Set;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>ErrorMessage.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.errors</span><br/>
+<span class="section" onclick="sC(this, 'c_123')">
+ErrorMessage.equals&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>obj</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_123" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/errors/ErrorMessage.equals:(Ljava/lang/Object;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_124')">
+ErrorMessage.hashCode&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_124" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/errors/ErrorMessage.hashCode:()I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_125')">
+ErrorMessage.toString&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_125" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/errors/ErrorMessage.toString:()Ljava/lang/String;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>Flash.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.sessions</span><br/>
+<span class="section" onclick="sC(this, 'c_126')">
+Flash&lt;T&gt;.get&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Optional&lt;T&gt;</span></span>
+<br/>
+<div id="c_126" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/sessions/Flash.get:()Ljava/util/Optional;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>HibernateValidationFeature.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_127')">
+HibernateValidationFeature.HibernateValidationFeature&#160;<span class='sym_p'><span>(&#160;Validator <span class='color_p'>validator</span></span>&#160;)</span></span>
+<br/>
+<div id="c_127" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/HibernateValidationFeature.&quot;&lt;init&gt;&quot;:(Ljavax/validation/Validator;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>JacksonMessageBodyProvider.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.jackson</span><br/>
+<span class="section" onclick="sC(this, 'c_128')">
+JacksonMessageBodyProvider.JacksonMessageBodyProvider&#160;<span class='sym_p'><span>(&#160;ObjectMapper <span class='color_p'>mapper</span></span>&#160;)</span></span>
+<br/>
+<div id="c_128" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jackson/JacksonMessageBodyProvider.&quot;&lt;init&gt;&quot;:(Lcom/fasterxml/jackson/databind/ObjectMapper;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>JerseyViolationException.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_129')">
+JerseyViolationException.getInvocable&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Invocable</span></span>
+<br/>
+<div id="c_129" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/JerseyViolationException.getInvocable:()Lorg/glassfish/jersey/server/model/Invocable;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_130')">
+JerseyViolationException.JerseyViolationException&#160;<span class='sym_p'><span>(&#160;Set&lt;?&gt; <span class='color_p'>constraintViolations</span></span>, <span>Invocable <span class='color_p'>invocable</span></span>&#160;)</span></span>
+<br/>
+<div id="c_130" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/JerseyViolationException.&quot;&lt;init&gt;&quot;:(Ljava/util/Set;Lorg/glassfish/jersey/server/model/Invocable;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>JerseyViolationExceptionMapper.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_131')">
+JerseyViolationExceptionMapper.JerseyViolationExceptionMapper&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_131" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/JerseyViolationExceptionMapper.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_132')">
+JerseyViolationExceptionMapper.toResponse&#160;<span class='sym_p'><span>(&#160;JerseyViolationException <span class='color_p'>exception</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Response</span></span>
+<br/>
+<div id="c_132" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/JerseyViolationExceptionMapper.toResponse:(Lio/dropwizard/jersey/validation/JerseyViolationException;)Ljavax/ws/rs/core/Response;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_133')">
+JerseyViolationExceptionMapper.toResponse&#160;<span class='sym_p'><span>(&#160;Throwable <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Response</span></span>
+<br/>
+<div id="c_133" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/JerseyViolationExceptionMapper.toResponse:(Ljava/lang/Throwable;)Ljavax/ws/rs/core/Response;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>LocalDateParam.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.jsr310</span><br/>
+<span class="section" onclick="sC(this, 'c_134')">
+LocalDateParam.LocalDateParam&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>input</span></span>&#160;)</span></span>
+<br/>
+<div id="c_134" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jsr310/LocalDateParam.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_135')">
+LocalDateParam.parse&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>input</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;LocalDate</span></span>
+<br/>
+<div id="c_135" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jsr310/LocalDateParam.parse:(Ljava/lang/String;)Ljava/time/LocalDate;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_136')">
+LocalDateParam.parse&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_136" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jsr310/LocalDateParam.parse:(Ljava/lang/String;)Ljava/lang/Object;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>LocalDateTimeParam.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.jsr310</span><br/>
+<span class="section" onclick="sC(this, 'c_137')">
+LocalDateTimeParam.LocalDateTimeParam&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>input</span></span>&#160;)</span></span>
+<br/>
+<div id="c_137" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jsr310/LocalDateTimeParam.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_138')">
+LocalDateTimeParam.parse&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>input</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;LocalDateTime</span></span>
+<br/>
+<div id="c_138" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jsr310/LocalDateTimeParam.parse:(Ljava/lang/String;)Ljava/time/LocalDateTime;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_139')">
+LocalDateTimeParam.parse&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_139" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jsr310/LocalDateTimeParam.parse:(Ljava/lang/String;)Ljava/lang/Object;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>LocalTimeParam.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.jsr310</span><br/>
+<span class="section" onclick="sC(this, 'c_140')">
+LocalTimeParam.LocalTimeParam&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>input</span></span>&#160;)</span></span>
+<br/>
+<div id="c_140" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jsr310/LocalTimeParam.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_141')">
+LocalTimeParam.parse&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>input</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;LocalTime</span></span>
+<br/>
+<div id="c_141" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jsr310/LocalTimeParam.parse:(Ljava/lang/String;)Ljava/time/LocalTime;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_142')">
+LocalTimeParam.parse&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_142" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jsr310/LocalTimeParam.parse:(Ljava/lang/String;)Ljava/lang/Object;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>NonEmptyStringParam.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.params</span><br/>
+<span class="section" onclick="sC(this, 'c_143')">
+NonEmptyStringParam.parse&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>input</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Optional&lt;String&gt;</span></span>
+<br/>
+<div id="c_143" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/params/NonEmptyStringParam.parse:(Ljava/lang/String;)Ljava/util/Optional;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>OffsetDateTimeParam.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.jsr310</span><br/>
+<span class="section" onclick="sC(this, 'c_144')">
+OffsetDateTimeParam.OffsetDateTimeParam&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>input</span></span>&#160;)</span></span>
+<br/>
+<div id="c_144" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jsr310/OffsetDateTimeParam.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_145')">
+OffsetDateTimeParam.parse&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>input</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;OffsetDateTime</span></span>
+<br/>
+<div id="c_145" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jsr310/OffsetDateTimeParam.parse:(Ljava/lang/String;)Ljava/time/OffsetDateTime;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_146')">
+OffsetDateTimeParam.parse&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_146" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jsr310/OffsetDateTimeParam.parse:(Ljava/lang/String;)Ljava/lang/Object;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>OptionalDoubleMessageBodyWriter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.optional</span><br/>
+<span class="section" onclick="sC(this, 'c_147')">
+OptionalDoubleMessageBodyWriter.getSize&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>Class <span class='color_p'>p2</span></span>, <span>Type <span class='color_p'>p3</span></span>, <span>Annotation[&#160;] <span class='color_p'>p4</span></span>, <span>MediaType <span class='color_p'>p5</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_147" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalDoubleMessageBodyWriter.getSize:(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;)J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_148')">
+OptionalDoubleMessageBodyWriter.getSize&#160;<span class='sym_p'><span>(&#160;OptionalDouble <span class='color_p'>entity</span></span>, <span>Class&lt;?&gt; <span class='color_p'>type</span></span>, <span>Type <span class='color_p'>genericType</span></span>, <span>Annotation[&#160;] <span class='color_p'>annotations</span></span>, <span>MediaType <span class='color_p'>mediaType</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_148" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalDoubleMessageBodyWriter.getSize:(Ljava/util/OptionalDouble;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;)J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_149')">
+OptionalDoubleMessageBodyWriter.isWriteable&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>, <span>Type <span class='color_p'>genericType</span></span>, <span>Annotation[&#160;] <span class='color_p'>annotations</span></span>, <span>MediaType <span class='color_p'>mediaType</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_149" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalDoubleMessageBodyWriter.isWriteable:(Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_150')">
+OptionalDoubleMessageBodyWriter.OptionalDoubleMessageBodyWriter&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_150" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalDoubleMessageBodyWriter.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_151')">
+OptionalDoubleMessageBodyWriter.writeTo&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>Class <span class='color_p'>p2</span></span>, <span>Type <span class='color_p'>p3</span></span>, <span>Annotation[&#160;] <span class='color_p'>p4</span></span>, <span>MediaType <span class='color_p'>p5</span></span>, <span>MultivaluedMap <span class='color_p'>p6</span></span>, <span>OutputStream <span class='color_p'>p7</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_151" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalDoubleMessageBodyWriter.writeTo:(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;Ljavax/ws/rs/core/MultivaluedMap;Ljava/io/OutputStream;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_152')">
+OptionalDoubleMessageBodyWriter.writeTo&#160;<span class='sym_p'><span>(&#160;OptionalDouble <span class='color_p'>entity</span></span>, <span>Class&lt;?&gt; <span class='color_p'>type</span></span>, <span>Type <span class='color_p'>genericType</span></span>, <span>Annotation[&#160;] <span class='color_p'>annotations</span></span>, <span>MediaType <span class='color_p'>mediaType</span></span>, <span>MultivaluedMap&lt;String,Object&gt; <span class='color_p'>httpHeaders</span></span>, <span>OutputStream <span class='color_p'>entityStream</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_152" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalDoubleMessageBodyWriter.writeTo:(Ljava/util/OptionalDouble;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;Ljavax/ws/rs/core/MultivaluedMap;Ljava/io/OutputStream;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>OptionalDoubleParamConverter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.optional</span><br/>
+<span class="section" onclick="sC(this, 'c_153')">
+OptionalDoubleParamConverterProvider.OptionalDoubleParamConverter.fromString&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_153" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalDoubleParamConverterProvider.OptionalDoubleParamConverter.fromString:(Ljava/lang/String;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_154')">
+OptionalDoubleParamConverterProvider.OptionalDoubleParamConverter.fromString&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>value</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;OptionalDouble</span></span>
+<br/>
+<div id="c_154" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalDoubleParamConverterProvider.OptionalDoubleParamConverter.fromString:(Ljava/lang/String;)Ljava/util/OptionalDouble;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_155')">
+OptionalDoubleParamConverterProvider.OptionalDoubleParamConverter.OptionalDoubleParamConverterProvider.OptionalDoubleParamConverter&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_155" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalDoubleParamConverterProvider.OptionalDoubleParamConverter.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_156')">
+OptionalDoubleParamConverterProvider.OptionalDoubleParamConverter.toString&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_156" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalDoubleParamConverterProvider.OptionalDoubleParamConverter.toString:(Ljava/lang/Object;)Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_157')">
+OptionalDoubleParamConverterProvider.OptionalDoubleParamConverter.toString&#160;<span class='sym_p'><span>(&#160;OptionalDouble <span class='color_p'>value</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_157" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalDoubleParamConverterProvider.OptionalDoubleParamConverter.toString:(Ljava/util/OptionalDouble;)Ljava/lang/String;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>OptionalDoubleParamConverterProvider.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.optional</span><br/>
+<span class="section" onclick="sC(this, 'c_158')">
+OptionalDoubleParamConverterProvider.getConverter&#160;<span class='sym_p'><span>(&#160;Class&lt;T&gt; <span class='color_p'>rawType</span></span>, <span>Type <span class='color_p'>genericType</span></span>, <span>Annotation[&#160;] <span class='color_p'>annotations</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ParamConverter&lt;T&gt;</span></span>
+<br/>
+<div id="c_158" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalDoubleParamConverterProvider.getConverter:(Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;)Ljavax/ws/rs/ext/ParamConverter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_159')">
+OptionalDoubleParamConverterProvider.OptionalDoubleParamConverterProvider&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_159" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalDoubleParamConverterProvider.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>OptionalIntMessageBodyWriter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.optional</span><br/>
+<span class="section" onclick="sC(this, 'c_160')">
+OptionalIntMessageBodyWriter.getSize&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>Class <span class='color_p'>p2</span></span>, <span>Type <span class='color_p'>p3</span></span>, <span>Annotation[&#160;] <span class='color_p'>p4</span></span>, <span>MediaType <span class='color_p'>p5</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_160" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalIntMessageBodyWriter.getSize:(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;)J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_161')">
+OptionalIntMessageBodyWriter.getSize&#160;<span class='sym_p'><span>(&#160;OptionalInt <span class='color_p'>entity</span></span>, <span>Class&lt;?&gt; <span class='color_p'>type</span></span>, <span>Type <span class='color_p'>genericType</span></span>, <span>Annotation[&#160;] <span class='color_p'>annotations</span></span>, <span>MediaType <span class='color_p'>mediaType</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_161" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalIntMessageBodyWriter.getSize:(Ljava/util/OptionalInt;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;)J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_162')">
+OptionalIntMessageBodyWriter.isWriteable&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>, <span>Type <span class='color_p'>genericType</span></span>, <span>Annotation[&#160;] <span class='color_p'>annotations</span></span>, <span>MediaType <span class='color_p'>mediaType</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_162" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalIntMessageBodyWriter.isWriteable:(Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_163')">
+OptionalIntMessageBodyWriter.OptionalIntMessageBodyWriter&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_163" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalIntMessageBodyWriter.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_164')">
+OptionalIntMessageBodyWriter.writeTo&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>Class <span class='color_p'>p2</span></span>, <span>Type <span class='color_p'>p3</span></span>, <span>Annotation[&#160;] <span class='color_p'>p4</span></span>, <span>MediaType <span class='color_p'>p5</span></span>, <span>MultivaluedMap <span class='color_p'>p6</span></span>, <span>OutputStream <span class='color_p'>p7</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_164" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalIntMessageBodyWriter.writeTo:(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;Ljavax/ws/rs/core/MultivaluedMap;Ljava/io/OutputStream;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_165')">
+OptionalIntMessageBodyWriter.writeTo&#160;<span class='sym_p'><span>(&#160;OptionalInt <span class='color_p'>entity</span></span>, <span>Class&lt;?&gt; <span class='color_p'>type</span></span>, <span>Type <span class='color_p'>genericType</span></span>, <span>Annotation[&#160;] <span class='color_p'>annotations</span></span>, <span>MediaType <span class='color_p'>mediaType</span></span>, <span>MultivaluedMap&lt;String,Object&gt; <span class='color_p'>httpHeaders</span></span>, <span>OutputStream <span class='color_p'>entityStream</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_165" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalIntMessageBodyWriter.writeTo:(Ljava/util/OptionalInt;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;Ljavax/ws/rs/core/MultivaluedMap;Ljava/io/OutputStream;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>OptionalIntParamConverter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.optional</span><br/>
+<span class="section" onclick="sC(this, 'c_166')">
+OptionalIntParamConverterProvider.OptionalIntParamConverter.fromString&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_166" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalIntParamConverterProvider.OptionalIntParamConverter.fromString:(Ljava/lang/String;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_167')">
+OptionalIntParamConverterProvider.OptionalIntParamConverter.fromString&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>value</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;OptionalInt</span></span>
+<br/>
+<div id="c_167" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalIntParamConverterProvider.OptionalIntParamConverter.fromString:(Ljava/lang/String;)Ljava/util/OptionalInt;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_168')">
+OptionalIntParamConverterProvider.OptionalIntParamConverter.OptionalIntParamConverterProvider.OptionalIntParamConverter&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_168" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalIntParamConverterProvider.OptionalIntParamConverter.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_169')">
+OptionalIntParamConverterProvider.OptionalIntParamConverter.toString&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_169" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalIntParamConverterProvider.OptionalIntParamConverter.toString:(Ljava/lang/Object;)Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_170')">
+OptionalIntParamConverterProvider.OptionalIntParamConverter.toString&#160;<span class='sym_p'><span>(&#160;OptionalInt <span class='color_p'>value</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_170" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalIntParamConverterProvider.OptionalIntParamConverter.toString:(Ljava/util/OptionalInt;)Ljava/lang/String;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>OptionalIntParamConverterProvider.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.optional</span><br/>
+<span class="section" onclick="sC(this, 'c_171')">
+OptionalIntParamConverterProvider.getConverter&#160;<span class='sym_p'><span>(&#160;Class&lt;T&gt; <span class='color_p'>rawType</span></span>, <span>Type <span class='color_p'>genericType</span></span>, <span>Annotation[&#160;] <span class='color_p'>annotations</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ParamConverter&lt;T&gt;</span></span>
+<br/>
+<div id="c_171" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalIntParamConverterProvider.getConverter:(Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;)Ljavax/ws/rs/ext/ParamConverter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_172')">
+OptionalIntParamConverterProvider.OptionalIntParamConverterProvider&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_172" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalIntParamConverterProvider.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>OptionalLongMessageBodyWriter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.optional</span><br/>
+<span class="section" onclick="sC(this, 'c_173')">
+OptionalLongMessageBodyWriter.getSize&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>Class <span class='color_p'>p2</span></span>, <span>Type <span class='color_p'>p3</span></span>, <span>Annotation[&#160;] <span class='color_p'>p4</span></span>, <span>MediaType <span class='color_p'>p5</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_173" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalLongMessageBodyWriter.getSize:(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;)J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_174')">
+OptionalLongMessageBodyWriter.getSize&#160;<span class='sym_p'><span>(&#160;OptionalLong <span class='color_p'>entity</span></span>, <span>Class&lt;?&gt; <span class='color_p'>type</span></span>, <span>Type <span class='color_p'>genericType</span></span>, <span>Annotation[&#160;] <span class='color_p'>annotations</span></span>, <span>MediaType <span class='color_p'>mediaType</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_174" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalLongMessageBodyWriter.getSize:(Ljava/util/OptionalLong;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;)J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_175')">
+OptionalLongMessageBodyWriter.isWriteable&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>, <span>Type <span class='color_p'>genericType</span></span>, <span>Annotation[&#160;] <span class='color_p'>annotations</span></span>, <span>MediaType <span class='color_p'>mediaType</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_175" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalLongMessageBodyWriter.isWriteable:(Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_176')">
+OptionalLongMessageBodyWriter.OptionalLongMessageBodyWriter&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_176" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalLongMessageBodyWriter.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_177')">
+OptionalLongMessageBodyWriter.writeTo&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>Class <span class='color_p'>p2</span></span>, <span>Type <span class='color_p'>p3</span></span>, <span>Annotation[&#160;] <span class='color_p'>p4</span></span>, <span>MediaType <span class='color_p'>p5</span></span>, <span>MultivaluedMap <span class='color_p'>p6</span></span>, <span>OutputStream <span class='color_p'>p7</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_177" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalLongMessageBodyWriter.writeTo:(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;Ljavax/ws/rs/core/MultivaluedMap;Ljava/io/OutputStream;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_178')">
+OptionalLongMessageBodyWriter.writeTo&#160;<span class='sym_p'><span>(&#160;OptionalLong <span class='color_p'>entity</span></span>, <span>Class&lt;?&gt; <span class='color_p'>type</span></span>, <span>Type <span class='color_p'>genericType</span></span>, <span>Annotation[&#160;] <span class='color_p'>annotations</span></span>, <span>MediaType <span class='color_p'>mediaType</span></span>, <span>MultivaluedMap&lt;String,Object&gt; <span class='color_p'>httpHeaders</span></span>, <span>OutputStream <span class='color_p'>entityStream</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_178" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalLongMessageBodyWriter.writeTo:(Ljava/util/OptionalLong;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;Ljavax/ws/rs/core/MultivaluedMap;Ljava/io/OutputStream;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>OptionalLongParamConverter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.optional</span><br/>
+<span class="section" onclick="sC(this, 'c_179')">
+OptionalLongParamConverterProvider.OptionalLongParamConverter.fromString&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_179" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalLongParamConverterProvider.OptionalLongParamConverter.fromString:(Ljava/lang/String;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_180')">
+OptionalLongParamConverterProvider.OptionalLongParamConverter.fromString&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>value</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;OptionalLong</span></span>
+<br/>
+<div id="c_180" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalLongParamConverterProvider.OptionalLongParamConverter.fromString:(Ljava/lang/String;)Ljava/util/OptionalLong;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_181')">
+OptionalLongParamConverterProvider.OptionalLongParamConverter.OptionalLongParamConverterProvider.OptionalLongParamConverter&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_181" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalLongParamConverterProvider.OptionalLongParamConverter.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_182')">
+OptionalLongParamConverterProvider.OptionalLongParamConverter.toString&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_182" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalLongParamConverterProvider.OptionalLongParamConverter.toString:(Ljava/lang/Object;)Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_183')">
+OptionalLongParamConverterProvider.OptionalLongParamConverter.toString&#160;<span class='sym_p'><span>(&#160;OptionalLong <span class='color_p'>value</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_183" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalLongParamConverterProvider.OptionalLongParamConverter.toString:(Ljava/util/OptionalLong;)Ljava/lang/String;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>OptionalLongParamConverterProvider.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.optional</span><br/>
+<span class="section" onclick="sC(this, 'c_184')">
+OptionalLongParamConverterProvider.getConverter&#160;<span class='sym_p'><span>(&#160;Class&lt;T&gt; <span class='color_p'>rawType</span></span>, <span>Type <span class='color_p'>genericType</span></span>, <span>Annotation[&#160;] <span class='color_p'>annotations</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ParamConverter&lt;T&gt;</span></span>
+<br/>
+<div id="c_184" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalLongParamConverterProvider.getConverter:(Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;)Ljavax/ws/rs/ext/ParamConverter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_185')">
+OptionalLongParamConverterProvider.OptionalLongParamConverterProvider&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_185" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalLongParamConverterProvider.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>OptionalMessageBodyWriter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.optional</span><br/>
+<span class="section" onclick="sC(this, 'c_186')">
+OptionalMessageBodyWriter.getSize&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>Class <span class='color_p'>p2</span></span>, <span>Type <span class='color_p'>p3</span></span>, <span>Annotation[&#160;] <span class='color_p'>p4</span></span>, <span>MediaType <span class='color_p'>p5</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_186" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalMessageBodyWriter.getSize:(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;)J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_187')">
+OptionalMessageBodyWriter.getSize&#160;<span class='sym_p'><span>(&#160;Optional&lt;?&gt; <span class='color_p'>entity</span></span>, <span>Class&lt;?&gt; <span class='color_p'>type</span></span>, <span>Type <span class='color_p'>genericType</span></span>, <span>Annotation[&#160;] <span class='color_p'>annotations</span></span>, <span>MediaType <span class='color_p'>mediaType</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_187" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalMessageBodyWriter.getSize:(Ljava/util/Optional;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;)J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_188')">
+OptionalMessageBodyWriter.isWriteable&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>, <span>Type <span class='color_p'>genericType</span></span>, <span>Annotation[&#160;] <span class='color_p'>annotations</span></span>, <span>MediaType <span class='color_p'>mediaType</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_188" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalMessageBodyWriter.isWriteable:(Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_189')">
+OptionalMessageBodyWriter.OptionalMessageBodyWriter&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_189" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalMessageBodyWriter.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_190')">
+OptionalMessageBodyWriter.writeTo&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>Class <span class='color_p'>p2</span></span>, <span>Type <span class='color_p'>p3</span></span>, <span>Annotation[&#160;] <span class='color_p'>p4</span></span>, <span>MediaType <span class='color_p'>p5</span></span>, <span>MultivaluedMap <span class='color_p'>p6</span></span>, <span>OutputStream <span class='color_p'>p7</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_190" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalMessageBodyWriter.writeTo:(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;Ljavax/ws/rs/core/MultivaluedMap;Ljava/io/OutputStream;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_191')">
+OptionalMessageBodyWriter.writeTo&#160;<span class='sym_p'><span>(&#160;Optional&lt;?&gt; <span class='color_p'>entity</span></span>, <span>Class&lt;?&gt; <span class='color_p'>type</span></span>, <span>Type <span class='color_p'>genericType</span></span>, <span>Annotation[&#160;] <span class='color_p'>annotations</span></span>, <span>MediaType <span class='color_p'>mediaType</span></span>, <span>MultivaluedMap&lt;String,Object&gt; <span class='color_p'>httpHeaders</span></span>, <span>OutputStream <span class='color_p'>entityStream</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_191" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalMessageBodyWriter.writeTo:(Ljava/util/Optional;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;Ljavax/ws/rs/core/MultivaluedMap;Ljava/io/OutputStream;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>OptionalParamConverterProvider.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.optional</span><br/>
+<span class="section" onclick="sC(this, 'c_192')">
+OptionalParamConverterProvider.getConverter&#160;<span class='sym_p'><span>(&#160;Class&lt;T&gt; <span class='color_p'>rawType</span></span>, <span>Type <span class='color_p'>genericType</span></span>, <span>Annotation[&#160;] <span class='color_p'>annotations</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ParamConverter&lt;T&gt;</span></span>
+<br/>
+<div id="c_192" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalParamConverterProvider.getConverter:(Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;)Ljavax/ws/rs/ext/ParamConverter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_193')">
+OptionalParamConverterProvider.OptionalParamConverterProvider&#160;<span class='sym_p'><span>(&#160;ServiceLocator <span class='color_p'>locator</span></span>&#160;)</span></span>
+<br/>
+<div id="c_193" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalParamConverterProvider.&quot;&lt;init&gt;&quot;:(Lorg/glassfish/hk2/api/ServiceLocator;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>OptionalParamFeature.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.optional</span><br/>
+<span class="section" onclick="sC(this, 'c_194')">
+OptionalParamFeature.configure&#160;<span class='sym_p'><span>(&#160;FeatureContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_194" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalParamFeature.configure:(Ljavax/ws/rs/core/FeatureContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_195')">
+OptionalParamFeature.OptionalParamFeature&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_195" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalParamFeature.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>YearMonthParam.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.jsr310</span><br/>
+<span class="section" onclick="sC(this, 'c_196')">
+YearMonthParam.parse&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>input</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;YearMonth</span></span>
+<br/>
+<div id="c_196" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jsr310/YearMonthParam.parse:(Ljava/lang/String;)Ljava/time/YearMonth;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_197')">
+YearMonthParam.parse&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_197" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jsr310/YearMonthParam.parse:(Ljava/lang/String;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_198')">
+YearMonthParam.YearMonthParam&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>input</span></span>&#160;)</span></span>
+<br/>
+<div id="c_198" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jsr310/YearMonthParam.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>YearParam.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.jsr310</span><br/>
+<span class="section" onclick="sC(this, 'c_199')">
+YearParam.parse&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>input</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Year</span></span>
+<br/>
+<div id="c_199" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jsr310/YearParam.parse:(Ljava/lang/String;)Ljava/time/Year;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_200')">
+YearParam.parse&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_200" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jsr310/YearParam.parse:(Ljava/lang/String;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_201')">
+YearParam.YearParam&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>input</span></span>&#160;)</span></span>
+<br/>
+<div id="c_201" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jsr310/YearParam.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>ZonedDateTimeParam.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.jsr310</span><br/>
+<span class="section" onclick="sC(this, 'c_202')">
+ZonedDateTimeParam.parse&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>input</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ZonedDateTime</span></span>
+<br/>
+<div id="c_202" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jsr310/ZonedDateTimeParam.parse:(Ljava/lang/String;)Ljava/time/ZonedDateTime;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_203')">
+ZonedDateTimeParam.parse&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_203" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jsr310/ZonedDateTimeParam.parse:(Ljava/lang/String;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_204')">
+ZonedDateTimeParam.ZonedDateTimeParam&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>input</span></span>&#160;)</span></span>
+<br/>
+<div id="c_204" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jsr310/ZonedDateTimeParam.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.0.0.jar</span>, <span class='cname'>ZoneIdParam.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.jsr310</span><br/>
+<span class="section" onclick="sC(this, 'c_205')">
+ZoneIdParam.parse&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>input</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ZoneId</span></span>
+<br/>
+<div id="c_205" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jsr310/ZoneIdParam.parse:(Ljava/lang/String;)Ljava/time/ZoneId;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_206')">
+ZoneIdParam.parse&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_206" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jsr310/ZoneIdParam.parse:(Ljava/lang/String;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_207')">
+ZoneIdParam.ZoneIdParam&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>input</span></span>&#160;)</span></span>
+<br/>
+<div id="c_207" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jsr310/ZoneIdParam.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Removed'></a><a name='Withdrawn'></a><h2>Removed Methods <span class='failed'>&nbsp;7&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-jersey-0.9.3.jar</span>, <span class='cname'>ConstraintMessage.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_208')">
+ConstraintMessage.getMessage&#160;<span class='sym_p'><span>(&#160;ConstraintViolation&lt;?&gt; <span class='color_p'>v</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_208" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/ConstraintMessage.getMessage:(Ljavax/validation/ConstraintViolation;)Ljava/lang/String;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-0.9.3.jar</span>, <span class='cname'>ConstraintViolationExceptionMapper.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_209')">
+ConstraintViolationExceptionMapper.ConstraintViolationExceptionMapper&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_209" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/ConstraintViolationExceptionMapper.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_210')">
+ConstraintViolationExceptionMapper.toResponse&#160;<span class='sym_p'><span>(&#160;ConstraintViolationException <span class='color_p'>exception</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Response</span></span>
+<br/>
+<div id="c_210" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/ConstraintViolationExceptionMapper.toResponse:(Ljavax/validation/ConstraintViolationException;)Ljavax/ws/rs/core/Response;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_211')">
+ConstraintViolationExceptionMapper.toResponse&#160;<span class='sym_p'><span>(&#160;Throwable <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Response</span></span>
+<br/>
+<div id="c_211" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/ConstraintViolationExceptionMapper.toResponse:(Ljava/lang/Throwable;)Ljavax/ws/rs/core/Response;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-0.9.3.jar</span>, <span class='cname'>Flash.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.sessions</span><br/>
+<span class="section" onclick="sC(this, 'c_212')">
+Flash&lt;T&gt;.get&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Optional&lt;T&gt;</span></span>
+<br/>
+<div id="c_212" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/sessions/Flash.get:()Lcom/google/common/base/Optional;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-0.9.3.jar</span>, <span class='cname'>HibernateValidationFeature.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_213')">
+HibernateValidationFeature.HibernateValidationFeature&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_213" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/HibernateValidationFeature.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-0.9.3.jar</span>, <span class='cname'>JacksonMessageBodyProvider.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.jackson</span><br/>
+<span class="section" onclick="sC(this, 'c_214')">
+JacksonMessageBodyProvider.JacksonMessageBodyProvider&#160;<span class='sym_p'><span>(&#160;ObjectMapper <span class='color_p'>mapper</span></span>, <span>Validator <span class='color_p'>validator</span></span>&#160;)</span></span>
+<br/>
+<div id="c_214" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jackson/JacksonMessageBodyProvider.&quot;&lt;init&gt;&quot;:(Lcom/fasterxml/jackson/databind/ObjectMapper;Ljavax/validation/Validator;)V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='High_Risk_Problems'></a><a name='Type_Problems_High'></a>
+<h2>Problems with Data Types, High Severity <span class='failed'>&nbsp;1&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-jersey-0.9.3.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_215')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> ConstraintViolationExceptionMapper <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_215" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>ConstraintViolationExceptionMapper</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_216')">
+[+] affected methods: 3 (1.3%)</span>
+<div id="c_216" style="display:none;">
+<div class='affected'><span class='iname_a'>ConstraintViolationExceptionMapper.ConstraintViolationExceptionMapper&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'ConstraintViolationExceptionMapper' class.</div>
+<span class='iname_a'>ConstraintViolationExceptionMapper.toResponse&#160;<span class='sym_p'><span>(&#160;Throwable <i>p1</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ConstraintViolationExceptionMapper' class.</div>
+<span class='iname_a'>ConstraintViolationExceptionMapper.toResponse&#160;<span class='sym_p'><span>(&#160;ConstraintViolationException <i>exception</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ConstraintViolationExceptionMapper' class.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Medium_Risk_Problems'></a><a name='Method_Problems_Medium'></a>
+<h2>Problems with Methods, Medium Severity <span class='failed'>&nbsp;2&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-jersey-0.9.3.jar</span>, <span class='cname'>Flash.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.sessions</span><br/>
+<span class="section" onclick="sC(this, 'c_217')">
+<span class='ext'>[+]</span> Flash&lt;T&gt;.get&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Optional&lt;T&gt;</span> <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_217" style="display:none;">
+<span class='mngl pleft'>io/dropwizard/jersey/sessions/Flash.get:()Lcom/google/common/base/Optional;</span><br/>
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Return value type has been changed from <b>com.google.common.base.Optional&lt;T&gt;</b> to <b>java.util.Optional&lt;T&gt;</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: incompatible types: <b>java.util.Optional&lt;T&gt;</b> cannot be converted to <b>com.google.common.base.Optional&lt;T&gt;</b>.</td>
+</tr>
+</table><br/></div>
+
+<br/><span class='jar'>dropwizard-jersey-0.9.3.jar</span>, <span class='cname'>NonEmptyStringParam.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.params</span><br/>
+<span class="section" onclick="sC(this, 'c_218')">
+<span class='ext'>[+]</span> NonEmptyStringParam.parse&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span> <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_218" style="display:none;">
+<span class='mngl pleft'>io/dropwizard/jersey/params/NonEmptyStringParam.parse:(Ljava/lang/String;)Ljava/lang/Object;</span><br/>
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Return value type has been changed from <b>java.lang.Object</b> to <b>java.util.Optional&lt;java.lang.String&gt;</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: incompatible types: <b>java.util.Optional&lt;java.lang.String&gt;</b> cannot be converted to <b>java.lang.Object</b>.</td>
+</tr>
+</table><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Low_Risk_Problems'></a><a name='Type_Problems_Low'></a>
+<h2>Problems with Data Types, Low Severity <span class='warning'>&nbsp;1&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-jersey-0.9.3.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.params</span><br/>
+<span class="section" onclick="sC(this, 'c_219')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> NonEmptyStringParam <span class='warning'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_219" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Superclass has been changed from <b>AbstractParam&lt;com.google.common.base.Optional&lt;java.lang.String&gt;&gt;</b> to <b>AbstractParam&lt;java.util.Optional&lt;java.lang.String&gt;&gt;</b>.</td>
+<td>1) Recompilation of a client program may be terminated with the message: cannot find variable (or method) in <b>NonEmptyStringParam</b>.<br/>2) A static field from a super-interface of a client class may hide a field (with the same name) inherited from new super-class. Recompilation of a client class may be terminated with the message: reference to variable is ambiguous.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_220')">
+[+] affected methods: 3 (1.3%)</span>
+<div id="c_220" style="display:none;">
+<div class='affected'><span class='iname_a'>NonEmptyStringParam.NonEmptyStringParam&#160;<span class='sym_p'><span>(&#160;String <i>input</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'NonEmptyStringParam' class.</div>
+<span class='iname_a'>NonEmptyStringParam.parse&#160;<span class='sym_p'><span>(&#160;String <i>p1</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'NonEmptyStringParam' class.</div>
+<span class='iname_a'>io.dropwizard.jersey.validation.NonEmptyStringParamUnwrapper.handleValidatedValue&#160;<span class='sym_p'><span>(&#160;NonEmptyStringParam <span class='focus_p'>nonEmptyStringParam</span></span>&#160;)</span></span><br/><div class='affect'>1st parameter 'nonEmptyStringParam'  of this method is of type 'NonEmptyStringParam'.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Checked_Archives'></a><h2>Java Archives <span class='gray'>&nbsp;1&nbsp;</span></h2>
+<hr/><div class='jar_list'>
+dropwizard-jersey-0.9.3.jar<br/>
+</div><br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<br/><br/><br/>
+<hr/><div class='footer' align='right'><i>Generated by <a href='https://github.com/lvc/japi-compliance-checker'>Java API Compliance Checker</a> 2.4 &#160;</i></div><br/>
+</body></html>
