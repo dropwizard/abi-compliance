@@ -3,5 +3,7 @@
   "extends": [
     "local>dropwizard/renovate-config"
   ],
-  "baseBranches": ["master"]
+  "baseBranchPatterns": [
+    "master"
+  ]
 }
