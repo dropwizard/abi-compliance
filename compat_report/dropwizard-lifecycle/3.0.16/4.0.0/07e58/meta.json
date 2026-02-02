@@ -1,0 +1,11 @@
+{
+  "Affected": "3.3",
+  "Added": 0,
+  "Removed": 2,
+  "TotalProblems": 0,
+  "Source_Affected": "3.3",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/dropwizard-lifecycle/3.0.16/4.0.0/07e58/src_compat_report.html",
+  "Archive1": "dropwizard-lifecycle-3.0.16.jar",
+  "Archive2": "dropwizard-lifecycle-4.0.0.jar"
+}

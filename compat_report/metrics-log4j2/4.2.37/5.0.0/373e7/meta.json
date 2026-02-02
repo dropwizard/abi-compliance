@@ -1,0 +1,11 @@
+{
+  "Affected": "100",
+  "Added": 8,
+  "Removed": 8,
+  "TotalProblems": 1,
+  "Source_Affected": "100",
+  "Source_TotalProblems": "1",
+  "Source_ReportPath": "compat_report/metrics-log4j2/4.2.37/5.0.0/373e7/src_compat_report.html",
+  "Archive1": "metrics-log4j2-4.2.37.jar",
+  "Archive2": "metrics-log4j2-5.0.0.jar"
+}

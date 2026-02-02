@@ -1,0 +1,21 @@
+$VAR1 = {
+          'APIDump' => {
+                         '0.9.0-1' => {
+                                        '60149' => {
+                                                     'Archive' => 'dropwizard-java8-testing-0.9.0-1.jar',
+                                                     'Path' => 'api_dump/dropwizard-java8-testing/0.9.0-1/60149/API.dump.tar.gz',
+                                                     'TotalSymbols' => '2'
+                                                   }
+                                      }
+                       },
+          'APIReport' => {},
+          'APIReport_D' => {},
+          'Changelog' => {},
+          'Date' => {
+                      '0.9.0-1' => '29-2015-10 00:28'
+                    },
+          'Maintainer' => 'Dropwizard Committers',
+          'MaintainerUrl' => 'https://www.dropwizard.io/',
+          'PackageDiff' => {},
+          'Title' => 'Dropwizard Test Helpers with Java 8 support'
+        };

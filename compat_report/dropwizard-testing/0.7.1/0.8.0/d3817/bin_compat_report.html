@@ -1,0 +1,721 @@
+<!-- kind:binary;verdict:incompatible;affected:50;added:37;removed:7;type_problems_high:2;type_problems_medium:0;type_problems_low:1;method_problems_high:2;method_problems_medium:0;method_problems_low:1;checked_methods:63;checked_types:11;tool_version:2.4 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="dropwizard-testing, binary, compatibility" />
+<meta name="description" content="Binary compatibility report for the dropwizard-testing library between 0.7.1 and 0.8.0 versions" />
+<title>dropwizard-testing: 0.7.1 to 0.8.0 binary compatibility report</title>
+<style type="text/css">
+body {
+    font-family:Arial, sans-serif;
+    background-color:White;
+    color:Black;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+    white-space:nowrap;
+}
+div.symbols {
+    color:#003E69;
+}
+div.symbols i {
+    color:Brown;
+}
+span.section {
+    font-weight:bold;
+    cursor:pointer;
+    color:#003E69;
+    white-space:nowrap;
+    margin-left:0.3125em;
+}
+span:hover.section {
+    color:#336699;
+}
+span.sect_aff {
+    cursor:pointer;
+    padding-left:1.55em;
+    font-size:0.875em;
+    color:#cc3300;
+}
+span.ext {
+    font-weight:normal;
+}
+span.jar {
+    color:#cc3300;
+    font-size:0.875em;
+    font-weight:bold;
+}
+div.jar_list {
+    padding-left:0.4em;
+    font-size:0.94em;
+}
+span.pkg_t {
+    color:#408080;
+    font-size:0.875em;
+}
+span.pkg {
+    color:#408080;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.cname {
+    color:Green;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.iname_b {
+    font-weight:bold;
+}
+span.iname_a {
+    color:#333333;
+    font-weight:bold;
+    font-size:0.94em;
+}
+span.sym_p {
+    font-weight:normal;
+    white-space:normal;
+}
+span.sym_pd {
+    white-space:normal;
+}
+span.sym_p span, span.sym_pd span {
+    white-space:nowrap;
+}
+span.attr {
+    color:Black;
+    font-weight:normal;
+}
+span.deprecated {
+    color:Red;
+    font-weight:bold;
+    font-family:Monaco, monospace;
+}
+div.affect {
+    padding-left:1em;
+    padding-bottom:10px;
+    font-size:0.87em;
+    font-style:italic;
+    line-height:0.9em;
+}
+div.affected {
+    padding-left:2em;
+    padding-top:10px;
+}
+table.ptable {
+    border-collapse:collapse;
+    border:1px outset black;
+    margin-left:0.95em;
+    margin-top:3px;
+    margin-bottom:3px;
+    width:56.25em;
+}
+table.ptable td {
+    border:1px solid Gray;
+    padding:3px;
+    font-size:0.875em;
+    text-align:left;
+    vertical-align:top;
+    max-width:28em;
+    word-wrap:break-word;
+}
+table.ptable th {
+    background-color:#eeeeee;
+    font-weight:bold;
+    color:#333333;
+    font-family:Verdana, Arial;
+    font-size:0.875em;
+    border:1px solid Gray;
+    text-align:center;
+    vertical-align:top;
+    white-space:nowrap;
+    padding:3px;
+}
+table.summary {
+    border-collapse:collapse;
+    border:1px outset black;
+}
+table.summary th {
+    background-color:#eeeeee;
+    font-weight:normal;
+    text-align:left;
+    font-size:0.94em;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px;
+}
+table.summary td {
+    text-align:right;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px 5px 3px 10px;
+}
+span.mngl {
+    padding-left:1em;
+    font-size:0.875em;
+    cursor:text;
+    color:#444444;
+    font-weight:bold;
+}
+span.pleft {
+    padding-left:2.5em;
+}
+span.color_p {
+    font-style:italic;
+    color:Brown;
+}
+span.param {
+    font-style:italic;
+}
+span.focus_p {
+    font-style:italic;
+    background-color:#DCDCDC;
+}
+span.ttype {
+    font-weight:normal;
+}
+span.nowrap {
+    white-space:nowrap;
+}
+span.value {
+    white-space:nowrap;
+    font-weight:bold;
+}
+.passed {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.warning {
+    background-color:#F4F4AF;
+    font-weight:normal;
+}
+.failed {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.new {
+    background-color:#C6DEFF;
+    font-weight:normal;
+}
+
+.compatible {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.almost_compatible {
+    background-color:#FFDAA3;
+    font-weight:normal;
+}
+.incompatible {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.gray {
+    background-color:#DCDCDC;
+    font-weight:normal;
+}
+
+.top_ref {
+    font-size:0.69em;
+}
+.footer {
+    font-size:0.8125em;
+}
+
+</style>
+<script type="text/javascript" language="JavaScript">
+<!--
+function sC(header, id)
+{
+    e = document.getElementById(id);
+    if(e.style.display == 'none')
+    {
+        e.style.display = 'block';
+        e.style.visibility = 'visible';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[&minus;]");
+    }
+    else
+    {
+        e.style.display = 'none';
+        e.style.visibility = 'hidden';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[+]");
+    }
+}
+
+-->
+</script>
+</head>
+<body><a name='Top'></a><h1>Binary compatibility report for the <span style='color:Blue;'>dropwizard-testing</span> library between <span style='color:Red;'>0.7.1</span> and <span style='color:Red;'>0.8.0</span> versions</h1>
+
+<h2>Test Info</h2><hr/>
+<table class='summary'>
+<tr><th>Library Name</th><td>dropwizard-testing</td></tr>
+<tr><th>Version #1</th><td>0.7.1</td></tr>
+<tr><th>Version #2</th><td>0.8.0</td></tr>
+</table>
+<h2>Test Results</h2><hr/>
+<table class='summary'>
+<tr><th>Total Java Modules</th><td><a href='#Checked_Archives' style='color:Blue;'>1</a></td></tr>
+<tr><th>Total Methods / Classes</th><td>63 / 11</td></tr>
+<tr><th>Compatibility</th>
+<td class='incompatible'>50%</td>
+</tr>
+</table>
+<h2>Problem Summary</h2><hr/>
+<table class='summary'>
+<tr><th></th><th style='text-align:center;'>Severity</th><th style='text-align:center;'>Count</th></tr>
+<tr><th>Added Methods</th><td>-</td><td class='new'><a href='#Added' style='color:Blue;'>37</a></td></tr>
+<tr><th>Removed Methods</th><td>High</td><td class='failed'><a href='#Removed' style='color:Blue;'>7</a></td></tr>
+<tr><th rowspan='3'>Problems with<br/>Data Types</th><td>High</td><td class='failed'><a href='#Type_Problems_High' style='color:Blue;'>2</a></td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td class='warning'><a href='#Type_Problems_Low' style='color:Blue;'>1</a></td></tr>
+<tr><th rowspan='3'>Problems with<br/>Methods</th><td>High</td><td class='failed'><a href='#Method_Problems_High' style='color:Blue;'>2</a></td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td class='warning'><a href='#Method_Problems_Low' style='color:Blue;'>1</a></td></tr>
+</table>
+
+<a name='Added'></a><h2>Added Methods <span class='new'>&nbsp;37&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-testing-0.8.0.jar</span>, <span class='cname'>Builder.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.testing.junit</span><br/>
+<span class="section" onclick="sC(this, 'c_1')">
+ResourceTestRule.Builder.setTestContainerFactory&#160;<span class='sym_p'><span>(&#160;TestContainerFactory <span class='color_p'>factory</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ResourceTestRule.Builder</span></span>
+<br/>
+<div id="c_1" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/junit/ResourceTestRule.Builder.setTestContainerFactory:(Lorg/glassfish/jersey/test/spi/TestContainerFactory;)Lio/dropwizard/testing/junit/ResourceTestRule$Builder;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-testing-0.8.0.jar</span>, <span class='cname'>ConfigOverride.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.testing</span><br/>
+<span class="section" onclick="sC(this, 'c_2')">
+ConfigOverride.addToSystemProperties&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_2" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/ConfigOverride.addToSystemProperties:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_3')">
+ConfigOverride.config&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>key</span></span>, <span>String <span class='color_p'>value</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ConfigOverride</span></span>
+<br/>
+<div id="c_3" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/ConfigOverride.config:(Ljava/lang/String;Ljava/lang/String;)Lio/dropwizard/testing/ConfigOverride;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_4')">
+ConfigOverride.removeFromSystemProperties&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_4" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/ConfigOverride.removeFromSystemProperties:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-testing-0.8.0.jar</span>, <span class='cname'>DropwizardAppRule.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.testing.junit</span><br/>
+<span class="section" onclick="sC(this, 'c_5')">
+DropwizardAppRule&lt;C&gt;.addListener&#160;<span class='sym_p'><span>(&#160;DropwizardAppRule.ServiceListener&lt;C&gt; <span class='color_p'>listener</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;DropwizardAppRule&lt;C&gt;</span></span>
+<br/>
+<div id="c_5" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/junit/DropwizardAppRule.addListener:(Lio/dropwizard/testing/junit/DropwizardAppRule$ServiceListener;)Lio/dropwizard/testing/junit/DropwizardAppRule;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_6')">
+DropwizardAppRule&lt;C&gt;.after&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_6" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/junit/DropwizardAppRule.after:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_7')">
+DropwizardAppRule&lt;C&gt;.before&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_7" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/junit/DropwizardAppRule.before:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_8')">
+DropwizardAppRule&lt;C&gt;.DropwizardAppRule&lt;C&gt;&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>applicationClass</span></span>, <span>String <span class='color_p'>configPath</span></span>, <span>ConfigOverride... <span class='color_p'>configOverrides</span></span>&#160;)</span></span>
+<br/>
+<div id="c_8" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/junit/DropwizardAppRule.&quot;&lt;init&gt;&quot;:(Ljava/lang/Class;Ljava/lang/String;[Lio/dropwizard/testing/ConfigOverride;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_9')">
+DropwizardAppRule&lt;C&gt;.DropwizardAppRule&lt;C&gt;&#160;<span class='sym_p'><span>(&#160;DropwizardTestSupport&lt;C&gt; <span class='color_p'>testSupport</span></span>&#160;)</span></span>
+<br/>
+<div id="c_9" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/junit/DropwizardAppRule.&quot;&lt;init&gt;&quot;:(Lio/dropwizard/testing/DropwizardTestSupport;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_10')">
+DropwizardAppRule&lt;C&gt;.getObjectMapper&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ObjectMapper</span></span>
+<br/>
+<div id="c_10" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/junit/DropwizardAppRule.getObjectMapper:()Lcom/fasterxml/jackson/databind/ObjectMapper;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_11')">
+DropwizardAppRule&lt;C&gt;.getTestSupport&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;DropwizardTestSupport&lt;C&gt;</span></span>
+<br/>
+<div id="c_11" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/junit/DropwizardAppRule.getTestSupport:()Lio/dropwizard/testing/DropwizardTestSupport;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_12')">
+DropwizardAppRule&lt;C&gt;.manage&#160;<span class='sym_p'><span>(&#160;Managed <span class='color_p'>managed</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;DropwizardAppRule&lt;C&gt;</span></span>
+<br/>
+<div id="c_12" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/junit/DropwizardAppRule.manage:(Lio/dropwizard/lifecycle/Managed;)Lio/dropwizard/testing/junit/DropwizardAppRule;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-testing-0.8.0.jar</span>, <span class='cname'>DropwizardClientRule.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.testing.junit</span><br/>
+<span class="section" onclick="sC(this, 'c_13')">
+DropwizardClientRule.after&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_13" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/junit/DropwizardClientRule.after:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_14')">
+DropwizardClientRule.baseUri&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;URI</span></span>
+<br/>
+<div id="c_14" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/junit/DropwizardClientRule.baseUri:()Ljava/net/URI;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_15')">
+DropwizardClientRule.before&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_15" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/junit/DropwizardClientRule.before:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_16')">
+DropwizardClientRule.DropwizardClientRule&#160;<span class='sym_p'><span>(&#160;Object... <span class='color_p'>resources</span></span>&#160;)</span></span>
+<br/>
+<div id="c_16" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/junit/DropwizardClientRule.&quot;&lt;init&gt;&quot;:([Ljava/lang/Object;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-testing-0.8.0.jar</span>, <span class='cname'>DropwizardTestSupport.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.testing</span><br/>
+<span class="section" onclick="sC(this, 'c_17')">
+DropwizardTestSupport&lt;C&gt;.addListener&#160;<span class='sym_p'><span>(&#160;DropwizardTestSupport.ServiceListener&lt;C&gt; <span class='color_p'>listener</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;DropwizardTestSupport&lt;C&gt;</span></span>
+<br/>
+<div id="c_17" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/DropwizardTestSupport.addListener:(Lio/dropwizard/testing/DropwizardTestSupport$ServiceListener;)Lio/dropwizard/testing/DropwizardTestSupport;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_18')">
+DropwizardTestSupport&lt;C&gt;.after&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_18" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/DropwizardTestSupport.after:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_19')">
+DropwizardTestSupport&lt;C&gt;.before&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_19" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/DropwizardTestSupport.before:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_20')">
+DropwizardTestSupport&lt;C&gt;.DropwizardTestSupport&lt;C&gt;&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>applicationClass</span></span>, <span>String <span class='color_p'>configPath</span></span>, <span>ConfigOverride... <span class='color_p'>configOverrides</span></span>&#160;)</span></span>
+<br/>
+<div id="c_20" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/DropwizardTestSupport.&quot;&lt;init&gt;&quot;:(Ljava/lang/Class;Ljava/lang/String;[Lio/dropwizard/testing/ConfigOverride;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_21')">
+DropwizardTestSupport&lt;C&gt;.getAdminPort&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_21" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/DropwizardTestSupport.getAdminPort:()I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_22')">
+DropwizardTestSupport&lt;C&gt;.getApplication&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;A</span></span>
+<br/>
+<div id="c_22" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/DropwizardTestSupport.getApplication:()Lio/dropwizard/Application;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_23')">
+DropwizardTestSupport&lt;C&gt;.getConfiguration&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;C</span></span>
+<br/>
+<div id="c_23" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/DropwizardTestSupport.getConfiguration:()Lio/dropwizard/Configuration;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_24')">
+DropwizardTestSupport&lt;C&gt;.getEnvironment&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Environment</span></span>
+<br/>
+<div id="c_24" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/DropwizardTestSupport.getEnvironment:()Lio/dropwizard/setup/Environment;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_25')">
+DropwizardTestSupport&lt;C&gt;.getLocalPort&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_25" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/DropwizardTestSupport.getLocalPort:()I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_26')">
+DropwizardTestSupport&lt;C&gt;.getObjectMapper&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ObjectMapper</span></span>
+<br/>
+<div id="c_26" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/DropwizardTestSupport.getObjectMapper:()Lcom/fasterxml/jackson/databind/ObjectMapper;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_27')">
+DropwizardTestSupport&lt;C&gt;.manage&#160;<span class='sym_p'><span>(&#160;Managed <span class='color_p'>managed</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;DropwizardTestSupport&lt;C&gt;</span></span>
+<br/>
+<div id="c_27" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/DropwizardTestSupport.manage:(Lio/dropwizard/lifecycle/Managed;)Lio/dropwizard/testing/DropwizardTestSupport;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_28')">
+DropwizardTestSupport&lt;C&gt;.newApplication&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Application&lt;C&gt;</span></span>
+<br/>
+<div id="c_28" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/DropwizardTestSupport.newApplication:()Lio/dropwizard/Application;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-testing-0.8.0.jar</span>, <span class='cname'>ResourceHelpers.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.testing</span><br/>
+<span class="section" onclick="sC(this, 'c_29')">
+ResourceHelpers.resourceFilePath&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>resourceClassPathLocation</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_29" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/ResourceHelpers.resourceFilePath:(Ljava/lang/String;)Ljava/lang/String;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-testing-0.8.0.jar</span>, <span class='cname'>ResourceTestRule.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.testing.junit</span><br/>
+<span class="section" onclick="sC(this, 'c_30')">
+ResourceTestRule.client&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Client</span></span>
+<br/>
+<div id="c_30" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/junit/ResourceTestRule.client:()Ljavax/ws/rs/client/Client;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_31')">
+ResourceTestRule.getJerseyTest&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;JerseyTest</span></span>
+<br/>
+<div id="c_31" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/junit/ResourceTestRule.getJerseyTest:()Lorg/glassfish/jersey/test/JerseyTest;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-testing-0.8.0.jar</span>, <span class='cname'>ServiceListener.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.testing</span><br/>
+<span class="section" onclick="sC(this, 'c_32')">
+DropwizardTestSupport.ServiceListener&lt;T&gt;.DropwizardTestSupport.ServiceListener&lt;T&gt;&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_32" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/DropwizardTestSupport.ServiceListener.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_33')">
+DropwizardTestSupport.ServiceListener&lt;T&gt;.onRun&#160;<span class='sym_p'><span>(&#160;T <span class='color_p'>configuration</span></span>, <span>Environment <span class='color_p'>environment</span></span>, <span>DropwizardTestSupport&lt;T&gt; <span class='color_p'>rule</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_33" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/DropwizardTestSupport.ServiceListener.onRun:(Lio/dropwizard/Configuration;Lio/dropwizard/setup/Environment;Lio/dropwizard/testing/DropwizardTestSupport;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_34')">
+DropwizardTestSupport.ServiceListener&lt;T&gt;.onStop&#160;<span class='sym_p'><span>(&#160;DropwizardTestSupport&lt;T&gt; <span class='color_p'>rule</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_34" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/DropwizardTestSupport.ServiceListener.onStop:(Lio/dropwizard/testing/DropwizardTestSupport;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-testing-0.8.0.jar</span>, <span class='cname'>ServiceListener.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.testing.junit</span><br/>
+<span class="section" onclick="sC(this, 'c_35')">
+DropwizardAppRule.ServiceListener&lt;T&gt;.DropwizardAppRule.ServiceListener&lt;T&gt;&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_35" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/junit/DropwizardAppRule.ServiceListener.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_36')">
+DropwizardAppRule.ServiceListener&lt;T&gt;.onRun&#160;<span class='sym_p'><span>(&#160;T <span class='color_p'>configuration</span></span>, <span>Environment <span class='color_p'>environment</span></span>, <span>DropwizardAppRule&lt;T&gt; <span class='color_p'>rule</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_36" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/junit/DropwizardAppRule.ServiceListener.onRun:(Lio/dropwizard/Configuration;Lio/dropwizard/setup/Environment;Lio/dropwizard/testing/junit/DropwizardAppRule;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_37')">
+DropwizardAppRule.ServiceListener&lt;T&gt;.onStop&#160;<span class='sym_p'><span>(&#160;DropwizardAppRule&lt;T&gt; <span class='color_p'>rule</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_37" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/junit/DropwizardAppRule.ServiceListener.onStop:(Lio/dropwizard/testing/junit/DropwizardAppRule;)V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Removed'></a><a name='Withdrawn'></a><h2>Removed Methods <span class='failed'>&nbsp;7&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-testing-0.7.1.jar</span>, <span class='cname'>Builder.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.testing.junit</span><br/>
+<span class="section" onclick="sC(this, 'c_38')">
+ResourceTestRule.Builder.addFeature&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>feature</span></span>, <span>Boolean <span class='color_p'>value</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ResourceTestRule.Builder</span></span>
+<br/>
+<div id="c_38" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/junit/ResourceTestRule.Builder.addFeature:(Ljava/lang/String;Ljava/lang/Boolean;)Lio/dropwizard/testing/junit/ResourceTestRule$Builder;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-testing-0.7.1.jar</span>, <span class='cname'>ConfigOverride.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.testing.junit</span><br/>
+<span class="section" onclick="sC(this, 'c_39')">
+ConfigOverride.addToSystemProperties&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_39" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/junit/ConfigOverride.addToSystemProperties:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_40')">
+ConfigOverride.config&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>key</span></span>, <span>String <span class='color_p'>value</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ConfigOverride</span></span>
+<br/>
+<div id="c_40" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/junit/ConfigOverride.config:(Ljava/lang/String;Ljava/lang/String;)Lio/dropwizard/testing/junit/ConfigOverride;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-testing-0.7.1.jar</span>, <span class='cname'>DropwizardAppRule.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.testing.junit</span><br/>
+<span class="section" onclick="sC(this, 'c_41')">
+DropwizardAppRule&lt;C&gt;.apply&#160;<span class='sym_p'><span>(&#160;Statement <span class='color_p'>base</span></span>, <span>Description <span class='color_p'>description</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Statement</span></span>
+<br/>
+<div id="c_41" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/junit/DropwizardAppRule.apply:(Lorg/junit/runners/model/Statement;Lorg/junit/runner/Description;)Lorg/junit/runners/model/Statement;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_42')">
+DropwizardAppRule&lt;C&gt;.DropwizardAppRule&lt;C&gt;&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>applicationClass</span></span>, <span>String <span class='color_p'>configPath</span></span>, <span>ConfigOverride... <span class='color_p'>configOverrides</span></span>&#160;)</span></span>
+<br/>
+<div id="c_42" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/junit/DropwizardAppRule.&quot;&lt;init&gt;&quot;:(Ljava/lang/Class;Ljava/lang/String;[Lio/dropwizard/testing/junit/ConfigOverride;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-testing-0.7.1.jar</span>, <span class='cname'>ResourceTestRule.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.testing.junit</span><br/>
+<span class="section" onclick="sC(this, 'c_43')">
+ResourceTestRule.client&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Client</span></span>
+<br/>
+<div id="c_43" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/junit/ResourceTestRule.client:()Lcom/sun/jersey/api/client/Client;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_44')">
+ResourceTestRule.getJerseyTest&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;JerseyTest</span></span>
+<br/>
+<div id="c_44" style="display:none;">
+<span class='mngl'>io/dropwizard/testing/junit/ResourceTestRule.getJerseyTest:()Lcom/sun/jersey/test/framework/JerseyTest;</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='High_Risk_Problems'></a><a name='Type_Problems_High'></a>
+<h2>Problems with Data Types, High Severity <span class='failed'>&nbsp;2&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-testing-0.7.1.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.testing.junit</span><br/>
+<span class="section" onclick="sC(this, 'c_45')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> ConfigOverride <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_45" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_46')">
+[+] affected methods: 2 (3.2%)</span>
+<div id="c_46" style="display:none;">
+<div class='affected'><span class='iname_a'>ConfigOverride.addToSystemProperties&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'ConfigOverride' class.</div>
+<span class='iname_a'>ConfigOverride.config&#160;<span class='sym_p'><span>(&#160;String <i>key</i></span>, <span>String <i>value</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ConfigOverride' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_47')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> DropwizardAppRule&lt;C&gt; <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_47" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Removed super-interface <b>org.junit.rules.TestRule</b>.</td>
+<td>A client program may be interrupted by <b>NoSuchMethodError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_48')">
+[+] affected methods: 6 (9.5%)</span>
+<div id="c_48" style="display:none;">
+<div class='affected'><span class='iname_a'>DropwizardAppRule&lt;C&gt;.getAdminPort&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'DropwizardAppRule&lt;C&gt;' class.</div>
+<span class='iname_a'>DropwizardAppRule&lt;C&gt;.getApplication&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'DropwizardAppRule&lt;C&gt;' class.</div>
+<span class='iname_a'>DropwizardAppRule&lt;C&gt;.getConfiguration&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'DropwizardAppRule&lt;C&gt;' class.</div>
+<span class='iname_a'>DropwizardAppRule&lt;C&gt;.getEnvironment&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'DropwizardAppRule&lt;C&gt;' class.</div>
+<span class='iname_a'>DropwizardAppRule&lt;C&gt;.getLocalPort&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'DropwizardAppRule&lt;C&gt;' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Method_Problems_High'></a>
+<h2>Problems with Methods, High Severity <span class='failed'>&nbsp;2&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-testing-0.7.1.jar</span>, <span class='cname'>ResourceTestRule.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.testing.junit</span><br/>
+<span class="section" onclick="sC(this, 'c_49')">
+<span class='ext'>[+]</span> ResourceTestRule.client&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Client</span> <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_49" style="display:none;">
+<span class='mngl pleft'>io/dropwizard/testing/junit/ResourceTestRule.client:()Lcom/sun/jersey/api/client/Client;</span><br/>
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Return value type has been changed from <b>com.sun.jersey.api.client.Client</b> to <b>javax.ws.rs.client.Client</b>.</td>
+<td>This method has been removed because the return type is part of the method signature. A client program may be interrupted by <b>NoSuchMethodError</b> exception.</td>
+</tr>
+</table><br/></div>
+
+<span class="section" onclick="sC(this, 'c_50')">
+<span class='ext'>[+]</span> ResourceTestRule.getJerseyTest&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;JerseyTest</span> <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_50" style="display:none;">
+<span class='mngl pleft'>io/dropwizard/testing/junit/ResourceTestRule.getJerseyTest:()Lcom/sun/jersey/test/framework/JerseyTest;</span><br/>
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Return value type has been changed from <b>com.sun.jersey.test.framework.JerseyTest</b> to <b>org.glassfish.jersey.test.JerseyTest</b>.</td>
+<td>This method has been removed because the return type is part of the method signature. A client program may be interrupted by <b>NoSuchMethodError</b> exception.</td>
+</tr>
+</table><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Low_Risk_Problems'></a><a name='Type_Problems_Low'></a>
+<h2>Problems with Data Types, Low Severity <span class='warning'>&nbsp;1&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-testing-0.7.1.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.testing.junit</span><br/>
+<span class="section" onclick="sC(this, 'c_51')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> DropwizardAppRule&lt;C&gt; <span class='warning'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_51" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Added super-class <b>org.junit.rules.ExternalResource</b>.</td>
+<td>A static field from a super-interface of a client class may hide a field (with the same name) inherited from new super-class and cause <b>IncompatibleClassChangeError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_52')">
+[+] affected methods: 6 (9.5%)</span>
+<div id="c_52" style="display:none;">
+<div class='affected'><span class='iname_a'>DropwizardAppRule&lt;C&gt;.getAdminPort&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'DropwizardAppRule&lt;C&gt;' class.</div>
+<span class='iname_a'>DropwizardAppRule&lt;C&gt;.getApplication&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'DropwizardAppRule&lt;C&gt;' class.</div>
+<span class='iname_a'>DropwizardAppRule&lt;C&gt;.getConfiguration&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'DropwizardAppRule&lt;C&gt;' class.</div>
+<span class='iname_a'>DropwizardAppRule&lt;C&gt;.getEnvironment&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'DropwizardAppRule&lt;C&gt;' class.</div>
+<span class='iname_a'>DropwizardAppRule&lt;C&gt;.getLocalPort&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'DropwizardAppRule&lt;C&gt;' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Method_Problems_Low'></a>
+<h2>Problems with Methods, Low Severity <span class='warning'>&nbsp;1&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-testing-0.7.1.jar</span>, <span class='cname'>FixtureHelpers.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.testing</span><br/>
+<span class="section" onclick="sC(this, 'c_53')">
+<span class='ext'>[+]</span> FixtureHelpers.fixture&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>filename</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span> <span class='warning'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_53" style="display:none;">
+<span class='mngl pleft'>io/dropwizard/testing/FixtureHelpers.fixture:(Ljava/lang/String;)Ljava/lang/String;</span><br/>
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Removed <b>java.io.IOException</b> exception thrown.</td>
+<td>A client program may change behavior because the removed exception will not be thrown any more and client will not catch and handle it.</td>
+</tr>
+</table><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Checked_Archives'></a><h2>Java Archives <span class='gray'>&nbsp;1&nbsp;</span></h2>
+<hr/><div class='jar_list'>
+dropwizard-testing-0.7.1.jar<br/>
+</div><br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<br/><br/><br/>
+<hr/><div class='footer' align='right'><i>Generated by <a href='https://github.com/lvc/japi-compliance-checker'>Java API Compliance Checker</a> 2.4 &#160;</i></div><br/>
+</body></html>

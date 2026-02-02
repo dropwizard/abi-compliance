@@ -1,0 +1,1209 @@
+<!-- changed:98.4;added:90;removed:112;moved:62;renamed:1;changed:58;tool_version:1.7.2 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="metrics-core, changes, report" />
+    <meta name="description" content="Changes report for the metrics-core package between 4.2.37 and 5.0.0 versions" />
+    <title>
+        metrics-core: 4.2.37 to 5.0.0 changes report
+    </title>
+    <style type="text/css">
+    body {
+    font-family:Arial, sans-serif;
+    background-color:White;
+    color:Black;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+    white-space:nowrap;
+}
+table.summary {
+    border-collapse:collapse;
+    border:1px outset black;
+}
+table.summary th {
+    background-color:#eeeeee;
+    font-weight:bold;
+    text-align:left;
+    font-size:0.94em;
+    white-space:nowrap;
+    border:1px inset gray;
+    padding: 3px;
+}
+table.summary td {
+    text-align:right;
+    white-space:nowrap;
+    border:1px inset gray;
+    padding: 3px 5px 3px 5px;
+}
+table.summary td.left {
+    text-align:left;
+}
+table.summary th.left {
+    text-align:left;
+    font-weight:100;
+}
+table.summary td.f_path {
+    font-size:0.875em;
+    font-family:Consolas, 'DejaVu Sans Mono', 'Droid Sans Mono', Monaco, Monospace;
+    white-space:normal;
+    word-wrap:break-word;
+    max-width:57em;
+}
+table.summary td.value {
+    padding-left:10px;
+}
+td.passed, tr.passed {
+    background-color:#CCFFCC;
+}
+td.warning, tr.warning {
+    background-color:#F4F4AF;
+}
+td.renamed, tr.renamed {
+    background-color:#FFDAA3;
+}
+td.moved, tr.moved {
+    background-color:#FFDAA3;
+}
+td.failed, tr.failed {
+    background-color:#FFC3CE;
+}
+td.new, tr.new {
+    background-color:#C6DEFF;
+}
+a.default {
+    color:#336699;
+}
+div.p_list {
+    padding-left:10px;
+    color:#333333;
+    font-size:0.94em;
+}
+.top_ref {
+    font-size:0.69em;
+}
+.footer {
+    font-size:0.75em;
+}
+
+    </style>
+    <script type="text/javascript" language="JavaScript">
+    <!--
+    function sort(el, status)
+{ 
+    var col_sort = el.innerHTML;
+    var tr = el.parentNode;
+    var table = tr.parentNode;
+    var td, col_sort_num;
+    for (var i=0; (td = tr.getElementsByTagName('th').item(i)); i++)
+    {
+        if(td.innerHTML == col_sort)
+        {
+            col_sort_num = i;
+            if(td.prevsort == 'y') {
+                el.up = Number(!el.up);
+            }
+            else if(td.prevsort == 'n') {
+                td.prevsort = 'y';
+                el.up = 0;
+            }
+            else
+            {
+                if(col_sort_num==0)
+                { // already sorted
+                    td.prevsort = 'n';
+                    el.up = 1;
+                }
+                else if(col_sort_num==2)
+                { // delta
+                    td.prevsort = 'n';
+                    el.up = 1;
+                }
+                else
+                {
+                    td.prevsort = 'y';
+                    el.up = 0;
+                }
+            }
+        }
+        else
+        {
+            if(td.prevsort == 'y') {
+                td.prevsort = 'n';
+            }
+        }
+    }
+    
+    var a = new Array();
+    for(var i=1; i < table.rows.length; i++)
+    {
+        var cols = table.rows[i].getElementsByTagName('td');
+        if(cols.item(status)==null)
+        { // double status
+            a[i-2][2] = table.rows[i];
+        }
+        else
+        {
+            a[i-1] = new Array();
+            var indent = cols.item(col_sort_num).innerHTML;
+            if(indent=='') indent='0';
+            if(indent.substr(indent.length-1, 1)=="%")
+            { // delta
+                indent = indent.substr(0, indent.length-1)*100;
+            }
+            a[i-1][0] = indent;
+            a[i-1][1] = table.rows[i];
+            a[i-1][2] = null;
+        }
+    }
+    
+    // sort table
+    a.sort(sort_array);
+    if(el.up) a.reverse();
+    
+    // draw table
+    for(var i in a)
+    {
+        table.appendChild(a[i][1]);
+        if(a[i][2]!=null) {
+            table.appendChild(a[i][2]);
+        }
+    }
+}
+
+function sort_array(a,b)
+{
+    if(a[0] == b[0]) return 0;
+    if(a[0] > b[0]) return 1;
+    return -1;
+}
+    -->
+    </script>
+    </head>
+<body>
+<div><a name='Top'></a>
+<h1>Changes report for the <span style='color:Blue;'>metrics-core</span> package between <span style='color:Red;'>4.2.37</span> and <span style='color:Red;'>5.0.0</span> versions</h1>
+<br/><table class='summary'>
+    <tr><td class='new' width='80px'>added</td><td class='passed' width='80px'>unchanged</td></tr>
+    <tr><td class='warning'>changed</td><td class='failed'>removed</td></tr></table>
+<h2>Test Info</h2><hr/>
+<table class='summary'>
+<tr><th class='left'>Package Name</th><td>metrics-core</td></tr>
+<tr><th class='left'>Package Format</th><td>JAR</td></tr>
+<tr><th class='left'>Version #1</th><td>4.2.37</td></tr>
+<tr><th class='left'>Version #2</th><td>5.0.0</td></tr>
+</table>
+<h2>Test Results</h2><hr/>
+<table class='summary'>
+<tr><th class='left'>Total Packages</th><td><a href='#Packages' style='color:Blue;'>2</a></td></tr>
+<tr><th class='left'>Total Files</th><td><a href='#Files' style='color:Blue;'>205</a></td></tr>
+<tr><th class='left'>Verdict</th><td><span style='color:Red;'><b>Changed<br/>(98.4%)</b></span></td></tr>
+</table>
+<a name='Deps'></a>
+<a name='Files'></a><h2>Changes In Files</h2><hr/>
+<table class='summary'>
+<tr><th>File Type</th><th>Total</th><th>Added</th><th>Removed</th><th>Changed</th></tr>
+<tr>
+<td class='left'>Java class</td>
+<td><a href='#JavaClasses' style='color:Blue;'>188</a></td>
+<td class='new'><a href='#JavaClasses' style='color:Blue;'>83</a></td>
+<td class='failed'><a href='#JavaClasses' style='color:Blue;'>105</a></td>
+<td>0</td>
+</tr>
+<tr>
+<td class='left'>XML document</td>
+<td><a href='#XMLDocuments' style='color:Blue;'>2</a></td>
+<td class='new'><a href='#XMLDocuments' style='color:Blue;'>1</a></td>
+<td class='failed'><a href='#XMLDocuments' style='color:Blue;'>1</a></td>
+<td>0</td>
+</tr>
+<tr>
+<td class='left'>Property file</td>
+<td><a href='#PropertyFiles' style='color:Blue;'>2</a></td>
+<td class='new'><a href='#PropertyFiles' style='color:Blue;'>1</a></td>
+<td class='failed'><a href='#PropertyFiles' style='color:Blue;'>1</a></td>
+<td>0</td>
+</tr>
+<tr>
+<td class='left'>Directory</td>
+<td><a href='#Directories' style='color:Blue;'>12</a></td>
+<td class='new'><a href='#Directories' style='color:Blue;'>5</a></td>
+<td class='failed'><a href='#Directories' style='color:Blue;'>5</a></td>
+<td>0</td>
+</tr>
+<tr>
+<td class='left'>Information file</td>
+<td><a href='#InformationFiles' style='color:Blue;'>1</a></td>
+<td>0</td>
+<td>0</td>
+<td class='warning'><a href='#InformationFiles' style='color:Blue;'>1</a></td>
+</tr>
+</table>
+<a name='JavaClasses'></a>
+<h2>Java Classes (188)</h2><hr/>
+<table class='summary'>
+<tr>
+<th title='sort' onclick='javascript:sort(this, 1)' style='cursor:pointer'>Name</th>
+<th title='sort' onclick='javascript:sort(this, 1)' style='cursor:pointer'>Status</th>
+<th title='sort' onclick='javascript:sort(this, 1)' style='cursor:pointer'>Delta</th>
+<th>Visual<br/>Diff</th>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/CachedGauge.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>79.4%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/CachedGauge.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/CachedGauge.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/ChunkedAssociativeLongArray$1.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>57.3%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/ChunkedAssociativeLongArray$1.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/ChunkedAssociativeLongArray$1.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/ChunkedAssociativeLongArray$Chunk.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/ChunkedAssociativeLongArray.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>40.7%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/ChunkedAssociativeLongArray.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/ChunkedAssociativeLongArray.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/Clock$UserTimeClock.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>77.3%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/Clock$UserTimeClock.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/Clock$UserTimeClock.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/Clock$UserTimeClockHolder.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>76.2%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/Clock$UserTimeClockHolder.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/Clock$UserTimeClockHolder.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/Clock.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>67.1%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/Clock.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/Clock.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/ConsoleReporter$1.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>59.3%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/ConsoleReporter$1.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/ConsoleReporter$1.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/ConsoleReporter$Builder.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/ConsoleReporter.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/Counter.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>54.5%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/Counter.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/Counter.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/Counting.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>45.7%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/Counting.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/Counting.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/CsvFileProvider.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>35.9%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/CsvFileProvider.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/CsvFileProvider.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/CsvReporter$1.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>60.3%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/CsvReporter$1.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/CsvReporter$1.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/CsvReporter$Builder.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/CsvReporter.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/DefaultSettableGauge.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/DerivativeGauge.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>69.4%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/DerivativeGauge.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/DerivativeGauge.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/EWMA.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>70.5%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/EWMA.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/EWMA.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/ExponentiallyDecayingReservoir.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>76.6%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/ExponentiallyDecayingReservoir.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/ExponentiallyDecayingReservoir.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/ExponentialMovingAverages.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/FixedNameCsvFileProvider.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>52.5%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/FixedNameCsvFileProvider.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/FixedNameCsvFileProvider.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/Gauge.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>62.3%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/Gauge.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/Gauge.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/Histogram.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>89.4%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/Histogram.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/Histogram.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/InstrumentedExecutorService$InstrumentedCallable.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>77.9%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/InstrumentedExecutorService$InstrumentedCallable.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/InstrumentedExecutorService$InstrumentedCallable.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/InstrumentedExecutorService$InstrumentedRejectedExecutionHandler.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/InstrumentedExecutorService$InstrumentedRunnable.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>84.5%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/InstrumentedExecutorService$InstrumentedRunnable.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/InstrumentedExecutorService$InstrumentedRunnable.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/InstrumentedExecutorService.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>39.3%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/InstrumentedExecutorService.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/InstrumentedExecutorService.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/InstrumentedScheduledExecutorService$InstrumentedCallable.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>77.7%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/InstrumentedScheduledExecutorService$InstrumentedCallable.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/InstrumentedScheduledExecutorService$InstrumentedCallable.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/InstrumentedScheduledExecutorService$InstrumentedPeriodicRunnable.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>85.8%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/InstrumentedScheduledExecutorService$InstrumentedPeriodicRunnable.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/InstrumentedScheduledExecutorService$InstrumentedPeriodicRunnable.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/InstrumentedScheduledExecutorService$InstrumentedRunnable.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>84.1%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/InstrumentedScheduledExecutorService$InstrumentedRunnable.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/InstrumentedScheduledExecutorService$InstrumentedRunnable.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/InstrumentedScheduledExecutorService.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>35.4%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/InstrumentedScheduledExecutorService.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/InstrumentedScheduledExecutorService.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/InstrumentedThreadFactory$InstrumentedRunnable.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>84.7%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/InstrumentedThreadFactory$InstrumentedRunnable.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/InstrumentedThreadFactory$InstrumentedRunnable.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/InstrumentedThreadFactory.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>86.4%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/InstrumentedThreadFactory.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/InstrumentedThreadFactory.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/LockFreeExponentiallyDecayingReservoir$1.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/LockFreeExponentiallyDecayingReservoir$Builder.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/LockFreeExponentiallyDecayingReservoir$RescalingConsumer.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/LockFreeExponentiallyDecayingReservoir$State.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/LockFreeExponentiallyDecayingReservoir.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/Meter.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>60.4%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/Meter.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/Meter.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/Metered.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>51.7%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/Metered.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/Metered.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/Metric.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>66.2%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/Metric.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/Metric.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/MetricAttribute.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/MetricFilter.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/MetricRegistry$1.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/MetricRegistry$2.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/MetricRegistry$3.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/MetricRegistry$4.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/MetricRegistry$5.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/MetricRegistry$6.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/MetricRegistry$MetricBuilder$1.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>0%</td>
+<td rowspan='2'></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/MetricRegistry$MetricBuilder$1.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/MetricRegistry$MetricBuilder$2.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>0%</td>
+<td rowspan='2'></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/MetricRegistry$MetricBuilder$2.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/MetricRegistry$MetricBuilder$3.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>0%</td>
+<td rowspan='2'></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/MetricRegistry$MetricBuilder$3.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/MetricRegistry$MetricBuilder$4.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>0%</td>
+<td rowspan='2'></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/MetricRegistry$MetricBuilder$4.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/MetricRegistry$MetricBuilder$5.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/MetricRegistry$MetricBuilder.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/MetricRegistry$MetricSupplier.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>63.9%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/MetricRegistry$MetricSupplier.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/MetricRegistry$MetricSupplier.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/MetricRegistry.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/MetricRegistryListener$Base.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/MetricRegistryListener.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/MetricSet.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/MovingAverages.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/NoopMetricRegistry$1.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/NoopMetricRegistry$EmptyConcurrentMap.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/NoopMetricRegistry$EmptySnapshot.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/NoopMetricRegistry$NoopCounter.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/NoopMetricRegistry$NoopGauge.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/NoopMetricRegistry$NoopHistogram$1.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/NoopMetricRegistry$NoopHistogram.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/NoopMetricRegistry$NoopMeter.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/NoopMetricRegistry$NoopTimer$Context$1.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/NoopMetricRegistry$NoopTimer$Context.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/NoopMetricRegistry$NoopTimer.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/NoopMetricRegistry.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/RatioGauge$Ratio.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>59%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/RatioGauge$Ratio.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/RatioGauge$Ratio.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/RatioGauge.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>70.9%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/RatioGauge.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/RatioGauge.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/Reporter.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>72%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/Reporter.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/Reporter.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/Reservoir.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>56.3%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/Reservoir.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/Reservoir.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/Sampling.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>82.6%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/Sampling.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/Sampling.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/ScheduledReporter$1.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>58.9%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/ScheduledReporter$1.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/ScheduledReporter$1.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/ScheduledReporter$NamedThreadFactory.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>73.1%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/ScheduledReporter$NamedThreadFactory.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/ScheduledReporter$NamedThreadFactory.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/ScheduledReporter.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>86.7%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/ScheduledReporter.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/ScheduledReporter.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/SettableGauge.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/SharedMetricRegistries.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>70.1%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/SharedMetricRegistries.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/SharedMetricRegistries.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/Slf4jReporter$1.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>75.6%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/Slf4jReporter$1.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/Slf4jReporter$1.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/Slf4jReporter$Builder.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/Slf4jReporter$DebugLoggerProxy.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>84.4%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/Slf4jReporter$DebugLoggerProxy.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/Slf4jReporter$DebugLoggerProxy.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/Slf4jReporter$ErrorLoggerProxy.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>84.4%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/Slf4jReporter$ErrorLoggerProxy.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/Slf4jReporter$ErrorLoggerProxy.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/Slf4jReporter$InfoLoggerProxy.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>84.3%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/Slf4jReporter$InfoLoggerProxy.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/Slf4jReporter$InfoLoggerProxy.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/Slf4jReporter$LoggerProxy.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>69.4%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/Slf4jReporter$LoggerProxy.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/Slf4jReporter$LoggerProxy.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/Slf4jReporter$LoggingLevel.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/Slf4jReporter$TraceLoggerProxy.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>84.4%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/Slf4jReporter$TraceLoggerProxy.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/Slf4jReporter$TraceLoggerProxy.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/Slf4jReporter$WarnLoggerProxy.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>84.3%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/Slf4jReporter$WarnLoggerProxy.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/Slf4jReporter$WarnLoggerProxy.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/Slf4jReporter.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/SlidingTimeWindowArrayReservoir.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>78.1%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/SlidingTimeWindowArrayReservoir.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/SlidingTimeWindowArrayReservoir.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/SlidingTimeWindowMovingAverages.class</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/SlidingTimeWindowReservoir.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>80.6%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/SlidingTimeWindowReservoir.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/SlidingTimeWindowReservoir.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/SlidingWindowReservoir.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>67.5%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/SlidingWindowReservoir.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/SlidingWindowReservoir.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/Snapshot.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>16%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/Snapshot.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/Snapshot.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/Timer$Context.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>87.7%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/Timer$Context.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/Timer$Context.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/Timer.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>58.1%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/Timer.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/Timer.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/UniformReservoir.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>78.3%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/UniformReservoir.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/UniformReservoir.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/UniformSnapshot.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>48.5%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/UniformSnapshot.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/UniformSnapshot.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/WeightedSnapshot$WeightedSample.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>62.8%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/WeightedSnapshot$WeightedSample.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/WeightedSnapshot$WeightedSample.class</td></tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics/WeightedSnapshot.class</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>46.6%</td>
+<td rowspan='2'><a href='diffs/com/codahale/metrics/WeightedSnapshot.class-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>io/dropwizard/metrics5/WeightedSnapshot.class</td></tr>
+<tr>
+<td class='left f_path new'>io/dropwizard/metrics5/ChunkedAssociativeLongArray$Chunk.class</td>
+<td class='new'>added</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path new'>io/dropwizard/metrics5/ConsoleReporter$Builder.class</td>
+<td class='new'>added</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path new'>io/dropwizard/metrics5/ConsoleReporter.class</td>
+<td class='new'>added</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path new'>io/dropwizard/metrics5/CsvReporter$Builder.class</td>
+<td class='new'>added</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path new'>io/dropwizard/metrics5/CsvReporter.class</td>
+<td class='new'>added</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path new'>io/dropwizard/metrics5/MetricAttribute.class</td>
+<td class='new'>added</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path new'>io/dropwizard/metrics5/MetricFilter.class</td>
+<td class='new'>added</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path new'>io/dropwizard/metrics5/MetricName.class</td>
+<td class='new'>added</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path new'>io/dropwizard/metrics5/MetricRegistry$1.class</td>
+<td class='new'>added</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path new'>io/dropwizard/metrics5/MetricRegistry$2.class</td>
+<td class='new'>added</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path new'>io/dropwizard/metrics5/MetricRegistry$3.class</td>
+<td class='new'>added</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path new'>io/dropwizard/metrics5/MetricRegistry$4.class</td>
+<td class='new'>added</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path new'>io/dropwizard/metrics5/MetricRegistry$5.class</td>
+<td class='new'>added</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path new'>io/dropwizard/metrics5/MetricRegistry$MetricBuilder.class</td>
+<td class='new'>added</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path new'>io/dropwizard/metrics5/MetricRegistry.class</td>
+<td class='new'>added</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path new'>io/dropwizard/metrics5/MetricRegistryListener$Base.class</td>
+<td class='new'>added</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path new'>io/dropwizard/metrics5/MetricRegistryListener.class</td>
+<td class='new'>added</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path new'>io/dropwizard/metrics5/MetricSet.class</td>
+<td class='new'>added</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path new'>io/dropwizard/metrics5/Slf4jReporter$Builder.class</td>
+<td class='new'>added</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path new'>io/dropwizard/metrics5/Slf4jReporter$LoggingLevel.class</td>
+<td class='new'>added</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path new'>io/dropwizard/metrics5/Slf4jReporter.class</td>
+<td class='new'>added</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path new'>io/dropwizard/metrics5/Summing.class</td>
+<td class='new'>added</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path new'>io/dropwizard/metrics5/Timer$1.class</td>
+<td class='new'>added</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<a name='XMLDocuments'></a>
+<h2>XML Documents (2)</h2><hr/>
+<table class='summary'>
+<tr>
+<th title='sort' onclick='javascript:sort(this, 1)' style='cursor:pointer'>Name</th>
+<th title='sort' onclick='javascript:sort(this, 1)' style='cursor:pointer'>Status</th>
+<th title='sort' onclick='javascript:sort(this, 1)' style='cursor:pointer'>Delta</th>
+<th>Visual<br/>Diff</th>
+</tr>
+<tr>
+<td class='left f_path failed'>META-INF/maven/io.dropwizard.metrics/metrics-core/pom.xml</td>
+<td class='moved' rowspan='2'>moved</td>
+<td class='value' rowspan='2'>70.7%</td>
+<td rowspan='2'><a href='diffs/META-INF/maven/io.dropwizard.metrics/metrics-core/pom.xml-diff.html' target='_blank'>diff</a></td>
+</tr>
+<tr><td class='left f_path  new'>META-INF/maven/io.dropwizard.metrics5/metrics-core/pom.xml</td></tr>
+</table>
+<a name='PropertyFiles'></a>
+<h2>Property Files (2)</h2><hr/>
+<table class='summary'>
+<tr>
+<th title='sort' onclick='javascript:sort(this, 1)' style='cursor:pointer'>Name</th>
+<th title='sort' onclick='javascript:sort(this, 1)' style='cursor:pointer'>Status</th>
+<th title='sort' onclick='javascript:sort(this, 1)' style='cursor:pointer'>Delta</th>
+<th>Visual<br/>Diff</th>
+</tr>
+<tr>
+<td class='left f_path failed'>META-INF/maven/io.dropwizard.metrics/metrics-core/pom.properties</td>
+<td class='failed'>removed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class='left f_path new'>META-INF/maven/io.dropwizard.metrics5/metrics-core/pom.properties</td>
+<td class='new'>added</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<a name='Directories'></a>
+<h2>Directories (12)</h2><hr/>
+<table class='summary'>
+<tr>
+<th title='sort' onclick='javascript:sort(this, 1)' style='cursor:pointer'>Name</th>
+<th title='sort' onclick='javascript:sort(this, 1)' style='cursor:pointer'>Status</th>
+</tr>
+<tr>
+<td class='left f_path failed'>com</td>
+<td class='failed'>removed</td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale</td>
+<td class='failed'>removed</td>
+</tr>
+<tr>
+<td class='left f_path failed'>com/codahale/metrics</td>
+<td class='failed'>removed</td>
+</tr>
+<tr>
+<td class='left f_path new'>io</td>
+<td class='new'>added</td>
+</tr>
+<tr>
+<td class='left f_path new'>io/dropwizard</td>
+<td class='new'>added</td>
+</tr>
+<tr>
+<td class='left f_path new'>io/dropwizard/metrics5</td>
+<td class='new'>added</td>
+</tr>
+<tr>
+<td class='left f_path'>META-INF</td>
+<td class='passed'>unchanged</td>
+</tr>
+<tr>
+<td class='left f_path'>META-INF/maven</td>
+<td class='passed'>unchanged</td>
+</tr>
+<tr>
+<td class='left f_path failed'>META-INF/maven/io.dropwizard.metrics</td>
+<td class='renamed' rowspan='2'>renamed</td>
+</tr>
+<tr><td class='left f_path  new'>META-INF/maven/io.dropwizard.metrics5</td></tr>
+<tr>
+<td class='left f_path failed'>META-INF/maven/io.dropwizard.metrics/metrics-core</td>
+<td class='moved' rowspan='2'>moved</td>
+</tr>
+<tr><td class='left f_path  new'>META-INF/maven/io.dropwizard.metrics5/metrics-core</td></tr>
+</table>
+<a name='InformationFiles'></a>
+<h2>Information Files (1)</h2><hr/>
+<table class='summary'>
+<tr>
+<th title='sort' onclick='javascript:sort(this, 1)' style='cursor:pointer'>Name</th>
+<th title='sort' onclick='javascript:sort(this, 1)' style='cursor:pointer'>Status</th>
+<th title='sort' onclick='javascript:sort(this, 1)' style='cursor:pointer'>Delta</th>
+<th>Visual<br/>Diff</th>
+</tr>
+<tr>
+<td class='left f_path'>META-INF/MANIFEST.MF</td>
+<td class='warning'>changed</td>
+<td class='value'>61.9%</td>
+<td><a href='diffs/META-INF/MANIFEST.MF-diff.html' target='_blank'>diff</a></td>
+</tr>
+</table>
+<a name='Packages'></a>
+<h2>Packages (2)</h2><hr/>
+<div class='p_list'>
+metrics-core-4.2.37.jar<br/>
+metrics-core-5.0.0.jar<br/>
+</div>
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+</div>
+<br/><br/><br/><hr/>
+<div class='footer' style='width:100%;' align='right'><i>Generated by <a href='http://lvc.github.com/pkgdiff/'>PkgDiff</a> 1.7.2 &#160;</i></div><br/>
+</body></html>

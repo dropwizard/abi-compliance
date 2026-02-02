@@ -1,0 +1,11 @@
+{
+  "Affected": "100",
+  "Added": 60,
+  "Removed": 65,
+  "TotalProblems": 12,
+  "Source_Affected": "100",
+  "Source_TotalProblems": "13",
+  "Source_ReportPath": "compat_report/metrics-healthchecks/4.2.38/5.0.0/40887/src_compat_report.html",
+  "Archive1": "metrics-healthchecks-4.2.38.jar",
+  "Archive2": "metrics-healthchecks-5.0.0.jar"
+}

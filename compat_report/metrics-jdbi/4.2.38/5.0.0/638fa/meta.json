@@ -1,0 +1,11 @@
+{
+  "Affected": "100",
+  "Added": 12,
+  "Removed": 12,
+  "TotalProblems": 9,
+  "Source_Affected": "100",
+  "Source_TotalProblems": "9",
+  "Source_ReportPath": "compat_report/metrics-jdbi/4.2.38/5.0.0/638fa/src_compat_report.html",
+  "Archive1": "metrics-jdbi-4.2.38.jar",
+  "Archive2": "metrics-jdbi-5.0.0.jar"
+}

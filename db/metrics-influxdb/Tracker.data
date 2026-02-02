@@ -1,0 +1,254 @@
+$VAR1 = {
+          'APIDump' => {
+                         '5.0.1' => {
+                                      '49417' => {
+                                                   'Archive' => 'metrics-influxdb-5.0.1.jar',
+                                                   'Path' => 'api_dump/metrics-influxdb/5.0.1/49417/API.dump.tar.gz',
+                                                   'TotalSymbols' => '27'
+                                                 }
+                                    },
+                         '5.0.2' => {
+                                      '5e874' => {
+                                                   'Archive' => 'metrics-influxdb-5.0.2.jar',
+                                                   'Path' => 'api_dump/metrics-influxdb/5.0.2/5e874/API.dump.tar.gz',
+                                                   'TotalSymbols' => '27'
+                                                 }
+                                    },
+                         '5.0.3' => {
+                                      '38968' => {
+                                                   'Archive' => 'metrics-influxdb-5.0.3.jar',
+                                                   'Path' => 'api_dump/metrics-influxdb/5.0.3/38968/API.dump.tar.gz',
+                                                   'TotalSymbols' => '27'
+                                                 }
+                                    },
+                         '5.0.4' => {
+                                      'b0bdd' => {
+                                                   'Archive' => 'metrics-influxdb-5.0.4.jar',
+                                                   'Path' => 'api_dump/metrics-influxdb/5.0.4/b0bdd/API.dump.tar.gz',
+                                                   'TotalSymbols' => '27'
+                                                 }
+                                    },
+                         '5.0.5' => {
+                                      'ac988' => {
+                                                   'Archive' => 'metrics-influxdb-5.0.5.jar',
+                                                   'Path' => 'api_dump/metrics-influxdb/5.0.5/ac988/API.dump.tar.gz',
+                                                   'TotalSymbols' => '27'
+                                                 }
+                                    },
+                         '5.0.6' => {
+                                      '84844' => {
+                                                   'Archive' => 'metrics-influxdb-5.0.6.jar',
+                                                   'Path' => 'api_dump/metrics-influxdb/5.0.6/84844/API.dump.tar.gz',
+                                                   'TotalSymbols' => '27'
+                                                 }
+                                    }
+                       },
+          'APIReport' => {
+                           '5.0.1' => {
+                                        '5.0.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-influxdb/5.0.1/5.0.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '5.0.2' => {
+                                        '5.0.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-influxdb/5.0.2/5.0.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '5.0.3' => {
+                                        '5.0.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-influxdb/5.0.3/5.0.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '5.0.4' => {
+                                        '5.0.5' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-influxdb/5.0.4/5.0.5/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '5.0.5' => {
+                                        '5.0.6' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-influxdb/5.0.5/5.0.6/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      }
+                         },
+          'APIReport_D' => {
+                             '5.0.1' => {
+                                          '5.0.2' => {
+                                                       '433e6' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-influxdb-5.0.1.jar',
+                                                                    'Archive2' => 'metrics-influxdb-5.0.2.jar',
+                                                                    'Path' => 'compat_report/metrics-influxdb/5.0.1/5.0.2/433e6/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-influxdb/5.0.1/5.0.2/433e6/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '5.0.2' => {
+                                          '5.0.3' => {
+                                                       '51547' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-influxdb-5.0.2.jar',
+                                                                    'Archive2' => 'metrics-influxdb-5.0.3.jar',
+                                                                    'Path' => 'compat_report/metrics-influxdb/5.0.2/5.0.3/51547/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-influxdb/5.0.2/5.0.3/51547/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '5.0.3' => {
+                                          '5.0.4' => {
+                                                       '20d48' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-influxdb-5.0.3.jar',
+                                                                    'Archive2' => 'metrics-influxdb-5.0.4.jar',
+                                                                    'Path' => 'compat_report/metrics-influxdb/5.0.3/5.0.4/20d48/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-influxdb/5.0.3/5.0.4/20d48/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '5.0.4' => {
+                                          '5.0.5' => {
+                                                       'e5874' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-influxdb-5.0.4.jar',
+                                                                    'Archive2' => 'metrics-influxdb-5.0.5.jar',
+                                                                    'Path' => 'compat_report/metrics-influxdb/5.0.4/5.0.5/e5874/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-influxdb/5.0.4/5.0.5/e5874/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '5.0.5' => {
+                                          '5.0.6' => {
+                                                       '10b01' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-influxdb-5.0.5.jar',
+                                                                    'Archive2' => 'metrics-influxdb-5.0.6.jar',
+                                                                    'Path' => 'compat_report/metrics-influxdb/5.0.5/5.0.6/10b01/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-influxdb/5.0.5/5.0.6/10b01/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        }
+                           },
+          'Changelog' => {},
+          'Date' => {
+                      '5.0.1' => '01-1980-02 00:00',
+                      '5.0.2' => '01-1980-02 00:00',
+                      '5.0.3' => '01-1980-02 00:00',
+                      '5.0.4' => '01-1980-02 00:00',
+                      '5.0.5' => '01-1980-02 00:00',
+                      '5.0.6' => '01-1980-02 00:00'
+                    },
+          'Maintainer' => 'Dropwizard Metrics Committers',
+          'MaintainerUrl' => 'https://metrics.dropwizard.io/',
+          'PackageDiff' => {
+                             '5.0.1' => {
+                                          '5.0.2' => {
+                                                       'Changed' => '0.2',
+                                                       'Path' => 'package_diff/metrics-influxdb/5.0.1/5.0.2/report.html'
+                                                     }
+                                        },
+                             '5.0.2' => {
+                                          '5.0.3' => {
+                                                       'Changed' => '0.2',
+                                                       'Path' => 'package_diff/metrics-influxdb/5.0.2/5.0.3/report.html'
+                                                     }
+                                        },
+                             '5.0.3' => {
+                                          '5.0.4' => {
+                                                       'Changed' => '0.2',
+                                                       'Path' => 'package_diff/metrics-influxdb/5.0.3/5.0.4/report.html'
+                                                     }
+                                        },
+                             '5.0.4' => {
+                                          '5.0.5' => {
+                                                       'Changed' => '0.2',
+                                                       'Path' => 'package_diff/metrics-influxdb/5.0.4/5.0.5/report.html'
+                                                     }
+                                        },
+                             '5.0.5' => {
+                                          '5.0.6' => {
+                                                       'Changed' => '0.2',
+                                                       'Path' => 'package_diff/metrics-influxdb/5.0.5/5.0.6/report.html'
+                                                     }
+                                        }
+                           },
+          'Title' => 'InfluxDB 5.x integration for Metrics'
+        };

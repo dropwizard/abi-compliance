@@ -1,0 +1,11 @@
+{
+  "Affected": "0",
+  "Added": 0,
+  "Removed": 0,
+  "TotalProblems": 0,
+  "Source_Affected": "0",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/metrics-collectd/4.2.5/4.2.6/e0732/src_compat_report.html",
+  "Archive1": "metrics-collectd-4.2.5.jar",
+  "Archive2": "metrics-collectd-4.2.6.jar"
+}

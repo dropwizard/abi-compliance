@@ -1,0 +1,11 @@
+{
+  "Affected": "100",
+  "Added": 6,
+  "Removed": 6,
+  "TotalProblems": 2,
+  "Source_Affected": "100",
+  "Source_TotalProblems": "2",
+  "Source_ReportPath": "compat_report/metrics-httpasyncclient/4.2.37/5.0.0/89f69/src_compat_report.html",
+  "Archive1": "metrics-httpasyncclient-4.2.37.jar",
+  "Archive2": "metrics-httpasyncclient-5.0.0.jar"
+}

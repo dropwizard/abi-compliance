@@ -1,0 +1,11 @@
+{
+  "Affected": "6.8",
+  "Added": 0,
+  "Removed": 5,
+  "TotalProblems": 0,
+  "Source_Affected": "7.4",
+  "Source_TotalProblems": "1",
+  "Source_ReportPath": "compat_report/dropwizard-validation/2.0.35/2.1.0/b3c8d/src_compat_report.html",
+  "Archive1": "dropwizard-validation-2.0.35.jar",
+  "Archive2": "dropwizard-validation-2.1.0.jar"
+}

@@ -1,0 +1,1307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="keywords" content="dropwizard-logging, API, compatibility, report" />
+    <meta name="description" content="API compatibility analysis reports for Dropwizard Logging Support" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css?v=1.2.1" />
+    <link rel="stylesheet" type="text/css" href="../../css/report.css?v=1.0" />
+    <link rel='alternate' type='application/rss+xml' href='../../rss/dropwizard-logging/feed.rss' />
+    
+    <title>
+        Dropwizard Logging Support: API changes review
+    </title>
+    
+    </head>
+<body>
+<table cellpadding='0' cellspacing='0'><tr><td align='center'><h1 class='tool'><a title='Home: API tracker for Dropwizard Logging Support' href='../../timeline/dropwizard-logging/index.html' class='tool'>API<br/>Tracker 4J</a></h1></td><td width='30px;'></td><td><h1>(Dropwizard Logging Support)</h1></td></tr></table><hr/>
+<br/>
+<br/>
+<h1>API changes review <a rel='alternate' type='application/rss+xml' href='../../rss/dropwizard-logging/feed.rss' title='RSS: subscribe for API reports'><img src='../../images/RSS.png' class='rss' alt='RSS' /></a></h1>
+<br/><br/><table cellpadding='3' class='summary'>
+<tr>
+<th rowspan='2'>Version</th>
+<th rowspan='2'>Date</th>
+<th rowspan='2'>Change<br/>Log</th>
+<th colspan='2'>Backward<br/>Compatibility</th>
+<th rowspan='2'>Added<br/>Methods</th>
+<th rowspan='2'>Removed<br/>Methods</th>
+<th rowspan='2'>Package<br/>Diff</th>
+</tr>
+<tr>
+<th title='Binary compatibility' class='bc'>BC</th>
+<th title='Source compatibility' class='sc'>SC</th>
+</tr>
+<tr id='v5.0.1'><td title='dropwizard-logging-5.0.1.jar'>5.0.1</td>
+<td>27-2026-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/5.0.0/5.0.1/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/5.0.0/5.0.1/report.html'>0.1%</a></td>
+</tr>
+<tr id='v5.0.0'><td title='dropwizard-logging-5.0.0.jar'>5.0.0</td>
+<td>16-2025-09</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/4.0.17/5.0.0/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/4.0.17/5.0.0/report.html'>0.2%</a></td>
+</tr>
+<tr id='v4.0.17'><td title='dropwizard-logging-4.0.17.jar'>4.0.17</td>
+<td>27-2026-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/4.0.16/4.0.17/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/4.0.16/4.0.17/report.html'>0.1%</a></td>
+</tr>
+<tr id='v4.0.16'><td title='dropwizard-logging-4.0.16.jar'>4.0.16</td>
+<td>25-2025-08</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/4.0.15/4.0.16/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/4.0.15/4.0.16/report.html'>0.1%</a></td>
+</tr>
+<tr id='v4.0.15'><td title='dropwizard-logging-4.0.15.jar'>4.0.15</td>
+<td>24-2025-07</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/4.0.14/4.0.15/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/4.0.14/4.0.15/report.html'>0.1%</a></td>
+</tr>
+<tr id='v4.0.14'><td title='dropwizard-logging-4.0.14.jar'>4.0.14</td>
+<td>25-2025-05</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/4.0.13/4.0.14/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/4.0.13/4.0.14/report.html'>0.1%</a></td>
+</tr>
+<tr id='v4.0.13'><td title='dropwizard-logging-4.0.13.jar'>4.0.13</td>
+<td>26-2025-03</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/4.0.12/4.0.13/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/4.0.12/4.0.13/report.html'>0.1%</a></td>
+</tr>
+<tr id='v4.0.12'><td title='dropwizard-logging-4.0.12.jar'>4.0.12</td>
+<td>15-2025-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/4.0.11/4.0.12/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/4.0.11/4.0.12/report.html'>0.1%</a></td>
+</tr>
+<tr id='v4.0.11'><td title='dropwizard-logging-4.0.11.jar'>4.0.11</td>
+<td>27-2024-11</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/4.0.10/4.0.11/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/4.0.10/4.0.11/report.html'>0.1%</a></td>
+</tr>
+<tr id='v4.0.10'><td title='dropwizard-logging-4.0.10.jar'>4.0.10</td>
+<td>21-2024-10</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/4.0.9/4.0.10/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/4.0.9/4.0.10/report.html'>0.1%</a></td>
+</tr>
+<tr id='v4.0.9'><td title='dropwizard-logging-4.0.9.jar'>4.0.9</td>
+<td>07-2024-10</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/4.0.8/4.0.9/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/4.0.8/4.0.9/report.html'>0.1%</a></td>
+</tr>
+<tr id='v4.0.8'><td title='dropwizard-logging-4.0.8.jar'>4.0.8</td>
+<td>25-2024-08</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/4.0.7/4.0.8/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/4.0.7/4.0.8/report.html'>0.1%</a></td>
+</tr>
+<tr id='v4.0.7'><td title='dropwizard-logging-4.0.7.jar'>4.0.7</td>
+<td>06-2024-03</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/4.0.6/4.0.7/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/4.0.6/4.0.7/report.html'>0.1%</a></td>
+</tr>
+<tr id='v4.0.6'><td title='dropwizard-logging-4.0.6.jar'>4.0.6</td>
+<td>29-2024-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/4.0.5/4.0.6/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/4.0.5/4.0.6/report.html'>0.1%</a></td>
+</tr>
+<tr id='v4.0.5'><td title='dropwizard-logging-4.0.5.jar'>4.0.5</td>
+<td>20-2023-12</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/4.0.4/4.0.5/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/4.0.4/4.0.5/report.html'>0.1%</a></td>
+</tr>
+<tr id='v4.0.4'><td title='dropwizard-logging-4.0.4.jar'>4.0.4</td>
+<td>06-2023-11</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/4.0.3/4.0.4/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/4.0.3/4.0.4/report.html'>0.1%</a></td>
+</tr>
+<tr id='v4.0.3'><td title='dropwizard-logging-4.0.3.jar'>4.0.3</td>
+<td>20-2023-10</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/4.0.2/4.0.3/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/4.0.2/4.0.3/report.html'>0.1%</a></td>
+</tr>
+<tr id='v4.0.2'><td title='dropwizard-logging-4.0.2.jar'>4.0.2</td>
+<td>24-2023-09</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/4.0.1/4.0.2/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/4.0.1/4.0.2/report.html'>0.1%</a></td>
+</tr>
+<tr id='v4.0.1'><td title='dropwizard-logging-4.0.1.jar'>4.0.1</td>
+<td>19-2023-06</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/4.0.0/4.0.1/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/4.0.0/4.0.1/report.html'>0.1%</a></td>
+</tr>
+<tr id='v4.0.0'><td title='dropwizard-logging-4.0.0.jar'>4.0.0</td>
+<td>28-2023-03</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/3.0.17/4.0.0/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/3.0.17/4.0.0/report.html'>0.1%</a></td>
+</tr>
+<tr id='v3.0.17'><td title='dropwizard-logging-3.0.17.jar'>3.0.17</td>
+<td>27-2026-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/3.0.16/3.0.17/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/3.0.16/3.0.17/report.html'>0.1%</a></td>
+</tr>
+<tr id='v3.0.16'><td title='dropwizard-logging-3.0.16.jar'>3.0.16</td>
+<td>25-2025-08</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/3.0.15/3.0.16/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/3.0.15/3.0.16/report.html'>0.1%</a></td>
+</tr>
+<tr id='v3.0.15'><td title='dropwizard-logging-3.0.15.jar'>3.0.15</td>
+<td>24-2025-07</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/3.0.14/3.0.15/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/3.0.14/3.0.15/report.html'>0.1%</a></td>
+</tr>
+<tr id='v3.0.14'><td title='dropwizard-logging-3.0.14.jar'>3.0.14</td>
+<td>25-2025-05</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/3.0.13/3.0.14/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/3.0.13/3.0.14/report.html'>0.1%</a></td>
+</tr>
+<tr id='v3.0.13'><td title='dropwizard-logging-3.0.13.jar'>3.0.13</td>
+<td>26-2025-03</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/3.0.12/3.0.13/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/3.0.12/3.0.13/report.html'>0.1%</a></td>
+</tr>
+<tr id='v3.0.12'><td title='dropwizard-logging-3.0.12.jar'>3.0.12</td>
+<td>15-2025-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/3.0.11/3.0.12/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/3.0.11/3.0.12/report.html'>0.1%</a></td>
+</tr>
+<tr id='v3.0.11'><td title='dropwizard-logging-3.0.11.jar'>3.0.11</td>
+<td>27-2024-11</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/3.0.10/3.0.11/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/3.0.10/3.0.11/report.html'>0.1%</a></td>
+</tr>
+<tr id='v3.0.10'><td title='dropwizard-logging-3.0.10.jar'>3.0.10</td>
+<td>21-2024-10</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/3.0.9/3.0.10/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/3.0.9/3.0.10/report.html'>0.1%</a></td>
+</tr>
+<tr id='v3.0.9'><td title='dropwizard-logging-3.0.9.jar'>3.0.9</td>
+<td>07-2024-10</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/3.0.8/3.0.9/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/3.0.8/3.0.9/report.html'>0.1%</a></td>
+</tr>
+<tr id='v3.0.8'><td title='dropwizard-logging-3.0.8.jar'>3.0.8</td>
+<td>25-2024-08</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/3.0.7/3.0.8/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/3.0.7/3.0.8/report.html'>0.1%</a></td>
+</tr>
+<tr id='v3.0.7'><td title='dropwizard-logging-3.0.7.jar'>3.0.7</td>
+<td>06-2024-03</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/3.0.6/3.0.7/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/3.0.6/3.0.7/report.html'>0.1%</a></td>
+</tr>
+<tr id='v3.0.6'><td title='dropwizard-logging-3.0.6.jar'>3.0.6</td>
+<td>29-2024-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/3.0.5/3.0.6/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/3.0.5/3.0.6/report.html'>0.1%</a></td>
+</tr>
+<tr id='v3.0.5'><td title='dropwizard-logging-3.0.5.jar'>3.0.5</td>
+<td>20-2023-12</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/3.0.4/3.0.5/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/3.0.4/3.0.5/report.html'>0.1%</a></td>
+</tr>
+<tr id='v3.0.4'><td title='dropwizard-logging-3.0.4.jar'>3.0.4</td>
+<td>06-2023-11</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/3.0.3/3.0.4/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/3.0.3/3.0.4/report.html'>0.1%</a></td>
+</tr>
+<tr id='v3.0.3'><td title='dropwizard-logging-3.0.3.jar'>3.0.3</td>
+<td>19-2023-10</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/3.0.2/3.0.3/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/3.0.2/3.0.3/report.html'>0.1%</a></td>
+</tr>
+<tr id='v3.0.2'><td title='dropwizard-logging-3.0.2.jar'>3.0.2</td>
+<td>24-2023-09</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/3.0.1/3.0.2/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/3.0.1/3.0.2/report.html'>0.1%</a></td>
+</tr>
+<tr id='v3.0.1'><td title='dropwizard-logging-3.0.1.jar'>3.0.1</td>
+<td>19-2023-06</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/3.0.0/3.0.1/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/3.0.0/3.0.1/report.html'>0.1%</a></td>
+</tr>
+<tr id='v3.0.0'><td title='dropwizard-logging-3.0.0.jar'>3.0.0</td>
+<td>28-2023-03</td>
+<td>N/A</td>
+<td colspan='2' class='incompatible'><a href='../../archives_report/dropwizard-logging/2.1.12/3.0.0/report.html'>0%</a></td>
+<td class='added'><a class='num' href='../../archives_report/dropwizard-logging/2.1.12/3.0.0/report.html'>187 new</a></td>
+<td class='removed'><a class='num' href='../../archives_report/dropwizard-logging/2.1.12/3.0.0/report.html'>186 removed</a></td>
+<td><a href='../../package_diff/dropwizard-logging/2.1.12/3.0.0/report.html'>87.1%</a></td>
+</tr>
+<tr id='v2.1.12'><td title='dropwizard-logging-2.1.12.jar'>2.1.12</td>
+<td>31-2024-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.1.11/2.1.12/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.1.11/2.1.12/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.1.11'><td title='dropwizard-logging-2.1.11.jar'>2.1.11</td>
+<td>20-2023-12</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.1.10/2.1.11/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.1.10/2.1.11/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.1.10'><td title='dropwizard-logging-2.1.10.jar'>2.1.10</td>
+<td>06-2023-11</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.1.9/2.1.10/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.1.9/2.1.10/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.1.9'><td title='dropwizard-logging-2.1.9.jar'>2.1.9</td>
+<td>19-2023-10</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.1.8/2.1.9/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.1.8/2.1.9/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.1.8'><td title='dropwizard-logging-2.1.8.jar'>2.1.8</td>
+<td>24-2023-09</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.1.7/2.1.8/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.1.7/2.1.8/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.1.7'><td title='dropwizard-logging-2.1.7.jar'>2.1.7</td>
+<td>19-2023-06</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.1.6/2.1.7/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.1.6/2.1.7/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.1.6'><td title='dropwizard-logging-2.1.6.jar'>2.1.6</td>
+<td>28-2023-03</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.1.5/2.1.6/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.1.5/2.1.6/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.1.5'><td title='dropwizard-logging-2.1.5.jar'>2.1.5</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.1.4/2.1.5/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.1.4/2.1.5/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.1.4'><td title='dropwizard-logging-2.1.4.jar'>2.1.4</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.1.3/2.1.4/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.1.3/2.1.4/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.1.3'><td title='dropwizard-logging-2.1.3.jar'>2.1.3</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.1.2/2.1.3/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.1.2/2.1.3/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.1.2'><td title='dropwizard-logging-2.1.2.jar'>2.1.2</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.1.1/2.1.2/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.1.1/2.1.2/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.1.1'><td title='dropwizard-logging-2.1.1.jar'>2.1.1</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.1.0/2.1.1/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.1.0/2.1.1/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.1.0'><td title='dropwizard-logging-2.1.0.jar'>2.1.0</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.35/2.1.0/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.35/2.1.0/report.html'>1.5%</a></td>
+</tr>
+<tr id='v2.0.35'><td title='dropwizard-logging-2.0.35.jar'>2.0.35</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.34/2.0.35/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.34/2.0.35/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.34'><td title='dropwizard-logging-2.0.34.jar'>2.0.34</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.33/2.0.34/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.33/2.0.34/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.33'><td title='dropwizard-logging-2.0.33.jar'>2.0.33</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.32/2.0.33/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.32/2.0.33/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.32'><td title='dropwizard-logging-2.0.32.jar'>2.0.32</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.31/2.0.32/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.31/2.0.32/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.31'><td title='dropwizard-logging-2.0.31.jar'>2.0.31</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.30/2.0.31/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.30/2.0.31/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.30'><td title='dropwizard-logging-2.0.30.jar'>2.0.30</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.29/2.0.30/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.29/2.0.30/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.29'><td title='dropwizard-logging-2.0.29.jar'>2.0.29</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.28/2.0.29/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.28/2.0.29/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.28'><td title='dropwizard-logging-2.0.28.jar'>2.0.28</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.27/2.0.28/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.27/2.0.28/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.27'><td title='dropwizard-logging-2.0.27.jar'>2.0.27</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.26/2.0.27/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.26/2.0.27/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.26'><td title='dropwizard-logging-2.0.26.jar'>2.0.26</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.25/2.0.26/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.25/2.0.26/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.25'><td title='dropwizard-logging-2.0.25.jar'>2.0.25</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.24/2.0.25/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.24/2.0.25/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.24'><td title='dropwizard-logging-2.0.24.jar'>2.0.24</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.23/2.0.24/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.23/2.0.24/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.23'><td title='dropwizard-logging-2.0.23.jar'>2.0.23</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.22/2.0.23/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.22/2.0.23/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.22'><td title='dropwizard-logging-2.0.22.jar'>2.0.22</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.21/2.0.22/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.21/2.0.22/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.21'><td title='dropwizard-logging-2.0.21.jar'>2.0.21</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.20/2.0.21/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.20/2.0.21/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.20'><td title='dropwizard-logging-2.0.20.jar'>2.0.20</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.19/2.0.20/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.19/2.0.20/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.19'><td title='dropwizard-logging-2.0.19.jar'>2.0.19</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.18/2.0.19/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.18/2.0.19/report.html'>0.2%</a></td>
+</tr>
+<tr id='v2.0.18'><td title='dropwizard-logging-2.0.18.jar'>2.0.18</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.17/2.0.18/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.17/2.0.18/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.17'><td title='dropwizard-logging-2.0.17.jar'>2.0.17</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.16/2.0.17/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.16/2.0.17/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.16'><td title='dropwizard-logging-2.0.16.jar'>2.0.16</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.15/2.0.16/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.15/2.0.16/report.html'>0.2%</a></td>
+</tr>
+<tr id='v2.0.15'><td title='dropwizard-logging-2.0.15.jar'>2.0.15</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.14/2.0.15/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.14/2.0.15/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.14'><td title='dropwizard-logging-2.0.14.jar'>2.0.14</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.13/2.0.14/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.13/2.0.14/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.13'><td title='dropwizard-logging-2.0.13.jar'>2.0.13</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.12/2.0.13/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.12/2.0.13/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.12'><td title='dropwizard-logging-2.0.12.jar'>2.0.12</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.11/2.0.12/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.11/2.0.12/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.11'><td title='dropwizard-logging-2.0.11.jar'>2.0.11</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.10/2.0.11/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.10/2.0.11/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.10'><td title='dropwizard-logging-2.0.10.jar'>2.0.10</td>
+<td>18-2011-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.9/2.0.10/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.9/2.0.10/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.9'><td title='dropwizard-logging-2.0.9.jar'>2.0.9</td>
+<td>04-2020-05</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.8/2.0.9/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.8/2.0.9/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.8'><td title='dropwizard-logging-2.0.8.jar'>2.0.8</td>
+<td>14-2020-04</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.7/2.0.8/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.7/2.0.8/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.7'><td title='dropwizard-logging-2.0.7.jar'>2.0.7</td>
+<td>10-2020-04</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.6/2.0.7/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.6/2.0.7/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.6'><td title='dropwizard-logging-2.0.6.jar'>2.0.6</td>
+<td>04-2020-04</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.5/2.0.6/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.5/2.0.6/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.5'><td title='dropwizard-logging-2.0.5.jar'>2.0.5</td>
+<td>29-2020-03</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.4/2.0.5/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.4/2.0.5/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.4'><td title='dropwizard-logging-2.0.4.jar'>2.0.4</td>
+<td>27-2020-03</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.3/2.0.4/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.3/2.0.4/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.3'><td title='dropwizard-logging-2.0.3.jar'>2.0.3</td>
+<td>26-2020-03</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.2/2.0.3/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.2/2.0.3/report.html'>1.1%</a></td>
+</tr>
+<tr id='v2.0.2'><td title='dropwizard-logging-2.0.2.jar'>2.0.2</td>
+<td>20-2020-02</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.1/2.0.2/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.1/2.0.2/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.1'><td title='dropwizard-logging-2.0.1.jar'>2.0.1</td>
+<td>30-2020-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/2.0.0/2.0.1/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/2.0.0/2.0.1/report.html'>0.1%</a></td>
+</tr>
+<tr id='v2.0.0'><td title='dropwizard-logging-2.0.0.jar'>2.0.0</td>
+<td>09-2019-12</td>
+<td>N/A</td>
+<td colspan='2' class='incompatible'><a href='../../archives_report/dropwizard-logging/1.3.29/2.0.0/report.html'>77.8%</a></td>
+<td class='added'><a class='num' href='../../archives_report/dropwizard-logging/1.3.29/2.0.0/report.html'>54 new</a></td>
+<td class='removed'><a class='num' href='../../archives_report/dropwizard-logging/1.3.29/2.0.0/report.html'>11 removed</a></td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.29/2.0.0/report.html'>27.8%</a></td>
+</tr>
+<tr id='v1.3.29'><td title='dropwizard-logging-1.3.29.jar'>1.3.29</td>
+<td>06-2021-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.28/1.3.29/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.28/1.3.29/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.3.28'><td title='dropwizard-logging-1.3.28.jar'>1.3.28</td>
+<td>08-2020-12</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.27/1.3.28/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.27/1.3.28/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.3.27'><td title='dropwizard-logging-1.3.27.jar'>1.3.27</td>
+<td>28-2020-10</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.26/1.3.27/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.26/1.3.27/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.3.26'><td title='dropwizard-logging-1.3.26.jar'>1.3.26</td>
+<td>22-2020-10</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.25/1.3.26/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.25/1.3.26/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.3.25'><td title='dropwizard-logging-1.3.25.jar'>1.3.25</td>
+<td>31-2020-08</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.24/1.3.25/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.24/1.3.25/report.html'>0.2%</a></td>
+</tr>
+<tr id='v1.3.24'><td title='dropwizard-logging-1.3.24.jar'>1.3.24</td>
+<td>03-2020-07</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.23/1.3.24/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.23/1.3.24/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.3.23'><td title='dropwizard-logging-1.3.23.jar'>1.3.23</td>
+<td>14-2020-04</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.22/1.3.23/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.22/1.3.23/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.3.22'><td title='dropwizard-logging-1.3.22.jar'>1.3.22</td>
+<td>04-2020-04</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.21/1.3.22/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.21/1.3.22/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.3.21'><td title='dropwizard-logging-1.3.21.jar'>1.3.21</td>
+<td>26-2020-03</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.20/1.3.21/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.20/1.3.21/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.3.20'><td title='dropwizard-logging-1.3.20.jar'>1.3.20</td>
+<td>24-2020-02</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.19/1.3.20/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.19/1.3.20/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.3.19'><td title='dropwizard-logging-1.3.19.jar'>1.3.19</td>
+<td>20-2020-02</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.18/1.3.19/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.18/1.3.19/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.3.18'><td title='dropwizard-logging-1.3.18.jar'>1.3.18</td>
+<td>30-2020-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.17/1.3.18/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.17/1.3.18/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.3.17'><td title='dropwizard-logging-1.3.17.jar'>1.3.17</td>
+<td>24-2019-11</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.16/1.3.17/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.16/1.3.17/report.html'>0.2%</a></td>
+</tr>
+<tr id='v1.3.16'><td title='dropwizard-logging-1.3.16.jar'>1.3.16</td>
+<td>20-2019-10</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.15/1.3.16/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.15/1.3.16/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.3.15'><td title='dropwizard-logging-1.3.15.jar'>1.3.15</td>
+<td>27-2019-09</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.14/1.3.15/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.14/1.3.15/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.3.14'><td title='dropwizard-logging-1.3.14.jar'>1.3.14</td>
+<td>07-2019-08</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.13/1.3.14/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.13/1.3.14/report.html'>0.2%</a></td>
+</tr>
+<tr id='v1.3.13'><td title='dropwizard-logging-1.3.13.jar'>1.3.13</td>
+<td>16-2019-07</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.12/1.3.13/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.12/1.3.13/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.3.12'><td title='dropwizard-logging-1.3.12.jar'>1.3.12</td>
+<td>25-2019-05</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.11/1.3.12/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.11/1.3.12/report.html'>0.2%</a></td>
+</tr>
+<tr id='v1.3.11'><td title='dropwizard-logging-1.3.11.jar'>1.3.11</td>
+<td>13-2019-05</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.10/1.3.11/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.10/1.3.11/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.3.10'><td title='dropwizard-logging-1.3.10.jar'>1.3.10</td>
+<td>29-2019-04</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.9/1.3.10/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.9/1.3.10/report.html'>0.2%</a></td>
+</tr>
+<tr id='v1.3.9'><td title='dropwizard-logging-1.3.9.jar'>1.3.9</td>
+<td>24-2019-02</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.8/1.3.9/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.8/1.3.9/report.html'>0.2%</a></td>
+</tr>
+<tr id='v1.3.8'><td title='dropwizard-logging-1.3.8.jar'>1.3.8</td>
+<td>01-2019-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.7/1.3.8/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.7/1.3.8/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.3.7'><td title='dropwizard-logging-1.3.7.jar'>1.3.7</td>
+<td>02-2018-10</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.6/1.3.7/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.6/1.3.7/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.3.6'><td title='dropwizard-logging-1.3.6.jar'>1.3.6</td>
+<td>01-2018-10</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.5/1.3.6/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.5/1.3.6/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.3.5'><td title='dropwizard-logging-1.3.5.jar'>1.3.5</td>
+<td>24-2018-06</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.4/1.3.5/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.4/1.3.5/report.html'>0.2%</a></td>
+</tr>
+<tr id='v1.3.4'><td title='dropwizard-logging-1.3.4.jar'>1.3.4</td>
+<td>15-2018-06</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.3/1.3.4/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.3/1.3.4/report.html'>0.2%</a></td>
+</tr>
+<tr id='v1.3.3'><td title='dropwizard-logging-1.3.3.jar'>1.3.3</td>
+<td>06-2018-06</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.2/1.3.3/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.2/1.3.3/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.3.2'><td title='dropwizard-logging-1.3.2.jar'>1.3.2</td>
+<td>06-2018-05</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.1/1.3.2/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.1/1.3.2/report.html'>0.2%</a></td>
+</tr>
+<tr id='v1.3.1'><td title='dropwizard-logging-1.3.1.jar'>1.3.1</td>
+<td>04-2018-04</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.3.0/1.3.1/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.3.0/1.3.1/report.html'>0.2%</a></td>
+</tr>
+<tr id='v1.3.0'><td title='dropwizard-logging-1.3.0.jar'>1.3.0</td>
+<td>14-2018-03</td>
+<td>N/A</td>
+<td colspan='2' class='warning'><a href='../../archives_report/dropwizard-logging/1.2.9/1.3.0/report.html'>99.1%</a></td>
+<td class='added'><a class='num' href='../../archives_report/dropwizard-logging/1.2.9/1.3.0/report.html'>38 new</a></td>
+<td class='removed'><a class='num' href='../../archives_report/dropwizard-logging/1.2.9/1.3.0/report.html'>1 removed</a></td>
+<td><a href='../../package_diff/dropwizard-logging/1.2.9/1.3.0/report.html'>33.4%</a></td>
+</tr>
+<tr id='v1.2.9'><td title='dropwizard-logging-1.2.9.jar'>1.2.9</td>
+<td>01-2018-10</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.2.8/1.2.9/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.2.8/1.2.9/report.html'>0.2%</a></td>
+</tr>
+<tr id='v1.2.8'><td title='dropwizard-logging-1.2.8.jar'>1.2.8</td>
+<td>24-2018-06</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.2.7/1.2.8/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.2.7/1.2.8/report.html'>0.2%</a></td>
+</tr>
+<tr id='v1.2.7'><td title='dropwizard-logging-1.2.7.jar'>1.2.7</td>
+<td>15-2018-06</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.2.6/1.2.7/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.2.6/1.2.7/report.html'>0.2%</a></td>
+</tr>
+<tr id='v1.2.6'><td title='dropwizard-logging-1.2.6.jar'>1.2.6</td>
+<td>06-2018-05</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.2.5/1.2.6/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.2.5/1.2.6/report.html'>0.2%</a></td>
+</tr>
+<tr id='v1.2.5'><td title='dropwizard-logging-1.2.5.jar'>1.2.5</td>
+<td>04-2018-04</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.2.4/1.2.5/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.2.4/1.2.5/report.html'>0.2%</a></td>
+</tr>
+<tr id='v1.2.4'><td title='dropwizard-logging-1.2.4.jar'>1.2.4</td>
+<td>11-2018-02</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.2.3/1.2.4/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.2.3/1.2.4/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.2.3'><td title='dropwizard-logging-1.2.3.jar'>1.2.3</td>
+<td>22-2018-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.2.2/1.2.3/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.2.2/1.2.3/report.html'>0.2%</a></td>
+</tr>
+<tr id='v1.2.2'><td title='dropwizard-logging-1.2.2.jar'>1.2.2</td>
+<td>27-2017-11</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.2.1/1.2.2/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.2.1/1.2.2/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.2.1'><td title='dropwizard-logging-1.2.1.jar'>1.2.1</td>
+<td>22-2017-11</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.2.0/1.2.1/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.2.0/1.2.1/report.html'>0.2%</a></td>
+</tr>
+<tr id='v1.2.0'><td title='dropwizard-logging-1.2.0.jar'>1.2.0</td>
+<td>06-2017-10</td>
+<td>N/A</td>
+<td colspan='2' class='warning'><a href='../../archives_report/dropwizard-logging/1.1.8/1.2.0/report.html'>94.3%</a></td>
+<td class='added'><a class='num' href='../../archives_report/dropwizard-logging/1.1.8/1.2.0/report.html'>11 new</a></td>
+<td class='removed'><a class='num' href='../../archives_report/dropwizard-logging/1.1.8/1.2.0/report.html'>6 removed</a></td>
+<td><a href='../../package_diff/dropwizard-logging/1.1.8/1.2.0/report.html'>3.2%</a></td>
+</tr>
+<tr id='v1.1.8'><td title='dropwizard-logging-1.1.8.jar'>1.1.8</td>
+<td>24-2018-06</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.1.7/1.1.8/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.1.7/1.1.8/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.1.7'><td title='dropwizard-logging-1.1.7.jar'>1.1.7</td>
+<td>11-2018-02</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.1.6/1.1.7/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.1.6/1.1.7/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.1.6'><td title='dropwizard-logging-1.1.6.jar'>1.1.6</td>
+<td>02-2017-11</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.1.5/1.1.6/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.1.5/1.1.6/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.1.5'><td title='dropwizard-logging-1.1.5.jar'>1.1.5</td>
+<td>17-2017-10</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.1.4/1.1.5/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.1.4/1.1.5/report.html'>0.2%</a></td>
+</tr>
+<tr id='v1.1.4'><td title='dropwizard-logging-1.1.4.jar'>1.1.4</td>
+<td>24-2017-08</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.1.3/1.1.4/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.1.3/1.1.4/report.html'>0.2%</a></td>
+</tr>
+<tr id='v1.1.3'><td title='dropwizard-logging-1.1.3.jar'>1.1.3</td>
+<td>31-2017-07</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.1.2/1.1.3/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.1.2/1.1.3/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.1.2'><td title='dropwizard-logging-1.1.2.jar'>1.1.2</td>
+<td>27-2017-06</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.1.1/1.1.2/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.1.1/1.1.2/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.1.1'><td title='dropwizard-logging-1.1.1.jar'>1.1.1</td>
+<td>19-2017-05</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.1.0/1.1.1/report.html'>100%</a></td>
+<td class='added'><a class='num' href='../../archives_report/dropwizard-logging/1.1.0/1.1.1/report.html'>2 new</a></td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.1.0/1.1.1/report.html'>1%</a></td>
+</tr>
+<tr id='v1.1.0'><td title='dropwizard-logging-1.1.0.jar'>1.1.0</td>
+<td>21-2017-03</td>
+<td>N/A</td>
+<td class='ok'><a href='../../archives_report/dropwizard-logging/1.0.9/1.1.0/report.html'>100%</a></td>
+<td class='warning'><a href='../../archives_report/dropwizard-logging/1.0.9/1.1.0/report.html'>98%</a></td>
+<td class='added'><a class='num' href='../../archives_report/dropwizard-logging/1.0.9/1.1.0/report.html'>3 new</a></td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.0.9/1.1.0/report.html'>0.8%</a></td>
+</tr>
+<tr id='v1.0.9'><td title='dropwizard-logging-1.0.9.jar'>1.0.9</td>
+<td>31-2017-07</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.0.8/1.0.9/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.0.8/1.0.9/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.0.8'><td title='dropwizard-logging-1.0.8.jar'>1.0.8</td>
+<td>27-2017-06</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.0.7/1.0.8/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.0.7/1.0.8/report.html'>0.2%</a></td>
+</tr>
+<tr id='v1.0.7'><td title='dropwizard-logging-1.0.7.jar'>1.0.7</td>
+<td>20-2017-03</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.0.6/1.0.7/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.0.6/1.0.7/report.html'>0.2%</a></td>
+</tr>
+<tr id='v1.0.6'><td title='dropwizard-logging-1.0.6.jar'>1.0.6</td>
+<td>30-2017-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.0.5/1.0.6/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.0.5/1.0.6/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.0.5'><td title='dropwizard-logging-1.0.5.jar'>1.0.5</td>
+<td>18-2016-11</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.0.4/1.0.5/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.0.4/1.0.5/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.0.4'><td title='dropwizard-logging-1.0.4.jar'>1.0.4</td>
+<td>14-2016-11</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.0.3/1.0.4/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.0.3/1.0.4/report.html'>0.2%</a></td>
+</tr>
+<tr id='v1.0.3'><td title='dropwizard-logging-1.0.3.jar'>1.0.3</td>
+<td>28-2016-10</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.0.2/1.0.3/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.0.2/1.0.3/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.0.2'><td title='dropwizard-logging-1.0.2.jar'>1.0.2</td>
+<td>23-2016-09</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.0.1/1.0.2/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.0.1/1.0.2/report.html'>0.1%</a></td>
+</tr>
+<tr id='v1.0.1'><td title='dropwizard-logging-1.0.1.jar'>1.0.1</td>
+<td>21-2016-09</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/1.0.0/1.0.1/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/1.0.0/1.0.1/report.html'>0.2%</a></td>
+</tr>
+<tr id='v1.0.0'><td title='dropwizard-logging-1.0.0.jar'>1.0.0</td>
+<td>26-2016-07</td>
+<td>N/A</td>
+<td colspan='2' class='incompatible'><a href='../../archives_report/dropwizard-logging/0.9.3/1.0.0/report.html'>78.7%</a></td>
+<td class='added'><a class='num' href='../../archives_report/dropwizard-logging/0.9.3/1.0.0/report.html'>24 new</a></td>
+<td class='removed'><a class='num' href='../../archives_report/dropwizard-logging/0.9.3/1.0.0/report.html'>8 removed</a></td>
+<td><a href='../../package_diff/dropwizard-logging/0.9.3/1.0.0/report.html'>35.6%</a></td>
+</tr>
+<tr id='v0.9.3'><td title='dropwizard-logging-0.9.3.jar'>0.9.3</td>
+<td>20-2016-06</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/0.9.2/0.9.3/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/0.9.2/0.9.3/report.html'>0.3%</a></td>
+</tr>
+<tr id='v0.9.2'><td title='dropwizard-logging-0.9.2.jar'>0.9.2</td>
+<td>20-2016-01</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/0.9.1/0.9.2/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/0.9.1/0.9.2/report.html'>0.3%</a></td>
+</tr>
+<tr id='v0.9.1'><td title='dropwizard-logging-0.9.1.jar'>0.9.1</td>
+<td>03-2015-11</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/0.9.0/0.9.1/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/0.9.0/0.9.1/report.html'>0.2%</a></td>
+</tr>
+<tr id='v0.9.0'><td title='dropwizard-logging-0.9.0.jar'>0.9.0</td>
+<td>28-2015-10</td>
+<td>N/A</td>
+<td colspan='2' class='almost_compatible'><a href='../../archives_report/dropwizard-logging/0.8.5/0.9.0/report.html'>84.5%</a></td>
+<td class='added'><a class='num' href='../../archives_report/dropwizard-logging/0.8.5/0.9.0/report.html'>27 new</a></td>
+<td class='removed'><a class='num' href='../../archives_report/dropwizard-logging/0.8.5/0.9.0/report.html'>9 removed</a></td>
+<td><a href='../../package_diff/dropwizard-logging/0.8.5/0.9.0/report.html'>31.6%</a></td>
+</tr>
+<tr id='v0.8.5'><td title='dropwizard-logging-0.8.5.jar'>0.8.5</td>
+<td>03-2015-11</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/0.8.4/0.8.5/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/0.8.4/0.8.5/report.html'>0.3%</a></td>
+</tr>
+<tr id='v0.8.4'><td title='dropwizard-logging-0.8.4.jar'>0.8.4</td>
+<td>25-2015-08</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/0.8.3/0.8.4/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/0.8.3/0.8.4/report.html'>0.2%</a></td>
+</tr>
+<tr id='v0.8.3'><td title='dropwizard-logging-0.8.3.jar'>0.8.3</td>
+<td>24-2015-08</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/0.8.2/0.8.3/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/0.8.2/0.8.3/report.html'>0.2%</a></td>
+</tr>
+<tr id='v0.8.2'><td title='dropwizard-logging-0.8.2.jar'>0.8.2</td>
+<td>06-2015-07</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/0.8.1/0.8.2/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/0.8.1/0.8.2/report.html'>0.2%</a></td>
+</tr>
+<tr id='v0.8.1'><td title='dropwizard-logging-0.8.1.jar'>0.8.1</td>
+<td>07-2015-04</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/0.8.0/0.8.1/report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/0.8.0/0.8.1/report.html'>0.2%</a></td>
+</tr>
+<tr id='v0.8.0'><td title='dropwizard-logging-0.8.0.jar'>0.8.0</td>
+<td>05-2015-03</td>
+<td>N/A</td>
+<td colspan='2' class='almost_compatible'><a href='../../archives_report/dropwizard-logging/0.7.1/0.8.0/report.html'>84.6%</a></td>
+<td class='added'><a class='num' href='../../archives_report/dropwizard-logging/0.7.1/0.8.0/report.html'>5 new</a></td>
+<td class='removed'><a class='num' href='../../archives_report/dropwizard-logging/0.7.1/0.8.0/report.html'>12 removed</a></td>
+<td><a href='../../package_diff/dropwizard-logging/0.7.1/0.8.0/report.html'>14.1%</a></td>
+</tr>
+<tr id='v0.7.1'><td title='dropwizard-logging-0.7.1.jar'>0.7.1</td>
+<td>18-2014-06</td>
+<td>N/A</td>
+<td colspan='2' class='ok'><a href='../../archives_report/dropwizard-logging/0.7.0/0.7.1/report.html'>100%</a></td>
+<td class='added'><a class='num' href='../../archives_report/dropwizard-logging/0.7.0/0.7.1/report.html'>3 new</a></td>
+<td class='ok'>0</td>
+<td><a href='../../package_diff/dropwizard-logging/0.7.0/0.7.1/report.html'>1.9%</a></td>
+</tr>
+<tr id='v0.7.0'><td title='dropwizard-logging-0.7.0.jar'>0.7.0</td>
+<td>04-2014-04</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+</table><br/>Maintained by <a href='https://www.dropwizard.io/'>Dropwizard Committers</a>. Last updated on Mon Feb  2 10:03 2026.<br/><br/>Generated by <a href='https://github.com/lvc/japi-tracker'>Java API Tracker</a> and <a href='https://github.com/lvc/japi-compliance-checker'>JAPICC</a> tools.<br/>
+<br/>
+<hr/>
+<div align='right'><a class='home' title="Andrey Ponomarenko's ABI laboratory" href='https://abi-laboratory.pro/'>abi-laboratory.pro</a></div>
+<br/>
+</body></html>

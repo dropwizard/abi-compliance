@@ -1,0 +1,11 @@
+{
+  "Affected": "8.2",
+  "Added": 3,
+  "Removed": 3,
+  "TotalProblems": 4,
+  "Source_Affected": "8.2",
+  "Source_TotalProblems": "4",
+  "Source_ReportPath": "compat_report/dropwizard-metrics/0.9.3/1.0.0/66dc8/src_compat_report.html",
+  "Archive1": "dropwizard-metrics-0.9.3.jar",
+  "Archive2": "dropwizard-metrics-1.0.0.jar"
+}

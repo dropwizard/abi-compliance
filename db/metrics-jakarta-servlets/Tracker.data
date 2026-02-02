@@ -1,0 +1,2034 @@
+$VAR1 = {
+          'APIDump' => {
+                         '4.2.0' => {
+                                      '185a4' => {
+                                                   'Archive' => 'metrics-jakarta-servlets-4.2.0.jar',
+                                                   'Path' => 'api_dump/metrics-jakarta-servlets/4.2.0/185a4/API.dump.tar.gz',
+                                                   'TotalSymbols' => '39'
+                                                 }
+                                    },
+                         '4.2.1' => {
+                                      '72591' => {
+                                                   'Archive' => 'metrics-jakarta-servlets-4.2.1.jar',
+                                                   'Path' => 'api_dump/metrics-jakarta-servlets/4.2.1/72591/API.dump.tar.gz',
+                                                   'TotalSymbols' => '39'
+                                                 }
+                                    },
+                         '4.2.10' => {
+                                       'e1409' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.10.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.10/e1409/API.dump.tar.gz',
+                                                    'TotalSymbols' => '39'
+                                                  }
+                                     },
+                         '4.2.11' => {
+                                       '686a1' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.11.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.11/686a1/API.dump.tar.gz',
+                                                    'TotalSymbols' => '39'
+                                                  }
+                                     },
+                         '4.2.12' => {
+                                       'b07a8' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.12.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.12/b07a8/API.dump.tar.gz',
+                                                    'TotalSymbols' => '39'
+                                                  }
+                                     },
+                         '4.2.13' => {
+                                       'f1e5f' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.13.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.13/f1e5f/API.dump.tar.gz',
+                                                    'TotalSymbols' => '39'
+                                                  }
+                                     },
+                         '4.2.14' => {
+                                       '11f19' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.14.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.14/11f19/API.dump.tar.gz',
+                                                    'TotalSymbols' => '39'
+                                                  }
+                                     },
+                         '4.2.15' => {
+                                       'aba78' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.15.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.15/aba78/API.dump.tar.gz',
+                                                    'TotalSymbols' => '39'
+                                                  }
+                                     },
+                         '4.2.16' => {
+                                       'ab328' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.16.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.16/ab328/API.dump.tar.gz',
+                                                    'TotalSymbols' => '39'
+                                                  }
+                                     },
+                         '4.2.17' => {
+                                       '86f41' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.17.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.17/86f41/API.dump.tar.gz',
+                                                    'TotalSymbols' => '39'
+                                                  }
+                                     },
+                         '4.2.18' => {
+                                       'bb618' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.18.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.18/bb618/API.dump.tar.gz',
+                                                    'TotalSymbols' => '39'
+                                                  }
+                                     },
+                         '4.2.19' => {
+                                       'c5c96' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.19.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.19/c5c96/API.dump.tar.gz',
+                                                    'TotalSymbols' => '39'
+                                                  }
+                                     },
+                         '4.2.2' => {
+                                      'ff493' => {
+                                                   'Archive' => 'metrics-jakarta-servlets-4.2.2.jar',
+                                                   'Path' => 'api_dump/metrics-jakarta-servlets/4.2.2/ff493/API.dump.tar.gz',
+                                                   'TotalSymbols' => '39'
+                                                 }
+                                    },
+                         '4.2.20' => {
+                                       'c5c95' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.20.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.20/c5c95/API.dump.tar.gz',
+                                                    'TotalSymbols' => '39'
+                                                  }
+                                     },
+                         '4.2.21' => {
+                                       '44f78' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.21.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.21/44f78/API.dump.tar.gz',
+                                                    'TotalSymbols' => '39'
+                                                  }
+                                     },
+                         '4.2.22' => {
+                                       '70543' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.22.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.22/70543/API.dump.tar.gz',
+                                                    'TotalSymbols' => '39'
+                                                  }
+                                     },
+                         '4.2.23' => {
+                                       'c4401' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.23.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.23/c4401/API.dump.tar.gz',
+                                                    'TotalSymbols' => '39'
+                                                  }
+                                     },
+                         '4.2.24' => {
+                                       '1a245' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.24.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.24/1a245/API.dump.tar.gz',
+                                                    'TotalSymbols' => '39'
+                                                  }
+                                     },
+                         '4.2.25' => {
+                                       'c8f66' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.25.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.25/c8f66/API.dump.tar.gz',
+                                                    'TotalSymbols' => '40'
+                                                  }
+                                     },
+                         '4.2.26' => {
+                                       '15b65' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.26.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.26/15b65/API.dump.tar.gz',
+                                                    'TotalSymbols' => '40'
+                                                  }
+                                     },
+                         '4.2.27' => {
+                                       '45386' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.27.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.27/45386/API.dump.tar.gz',
+                                                    'TotalSymbols' => '40'
+                                                  }
+                                     },
+                         '4.2.28' => {
+                                       '7a44c' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.28.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.28/7a44c/API.dump.tar.gz',
+                                                    'TotalSymbols' => '40'
+                                                  }
+                                     },
+                         '4.2.29' => {
+                                       '62dfe' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.29.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.29/62dfe/API.dump.tar.gz',
+                                                    'TotalSymbols' => '40'
+                                                  }
+                                     },
+                         '4.2.3' => {
+                                      'af0d7' => {
+                                                   'Archive' => 'metrics-jakarta-servlets-4.2.3.jar',
+                                                   'Path' => 'api_dump/metrics-jakarta-servlets/4.2.3/af0d7/API.dump.tar.gz',
+                                                   'TotalSymbols' => '39'
+                                                 }
+                                    },
+                         '4.2.30' => {
+                                       '77930' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.30.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.30/77930/API.dump.tar.gz',
+                                                    'TotalSymbols' => '40'
+                                                  }
+                                     },
+                         '4.2.32' => {
+                                       'cd72c' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.32.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.32/cd72c/API.dump.tar.gz',
+                                                    'TotalSymbols' => '40'
+                                                  }
+                                     },
+                         '4.2.33' => {
+                                       'dbe9f' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.33.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.33/dbe9f/API.dump.tar.gz',
+                                                    'TotalSymbols' => '40'
+                                                  }
+                                     },
+                         '4.2.34' => {
+                                       'ec97d' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.34.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.34/ec97d/API.dump.tar.gz',
+                                                    'TotalSymbols' => '40'
+                                                  }
+                                     },
+                         '4.2.35' => {
+                                       '1cdb4' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.35.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.35/1cdb4/API.dump.tar.gz',
+                                                    'TotalSymbols' => '40'
+                                                  }
+                                     },
+                         '4.2.36' => {
+                                       'e76d8' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.36.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.36/e76d8/API.dump.tar.gz',
+                                                    'TotalSymbols' => '40'
+                                                  }
+                                     },
+                         '4.2.37' => {
+                                       'c2e38' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.37.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.37/c2e38/API.dump.tar.gz',
+                                                    'TotalSymbols' => '40'
+                                                  }
+                                     },
+                         '4.2.38' => {
+                                       '9e52a' => {
+                                                    'Archive' => 'metrics-jakarta-servlets-4.2.38.jar',
+                                                    'Path' => 'api_dump/metrics-jakarta-servlets/4.2.38/9e52a/API.dump.tar.gz',
+                                                    'TotalSymbols' => '40'
+                                                  }
+                                     },
+                         '4.2.4' => {
+                                      '9665b' => {
+                                                   'Archive' => 'metrics-jakarta-servlets-4.2.4.jar',
+                                                   'Path' => 'api_dump/metrics-jakarta-servlets/4.2.4/9665b/API.dump.tar.gz',
+                                                   'TotalSymbols' => '39'
+                                                 }
+                                    },
+                         '4.2.5' => {
+                                      '9a822' => {
+                                                   'Archive' => 'metrics-jakarta-servlets-4.2.5.jar',
+                                                   'Path' => 'api_dump/metrics-jakarta-servlets/4.2.5/9a822/API.dump.tar.gz',
+                                                   'TotalSymbols' => '39'
+                                                 }
+                                    },
+                         '4.2.6' => {
+                                      '37c8f' => {
+                                                   'Archive' => 'metrics-jakarta-servlets-4.2.6.jar',
+                                                   'Path' => 'api_dump/metrics-jakarta-servlets/4.2.6/37c8f/API.dump.tar.gz',
+                                                   'TotalSymbols' => '39'
+                                                 }
+                                    },
+                         '4.2.7' => {
+                                      'b94e3' => {
+                                                   'Archive' => 'metrics-jakarta-servlets-4.2.7.jar',
+                                                   'Path' => 'api_dump/metrics-jakarta-servlets/4.2.7/b94e3/API.dump.tar.gz',
+                                                   'TotalSymbols' => '39'
+                                                 }
+                                    },
+                         '4.2.8' => {
+                                      '8a46c' => {
+                                                   'Archive' => 'metrics-jakarta-servlets-4.2.8.jar',
+                                                   'Path' => 'api_dump/metrics-jakarta-servlets/4.2.8/8a46c/API.dump.tar.gz',
+                                                   'TotalSymbols' => '39'
+                                                 }
+                                    },
+                         '4.2.9' => {
+                                      '7d775' => {
+                                                   'Archive' => 'metrics-jakarta-servlets-4.2.9.jar',
+                                                   'Path' => 'api_dump/metrics-jakarta-servlets/4.2.9/7d775/API.dump.tar.gz',
+                                                   'TotalSymbols' => '39'
+                                                 }
+                                    },
+                         '5.0.1' => {
+                                      '4cfa9' => {
+                                                   'Archive' => 'metrics-jakarta-servlets-5.0.1.jar',
+                                                   'Path' => 'api_dump/metrics-jakarta-servlets/5.0.1/4cfa9/API.dump.tar.gz',
+                                                   'TotalSymbols' => '40'
+                                                 }
+                                    },
+                         '5.0.2' => {
+                                      '76947' => {
+                                                   'Archive' => 'metrics-jakarta-servlets-5.0.2.jar',
+                                                   'Path' => 'api_dump/metrics-jakarta-servlets/5.0.2/76947/API.dump.tar.gz',
+                                                   'TotalSymbols' => '40'
+                                                 }
+                                    },
+                         '5.0.3' => {
+                                      '9b67a' => {
+                                                   'Archive' => 'metrics-jakarta-servlets-5.0.3.jar',
+                                                   'Path' => 'api_dump/metrics-jakarta-servlets/5.0.3/9b67a/API.dump.tar.gz',
+                                                   'TotalSymbols' => '40'
+                                                 }
+                                    },
+                         '5.0.4' => {
+                                      '922d1' => {
+                                                   'Archive' => 'metrics-jakarta-servlets-5.0.4.jar',
+                                                   'Path' => 'api_dump/metrics-jakarta-servlets/5.0.4/922d1/API.dump.tar.gz',
+                                                   'TotalSymbols' => '40'
+                                                 }
+                                    },
+                         '5.0.5' => {
+                                      'b5194' => {
+                                                   'Archive' => 'metrics-jakarta-servlets-5.0.5.jar',
+                                                   'Path' => 'api_dump/metrics-jakarta-servlets/5.0.5/b5194/API.dump.tar.gz',
+                                                   'TotalSymbols' => '40'
+                                                 }
+                                    },
+                         '5.0.6' => {
+                                      '1fa86' => {
+                                                   'Archive' => 'metrics-jakarta-servlets-5.0.6.jar',
+                                                   'Path' => 'api_dump/metrics-jakarta-servlets/5.0.6/1fa86/API.dump.tar.gz',
+                                                   'TotalSymbols' => '40'
+                                                 }
+                                    }
+                       },
+          'APIReport' => {
+                           '4.2.0' => {
+                                        '4.2.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jakarta-servlets/4.2.0/4.2.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.2.1' => {
+                                        '4.2.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jakarta-servlets/4.2.1/4.2.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.2.10' => {
+                                         '4.2.11' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jakarta-servlets/4.2.10/4.2.11/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.11' => {
+                                         '4.2.12' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jakarta-servlets/4.2.11/4.2.12/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.12' => {
+                                         '4.2.13' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jakarta-servlets/4.2.12/4.2.13/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.13' => {
+                                         '4.2.14' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jakarta-servlets/4.2.13/4.2.14/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.14' => {
+                                         '4.2.15' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jakarta-servlets/4.2.14/4.2.15/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.15' => {
+                                         '4.2.16' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jakarta-servlets/4.2.15/4.2.16/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.16' => {
+                                         '4.2.17' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jakarta-servlets/4.2.16/4.2.17/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.17' => {
+                                         '4.2.18' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jakarta-servlets/4.2.17/4.2.18/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.18' => {
+                                         '4.2.19' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jakarta-servlets/4.2.18/4.2.19/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.19' => {
+                                         '4.2.20' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jakarta-servlets/4.2.19/4.2.20/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.2' => {
+                                        '4.2.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jakarta-servlets/4.2.2/4.2.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.2.20' => {
+                                         '4.2.21' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jakarta-servlets/4.2.20/4.2.21/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.21' => {
+                                         '4.2.22' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jakarta-servlets/4.2.21/4.2.22/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.22' => {
+                                         '4.2.23' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jakarta-servlets/4.2.22/4.2.23/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.23' => {
+                                         '4.2.24' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jakarta-servlets/4.2.23/4.2.24/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.24' => {
+                                         '4.2.25' => {
+                                                       'Added' => 1,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jakarta-servlets/4.2.24/4.2.25/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.25' => {
+                                         '4.2.26' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jakarta-servlets/4.2.25/4.2.26/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.26' => {
+                                         '4.2.27' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jakarta-servlets/4.2.26/4.2.27/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.27' => {
+                                         '4.2.28' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jakarta-servlets/4.2.27/4.2.28/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.28' => {
+                                         '4.2.29' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jakarta-servlets/4.2.28/4.2.29/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.29' => {
+                                         '4.2.30' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jakarta-servlets/4.2.29/4.2.30/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.3' => {
+                                        '4.2.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jakarta-servlets/4.2.3/4.2.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.2.30' => {
+                                         '4.2.32' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jakarta-servlets/4.2.30/4.2.32/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.32' => {
+                                         '4.2.33' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jakarta-servlets/4.2.32/4.2.33/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.33' => {
+                                         '4.2.34' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jakarta-servlets/4.2.33/4.2.34/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.34' => {
+                                         '4.2.35' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jakarta-servlets/4.2.34/4.2.35/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.35' => {
+                                         '4.2.36' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jakarta-servlets/4.2.35/4.2.36/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.36' => {
+                                         '4.2.37' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jakarta-servlets/4.2.36/4.2.37/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.37' => {
+                                         '4.2.38' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jakarta-servlets/4.2.37/4.2.38/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     },
+                                         '5.0.1' => {
+                                                      'Added' => 40,
+                                                      'ArchivesAdded' => 0,
+                                                      'ArchivesAddedSymbols' => 0,
+                                                      'ArchivesRemoved' => 0,
+                                                      'ArchivesRemovedSymbols' => 0,
+                                                      'BC' => 0,
+                                                      'Path' => 'archives_report/metrics-jakarta-servlets/4.2.37/5.0.1/report.html',
+                                                      'Removed' => 40,
+                                                      'Source_BC' => 0,
+                                                      'Source_TotalProblems' => 8,
+                                                      'TotalArchives' => 1,
+                                                      'TotalProblems' => 8
+                                                    }
+                                       },
+                           '4.2.38' => {
+                                         '5.0.1' => {
+                                                      'Added' => 40,
+                                                      'ArchivesAdded' => 0,
+                                                      'ArchivesAddedSymbols' => 0,
+                                                      'ArchivesRemoved' => 0,
+                                                      'ArchivesRemovedSymbols' => 0,
+                                                      'BC' => 0,
+                                                      'Path' => 'archives_report/metrics-jakarta-servlets/4.2.38/5.0.1/report.html',
+                                                      'Removed' => 40,
+                                                      'Source_BC' => 0,
+                                                      'Source_TotalProblems' => 8,
+                                                      'TotalArchives' => 1,
+                                                      'TotalProblems' => 8
+                                                    }
+                                       },
+                           '4.2.4' => {
+                                        '4.2.5' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jakarta-servlets/4.2.4/4.2.5/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.2.5' => {
+                                        '4.2.6' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jakarta-servlets/4.2.5/4.2.6/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.2.6' => {
+                                        '4.2.7' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jakarta-servlets/4.2.6/4.2.7/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.2.7' => {
+                                        '4.2.8' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jakarta-servlets/4.2.7/4.2.8/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.2.8' => {
+                                        '4.2.9' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jakarta-servlets/4.2.8/4.2.9/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.2.9' => {
+                                        '4.2.10' => {
+                                                      'Added' => 0,
+                                                      'ArchivesAdded' => 0,
+                                                      'ArchivesAddedSymbols' => 0,
+                                                      'ArchivesRemoved' => 0,
+                                                      'ArchivesRemovedSymbols' => 0,
+                                                      'BC' => 100,
+                                                      'Path' => 'archives_report/metrics-jakarta-servlets/4.2.9/4.2.10/report.html',
+                                                      'Removed' => 0,
+                                                      'Source_BC' => 100,
+                                                      'Source_TotalProblems' => 0,
+                                                      'TotalArchives' => 1,
+                                                      'TotalProblems' => 0
+                                                    }
+                                      },
+                           '5.0.1' => {
+                                        '5.0.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jakarta-servlets/5.0.1/5.0.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '5.0.2' => {
+                                        '5.0.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jakarta-servlets/5.0.2/5.0.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '5.0.3' => {
+                                        '5.0.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jakarta-servlets/5.0.3/5.0.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '5.0.4' => {
+                                        '5.0.5' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jakarta-servlets/5.0.4/5.0.5/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '5.0.5' => {
+                                        '5.0.6' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jakarta-servlets/5.0.5/5.0.6/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      }
+                         },
+          'APIReport_D' => {
+                             '4.2.0' => {
+                                          '4.2.1' => {
+                                                       '3be88' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jakarta-servlets-4.2.0.jar',
+                                                                    'Archive2' => 'metrics-jakarta-servlets-4.2.1.jar',
+                                                                    'Path' => 'compat_report/metrics-jakarta-servlets/4.2.0/4.2.1/3be88/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.0/4.2.1/3be88/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.2.1' => {
+                                          '4.2.2' => {
+                                                       'b5aef' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jakarta-servlets-4.2.1.jar',
+                                                                    'Archive2' => 'metrics-jakarta-servlets-4.2.2.jar',
+                                                                    'Path' => 'compat_report/metrics-jakarta-servlets/4.2.1/4.2.2/b5aef/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.1/4.2.2/b5aef/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.2.10' => {
+                                           '4.2.11' => {
+                                                         '530a8' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jakarta-servlets-4.2.10.jar',
+                                                                      'Archive2' => 'metrics-jakarta-servlets-4.2.11.jar',
+                                                                      'Path' => 'compat_report/metrics-jakarta-servlets/4.2.10/4.2.11/530a8/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.10/4.2.11/530a8/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.11' => {
+                                           '4.2.12' => {
+                                                         '05533' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jakarta-servlets-4.2.11.jar',
+                                                                      'Archive2' => 'metrics-jakarta-servlets-4.2.12.jar',
+                                                                      'Path' => 'compat_report/metrics-jakarta-servlets/4.2.11/4.2.12/05533/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.11/4.2.12/05533/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.12' => {
+                                           '4.2.13' => {
+                                                         '6f995' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jakarta-servlets-4.2.12.jar',
+                                                                      'Archive2' => 'metrics-jakarta-servlets-4.2.13.jar',
+                                                                      'Path' => 'compat_report/metrics-jakarta-servlets/4.2.12/4.2.13/6f995/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.12/4.2.13/6f995/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.13' => {
+                                           '4.2.14' => {
+                                                         '4bb8c' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jakarta-servlets-4.2.13.jar',
+                                                                      'Archive2' => 'metrics-jakarta-servlets-4.2.14.jar',
+                                                                      'Path' => 'compat_report/metrics-jakarta-servlets/4.2.13/4.2.14/4bb8c/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.13/4.2.14/4bb8c/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.14' => {
+                                           '4.2.15' => {
+                                                         'f78e8' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jakarta-servlets-4.2.14.jar',
+                                                                      'Archive2' => 'metrics-jakarta-servlets-4.2.15.jar',
+                                                                      'Path' => 'compat_report/metrics-jakarta-servlets/4.2.14/4.2.15/f78e8/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.14/4.2.15/f78e8/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.15' => {
+                                           '4.2.16' => {
+                                                         '81ded' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jakarta-servlets-4.2.15.jar',
+                                                                      'Archive2' => 'metrics-jakarta-servlets-4.2.16.jar',
+                                                                      'Path' => 'compat_report/metrics-jakarta-servlets/4.2.15/4.2.16/81ded/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.15/4.2.16/81ded/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.16' => {
+                                           '4.2.17' => {
+                                                         '2e6e9' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jakarta-servlets-4.2.16.jar',
+                                                                      'Archive2' => 'metrics-jakarta-servlets-4.2.17.jar',
+                                                                      'Path' => 'compat_report/metrics-jakarta-servlets/4.2.16/4.2.17/2e6e9/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.16/4.2.17/2e6e9/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.17' => {
+                                           '4.2.18' => {
+                                                         '0eaa2' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jakarta-servlets-4.2.17.jar',
+                                                                      'Archive2' => 'metrics-jakarta-servlets-4.2.18.jar',
+                                                                      'Path' => 'compat_report/metrics-jakarta-servlets/4.2.17/4.2.18/0eaa2/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.17/4.2.18/0eaa2/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.18' => {
+                                           '4.2.19' => {
+                                                         'b1cb4' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jakarta-servlets-4.2.18.jar',
+                                                                      'Archive2' => 'metrics-jakarta-servlets-4.2.19.jar',
+                                                                      'Path' => 'compat_report/metrics-jakarta-servlets/4.2.18/4.2.19/b1cb4/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.18/4.2.19/b1cb4/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.19' => {
+                                           '4.2.20' => {
+                                                         '1bb7e' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jakarta-servlets-4.2.19.jar',
+                                                                      'Archive2' => 'metrics-jakarta-servlets-4.2.20.jar',
+                                                                      'Path' => 'compat_report/metrics-jakarta-servlets/4.2.19/4.2.20/1bb7e/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.19/4.2.20/1bb7e/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.2' => {
+                                          '4.2.3' => {
+                                                       '3b542' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jakarta-servlets-4.2.2.jar',
+                                                                    'Archive2' => 'metrics-jakarta-servlets-4.2.3.jar',
+                                                                    'Path' => 'compat_report/metrics-jakarta-servlets/4.2.2/4.2.3/3b542/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.2/4.2.3/3b542/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.2.20' => {
+                                           '4.2.21' => {
+                                                         '8d443' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jakarta-servlets-4.2.20.jar',
+                                                                      'Archive2' => 'metrics-jakarta-servlets-4.2.21.jar',
+                                                                      'Path' => 'compat_report/metrics-jakarta-servlets/4.2.20/4.2.21/8d443/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.20/4.2.21/8d443/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.21' => {
+                                           '4.2.22' => {
+                                                         '7932d' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jakarta-servlets-4.2.21.jar',
+                                                                      'Archive2' => 'metrics-jakarta-servlets-4.2.22.jar',
+                                                                      'Path' => 'compat_report/metrics-jakarta-servlets/4.2.21/4.2.22/7932d/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.21/4.2.22/7932d/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.22' => {
+                                           '4.2.23' => {
+                                                         '5242a' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jakarta-servlets-4.2.22.jar',
+                                                                      'Archive2' => 'metrics-jakarta-servlets-4.2.23.jar',
+                                                                      'Path' => 'compat_report/metrics-jakarta-servlets/4.2.22/4.2.23/5242a/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.22/4.2.23/5242a/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.23' => {
+                                           '4.2.24' => {
+                                                         '92afe' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jakarta-servlets-4.2.23.jar',
+                                                                      'Archive2' => 'metrics-jakarta-servlets-4.2.24.jar',
+                                                                      'Path' => 'compat_report/metrics-jakarta-servlets/4.2.23/4.2.24/92afe/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.23/4.2.24/92afe/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.24' => {
+                                           '4.2.25' => {
+                                                         'e655e' => {
+                                                                      'Added' => 1,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jakarta-servlets-4.2.24.jar',
+                                                                      'Archive2' => 'metrics-jakarta-servlets-4.2.25.jar',
+                                                                      'Path' => 'compat_report/metrics-jakarta-servlets/4.2.24/4.2.25/e655e/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.24/4.2.25/e655e/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.25' => {
+                                           '4.2.26' => {
+                                                         'e455e' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jakarta-servlets-4.2.25.jar',
+                                                                      'Archive2' => 'metrics-jakarta-servlets-4.2.26.jar',
+                                                                      'Path' => 'compat_report/metrics-jakarta-servlets/4.2.25/4.2.26/e455e/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.25/4.2.26/e455e/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.26' => {
+                                           '4.2.27' => {
+                                                         '684fa' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jakarta-servlets-4.2.26.jar',
+                                                                      'Archive2' => 'metrics-jakarta-servlets-4.2.27.jar',
+                                                                      'Path' => 'compat_report/metrics-jakarta-servlets/4.2.26/4.2.27/684fa/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.26/4.2.27/684fa/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.27' => {
+                                           '4.2.28' => {
+                                                         '60d40' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jakarta-servlets-4.2.27.jar',
+                                                                      'Archive2' => 'metrics-jakarta-servlets-4.2.28.jar',
+                                                                      'Path' => 'compat_report/metrics-jakarta-servlets/4.2.27/4.2.28/60d40/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.27/4.2.28/60d40/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.28' => {
+                                           '4.2.29' => {
+                                                         '0c11d' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jakarta-servlets-4.2.28.jar',
+                                                                      'Archive2' => 'metrics-jakarta-servlets-4.2.29.jar',
+                                                                      'Path' => 'compat_report/metrics-jakarta-servlets/4.2.28/4.2.29/0c11d/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.28/4.2.29/0c11d/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.29' => {
+                                           '4.2.30' => {
+                                                         'aa607' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jakarta-servlets-4.2.29.jar',
+                                                                      'Archive2' => 'metrics-jakarta-servlets-4.2.30.jar',
+                                                                      'Path' => 'compat_report/metrics-jakarta-servlets/4.2.29/4.2.30/aa607/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.29/4.2.30/aa607/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.3' => {
+                                          '4.2.4' => {
+                                                       'da047' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jakarta-servlets-4.2.3.jar',
+                                                                    'Archive2' => 'metrics-jakarta-servlets-4.2.4.jar',
+                                                                    'Path' => 'compat_report/metrics-jakarta-servlets/4.2.3/4.2.4/da047/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.3/4.2.4/da047/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.2.30' => {
+                                           '4.2.32' => {
+                                                         '50ca4' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jakarta-servlets-4.2.30.jar',
+                                                                      'Archive2' => 'metrics-jakarta-servlets-4.2.32.jar',
+                                                                      'Path' => 'compat_report/metrics-jakarta-servlets/4.2.30/4.2.32/50ca4/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.30/4.2.32/50ca4/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.32' => {
+                                           '4.2.33' => {
+                                                         '689d5' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jakarta-servlets-4.2.32.jar',
+                                                                      'Archive2' => 'metrics-jakarta-servlets-4.2.33.jar',
+                                                                      'Path' => 'compat_report/metrics-jakarta-servlets/4.2.32/4.2.33/689d5/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.32/4.2.33/689d5/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.33' => {
+                                           '4.2.34' => {
+                                                         'd1567' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jakarta-servlets-4.2.33.jar',
+                                                                      'Archive2' => 'metrics-jakarta-servlets-4.2.34.jar',
+                                                                      'Path' => 'compat_report/metrics-jakarta-servlets/4.2.33/4.2.34/d1567/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.33/4.2.34/d1567/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.34' => {
+                                           '4.2.35' => {
+                                                         'b5975' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jakarta-servlets-4.2.34.jar',
+                                                                      'Archive2' => 'metrics-jakarta-servlets-4.2.35.jar',
+                                                                      'Path' => 'compat_report/metrics-jakarta-servlets/4.2.34/4.2.35/b5975/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.34/4.2.35/b5975/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.35' => {
+                                           '4.2.36' => {
+                                                         '92cc1' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jakarta-servlets-4.2.35.jar',
+                                                                      'Archive2' => 'metrics-jakarta-servlets-4.2.36.jar',
+                                                                      'Path' => 'compat_report/metrics-jakarta-servlets/4.2.35/4.2.36/92cc1/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.35/4.2.36/92cc1/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.36' => {
+                                           '4.2.37' => {
+                                                         '35439' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jakarta-servlets-4.2.36.jar',
+                                                                      'Archive2' => 'metrics-jakarta-servlets-4.2.37.jar',
+                                                                      'Path' => 'compat_report/metrics-jakarta-servlets/4.2.36/4.2.37/35439/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.36/4.2.37/35439/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.37' => {
+                                           '4.2.38' => {
+                                                         '3e085' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jakarta-servlets-4.2.37.jar',
+                                                                      'Archive2' => 'metrics-jakarta-servlets-4.2.38.jar',
+                                                                      'Path' => 'compat_report/metrics-jakarta-servlets/4.2.37/4.2.38/3e085/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.37/4.2.38/3e085/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       },
+                                           '5.0.1' => {
+                                                        '913c6' => {
+                                                                     'Added' => 40,
+                                                                     'Affected' => 100,
+                                                                     'Archive1' => 'metrics-jakarta-servlets-4.2.37.jar',
+                                                                     'Archive2' => 'metrics-jakarta-servlets-5.0.1.jar',
+                                                                     'Path' => 'compat_report/metrics-jakarta-servlets/4.2.37/5.0.1/913c6/bin_compat_report.html',
+                                                                     'Removed' => 40,
+                                                                     'Source_Affected' => 100,
+                                                                     'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.37/5.0.1/913c6/src_compat_report.html',
+                                                                     'Source_TotalProblems' => 8,
+                                                                     'TotalProblems' => 8
+                                                                   }
+                                                      }
+                                         },
+                             '4.2.38' => {
+                                           '5.0.1' => {
+                                                        '0c882' => {
+                                                                     'Added' => 40,
+                                                                     'Affected' => 100,
+                                                                     'Archive1' => 'metrics-jakarta-servlets-4.2.38.jar',
+                                                                     'Archive2' => 'metrics-jakarta-servlets-5.0.1.jar',
+                                                                     'Path' => 'compat_report/metrics-jakarta-servlets/4.2.38/5.0.1/0c882/bin_compat_report.html',
+                                                                     'Removed' => 40,
+                                                                     'Source_Affected' => 100,
+                                                                     'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.38/5.0.1/0c882/src_compat_report.html',
+                                                                     'Source_TotalProblems' => 8,
+                                                                     'TotalProblems' => 8
+                                                                   }
+                                                      }
+                                         },
+                             '4.2.4' => {
+                                          '4.2.5' => {
+                                                       '3d25f' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jakarta-servlets-4.2.4.jar',
+                                                                    'Archive2' => 'metrics-jakarta-servlets-4.2.5.jar',
+                                                                    'Path' => 'compat_report/metrics-jakarta-servlets/4.2.4/4.2.5/3d25f/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.4/4.2.5/3d25f/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.2.5' => {
+                                          '4.2.6' => {
+                                                       '1731a' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jakarta-servlets-4.2.5.jar',
+                                                                    'Archive2' => 'metrics-jakarta-servlets-4.2.6.jar',
+                                                                    'Path' => 'compat_report/metrics-jakarta-servlets/4.2.5/4.2.6/1731a/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.5/4.2.6/1731a/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.2.6' => {
+                                          '4.2.7' => {
+                                                       'eaf7b' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jakarta-servlets-4.2.6.jar',
+                                                                    'Archive2' => 'metrics-jakarta-servlets-4.2.7.jar',
+                                                                    'Path' => 'compat_report/metrics-jakarta-servlets/4.2.6/4.2.7/eaf7b/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.6/4.2.7/eaf7b/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.2.7' => {
+                                          '4.2.8' => {
+                                                       'dd80c' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jakarta-servlets-4.2.7.jar',
+                                                                    'Archive2' => 'metrics-jakarta-servlets-4.2.8.jar',
+                                                                    'Path' => 'compat_report/metrics-jakarta-servlets/4.2.7/4.2.8/dd80c/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.7/4.2.8/dd80c/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.2.8' => {
+                                          '4.2.9' => {
+                                                       '65389' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jakarta-servlets-4.2.8.jar',
+                                                                    'Archive2' => 'metrics-jakarta-servlets-4.2.9.jar',
+                                                                    'Path' => 'compat_report/metrics-jakarta-servlets/4.2.8/4.2.9/65389/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.8/4.2.9/65389/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.2.9' => {
+                                          '4.2.10' => {
+                                                        'dda80' => {
+                                                                     'Added' => 0,
+                                                                     'Affected' => 0,
+                                                                     'Archive1' => 'metrics-jakarta-servlets-4.2.9.jar',
+                                                                     'Archive2' => 'metrics-jakarta-servlets-4.2.10.jar',
+                                                                     'Path' => 'compat_report/metrics-jakarta-servlets/4.2.9/4.2.10/dda80/bin_compat_report.html',
+                                                                     'Removed' => 0,
+                                                                     'Source_Affected' => 0,
+                                                                     'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/4.2.9/4.2.10/dda80/src_compat_report.html',
+                                                                     'Source_TotalProblems' => 0,
+                                                                     'TotalProblems' => 0
+                                                                   }
+                                                      }
+                                        },
+                             '5.0.1' => {
+                                          '5.0.2' => {
+                                                       'd79ce' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jakarta-servlets-5.0.1.jar',
+                                                                    'Archive2' => 'metrics-jakarta-servlets-5.0.2.jar',
+                                                                    'Path' => 'compat_report/metrics-jakarta-servlets/5.0.1/5.0.2/d79ce/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/5.0.1/5.0.2/d79ce/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '5.0.2' => {
+                                          '5.0.3' => {
+                                                       '94fb2' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jakarta-servlets-5.0.2.jar',
+                                                                    'Archive2' => 'metrics-jakarta-servlets-5.0.3.jar',
+                                                                    'Path' => 'compat_report/metrics-jakarta-servlets/5.0.2/5.0.3/94fb2/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/5.0.2/5.0.3/94fb2/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '5.0.3' => {
+                                          '5.0.4' => {
+                                                       '7aa79' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jakarta-servlets-5.0.3.jar',
+                                                                    'Archive2' => 'metrics-jakarta-servlets-5.0.4.jar',
+                                                                    'Path' => 'compat_report/metrics-jakarta-servlets/5.0.3/5.0.4/7aa79/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/5.0.3/5.0.4/7aa79/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '5.0.4' => {
+                                          '5.0.5' => {
+                                                       'a1d35' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jakarta-servlets-5.0.4.jar',
+                                                                    'Archive2' => 'metrics-jakarta-servlets-5.0.5.jar',
+                                                                    'Path' => 'compat_report/metrics-jakarta-servlets/5.0.4/5.0.5/a1d35/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/5.0.4/5.0.5/a1d35/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '5.0.5' => {
+                                          '5.0.6' => {
+                                                       'ab22b' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jakarta-servlets-5.0.5.jar',
+                                                                    'Archive2' => 'metrics-jakarta-servlets-5.0.6.jar',
+                                                                    'Path' => 'compat_report/metrics-jakarta-servlets/5.0.5/5.0.6/ab22b/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jakarta-servlets/5.0.5/5.0.6/ab22b/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        }
+                           },
+          'Changelog' => {},
+          'Date' => {
+                      '4.2.0' => '01-1980-02 00:00',
+                      '4.2.1' => '01-1980-02 00:00',
+                      '4.2.10' => '01-1980-02 00:00',
+                      '4.2.11' => '01-1980-02 00:00',
+                      '4.2.12' => '01-1980-02 00:00',
+                      '4.2.13' => '01-1980-02 00:00',
+                      '4.2.14' => '01-1980-02 00:00',
+                      '4.2.15' => '01-1980-02 00:00',
+                      '4.2.16' => '01-1980-02 00:00',
+                      '4.2.17' => '01-1980-02 00:00',
+                      '4.2.18' => '01-1980-02 00:00',
+                      '4.2.19' => '01-1980-02 00:00',
+                      '4.2.2' => '01-1980-02 00:00',
+                      '4.2.20' => '01-1980-02 00:00',
+                      '4.2.21' => '01-1980-02 00:00',
+                      '4.2.22' => '01-1980-02 00:00',
+                      '4.2.23' => '01-1980-02 00:00',
+                      '4.2.24' => '01-1980-02 00:00',
+                      '4.2.25' => '01-1980-02 00:00',
+                      '4.2.26' => '01-1980-02 00:00',
+                      '4.2.27' => '01-1980-02 00:00',
+                      '4.2.28' => '01-1980-02 00:00',
+                      '4.2.29' => '01-1980-02 00:00',
+                      '4.2.3' => '01-1980-02 00:00',
+                      '4.2.30' => '01-1980-02 00:00',
+                      '4.2.32' => '01-1980-02 00:00',
+                      '4.2.33' => '01-1980-02 00:00',
+                      '4.2.34' => '01-1980-02 00:00',
+                      '4.2.35' => '01-1980-02 00:00',
+                      '4.2.36' => '01-1980-02 00:00',
+                      '4.2.37' => '01-1980-02 00:00',
+                      '4.2.38' => '01-1980-02 00:00',
+                      '4.2.4' => '01-1980-02 00:00',
+                      '4.2.5' => '01-1980-02 00:00',
+                      '4.2.6' => '01-1980-02 00:00',
+                      '4.2.7' => '01-1980-02 00:00',
+                      '4.2.8' => '01-1980-02 00:00',
+                      '4.2.9' => '01-1980-02 00:00',
+                      '5.0.1' => '01-1980-02 00:00',
+                      '5.0.2' => '01-1980-02 00:00',
+                      '5.0.3' => '01-1980-02 00:00',
+                      '5.0.4' => '01-1980-02 00:00',
+                      '5.0.5' => '01-1980-02 00:00',
+                      '5.0.6' => '01-1980-02 00:00'
+                    },
+          'Maintainer' => 'Dropwizard Metrics Committers',
+          'MaintainerUrl' => 'https://metrics.dropwizard.io/',
+          'PackageDiff' => {
+                             '4.2.0' => {
+                                          '4.2.1' => {
+                                                       'Changed' => '1.4',
+                                                       'Path' => 'package_diff/metrics-jakarta-servlets/4.2.0/4.2.1/report.html'
+                                                     }
+                                        },
+                             '4.2.1' => {
+                                          '4.2.2' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-jakarta-servlets/4.2.1/4.2.2/report.html'
+                                                     }
+                                        },
+                             '4.2.10' => {
+                                           '4.2.11' => {
+                                                         'Changed' => '0.3',
+                                                         'Path' => 'package_diff/metrics-jakarta-servlets/4.2.10/4.2.11/report.html'
+                                                       }
+                                         },
+                             '4.2.11' => {
+                                           '4.2.12' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jakarta-servlets/4.2.11/4.2.12/report.html'
+                                                       }
+                                         },
+                             '4.2.12' => {
+                                           '4.2.13' => {
+                                                         'Changed' => '0.4',
+                                                         'Path' => 'package_diff/metrics-jakarta-servlets/4.2.12/4.2.13/report.html'
+                                                       }
+                                         },
+                             '4.2.13' => {
+                                           '4.2.14' => {
+                                                         'Changed' => '0.3',
+                                                         'Path' => 'package_diff/metrics-jakarta-servlets/4.2.13/4.2.14/report.html'
+                                                       }
+                                         },
+                             '4.2.14' => {
+                                           '4.2.15' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jakarta-servlets/4.2.14/4.2.15/report.html'
+                                                       }
+                                         },
+                             '4.2.15' => {
+                                           '4.2.16' => {
+                                                         'Changed' => '0.9',
+                                                         'Path' => 'package_diff/metrics-jakarta-servlets/4.2.15/4.2.16/report.html'
+                                                       }
+                                         },
+                             '4.2.16' => {
+                                           '4.2.17' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jakarta-servlets/4.2.16/4.2.17/report.html'
+                                                       }
+                                         },
+                             '4.2.17' => {
+                                           '4.2.18' => {
+                                                         'Changed' => '0.3',
+                                                         'Path' => 'package_diff/metrics-jakarta-servlets/4.2.17/4.2.18/report.html'
+                                                       }
+                                         },
+                             '4.2.18' => {
+                                           '4.2.19' => {
+                                                         'Changed' => '0.3',
+                                                         'Path' => 'package_diff/metrics-jakarta-servlets/4.2.18/4.2.19/report.html'
+                                                       }
+                                         },
+                             '4.2.19' => {
+                                           '4.2.20' => {
+                                                         'Changed' => '0.5',
+                                                         'Path' => 'package_diff/metrics-jakarta-servlets/4.2.19/4.2.20/report.html'
+                                                       }
+                                         },
+                             '4.2.2' => {
+                                          '4.2.3' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jakarta-servlets/4.2.2/4.2.3/report.html'
+                                                     }
+                                        },
+                             '4.2.20' => {
+                                           '4.2.21' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jakarta-servlets/4.2.20/4.2.21/report.html'
+                                                       }
+                                         },
+                             '4.2.21' => {
+                                           '4.2.22' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jakarta-servlets/4.2.21/4.2.22/report.html'
+                                                       }
+                                         },
+                             '4.2.22' => {
+                                           '4.2.23' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jakarta-servlets/4.2.22/4.2.23/report.html'
+                                                       }
+                                         },
+                             '4.2.23' => {
+                                           '4.2.24' => {
+                                                         'Changed' => '0.3',
+                                                         'Path' => 'package_diff/metrics-jakarta-servlets/4.2.23/4.2.24/report.html'
+                                                       }
+                                         },
+                             '4.2.24' => {
+                                           '4.2.25' => {
+                                                         'Changed' => '2.7',
+                                                         'Path' => 'package_diff/metrics-jakarta-servlets/4.2.24/4.2.25/report.html'
+                                                       }
+                                         },
+                             '4.2.25' => {
+                                           '4.2.26' => {
+                                                         'Changed' => '0.4',
+                                                         'Path' => 'package_diff/metrics-jakarta-servlets/4.2.25/4.2.26/report.html'
+                                                       }
+                                         },
+                             '4.2.26' => {
+                                           '4.2.27' => {
+                                                         'Changed' => '0.3',
+                                                         'Path' => 'package_diff/metrics-jakarta-servlets/4.2.26/4.2.27/report.html'
+                                                       }
+                                         },
+                             '4.2.27' => {
+                                           '4.2.28' => {
+                                                         'Changed' => '0.4',
+                                                         'Path' => 'package_diff/metrics-jakarta-servlets/4.2.27/4.2.28/report.html'
+                                                       }
+                                         },
+                             '4.2.28' => {
+                                           '4.2.29' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jakarta-servlets/4.2.28/4.2.29/report.html'
+                                                       }
+                                         },
+                             '4.2.29' => {
+                                           '4.2.30' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jakarta-servlets/4.2.29/4.2.30/report.html'
+                                                       }
+                                         },
+                             '4.2.3' => {
+                                          '4.2.4' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jakarta-servlets/4.2.3/4.2.4/report.html'
+                                                     }
+                                        },
+                             '4.2.30' => {
+                                           '4.2.32' => {
+                                                         'Changed' => '0.3',
+                                                         'Path' => 'package_diff/metrics-jakarta-servlets/4.2.30/4.2.32/report.html'
+                                                       }
+                                         },
+                             '4.2.32' => {
+                                           '4.2.33' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jakarta-servlets/4.2.32/4.2.33/report.html'
+                                                       }
+                                         },
+                             '4.2.33' => {
+                                           '4.2.34' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jakarta-servlets/4.2.33/4.2.34/report.html'
+                                                       }
+                                         },
+                             '4.2.34' => {
+                                           '4.2.35' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jakarta-servlets/4.2.34/4.2.35/report.html'
+                                                       }
+                                         },
+                             '4.2.35' => {
+                                           '4.2.36' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jakarta-servlets/4.2.35/4.2.36/report.html'
+                                                       }
+                                         },
+                             '4.2.36' => {
+                                           '4.2.37' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jakarta-servlets/4.2.36/4.2.37/report.html'
+                                                       }
+                                         },
+                             '4.2.37' => {
+                                           '4.2.38' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jakarta-servlets/4.2.37/4.2.38/report.html'
+                                                       },
+                                           '5.0.1' => {
+                                                        'Changed' => '87.3',
+                                                        'Path' => 'package_diff/metrics-jakarta-servlets/4.2.37/5.0.1/report.html'
+                                                      }
+                                         },
+                             '4.2.38' => {
+                                           '5.0.1' => {
+                                                        'Changed' => '87.3',
+                                                        'Path' => 'package_diff/metrics-jakarta-servlets/4.2.38/5.0.1/report.html'
+                                                      }
+                                         },
+                             '4.2.4' => {
+                                          '4.2.5' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jakarta-servlets/4.2.4/4.2.5/report.html'
+                                                     }
+                                        },
+                             '4.2.5' => {
+                                          '4.2.6' => {
+                                                       'Changed' => '0.5',
+                                                       'Path' => 'package_diff/metrics-jakarta-servlets/4.2.5/4.2.6/report.html'
+                                                     }
+                                        },
+                             '4.2.6' => {
+                                          '4.2.7' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/metrics-jakarta-servlets/4.2.6/4.2.7/report.html'
+                                                     }
+                                        },
+                             '4.2.7' => {
+                                          '4.2.8' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jakarta-servlets/4.2.7/4.2.8/report.html'
+                                                     }
+                                        },
+                             '4.2.8' => {
+                                          '4.2.9' => {
+                                                       'Changed' => '0.2',
+                                                       'Path' => 'package_diff/metrics-jakarta-servlets/4.2.8/4.2.9/report.html'
+                                                     }
+                                        },
+                             '4.2.9' => {
+                                          '4.2.10' => {
+                                                        'Changed' => '0.5',
+                                                        'Path' => 'package_diff/metrics-jakarta-servlets/4.2.9/4.2.10/report.html'
+                                                      }
+                                        },
+                             '5.0.1' => {
+                                          '5.0.2' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jakarta-servlets/5.0.1/5.0.2/report.html'
+                                                     }
+                                        },
+                             '5.0.2' => {
+                                          '5.0.3' => {
+                                                       'Changed' => '0.2',
+                                                       'Path' => 'package_diff/metrics-jakarta-servlets/5.0.2/5.0.3/report.html'
+                                                     }
+                                        },
+                             '5.0.3' => {
+                                          '5.0.4' => {
+                                                       'Changed' => '0.5',
+                                                       'Path' => 'package_diff/metrics-jakarta-servlets/5.0.3/5.0.4/report.html'
+                                                     }
+                                        },
+                             '5.0.4' => {
+                                          '5.0.5' => {
+                                                       'Changed' => '0.2',
+                                                       'Path' => 'package_diff/metrics-jakarta-servlets/5.0.4/5.0.5/report.html'
+                                                     }
+                                        },
+                             '5.0.5' => {
+                                          '5.0.6' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jakarta-servlets/5.0.5/5.0.6/report.html'
+                                                     }
+                                        }
+                           },
+          'Title' => 'Metrics 5.x Utility Jakarta Servlets'
+        };

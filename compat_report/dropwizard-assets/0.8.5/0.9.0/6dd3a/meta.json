@@ -1,0 +1,11 @@
+{
+  "Affected": "0",
+  "Added": 3,
+  "Removed": 0,
+  "TotalProblems": 0,
+  "Source_Affected": "0",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/dropwizard-assets/0.8.5/0.9.0/6dd3a/src_compat_report.html",
+  "Archive1": "dropwizard-assets-0.8.5.jar",
+  "Archive2": "dropwizard-assets-0.9.0.jar"
+}

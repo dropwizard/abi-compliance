@@ -1,0 +1,11 @@
+{
+  "Affected": "28.3",
+  "Added": 10,
+  "Removed": 10,
+  "TotalProblems": 5,
+  "Source_Affected": "28.3",
+  "Source_TotalProblems": "5",
+  "Source_ReportPath": "compat_report/dropwizard-servlets/3.0.16/4.0.0/1c49e/src_compat_report.html",
+  "Archive1": "dropwizard-servlets-3.0.16.jar",
+  "Archive2": "dropwizard-servlets-4.0.0.jar"
+}

@@ -1,0 +1,300 @@
+$VAR1 = {
+          'APIDump' => {
+                         '5.0.0' => {
+                                      '7ff49' => {
+                                                   'Archive' => 'metrics-legacy-adapter-healthchecks-5.0.0.jar',
+                                                   'Path' => 'api_dump/metrics-legacy-adapter-healthchecks/5.0.0/7ff49/API.dump.tar.gz',
+                                                   'TotalSymbols' => '55'
+                                                 }
+                                    },
+                         '5.0.1' => {
+                                      'e7904' => {
+                                                   'Archive' => 'metrics-legacy-adapter-healthchecks-5.0.1.jar',
+                                                   'Path' => 'api_dump/metrics-legacy-adapter-healthchecks/5.0.1/e7904/API.dump.tar.gz',
+                                                   'TotalSymbols' => '55'
+                                                 }
+                                    },
+                         '5.0.2' => {
+                                      'bef00' => {
+                                                   'Archive' => 'metrics-legacy-adapter-healthchecks-5.0.2.jar',
+                                                   'Path' => 'api_dump/metrics-legacy-adapter-healthchecks/5.0.2/bef00/API.dump.tar.gz',
+                                                   'TotalSymbols' => '55'
+                                                 }
+                                    },
+                         '5.0.3' => {
+                                      '1780e' => {
+                                                   'Archive' => 'metrics-legacy-adapter-healthchecks-5.0.3.jar',
+                                                   'Path' => 'api_dump/metrics-legacy-adapter-healthchecks/5.0.3/1780e/API.dump.tar.gz',
+                                                   'TotalSymbols' => '55'
+                                                 }
+                                    },
+                         '5.0.4' => {
+                                      'dcd43' => {
+                                                   'Archive' => 'metrics-legacy-adapter-healthchecks-5.0.4.jar',
+                                                   'Path' => 'api_dump/metrics-legacy-adapter-healthchecks/5.0.4/dcd43/API.dump.tar.gz',
+                                                   'TotalSymbols' => '55'
+                                                 }
+                                    },
+                         '5.0.5' => {
+                                      '8cb62' => {
+                                                   'Archive' => 'metrics-legacy-adapter-healthchecks-5.0.5.jar',
+                                                   'Path' => 'api_dump/metrics-legacy-adapter-healthchecks/5.0.5/8cb62/API.dump.tar.gz',
+                                                   'TotalSymbols' => '55'
+                                                 }
+                                    },
+                         '5.0.6' => {
+                                      'a17dc' => {
+                                                   'Archive' => 'metrics-legacy-adapter-healthchecks-5.0.6.jar',
+                                                   'Path' => 'api_dump/metrics-legacy-adapter-healthchecks/5.0.6/a17dc/API.dump.tar.gz',
+                                                   'TotalSymbols' => '55'
+                                                 }
+                                    }
+                       },
+          'APIReport' => {
+                           '5.0.0' => {
+                                        '5.0.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-legacy-adapter-healthchecks/5.0.0/5.0.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '5.0.1' => {
+                                        '5.0.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-legacy-adapter-healthchecks/5.0.1/5.0.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '5.0.2' => {
+                                        '5.0.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-legacy-adapter-healthchecks/5.0.2/5.0.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '5.0.3' => {
+                                        '5.0.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-legacy-adapter-healthchecks/5.0.3/5.0.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '5.0.4' => {
+                                        '5.0.5' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-legacy-adapter-healthchecks/5.0.4/5.0.5/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '5.0.5' => {
+                                        '5.0.6' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-legacy-adapter-healthchecks/5.0.5/5.0.6/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      }
+                         },
+          'APIReport_D' => {
+                             '5.0.0' => {
+                                          '5.0.1' => {
+                                                       '31e72' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-legacy-adapter-healthchecks-5.0.0.jar',
+                                                                    'Archive2' => 'metrics-legacy-adapter-healthchecks-5.0.1.jar',
+                                                                    'Path' => 'compat_report/metrics-legacy-adapter-healthchecks/5.0.0/5.0.1/31e72/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-legacy-adapter-healthchecks/5.0.0/5.0.1/31e72/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '5.0.1' => {
+                                          '5.0.2' => {
+                                                       '45878' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-legacy-adapter-healthchecks-5.0.1.jar',
+                                                                    'Archive2' => 'metrics-legacy-adapter-healthchecks-5.0.2.jar',
+                                                                    'Path' => 'compat_report/metrics-legacy-adapter-healthchecks/5.0.1/5.0.2/45878/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-legacy-adapter-healthchecks/5.0.1/5.0.2/45878/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '5.0.2' => {
+                                          '5.0.3' => {
+                                                       'e2bfa' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-legacy-adapter-healthchecks-5.0.2.jar',
+                                                                    'Archive2' => 'metrics-legacy-adapter-healthchecks-5.0.3.jar',
+                                                                    'Path' => 'compat_report/metrics-legacy-adapter-healthchecks/5.0.2/5.0.3/e2bfa/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-legacy-adapter-healthchecks/5.0.2/5.0.3/e2bfa/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '5.0.3' => {
+                                          '5.0.4' => {
+                                                       '1f9c4' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-legacy-adapter-healthchecks-5.0.3.jar',
+                                                                    'Archive2' => 'metrics-legacy-adapter-healthchecks-5.0.4.jar',
+                                                                    'Path' => 'compat_report/metrics-legacy-adapter-healthchecks/5.0.3/5.0.4/1f9c4/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-legacy-adapter-healthchecks/5.0.3/5.0.4/1f9c4/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '5.0.4' => {
+                                          '5.0.5' => {
+                                                       'f6f3c' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-legacy-adapter-healthchecks-5.0.4.jar',
+                                                                    'Archive2' => 'metrics-legacy-adapter-healthchecks-5.0.5.jar',
+                                                                    'Path' => 'compat_report/metrics-legacy-adapter-healthchecks/5.0.4/5.0.5/f6f3c/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-legacy-adapter-healthchecks/5.0.4/5.0.5/f6f3c/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '5.0.5' => {
+                                          '5.0.6' => {
+                                                       '53db7' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-legacy-adapter-healthchecks-5.0.5.jar',
+                                                                    'Archive2' => 'metrics-legacy-adapter-healthchecks-5.0.6.jar',
+                                                                    'Path' => 'compat_report/metrics-legacy-adapter-healthchecks/5.0.5/5.0.6/53db7/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-legacy-adapter-healthchecks/5.0.5/5.0.6/53db7/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        }
+                           },
+          'Changelog' => {},
+          'Date' => {
+                      '5.0.0' => '01-2018-02 18:36',
+                      '5.0.1' => '20-2025-06 05:51',
+                      '5.0.2' => '20-2025-08 19:40',
+                      '5.0.3' => '28-2025-08 20:13',
+                      '5.0.4' => '31-2025-08 19:32',
+                      '5.0.5' => '15-2025-09 21:25',
+                      '5.0.6' => '25-2026-01 23:14'
+                    },
+          'Maintainer' => 'Dropwizard Metrics Committers',
+          'MaintainerUrl' => 'https://metrics.dropwizard.io/',
+          'PackageDiff' => {
+                             '5.0.0' => {
+                                          '5.0.1' => {
+                                                       'Changed' => '7.4',
+                                                       'Path' => 'package_diff/metrics-legacy-adapter-healthchecks/5.0.0/5.0.1/report.html'
+                                                     }
+                                        },
+                             '5.0.1' => {
+                                          '5.0.2' => {
+                                                       'Changed' => '0.1',
+                                                       'Path' => 'package_diff/metrics-legacy-adapter-healthchecks/5.0.1/5.0.2/report.html'
+                                                     }
+                                        },
+                             '5.0.2' => {
+                                          '5.0.3' => {
+                                                       'Changed' => '0.1',
+                                                       'Path' => 'package_diff/metrics-legacy-adapter-healthchecks/5.0.2/5.0.3/report.html'
+                                                     }
+                                        },
+                             '5.0.3' => {
+                                          '5.0.4' => {
+                                                       'Changed' => '0.1',
+                                                       'Path' => 'package_diff/metrics-legacy-adapter-healthchecks/5.0.3/5.0.4/report.html'
+                                                     }
+                                        },
+                             '5.0.4' => {
+                                          '5.0.5' => {
+                                                       'Changed' => '0.1',
+                                                       'Path' => 'package_diff/metrics-legacy-adapter-healthchecks/5.0.4/5.0.5/report.html'
+                                                     }
+                                        },
+                             '5.0.5' => {
+                                          '5.0.6' => {
+                                                       'Changed' => '0.2',
+                                                       'Path' => 'package_diff/metrics-legacy-adapter-healthchecks/5.0.5/5.0.6/report.html'
+                                                     }
+                                        }
+                           },
+          'Title' => 'metrics5-legacy-adapter-healthchecks'
+        };

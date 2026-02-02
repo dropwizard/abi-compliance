@@ -1,0 +1,823 @@
+<!-- kind:source;verdict:incompatible;affected:100;added:28;removed:29;type_problems_high:7;type_problems_medium:0;type_problems_low:0;method_problems_high:0;method_problems_medium:0;method_problems_low:0;checked_methods:57;checked_types:14;tool_version:2.4 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="dropwizard-views, source, compatibility" />
+<meta name="description" content="Source compatibility report for the dropwizard-views library between 2.1.12 and 3.0.0 versions" />
+<title>dropwizard-views: 2.1.12 to 3.0.0 source compatibility report</title>
+<style type="text/css">
+body {
+    font-family:Arial, sans-serif;
+    background-color:White;
+    color:Black;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+    white-space:nowrap;
+}
+div.symbols {
+    color:#003E69;
+}
+div.symbols i {
+    color:Brown;
+}
+span.section {
+    font-weight:bold;
+    cursor:pointer;
+    color:#003E69;
+    white-space:nowrap;
+    margin-left:0.3125em;
+}
+span:hover.section {
+    color:#336699;
+}
+span.sect_aff {
+    cursor:pointer;
+    padding-left:1.55em;
+    font-size:0.875em;
+    color:#cc3300;
+}
+span.ext {
+    font-weight:normal;
+}
+span.jar {
+    color:#cc3300;
+    font-size:0.875em;
+    font-weight:bold;
+}
+div.jar_list {
+    padding-left:0.4em;
+    font-size:0.94em;
+}
+span.pkg_t {
+    color:#408080;
+    font-size:0.875em;
+}
+span.pkg {
+    color:#408080;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.cname {
+    color:Green;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.iname_b {
+    font-weight:bold;
+}
+span.iname_a {
+    color:#333333;
+    font-weight:bold;
+    font-size:0.94em;
+}
+span.sym_p {
+    font-weight:normal;
+    white-space:normal;
+}
+span.sym_pd {
+    white-space:normal;
+}
+span.sym_p span, span.sym_pd span {
+    white-space:nowrap;
+}
+span.attr {
+    color:Black;
+    font-weight:normal;
+}
+span.deprecated {
+    color:Red;
+    font-weight:bold;
+    font-family:Monaco, monospace;
+}
+div.affect {
+    padding-left:1em;
+    padding-bottom:10px;
+    font-size:0.87em;
+    font-style:italic;
+    line-height:0.9em;
+}
+div.affected {
+    padding-left:2em;
+    padding-top:10px;
+}
+table.ptable {
+    border-collapse:collapse;
+    border:1px outset black;
+    margin-left:0.95em;
+    margin-top:3px;
+    margin-bottom:3px;
+    width:56.25em;
+}
+table.ptable td {
+    border:1px solid Gray;
+    padding:3px;
+    font-size:0.875em;
+    text-align:left;
+    vertical-align:top;
+    max-width:28em;
+    word-wrap:break-word;
+}
+table.ptable th {
+    background-color:#eeeeee;
+    font-weight:bold;
+    color:#333333;
+    font-family:Verdana, Arial;
+    font-size:0.875em;
+    border:1px solid Gray;
+    text-align:center;
+    vertical-align:top;
+    white-space:nowrap;
+    padding:3px;
+}
+table.summary {
+    border-collapse:collapse;
+    border:1px outset black;
+}
+table.summary th {
+    background-color:#eeeeee;
+    font-weight:normal;
+    text-align:left;
+    font-size:0.94em;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px;
+}
+table.summary td {
+    text-align:right;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px 5px 3px 10px;
+}
+span.mngl {
+    padding-left:1em;
+    font-size:0.875em;
+    cursor:text;
+    color:#444444;
+    font-weight:bold;
+}
+span.pleft {
+    padding-left:2.5em;
+}
+span.color_p {
+    font-style:italic;
+    color:Brown;
+}
+span.param {
+    font-style:italic;
+}
+span.focus_p {
+    font-style:italic;
+    background-color:#DCDCDC;
+}
+span.ttype {
+    font-weight:normal;
+}
+span.nowrap {
+    white-space:nowrap;
+}
+span.value {
+    white-space:nowrap;
+    font-weight:bold;
+}
+.passed {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.warning {
+    background-color:#F4F4AF;
+    font-weight:normal;
+}
+.failed {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.new {
+    background-color:#C6DEFF;
+    font-weight:normal;
+}
+
+.compatible {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.almost_compatible {
+    background-color:#FFDAA3;
+    font-weight:normal;
+}
+.incompatible {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.gray {
+    background-color:#DCDCDC;
+    font-weight:normal;
+}
+
+.top_ref {
+    font-size:0.69em;
+}
+.footer {
+    font-size:0.8125em;
+}
+
+</style>
+<script type="text/javascript" language="JavaScript">
+<!--
+function sC(header, id)
+{
+    e = document.getElementById(id);
+    if(e.style.display == 'none')
+    {
+        e.style.display = 'block';
+        e.style.visibility = 'visible';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[&minus;]");
+    }
+    else
+    {
+        e.style.display = 'none';
+        e.style.visibility = 'hidden';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[+]");
+    }
+}
+
+-->
+</script>
+</head>
+<body><a name='Top'></a><h1>Source compatibility report for the <span style='color:Blue;'>dropwizard-views</span> library between <span style='color:Red;'>2.1.12</span> and <span style='color:Red;'>3.0.0</span> versions</h1>
+
+<h2>Test Info</h2><hr/>
+<table class='summary'>
+<tr><th>Library Name</th><td>dropwizard-views</td></tr>
+<tr><th>Version #1</th><td>2.1.12</td></tr>
+<tr><th>Version #2</th><td>3.0.0</td></tr>
+</table>
+<h2>Test Results</h2><hr/>
+<table class='summary'>
+<tr><th>Total Java Modules</th><td><a href='#Checked_Archives' style='color:Blue;'>1</a></td></tr>
+<tr><th>Total Methods / Classes</th><td>57 / 14</td></tr>
+<tr><th>Compatibility</th>
+<td class='incompatible'>0%</td>
+</tr>
+</table>
+<h2>Problem Summary</h2><hr/>
+<table class='summary'>
+<tr><th></th><th style='text-align:center;'>Severity</th><th style='text-align:center;'>Count</th></tr>
+<tr><th>Added Methods</th><td>-</td><td class='new'><a href='#Added' style='color:Blue;'>28</a></td></tr>
+<tr><th>Removed Methods</th><td>High</td><td class='failed'><a href='#Removed' style='color:Blue;'>29</a></td></tr>
+<tr><th rowspan='3'>Problems with<br/>Data Types</th><td>High</td><td class='failed'><a href='#Type_Problems_High' style='color:Blue;'>7</a></td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+<tr><th rowspan='3'>Problems with<br/>Methods</th><td>High</td><td>0</td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+</table>
+
+<a name='Added'></a><h2>Added Methods <span class='new'>&nbsp;28&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-views-3.0.0.jar</span>, <span class='cname'>View.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.views.common</span><br/>
+<span class="section" onclick="sC(this, 'c_72')">
+View.getCharset&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Optional&lt;Charset&gt;</span></span>
+<br/>
+<div id="c_72" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/View.getCharset:()Ljava/util/Optional;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_73')">
+View.getTemplateName&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_73" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/View.getTemplateName:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_74')">
+View.View&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>templateName</span></span>&#160;)</span></span>
+<br/>
+<div id="c_74" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/View.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_75')">
+View.View&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>templateName</span></span>, <span>Charset <span class='color_p'>charset</span></span>&#160;)</span></span>
+<br/>
+<div id="c_75" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/View.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;Ljava/nio/charset/Charset;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-views-3.0.0.jar</span>, <span class='cname'>ViewBundle.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.views.common</span><br/>
+<span class="section" onclick="sC(this, 'c_76')">
+ViewBundle&lt;T&gt;.getViewConfiguration&#160;<span class='sym_p'><span>(&#160;T <span class='color_p'>configuration</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map&lt;String,Map&lt;String,String&gt;&gt;</span></span>
+<br/>
+<div id="c_76" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/ViewBundle.getViewConfiguration:(Ljava/lang/Object;)Ljava/util/Map;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_77')">
+ViewBundle&lt;T&gt;.run&#160;<span class='sym_p'><span>(&#160;T <span class='color_p'>configuration</span></span>, <span>Environment <span class='color_p'>environment</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_77" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/ViewBundle.run:(Ljava/lang/Object;Lio/dropwizard/core/setup/Environment;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_78')">
+ViewBundle&lt;T&gt;.ViewBundle&lt;T&gt;&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_78" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/ViewBundle.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_79')">
+ViewBundle&lt;T&gt;.ViewBundle&lt;T&gt;&#160;<span class='sym_p'><span>(&#160;Iterable&lt;ViewRenderer&gt; <span class='color_p'>viewRenderers</span></span>&#160;)</span></span>
+<br/>
+<div id="c_79" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/ViewBundle.&quot;&lt;init&gt;&quot;:(Ljava/lang/Iterable;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-views-3.0.0.jar</span>, <span class='cname'>ViewConfigurable.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.views.common</span><br/>
+<span class="section" onclick="sC(this, 'c_80')">
+ViewConfigurable&lt;T&gt;.getViewConfiguration&#160;<span class='sym_p'><span>(&#160;T <span class='color_p'>p1</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map&lt;String,Map&lt;String,String&gt;&gt;</span></span>
+<br/>
+<div id="c_80" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/ViewConfigurable.getViewConfiguration:(Ljava/lang/Object;)Ljava/util/Map;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-views-3.0.0.jar</span>, <span class='cname'>ViewMessageBodyWriter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.views.common</span><br/>
+<span class="section" onclick="sC(this, 'c_81')">
+ViewMessageBodyWriter.detectLocale&#160;<span class='sym_p'><span>(&#160;HttpHeaders <span class='color_p'>headers</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Locale</span></span>
+<br/>
+<div id="c_81" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/ViewMessageBodyWriter.detectLocale:(Ljavax/ws/rs/core/HttpHeaders;)Ljava/util/Locale;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_82')">
+ViewMessageBodyWriter.getSize&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>Class <span class='color_p'>p2</span></span>, <span>Type <span class='color_p'>p3</span></span>, <span>Annotation[&#160;] <span class='color_p'>p4</span></span>, <span>MediaType <span class='color_p'>p5</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_82" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/ViewMessageBodyWriter.getSize:(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;)J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_83')">
+ViewMessageBodyWriter.getSize&#160;<span class='sym_p'><span>(&#160;View <span class='color_p'>t</span></span>, <span>Class&lt;?&gt; <span class='color_p'>type</span></span>, <span>Type <span class='color_p'>genericType</span></span>, <span>Annotation[&#160;] <span class='color_p'>annotations</span></span>, <span>MediaType <span class='color_p'>mediaType</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_83" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/ViewMessageBodyWriter.getSize:(Lio/dropwizard/views/common/View;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;)J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_84')">
+ViewMessageBodyWriter.isWriteable&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>, <span>Type <span class='color_p'>genericType</span></span>, <span>Annotation[&#160;] <span class='color_p'>annotations</span></span>, <span>MediaType <span class='color_p'>mediaType</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_84" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/ViewMessageBodyWriter.isWriteable:(Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_85')">
+ViewMessageBodyWriter.ViewMessageBodyWriter&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricRegistry</span></span>, <span>Iterable&lt;ViewRenderer&gt; <span class='color_p'>viewRenderers</span></span>&#160;)</span></span>
+<br/>
+<div id="c_85" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/ViewMessageBodyWriter.&quot;&lt;init&gt;&quot;:(Lcom/codahale/metrics/MetricRegistry;Ljava/lang/Iterable;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_86')">
+ViewMessageBodyWriter.writeTo&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>Class <span class='color_p'>p2</span></span>, <span>Type <span class='color_p'>p3</span></span>, <span>Annotation[&#160;] <span class='color_p'>p4</span></span>, <span>MediaType <span class='color_p'>p5</span></span>, <span>MultivaluedMap <span class='color_p'>p6</span></span>, <span>OutputStream <span class='color_p'>p7</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_86" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/ViewMessageBodyWriter.writeTo:(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;Ljavax/ws/rs/core/MultivaluedMap;Ljava/io/OutputStream;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_87')">
+ViewMessageBodyWriter.writeTo&#160;<span class='sym_p'><span>(&#160;View <span class='color_p'>t</span></span>, <span>Class&lt;?&gt; <span class='color_p'>type</span></span>, <span>Type <span class='color_p'>genericType</span></span>, <span>Annotation[&#160;] <span class='color_p'>annotations</span></span>, <span>MediaType <span class='color_p'>mediaType</span></span>, <span>MultivaluedMap&lt;String,Object&gt; <span class='color_p'>httpHeaders</span></span>, <span>OutputStream <span class='color_p'>entityStream</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_87" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/ViewMessageBodyWriter.writeTo:(Lio/dropwizard/views/common/View;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;Ljavax/ws/rs/core/MultivaluedMap;Ljava/io/OutputStream;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-views-3.0.0.jar</span>, <span class='cname'>ViewRenderer.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.views.common</span><br/>
+<span class="section" onclick="sC(this, 'c_88')">
+ViewRenderer.configure&#160;<span class='sym_p'><span>(&#160;Map&lt;String,String&gt; <span class='color_p'>p1</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_88" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/ViewRenderer.configure:(Ljava/util/Map;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_89')">
+ViewRenderer.getConfigurationKey&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_89" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/ViewRenderer.getConfigurationKey:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_90')">
+ViewRenderer.isRenderable&#160;<span class='sym_p'><span>(&#160;View <span class='color_p'>p1</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_90" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/ViewRenderer.isRenderable:(Lio/dropwizard/views/common/View;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_91')">
+ViewRenderer.render&#160;<span class='sym_p'><span>(&#160;View <span class='color_p'>p1</span></span>, <span>Locale <span class='color_p'>p2</span></span>, <span>OutputStream <span class='color_p'>p3</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_91" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/ViewRenderer.render:(Lio/dropwizard/views/common/View;Ljava/util/Locale;Ljava/io/OutputStream;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-views-3.0.0.jar</span>, <span class='cname'>ViewRenderException.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.views.common</span><br/>
+<span class="section" onclick="sC(this, 'c_92')">
+ViewRenderException.ViewRenderException&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>message</span></span>&#160;)</span></span>
+<br/>
+<div id="c_92" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/ViewRenderException.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_93')">
+ViewRenderException.ViewRenderException&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>message</span></span>, <span>Throwable <span class='color_p'>cause</span></span>&#160;)</span></span>
+<br/>
+<div id="c_93" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/ViewRenderException.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;Ljava/lang/Throwable;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_94')">
+ViewRenderException.ViewRenderException&#160;<span class='sym_p'><span>(&#160;Throwable <span class='color_p'>cause</span></span>&#160;)</span></span>
+<br/>
+<div id="c_94" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/ViewRenderException.&quot;&lt;init&gt;&quot;:(Ljava/lang/Throwable;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-views-3.0.0.jar</span>, <span class='cname'>ViewRenderExceptionMapper.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.views.common</span><br/>
+<span class="section" onclick="sC(this, 'c_95')">
+ViewRenderExceptionMapper.isMappable&#160;<span class='sym_p'><span>(&#160;Throwable <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_95" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/ViewRenderExceptionMapper.isMappable:(Ljava/lang/Throwable;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_96')">
+ViewRenderExceptionMapper.isMappable&#160;<span class='sym_p'><span>(&#160;WebApplicationException <span class='color_p'>e</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_96" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/ViewRenderExceptionMapper.isMappable:(Ljavax/ws/rs/WebApplicationException;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_97')">
+ViewRenderExceptionMapper.toResponse&#160;<span class='sym_p'><span>(&#160;Throwable <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Response</span></span>
+<br/>
+<div id="c_97" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/ViewRenderExceptionMapper.toResponse:(Ljava/lang/Throwable;)Ljavax/ws/rs/core/Response;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_98')">
+ViewRenderExceptionMapper.toResponse&#160;<span class='sym_p'><span>(&#160;WebApplicationException <span class='color_p'>exception</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Response</span></span>
+<br/>
+<div id="c_98" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/ViewRenderExceptionMapper.toResponse:(Ljavax/ws/rs/WebApplicationException;)Ljavax/ws/rs/core/Response;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_99')">
+ViewRenderExceptionMapper.ViewRenderExceptionMapper&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_99" style="display:none;">
+<span class='mngl'>io/dropwizard/views/common/ViewRenderExceptionMapper.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Removed'></a><a name='Withdrawn'></a><h2>Removed Methods <span class='failed'>&nbsp;29&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-views-2.1.12.jar</span>, <span class='cname'>View.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.views</span><br/>
+<span class="section" onclick="sC(this, 'c_100')">
+View.getCharset&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Optional&lt;Charset&gt;</span></span>
+<br/>
+<div id="c_100" style="display:none;">
+<span class='mngl'>io/dropwizard/views/View.getCharset:()Ljava/util/Optional;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_101')">
+View.getTemplateName&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_101" style="display:none;">
+<span class='mngl'>io/dropwizard/views/View.getTemplateName:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_102')">
+View.View&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>templateName</span></span>&#160;)</span></span>
+<br/>
+<div id="c_102" style="display:none;">
+<span class='mngl'>io/dropwizard/views/View.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_103')">
+View.View&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>templateName</span></span>, <span>Charset <span class='color_p'>charset</span></span>&#160;)</span></span>
+<br/>
+<div id="c_103" style="display:none;">
+<span class='mngl'>io/dropwizard/views/View.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;Ljava/nio/charset/Charset;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-views-2.1.12.jar</span>, <span class='cname'>ViewBundle.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.views</span><br/>
+<span class="section" onclick="sC(this, 'c_104')">
+ViewBundle&lt;T&gt;.getViewConfiguration&#160;<span class='sym_p'><span>(&#160;T <span class='color_p'>configuration</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map&lt;String,Map&lt;String,String&gt;&gt;</span></span>
+<br/>
+<div id="c_104" style="display:none;">
+<span class='mngl'>io/dropwizard/views/ViewBundle.getViewConfiguration:(Ljava/lang/Object;)Ljava/util/Map;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_105')">
+ViewBundle&lt;T&gt;.run&#160;<span class='sym_p'><span>(&#160;T <span class='color_p'>configuration</span></span>, <span>Environment <span class='color_p'>environment</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_105" style="display:none;">
+<span class='mngl'>io/dropwizard/views/ViewBundle.run:(Ljava/lang/Object;Lio/dropwizard/setup/Environment;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_106')">
+ViewBundle&lt;T&gt;.ViewBundle&lt;T&gt;&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_106" style="display:none;">
+<span class='mngl'>io/dropwizard/views/ViewBundle.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_107')">
+ViewBundle&lt;T&gt;.ViewBundle&lt;T&gt;&#160;<span class='sym_p'><span>(&#160;Iterable&lt;ViewRenderer&gt; <span class='color_p'>viewRenderers</span></span>&#160;)</span></span>
+<br/>
+<div id="c_107" style="display:none;">
+<span class='mngl'>io/dropwizard/views/ViewBundle.&quot;&lt;init&gt;&quot;:(Ljava/lang/Iterable;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-views-2.1.12.jar</span>, <span class='cname'>ViewConfigurable.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.views</span><br/>
+<span class="section" onclick="sC(this, 'c_108')">
+ViewConfigurable&lt;T&gt;.getViewConfiguration&#160;<span class='sym_p'><span>(&#160;T <span class='color_p'>p1</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map&lt;String,Map&lt;String,String&gt;&gt;</span></span>
+<br/>
+<div id="c_108" style="display:none;">
+<span class='mngl'>io/dropwizard/views/ViewConfigurable.getViewConfiguration:(Ljava/lang/Object;)Ljava/util/Map;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-views-2.1.12.jar</span>, <span class='cname'>ViewMessageBodyWriter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.views</span><br/>
+<span class="section" onclick="sC(this, 'c_109')">
+ViewMessageBodyWriter.detectLocale&#160;<span class='sym_p'><span>(&#160;HttpHeaders <span class='color_p'>headers</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Locale</span></span>
+<br/>
+<div id="c_109" style="display:none;">
+<span class='mngl'>io/dropwizard/views/ViewMessageBodyWriter.detectLocale:(Ljavax/ws/rs/core/HttpHeaders;)Ljava/util/Locale;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_110')">
+ViewMessageBodyWriter.getSize&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>Class <span class='color_p'>p2</span></span>, <span>Type <span class='color_p'>p3</span></span>, <span>Annotation[&#160;] <span class='color_p'>p4</span></span>, <span>MediaType <span class='color_p'>p5</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_110" style="display:none;">
+<span class='mngl'>io/dropwizard/views/ViewMessageBodyWriter.getSize:(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;)J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_111')">
+ViewMessageBodyWriter.getSize&#160;<span class='sym_p'><span>(&#160;View <span class='color_p'>t</span></span>, <span>Class&lt;?&gt; <span class='color_p'>type</span></span>, <span>Type <span class='color_p'>genericType</span></span>, <span>Annotation[&#160;] <span class='color_p'>annotations</span></span>, <span>MediaType <span class='color_p'>mediaType</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_111" style="display:none;">
+<span class='mngl'>io/dropwizard/views/ViewMessageBodyWriter.getSize:(Lio/dropwizard/views/View;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;)J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_112')">
+ViewMessageBodyWriter.isWriteable&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>, <span>Type <span class='color_p'>genericType</span></span>, <span>Annotation[&#160;] <span class='color_p'>annotations</span></span>, <span>MediaType <span class='color_p'>mediaType</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_112" style="display:none;">
+<span class='mngl'>io/dropwizard/views/ViewMessageBodyWriter.isWriteable:(Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_113')">
+ViewMessageBodyWriter.ViewMessageBodyWriter&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricRegistry</span></span>&#160;)</span> <span class='deprecated'>*DEPRECATED*</span></span>
+<br/>
+<div id="c_113" style="display:none;">
+<span class='mngl'>io/dropwizard/views/ViewMessageBodyWriter.&quot;&lt;init&gt;&quot;:(Lcom/codahale/metrics/MetricRegistry;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_114')">
+ViewMessageBodyWriter.ViewMessageBodyWriter&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricRegistry</span></span>, <span>Iterable&lt;ViewRenderer&gt; <span class='color_p'>viewRenderers</span></span>&#160;)</span></span>
+<br/>
+<div id="c_114" style="display:none;">
+<span class='mngl'>io/dropwizard/views/ViewMessageBodyWriter.&quot;&lt;init&gt;&quot;:(Lcom/codahale/metrics/MetricRegistry;Ljava/lang/Iterable;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_115')">
+ViewMessageBodyWriter.writeTo&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>Class <span class='color_p'>p2</span></span>, <span>Type <span class='color_p'>p3</span></span>, <span>Annotation[&#160;] <span class='color_p'>p4</span></span>, <span>MediaType <span class='color_p'>p5</span></span>, <span>MultivaluedMap <span class='color_p'>p6</span></span>, <span>OutputStream <span class='color_p'>p7</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_115" style="display:none;">
+<span class='mngl'>io/dropwizard/views/ViewMessageBodyWriter.writeTo:(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;Ljavax/ws/rs/core/MultivaluedMap;Ljava/io/OutputStream;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_116')">
+ViewMessageBodyWriter.writeTo&#160;<span class='sym_p'><span>(&#160;View <span class='color_p'>t</span></span>, <span>Class&lt;?&gt; <span class='color_p'>type</span></span>, <span>Type <span class='color_p'>genericType</span></span>, <span>Annotation[&#160;] <span class='color_p'>annotations</span></span>, <span>MediaType <span class='color_p'>mediaType</span></span>, <span>MultivaluedMap&lt;String,Object&gt; <span class='color_p'>httpHeaders</span></span>, <span>OutputStream <span class='color_p'>entityStream</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_116" style="display:none;">
+<span class='mngl'>io/dropwizard/views/ViewMessageBodyWriter.writeTo:(Lio/dropwizard/views/View;Ljava/lang/Class;Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Ljavax/ws/rs/core/MediaType;Ljavax/ws/rs/core/MultivaluedMap;Ljava/io/OutputStream;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-views-2.1.12.jar</span>, <span class='cname'>ViewRenderer.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.views</span><br/>
+<span class="section" onclick="sC(this, 'c_117')">
+ViewRenderer.configure&#160;<span class='sym_p'><span>(&#160;Map&lt;String,String&gt; <span class='color_p'>p1</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_117" style="display:none;">
+<span class='mngl'>io/dropwizard/views/ViewRenderer.configure:(Ljava/util/Map;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_118')">
+ViewRenderer.getConfigurationKey&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_118" style="display:none;">
+<span class='mngl'>io/dropwizard/views/ViewRenderer.getConfigurationKey:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_119')">
+ViewRenderer.isRenderable&#160;<span class='sym_p'><span>(&#160;View <span class='color_p'>p1</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_119" style="display:none;">
+<span class='mngl'>io/dropwizard/views/ViewRenderer.isRenderable:(Lio/dropwizard/views/View;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_120')">
+ViewRenderer.render&#160;<span class='sym_p'><span>(&#160;View <span class='color_p'>p1</span></span>, <span>Locale <span class='color_p'>p2</span></span>, <span>OutputStream <span class='color_p'>p3</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_120" style="display:none;">
+<span class='mngl'>io/dropwizard/views/ViewRenderer.render:(Lio/dropwizard/views/View;Ljava/util/Locale;Ljava/io/OutputStream;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-views-2.1.12.jar</span>, <span class='cname'>ViewRenderException.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.views</span><br/>
+<span class="section" onclick="sC(this, 'c_121')">
+ViewRenderException.ViewRenderException&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>message</span></span>&#160;)</span></span>
+<br/>
+<div id="c_121" style="display:none;">
+<span class='mngl'>io/dropwizard/views/ViewRenderException.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_122')">
+ViewRenderException.ViewRenderException&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>message</span></span>, <span>Throwable <span class='color_p'>cause</span></span>&#160;)</span></span>
+<br/>
+<div id="c_122" style="display:none;">
+<span class='mngl'>io/dropwizard/views/ViewRenderException.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;Ljava/lang/Throwable;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_123')">
+ViewRenderException.ViewRenderException&#160;<span class='sym_p'><span>(&#160;Throwable <span class='color_p'>cause</span></span>&#160;)</span></span>
+<br/>
+<div id="c_123" style="display:none;">
+<span class='mngl'>io/dropwizard/views/ViewRenderException.&quot;&lt;init&gt;&quot;:(Ljava/lang/Throwable;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-views-2.1.12.jar</span>, <span class='cname'>ViewRenderExceptionMapper.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.views</span><br/>
+<span class="section" onclick="sC(this, 'c_124')">
+ViewRenderExceptionMapper.isMappable&#160;<span class='sym_p'><span>(&#160;Throwable <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_124" style="display:none;">
+<span class='mngl'>io/dropwizard/views/ViewRenderExceptionMapper.isMappable:(Ljava/lang/Throwable;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_125')">
+ViewRenderExceptionMapper.isMappable&#160;<span class='sym_p'><span>(&#160;WebApplicationException <span class='color_p'>e</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_125" style="display:none;">
+<span class='mngl'>io/dropwizard/views/ViewRenderExceptionMapper.isMappable:(Ljavax/ws/rs/WebApplicationException;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_126')">
+ViewRenderExceptionMapper.toResponse&#160;<span class='sym_p'><span>(&#160;Throwable <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Response</span></span>
+<br/>
+<div id="c_126" style="display:none;">
+<span class='mngl'>io/dropwizard/views/ViewRenderExceptionMapper.toResponse:(Ljava/lang/Throwable;)Ljavax/ws/rs/core/Response;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_127')">
+ViewRenderExceptionMapper.toResponse&#160;<span class='sym_p'><span>(&#160;WebApplicationException <span class='color_p'>exception</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Response</span></span>
+<br/>
+<div id="c_127" style="display:none;">
+<span class='mngl'>io/dropwizard/views/ViewRenderExceptionMapper.toResponse:(Ljavax/ws/rs/WebApplicationException;)Ljavax/ws/rs/core/Response;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_128')">
+ViewRenderExceptionMapper.ViewRenderExceptionMapper&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_128" style="display:none;">
+<span class='mngl'>io/dropwizard/views/ViewRenderExceptionMapper.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='High_Risk_Problems'></a><a name='Type_Problems_High'></a>
+<h2>Problems with Data Types, High Severity <span class='failed'>&nbsp;7&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-views-2.1.12.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.views</span><br/>
+<span class="section" onclick="sC(this, 'c_129')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> View <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_129" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>View</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_130')">
+[+] affected methods: 4 (7%)</span>
+<div id="c_130" style="display:none;">
+<div class='affected'><span class='iname_a'>View.View&#160;<span class='sym_p'><span>(&#160;String <i>templateName</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'View' abstract class.</div>
+<span class='iname_a'>View.View&#160;<span class='sym_p'><span>(&#160;String <i>templateName</i></span>, <span>Charset <i>charset</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'View' abstract class.</div>
+<span class='iname_a'>View.getCharset&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'View' abstract class.</div>
+<span class='iname_a'>View.getTemplateName&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'View' abstract class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_131')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> ViewBundle&lt;T&gt; <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_131" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>ViewBundle&lt;T&gt;</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_132')">
+[+] affected methods: 4 (7%)</span>
+<div id="c_132" style="display:none;">
+<div class='affected'><span class='iname_a'>ViewBundle&lt;T&gt;.ViewBundle&lt;T&gt;&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'ViewBundle&lt;T&gt;' class.</div>
+<span class='iname_a'>ViewBundle&lt;T&gt;.ViewBundle&lt;T&gt;&#160;<span class='sym_p'><span>(&#160;Iterable&lt;ViewRenderer&gt; <i>viewRenderers</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'ViewBundle&lt;T&gt;' class.</div>
+<span class='iname_a'>ViewBundle&lt;T&gt;.getViewConfiguration&#160;<span class='sym_p'><span>(&#160;T <i>configuration</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ViewBundle&lt;T&gt;' class.</div>
+<span class='iname_a'>ViewBundle&lt;T&gt;.run&#160;<span class='sym_p'><span>(&#160;T <i>configuration</i></span>, <span>Environment <i>environment</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ViewBundle&lt;T&gt;' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_133')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> ViewMessageBodyWriter <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_133" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>ViewMessageBodyWriter</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_134')">
+[+] affected methods: 8 (14%)</span>
+<div id="c_134" style="display:none;">
+<div class='affected'><span class='iname_a'>ViewMessageBodyWriter.ViewMessageBodyWriter&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>metricRegistry</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'ViewMessageBodyWriter' class.</div>
+<span class='iname_a'>ViewMessageBodyWriter.ViewMessageBodyWriter&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>metricRegistry</i></span>, <span>Iterable&lt;ViewRenderer&gt; <i>viewRenderers</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'ViewMessageBodyWriter' class.</div>
+<span class='iname_a'>ViewMessageBodyWriter.detectLocale&#160;<span class='sym_p'><span>(&#160;HttpHeaders <i>headers</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ViewMessageBodyWriter' class.</div>
+<span class='iname_a'>ViewMessageBodyWriter.getSize&#160;<span class='sym_p'><span>(&#160;View <i>t</i></span>, <span>Class&lt;?&gt; <i>type</i></span>, <span>Type <i>genericType</i></span>, <span>Annotation[&#160;] <i>annotations</i></span>, <span>MediaType <i>mediaType</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ViewMessageBodyWriter' class.</div>
+<span class='iname_a'>ViewMessageBodyWriter.getSize&#160;<span class='sym_p'><span>(&#160;Object <i>p1</i></span>, <span>Class <i>p2</i></span>, <span>Type <i>p3</i></span>, <span>Annotation[&#160;] <i>p4</i></span>, <span>MediaType <i>p5</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ViewMessageBodyWriter' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_135')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> ViewRenderException <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_135" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>ViewRenderException</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_136')">
+[+] affected methods: 3 (5.3%)</span>
+<div id="c_136" style="display:none;">
+<div class='affected'><span class='iname_a'>ViewRenderException.ViewRenderException&#160;<span class='sym_p'><span>(&#160;String <i>message</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'ViewRenderException' class.</div>
+<span class='iname_a'>ViewRenderException.ViewRenderException&#160;<span class='sym_p'><span>(&#160;String <i>message</i></span>, <span>Throwable <i>cause</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'ViewRenderException' class.</div>
+<span class='iname_a'>ViewRenderException.ViewRenderException&#160;<span class='sym_p'><span>(&#160;Throwable <i>cause</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'ViewRenderException' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_137')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> ViewRenderExceptionMapper <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_137" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>ViewRenderExceptionMapper</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_138')">
+[+] affected methods: 5 (8.8%)</span>
+<div id="c_138" style="display:none;">
+<div class='affected'><span class='iname_a'>ViewRenderExceptionMapper.ViewRenderExceptionMapper&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'ViewRenderExceptionMapper' class.</div>
+<span class='iname_a'>ViewRenderExceptionMapper.isMappable&#160;<span class='sym_p'><span>(&#160;Throwable <i>p1</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ViewRenderExceptionMapper' class.</div>
+<span class='iname_a'>ViewRenderExceptionMapper.isMappable&#160;<span class='sym_p'><span>(&#160;WebApplicationException <i>e</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ViewRenderExceptionMapper' class.</div>
+<span class='iname_a'>ViewRenderExceptionMapper.toResponse&#160;<span class='sym_p'><span>(&#160;Throwable <i>p1</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ViewRenderExceptionMapper' class.</div>
+<span class='iname_a'>ViewRenderExceptionMapper.toResponse&#160;<span class='sym_p'><span>(&#160;WebApplicationException <i>exception</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ViewRenderExceptionMapper' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_139')">
+<span class='ext'>[+]</span> <span class='ttype'>interface</span> ViewConfigurable&lt;T&gt; <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_139" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This interface has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>ViewConfigurable&lt;T&gt;</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_140')">
+[+] affected methods: 1 (1.8%)</span>
+<div id="c_140" style="display:none;">
+<div class='affected'><span class='iname_a'>ViewConfigurable&lt;T&gt;.getViewConfiguration&#160;<span class='sym_p'><span>(&#160;T <i>p1</i></span>&#160;)</span></span><br/><div class='affect'>This abstract method is from 'ViewConfigurable&lt;T&gt;' interface.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_141')">
+<span class='ext'>[+]</span> <span class='ttype'>interface</span> ViewRenderer <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_141" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This interface has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>ViewRenderer</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_142')">
+[+] affected methods: 4 (7%)</span>
+<div id="c_142" style="display:none;">
+<div class='affected'><span class='iname_a'>ViewRenderer.configure&#160;<span class='sym_p'><span>(&#160;Map&lt;String,String&gt; <i>p1</i></span>&#160;)</span></span><br/><div class='affect'>This abstract method is from 'ViewRenderer' interface.</div>
+<span class='iname_a'>ViewRenderer.getConfigurationKey&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This abstract method is from 'ViewRenderer' interface.</div>
+<span class='iname_a'>ViewRenderer.isRenderable&#160;<span class='sym_p'><span>(&#160;View <i>p1</i></span>&#160;)</span></span><br/><div class='affect'>This abstract method is from 'ViewRenderer' interface.</div>
+<span class='iname_a'>ViewRenderer.render&#160;<span class='sym_p'><span>(&#160;View <i>p1</i></span>, <span>Locale <i>p2</i></span>, <span>OutputStream <i>p3</i></span>&#160;)</span></span><br/><div class='affect'>This abstract method is from 'ViewRenderer' interface.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Checked_Archives'></a><h2>Java Archives <span class='gray'>&nbsp;1&nbsp;</span></h2>
+<hr/><div class='jar_list'>
+dropwizard-views-2.1.12.jar<br/>
+</div><br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<br/><br/><br/>
+<hr/><div class='footer' align='right'><i>Generated by <a href='https://github.com/lvc/japi-compliance-checker'>Java API Compliance Checker</a> 2.4 &#160;</i></div><br/>
+</body></html>

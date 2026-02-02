@@ -1,0 +1,1068 @@
+<!-- kind:source;verdict:incompatible;affected:100;added:45;removed:45;type_problems_high:9;type_problems_medium:0;type_problems_low:0;method_problems_high:0;method_problems_medium:0;method_problems_low:0;checked_methods:90;checked_types:18;tool_version:2.4 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="metrics-httpclient5, source, compatibility" />
+<meta name="description" content="Source compatibility report for the metrics-httpclient5 library between 4.2.38 and 5.0.1 versions" />
+<title>metrics-httpclient5: 4.2.38 to 5.0.1 source compatibility report</title>
+<style type="text/css">
+body {
+    font-family:Arial, sans-serif;
+    background-color:White;
+    color:Black;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+    white-space:nowrap;
+}
+div.symbols {
+    color:#003E69;
+}
+div.symbols i {
+    color:Brown;
+}
+span.section {
+    font-weight:bold;
+    cursor:pointer;
+    color:#003E69;
+    white-space:nowrap;
+    margin-left:0.3125em;
+}
+span:hover.section {
+    color:#336699;
+}
+span.sect_aff {
+    cursor:pointer;
+    padding-left:1.55em;
+    font-size:0.875em;
+    color:#cc3300;
+}
+span.ext {
+    font-weight:normal;
+}
+span.jar {
+    color:#cc3300;
+    font-size:0.875em;
+    font-weight:bold;
+}
+div.jar_list {
+    padding-left:0.4em;
+    font-size:0.94em;
+}
+span.pkg_t {
+    color:#408080;
+    font-size:0.875em;
+}
+span.pkg {
+    color:#408080;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.cname {
+    color:Green;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.iname_b {
+    font-weight:bold;
+}
+span.iname_a {
+    color:#333333;
+    font-weight:bold;
+    font-size:0.94em;
+}
+span.sym_p {
+    font-weight:normal;
+    white-space:normal;
+}
+span.sym_pd {
+    white-space:normal;
+}
+span.sym_p span, span.sym_pd span {
+    white-space:nowrap;
+}
+span.attr {
+    color:Black;
+    font-weight:normal;
+}
+span.deprecated {
+    color:Red;
+    font-weight:bold;
+    font-family:Monaco, monospace;
+}
+div.affect {
+    padding-left:1em;
+    padding-bottom:10px;
+    font-size:0.87em;
+    font-style:italic;
+    line-height:0.9em;
+}
+div.affected {
+    padding-left:2em;
+    padding-top:10px;
+}
+table.ptable {
+    border-collapse:collapse;
+    border:1px outset black;
+    margin-left:0.95em;
+    margin-top:3px;
+    margin-bottom:3px;
+    width:56.25em;
+}
+table.ptable td {
+    border:1px solid Gray;
+    padding:3px;
+    font-size:0.875em;
+    text-align:left;
+    vertical-align:top;
+    max-width:28em;
+    word-wrap:break-word;
+}
+table.ptable th {
+    background-color:#eeeeee;
+    font-weight:bold;
+    color:#333333;
+    font-family:Verdana, Arial;
+    font-size:0.875em;
+    border:1px solid Gray;
+    text-align:center;
+    vertical-align:top;
+    white-space:nowrap;
+    padding:3px;
+}
+table.summary {
+    border-collapse:collapse;
+    border:1px outset black;
+}
+table.summary th {
+    background-color:#eeeeee;
+    font-weight:normal;
+    text-align:left;
+    font-size:0.94em;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px;
+}
+table.summary td {
+    text-align:right;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px 5px 3px 10px;
+}
+span.mngl {
+    padding-left:1em;
+    font-size:0.875em;
+    cursor:text;
+    color:#444444;
+    font-weight:bold;
+}
+span.pleft {
+    padding-left:2.5em;
+}
+span.color_p {
+    font-style:italic;
+    color:Brown;
+}
+span.param {
+    font-style:italic;
+}
+span.focus_p {
+    font-style:italic;
+    background-color:#DCDCDC;
+}
+span.ttype {
+    font-weight:normal;
+}
+span.nowrap {
+    white-space:nowrap;
+}
+span.value {
+    white-space:nowrap;
+    font-weight:bold;
+}
+.passed {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.warning {
+    background-color:#F4F4AF;
+    font-weight:normal;
+}
+.failed {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.new {
+    background-color:#C6DEFF;
+    font-weight:normal;
+}
+
+.compatible {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.almost_compatible {
+    background-color:#FFDAA3;
+    font-weight:normal;
+}
+.incompatible {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.gray {
+    background-color:#DCDCDC;
+    font-weight:normal;
+}
+
+.top_ref {
+    font-size:0.69em;
+}
+.footer {
+    font-size:0.8125em;
+}
+
+</style>
+<script type="text/javascript" language="JavaScript">
+<!--
+function sC(header, id)
+{
+    e = document.getElementById(id);
+    if(e.style.display == 'none')
+    {
+        e.style.display = 'block';
+        e.style.visibility = 'visible';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[&minus;]");
+    }
+    else
+    {
+        e.style.display = 'none';
+        e.style.visibility = 'hidden';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[+]");
+    }
+}
+
+-->
+</script>
+</head>
+<body><a name='Top'></a><h1>Source compatibility report for the <span style='color:Blue;'>metrics-httpclient5</span> library between <span style='color:Red;'>4.2.38</span> and <span style='color:Red;'>5.0.1</span> versions</h1>
+
+<h2>Test Info</h2><hr/>
+<table class='summary'>
+<tr><th>Library Name</th><td>metrics-httpclient5</td></tr>
+<tr><th>Version #1</th><td>4.2.38</td></tr>
+<tr><th>Version #2</th><td>5.0.1</td></tr>
+</table>
+<h2>Test Results</h2><hr/>
+<table class='summary'>
+<tr><th>Total Java Modules</th><td><a href='#Checked_Archives' style='color:Blue;'>1</a></td></tr>
+<tr><th>Total Methods / Classes</th><td>90 / 18</td></tr>
+<tr><th>Compatibility</th>
+<td class='incompatible'>0%</td>
+</tr>
+</table>
+<h2>Problem Summary</h2><hr/>
+<table class='summary'>
+<tr><th></th><th style='text-align:center;'>Severity</th><th style='text-align:center;'>Count</th></tr>
+<tr><th>Added Methods</th><td>-</td><td class='new'><a href='#Added' style='color:Blue;'>45</a></td></tr>
+<tr><th>Removed Methods</th><td>High</td><td class='failed'><a href='#Removed' style='color:Blue;'>45</a></td></tr>
+<tr><th rowspan='3'>Problems with<br/>Data Types</th><td>High</td><td class='failed'><a href='#Type_Problems_High' style='color:Blue;'>9</a></td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+<tr><th rowspan='3'>Problems with<br/>Methods</th><td>High</td><td>0</td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+</table>
+
+<a name='Added'></a><h2>Added Methods <span class='new'>&nbsp;45&nbsp;</span></h2><hr/>
+<span class='jar'>metrics-httpclient5-5.0.1.jar</span>, <span class='cname'>Builder.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.httpclient5</span><br/>
+<span class="section" onclick="sC(this, 'c_109')">
+InstrumentedAsyncClientConnectionManager.Builder.build&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedAsyncClientConnectionManager</span></span>
+<br/>
+<div id="c_109" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedAsyncClientConnectionManager.Builder.build:()Lio/dropwizard/metrics5/httpclient5/InstrumentedAsyncClientConnectionManager;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_110')">
+InstrumentedAsyncClientConnectionManager.Builder.dnsResolver&#160;<span class='sym_p'><span>(&#160;DnsResolver <span class='color_p'>dnsResolver</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedAsyncClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_110" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedAsyncClientConnectionManager.Builder.dnsResolver:(Lorg/apache/hc/client5/http/DnsResolver;)Lio/dropwizard/metrics5/httpclient5/InstrumentedAsyncClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_111')">
+InstrumentedAsyncClientConnectionManager.Builder.metricsRegistry&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricRegistry</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedAsyncClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_111" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedAsyncClientConnectionManager.Builder.metricsRegistry:(Lio/dropwizard/metrics5/MetricRegistry;)Lio/dropwizard/metrics5/httpclient5/InstrumentedAsyncClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_112')">
+InstrumentedAsyncClientConnectionManager.Builder.name&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedAsyncClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_112" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedAsyncClientConnectionManager.Builder.name:(Ljava/lang/String;)Lio/dropwizard/metrics5/httpclient5/InstrumentedAsyncClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_113')">
+InstrumentedAsyncClientConnectionManager.Builder.poolConcurrencyPolicy&#160;<span class='sym_p'><span>(&#160;PoolConcurrencyPolicy <span class='color_p'>poolConcurrencyPolicy</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedAsyncClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_113" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedAsyncClientConnectionManager.Builder.poolConcurrencyPolicy:(Lorg/apache/hc/core5/pool/PoolConcurrencyPolicy;)Lio/dropwizard/metrics5/httpclient5/InstrumentedAsyncClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_114')">
+InstrumentedAsyncClientConnectionManager.Builder.poolReusePolicy&#160;<span class='sym_p'><span>(&#160;PoolReusePolicy <span class='color_p'>poolReusePolicy</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedAsyncClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_114" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedAsyncClientConnectionManager.Builder.poolReusePolicy:(Lorg/apache/hc/core5/pool/PoolReusePolicy;)Lio/dropwizard/metrics5/httpclient5/InstrumentedAsyncClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_115')">
+InstrumentedAsyncClientConnectionManager.Builder.schemePortResolver&#160;<span class='sym_p'><span>(&#160;SchemePortResolver <span class='color_p'>schemePortResolver</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedAsyncClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_115" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedAsyncClientConnectionManager.Builder.schemePortResolver:(Lorg/apache/hc/client5/http/SchemePortResolver;)Lio/dropwizard/metrics5/httpclient5/InstrumentedAsyncClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_116')">
+InstrumentedAsyncClientConnectionManager.Builder.timeToLive&#160;<span class='sym_p'><span>(&#160;TimeValue <span class='color_p'>timeToLive</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedAsyncClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_116" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedAsyncClientConnectionManager.Builder.timeToLive:(Lorg/apache/hc/core5/util/TimeValue;)Lio/dropwizard/metrics5/httpclient5/InstrumentedAsyncClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_117')">
+InstrumentedAsyncClientConnectionManager.Builder.tlsStrategyLookup&#160;<span class='sym_p'><span>(&#160;Lookup&lt;TlsStrategy&gt; <span class='color_p'>tlsStrategyLookup</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedAsyncClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_117" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedAsyncClientConnectionManager.Builder.tlsStrategyLookup:(Lorg/apache/hc/core5/http/config/Lookup;)Lio/dropwizard/metrics5/httpclient5/InstrumentedAsyncClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_118')">
+InstrumentedHttpClientConnectionManager.Builder.build&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedHttpClientConnectionManager</span></span>
+<br/>
+<div id="c_118" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpClientConnectionManager.Builder.build:()Lio/dropwizard/metrics5/httpclient5/InstrumentedHttpClientConnectionManager;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_119')">
+InstrumentedHttpClientConnectionManager.Builder.connFactory&#160;<span class='sym_p'><span>(&#160;HttpConnectionFactory&lt;ManagedHttpClientConnection&gt; <span class='color_p'>connFactory</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedHttpClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_119" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpClientConnectionManager.Builder.connFactory:(Lorg/apache/hc/core5/http/io/HttpConnectionFactory;)Lio/dropwizard/metrics5/httpclient5/InstrumentedHttpClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_120')">
+InstrumentedHttpClientConnectionManager.Builder.dnsResolver&#160;<span class='sym_p'><span>(&#160;DnsResolver <span class='color_p'>dnsResolver</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedHttpClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_120" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpClientConnectionManager.Builder.dnsResolver:(Lorg/apache/hc/client5/http/DnsResolver;)Lio/dropwizard/metrics5/httpclient5/InstrumentedHttpClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_121')">
+InstrumentedHttpClientConnectionManager.Builder.httpClientConnectionOperator&#160;<span class='sym_p'><span>(&#160;HttpClientConnectionOperator <span class='color_p'>httpClientConnectionOperator</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedHttpClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_121" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpClientConnectionManager.Builder.httpClientConnectionOperator:(Lorg/apache/hc/client5/http/io/HttpClientConnectionOperator;)Lio/dropwizard/metrics5/httpclient5/InstrumentedHttpClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_122')">
+InstrumentedHttpClientConnectionManager.Builder.metricsRegistry&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricRegistry</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedHttpClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_122" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpClientConnectionManager.Builder.metricsRegistry:(Lio/dropwizard/metrics5/MetricRegistry;)Lio/dropwizard/metrics5/httpclient5/InstrumentedHttpClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_123')">
+InstrumentedHttpClientConnectionManager.Builder.name&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedHttpClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_123" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpClientConnectionManager.Builder.name:(Ljava/lang/String;)Lio/dropwizard/metrics5/httpclient5/InstrumentedHttpClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_124')">
+InstrumentedHttpClientConnectionManager.Builder.poolConcurrencyPolicy&#160;<span class='sym_p'><span>(&#160;PoolConcurrencyPolicy <span class='color_p'>poolConcurrencyPolicy</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedHttpClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_124" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpClientConnectionManager.Builder.poolConcurrencyPolicy:(Lorg/apache/hc/core5/pool/PoolConcurrencyPolicy;)Lio/dropwizard/metrics5/httpclient5/InstrumentedHttpClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_125')">
+InstrumentedHttpClientConnectionManager.Builder.poolReusePolicy&#160;<span class='sym_p'><span>(&#160;PoolReusePolicy <span class='color_p'>poolReusePolicy</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedHttpClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_125" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpClientConnectionManager.Builder.poolReusePolicy:(Lorg/apache/hc/core5/pool/PoolReusePolicy;)Lio/dropwizard/metrics5/httpclient5/InstrumentedHttpClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_126')">
+InstrumentedHttpClientConnectionManager.Builder.schemePortResolver&#160;<span class='sym_p'><span>(&#160;SchemePortResolver <span class='color_p'>schemePortResolver</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedHttpClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_126" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpClientConnectionManager.Builder.schemePortResolver:(Lorg/apache/hc/client5/http/SchemePortResolver;)Lio/dropwizard/metrics5/httpclient5/InstrumentedHttpClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_127')">
+InstrumentedHttpClientConnectionManager.Builder.socketFactoryRegistry&#160;<span class='sym_p'><span>(&#160;Registry&lt;ConnectionSocketFactory&gt; <span class='color_p'>socketFactoryRegistry</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedHttpClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_127" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpClientConnectionManager.Builder.socketFactoryRegistry:(Lorg/apache/hc/core5/http/config/Registry;)Lio/dropwizard/metrics5/httpclient5/InstrumentedHttpClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_128')">
+InstrumentedHttpClientConnectionManager.Builder.timeToLive&#160;<span class='sym_p'><span>(&#160;TimeValue <span class='color_p'>timeToLive</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedHttpClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_128" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpClientConnectionManager.Builder.timeToLive:(Lorg/apache/hc/core5/util/TimeValue;)Lio/dropwizard/metrics5/httpclient5/InstrumentedHttpClientConnectionManager$Builder;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-httpclient5-5.0.1.jar</span>, <span class='cname'>HttpClientMetricNameStrategies.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.httpclient5</span><br/>
+<span class="section" onclick="sC(this, 'c_129')">
+HttpClientMetricNameStrategies.HttpClientMetricNameStrategies&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_129" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/HttpClientMetricNameStrategies.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-httpclient5-5.0.1.jar</span>, <span class='cname'>HttpClientMetricNameStrategy.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.httpclient5</span><br/>
+<span class="section" onclick="sC(this, 'c_130')">
+HttpClientMetricNameStrategy.getNameFor&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>, <span>Exception <span class='color_p'>exception</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;MetricName</span></span>
+<br/>
+<div id="c_130" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/HttpClientMetricNameStrategy.getNameFor:(Ljava/lang/String;Ljava/lang/Exception;)Lio/dropwizard/metrics5/MetricName;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_131')">
+HttpClientMetricNameStrategy.getNameFor&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>p1</span></span>, <span>HttpRequest <span class='color_p'>p2</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;MetricName</span></span>
+<br/>
+<div id="c_131" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/HttpClientMetricNameStrategy.getNameFor:(Ljava/lang/String;Lorg/apache/hc/core5/http/HttpRequest;)Lio/dropwizard/metrics5/MetricName;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-httpclient5-5.0.1.jar</span>, <span class='cname'>InstrumentedAsyncClientConnectionManager.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.httpclient5</span><br/>
+<span class="section" onclick="sC(this, 'c_132')">
+InstrumentedAsyncClientConnectionManager.builder&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricsRegistry</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedAsyncClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_132" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedAsyncClientConnectionManager.builder:(Lio/dropwizard/metrics5/MetricRegistry;)Lio/dropwizard/metrics5/httpclient5/InstrumentedAsyncClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_133')">
+InstrumentedAsyncClientConnectionManager.close&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_133" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedAsyncClientConnectionManager.close:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_134')">
+InstrumentedAsyncClientConnectionManager.close&#160;<span class='sym_p'><span>(&#160;CloseMode <span class='color_p'>closeMode</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_134" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedAsyncClientConnectionManager.close:(Lorg/apache/hc/core5/io/CloseMode;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_135')">
+InstrumentedAsyncClientConnectionManager.getDefaultTlsStrategy&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Registry&lt;TlsStrategy&gt;</span></span>
+<br/>
+<div id="c_135" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedAsyncClientConnectionManager.getDefaultTlsStrategy:()Lorg/apache/hc/core5/http/config/Registry;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-httpclient5-5.0.1.jar</span>, <span class='cname'>InstrumentedHttpAsyncClients.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.httpclient5</span><br/>
+<span class="section" onclick="sC(this, 'c_136')">
+InstrumentedHttpAsyncClients.createDefault&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricRegistry</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;CloseableHttpAsyncClient</span></span>
+<br/>
+<div id="c_136" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpAsyncClients.createDefault:(Lio/dropwizard/metrics5/MetricRegistry;)Lorg/apache/hc/client5/http/impl/async/CloseableHttpAsyncClient;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_137')">
+InstrumentedHttpAsyncClients.createDefault&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricRegistry</span></span>, <span>HttpClientMetricNameStrategy <span class='color_p'>metricNameStrategy</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;CloseableHttpAsyncClient</span></span>
+<br/>
+<div id="c_137" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpAsyncClients.createDefault:(Lio/dropwizard/metrics5/MetricRegistry;Lio/dropwizard/metrics5/httpclient5/HttpClientMetricNameStrategy;)Lorg/apache/hc/client5/http/impl/async/CloseableHttpAsyncClient;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_138')">
+InstrumentedHttpAsyncClients.custom&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricRegistry</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HttpAsyncClientBuilder</span></span>
+<br/>
+<div id="c_138" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpAsyncClients.custom:(Lio/dropwizard/metrics5/MetricRegistry;)Lorg/apache/hc/client5/http/impl/async/HttpAsyncClientBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_139')">
+InstrumentedHttpAsyncClients.custom&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricRegistry</span></span>, <span>HttpClientMetricNameStrategy <span class='color_p'>metricNameStrategy</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HttpAsyncClientBuilder</span></span>
+<br/>
+<div id="c_139" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpAsyncClients.custom:(Lio/dropwizard/metrics5/MetricRegistry;Lio/dropwizard/metrics5/httpclient5/HttpClientMetricNameStrategy;)Lorg/apache/hc/client5/http/impl/async/HttpAsyncClientBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_140')">
+InstrumentedHttpAsyncClients.custom&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricRegistry</span></span>, <span>HttpClientMetricNameStrategy <span class='color_p'>metricNameStrategy</span></span>, <span>AsyncClientConnectionManager <span class='color_p'>clientConnectionManager</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HttpAsyncClientBuilder</span></span>
+<br/>
+<div id="c_140" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpAsyncClients.custom:(Lio/dropwizard/metrics5/MetricRegistry;Lio/dropwizard/metrics5/httpclient5/HttpClientMetricNameStrategy;Lorg/apache/hc/client5/http/nio/AsyncClientConnectionManager;)Lorg/apache/hc/client5/http/impl/async/HttpAsyncClientBuilder;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-httpclient5-5.0.1.jar</span>, <span class='cname'>InstrumentedHttpClientConnectionManager.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.httpclient5</span><br/>
+<span class="section" onclick="sC(this, 'c_141')">
+InstrumentedHttpClientConnectionManager.builder&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricsRegistry</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedHttpClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_141" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpClientConnectionManager.builder:(Lio/dropwizard/metrics5/MetricRegistry;)Lio/dropwizard/metrics5/httpclient5/InstrumentedHttpClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_142')">
+InstrumentedHttpClientConnectionManager.close&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_142" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpClientConnectionManager.close:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_143')">
+InstrumentedHttpClientConnectionManager.close&#160;<span class='sym_p'><span>(&#160;CloseMode <span class='color_p'>closeMode</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_143" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpClientConnectionManager.close:(Lorg/apache/hc/core5/io/CloseMode;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_144')">
+InstrumentedHttpClientConnectionManager.getDefaultRegistry&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Registry&lt;ConnectionSocketFactory&gt;</span></span>
+<br/>
+<div id="c_144" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpClientConnectionManager.getDefaultRegistry:()Lorg/apache/hc/core5/http/config/Registry;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-httpclient5-5.0.1.jar</span>, <span class='cname'>InstrumentedHttpClients.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.httpclient5</span><br/>
+<span class="section" onclick="sC(this, 'c_145')">
+InstrumentedHttpClients.createDefault&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricRegistry</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;CloseableHttpClient</span></span>
+<br/>
+<div id="c_145" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpClients.createDefault:(Lio/dropwizard/metrics5/MetricRegistry;)Lorg/apache/hc/client5/http/impl/classic/CloseableHttpClient;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_146')">
+InstrumentedHttpClients.createDefault&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricRegistry</span></span>, <span>HttpClientMetricNameStrategy <span class='color_p'>metricNameStrategy</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;CloseableHttpClient</span></span>
+<br/>
+<div id="c_146" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpClients.createDefault:(Lio/dropwizard/metrics5/MetricRegistry;Lio/dropwizard/metrics5/httpclient5/HttpClientMetricNameStrategy;)Lorg/apache/hc/client5/http/impl/classic/CloseableHttpClient;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_147')">
+InstrumentedHttpClients.custom&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricRegistry</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HttpClientBuilder</span></span>
+<br/>
+<div id="c_147" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpClients.custom:(Lio/dropwizard/metrics5/MetricRegistry;)Lorg/apache/hc/client5/http/impl/classic/HttpClientBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_148')">
+InstrumentedHttpClients.custom&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricRegistry</span></span>, <span>HttpClientMetricNameStrategy <span class='color_p'>metricNameStrategy</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HttpClientBuilder</span></span>
+<br/>
+<div id="c_148" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpClients.custom:(Lio/dropwizard/metrics5/MetricRegistry;Lio/dropwizard/metrics5/httpclient5/HttpClientMetricNameStrategy;)Lorg/apache/hc/client5/http/impl/classic/HttpClientBuilder;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-httpclient5-5.0.1.jar</span>, <span class='cname'>InstrumentedHttpRequestExecutor.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.httpclient5</span><br/>
+<span class="section" onclick="sC(this, 'c_149')">
+InstrumentedHttpRequestExecutor.execute&#160;<span class='sym_p'><span>(&#160;ClassicHttpRequest <span class='color_p'>request</span></span>, <span>HttpClientConnection <span class='color_p'>conn</span></span>, <span>HttpResponseInformationCallback <span class='color_p'>informationCallback</span></span>, <span>HttpContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ClassicHttpResponse</span></span>
+<br/>
+<div id="c_149" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpRequestExecutor.execute:(Lorg/apache/hc/core5/http/ClassicHttpRequest;Lorg/apache/hc/core5/http/io/HttpClientConnection;Lorg/apache/hc/core5/http/io/HttpResponseInformationCallback;Lorg/apache/hc/core5/http/protocol/HttpContext;)Lorg/apache/hc/core5/http/ClassicHttpResponse;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_150')">
+InstrumentedHttpRequestExecutor.InstrumentedHttpRequestExecutor&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>registry</span></span>, <span>HttpClientMetricNameStrategy <span class='color_p'>metricNameStrategy</span></span>&#160;)</span></span>
+<br/>
+<div id="c_150" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpRequestExecutor.&quot;&lt;init&gt;&quot;:(Lio/dropwizard/metrics5/MetricRegistry;Lio/dropwizard/metrics5/httpclient5/HttpClientMetricNameStrategy;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_151')">
+InstrumentedHttpRequestExecutor.InstrumentedHttpRequestExecutor&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>registry</span></span>, <span>HttpClientMetricNameStrategy <span class='color_p'>metricNameStrategy</span></span>, <span>String <span class='color_p'>name</span></span>&#160;)</span></span>
+<br/>
+<div id="c_151" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpRequestExecutor.&quot;&lt;init&gt;&quot;:(Lio/dropwizard/metrics5/MetricRegistry;Lio/dropwizard/metrics5/httpclient5/HttpClientMetricNameStrategy;Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_152')">
+InstrumentedHttpRequestExecutor.InstrumentedHttpRequestExecutor&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>registry</span></span>, <span>HttpClientMetricNameStrategy <span class='color_p'>metricNameStrategy</span></span>, <span>String <span class='color_p'>name</span></span>, <span>Timeout <span class='color_p'>waitForContinue</span></span>&#160;)</span></span>
+<br/>
+<div id="c_152" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpRequestExecutor.&quot;&lt;init&gt;&quot;:(Lio/dropwizard/metrics5/MetricRegistry;Lio/dropwizard/metrics5/httpclient5/HttpClientMetricNameStrategy;Ljava/lang/String;Lorg/apache/hc/core5/util/Timeout;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_153')">
+InstrumentedHttpRequestExecutor.InstrumentedHttpRequestExecutor&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>registry</span></span>, <span>HttpClientMetricNameStrategy <span class='color_p'>metricNameStrategy</span></span>, <span>String <span class='color_p'>name</span></span>, <span>Timeout <span class='color_p'>waitForContinue</span></span>, <span>ConnectionReuseStrategy <span class='color_p'>connReuseStrategy</span></span>, <span>Http1StreamListener <span class='color_p'>streamListener</span></span>&#160;)</span></span>
+<br/>
+<div id="c_153" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/httpclient5/InstrumentedHttpRequestExecutor.&quot;&lt;init&gt;&quot;:(Lio/dropwizard/metrics5/MetricRegistry;Lio/dropwizard/metrics5/httpclient5/HttpClientMetricNameStrategy;Ljava/lang/String;Lorg/apache/hc/core5/util/Timeout;Lorg/apache/hc/core5/http/ConnectionReuseStrategy;Lorg/apache/hc/core5/http/impl/Http1StreamListener;)V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Removed'></a><a name='Withdrawn'></a><h2>Removed Methods <span class='failed'>&nbsp;45&nbsp;</span></h2><hr/>
+<span class='jar'>metrics-httpclient5-4.2.38.jar</span>, <span class='cname'>Builder.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.httpclient5</span><br/>
+<span class="section" onclick="sC(this, 'c_154')">
+InstrumentedAsyncClientConnectionManager.Builder.build&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedAsyncClientConnectionManager</span></span>
+<br/>
+<div id="c_154" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedAsyncClientConnectionManager.Builder.build:()Lcom/codahale/metrics/httpclient5/InstrumentedAsyncClientConnectionManager;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_155')">
+InstrumentedAsyncClientConnectionManager.Builder.dnsResolver&#160;<span class='sym_p'><span>(&#160;DnsResolver <span class='color_p'>dnsResolver</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedAsyncClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_155" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedAsyncClientConnectionManager.Builder.dnsResolver:(Lorg/apache/hc/client5/http/DnsResolver;)Lcom/codahale/metrics/httpclient5/InstrumentedAsyncClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_156')">
+InstrumentedAsyncClientConnectionManager.Builder.metricsRegistry&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricRegistry</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedAsyncClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_156" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedAsyncClientConnectionManager.Builder.metricsRegistry:(Lcom/codahale/metrics/MetricRegistry;)Lcom/codahale/metrics/httpclient5/InstrumentedAsyncClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_157')">
+InstrumentedAsyncClientConnectionManager.Builder.name&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedAsyncClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_157" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedAsyncClientConnectionManager.Builder.name:(Ljava/lang/String;)Lcom/codahale/metrics/httpclient5/InstrumentedAsyncClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_158')">
+InstrumentedAsyncClientConnectionManager.Builder.poolConcurrencyPolicy&#160;<span class='sym_p'><span>(&#160;PoolConcurrencyPolicy <span class='color_p'>poolConcurrencyPolicy</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedAsyncClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_158" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedAsyncClientConnectionManager.Builder.poolConcurrencyPolicy:(Lorg/apache/hc/core5/pool/PoolConcurrencyPolicy;)Lcom/codahale/metrics/httpclient5/InstrumentedAsyncClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_159')">
+InstrumentedAsyncClientConnectionManager.Builder.poolReusePolicy&#160;<span class='sym_p'><span>(&#160;PoolReusePolicy <span class='color_p'>poolReusePolicy</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedAsyncClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_159" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedAsyncClientConnectionManager.Builder.poolReusePolicy:(Lorg/apache/hc/core5/pool/PoolReusePolicy;)Lcom/codahale/metrics/httpclient5/InstrumentedAsyncClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_160')">
+InstrumentedAsyncClientConnectionManager.Builder.schemePortResolver&#160;<span class='sym_p'><span>(&#160;SchemePortResolver <span class='color_p'>schemePortResolver</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedAsyncClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_160" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedAsyncClientConnectionManager.Builder.schemePortResolver:(Lorg/apache/hc/client5/http/SchemePortResolver;)Lcom/codahale/metrics/httpclient5/InstrumentedAsyncClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_161')">
+InstrumentedAsyncClientConnectionManager.Builder.timeToLive&#160;<span class='sym_p'><span>(&#160;TimeValue <span class='color_p'>timeToLive</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedAsyncClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_161" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedAsyncClientConnectionManager.Builder.timeToLive:(Lorg/apache/hc/core5/util/TimeValue;)Lcom/codahale/metrics/httpclient5/InstrumentedAsyncClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_162')">
+InstrumentedAsyncClientConnectionManager.Builder.tlsStrategyLookup&#160;<span class='sym_p'><span>(&#160;Lookup&lt;TlsStrategy&gt; <span class='color_p'>tlsStrategyLookup</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedAsyncClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_162" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedAsyncClientConnectionManager.Builder.tlsStrategyLookup:(Lorg/apache/hc/core5/http/config/Lookup;)Lcom/codahale/metrics/httpclient5/InstrumentedAsyncClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_163')">
+InstrumentedHttpClientConnectionManager.Builder.build&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedHttpClientConnectionManager</span></span>
+<br/>
+<div id="c_163" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpClientConnectionManager.Builder.build:()Lcom/codahale/metrics/httpclient5/InstrumentedHttpClientConnectionManager;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_164')">
+InstrumentedHttpClientConnectionManager.Builder.connFactory&#160;<span class='sym_p'><span>(&#160;HttpConnectionFactory&lt;ManagedHttpClientConnection&gt; <span class='color_p'>connFactory</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedHttpClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_164" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpClientConnectionManager.Builder.connFactory:(Lorg/apache/hc/core5/http/io/HttpConnectionFactory;)Lcom/codahale/metrics/httpclient5/InstrumentedHttpClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_165')">
+InstrumentedHttpClientConnectionManager.Builder.dnsResolver&#160;<span class='sym_p'><span>(&#160;DnsResolver <span class='color_p'>dnsResolver</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedHttpClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_165" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpClientConnectionManager.Builder.dnsResolver:(Lorg/apache/hc/client5/http/DnsResolver;)Lcom/codahale/metrics/httpclient5/InstrumentedHttpClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_166')">
+InstrumentedHttpClientConnectionManager.Builder.httpClientConnectionOperator&#160;<span class='sym_p'><span>(&#160;HttpClientConnectionOperator <span class='color_p'>httpClientConnectionOperator</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedHttpClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_166" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpClientConnectionManager.Builder.httpClientConnectionOperator:(Lorg/apache/hc/client5/http/io/HttpClientConnectionOperator;)Lcom/codahale/metrics/httpclient5/InstrumentedHttpClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_167')">
+InstrumentedHttpClientConnectionManager.Builder.metricsRegistry&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricRegistry</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedHttpClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_167" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpClientConnectionManager.Builder.metricsRegistry:(Lcom/codahale/metrics/MetricRegistry;)Lcom/codahale/metrics/httpclient5/InstrumentedHttpClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_168')">
+InstrumentedHttpClientConnectionManager.Builder.name&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedHttpClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_168" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpClientConnectionManager.Builder.name:(Ljava/lang/String;)Lcom/codahale/metrics/httpclient5/InstrumentedHttpClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_169')">
+InstrumentedHttpClientConnectionManager.Builder.poolConcurrencyPolicy&#160;<span class='sym_p'><span>(&#160;PoolConcurrencyPolicy <span class='color_p'>poolConcurrencyPolicy</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedHttpClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_169" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpClientConnectionManager.Builder.poolConcurrencyPolicy:(Lorg/apache/hc/core5/pool/PoolConcurrencyPolicy;)Lcom/codahale/metrics/httpclient5/InstrumentedHttpClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_170')">
+InstrumentedHttpClientConnectionManager.Builder.poolReusePolicy&#160;<span class='sym_p'><span>(&#160;PoolReusePolicy <span class='color_p'>poolReusePolicy</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedHttpClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_170" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpClientConnectionManager.Builder.poolReusePolicy:(Lorg/apache/hc/core5/pool/PoolReusePolicy;)Lcom/codahale/metrics/httpclient5/InstrumentedHttpClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_171')">
+InstrumentedHttpClientConnectionManager.Builder.schemePortResolver&#160;<span class='sym_p'><span>(&#160;SchemePortResolver <span class='color_p'>schemePortResolver</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedHttpClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_171" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpClientConnectionManager.Builder.schemePortResolver:(Lorg/apache/hc/client5/http/SchemePortResolver;)Lcom/codahale/metrics/httpclient5/InstrumentedHttpClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_172')">
+InstrumentedHttpClientConnectionManager.Builder.socketFactoryRegistry&#160;<span class='sym_p'><span>(&#160;Registry&lt;ConnectionSocketFactory&gt; <span class='color_p'>socketFactoryRegistry</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedHttpClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_172" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpClientConnectionManager.Builder.socketFactoryRegistry:(Lorg/apache/hc/core5/http/config/Registry;)Lcom/codahale/metrics/httpclient5/InstrumentedHttpClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_173')">
+InstrumentedHttpClientConnectionManager.Builder.timeToLive&#160;<span class='sym_p'><span>(&#160;TimeValue <span class='color_p'>timeToLive</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedHttpClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_173" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpClientConnectionManager.Builder.timeToLive:(Lorg/apache/hc/core5/util/TimeValue;)Lcom/codahale/metrics/httpclient5/InstrumentedHttpClientConnectionManager$Builder;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-httpclient5-4.2.38.jar</span>, <span class='cname'>HttpClientMetricNameStrategies.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.httpclient5</span><br/>
+<span class="section" onclick="sC(this, 'c_174')">
+HttpClientMetricNameStrategies.HttpClientMetricNameStrategies&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_174" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/HttpClientMetricNameStrategies.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-httpclient5-4.2.38.jar</span>, <span class='cname'>HttpClientMetricNameStrategy.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.httpclient5</span><br/>
+<span class="section" onclick="sC(this, 'c_175')">
+HttpClientMetricNameStrategy.getNameFor&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>, <span>Exception <span class='color_p'>exception</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_175" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/HttpClientMetricNameStrategy.getNameFor:(Ljava/lang/String;Ljava/lang/Exception;)Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_176')">
+HttpClientMetricNameStrategy.getNameFor&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>p1</span></span>, <span>HttpRequest <span class='color_p'>p2</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_176" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/HttpClientMetricNameStrategy.getNameFor:(Ljava/lang/String;Lorg/apache/hc/core5/http/HttpRequest;)Ljava/lang/String;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-httpclient5-4.2.38.jar</span>, <span class='cname'>InstrumentedAsyncClientConnectionManager.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.httpclient5</span><br/>
+<span class="section" onclick="sC(this, 'c_177')">
+InstrumentedAsyncClientConnectionManager.builder&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricsRegistry</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedAsyncClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_177" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedAsyncClientConnectionManager.builder:(Lcom/codahale/metrics/MetricRegistry;)Lcom/codahale/metrics/httpclient5/InstrumentedAsyncClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_178')">
+InstrumentedAsyncClientConnectionManager.close&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_178" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedAsyncClientConnectionManager.close:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_179')">
+InstrumentedAsyncClientConnectionManager.close&#160;<span class='sym_p'><span>(&#160;CloseMode <span class='color_p'>closeMode</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_179" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedAsyncClientConnectionManager.close:(Lorg/apache/hc/core5/io/CloseMode;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_180')">
+InstrumentedAsyncClientConnectionManager.getDefaultTlsStrategy&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Registry&lt;TlsStrategy&gt;</span></span>
+<br/>
+<div id="c_180" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedAsyncClientConnectionManager.getDefaultTlsStrategy:()Lorg/apache/hc/core5/http/config/Registry;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-httpclient5-4.2.38.jar</span>, <span class='cname'>InstrumentedHttpAsyncClients.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.httpclient5</span><br/>
+<span class="section" onclick="sC(this, 'c_181')">
+InstrumentedHttpAsyncClients.createDefault&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricRegistry</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;CloseableHttpAsyncClient</span></span>
+<br/>
+<div id="c_181" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpAsyncClients.createDefault:(Lcom/codahale/metrics/MetricRegistry;)Lorg/apache/hc/client5/http/impl/async/CloseableHttpAsyncClient;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_182')">
+InstrumentedHttpAsyncClients.createDefault&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricRegistry</span></span>, <span>HttpClientMetricNameStrategy <span class='color_p'>metricNameStrategy</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;CloseableHttpAsyncClient</span></span>
+<br/>
+<div id="c_182" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpAsyncClients.createDefault:(Lcom/codahale/metrics/MetricRegistry;Lcom/codahale/metrics/httpclient5/HttpClientMetricNameStrategy;)Lorg/apache/hc/client5/http/impl/async/CloseableHttpAsyncClient;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_183')">
+InstrumentedHttpAsyncClients.custom&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricRegistry</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HttpAsyncClientBuilder</span></span>
+<br/>
+<div id="c_183" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpAsyncClients.custom:(Lcom/codahale/metrics/MetricRegistry;)Lorg/apache/hc/client5/http/impl/async/HttpAsyncClientBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_184')">
+InstrumentedHttpAsyncClients.custom&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricRegistry</span></span>, <span>HttpClientMetricNameStrategy <span class='color_p'>metricNameStrategy</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HttpAsyncClientBuilder</span></span>
+<br/>
+<div id="c_184" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpAsyncClients.custom:(Lcom/codahale/metrics/MetricRegistry;Lcom/codahale/metrics/httpclient5/HttpClientMetricNameStrategy;)Lorg/apache/hc/client5/http/impl/async/HttpAsyncClientBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_185')">
+InstrumentedHttpAsyncClients.custom&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricRegistry</span></span>, <span>HttpClientMetricNameStrategy <span class='color_p'>metricNameStrategy</span></span>, <span>AsyncClientConnectionManager <span class='color_p'>clientConnectionManager</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HttpAsyncClientBuilder</span></span>
+<br/>
+<div id="c_185" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpAsyncClients.custom:(Lcom/codahale/metrics/MetricRegistry;Lcom/codahale/metrics/httpclient5/HttpClientMetricNameStrategy;Lorg/apache/hc/client5/http/nio/AsyncClientConnectionManager;)Lorg/apache/hc/client5/http/impl/async/HttpAsyncClientBuilder;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-httpclient5-4.2.38.jar</span>, <span class='cname'>InstrumentedHttpClientConnectionManager.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.httpclient5</span><br/>
+<span class="section" onclick="sC(this, 'c_186')">
+InstrumentedHttpClientConnectionManager.builder&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricsRegistry</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;InstrumentedHttpClientConnectionManager.Builder</span></span>
+<br/>
+<div id="c_186" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpClientConnectionManager.builder:(Lcom/codahale/metrics/MetricRegistry;)Lcom/codahale/metrics/httpclient5/InstrumentedHttpClientConnectionManager$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_187')">
+InstrumentedHttpClientConnectionManager.close&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_187" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpClientConnectionManager.close:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_188')">
+InstrumentedHttpClientConnectionManager.close&#160;<span class='sym_p'><span>(&#160;CloseMode <span class='color_p'>closeMode</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_188" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpClientConnectionManager.close:(Lorg/apache/hc/core5/io/CloseMode;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_189')">
+InstrumentedHttpClientConnectionManager.getDefaultRegistry&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Registry&lt;ConnectionSocketFactory&gt;</span></span>
+<br/>
+<div id="c_189" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpClientConnectionManager.getDefaultRegistry:()Lorg/apache/hc/core5/http/config/Registry;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-httpclient5-4.2.38.jar</span>, <span class='cname'>InstrumentedHttpClients.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.httpclient5</span><br/>
+<span class="section" onclick="sC(this, 'c_190')">
+InstrumentedHttpClients.createDefault&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricRegistry</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;CloseableHttpClient</span></span>
+<br/>
+<div id="c_190" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpClients.createDefault:(Lcom/codahale/metrics/MetricRegistry;)Lorg/apache/hc/client5/http/impl/classic/CloseableHttpClient;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_191')">
+InstrumentedHttpClients.createDefault&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricRegistry</span></span>, <span>HttpClientMetricNameStrategy <span class='color_p'>metricNameStrategy</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;CloseableHttpClient</span></span>
+<br/>
+<div id="c_191" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpClients.createDefault:(Lcom/codahale/metrics/MetricRegistry;Lcom/codahale/metrics/httpclient5/HttpClientMetricNameStrategy;)Lorg/apache/hc/client5/http/impl/classic/CloseableHttpClient;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_192')">
+InstrumentedHttpClients.custom&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricRegistry</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HttpClientBuilder</span></span>
+<br/>
+<div id="c_192" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpClients.custom:(Lcom/codahale/metrics/MetricRegistry;)Lorg/apache/hc/client5/http/impl/classic/HttpClientBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_193')">
+InstrumentedHttpClients.custom&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricRegistry</span></span>, <span>HttpClientMetricNameStrategy <span class='color_p'>metricNameStrategy</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HttpClientBuilder</span></span>
+<br/>
+<div id="c_193" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpClients.custom:(Lcom/codahale/metrics/MetricRegistry;Lcom/codahale/metrics/httpclient5/HttpClientMetricNameStrategy;)Lorg/apache/hc/client5/http/impl/classic/HttpClientBuilder;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-httpclient5-4.2.38.jar</span>, <span class='cname'>InstrumentedHttpRequestExecutor.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.httpclient5</span><br/>
+<span class="section" onclick="sC(this, 'c_194')">
+InstrumentedHttpRequestExecutor.execute&#160;<span class='sym_p'><span>(&#160;ClassicHttpRequest <span class='color_p'>request</span></span>, <span>HttpClientConnection <span class='color_p'>conn</span></span>, <span>HttpResponseInformationCallback <span class='color_p'>informationCallback</span></span>, <span>HttpContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ClassicHttpResponse</span></span>
+<br/>
+<div id="c_194" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpRequestExecutor.execute:(Lorg/apache/hc/core5/http/ClassicHttpRequest;Lorg/apache/hc/core5/http/io/HttpClientConnection;Lorg/apache/hc/core5/http/io/HttpResponseInformationCallback;Lorg/apache/hc/core5/http/protocol/HttpContext;)Lorg/apache/hc/core5/http/ClassicHttpResponse;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_195')">
+InstrumentedHttpRequestExecutor.InstrumentedHttpRequestExecutor&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>registry</span></span>, <span>HttpClientMetricNameStrategy <span class='color_p'>metricNameStrategy</span></span>&#160;)</span></span>
+<br/>
+<div id="c_195" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpRequestExecutor.&quot;&lt;init&gt;&quot;:(Lcom/codahale/metrics/MetricRegistry;Lcom/codahale/metrics/httpclient5/HttpClientMetricNameStrategy;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_196')">
+InstrumentedHttpRequestExecutor.InstrumentedHttpRequestExecutor&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>registry</span></span>, <span>HttpClientMetricNameStrategy <span class='color_p'>metricNameStrategy</span></span>, <span>String <span class='color_p'>name</span></span>&#160;)</span></span>
+<br/>
+<div id="c_196" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpRequestExecutor.&quot;&lt;init&gt;&quot;:(Lcom/codahale/metrics/MetricRegistry;Lcom/codahale/metrics/httpclient5/HttpClientMetricNameStrategy;Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_197')">
+InstrumentedHttpRequestExecutor.InstrumentedHttpRequestExecutor&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>registry</span></span>, <span>HttpClientMetricNameStrategy <span class='color_p'>metricNameStrategy</span></span>, <span>String <span class='color_p'>name</span></span>, <span>Timeout <span class='color_p'>waitForContinue</span></span>&#160;)</span></span>
+<br/>
+<div id="c_197" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpRequestExecutor.&quot;&lt;init&gt;&quot;:(Lcom/codahale/metrics/MetricRegistry;Lcom/codahale/metrics/httpclient5/HttpClientMetricNameStrategy;Ljava/lang/String;Lorg/apache/hc/core5/util/Timeout;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_198')">
+InstrumentedHttpRequestExecutor.InstrumentedHttpRequestExecutor&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>registry</span></span>, <span>HttpClientMetricNameStrategy <span class='color_p'>metricNameStrategy</span></span>, <span>String <span class='color_p'>name</span></span>, <span>Timeout <span class='color_p'>waitForContinue</span></span>, <span>ConnectionReuseStrategy <span class='color_p'>connReuseStrategy</span></span>, <span>Http1StreamListener <span class='color_p'>streamListener</span></span>&#160;)</span></span>
+<br/>
+<div id="c_198" style="display:none;">
+<span class='mngl'>com/codahale/metrics/httpclient5/InstrumentedHttpRequestExecutor.&quot;&lt;init&gt;&quot;:(Lcom/codahale/metrics/MetricRegistry;Lcom/codahale/metrics/httpclient5/HttpClientMetricNameStrategy;Ljava/lang/String;Lorg/apache/hc/core5/util/Timeout;Lorg/apache/hc/core5/http/ConnectionReuseStrategy;Lorg/apache/hc/core5/http/impl/Http1StreamListener;)V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='High_Risk_Problems'></a><a name='Type_Problems_High'></a>
+<h2>Problems with Data Types, High Severity <span class='failed'>&nbsp;9&nbsp;</span></h2><hr/>
+<span class='jar'>metrics-httpclient5-4.2.38.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.httpclient5</span><br/>
+<span class="section" onclick="sC(this, 'c_199')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> HttpClientMetricNameStrategies <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_199" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>HttpClientMetricNameStrategies</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_200')">
+[+] affected methods: 1 (1.1%)</span>
+<div id="c_200" style="display:none;">
+<div class='affected'><span class='iname_a'>HttpClientMetricNameStrategies.HttpClientMetricNameStrategies&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'HttpClientMetricNameStrategies' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_201')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> InstrumentedAsyncClientConnectionManager <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_201" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>InstrumentedAsyncClientConnectionManager</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_202')">
+[+] affected methods: 4 (4.4%)</span>
+<div id="c_202" style="display:none;">
+<div class='affected'><span class='iname_a'>InstrumentedAsyncClientConnectionManager.builder&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>metricsRegistry</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedAsyncClientConnectionManager' class.</div>
+<span class='iname_a'>InstrumentedAsyncClientConnectionManager.close&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedAsyncClientConnectionManager' class.</div>
+<span class='iname_a'>InstrumentedAsyncClientConnectionManager.close&#160;<span class='sym_p'><span>(&#160;CloseMode <i>closeMode</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedAsyncClientConnectionManager' class.</div>
+<span class='iname_a'>InstrumentedAsyncClientConnectionManager.getDefaultTlsStrategy&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedAsyncClientConnectionManager' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_203')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> InstrumentedAsyncClientConnectionManager.Builder <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_203" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>InstrumentedAsyncClientConnectionManager.Builder</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_204')">
+[+] affected methods: 9 (10%)</span>
+<div id="c_204" style="display:none;">
+<div class='affected'><span class='iname_a'>InstrumentedAsyncClientConnectionManager.Builder.build&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedAsyncClientConnectionManager.Builder' class.</div>
+<span class='iname_a'>InstrumentedAsyncClientConnectionManager.Builder.dnsResolver&#160;<span class='sym_p'><span>(&#160;DnsResolver <i>dnsResolver</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedAsyncClientConnectionManager.Builder' class.</div>
+<span class='iname_a'>InstrumentedAsyncClientConnectionManager.Builder.metricsRegistry&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>metricRegistry</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedAsyncClientConnectionManager.Builder' class.</div>
+<span class='iname_a'>InstrumentedAsyncClientConnectionManager.Builder.name&#160;<span class='sym_p'><span>(&#160;String <i>name</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedAsyncClientConnectionManager.Builder' class.</div>
+<span class='iname_a'>InstrumentedAsyncClientConnectionManager.Builder.poolConcurrencyPolicy&#160;<span class='sym_p'><span>(&#160;PoolConcurrencyPolicy <i>poolConcurrencyPolicy</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedAsyncClientConnectionManager.Builder' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_205')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> InstrumentedHttpAsyncClients <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_205" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>InstrumentedHttpAsyncClients</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_206')">
+[+] affected methods: 5 (5.6%)</span>
+<div id="c_206" style="display:none;">
+<div class='affected'><span class='iname_a'>InstrumentedHttpAsyncClients.createDefault&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>metricRegistry</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedHttpAsyncClients' class.</div>
+<span class='iname_a'>InstrumentedHttpAsyncClients.createDefault&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>metricRegistry</i></span>, <span>HttpClientMetricNameStrategy <i>metricNameStrategy</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedHttpAsyncClients' class.</div>
+<span class='iname_a'>InstrumentedHttpAsyncClients.custom&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>metricRegistry</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedHttpAsyncClients' class.</div>
+<span class='iname_a'>InstrumentedHttpAsyncClients.custom&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>metricRegistry</i></span>, <span>HttpClientMetricNameStrategy <i>metricNameStrategy</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedHttpAsyncClients' class.</div>
+<span class='iname_a'>InstrumentedHttpAsyncClients.custom&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>metricRegistry</i></span>, <span>HttpClientMetricNameStrategy <i>metricNameStrategy</i></span>, <span>AsyncClientConnectionManager <i>clientConnectionManager</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedHttpAsyncClients' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_207')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> InstrumentedHttpClientConnectionManager <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_207" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>InstrumentedHttpClientConnectionManager</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_208')">
+[+] affected methods: 4 (4.4%)</span>
+<div id="c_208" style="display:none;">
+<div class='affected'><span class='iname_a'>InstrumentedHttpClientConnectionManager.builder&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>metricsRegistry</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedHttpClientConnectionManager' class.</div>
+<span class='iname_a'>InstrumentedHttpClientConnectionManager.close&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedHttpClientConnectionManager' class.</div>
+<span class='iname_a'>InstrumentedHttpClientConnectionManager.close&#160;<span class='sym_p'><span>(&#160;CloseMode <i>closeMode</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedHttpClientConnectionManager' class.</div>
+<span class='iname_a'>InstrumentedHttpClientConnectionManager.getDefaultRegistry&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedHttpClientConnectionManager' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_209')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> InstrumentedHttpClientConnectionManager.Builder <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_209" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>InstrumentedHttpClientConnectionManager.Builder</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_210')">
+[+] affected methods: 11 (12.2%)</span>
+<div id="c_210" style="display:none;">
+<div class='affected'><span class='iname_a'>InstrumentedHttpClientConnectionManager.Builder.build&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedHttpClientConnectionManager.Builder' class.</div>
+<span class='iname_a'>InstrumentedHttpClientConnectionManager.Builder.connFactory&#160;<span class='sym_p'><span>(&#160;HttpConnectionFactory&lt;ManagedHttpClientConnection&gt; <i>connFactory</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedHttpClientConnectionManager.Builder' class.</div>
+<span class='iname_a'>InstrumentedHttpClientConnectionManager.Builder.dnsResolver&#160;<span class='sym_p'><span>(&#160;DnsResolver <i>dnsResolver</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedHttpClientConnectionManager.Builder' class.</div>
+<span class='iname_a'>InstrumentedHttpClientConnectionManager.Builder.httpClientConnectionOperator&#160;<span class='sym_p'><span>(&#160;HttpClientConnectionOperator <i>httpClientConnectionOperator</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedHttpClientConnectionManager.Builder' class.</div>
+<span class='iname_a'>InstrumentedHttpClientConnectionManager.Builder.metricsRegistry&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>metricRegistry</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedHttpClientConnectionManager.Builder' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_211')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> InstrumentedHttpClients <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_211" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>InstrumentedHttpClients</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_212')">
+[+] affected methods: 4 (4.4%)</span>
+<div id="c_212" style="display:none;">
+<div class='affected'><span class='iname_a'>InstrumentedHttpClients.createDefault&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>metricRegistry</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedHttpClients' class.</div>
+<span class='iname_a'>InstrumentedHttpClients.createDefault&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>metricRegistry</i></span>, <span>HttpClientMetricNameStrategy <i>metricNameStrategy</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedHttpClients' class.</div>
+<span class='iname_a'>InstrumentedHttpClients.custom&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>metricRegistry</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedHttpClients' class.</div>
+<span class='iname_a'>InstrumentedHttpClients.custom&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>metricRegistry</i></span>, <span>HttpClientMetricNameStrategy <i>metricNameStrategy</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedHttpClients' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_213')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> InstrumentedHttpRequestExecutor <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_213" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>InstrumentedHttpRequestExecutor</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_214')">
+[+] affected methods: 5 (5.6%)</span>
+<div id="c_214" style="display:none;">
+<div class='affected'><span class='iname_a'>InstrumentedHttpRequestExecutor.InstrumentedHttpRequestExecutor&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>registry</i></span>, <span>HttpClientMetricNameStrategy <i>metricNameStrategy</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'InstrumentedHttpRequestExecutor' class.</div>
+<span class='iname_a'>InstrumentedHttpRequestExecutor.InstrumentedHttpRequestExecutor&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>registry</i></span>, <span>HttpClientMetricNameStrategy <i>metricNameStrategy</i></span>, <span>String <i>name</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'InstrumentedHttpRequestExecutor' class.</div>
+<span class='iname_a'>InstrumentedHttpRequestExecutor.InstrumentedHttpRequestExecutor&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>registry</i></span>, <span>HttpClientMetricNameStrategy <i>metricNameStrategy</i></span>, <span>String <i>name</i></span>, <span>Timeout <i>waitForContinue</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'InstrumentedHttpRequestExecutor' class.</div>
+<span class='iname_a'>InstrumentedHttpRequestExecutor.InstrumentedHttpRequestExecutor&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>registry</i></span>, <span>HttpClientMetricNameStrategy <i>metricNameStrategy</i></span>, <span>String <i>name</i></span>, <span>Timeout <i>waitForContinue</i></span>, <span>ConnectionReuseStrategy <i>connReuseStrategy</i></span>, <span>Http1StreamListener <i>streamListener</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'InstrumentedHttpRequestExecutor' class.</div>
+<span class='iname_a'>InstrumentedHttpRequestExecutor.execute&#160;<span class='sym_p'><span>(&#160;ClassicHttpRequest <i>request</i></span>, <span>HttpClientConnection <i>conn</i></span>, <span>HttpResponseInformationCallback <i>informationCallback</i></span>, <span>HttpContext <i>context</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'InstrumentedHttpRequestExecutor' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_215')">
+<span class='ext'>[+]</span> <span class='ttype'>interface</span> HttpClientMetricNameStrategy <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_215" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This interface has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>HttpClientMetricNameStrategy</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_216')">
+[+] affected methods: 2 (2.2%)</span>
+<div id="c_216" style="display:none;">
+<div class='affected'><span class='iname_a'>HttpClientMetricNameStrategy.getNameFor&#160;<span class='sym_p'><span>(&#160;String <i>name</i></span>, <span>Exception <i>exception</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'HttpClientMetricNameStrategy' interface.</div>
+<span class='iname_a'>HttpClientMetricNameStrategy.getNameFor&#160;<span class='sym_p'><span>(&#160;String <i>p1</i></span>, <span>HttpRequest <i>p2</i></span>&#160;)</span></span><br/><div class='affect'>This abstract method is from 'HttpClientMetricNameStrategy' interface.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Checked_Archives'></a><h2>Java Archives <span class='gray'>&nbsp;1&nbsp;</span></h2>
+<hr/><div class='jar_list'>
+metrics-httpclient5-4.2.38.jar<br/>
+</div><br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<br/><br/><br/>
+<hr/><div class='footer' align='right'><i>Generated by <a href='https://github.com/lvc/japi-compliance-checker'>Java API Compliance Checker</a> 2.4 &#160;</i></div><br/>
+</body></html>

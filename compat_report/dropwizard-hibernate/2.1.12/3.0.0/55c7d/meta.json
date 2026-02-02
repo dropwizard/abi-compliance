@@ -1,0 +1,11 @@
+{
+  "Affected": "12.9",
+  "Added": 7,
+  "Removed": 7,
+  "TotalProblems": 1,
+  "Source_Affected": "12.9",
+  "Source_TotalProblems": "2",
+  "Source_ReportPath": "compat_report/dropwizard-hibernate/2.1.12/3.0.0/55c7d/src_compat_report.html",
+  "Archive1": "dropwizard-hibernate-2.1.12.jar",
+  "Archive2": "dropwizard-hibernate-3.0.0.jar"
+}

@@ -1,0 +1,654 @@
+$VAR1 = {
+          'APIDump' => {
+                         '1.3.12-1' => {
+                                         '03c38' => {
+                                                      'Archive' => 'dropwizard-redis-1.3.12-1.jar',
+                                                      'Path' => 'api_dump/dropwizard-redis/1.3.12-1/03c38/API.dump.tar.gz',
+                                                      'TotalSymbols' => '317'
+                                                    }
+                                       },
+                         '1.4.0' => {
+                                      '21ab9' => {
+                                                   'Archive' => 'dropwizard-redis-1.4.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-redis/1.4.0/21ab9/API.dump.tar.gz',
+                                                   'TotalSymbols' => '314'
+                                                 }
+                                    },
+                         '1.5.0' => {
+                                      '363a6' => {
+                                                   'Archive' => 'dropwizard-redis-1.5.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-redis/1.5.0/363a6/API.dump.tar.gz',
+                                                   'TotalSymbols' => '314'
+                                                 }
+                                    },
+                         '1.5.1' => {
+                                      'c3433' => {
+                                                   'Archive' => 'dropwizard-redis-1.5.1.jar',
+                                                   'Path' => 'api_dump/dropwizard-redis/1.5.1/c3433/API.dump.tar.gz',
+                                                   'TotalSymbols' => '314'
+                                                 }
+                                    },
+                         '1.5.2' => {
+                                      'f3813' => {
+                                                   'Archive' => 'dropwizard-redis-1.5.2.jar',
+                                                   'Path' => 'api_dump/dropwizard-redis/1.5.2/f3813/API.dump.tar.gz',
+                                                   'TotalSymbols' => '313'
+                                                 }
+                                    },
+                         '1.6.0' => {
+                                      '0e656' => {
+                                                   'Archive' => 'dropwizard-redis-1.6.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-redis/1.6.0/0e656/API.dump.tar.gz',
+                                                   'TotalSymbols' => '315'
+                                                 }
+                                    },
+                         '1.7.0' => {
+                                      'a9599' => {
+                                                   'Archive' => 'dropwizard-redis-1.7.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-redis/1.7.0/a9599/API.dump.tar.gz',
+                                                   'TotalSymbols' => '322'
+                                                 }
+                                    },
+                         '1.8.0' => {
+                                      '173de' => {
+                                                   'Archive' => 'dropwizard-redis-1.8.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-redis/1.8.0/173de/API.dump.tar.gz',
+                                                   'TotalSymbols' => '322'
+                                                 }
+                                    },
+                         '1.8.1' => {
+                                      'edfed' => {
+                                                   'Archive' => 'dropwizard-redis-1.8.1.jar',
+                                                   'Path' => 'api_dump/dropwizard-redis/1.8.1/edfed/API.dump.tar.gz',
+                                                   'TotalSymbols' => '322'
+                                                 }
+                                    },
+                         '3.0.0' => {
+                                      'd1f6e' => {
+                                                   'Archive' => 'dropwizard-redis-3.0.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-redis/3.0.0/d1f6e/API.dump.tar.gz',
+                                                   'TotalSymbols' => '322'
+                                                 }
+                                    },
+                         '3.0.1' => {
+                                      'e8a08' => {
+                                                   'Archive' => 'dropwizard-redis-3.0.1.jar',
+                                                   'Path' => 'api_dump/dropwizard-redis/3.0.1/e8a08/API.dump.tar.gz',
+                                                   'TotalSymbols' => '322'
+                                                 }
+                                    },
+                         '4.0.0' => {
+                                      '62b1e' => {
+                                                   'Archive' => 'dropwizard-redis-4.0.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-redis/4.0.0/62b1e/API.dump.tar.gz',
+                                                   'TotalSymbols' => '322'
+                                                 }
+                                    },
+                         '4.0.1' => {
+                                      '0cb37' => {
+                                                   'Archive' => 'dropwizard-redis-4.0.1.jar',
+                                                   'Path' => 'api_dump/dropwizard-redis/4.0.1/0cb37/API.dump.tar.gz',
+                                                   'TotalSymbols' => '322'
+                                                 }
+                                    },
+                         '5.0.0' => {
+                                      '1eeed' => {
+                                                   'Archive' => 'dropwizard-redis-5.0.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-redis/5.0.0/1eeed/API.dump.tar.gz',
+                                                   'TotalSymbols' => '322'
+                                                 }
+                                    }
+                       },
+          'APIReport' => {
+                           '1.3.12-1' => {
+                                           '1.4.0' => {
+                                                        'Added' => 3,
+                                                        'ArchivesAdded' => 0,
+                                                        'ArchivesAddedSymbols' => 0,
+                                                        'ArchivesRemoved' => 0,
+                                                        'ArchivesRemovedSymbols' => 0,
+                                                        'BC' => '94.3',
+                                                        'Path' => 'archives_report/dropwizard-redis/1.3.12-1/1.4.0/report.html',
+                                                        'Removed' => 6,
+                                                        'Source_BC' => '94.2',
+                                                        'Source_TotalProblems' => 7,
+                                                        'TotalArchives' => 1,
+                                                        'TotalProblems' => 7
+                                                      }
+                                         },
+                           '1.4.0' => {
+                                        '1.5.0' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-redis/1.4.0/1.5.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.5.0' => {
+                                        '1.5.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-redis/1.5.0/1.5.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.5.1' => {
+                                        '1.5.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-redis/1.5.1/1.5.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 1
+                                                   }
+                                      },
+                           '1.5.2' => {
+                                        '1.6.0' => {
+                                                     'Added' => 2,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-redis/1.5.2/1.6.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.6.0' => {
+                                        '1.7.0' => {
+                                                     'Added' => 12,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 86,
+                                                     'Path' => 'archives_report/dropwizard-redis/1.6.0/1.7.0/report.html',
+                                                     'Removed' => 5,
+                                                     'Source_BC' => 86,
+                                                     'Source_TotalProblems' => 3,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 3
+                                                   }
+                                      },
+                           '1.7.0' => {
+                                        '1.8.0' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-redis/1.7.0/1.8.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.8.0' => {
+                                        '1.8.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-redis/1.8.0/1.8.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.8.1' => {
+                                        '3.0.0' => {
+                                                     'Added' => 8,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => '96.3',
+                                                     'Path' => 'archives_report/dropwizard-redis/1.8.1/3.0.0/report.html',
+                                                     'Removed' => 8,
+                                                     'Source_BC' => '96.3',
+                                                     'Source_TotalProblems' => 8,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 4
+                                                   }
+                                      },
+                           '3.0.0' => {
+                                        '3.0.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-redis/3.0.0/3.0.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   },
+                                        '4.0.0' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-redis/3.0.0/4.0.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.0.1' => {
+                                        '4.0.0' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-redis/3.0.1/4.0.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.0' => {
+                                        '4.0.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-redis/4.0.0/4.0.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.1' => {
+                                        '5.0.0' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-redis/4.0.1/5.0.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      }
+                         },
+          'APIReport_D' => {
+                             '1.3.12-1' => {
+                                             '1.4.0' => {
+                                                          'b0e94' => {
+                                                                       'Added' => 3,
+                                                                       'Affected' => '5.7',
+                                                                       'Archive1' => 'dropwizard-redis-1.3.12-1.jar',
+                                                                       'Archive2' => 'dropwizard-redis-1.4.0.jar',
+                                                                       'Path' => 'compat_report/dropwizard-redis/1.3.12-1/1.4.0/b0e94/bin_compat_report.html',
+                                                                       'Removed' => 6,
+                                                                       'Source_Affected' => '5.8',
+                                                                       'Source_ReportPath' => 'compat_report/dropwizard-redis/1.3.12-1/1.4.0/b0e94/src_compat_report.html',
+                                                                       'Source_TotalProblems' => 7,
+                                                                       'TotalProblems' => 7
+                                                                     }
+                                                        }
+                                           },
+                             '1.4.0' => {
+                                          '1.5.0' => {
+                                                       '5ddbf' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-redis-1.4.0.jar',
+                                                                    'Archive2' => 'dropwizard-redis-1.5.0.jar',
+                                                                    'Path' => 'compat_report/dropwizard-redis/1.4.0/1.5.0/5ddbf/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-redis/1.4.0/1.5.0/5ddbf/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.5.0' => {
+                                          '1.5.1' => {
+                                                       'f7654' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-redis-1.5.0.jar',
+                                                                    'Archive2' => 'dropwizard-redis-1.5.1.jar',
+                                                                    'Path' => 'compat_report/dropwizard-redis/1.5.0/1.5.1/f7654/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-redis/1.5.0/1.5.1/f7654/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.5.1' => {
+                                          '1.5.2' => {
+                                                       'e89e8' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-redis-1.5.1.jar',
+                                                                    'Archive2' => 'dropwizard-redis-1.5.2.jar',
+                                                                    'Path' => 'compat_report/dropwizard-redis/1.5.1/1.5.2/e89e8/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-redis/1.5.1/1.5.2/e89e8/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 1
+                                                                  }
+                                                     }
+                                        },
+                             '1.5.2' => {
+                                          '1.6.0' => {
+                                                       '0dcd8' => {
+                                                                    'Added' => 2,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-redis-1.5.2.jar',
+                                                                    'Archive2' => 'dropwizard-redis-1.6.0.jar',
+                                                                    'Path' => 'compat_report/dropwizard-redis/1.5.2/1.6.0/0dcd8/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-redis/1.5.2/1.6.0/0dcd8/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.6.0' => {
+                                          '1.7.0' => {
+                                                       '41a9a' => {
+                                                                    'Added' => 12,
+                                                                    'Affected' => 14,
+                                                                    'Archive1' => 'dropwizard-redis-1.6.0.jar',
+                                                                    'Archive2' => 'dropwizard-redis-1.7.0.jar',
+                                                                    'Path' => 'compat_report/dropwizard-redis/1.6.0/1.7.0/41a9a/bin_compat_report.html',
+                                                                    'Removed' => 5,
+                                                                    'Source_Affected' => 14,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-redis/1.6.0/1.7.0/41a9a/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 3,
+                                                                    'TotalProblems' => 3
+                                                                  }
+                                                     }
+                                        },
+                             '1.7.0' => {
+                                          '1.8.0' => {
+                                                       '8f002' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-redis-1.7.0.jar',
+                                                                    'Archive2' => 'dropwizard-redis-1.8.0.jar',
+                                                                    'Path' => 'compat_report/dropwizard-redis/1.7.0/1.8.0/8f002/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-redis/1.7.0/1.8.0/8f002/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.8.0' => {
+                                          '1.8.1' => {
+                                                       '7cef4' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-redis-1.8.0.jar',
+                                                                    'Archive2' => 'dropwizard-redis-1.8.1.jar',
+                                                                    'Path' => 'compat_report/dropwizard-redis/1.8.0/1.8.1/7cef4/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-redis/1.8.0/1.8.1/7cef4/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.8.1' => {
+                                          '3.0.0' => {
+                                                       '18440' => {
+                                                                    'Added' => 8,
+                                                                    'Affected' => '3.7',
+                                                                    'Archive1' => 'dropwizard-redis-1.8.1.jar',
+                                                                    'Archive2' => 'dropwizard-redis-3.0.0.jar',
+                                                                    'Path' => 'compat_report/dropwizard-redis/1.8.1/3.0.0/18440/bin_compat_report.html',
+                                                                    'Removed' => 8,
+                                                                    'Source_Affected' => '3.7',
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-redis/1.8.1/3.0.0/18440/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 8,
+                                                                    'TotalProblems' => 4
+                                                                  }
+                                                     }
+                                        },
+                             '3.0.0' => {
+                                          '3.0.1' => {
+                                                       '6ccb2' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-redis-3.0.0.jar',
+                                                                    'Archive2' => 'dropwizard-redis-3.0.1.jar',
+                                                                    'Path' => 'compat_report/dropwizard-redis/3.0.0/3.0.1/6ccb2/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-redis/3.0.0/3.0.1/6ccb2/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     },
+                                          '4.0.0' => {
+                                                       'e0252' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-redis-3.0.0.jar',
+                                                                    'Archive2' => 'dropwizard-redis-4.0.0.jar',
+                                                                    'Path' => 'compat_report/dropwizard-redis/3.0.0/4.0.0/e0252/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-redis/3.0.0/4.0.0/e0252/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.0.1' => {
+                                          '4.0.0' => {
+                                                       '8c89e' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-redis-3.0.1.jar',
+                                                                    'Archive2' => 'dropwizard-redis-4.0.0.jar',
+                                                                    'Path' => 'compat_report/dropwizard-redis/3.0.1/4.0.0/8c89e/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-redis/3.0.1/4.0.0/8c89e/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.0' => {
+                                          '4.0.1' => {
+                                                       '0e879' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-redis-4.0.0.jar',
+                                                                    'Archive2' => 'dropwizard-redis-4.0.1.jar',
+                                                                    'Path' => 'compat_report/dropwizard-redis/4.0.0/4.0.1/0e879/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-redis/4.0.0/4.0.1/0e879/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.1' => {
+                                          '5.0.0' => {
+                                                       '3fdc9' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-redis-4.0.1.jar',
+                                                                    'Archive2' => 'dropwizard-redis-5.0.0.jar',
+                                                                    'Path' => 'compat_report/dropwizard-redis/4.0.1/5.0.0/3fdc9/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-redis/4.0.1/5.0.0/3fdc9/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        }
+                           },
+          'Changelog' => {},
+          'Date' => {
+                      '1.3.12-1' => '06-2019-07 15:29',
+                      '1.4.0' => '18-2019-11 19:25',
+                      '1.5.0' => '05-2020-01 20:50',
+                      '1.5.1' => '14-2020-04 16:28',
+                      '1.5.2' => '17-2021-07 08:46',
+                      '1.6.0' => '21-2021-10 21:43',
+                      '1.7.0' => '20-2022-04 21:04',
+                      '1.8.0' => '28-2022-05 09:56',
+                      '1.8.1' => '22-2023-02 22:06',
+                      '3.0.0' => '03-2023-04 20:43',
+                      '3.0.1' => '23-2025-07 22:28',
+                      '4.0.0' => '03-2023-04 20:45',
+                      '4.0.1' => '23-2025-07 22:17',
+                      '5.0.0' => '18-2025-09 07:49'
+                    },
+          'Maintainer' => 'Dropwizard Committers',
+          'MaintainerUrl' => 'https://www.dropwizard.io/',
+          'PackageDiff' => {
+                             '1.3.12-1' => {
+                                             '1.4.0' => {
+                                                          'Changed' => '3.6',
+                                                          'Path' => 'package_diff/dropwizard-redis/1.3.12-1/1.4.0/report.html'
+                                                        }
+                                           },
+                             '1.4.0' => {
+                                          '1.5.0' => {
+                                                       'Changed' => '0.1',
+                                                       'Path' => 'package_diff/dropwizard-redis/1.4.0/1.5.0/report.html'
+                                                     }
+                                        },
+                             '1.5.0' => {
+                                          '1.5.1' => {
+                                                       'Changed' => '0.2',
+                                                       'Path' => 'package_diff/dropwizard-redis/1.5.0/1.5.1/report.html'
+                                                     }
+                                        },
+                             '1.5.1' => {
+                                          '1.5.2' => {
+                                                       'Changed' => '1.5',
+                                                       'Path' => 'package_diff/dropwizard-redis/1.5.1/1.5.2/report.html'
+                                                     }
+                                        },
+                             '1.5.2' => {
+                                          '1.6.0' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/dropwizard-redis/1.5.2/1.6.0/report.html'
+                                                     }
+                                        },
+                             '1.6.0' => {
+                                          '1.7.0' => {
+                                                       'Changed' => '3.7',
+                                                       'Path' => 'package_diff/dropwizard-redis/1.6.0/1.7.0/report.html'
+                                                     }
+                                        },
+                             '1.7.0' => {
+                                          '1.8.0' => {
+                                                       'Changed' => '0.1',
+                                                       'Path' => 'package_diff/dropwizard-redis/1.7.0/1.8.0/report.html'
+                                                     }
+                                        },
+                             '1.8.0' => {
+                                          '1.8.1' => {
+                                                       'Changed' => '0.1',
+                                                       'Path' => 'package_diff/dropwizard-redis/1.8.0/1.8.1/report.html'
+                                                     }
+                                        },
+                             '1.8.1' => {
+                                          '3.0.0' => {
+                                                       'Changed' => '1.8',
+                                                       'Path' => 'package_diff/dropwizard-redis/1.8.1/3.0.0/report.html'
+                                                     }
+                                        },
+                             '3.0.0' => {
+                                          '3.0.1' => {
+                                                       'Changed' => '2.2',
+                                                       'Path' => 'package_diff/dropwizard-redis/3.0.0/3.0.1/report.html'
+                                                     },
+                                          '4.0.0' => {
+                                                       'Changed' => '0.1',
+                                                       'Path' => 'package_diff/dropwizard-redis/3.0.0/4.0.0/report.html'
+                                                     }
+                                        },
+                             '3.0.1' => {
+                                          '4.0.0' => {
+                                                       'Changed' => '1.7',
+                                                       'Path' => 'package_diff/dropwizard-redis/3.0.1/4.0.0/report.html'
+                                                     }
+                                        },
+                             '4.0.0' => {
+                                          '4.0.1' => {
+                                                       'Changed' => '2.2',
+                                                       'Path' => 'package_diff/dropwizard-redis/4.0.0/4.0.1/report.html'
+                                                     }
+                                        },
+                             '4.0.1' => {
+                                          '5.0.0' => {
+                                                       'Changed' => '0.05',
+                                                       'Path' => 'package_diff/dropwizard-redis/4.0.1/5.0.0/report.html'
+                                                     }
+                                        }
+                           },
+          'Title' => 'Dropwizard Redis'
+        };
