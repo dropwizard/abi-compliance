@@ -1,0 +1,11 @@
+{
+  "Affected": "5.8",
+  "Added": 4,
+  "Removed": 6,
+  "TotalProblems": 0,
+  "Source_Affected": "5.8",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/dropwizard-flyway/3.0.1-2/4.0.0-1/30a79/src_compat_report.html",
+  "Archive1": "dropwizard-flyway-3.0.1-2.jar",
+  "Archive2": "dropwizard-flyway-4.0.0-1.jar"
+}

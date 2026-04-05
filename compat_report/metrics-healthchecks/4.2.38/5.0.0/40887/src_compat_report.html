@@ -1,0 +1,1349 @@
+<!-- kind:source;verdict:incompatible;affected:100;added:60;removed:65;type_problems_high:13;type_problems_medium:0;type_problems_low:0;method_problems_high:0;method_problems_medium:0;method_problems_low:0;checked_methods:134;checked_types:22;tool_version:2.4 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="metrics-healthchecks, source, compatibility" />
+<meta name="description" content="Source compatibility report for the metrics-healthchecks library between 4.2.38 and 5.0.0 versions" />
+<title>metrics-healthchecks: 4.2.38 to 5.0.0 source compatibility report</title>
+<style type="text/css">
+body {
+    font-family:Arial, sans-serif;
+    background-color:White;
+    color:Black;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+    white-space:nowrap;
+}
+div.symbols {
+    color:#003E69;
+}
+div.symbols i {
+    color:Brown;
+}
+span.section {
+    font-weight:bold;
+    cursor:pointer;
+    color:#003E69;
+    white-space:nowrap;
+    margin-left:0.3125em;
+}
+span:hover.section {
+    color:#336699;
+}
+span.sect_aff {
+    cursor:pointer;
+    padding-left:1.55em;
+    font-size:0.875em;
+    color:#cc3300;
+}
+span.ext {
+    font-weight:normal;
+}
+span.jar {
+    color:#cc3300;
+    font-size:0.875em;
+    font-weight:bold;
+}
+div.jar_list {
+    padding-left:0.4em;
+    font-size:0.94em;
+}
+span.pkg_t {
+    color:#408080;
+    font-size:0.875em;
+}
+span.pkg {
+    color:#408080;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.cname {
+    color:Green;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.iname_b {
+    font-weight:bold;
+}
+span.iname_a {
+    color:#333333;
+    font-weight:bold;
+    font-size:0.94em;
+}
+span.sym_p {
+    font-weight:normal;
+    white-space:normal;
+}
+span.sym_pd {
+    white-space:normal;
+}
+span.sym_p span, span.sym_pd span {
+    white-space:nowrap;
+}
+span.attr {
+    color:Black;
+    font-weight:normal;
+}
+span.deprecated {
+    color:Red;
+    font-weight:bold;
+    font-family:Monaco, monospace;
+}
+div.affect {
+    padding-left:1em;
+    padding-bottom:10px;
+    font-size:0.87em;
+    font-style:italic;
+    line-height:0.9em;
+}
+div.affected {
+    padding-left:2em;
+    padding-top:10px;
+}
+table.ptable {
+    border-collapse:collapse;
+    border:1px outset black;
+    margin-left:0.95em;
+    margin-top:3px;
+    margin-bottom:3px;
+    width:56.25em;
+}
+table.ptable td {
+    border:1px solid Gray;
+    padding:3px;
+    font-size:0.875em;
+    text-align:left;
+    vertical-align:top;
+    max-width:28em;
+    word-wrap:break-word;
+}
+table.ptable th {
+    background-color:#eeeeee;
+    font-weight:bold;
+    color:#333333;
+    font-family:Verdana, Arial;
+    font-size:0.875em;
+    border:1px solid Gray;
+    text-align:center;
+    vertical-align:top;
+    white-space:nowrap;
+    padding:3px;
+}
+table.summary {
+    border-collapse:collapse;
+    border:1px outset black;
+}
+table.summary th {
+    background-color:#eeeeee;
+    font-weight:normal;
+    text-align:left;
+    font-size:0.94em;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px;
+}
+table.summary td {
+    text-align:right;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px 5px 3px 10px;
+}
+span.mngl {
+    padding-left:1em;
+    font-size:0.875em;
+    cursor:text;
+    color:#444444;
+    font-weight:bold;
+}
+span.pleft {
+    padding-left:2.5em;
+}
+span.color_p {
+    font-style:italic;
+    color:Brown;
+}
+span.param {
+    font-style:italic;
+}
+span.focus_p {
+    font-style:italic;
+    background-color:#DCDCDC;
+}
+span.ttype {
+    font-weight:normal;
+}
+span.nowrap {
+    white-space:nowrap;
+}
+span.value {
+    white-space:nowrap;
+    font-weight:bold;
+}
+.passed {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.warning {
+    background-color:#F4F4AF;
+    font-weight:normal;
+}
+.failed {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.new {
+    background-color:#C6DEFF;
+    font-weight:normal;
+}
+
+.compatible {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.almost_compatible {
+    background-color:#FFDAA3;
+    font-weight:normal;
+}
+.incompatible {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.gray {
+    background-color:#DCDCDC;
+    font-weight:normal;
+}
+
+.top_ref {
+    font-size:0.69em;
+}
+.footer {
+    font-size:0.8125em;
+}
+
+</style>
+<script type="text/javascript" language="JavaScript">
+<!--
+function sC(header, id)
+{
+    e = document.getElementById(id);
+    if(e.style.display == 'none')
+    {
+        e.style.display = 'block';
+        e.style.visibility = 'visible';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[&minus;]");
+    }
+    else
+    {
+        e.style.display = 'none';
+        e.style.visibility = 'hidden';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[+]");
+    }
+}
+
+-->
+</script>
+</head>
+<body><a name='Top'></a><h1>Source compatibility report for the <span style='color:Blue;'>metrics-healthchecks</span> library between <span style='color:Red;'>4.2.38</span> and <span style='color:Red;'>5.0.0</span> versions</h1>
+
+<h2>Test Info</h2><hr/>
+<table class='summary'>
+<tr><th>Library Name</th><td>metrics-healthchecks</td></tr>
+<tr><th>Version #1</th><td>4.2.38</td></tr>
+<tr><th>Version #2</th><td>5.0.0</td></tr>
+</table>
+<h2>Test Results</h2><hr/>
+<table class='summary'>
+<tr><th>Total Java Modules</th><td><a href='#Checked_Archives' style='color:Blue;'>1</a></td></tr>
+<tr><th>Total Methods / Classes</th><td>134 / 22</td></tr>
+<tr><th>Compatibility</th>
+<td class='incompatible'>0%</td>
+</tr>
+</table>
+<h2>Problem Summary</h2><hr/>
+<table class='summary'>
+<tr><th></th><th style='text-align:center;'>Severity</th><th style='text-align:center;'>Count</th></tr>
+<tr><th>Added Methods</th><td>-</td><td class='new'><a href='#Added' style='color:Blue;'>60</a></td></tr>
+<tr><th>Removed Methods</th><td>High</td><td class='failed'><a href='#Removed' style='color:Blue;'>65</a></td></tr>
+<tr><th rowspan='3'>Problems with<br/>Data Types</th><td>High</td><td class='failed'><a href='#Type_Problems_High' style='color:Blue;'>13</a></td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+<tr><th rowspan='3'>Problems with<br/>Methods</th><td>High</td><td>0</td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+</table>
+
+<a name='Added'></a><h2>Added Methods <span class='new'>&nbsp;60&nbsp;</span></h2><hr/>
+<span class='jar'>metrics-healthchecks-5.0.0.jar</span>, <span class='cname'>HealthCheck.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.health</span><br/>
+<span class="section" onclick="sC(this, 'c_149')">
+HealthCheck.check&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.Result</span></span>
+<br/>
+<div id="c_149" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheck.check:()Lio/dropwizard/metrics5/health/HealthCheck$Result;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_150')">
+HealthCheck.execute&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.Result</span></span>
+<br/>
+<div id="c_150" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheck.execute:()Lio/dropwizard/metrics5/health/HealthCheck$Result;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_151')">
+HealthCheck.HealthCheck&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_151" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheck.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-healthchecks-5.0.0.jar</span>, <span class='cname'>HealthCheckFilter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.health</span><br/>
+<span class="section" onclick="sC(this, 'c_152')">
+HealthCheckFilter.matches&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>p1</span></span>, <span>HealthCheck <span class='color_p'>p2</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_152" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheckFilter.matches:(Ljava/lang/String;Lio/dropwizard/metrics5/health/HealthCheck;)Z</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-healthchecks-5.0.0.jar</span>, <span class='cname'>HealthCheckRegistry.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.health</span><br/>
+<span class="section" onclick="sC(this, 'c_153')">
+HealthCheckRegistry.addListener&#160;<span class='sym_p'><span>(&#160;HealthCheckRegistryListener <span class='color_p'>listener</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_153" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheckRegistry.addListener:(Lio/dropwizard/metrics5/health/HealthCheckRegistryListener;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_154')">
+HealthCheckRegistry.getHealthCheck&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck</span></span>
+<br/>
+<div id="c_154" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheckRegistry.getHealthCheck:(Ljava/lang/String;)Lio/dropwizard/metrics5/health/HealthCheck;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_155')">
+HealthCheckRegistry.getNames&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;SortedSet&lt;String&gt;</span></span>
+<br/>
+<div id="c_155" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheckRegistry.getNames:()Ljava/util/SortedSet;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_156')">
+HealthCheckRegistry.HealthCheckRegistry&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_156" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheckRegistry.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_157')">
+HealthCheckRegistry.HealthCheckRegistry&#160;<span class='sym_p'><span>(&#160;int <span class='color_p'>asyncExecutorPoolSize</span></span>&#160;)</span></span>
+<br/>
+<div id="c_157" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheckRegistry.&quot;&lt;init&gt;&quot;:(I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_158')">
+HealthCheckRegistry.HealthCheckRegistry&#160;<span class='sym_p'><span>(&#160;ScheduledExecutorService <span class='color_p'>asyncExecutorService</span></span>&#160;)</span></span>
+<br/>
+<div id="c_158" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheckRegistry.&quot;&lt;init&gt;&quot;:(Ljava/util/concurrent/ScheduledExecutorService;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_159')">
+HealthCheckRegistry.register&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>, <span>HealthCheck <span class='color_p'>healthCheck</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_159" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheckRegistry.register:(Ljava/lang/String;Lio/dropwizard/metrics5/health/HealthCheck;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_160')">
+HealthCheckRegistry.removeListener&#160;<span class='sym_p'><span>(&#160;HealthCheckRegistryListener <span class='color_p'>listener</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_160" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheckRegistry.removeListener:(Lio/dropwizard/metrics5/health/HealthCheckRegistryListener;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_161')">
+HealthCheckRegistry.runHealthCheck&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.Result</span></span>
+<br/>
+<div id="c_161" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheckRegistry.runHealthCheck:(Ljava/lang/String;)Lio/dropwizard/metrics5/health/HealthCheck$Result;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_162')">
+HealthCheckRegistry.runHealthChecks&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;SortedMap&lt;String,HealthCheck.Result&gt;</span></span>
+<br/>
+<div id="c_162" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheckRegistry.runHealthChecks:()Ljava/util/SortedMap;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_163')">
+HealthCheckRegistry.runHealthChecks&#160;<span class='sym_p'><span>(&#160;ExecutorService <span class='color_p'>executor</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;SortedMap&lt;String,HealthCheck.Result&gt;</span></span>
+<br/>
+<div id="c_163" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheckRegistry.runHealthChecks:(Ljava/util/concurrent/ExecutorService;)Ljava/util/SortedMap;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_164')">
+HealthCheckRegistry.runHealthChecks&#160;<span class='sym_p'><span>(&#160;ExecutorService <span class='color_p'>executor</span></span>, <span>HealthCheckFilter <span class='color_p'>filter</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;SortedMap&lt;String,HealthCheck.Result&gt;</span></span>
+<br/>
+<div id="c_164" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheckRegistry.runHealthChecks:(Ljava/util/concurrent/ExecutorService;Lio/dropwizard/metrics5/health/HealthCheckFilter;)Ljava/util/SortedMap;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_165')">
+HealthCheckRegistry.runHealthChecks&#160;<span class='sym_p'><span>(&#160;HealthCheckFilter <span class='color_p'>filter</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;SortedMap&lt;String,HealthCheck.Result&gt;</span></span>
+<br/>
+<div id="c_165" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheckRegistry.runHealthChecks:(Lio/dropwizard/metrics5/health/HealthCheckFilter;)Ljava/util/SortedMap;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_166')">
+HealthCheckRegistry.shutdown&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_166" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheckRegistry.shutdown:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_167')">
+HealthCheckRegistry.unregister&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_167" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheckRegistry.unregister:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-healthchecks-5.0.0.jar</span>, <span class='cname'>HealthCheckRegistryListener.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.health</span><br/>
+<span class="section" onclick="sC(this, 'c_168')">
+HealthCheckRegistryListener.onHealthCheckAdded&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>p1</span></span>, <span>HealthCheck <span class='color_p'>p2</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_168" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheckRegistryListener.onHealthCheckAdded:(Ljava/lang/String;Lio/dropwizard/metrics5/health/HealthCheck;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_169')">
+HealthCheckRegistryListener.onHealthCheckRemoved&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>p1</span></span>, <span>HealthCheck <span class='color_p'>p2</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_169" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheckRegistryListener.onHealthCheckRemoved:(Ljava/lang/String;Lio/dropwizard/metrics5/health/HealthCheck;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-healthchecks-5.0.0.jar</span>, <span class='cname'>InitialState.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.health.annotation</span><br/>
+<span class="section" onclick="sC(this, 'c_170')">
+Async.InitialState.valueOf&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Async.InitialState</span></span>
+<br/>
+<div id="c_170" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/annotation/Async.InitialState.valueOf:(Ljava/lang/String;)Lio/dropwizard/metrics5/health/annotation/Async$InitialState;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_171')">
+Async.InitialState.values&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Async.InitialState[&#160;]</span></span>
+<br/>
+<div id="c_171" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/annotation/Async.InitialState.values:()[Lio/dropwizard/metrics5/health/annotation/Async$InitialState;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-healthchecks-5.0.0.jar</span>, <span class='cname'>Result.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.health</span><br/>
+<span class="section" onclick="sC(this, 'c_172')">
+HealthCheck.Result.builder&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.ResultBuilder</span></span>
+<br/>
+<div id="c_172" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheck.Result.builder:()Lio/dropwizard/metrics5/health/HealthCheck$ResultBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_173')">
+HealthCheck.Result.equals&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>o</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_173" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheck.Result.equals:(Ljava/lang/Object;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_174')">
+HealthCheck.Result.getDetails&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map&lt;String,Object&gt;</span></span>
+<br/>
+<div id="c_174" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheck.Result.getDetails:()Ljava/util/Map;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_175')">
+HealthCheck.Result.getError&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Throwable</span></span>
+<br/>
+<div id="c_175" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheck.Result.getError:()Ljava/lang/Throwable;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_176')">
+HealthCheck.Result.getMessage&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_176" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheck.Result.getMessage:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_177')">
+HealthCheck.Result.getTimestamp&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_177" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheck.Result.getTimestamp:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_178')">
+HealthCheck.Result.hashCode&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_178" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheck.Result.hashCode:()I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_179')">
+HealthCheck.Result.healthy&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.Result</span></span>
+<br/>
+<div id="c_179" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheck.Result.healthy:()Lio/dropwizard/metrics5/health/HealthCheck$Result;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_180')">
+HealthCheck.Result.healthy&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>message</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.Result</span></span>
+<br/>
+<div id="c_180" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheck.Result.healthy:(Ljava/lang/String;)Lio/dropwizard/metrics5/health/HealthCheck$Result;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_181')">
+HealthCheck.Result.healthy&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>message</span></span>, <span>Object... <span class='color_p'>args</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.Result</span></span>
+<br/>
+<div id="c_181" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheck.Result.healthy:(Ljava/lang/String;[Ljava/lang/Object;)Lio/dropwizard/metrics5/health/HealthCheck$Result;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_182')">
+HealthCheck.Result.isHealthy&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_182" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheck.Result.isHealthy:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_183')">
+HealthCheck.Result.toString&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_183" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheck.Result.toString:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_184')">
+HealthCheck.Result.unhealthy&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>message</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.Result</span></span>
+<br/>
+<div id="c_184" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheck.Result.unhealthy:(Ljava/lang/String;)Lio/dropwizard/metrics5/health/HealthCheck$Result;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_185')">
+HealthCheck.Result.unhealthy&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>message</span></span>, <span>Object... <span class='color_p'>args</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.Result</span></span>
+<br/>
+<div id="c_185" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheck.Result.unhealthy:(Ljava/lang/String;[Ljava/lang/Object;)Lio/dropwizard/metrics5/health/HealthCheck$Result;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_186')">
+HealthCheck.Result.unhealthy&#160;<span class='sym_p'><span>(&#160;Throwable <span class='color_p'>error</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.Result</span></span>
+<br/>
+<div id="c_186" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheck.Result.unhealthy:(Ljava/lang/Throwable;)Lio/dropwizard/metrics5/health/HealthCheck$Result;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-healthchecks-5.0.0.jar</span>, <span class='cname'>ResultBuilder.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.health</span><br/>
+<span class="section" onclick="sC(this, 'c_187')">
+HealthCheck.ResultBuilder.build&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.Result</span></span>
+<br/>
+<div id="c_187" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheck.ResultBuilder.build:()Lio/dropwizard/metrics5/health/HealthCheck$Result;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_188')">
+HealthCheck.ResultBuilder.HealthCheck.ResultBuilder&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_188" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheck.ResultBuilder.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_189')">
+HealthCheck.ResultBuilder.healthy&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.ResultBuilder</span></span>
+<br/>
+<div id="c_189" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheck.ResultBuilder.healthy:()Lio/dropwizard/metrics5/health/HealthCheck$ResultBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_190')">
+HealthCheck.ResultBuilder.unhealthy&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.ResultBuilder</span></span>
+<br/>
+<div id="c_190" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheck.ResultBuilder.unhealthy:()Lio/dropwizard/metrics5/health/HealthCheck$ResultBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_191')">
+HealthCheck.ResultBuilder.unhealthy&#160;<span class='sym_p'><span>(&#160;Throwable <span class='color_p'>error</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.ResultBuilder</span></span>
+<br/>
+<div id="c_191" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheck.ResultBuilder.unhealthy:(Ljava/lang/Throwable;)Lio/dropwizard/metrics5/health/HealthCheck$ResultBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_192')">
+HealthCheck.ResultBuilder.withDetail&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>key</span></span>, <span>Object <span class='color_p'>data</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.ResultBuilder</span></span>
+<br/>
+<div id="c_192" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheck.ResultBuilder.withDetail:(Ljava/lang/String;Ljava/lang/Object;)Lio/dropwizard/metrics5/health/HealthCheck$ResultBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_193')">
+HealthCheck.ResultBuilder.withMessage&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>message</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.ResultBuilder</span></span>
+<br/>
+<div id="c_193" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheck.ResultBuilder.withMessage:(Ljava/lang/String;)Lio/dropwizard/metrics5/health/HealthCheck$ResultBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_194')">
+HealthCheck.ResultBuilder.withMessage&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>message</span></span>, <span>Object... <span class='color_p'>args</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.ResultBuilder</span></span>
+<br/>
+<div id="c_194" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/HealthCheck.ResultBuilder.withMessage:(Ljava/lang/String;[Ljava/lang/Object;)Lio/dropwizard/metrics5/health/HealthCheck$ResultBuilder;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-healthchecks-5.0.0.jar</span>, <span class='cname'>ScheduleType.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.health.annotation</span><br/>
+<span class="section" onclick="sC(this, 'c_195')">
+Async.ScheduleType.valueOf&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Async.ScheduleType</span></span>
+<br/>
+<div id="c_195" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/annotation/Async.ScheduleType.valueOf:(Ljava/lang/String;)Lio/dropwizard/metrics5/health/annotation/Async$ScheduleType;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_196')">
+Async.ScheduleType.values&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Async.ScheduleType[&#160;]</span></span>
+<br/>
+<div id="c_196" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/annotation/Async.ScheduleType.values:()[Lio/dropwizard/metrics5/health/annotation/Async$ScheduleType;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-healthchecks-5.0.0.jar</span>, <span class='cname'>SharedHealthCheckRegistries.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.health</span><br/>
+<span class="section" onclick="sC(this, 'c_197')">
+SharedHealthCheckRegistries.add&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>, <span>HealthCheckRegistry <span class='color_p'>registry</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheckRegistry</span></span>
+<br/>
+<div id="c_197" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/SharedHealthCheckRegistries.add:(Ljava/lang/String;Lio/dropwizard/metrics5/health/HealthCheckRegistry;)Lio/dropwizard/metrics5/health/HealthCheckRegistry;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_198')">
+SharedHealthCheckRegistries.clear&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_198" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/SharedHealthCheckRegistries.clear:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_199')">
+SharedHealthCheckRegistries.getDefault&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheckRegistry</span></span>
+<br/>
+<div id="c_199" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/SharedHealthCheckRegistries.getDefault:()Lio/dropwizard/metrics5/health/HealthCheckRegistry;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_200')">
+SharedHealthCheckRegistries.getOrCreate&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheckRegistry</span></span>
+<br/>
+<div id="c_200" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/SharedHealthCheckRegistries.getOrCreate:(Ljava/lang/String;)Lio/dropwizard/metrics5/health/HealthCheckRegistry;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_201')">
+SharedHealthCheckRegistries.names&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;String&gt;</span></span>
+<br/>
+<div id="c_201" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/SharedHealthCheckRegistries.names:()Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_202')">
+SharedHealthCheckRegistries.remove&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>key</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_202" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/SharedHealthCheckRegistries.remove:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_203')">
+SharedHealthCheckRegistries.setDefault&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheckRegistry</span></span>
+<br/>
+<div id="c_203" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/SharedHealthCheckRegistries.setDefault:(Ljava/lang/String;)Lio/dropwizard/metrics5/health/HealthCheckRegistry;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_204')">
+SharedHealthCheckRegistries.setDefault&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>, <span>HealthCheckRegistry <span class='color_p'>healthCheckRegistry</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheckRegistry</span></span>
+<br/>
+<div id="c_204" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/SharedHealthCheckRegistries.setDefault:(Ljava/lang/String;Lio/dropwizard/metrics5/health/HealthCheckRegistry;)Lio/dropwizard/metrics5/health/HealthCheckRegistry;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_205')">
+SharedHealthCheckRegistries.tryGetDefault&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheckRegistry</span></span>
+<br/>
+<div id="c_205" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/SharedHealthCheckRegistries.tryGetDefault:()Lio/dropwizard/metrics5/health/HealthCheckRegistry;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-healthchecks-5.0.0.jar</span>, <span class='cname'>ThreadDeadlockHealthCheck.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.health.jvm</span><br/>
+<span class="section" onclick="sC(this, 'c_206')">
+ThreadDeadlockHealthCheck.check&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.Result</span></span>
+<br/>
+<div id="c_206" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/jvm/ThreadDeadlockHealthCheck.check:()Lio/dropwizard/metrics5/health/HealthCheck$Result;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_207')">
+ThreadDeadlockHealthCheck.ThreadDeadlockHealthCheck&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_207" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/jvm/ThreadDeadlockHealthCheck.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_208')">
+ThreadDeadlockHealthCheck.ThreadDeadlockHealthCheck&#160;<span class='sym_p'><span>(&#160;ThreadDeadlockDetector <span class='color_p'>detector</span></span>&#160;)</span></span>
+<br/>
+<div id="c_208" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/health/jvm/ThreadDeadlockHealthCheck.&quot;&lt;init&gt;&quot;:(Lio/dropwizard/metrics5/jvm/ThreadDeadlockDetector;)V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Removed'></a><a name='Withdrawn'></a><h2>Removed Methods <span class='failed'>&nbsp;65&nbsp;</span></h2><hr/>
+<span class='jar'>metrics-healthchecks-4.2.38.jar</span>, <span class='cname'>AsyncHealthCheckDecorator.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.health</span><br/>
+<span class="section" onclick="sC(this, 'c_209')">
+AsyncHealthCheckDecorator.check&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.Result</span></span>
+<br/>
+<div id="c_209" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/AsyncHealthCheckDecorator.check:()Lcom/codahale/metrics/health/HealthCheck$Result;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_210')">
+AsyncHealthCheckDecorator.getHealthCheck&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck</span></span>
+<br/>
+<div id="c_210" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/AsyncHealthCheckDecorator.getHealthCheck:()Lcom/codahale/metrics/health/HealthCheck;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_211')">
+AsyncHealthCheckDecorator.run&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_211" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/AsyncHealthCheckDecorator.run:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-healthchecks-4.2.38.jar</span>, <span class='cname'>HealthCheck.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.health</span><br/>
+<span class="section" onclick="sC(this, 'c_212')">
+HealthCheck.check&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.Result</span></span>
+<br/>
+<div id="c_212" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.check:()Lcom/codahale/metrics/health/HealthCheck$Result;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_213')">
+HealthCheck.clock&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Clock</span></span>
+<br/>
+<div id="c_213" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.clock:()Lcom/codahale/metrics/Clock;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_214')">
+HealthCheck.execute&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.Result</span></span>
+<br/>
+<div id="c_214" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.execute:()Lcom/codahale/metrics/health/HealthCheck$Result;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_215')">
+HealthCheck.HealthCheck&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_215" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-healthchecks-4.2.38.jar</span>, <span class='cname'>HealthCheckFilter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.health</span><br/>
+<span class="section" onclick="sC(this, 'c_216')">
+HealthCheckFilter.matches&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>p1</span></span>, <span>HealthCheck <span class='color_p'>p2</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_216" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheckFilter.matches:(Ljava/lang/String;Lcom/codahale/metrics/health/HealthCheck;)Z</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-healthchecks-4.2.38.jar</span>, <span class='cname'>HealthCheckRegistry.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.health</span><br/>
+<span class="section" onclick="sC(this, 'c_217')">
+HealthCheckRegistry.addListener&#160;<span class='sym_p'><span>(&#160;HealthCheckRegistryListener <span class='color_p'>listener</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_217" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheckRegistry.addListener:(Lcom/codahale/metrics/health/HealthCheckRegistryListener;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_218')">
+HealthCheckRegistry.getHealthCheck&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck</span></span>
+<br/>
+<div id="c_218" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheckRegistry.getHealthCheck:(Ljava/lang/String;)Lcom/codahale/metrics/health/HealthCheck;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_219')">
+HealthCheckRegistry.getNames&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;SortedSet&lt;String&gt;</span></span>
+<br/>
+<div id="c_219" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheckRegistry.getNames:()Ljava/util/SortedSet;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_220')">
+HealthCheckRegistry.HealthCheckRegistry&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_220" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheckRegistry.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_221')">
+HealthCheckRegistry.HealthCheckRegistry&#160;<span class='sym_p'><span>(&#160;int <span class='color_p'>asyncExecutorPoolSize</span></span>&#160;)</span></span>
+<br/>
+<div id="c_221" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheckRegistry.&quot;&lt;init&gt;&quot;:(I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_222')">
+HealthCheckRegistry.HealthCheckRegistry&#160;<span class='sym_p'><span>(&#160;ScheduledExecutorService <span class='color_p'>asyncExecutorService</span></span>&#160;)</span></span>
+<br/>
+<div id="c_222" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheckRegistry.&quot;&lt;init&gt;&quot;:(Ljava/util/concurrent/ScheduledExecutorService;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_223')">
+HealthCheckRegistry.register&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>, <span>HealthCheck <span class='color_p'>healthCheck</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_223" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheckRegistry.register:(Ljava/lang/String;Lcom/codahale/metrics/health/HealthCheck;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_224')">
+HealthCheckRegistry.removeListener&#160;<span class='sym_p'><span>(&#160;HealthCheckRegistryListener <span class='color_p'>listener</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_224" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheckRegistry.removeListener:(Lcom/codahale/metrics/health/HealthCheckRegistryListener;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_225')">
+HealthCheckRegistry.runHealthCheck&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.Result</span></span>
+<br/>
+<div id="c_225" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheckRegistry.runHealthCheck:(Ljava/lang/String;)Lcom/codahale/metrics/health/HealthCheck$Result;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_226')">
+HealthCheckRegistry.runHealthChecks&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;SortedMap&lt;String,HealthCheck.Result&gt;</span></span>
+<br/>
+<div id="c_226" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheckRegistry.runHealthChecks:()Ljava/util/SortedMap;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_227')">
+HealthCheckRegistry.runHealthChecks&#160;<span class='sym_p'><span>(&#160;ExecutorService <span class='color_p'>executor</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;SortedMap&lt;String,HealthCheck.Result&gt;</span></span>
+<br/>
+<div id="c_227" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheckRegistry.runHealthChecks:(Ljava/util/concurrent/ExecutorService;)Ljava/util/SortedMap;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_228')">
+HealthCheckRegistry.runHealthChecks&#160;<span class='sym_p'><span>(&#160;ExecutorService <span class='color_p'>executor</span></span>, <span>HealthCheckFilter <span class='color_p'>filter</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;SortedMap&lt;String,HealthCheck.Result&gt;</span></span>
+<br/>
+<div id="c_228" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheckRegistry.runHealthChecks:(Ljava/util/concurrent/ExecutorService;Lcom/codahale/metrics/health/HealthCheckFilter;)Ljava/util/SortedMap;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_229')">
+HealthCheckRegistry.runHealthChecks&#160;<span class='sym_p'><span>(&#160;HealthCheckFilter <span class='color_p'>filter</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;SortedMap&lt;String,HealthCheck.Result&gt;</span></span>
+<br/>
+<div id="c_229" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheckRegistry.runHealthChecks:(Lcom/codahale/metrics/health/HealthCheckFilter;)Ljava/util/SortedMap;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_230')">
+HealthCheckRegistry.shutdown&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_230" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheckRegistry.shutdown:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_231')">
+HealthCheckRegistry.unregister&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_231" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheckRegistry.unregister:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-healthchecks-4.2.38.jar</span>, <span class='cname'>HealthCheckRegistryListener.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.health</span><br/>
+<span class="section" onclick="sC(this, 'c_232')">
+HealthCheckRegistryListener.onHealthCheckAdded&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>p1</span></span>, <span>HealthCheck <span class='color_p'>p2</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_232" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheckRegistryListener.onHealthCheckAdded:(Ljava/lang/String;Lcom/codahale/metrics/health/HealthCheck;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_233')">
+HealthCheckRegistryListener.onHealthCheckRemoved&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>p1</span></span>, <span>HealthCheck <span class='color_p'>p2</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_233" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheckRegistryListener.onHealthCheckRemoved:(Ljava/lang/String;Lcom/codahale/metrics/health/HealthCheck;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-healthchecks-4.2.38.jar</span>, <span class='cname'>InitialState.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.health.annotation</span><br/>
+<span class="section" onclick="sC(this, 'c_234')">
+Async.InitialState.valueOf&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Async.InitialState</span></span>
+<br/>
+<div id="c_234" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/annotation/Async.InitialState.valueOf:(Ljava/lang/String;)Lcom/codahale/metrics/health/annotation/Async$InitialState;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_235')">
+Async.InitialState.values&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Async.InitialState[&#160;]</span></span>
+<br/>
+<div id="c_235" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/annotation/Async.InitialState.values:()[Lcom/codahale/metrics/health/annotation/Async$InitialState;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-healthchecks-4.2.38.jar</span>, <span class='cname'>Result.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.health</span><br/>
+<span class="section" onclick="sC(this, 'c_236')">
+HealthCheck.Result.builder&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.ResultBuilder</span></span>
+<br/>
+<div id="c_236" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.Result.builder:()Lcom/codahale/metrics/health/HealthCheck$ResultBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_237')">
+HealthCheck.Result.getDetails&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map&lt;String,Object&gt;</span></span>
+<br/>
+<div id="c_237" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.Result.getDetails:()Ljava/util/Map;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_238')">
+HealthCheck.Result.getDuration&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_238" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.Result.getDuration:()J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_239')">
+HealthCheck.Result.getError&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Throwable</span></span>
+<br/>
+<div id="c_239" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.Result.getError:()Ljava/lang/Throwable;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_240')">
+HealthCheck.Result.getMessage&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_240" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.Result.getMessage:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_241')">
+HealthCheck.Result.getTime&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_241" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.Result.getTime:()J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_242')">
+HealthCheck.Result.getTimestamp&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_242" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.Result.getTimestamp:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_243')">
+HealthCheck.Result.healthy&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.Result</span></span>
+<br/>
+<div id="c_243" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.Result.healthy:()Lcom/codahale/metrics/health/HealthCheck$Result;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_244')">
+HealthCheck.Result.healthy&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>message</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.Result</span></span>
+<br/>
+<div id="c_244" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.Result.healthy:(Ljava/lang/String;)Lcom/codahale/metrics/health/HealthCheck$Result;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_245')">
+HealthCheck.Result.healthy&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>message</span></span>, <span>Object... <span class='color_p'>args</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.Result</span></span>
+<br/>
+<div id="c_245" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.Result.healthy:(Ljava/lang/String;[Ljava/lang/Object;)Lcom/codahale/metrics/health/HealthCheck$Result;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_246')">
+HealthCheck.Result.isHealthy&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_246" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.Result.isHealthy:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_247')">
+HealthCheck.Result.setDuration&#160;<span class='sym_p'><span>(&#160;long <span class='color_p'>duration</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_247" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.Result.setDuration:(J)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_248')">
+HealthCheck.Result.unhealthy&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>message</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.Result</span></span>
+<br/>
+<div id="c_248" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.Result.unhealthy:(Ljava/lang/String;)Lcom/codahale/metrics/health/HealthCheck$Result;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_249')">
+HealthCheck.Result.unhealthy&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>message</span></span>, <span>Object... <span class='color_p'>args</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.Result</span></span>
+<br/>
+<div id="c_249" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.Result.unhealthy:(Ljava/lang/String;[Ljava/lang/Object;)Lcom/codahale/metrics/health/HealthCheck$Result;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_250')">
+HealthCheck.Result.unhealthy&#160;<span class='sym_p'><span>(&#160;Throwable <span class='color_p'>error</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.Result</span></span>
+<br/>
+<div id="c_250" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.Result.unhealthy:(Ljava/lang/Throwable;)Lcom/codahale/metrics/health/HealthCheck$Result;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-healthchecks-4.2.38.jar</span>, <span class='cname'>ResultBuilder.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.health</span><br/>
+<span class="section" onclick="sC(this, 'c_251')">
+HealthCheck.ResultBuilder.build&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.Result</span></span>
+<br/>
+<div id="c_251" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.ResultBuilder.build:()Lcom/codahale/metrics/health/HealthCheck$Result;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_252')">
+HealthCheck.ResultBuilder.HealthCheck.ResultBuilder&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_252" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.ResultBuilder.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_253')">
+HealthCheck.ResultBuilder.healthy&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.ResultBuilder</span></span>
+<br/>
+<div id="c_253" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.ResultBuilder.healthy:()Lcom/codahale/metrics/health/HealthCheck$ResultBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_254')">
+HealthCheck.ResultBuilder.unhealthy&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.ResultBuilder</span></span>
+<br/>
+<div id="c_254" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.ResultBuilder.unhealthy:()Lcom/codahale/metrics/health/HealthCheck$ResultBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_255')">
+HealthCheck.ResultBuilder.unhealthy&#160;<span class='sym_p'><span>(&#160;Throwable <span class='color_p'>error</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.ResultBuilder</span></span>
+<br/>
+<div id="c_255" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.ResultBuilder.unhealthy:(Ljava/lang/Throwable;)Lcom/codahale/metrics/health/HealthCheck$ResultBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_256')">
+HealthCheck.ResultBuilder.usingClock&#160;<span class='sym_p'><span>(&#160;Clock <span class='color_p'>clock</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.ResultBuilder</span></span>
+<br/>
+<div id="c_256" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.ResultBuilder.usingClock:(Lcom/codahale/metrics/Clock;)Lcom/codahale/metrics/health/HealthCheck$ResultBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_257')">
+HealthCheck.ResultBuilder.withDetail&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>key</span></span>, <span>Object <span class='color_p'>data</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.ResultBuilder</span></span>
+<br/>
+<div id="c_257" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.ResultBuilder.withDetail:(Ljava/lang/String;Ljava/lang/Object;)Lcom/codahale/metrics/health/HealthCheck$ResultBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_258')">
+HealthCheck.ResultBuilder.withMessage&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>message</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.ResultBuilder</span></span>
+<br/>
+<div id="c_258" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.ResultBuilder.withMessage:(Ljava/lang/String;)Lcom/codahale/metrics/health/HealthCheck$ResultBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_259')">
+HealthCheck.ResultBuilder.withMessage&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>message</span></span>, <span>Object... <span class='color_p'>args</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.ResultBuilder</span></span>
+<br/>
+<div id="c_259" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/HealthCheck.ResultBuilder.withMessage:(Ljava/lang/String;[Ljava/lang/Object;)Lcom/codahale/metrics/health/HealthCheck$ResultBuilder;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-healthchecks-4.2.38.jar</span>, <span class='cname'>ScheduleType.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.health.annotation</span><br/>
+<span class="section" onclick="sC(this, 'c_260')">
+Async.ScheduleType.valueOf&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Async.ScheduleType</span></span>
+<br/>
+<div id="c_260" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/annotation/Async.ScheduleType.valueOf:(Ljava/lang/String;)Lcom/codahale/metrics/health/annotation/Async$ScheduleType;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_261')">
+Async.ScheduleType.values&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Async.ScheduleType[&#160;]</span></span>
+<br/>
+<div id="c_261" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/annotation/Async.ScheduleType.values:()[Lcom/codahale/metrics/health/annotation/Async$ScheduleType;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-healthchecks-4.2.38.jar</span>, <span class='cname'>SharedHealthCheckRegistries.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.health</span><br/>
+<span class="section" onclick="sC(this, 'c_262')">
+SharedHealthCheckRegistries.add&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>, <span>HealthCheckRegistry <span class='color_p'>registry</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheckRegistry</span></span>
+<br/>
+<div id="c_262" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/SharedHealthCheckRegistries.add:(Ljava/lang/String;Lcom/codahale/metrics/health/HealthCheckRegistry;)Lcom/codahale/metrics/health/HealthCheckRegistry;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_263')">
+SharedHealthCheckRegistries.clear&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_263" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/SharedHealthCheckRegistries.clear:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_264')">
+SharedHealthCheckRegistries.getDefault&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheckRegistry</span></span>
+<br/>
+<div id="c_264" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/SharedHealthCheckRegistries.getDefault:()Lcom/codahale/metrics/health/HealthCheckRegistry;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_265')">
+SharedHealthCheckRegistries.getOrCreate&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheckRegistry</span></span>
+<br/>
+<div id="c_265" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/SharedHealthCheckRegistries.getOrCreate:(Ljava/lang/String;)Lcom/codahale/metrics/health/HealthCheckRegistry;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_266')">
+SharedHealthCheckRegistries.names&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;String&gt;</span></span>
+<br/>
+<div id="c_266" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/SharedHealthCheckRegistries.names:()Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_267')">
+SharedHealthCheckRegistries.remove&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>key</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_267" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/SharedHealthCheckRegistries.remove:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_268')">
+SharedHealthCheckRegistries.setDefault&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheckRegistry</span></span>
+<br/>
+<div id="c_268" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/SharedHealthCheckRegistries.setDefault:(Ljava/lang/String;)Lcom/codahale/metrics/health/HealthCheckRegistry;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_269')">
+SharedHealthCheckRegistries.setDefault&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>, <span>HealthCheckRegistry <span class='color_p'>healthCheckRegistry</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheckRegistry</span></span>
+<br/>
+<div id="c_269" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/SharedHealthCheckRegistries.setDefault:(Ljava/lang/String;Lcom/codahale/metrics/health/HealthCheckRegistry;)Lcom/codahale/metrics/health/HealthCheckRegistry;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_270')">
+SharedHealthCheckRegistries.tryGetDefault&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheckRegistry</span></span>
+<br/>
+<div id="c_270" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/SharedHealthCheckRegistries.tryGetDefault:()Lcom/codahale/metrics/health/HealthCheckRegistry;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-healthchecks-4.2.38.jar</span>, <span class='cname'>ThreadDeadlockHealthCheck.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.health.jvm</span><br/>
+<span class="section" onclick="sC(this, 'c_271')">
+ThreadDeadlockHealthCheck.check&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.Result</span></span>
+<br/>
+<div id="c_271" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/jvm/ThreadDeadlockHealthCheck.check:()Lcom/codahale/metrics/health/HealthCheck$Result;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_272')">
+ThreadDeadlockHealthCheck.ThreadDeadlockHealthCheck&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_272" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/jvm/ThreadDeadlockHealthCheck.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_273')">
+ThreadDeadlockHealthCheck.ThreadDeadlockHealthCheck&#160;<span class='sym_p'><span>(&#160;ThreadDeadlockDetector <span class='color_p'>detector</span></span>&#160;)</span></span>
+<br/>
+<div id="c_273" style="display:none;">
+<span class='mngl'>com/codahale/metrics/health/jvm/ThreadDeadlockHealthCheck.&quot;&lt;init&gt;&quot;:(Lcom/codahale/metrics/jvm/ThreadDeadlockDetector;)V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='High_Risk_Problems'></a><a name='Type_Problems_High'></a>
+<h2>Problems with Data Types, High Severity <span class='failed'>&nbsp;13&nbsp;</span></h2><hr/>
+<span class='jar'>metrics-healthchecks-4.2.38.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.health</span><br/>
+<span class="section" onclick="sC(this, 'c_274')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> AsyncHealthCheckDecorator <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_274" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>AsyncHealthCheckDecorator</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_275')">
+[+] affected methods: 3 (2.2%)</span>
+<div id="c_275" style="display:none;">
+<div class='affected'><span class='iname_a'>AsyncHealthCheckDecorator.check&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'AsyncHealthCheckDecorator' class.</div>
+<span class='iname_a'>AsyncHealthCheckDecorator.getHealthCheck&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'AsyncHealthCheckDecorator' class.</div>
+<span class='iname_a'>AsyncHealthCheckDecorator.run&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'AsyncHealthCheckDecorator' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_276')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> HealthCheck <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_276" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>HealthCheck</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_277')">
+[+] affected methods: 4 (3%)</span>
+<div id="c_277" style="display:none;">
+<div class='affected'><span class='iname_a'>HealthCheck.HealthCheck&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'HealthCheck' abstract class.</div>
+<span class='iname_a'>HealthCheck.check&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This abstract method is from 'HealthCheck' abstract class.</div>
+<span class='iname_a'>HealthCheck.clock&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'HealthCheck' abstract class.</div>
+<span class='iname_a'>HealthCheck.execute&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'HealthCheck' abstract class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_278')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> HealthCheck.Result <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_278" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>HealthCheck.Result</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_279')">
+[+] affected methods: 18 (13.4%)</span>
+<div id="c_279" style="display:none;">
+<div class='affected'><span class='iname_a'>HealthCheck.Result.builder&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'HealthCheck.Result' class.</div>
+<span class='iname_a'>HealthCheck.Result.equals&#160;<span class='sym_p'><span>(&#160;Object <i>o</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'HealthCheck.Result' class.</div>
+<span class='iname_a'>HealthCheck.Result.getDetails&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'HealthCheck.Result' class.</div>
+<span class='iname_a'>HealthCheck.Result.getDuration&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'HealthCheck.Result' class.</div>
+<span class='iname_a'>HealthCheck.Result.getError&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'HealthCheck.Result' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_280')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> HealthCheck.ResultBuilder <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_280" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>HealthCheck.ResultBuilder</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_281')">
+[+] affected methods: 9 (6.7%)</span>
+<div id="c_281" style="display:none;">
+<div class='affected'><span class='iname_a'>HealthCheck.ResultBuilder.HealthCheck.ResultBuilder&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'HealthCheck.ResultBuilder' class.</div>
+<span class='iname_a'>HealthCheck.ResultBuilder.build&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'HealthCheck.ResultBuilder' class.</div>
+<span class='iname_a'>HealthCheck.ResultBuilder.healthy&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'HealthCheck.ResultBuilder' class.</div>
+<span class='iname_a'>HealthCheck.ResultBuilder.unhealthy&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'HealthCheck.ResultBuilder' class.</div>
+<span class='iname_a'>HealthCheck.ResultBuilder.unhealthy&#160;<span class='sym_p'><span>(&#160;Throwable <i>error</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'HealthCheck.ResultBuilder' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_282')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> HealthCheckRegistry <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_282" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>HealthCheckRegistry</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_283')">
+[+] affected methods: 15 (11.2%)</span>
+<div id="c_283" style="display:none;">
+<div class='affected'><span class='iname_a'>HealthCheckRegistry.HealthCheckRegistry&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'HealthCheckRegistry' class.</div>
+<span class='iname_a'>HealthCheckRegistry.HealthCheckRegistry&#160;<span class='sym_p'><span>(&#160;int <i>asyncExecutorPoolSize</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'HealthCheckRegistry' class.</div>
+<span class='iname_a'>HealthCheckRegistry.HealthCheckRegistry&#160;<span class='sym_p'><span>(&#160;ScheduledExecutorService <i>asyncExecutorService</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'HealthCheckRegistry' class.</div>
+<span class='iname_a'>HealthCheckRegistry.addListener&#160;<span class='sym_p'><span>(&#160;HealthCheckRegistryListener <i>listener</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'HealthCheckRegistry' class.</div>
+<span class='iname_a'>HealthCheckRegistry.getHealthCheck&#160;<span class='sym_p'><span>(&#160;String <i>name</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'HealthCheckRegistry' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_284')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> SharedHealthCheckRegistries <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_284" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>SharedHealthCheckRegistries</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_285')">
+[+] affected methods: 9 (6.7%)</span>
+<div id="c_285" style="display:none;">
+<div class='affected'><span class='iname_a'>SharedHealthCheckRegistries.add&#160;<span class='sym_p'><span>(&#160;String <i>name</i></span>, <span>HealthCheckRegistry <i>registry</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'SharedHealthCheckRegistries' class.</div>
+<span class='iname_a'>SharedHealthCheckRegistries.clear&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'SharedHealthCheckRegistries' class.</div>
+<span class='iname_a'>SharedHealthCheckRegistries.getDefault&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'SharedHealthCheckRegistries' class.</div>
+<span class='iname_a'>SharedHealthCheckRegistries.getOrCreate&#160;<span class='sym_p'><span>(&#160;String <i>name</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'SharedHealthCheckRegistries' class.</div>
+<span class='iname_a'>SharedHealthCheckRegistries.names&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'SharedHealthCheckRegistries' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_286')">
+<span class='ext'>[+]</span> <span class='ttype'>interface</span> HealthCheckFilter <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_286" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This interface has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>HealthCheckFilter</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_287')">
+[+] affected methods: 1 (0.7%)</span>
+<div id="c_287" style="display:none;">
+<div class='affected'><span class='iname_a'>HealthCheckFilter.matches&#160;<span class='sym_p'><span>(&#160;String <i>p1</i></span>, <span>HealthCheck <i>p2</i></span>&#160;)</span></span><br/><div class='affect'>This abstract method is from 'HealthCheckFilter' interface.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_288')">
+<span class='ext'>[+]</span> <span class='ttype'>interface</span> HealthCheckRegistryListener <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_288" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This interface has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>HealthCheckRegistryListener</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_289')">
+[+] affected methods: 2 (1.5%)</span>
+<div id="c_289" style="display:none;">
+<div class='affected'><span class='iname_a'>HealthCheckRegistryListener.onHealthCheckAdded&#160;<span class='sym_p'><span>(&#160;String <i>p1</i></span>, <span>HealthCheck <i>p2</i></span>&#160;)</span></span><br/><div class='affect'>This abstract method is from 'HealthCheckRegistryListener' interface.</div>
+<span class='iname_a'>HealthCheckRegistryListener.onHealthCheckRemoved&#160;<span class='sym_p'><span>(&#160;String <i>p1</i></span>, <span>HealthCheck <i>p2</i></span>&#160;)</span></span><br/><div class='affect'>This abstract method is from 'HealthCheckRegistryListener' interface.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><span class='jar'>metrics-healthchecks-4.2.38.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.health.annotation</span><br/>
+<span class="section" onclick="sC(this, 'c_290')">
+<span class='ext'>[+]</span> <span class='ttype'>@interface</span> Async <span class='failed'>&nbsp;2&nbsp;</span></span>
+<br/>
+<div id="c_290" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This annotation type has been removed.</td>
+<td>Recompilation of a client program may be terminated with the error message: cannot find symbol <b>@</b><b>Async</b>.</td>
+</tr>
+<tr>
+<th>2</th>
+<td>This interface has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>Async</b>.</td>
+</tr>
+</table><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_291')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> Async.InitialState <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_291" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>Async.InitialState</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_292')">
+[+] affected methods: 2 (1.5%)</span>
+<div id="c_292" style="display:none;">
+<div class='affected'><span class='iname_a'>Async.InitialState.valueOf&#160;<span class='sym_p'><span>(&#160;String <i>name</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'Async.InitialState' class.</div>
+<span class='iname_a'>Async.InitialState.values&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'Async.InitialState' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_293')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> Async.ScheduleType <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_293" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>Async.ScheduleType</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_294')">
+[+] affected methods: 2 (1.5%)</span>
+<div id="c_294" style="display:none;">
+<div class='affected'><span class='iname_a'>Async.ScheduleType.valueOf&#160;<span class='sym_p'><span>(&#160;String <i>name</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'Async.ScheduleType' class.</div>
+<span class='iname_a'>Async.ScheduleType.values&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'Async.ScheduleType' class.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><span class='jar'>metrics-healthchecks-4.2.38.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.health.jvm</span><br/>
+<span class="section" onclick="sC(this, 'c_295')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> ThreadDeadlockHealthCheck <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_295" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>ThreadDeadlockHealthCheck</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_296')">
+[+] affected methods: 3 (2.2%)</span>
+<div id="c_296" style="display:none;">
+<div class='affected'><span class='iname_a'>ThreadDeadlockHealthCheck.ThreadDeadlockHealthCheck&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'ThreadDeadlockHealthCheck' class.</div>
+<span class='iname_a'>ThreadDeadlockHealthCheck.ThreadDeadlockHealthCheck&#160;<span class='sym_p'><span>(&#160;ThreadDeadlockDetector <i>detector</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'ThreadDeadlockHealthCheck' class.</div>
+<span class='iname_a'>ThreadDeadlockHealthCheck.check&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'ThreadDeadlockHealthCheck' class.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Checked_Archives'></a><h2>Java Archives <span class='gray'>&nbsp;1&nbsp;</span></h2>
+<hr/><div class='jar_list'>
+metrics-healthchecks-4.2.38.jar<br/>
+</div><br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<br/><br/><br/>
+<hr/><div class='footer' align='right'><i>Generated by <a href='https://github.com/lvc/japi-compliance-checker'>Java API Compliance Checker</a> 2.4 &#160;</i></div><br/>
+</body></html>

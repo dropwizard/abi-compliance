@@ -1,0 +1,11 @@
+{
+  "Affected": "100",
+  "Added": 326,
+  "Removed": 376,
+  "TotalProblems": 55,
+  "Source_Affected": "100",
+  "Source_TotalProblems": "55",
+  "Source_ReportPath": "compat_report/metrics-core/4.2.37/5.0.0/3c2fa/src_compat_report.html",
+  "Archive1": "metrics-core-4.2.37.jar",
+  "Archive2": "metrics-core-5.0.0.jar"
+}

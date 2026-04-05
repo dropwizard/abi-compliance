@@ -1,0 +1,11 @@
+{
+  "Affected": "100",
+  "Added": 9,
+  "Removed": 9,
+  "TotalProblems": 2,
+  "Source_Affected": "100",
+  "Source_TotalProblems": "2",
+  "Source_ReportPath": "compat_report/metrics-json/4.2.38/5.0.0/0e0cd/src_compat_report.html",
+  "Archive1": "metrics-json-4.2.38.jar",
+  "Archive2": "metrics-json-5.0.0.jar"
+}

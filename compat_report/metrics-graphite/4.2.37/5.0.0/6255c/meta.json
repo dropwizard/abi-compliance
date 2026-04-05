@@ -1,0 +1,11 @@
+{
+  "Affected": "100",
+  "Added": 67,
+  "Removed": 71,
+  "TotalProblems": 7,
+  "Source_Affected": "100",
+  "Source_TotalProblems": "7",
+  "Source_ReportPath": "compat_report/metrics-graphite/4.2.37/5.0.0/6255c/src_compat_report.html",
+  "Archive1": "metrics-graphite-4.2.37.jar",
+  "Archive2": "metrics-graphite-5.0.0.jar"
+}

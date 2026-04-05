@@ -1,0 +1,11 @@
+{
+  "Affected": "0.9",
+  "Added": 4,
+  "Removed": 0,
+  "TotalProblems": 1,
+  "Source_Affected": "0.5",
+  "Source_TotalProblems": "1",
+  "Source_ReportPath": "compat_report/dropwizard-hibernate/4.0.16/5.0.0/b34f3/src_compat_report.html",
+  "Archive1": "dropwizard-hibernate-4.0.16.jar",
+  "Archive2": "dropwizard-hibernate-5.0.0.jar"
+}

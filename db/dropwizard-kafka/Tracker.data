@@ -1,0 +1,1298 @@
+$VAR1 = {
+          'APIDump' => {
+                         '1.3.12-1' => {
+                                         '1f55f' => {
+                                                      'Archive' => 'dropwizard-kafka-1.3.12-1.jar',
+                                                      'Path' => 'api_dump/dropwizard-kafka/1.3.12-1/1f55f/API.dump.tar.gz',
+                                                      'TotalSymbols' => '171'
+                                                    }
+                                       },
+                         '1.3.12-2' => {
+                                         'a157f' => {
+                                                      'Archive' => 'dropwizard-kafka-1.3.12-2.jar',
+                                                      'Path' => 'api_dump/dropwizard-kafka/1.3.12-2/a157f/API.dump.tar.gz',
+                                                      'TotalSymbols' => '240'
+                                                    }
+                                       },
+                         '1.3.12-3' => {
+                                         '0a786' => {
+                                                      'Archive' => 'dropwizard-kafka-1.3.12-3.jar',
+                                                      'Path' => 'api_dump/dropwizard-kafka/1.3.12-3/0a786/API.dump.tar.gz',
+                                                      'TotalSymbols' => '240'
+                                                    }
+                                       },
+                         '1.3.13-1' => {
+                                         '3b362' => {
+                                                      'Archive' => 'dropwizard-kafka-1.3.13-1.jar',
+                                                      'Path' => 'api_dump/dropwizard-kafka/1.3.13-1/3b362/API.dump.tar.gz',
+                                                      'TotalSymbols' => '250'
+                                                    }
+                                       },
+                         '1.3.13-2' => {
+                                         '56f3f' => {
+                                                      'Archive' => 'dropwizard-kafka-1.3.13-2.jar',
+                                                      'Path' => 'api_dump/dropwizard-kafka/1.3.13-2/56f3f/API.dump.tar.gz',
+                                                      'TotalSymbols' => '252'
+                                                    }
+                                       },
+                         '1.3.14-1' => {
+                                         '139f9' => {
+                                                      'Archive' => 'dropwizard-kafka-1.3.14-1.jar',
+                                                      'Path' => 'api_dump/dropwizard-kafka/1.3.14-1/139f9/API.dump.tar.gz',
+                                                      'TotalSymbols' => '258'
+                                                    }
+                                       },
+                         '1.3.14-2' => {
+                                         '8b5d7' => {
+                                                      'Archive' => 'dropwizard-kafka-1.3.14-2.jar',
+                                                      'Path' => 'api_dump/dropwizard-kafka/1.3.14-2/8b5d7/API.dump.tar.gz',
+                                                      'TotalSymbols' => '284'
+                                                    }
+                                       },
+                         '1.3.15-1' => {
+                                         '89bb3' => {
+                                                      'Archive' => 'dropwizard-kafka-1.3.15-1.jar',
+                                                      'Path' => 'api_dump/dropwizard-kafka/1.3.15-1/89bb3/API.dump.tar.gz',
+                                                      'TotalSymbols' => '284'
+                                                    }
+                                       },
+                         '1.5.0' => {
+                                      '78420' => {
+                                                   'Archive' => 'dropwizard-kafka-1.5.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-kafka/1.5.0/78420/API.dump.tar.gz',
+                                                   'TotalSymbols' => '286'
+                                                 }
+                                    },
+                         '1.6.0' => {
+                                      '19966' => {
+                                                   'Archive' => 'dropwizard-kafka-1.6.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-kafka/1.6.0/19966/API.dump.tar.gz',
+                                                   'TotalSymbols' => '290'
+                                                 }
+                                    },
+                         '1.6.1' => {
+                                      '8ac80' => {
+                                                   'Archive' => 'dropwizard-kafka-1.6.1.jar',
+                                                   'Path' => 'api_dump/dropwizard-kafka/1.6.1/8ac80/API.dump.tar.gz',
+                                                   'TotalSymbols' => '290'
+                                                 }
+                                    },
+                         '1.6.2' => {
+                                      '2255f' => {
+                                                   'Archive' => 'dropwizard-kafka-1.6.2.jar',
+                                                   'Path' => 'api_dump/dropwizard-kafka/1.6.2/2255f/API.dump.tar.gz',
+                                                   'TotalSymbols' => '290'
+                                                 }
+                                    },
+                         '1.7.0' => {
+                                      '29e38' => {
+                                                   'Archive' => 'dropwizard-kafka-1.7.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-kafka/1.7.0/29e38/API.dump.tar.gz',
+                                                   'TotalSymbols' => '290'
+                                                 }
+                                    },
+                         '1.7.1' => {
+                                      '5cf53' => {
+                                                   'Archive' => 'dropwizard-kafka-1.7.1.jar',
+                                                   'Path' => 'api_dump/dropwizard-kafka/1.7.1/5cf53/API.dump.tar.gz',
+                                                   'TotalSymbols' => '290'
+                                                 }
+                                    },
+                         '1.7.2' => {
+                                      'd43eb' => {
+                                                   'Archive' => 'dropwizard-kafka-1.7.2.jar',
+                                                   'Path' => 'api_dump/dropwizard-kafka/1.7.2/d43eb/API.dump.tar.gz',
+                                                   'TotalSymbols' => '290'
+                                                 }
+                                    },
+                         '1.8.0' => {
+                                      '59487' => {
+                                                   'Archive' => 'dropwizard-kafka-1.8.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-kafka/1.8.0/59487/API.dump.tar.gz',
+                                                   'TotalSymbols' => '290'
+                                                 }
+                                    },
+                         '1.8.1' => {
+                                      'fcb75' => {
+                                                   'Archive' => 'dropwizard-kafka-1.8.1.jar',
+                                                   'Path' => 'api_dump/dropwizard-kafka/1.8.1/fcb75/API.dump.tar.gz',
+                                                   'TotalSymbols' => '290'
+                                                 }
+                                    },
+                         '1.8.3' => {
+                                      '413f7' => {
+                                                   'Archive' => 'dropwizard-kafka-1.8.3.jar',
+                                                   'Path' => 'api_dump/dropwizard-kafka/1.8.3/413f7/API.dump.tar.gz',
+                                                   'TotalSymbols' => '290'
+                                                 }
+                                    },
+                         '1.8.4' => {
+                                      '2eacf' => {
+                                                   'Archive' => 'dropwizard-kafka-1.8.4.jar',
+                                                   'Path' => 'api_dump/dropwizard-kafka/1.8.4/2eacf/API.dump.tar.gz',
+                                                   'TotalSymbols' => '290'
+                                                 }
+                                    },
+                         '3.0.0' => {
+                                      'c4a35' => {
+                                                   'Archive' => 'dropwizard-kafka-3.0.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-kafka/3.0.0/c4a35/API.dump.tar.gz',
+                                                   'TotalSymbols' => '290'
+                                                 }
+                                    },
+                         '3.0.1' => {
+                                      '334b1' => {
+                                                   'Archive' => 'dropwizard-kafka-3.0.1.jar',
+                                                   'Path' => 'api_dump/dropwizard-kafka/3.0.1/334b1/API.dump.tar.gz',
+                                                   'TotalSymbols' => '290'
+                                                 }
+                                    },
+                         '3.0.2' => {
+                                      '1e256' => {
+                                                   'Archive' => 'dropwizard-kafka-3.0.2.jar',
+                                                   'Path' => 'api_dump/dropwizard-kafka/3.0.2/1e256/API.dump.tar.gz',
+                                                   'TotalSymbols' => '290'
+                                                 }
+                                    },
+                         '3.0.3' => {
+                                      '253b9' => {
+                                                   'Archive' => 'dropwizard-kafka-3.0.3.jar',
+                                                   'Path' => 'api_dump/dropwizard-kafka/3.0.3/253b9/API.dump.tar.gz',
+                                                   'TotalSymbols' => '290'
+                                                 }
+                                    },
+                         '4.0.0' => {
+                                      '7dc94' => {
+                                                   'Archive' => 'dropwizard-kafka-4.0.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-kafka/4.0.0/7dc94/API.dump.tar.gz',
+                                                   'TotalSymbols' => '290'
+                                                 }
+                                    },
+                         '4.0.1' => {
+                                      'e00e9' => {
+                                                   'Archive' => 'dropwizard-kafka-4.0.1.jar',
+                                                   'Path' => 'api_dump/dropwizard-kafka/4.0.1/e00e9/API.dump.tar.gz',
+                                                   'TotalSymbols' => '290'
+                                                 }
+                                    },
+                         '4.0.2' => {
+                                      'e5755' => {
+                                                   'Archive' => 'dropwizard-kafka-4.0.2.jar',
+                                                   'Path' => 'api_dump/dropwizard-kafka/4.0.2/e5755/API.dump.tar.gz',
+                                                   'TotalSymbols' => '290'
+                                                 }
+                                    },
+                         '4.0.3' => {
+                                      '86479' => {
+                                                   'Archive' => 'dropwizard-kafka-4.0.3.jar',
+                                                   'Path' => 'api_dump/dropwizard-kafka/4.0.3/86479/API.dump.tar.gz',
+                                                   'TotalSymbols' => '290'
+                                                 }
+                                    },
+                         '5.0.0' => {
+                                      'b68d3' => {
+                                                   'Archive' => 'dropwizard-kafka-5.0.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-kafka/5.0.0/b68d3/API.dump.tar.gz',
+                                                   'TotalSymbols' => '290'
+                                                 }
+                                    }
+                       },
+          'APIReport' => {
+                           '1.3.12-1' => {
+                                           '1.3.12-2' => {
+                                                           'Added' => 124,
+                                                           'ArchivesAdded' => 0,
+                                                           'ArchivesAddedSymbols' => 0,
+                                                           'ArchivesRemoved' => 0,
+                                                           'ArchivesRemovedSymbols' => 0,
+                                                           'BC' => '42.7',
+                                                           'Path' => 'archives_report/dropwizard-kafka/1.3.12-1/1.3.12-2/report.html',
+                                                           'Removed' => 55,
+                                                           'Source_BC' => '42.7',
+                                                           'Source_TotalProblems' => 6,
+                                                           'TotalArchives' => 1,
+                                                           'TotalProblems' => 6
+                                                         }
+                                         },
+                           '1.3.12-2' => {
+                                           '1.3.12-3' => {
+                                                           'Added' => 4,
+                                                           'ArchivesAdded' => 0,
+                                                           'ArchivesAddedSymbols' => 0,
+                                                           'ArchivesRemoved' => 0,
+                                                           'ArchivesRemovedSymbols' => 0,
+                                                           'BC' => '94.2',
+                                                           'Path' => 'archives_report/dropwizard-kafka/1.3.12-2/1.3.12-3/report.html',
+                                                           'Removed' => 4,
+                                                           'Source_BC' => '94.2',
+                                                           'Source_TotalProblems' => 4,
+                                                           'TotalArchives' => 1,
+                                                           'TotalProblems' => 2
+                                                         }
+                                         },
+                           '1.3.12-3' => {
+                                           '1.3.13-1' => {
+                                                           'Added' => 10,
+                                                           'ArchivesAdded' => 0,
+                                                           'ArchivesAddedSymbols' => 0,
+                                                           'ArchivesRemoved' => 0,
+                                                           'ArchivesRemovedSymbols' => 0,
+                                                           'BC' => 100,
+                                                           'Path' => 'archives_report/dropwizard-kafka/1.3.12-3/1.3.13-1/report.html',
+                                                           'Removed' => 0,
+                                                           'Source_BC' => 100,
+                                                           'Source_TotalProblems' => 0,
+                                                           'TotalArchives' => 1,
+                                                           'TotalProblems' => 0
+                                                         }
+                                         },
+                           '1.3.13-1' => {
+                                           '1.3.13-2' => {
+                                                           'Added' => 2,
+                                                           'ArchivesAdded' => 0,
+                                                           'ArchivesAddedSymbols' => 0,
+                                                           'ArchivesRemoved' => 0,
+                                                           'ArchivesRemovedSymbols' => 0,
+                                                           'BC' => 100,
+                                                           'Path' => 'archives_report/dropwizard-kafka/1.3.13-1/1.3.13-2/report.html',
+                                                           'Removed' => 0,
+                                                           'Source_BC' => 100,
+                                                           'Source_TotalProblems' => 0,
+                                                           'TotalArchives' => 1,
+                                                           'TotalProblems' => 0
+                                                         }
+                                         },
+                           '1.3.13-2' => {
+                                           '1.3.14-1' => {
+                                                           'Added' => 6,
+                                                           'ArchivesAdded' => 0,
+                                                           'ArchivesAddedSymbols' => 0,
+                                                           'ArchivesRemoved' => 0,
+                                                           'ArchivesRemovedSymbols' => 0,
+                                                           'BC' => 100,
+                                                           'Path' => 'archives_report/dropwizard-kafka/1.3.13-2/1.3.14-1/report.html',
+                                                           'Removed' => 0,
+                                                           'Source_BC' => 100,
+                                                           'Source_TotalProblems' => 0,
+                                                           'TotalArchives' => 1,
+                                                           'TotalProblems' => 0
+                                                         }
+                                         },
+                           '1.3.14-1' => {
+                                           '1.3.14-2' => {
+                                                           'Added' => 29,
+                                                           'ArchivesAdded' => 0,
+                                                           'ArchivesAddedSymbols' => 0,
+                                                           'ArchivesRemoved' => 0,
+                                                           'ArchivesRemovedSymbols' => 0,
+                                                           'BC' => '83.3',
+                                                           'Path' => 'archives_report/dropwizard-kafka/1.3.14-1/1.3.14-2/report.html',
+                                                           'Removed' => 3,
+                                                           'Source_BC' => '83.3',
+                                                           'Source_TotalProblems' => 3,
+                                                           'TotalArchives' => 1,
+                                                           'TotalProblems' => 1
+                                                         }
+                                         },
+                           '1.3.14-2' => {
+                                           '1.3.15-1' => {
+                                                           'Added' => 0,
+                                                           'ArchivesAdded' => 0,
+                                                           'ArchivesAddedSymbols' => 0,
+                                                           'ArchivesRemoved' => 0,
+                                                           'ArchivesRemovedSymbols' => 0,
+                                                           'BC' => 100,
+                                                           'Path' => 'archives_report/dropwizard-kafka/1.3.14-2/1.3.15-1/report.html',
+                                                           'Removed' => 0,
+                                                           'Source_BC' => 100,
+                                                           'Source_TotalProblems' => 0,
+                                                           'TotalArchives' => 1,
+                                                           'TotalProblems' => 0
+                                                         }
+                                         },
+                           '1.3.15-1' => {
+                                           '1.5.0' => {
+                                                        'Added' => 4,
+                                                        'ArchivesAdded' => 0,
+                                                        'ArchivesAddedSymbols' => 0,
+                                                        'ArchivesRemoved' => 0,
+                                                        'ArchivesRemovedSymbols' => 0,
+                                                        'BC' => 100,
+                                                        'Path' => 'archives_report/dropwizard-kafka/1.3.15-1/1.5.0/report.html',
+                                                        'Removed' => 0,
+                                                        'Source_BC' => 100,
+                                                        'Source_TotalProblems' => 1,
+                                                        'TotalArchives' => 1,
+                                                        'TotalProblems' => 3
+                                                      }
+                                         },
+                           '1.5.0' => {
+                                        '1.6.0' => {
+                                                     'Added' => 4,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-kafka/1.5.0/1.6.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.6.0' => {
+                                        '1.6.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-kafka/1.6.0/1.6.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.6.1' => {
+                                        '1.6.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-kafka/1.6.1/1.6.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.6.2' => {
+                                        '1.7.0' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-kafka/1.6.2/1.7.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.7.0' => {
+                                        '1.7.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-kafka/1.7.0/1.7.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.7.1' => {
+                                        '1.7.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-kafka/1.7.1/1.7.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.7.2' => {
+                                        '1.8.0' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-kafka/1.7.2/1.8.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.8.0' => {
+                                        '1.8.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-kafka/1.8.0/1.8.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.8.1' => {
+                                        '1.8.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-kafka/1.8.1/1.8.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.8.3' => {
+                                        '1.8.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-kafka/1.8.3/1.8.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.8.4' => {
+                                        '3.0.0' => {
+                                                     'Added' => 12,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => '92.4',
+                                                     'Path' => 'archives_report/dropwizard-kafka/1.8.4/3.0.0/report.html',
+                                                     'Removed' => 12,
+                                                     'Source_BC' => '92.4',
+                                                     'Source_TotalProblems' => 12,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 6
+                                                   }
+                                      },
+                           '3.0.0' => {
+                                        '3.0.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-kafka/3.0.0/3.0.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.0.1' => {
+                                        '3.0.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-kafka/3.0.1/3.0.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.0.2' => {
+                                        '3.0.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-kafka/3.0.2/3.0.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   },
+                                        '4.0.0' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-kafka/3.0.2/4.0.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '3.0.3' => {
+                                        '4.0.0' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-kafka/3.0.3/4.0.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.0' => {
+                                        '4.0.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-kafka/4.0.0/4.0.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.1' => {
+                                        '4.0.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-kafka/4.0.1/4.0.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.2' => {
+                                        '4.0.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-kafka/4.0.2/4.0.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.0.3' => {
+                                        '5.0.0' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-kafka/4.0.3/5.0.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      }
+                         },
+          'APIReport_D' => {
+                             '1.3.12-1' => {
+                                             '1.3.12-2' => {
+                                                             '76e7f' => {
+                                                                          'Added' => 124,
+                                                                          'Affected' => '57.3',
+                                                                          'Archive1' => 'dropwizard-kafka-1.3.12-1.jar',
+                                                                          'Archive2' => 'dropwizard-kafka-1.3.12-2.jar',
+                                                                          'Path' => 'compat_report/dropwizard-kafka/1.3.12-1/1.3.12-2/76e7f/bin_compat_report.html',
+                                                                          'Removed' => 55,
+                                                                          'Source_Affected' => '57.3',
+                                                                          'Source_ReportPath' => 'compat_report/dropwizard-kafka/1.3.12-1/1.3.12-2/76e7f/src_compat_report.html',
+                                                                          'Source_TotalProblems' => 6,
+                                                                          'TotalProblems' => 6
+                                                                        }
+                                                           }
+                                           },
+                             '1.3.12-2' => {
+                                             '1.3.12-3' => {
+                                                             'ba540' => {
+                                                                          'Added' => 4,
+                                                                          'Affected' => '5.8',
+                                                                          'Archive1' => 'dropwizard-kafka-1.3.12-2.jar',
+                                                                          'Archive2' => 'dropwizard-kafka-1.3.12-3.jar',
+                                                                          'Path' => 'compat_report/dropwizard-kafka/1.3.12-2/1.3.12-3/ba540/bin_compat_report.html',
+                                                                          'Removed' => 4,
+                                                                          'Source_Affected' => '5.8',
+                                                                          'Source_ReportPath' => 'compat_report/dropwizard-kafka/1.3.12-2/1.3.12-3/ba540/src_compat_report.html',
+                                                                          'Source_TotalProblems' => 4,
+                                                                          'TotalProblems' => 2
+                                                                        }
+                                                           }
+                                           },
+                             '1.3.12-3' => {
+                                             '1.3.13-1' => {
+                                                             '18228' => {
+                                                                          'Added' => 10,
+                                                                          'Affected' => 0,
+                                                                          'Archive1' => 'dropwizard-kafka-1.3.12-3.jar',
+                                                                          'Archive2' => 'dropwizard-kafka-1.3.13-1.jar',
+                                                                          'Path' => 'compat_report/dropwizard-kafka/1.3.12-3/1.3.13-1/18228/bin_compat_report.html',
+                                                                          'Removed' => 0,
+                                                                          'Source_Affected' => 0,
+                                                                          'Source_ReportPath' => 'compat_report/dropwizard-kafka/1.3.12-3/1.3.13-1/18228/src_compat_report.html',
+                                                                          'Source_TotalProblems' => 0,
+                                                                          'TotalProblems' => 0
+                                                                        }
+                                                           }
+                                           },
+                             '1.3.13-1' => {
+                                             '1.3.13-2' => {
+                                                             '0eb11' => {
+                                                                          'Added' => 2,
+                                                                          'Affected' => 0,
+                                                                          'Archive1' => 'dropwizard-kafka-1.3.13-1.jar',
+                                                                          'Archive2' => 'dropwizard-kafka-1.3.13-2.jar',
+                                                                          'Path' => 'compat_report/dropwizard-kafka/1.3.13-1/1.3.13-2/0eb11/bin_compat_report.html',
+                                                                          'Removed' => 0,
+                                                                          'Source_Affected' => 0,
+                                                                          'Source_ReportPath' => 'compat_report/dropwizard-kafka/1.3.13-1/1.3.13-2/0eb11/src_compat_report.html',
+                                                                          'Source_TotalProblems' => 0,
+                                                                          'TotalProblems' => 0
+                                                                        }
+                                                           }
+                                           },
+                             '1.3.13-2' => {
+                                             '1.3.14-1' => {
+                                                             '2890a' => {
+                                                                          'Added' => 6,
+                                                                          'Affected' => 0,
+                                                                          'Archive1' => 'dropwizard-kafka-1.3.13-2.jar',
+                                                                          'Archive2' => 'dropwizard-kafka-1.3.14-1.jar',
+                                                                          'Path' => 'compat_report/dropwizard-kafka/1.3.13-2/1.3.14-1/2890a/bin_compat_report.html',
+                                                                          'Removed' => 0,
+                                                                          'Source_Affected' => 0,
+                                                                          'Source_ReportPath' => 'compat_report/dropwizard-kafka/1.3.13-2/1.3.14-1/2890a/src_compat_report.html',
+                                                                          'Source_TotalProblems' => 0,
+                                                                          'TotalProblems' => 0
+                                                                        }
+                                                           }
+                                           },
+                             '1.3.14-1' => {
+                                             '1.3.14-2' => {
+                                                             'f5e93' => {
+                                                                          'Added' => 29,
+                                                                          'Affected' => '16.7',
+                                                                          'Archive1' => 'dropwizard-kafka-1.3.14-1.jar',
+                                                                          'Archive2' => 'dropwizard-kafka-1.3.14-2.jar',
+                                                                          'Path' => 'compat_report/dropwizard-kafka/1.3.14-1/1.3.14-2/f5e93/bin_compat_report.html',
+                                                                          'Removed' => 3,
+                                                                          'Source_Affected' => '16.7',
+                                                                          'Source_ReportPath' => 'compat_report/dropwizard-kafka/1.3.14-1/1.3.14-2/f5e93/src_compat_report.html',
+                                                                          'Source_TotalProblems' => 3,
+                                                                          'TotalProblems' => 1
+                                                                        }
+                                                           }
+                                           },
+                             '1.3.14-2' => {
+                                             '1.3.15-1' => {
+                                                             'd035d' => {
+                                                                          'Added' => 0,
+                                                                          'Affected' => 0,
+                                                                          'Archive1' => 'dropwizard-kafka-1.3.14-2.jar',
+                                                                          'Archive2' => 'dropwizard-kafka-1.3.15-1.jar',
+                                                                          'Path' => 'compat_report/dropwizard-kafka/1.3.14-2/1.3.15-1/d035d/bin_compat_report.html',
+                                                                          'Removed' => 0,
+                                                                          'Source_Affected' => 0,
+                                                                          'Source_ReportPath' => 'compat_report/dropwizard-kafka/1.3.14-2/1.3.15-1/d035d/src_compat_report.html',
+                                                                          'Source_TotalProblems' => 0,
+                                                                          'TotalProblems' => 0
+                                                                        }
+                                                           }
+                                           },
+                             '1.3.15-1' => {
+                                             '1.5.0' => {
+                                                          'f46b7' => {
+                                                                       'Added' => 4,
+                                                                       'Affected' => 0,
+                                                                       'Archive1' => 'dropwizard-kafka-1.3.15-1.jar',
+                                                                       'Archive2' => 'dropwizard-kafka-1.5.0.jar',
+                                                                       'Path' => 'compat_report/dropwizard-kafka/1.3.15-1/1.5.0/f46b7/bin_compat_report.html',
+                                                                       'Removed' => 0,
+                                                                       'Source_Affected' => 0,
+                                                                       'Source_ReportPath' => 'compat_report/dropwizard-kafka/1.3.15-1/1.5.0/f46b7/src_compat_report.html',
+                                                                       'Source_TotalProblems' => 1,
+                                                                       'TotalProblems' => 3
+                                                                     }
+                                                        }
+                                           },
+                             '1.5.0' => {
+                                          '1.6.0' => {
+                                                       '61b20' => {
+                                                                    'Added' => 4,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-kafka-1.5.0.jar',
+                                                                    'Archive2' => 'dropwizard-kafka-1.6.0.jar',
+                                                                    'Path' => 'compat_report/dropwizard-kafka/1.5.0/1.6.0/61b20/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-kafka/1.5.0/1.6.0/61b20/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.6.0' => {
+                                          '1.6.1' => {
+                                                       'c47aa' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-kafka-1.6.0.jar',
+                                                                    'Archive2' => 'dropwizard-kafka-1.6.1.jar',
+                                                                    'Path' => 'compat_report/dropwizard-kafka/1.6.0/1.6.1/c47aa/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-kafka/1.6.0/1.6.1/c47aa/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.6.1' => {
+                                          '1.6.2' => {
+                                                       'd3d5b' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-kafka-1.6.1.jar',
+                                                                    'Archive2' => 'dropwizard-kafka-1.6.2.jar',
+                                                                    'Path' => 'compat_report/dropwizard-kafka/1.6.1/1.6.2/d3d5b/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-kafka/1.6.1/1.6.2/d3d5b/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.6.2' => {
+                                          '1.7.0' => {
+                                                       '33e48' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-kafka-1.6.2.jar',
+                                                                    'Archive2' => 'dropwizard-kafka-1.7.0.jar',
+                                                                    'Path' => 'compat_report/dropwizard-kafka/1.6.2/1.7.0/33e48/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-kafka/1.6.2/1.7.0/33e48/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.7.0' => {
+                                          '1.7.1' => {
+                                                       '8d909' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-kafka-1.7.0.jar',
+                                                                    'Archive2' => 'dropwizard-kafka-1.7.1.jar',
+                                                                    'Path' => 'compat_report/dropwizard-kafka/1.7.0/1.7.1/8d909/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-kafka/1.7.0/1.7.1/8d909/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.7.1' => {
+                                          '1.7.2' => {
+                                                       '71998' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-kafka-1.7.1.jar',
+                                                                    'Archive2' => 'dropwizard-kafka-1.7.2.jar',
+                                                                    'Path' => 'compat_report/dropwizard-kafka/1.7.1/1.7.2/71998/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-kafka/1.7.1/1.7.2/71998/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.7.2' => {
+                                          '1.8.0' => {
+                                                       'adee6' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-kafka-1.7.2.jar',
+                                                                    'Archive2' => 'dropwizard-kafka-1.8.0.jar',
+                                                                    'Path' => 'compat_report/dropwizard-kafka/1.7.2/1.8.0/adee6/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-kafka/1.7.2/1.8.0/adee6/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.8.0' => {
+                                          '1.8.1' => {
+                                                       'fc5ad' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-kafka-1.8.0.jar',
+                                                                    'Archive2' => 'dropwizard-kafka-1.8.1.jar',
+                                                                    'Path' => 'compat_report/dropwizard-kafka/1.8.0/1.8.1/fc5ad/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-kafka/1.8.0/1.8.1/fc5ad/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.8.1' => {
+                                          '1.8.3' => {
+                                                       'b84fa' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-kafka-1.8.1.jar',
+                                                                    'Archive2' => 'dropwizard-kafka-1.8.3.jar',
+                                                                    'Path' => 'compat_report/dropwizard-kafka/1.8.1/1.8.3/b84fa/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-kafka/1.8.1/1.8.3/b84fa/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.8.3' => {
+                                          '1.8.4' => {
+                                                       '43767' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-kafka-1.8.3.jar',
+                                                                    'Archive2' => 'dropwizard-kafka-1.8.4.jar',
+                                                                    'Path' => 'compat_report/dropwizard-kafka/1.8.3/1.8.4/43767/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-kafka/1.8.3/1.8.4/43767/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.8.4' => {
+                                          '3.0.0' => {
+                                                       '88243' => {
+                                                                    'Added' => 12,
+                                                                    'Affected' => '7.6',
+                                                                    'Archive1' => 'dropwizard-kafka-1.8.4.jar',
+                                                                    'Archive2' => 'dropwizard-kafka-3.0.0.jar',
+                                                                    'Path' => 'compat_report/dropwizard-kafka/1.8.4/3.0.0/88243/bin_compat_report.html',
+                                                                    'Removed' => 12,
+                                                                    'Source_Affected' => '7.6',
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-kafka/1.8.4/3.0.0/88243/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 12,
+                                                                    'TotalProblems' => 6
+                                                                  }
+                                                     }
+                                        },
+                             '3.0.0' => {
+                                          '3.0.1' => {
+                                                       '7bad6' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-kafka-3.0.0.jar',
+                                                                    'Archive2' => 'dropwizard-kafka-3.0.1.jar',
+                                                                    'Path' => 'compat_report/dropwizard-kafka/3.0.0/3.0.1/7bad6/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-kafka/3.0.0/3.0.1/7bad6/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.0.1' => {
+                                          '3.0.2' => {
+                                                       '804fd' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-kafka-3.0.1.jar',
+                                                                    'Archive2' => 'dropwizard-kafka-3.0.2.jar',
+                                                                    'Path' => 'compat_report/dropwizard-kafka/3.0.1/3.0.2/804fd/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-kafka/3.0.1/3.0.2/804fd/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.0.2' => {
+                                          '3.0.3' => {
+                                                       'd57f0' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-kafka-3.0.2.jar',
+                                                                    'Archive2' => 'dropwizard-kafka-3.0.3.jar',
+                                                                    'Path' => 'compat_report/dropwizard-kafka/3.0.2/3.0.3/d57f0/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-kafka/3.0.2/3.0.3/d57f0/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     },
+                                          '4.0.0' => {
+                                                       '403cc' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-kafka-3.0.2.jar',
+                                                                    'Archive2' => 'dropwizard-kafka-4.0.0.jar',
+                                                                    'Path' => 'compat_report/dropwizard-kafka/3.0.2/4.0.0/403cc/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-kafka/3.0.2/4.0.0/403cc/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '3.0.3' => {
+                                          '4.0.0' => {
+                                                       '9b84c' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-kafka-3.0.3.jar',
+                                                                    'Archive2' => 'dropwizard-kafka-4.0.0.jar',
+                                                                    'Path' => 'compat_report/dropwizard-kafka/3.0.3/4.0.0/9b84c/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-kafka/3.0.3/4.0.0/9b84c/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.0' => {
+                                          '4.0.1' => {
+                                                       '53107' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-kafka-4.0.0.jar',
+                                                                    'Archive2' => 'dropwizard-kafka-4.0.1.jar',
+                                                                    'Path' => 'compat_report/dropwizard-kafka/4.0.0/4.0.1/53107/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-kafka/4.0.0/4.0.1/53107/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.1' => {
+                                          '4.0.2' => {
+                                                       '084b8' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-kafka-4.0.1.jar',
+                                                                    'Archive2' => 'dropwizard-kafka-4.0.2.jar',
+                                                                    'Path' => 'compat_report/dropwizard-kafka/4.0.1/4.0.2/084b8/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-kafka/4.0.1/4.0.2/084b8/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.2' => {
+                                          '4.0.3' => {
+                                                       'bed20' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-kafka-4.0.2.jar',
+                                                                    'Archive2' => 'dropwizard-kafka-4.0.3.jar',
+                                                                    'Path' => 'compat_report/dropwizard-kafka/4.0.2/4.0.3/bed20/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-kafka/4.0.2/4.0.3/bed20/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.0.3' => {
+                                          '5.0.0' => {
+                                                       '2a7e5' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-kafka-4.0.3.jar',
+                                                                    'Archive2' => 'dropwizard-kafka-5.0.0.jar',
+                                                                    'Path' => 'compat_report/dropwizard-kafka/4.0.3/5.0.0/2a7e5/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-kafka/4.0.3/5.0.0/2a7e5/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        }
+                           },
+          'Changelog' => {},
+          'Date' => {
+                      '1.3.12-1' => '03-2019-06 16:03',
+                      '1.3.12-2' => '10-2019-06 17:32',
+                      '1.3.12-3' => '20-2019-06 13:57',
+                      '1.3.13-1' => '18-2019-07 16:33',
+                      '1.3.13-2' => '19-2019-07 16:33',
+                      '1.3.14-1' => '12-2019-08 22:34',
+                      '1.3.14-2' => '17-2019-08 16:14',
+                      '1.3.15-1' => '30-2019-09 18:13',
+                      '1.5.0' => '05-2020-01 20:49',
+                      '1.6.0' => '20-2020-04 19:29',
+                      '1.6.1' => '27-2021-07 08:57',
+                      '1.6.2' => '11-2021-10 20:44',
+                      '1.7.0' => '16-2021-11 09:04',
+                      '1.7.1' => '20-2022-04 21:10',
+                      '1.7.2' => '27-2022-05 21:47',
+                      '1.8.0' => '27-2022-05 21:49',
+                      '1.8.1' => '22-2023-02 22:03',
+                      '1.8.3' => '28-2024-03 16:03',
+                      '1.8.4' => '23-2025-07 22:27',
+                      '3.0.0' => '03-2023-04 20:20',
+                      '3.0.1' => '28-2024-03 16:03',
+                      '3.0.2' => '23-2025-07 22:28',
+                      '3.0.3' => '23-2025-07 22:28',
+                      '4.0.0' => '03-2023-04 20:23',
+                      '4.0.1' => '28-2024-03 16:02',
+                      '4.0.2' => '23-2025-07 22:17',
+                      '4.0.3' => '23-2025-07 22:17',
+                      '5.0.0' => '18-2025-09 07:49'
+                    },
+          'Maintainer' => 'Dropwizard Committers',
+          'MaintainerUrl' => 'https://www.dropwizard.io/',
+          'PackageDiff' => {
+                             '1.3.12-1' => {
+                                             '1.3.12-2' => {
+                                                             'Changed' => '37',
+                                                             'Path' => 'package_diff/dropwizard-kafka/1.3.12-1/1.3.12-2/report.html'
+                                                           }
+                                           },
+                             '1.3.12-2' => {
+                                             '1.3.12-3' => {
+                                                             'Changed' => '0.9',
+                                                             'Path' => 'package_diff/dropwizard-kafka/1.3.12-2/1.3.12-3/report.html'
+                                                           }
+                                           },
+                             '1.3.12-3' => {
+                                             '1.3.13-1' => {
+                                                             'Changed' => '1.6',
+                                                             'Path' => 'package_diff/dropwizard-kafka/1.3.12-3/1.3.13-1/report.html'
+                                                           }
+                                           },
+                             '1.3.13-1' => {
+                                             '1.3.13-2' => {
+                                                             'Changed' => '0.5',
+                                                             'Path' => 'package_diff/dropwizard-kafka/1.3.13-1/1.3.13-2/report.html'
+                                                           }
+                                           },
+                             '1.3.13-2' => {
+                                             '1.3.14-1' => {
+                                                             'Changed' => '2.7',
+                                                             'Path' => 'package_diff/dropwizard-kafka/1.3.13-2/1.3.14-1/report.html'
+                                                           }
+                                           },
+                             '1.3.14-1' => {
+                                             '1.3.14-2' => {
+                                                             'Changed' => '7.7',
+                                                             'Path' => 'package_diff/dropwizard-kafka/1.3.14-1/1.3.14-2/report.html'
+                                                           }
+                                           },
+                             '1.3.14-2' => {
+                                             '1.3.15-1' => {
+                                                             'Changed' => '0.2',
+                                                             'Path' => 'package_diff/dropwizard-kafka/1.3.14-2/1.3.15-1/report.html'
+                                                           }
+                                           },
+                             '1.3.15-1' => {
+                                             '1.5.0' => {
+                                                          'Changed' => '2.3',
+                                                          'Path' => 'package_diff/dropwizard-kafka/1.3.15-1/1.5.0/report.html'
+                                                        }
+                                           },
+                             '1.5.0' => {
+                                          '1.6.0' => {
+                                                       'Changed' => '4.2',
+                                                       'Path' => 'package_diff/dropwizard-kafka/1.5.0/1.6.0/report.html'
+                                                     }
+                                        },
+                             '1.6.0' => {
+                                          '1.6.1' => {
+                                                       'Changed' => '2',
+                                                       'Path' => 'package_diff/dropwizard-kafka/1.6.0/1.6.1/report.html'
+                                                     }
+                                        },
+                             '1.6.1' => {
+                                          '1.6.2' => {
+                                                       'Changed' => '0.2',
+                                                       'Path' => 'package_diff/dropwizard-kafka/1.6.1/1.6.2/report.html'
+                                                     }
+                                        },
+                             '1.6.2' => {
+                                          '1.7.0' => {
+                                                       'Changed' => '0.1',
+                                                       'Path' => 'package_diff/dropwizard-kafka/1.6.2/1.7.0/report.html'
+                                                     }
+                                        },
+                             '1.7.0' => {
+                                          '1.7.1' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/dropwizard-kafka/1.7.0/1.7.1/report.html'
+                                                     }
+                                        },
+                             '1.7.1' => {
+                                          '1.7.2' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/dropwizard-kafka/1.7.1/1.7.2/report.html'
+                                                     }
+                                        },
+                             '1.7.2' => {
+                                          '1.8.0' => {
+                                                       'Changed' => '0.1',
+                                                       'Path' => 'package_diff/dropwizard-kafka/1.7.2/1.8.0/report.html'
+                                                     }
+                                        },
+                             '1.8.0' => {
+                                          '1.8.1' => {
+                                                       'Changed' => '0.2',
+                                                       'Path' => 'package_diff/dropwizard-kafka/1.8.0/1.8.1/report.html'
+                                                     }
+                                        },
+                             '1.8.1' => {
+                                          '1.8.3' => {
+                                                       'Changed' => '2.9',
+                                                       'Path' => 'package_diff/dropwizard-kafka/1.8.1/1.8.3/report.html'
+                                                     }
+                                        },
+                             '1.8.3' => {
+                                          '1.8.4' => {
+                                                       'Changed' => '0.5',
+                                                       'Path' => 'package_diff/dropwizard-kafka/1.8.3/1.8.4/report.html'
+                                                     }
+                                        },
+                             '1.8.4' => {
+                                          '3.0.0' => {
+                                                       'Changed' => '5.5',
+                                                       'Path' => 'package_diff/dropwizard-kafka/1.8.4/3.0.0/report.html'
+                                                     }
+                                        },
+                             '3.0.0' => {
+                                          '3.0.1' => {
+                                                       'Changed' => '2.8',
+                                                       'Path' => 'package_diff/dropwizard-kafka/3.0.0/3.0.1/report.html'
+                                                     }
+                                        },
+                             '3.0.1' => {
+                                          '3.0.2' => {
+                                                       'Changed' => '0.5',
+                                                       'Path' => 'package_diff/dropwizard-kafka/3.0.1/3.0.2/report.html'
+                                                     }
+                                        },
+                             '3.0.2' => {
+                                          '3.0.3' => {
+                                                       'Changed' => '0.2',
+                                                       'Path' => 'package_diff/dropwizard-kafka/3.0.2/3.0.3/report.html'
+                                                     },
+                                          '4.0.0' => {
+                                                       'Changed' => '2.8',
+                                                       'Path' => 'package_diff/dropwizard-kafka/3.0.2/4.0.0/report.html'
+                                                     }
+                                        },
+                             '3.0.3' => {
+                                          '4.0.0' => {
+                                                       'Changed' => '2.9',
+                                                       'Path' => 'package_diff/dropwizard-kafka/3.0.3/4.0.0/report.html'
+                                                     }
+                                        },
+                             '4.0.0' => {
+                                          '4.0.1' => {
+                                                       'Changed' => '2.9',
+                                                       'Path' => 'package_diff/dropwizard-kafka/4.0.0/4.0.1/report.html'
+                                                     }
+                                        },
+                             '4.0.1' => {
+                                          '4.0.2' => {
+                                                       'Changed' => '0.5',
+                                                       'Path' => 'package_diff/dropwizard-kafka/4.0.1/4.0.2/report.html'
+                                                     }
+                                        },
+                             '4.0.2' => {
+                                          '4.0.3' => {
+                                                       'Changed' => '0.2',
+                                                       'Path' => 'package_diff/dropwizard-kafka/4.0.2/4.0.3/report.html'
+                                                     }
+                                        },
+                             '4.0.3' => {
+                                          '5.0.0' => {
+                                                       'Changed' => '0.1',
+                                                       'Path' => 'package_diff/dropwizard-kafka/4.0.3/5.0.0/report.html'
+                                                     }
+                                        }
+                           },
+          'Title' => 'Dropwizard Kafka'
+        };

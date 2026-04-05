@@ -1,0 +1,11 @@
+{
+  "Affected": "12.2",
+  "Added": 5,
+  "Removed": 5,
+  "TotalProblems": 0,
+  "Source_Affected": "12.2",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/dropwizard-configuration/3.0.16/4.0.0/3c57a/src_compat_report.html",
+  "Archive1": "dropwizard-configuration-3.0.16.jar",
+  "Archive2": "dropwizard-configuration-4.0.0.jar"
+}

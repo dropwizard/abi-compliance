@@ -1,0 +1,962 @@
+<!-- kind:source;verdict:incompatible;affected:100;added:36;removed:40;type_problems_high:8;type_problems_medium:0;type_problems_low:0;method_problems_high:0;method_problems_medium:0;method_problems_low:0;checked_methods:76;checked_types:16;tool_version:2.4 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="metrics-servlets, source, compatibility" />
+<meta name="description" content="Source compatibility report for the metrics-servlets library between 4.2.38 and 5.0.0 versions" />
+<title>metrics-servlets: 4.2.38 to 5.0.0 source compatibility report</title>
+<style type="text/css">
+body {
+    font-family:Arial, sans-serif;
+    background-color:White;
+    color:Black;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+    white-space:nowrap;
+}
+div.symbols {
+    color:#003E69;
+}
+div.symbols i {
+    color:Brown;
+}
+span.section {
+    font-weight:bold;
+    cursor:pointer;
+    color:#003E69;
+    white-space:nowrap;
+    margin-left:0.3125em;
+}
+span:hover.section {
+    color:#336699;
+}
+span.sect_aff {
+    cursor:pointer;
+    padding-left:1.55em;
+    font-size:0.875em;
+    color:#cc3300;
+}
+span.ext {
+    font-weight:normal;
+}
+span.jar {
+    color:#cc3300;
+    font-size:0.875em;
+    font-weight:bold;
+}
+div.jar_list {
+    padding-left:0.4em;
+    font-size:0.94em;
+}
+span.pkg_t {
+    color:#408080;
+    font-size:0.875em;
+}
+span.pkg {
+    color:#408080;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.cname {
+    color:Green;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.iname_b {
+    font-weight:bold;
+}
+span.iname_a {
+    color:#333333;
+    font-weight:bold;
+    font-size:0.94em;
+}
+span.sym_p {
+    font-weight:normal;
+    white-space:normal;
+}
+span.sym_pd {
+    white-space:normal;
+}
+span.sym_p span, span.sym_pd span {
+    white-space:nowrap;
+}
+span.attr {
+    color:Black;
+    font-weight:normal;
+}
+span.deprecated {
+    color:Red;
+    font-weight:bold;
+    font-family:Monaco, monospace;
+}
+div.affect {
+    padding-left:1em;
+    padding-bottom:10px;
+    font-size:0.87em;
+    font-style:italic;
+    line-height:0.9em;
+}
+div.affected {
+    padding-left:2em;
+    padding-top:10px;
+}
+table.ptable {
+    border-collapse:collapse;
+    border:1px outset black;
+    margin-left:0.95em;
+    margin-top:3px;
+    margin-bottom:3px;
+    width:56.25em;
+}
+table.ptable td {
+    border:1px solid Gray;
+    padding:3px;
+    font-size:0.875em;
+    text-align:left;
+    vertical-align:top;
+    max-width:28em;
+    word-wrap:break-word;
+}
+table.ptable th {
+    background-color:#eeeeee;
+    font-weight:bold;
+    color:#333333;
+    font-family:Verdana, Arial;
+    font-size:0.875em;
+    border:1px solid Gray;
+    text-align:center;
+    vertical-align:top;
+    white-space:nowrap;
+    padding:3px;
+}
+table.summary {
+    border-collapse:collapse;
+    border:1px outset black;
+}
+table.summary th {
+    background-color:#eeeeee;
+    font-weight:normal;
+    text-align:left;
+    font-size:0.94em;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px;
+}
+table.summary td {
+    text-align:right;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px 5px 3px 10px;
+}
+span.mngl {
+    padding-left:1em;
+    font-size:0.875em;
+    cursor:text;
+    color:#444444;
+    font-weight:bold;
+}
+span.pleft {
+    padding-left:2.5em;
+}
+span.color_p {
+    font-style:italic;
+    color:Brown;
+}
+span.param {
+    font-style:italic;
+}
+span.focus_p {
+    font-style:italic;
+    background-color:#DCDCDC;
+}
+span.ttype {
+    font-weight:normal;
+}
+span.nowrap {
+    white-space:nowrap;
+}
+span.value {
+    white-space:nowrap;
+    font-weight:bold;
+}
+.passed {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.warning {
+    background-color:#F4F4AF;
+    font-weight:normal;
+}
+.failed {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.new {
+    background-color:#C6DEFF;
+    font-weight:normal;
+}
+
+.compatible {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.almost_compatible {
+    background-color:#FFDAA3;
+    font-weight:normal;
+}
+.incompatible {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.gray {
+    background-color:#DCDCDC;
+    font-weight:normal;
+}
+
+.top_ref {
+    font-size:0.69em;
+}
+.footer {
+    font-size:0.8125em;
+}
+
+</style>
+<script type="text/javascript" language="JavaScript">
+<!--
+function sC(header, id)
+{
+    e = document.getElementById(id);
+    if(e.style.display == 'none')
+    {
+        e.style.display = 'block';
+        e.style.visibility = 'visible';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[&minus;]");
+    }
+    else
+    {
+        e.style.display = 'none';
+        e.style.visibility = 'hidden';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[+]");
+    }
+}
+
+-->
+</script>
+</head>
+<body><a name='Top'></a><h1>Source compatibility report for the <span style='color:Blue;'>metrics-servlets</span> library between <span style='color:Red;'>4.2.38</span> and <span style='color:Red;'>5.0.0</span> versions</h1>
+
+<h2>Test Info</h2><hr/>
+<table class='summary'>
+<tr><th>Library Name</th><td>metrics-servlets</td></tr>
+<tr><th>Version #1</th><td>4.2.38</td></tr>
+<tr><th>Version #2</th><td>5.0.0</td></tr>
+</table>
+<h2>Test Results</h2><hr/>
+<table class='summary'>
+<tr><th>Total Java Modules</th><td><a href='#Checked_Archives' style='color:Blue;'>1</a></td></tr>
+<tr><th>Total Methods / Classes</th><td>76 / 16</td></tr>
+<tr><th>Compatibility</th>
+<td class='incompatible'>0%</td>
+</tr>
+</table>
+<h2>Problem Summary</h2><hr/>
+<table class='summary'>
+<tr><th></th><th style='text-align:center;'>Severity</th><th style='text-align:center;'>Count</th></tr>
+<tr><th>Added Methods</th><td>-</td><td class='new'><a href='#Added' style='color:Blue;'>36</a></td></tr>
+<tr><th>Removed Methods</th><td>High</td><td class='failed'><a href='#Removed' style='color:Blue;'>40</a></td></tr>
+<tr><th rowspan='3'>Problems with<br/>Data Types</th><td>High</td><td class='failed'><a href='#Type_Problems_High' style='color:Blue;'>8</a></td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+<tr><th rowspan='3'>Problems with<br/>Methods</th><td>High</td><td>0</td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+</table>
+
+<a name='Added'></a><h2>Added Methods <span class='new'>&nbsp;36&nbsp;</span></h2><hr/>
+<span class='jar'>metrics-servlets-5.0.0.jar</span>, <span class='cname'>AdminServlet.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.servlets</span><br/>
+<span class="section" onclick="sC(this, 'c_93')">
+AdminServlet.AdminServlet&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_93" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/AdminServlet.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_94')">
+AdminServlet.doGet&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>req</span></span>, <span>HttpServletResponse <span class='color_p'>resp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_94" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/AdminServlet.doGet:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_95')">
+AdminServlet.init&#160;<span class='sym_p'><span>(&#160;ServletConfig <span class='color_p'>config</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_95" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/AdminServlet.init:(Ljavax/servlet/ServletConfig;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_96')">
+AdminServlet.service&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>req</span></span>, <span>HttpServletResponse <span class='color_p'>resp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_96" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/AdminServlet.service:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-servlets-5.0.0.jar</span>, <span class='cname'>ContextListener.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.servlets</span><br/>
+<span class="section" onclick="sC(this, 'c_97')">
+HealthCheckServlet.ContextListener.contextDestroyed&#160;<span class='sym_p'><span>(&#160;ServletContextEvent <span class='color_p'>event</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_97" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/HealthCheckServlet.ContextListener.contextDestroyed:(Ljavax/servlet/ServletContextEvent;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_98')">
+HealthCheckServlet.ContextListener.contextInitialized&#160;<span class='sym_p'><span>(&#160;ServletContextEvent <span class='color_p'>event</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_98" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/HealthCheckServlet.ContextListener.contextInitialized:(Ljavax/servlet/ServletContextEvent;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_99')">
+HealthCheckServlet.ContextListener.getExecutorService&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ExecutorService</span></span>
+<br/>
+<div id="c_99" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/HealthCheckServlet.ContextListener.getExecutorService:()Ljava/util/concurrent/ExecutorService;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_100')">
+HealthCheckServlet.ContextListener.getHealthCheckFilter&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheckFilter</span></span>
+<br/>
+<div id="c_100" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/HealthCheckServlet.ContextListener.getHealthCheckFilter:()Lio/dropwizard/metrics5/health/HealthCheckFilter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_101')">
+HealthCheckServlet.ContextListener.getHealthCheckRegistry&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheckRegistry</span></span>
+<br/>
+<div id="c_101" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/HealthCheckServlet.ContextListener.getHealthCheckRegistry:()Lio/dropwizard/metrics5/health/HealthCheckRegistry;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_102')">
+HealthCheckServlet.ContextListener.HealthCheckServlet.ContextListener&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_102" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/HealthCheckServlet.ContextListener.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_103')">
+MetricsServlet.ContextListener.contextDestroyed&#160;<span class='sym_p'><span>(&#160;ServletContextEvent <span class='color_p'>event</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_103" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/MetricsServlet.ContextListener.contextDestroyed:(Ljavax/servlet/ServletContextEvent;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_104')">
+MetricsServlet.ContextListener.contextInitialized&#160;<span class='sym_p'><span>(&#160;ServletContextEvent <span class='color_p'>event</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_104" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/MetricsServlet.ContextListener.contextInitialized:(Ljavax/servlet/ServletContextEvent;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_105')">
+MetricsServlet.ContextListener.getAllowedOrigin&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_105" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/MetricsServlet.ContextListener.getAllowedOrigin:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_106')">
+MetricsServlet.ContextListener.getDurationUnit&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;TimeUnit</span></span>
+<br/>
+<div id="c_106" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/MetricsServlet.ContextListener.getDurationUnit:()Ljava/util/concurrent/TimeUnit;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_107')">
+MetricsServlet.ContextListener.getJsonpCallbackParameter&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_107" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/MetricsServlet.ContextListener.getJsonpCallbackParameter:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_108')">
+MetricsServlet.ContextListener.getMetricFilter&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;MetricFilter</span></span>
+<br/>
+<div id="c_108" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/MetricsServlet.ContextListener.getMetricFilter:()Lio/dropwizard/metrics5/MetricFilter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_109')">
+MetricsServlet.ContextListener.getMetricRegistry&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;MetricRegistry</span></span>
+<br/>
+<div id="c_109" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/MetricsServlet.ContextListener.getMetricRegistry:()Lio/dropwizard/metrics5/MetricRegistry;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_110')">
+MetricsServlet.ContextListener.getRateUnit&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;TimeUnit</span></span>
+<br/>
+<div id="c_110" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/MetricsServlet.ContextListener.getRateUnit:()Ljava/util/concurrent/TimeUnit;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_111')">
+MetricsServlet.ContextListener.MetricsServlet.ContextListener&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_111" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/MetricsServlet.ContextListener.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-servlets-5.0.0.jar</span>, <span class='cname'>CpuProfileServlet.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.servlets</span><br/>
+<span class="section" onclick="sC(this, 'c_112')">
+CpuProfileServlet.CpuProfileServlet&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_112" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/CpuProfileServlet.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_113')">
+CpuProfileServlet.doGet&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>req</span></span>, <span>HttpServletResponse <span class='color_p'>resp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_113" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/CpuProfileServlet.doGet:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_114')">
+CpuProfileServlet.doProfile&#160;<span class='sym_p'><span>(&#160;OutputStream <span class='color_p'>out</span></span>, <span>int <span class='color_p'>duration</span></span>, <span>int <span class='color_p'>frequency</span></span>, <span>Thread.State <span class='color_p'>state</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_114" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/CpuProfileServlet.doProfile:(Ljava/io/OutputStream;IILjava/lang/Thread$State;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-servlets-5.0.0.jar</span>, <span class='cname'>HealthCheckServlet.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.servlets</span><br/>
+<span class="section" onclick="sC(this, 'c_115')">
+HealthCheckServlet.destroy&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_115" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/HealthCheckServlet.destroy:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_116')">
+HealthCheckServlet.doGet&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>req</span></span>, <span>HttpServletResponse <span class='color_p'>resp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_116" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/HealthCheckServlet.doGet:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_117')">
+HealthCheckServlet.HealthCheckServlet&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_117" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/HealthCheckServlet.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_118')">
+HealthCheckServlet.HealthCheckServlet&#160;<span class='sym_p'><span>(&#160;HealthCheckRegistry <span class='color_p'>registry</span></span>&#160;)</span></span>
+<br/>
+<div id="c_118" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/HealthCheckServlet.&quot;&lt;init&gt;&quot;:(Lio/dropwizard/metrics5/health/HealthCheckRegistry;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_119')">
+HealthCheckServlet.init&#160;<span class='sym_p'><span>(&#160;ServletConfig <span class='color_p'>config</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_119" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/HealthCheckServlet.init:(Ljavax/servlet/ServletConfig;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-servlets-5.0.0.jar</span>, <span class='cname'>MetricsServlet.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.servlets</span><br/>
+<span class="section" onclick="sC(this, 'c_120')">
+MetricsServlet.doGet&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>req</span></span>, <span>HttpServletResponse <span class='color_p'>resp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_120" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/MetricsServlet.doGet:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_121')">
+MetricsServlet.init&#160;<span class='sym_p'><span>(&#160;ServletConfig <span class='color_p'>config</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_121" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/MetricsServlet.init:(Ljavax/servlet/ServletConfig;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_122')">
+MetricsServlet.MetricsServlet&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_122" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/MetricsServlet.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_123')">
+MetricsServlet.MetricsServlet&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>registry</span></span>&#160;)</span></span>
+<br/>
+<div id="c_123" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/MetricsServlet.&quot;&lt;init&gt;&quot;:(Lio/dropwizard/metrics5/MetricRegistry;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-servlets-5.0.0.jar</span>, <span class='cname'>PingServlet.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.servlets</span><br/>
+<span class="section" onclick="sC(this, 'c_124')">
+PingServlet.doGet&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>req</span></span>, <span>HttpServletResponse <span class='color_p'>resp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_124" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/PingServlet.doGet:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_125')">
+PingServlet.PingServlet&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_125" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/PingServlet.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-servlets-5.0.0.jar</span>, <span class='cname'>ThreadDumpServlet.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.servlets</span><br/>
+<span class="section" onclick="sC(this, 'c_126')">
+ThreadDumpServlet.doGet&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>req</span></span>, <span>HttpServletResponse <span class='color_p'>resp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_126" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/ThreadDumpServlet.doGet:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_127')">
+ThreadDumpServlet.init&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_127" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/ThreadDumpServlet.init:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_128')">
+ThreadDumpServlet.ThreadDumpServlet&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_128" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/servlets/ThreadDumpServlet.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Removed'></a><a name='Withdrawn'></a><h2>Removed Methods <span class='failed'>&nbsp;40&nbsp;</span></h2><hr/>
+<span class='jar'>metrics-servlets-4.2.38.jar</span>, <span class='cname'>AdminServlet.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.servlets</span><br/>
+<span class="section" onclick="sC(this, 'c_129')">
+AdminServlet.AdminServlet&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_129" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/AdminServlet.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_130')">
+AdminServlet.doGet&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>req</span></span>, <span>HttpServletResponse <span class='color_p'>resp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_130" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/AdminServlet.doGet:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_131')">
+AdminServlet.init&#160;<span class='sym_p'><span>(&#160;ServletConfig <span class='color_p'>config</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_131" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/AdminServlet.init:(Ljavax/servlet/ServletConfig;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_132')">
+AdminServlet.service&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>req</span></span>, <span>HttpServletResponse <span class='color_p'>resp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_132" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/AdminServlet.service:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-servlets-4.2.38.jar</span>, <span class='cname'>ContextListener.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.servlets</span><br/>
+<span class="section" onclick="sC(this, 'c_133')">
+HealthCheckServlet.ContextListener.contextDestroyed&#160;<span class='sym_p'><span>(&#160;ServletContextEvent <span class='color_p'>event</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_133" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/HealthCheckServlet.ContextListener.contextDestroyed:(Ljavax/servlet/ServletContextEvent;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_134')">
+HealthCheckServlet.ContextListener.contextInitialized&#160;<span class='sym_p'><span>(&#160;ServletContextEvent <span class='color_p'>event</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_134" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/HealthCheckServlet.ContextListener.contextInitialized:(Ljavax/servlet/ServletContextEvent;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_135')">
+HealthCheckServlet.ContextListener.getExecutorService&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ExecutorService</span></span>
+<br/>
+<div id="c_135" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/HealthCheckServlet.ContextListener.getExecutorService:()Ljava/util/concurrent/ExecutorService;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_136')">
+HealthCheckServlet.ContextListener.getHealthCheckFilter&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheckFilter</span></span>
+<br/>
+<div id="c_136" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/HealthCheckServlet.ContextListener.getHealthCheckFilter:()Lcom/codahale/metrics/health/HealthCheckFilter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_137')">
+HealthCheckServlet.ContextListener.getHealthCheckRegistry&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheckRegistry</span></span>
+<br/>
+<div id="c_137" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/HealthCheckServlet.ContextListener.getHealthCheckRegistry:()Lcom/codahale/metrics/health/HealthCheckRegistry;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_138')">
+HealthCheckServlet.ContextListener.getObjectMapper&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ObjectMapper</span></span>
+<br/>
+<div id="c_138" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/HealthCheckServlet.ContextListener.getObjectMapper:()Lcom/fasterxml/jackson/databind/ObjectMapper;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_139')">
+HealthCheckServlet.ContextListener.HealthCheckServlet.ContextListener&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_139" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/HealthCheckServlet.ContextListener.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_140')">
+MetricsServlet.ContextListener.contextDestroyed&#160;<span class='sym_p'><span>(&#160;ServletContextEvent <span class='color_p'>event</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_140" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/MetricsServlet.ContextListener.contextDestroyed:(Ljavax/servlet/ServletContextEvent;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_141')">
+MetricsServlet.ContextListener.contextInitialized&#160;<span class='sym_p'><span>(&#160;ServletContextEvent <span class='color_p'>event</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_141" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/MetricsServlet.ContextListener.contextInitialized:(Ljavax/servlet/ServletContextEvent;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_142')">
+MetricsServlet.ContextListener.getAllowedOrigin&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_142" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/MetricsServlet.ContextListener.getAllowedOrigin:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_143')">
+MetricsServlet.ContextListener.getDurationUnit&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;TimeUnit</span></span>
+<br/>
+<div id="c_143" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/MetricsServlet.ContextListener.getDurationUnit:()Ljava/util/concurrent/TimeUnit;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_144')">
+MetricsServlet.ContextListener.getJsonpCallbackParameter&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_144" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/MetricsServlet.ContextListener.getJsonpCallbackParameter:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_145')">
+MetricsServlet.ContextListener.getMetricFilter&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;MetricFilter</span></span>
+<br/>
+<div id="c_145" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/MetricsServlet.ContextListener.getMetricFilter:()Lcom/codahale/metrics/MetricFilter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_146')">
+MetricsServlet.ContextListener.getMetricRegistry&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;MetricRegistry</span></span>
+<br/>
+<div id="c_146" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/MetricsServlet.ContextListener.getMetricRegistry:()Lcom/codahale/metrics/MetricRegistry;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_147')">
+MetricsServlet.ContextListener.getRateUnit&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;TimeUnit</span></span>
+<br/>
+<div id="c_147" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/MetricsServlet.ContextListener.getRateUnit:()Ljava/util/concurrent/TimeUnit;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_148')">
+MetricsServlet.ContextListener.MetricsServlet.ContextListener&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_148" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/MetricsServlet.ContextListener.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-servlets-4.2.38.jar</span>, <span class='cname'>CpuProfileServlet.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.servlets</span><br/>
+<span class="section" onclick="sC(this, 'c_149')">
+CpuProfileServlet.CpuProfileServlet&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_149" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/CpuProfileServlet.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_150')">
+CpuProfileServlet.doGet&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>req</span></span>, <span>HttpServletResponse <span class='color_p'>resp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_150" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/CpuProfileServlet.doGet:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_151')">
+CpuProfileServlet.doProfile&#160;<span class='sym_p'><span>(&#160;OutputStream <span class='color_p'>out</span></span>, <span>int <span class='color_p'>duration</span></span>, <span>int <span class='color_p'>frequency</span></span>, <span>Thread.State <span class='color_p'>state</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_151" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/CpuProfileServlet.doProfile:(Ljava/io/OutputStream;IILjava/lang/Thread$State;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-servlets-4.2.38.jar</span>, <span class='cname'>HealthCheckServlet.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.servlets</span><br/>
+<span class="section" onclick="sC(this, 'c_152')">
+HealthCheckServlet.destroy&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_152" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/HealthCheckServlet.destroy:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_153')">
+HealthCheckServlet.doGet&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>req</span></span>, <span>HttpServletResponse <span class='color_p'>resp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_153" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/HealthCheckServlet.doGet:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_154')">
+HealthCheckServlet.HealthCheckServlet&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_154" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/HealthCheckServlet.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_155')">
+HealthCheckServlet.HealthCheckServlet&#160;<span class='sym_p'><span>(&#160;HealthCheckRegistry <span class='color_p'>registry</span></span>&#160;)</span></span>
+<br/>
+<div id="c_155" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/HealthCheckServlet.&quot;&lt;init&gt;&quot;:(Lcom/codahale/metrics/health/HealthCheckRegistry;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_156')">
+HealthCheckServlet.init&#160;<span class='sym_p'><span>(&#160;ServletConfig <span class='color_p'>config</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_156" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/HealthCheckServlet.init:(Ljavax/servlet/ServletConfig;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-servlets-4.2.38.jar</span>, <span class='cname'>MetricsServlet.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.servlets</span><br/>
+<span class="section" onclick="sC(this, 'c_157')">
+MetricsServlet.doGet&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>req</span></span>, <span>HttpServletResponse <span class='color_p'>resp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_157" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/MetricsServlet.doGet:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_158')">
+MetricsServlet.getWriter&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>request</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ObjectWriter</span></span>
+<br/>
+<div id="c_158" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/MetricsServlet.getWriter:(Ljavax/servlet/http/HttpServletRequest;)Lcom/fasterxml/jackson/databind/ObjectWriter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_159')">
+MetricsServlet.init&#160;<span class='sym_p'><span>(&#160;ServletConfig <span class='color_p'>config</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_159" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/MetricsServlet.init:(Ljavax/servlet/ServletConfig;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_160')">
+MetricsServlet.MetricsServlet&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_160" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/MetricsServlet.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_161')">
+MetricsServlet.MetricsServlet&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>registry</span></span>&#160;)</span></span>
+<br/>
+<div id="c_161" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/MetricsServlet.&quot;&lt;init&gt;&quot;:(Lcom/codahale/metrics/MetricRegistry;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_162')">
+MetricsServlet.parseTimeUnit&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>value</span></span>, <span>TimeUnit <span class='color_p'>defaultValue</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;TimeUnit</span></span>
+<br/>
+<div id="c_162" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/MetricsServlet.parseTimeUnit:(Ljava/lang/String;Ljava/util/concurrent/TimeUnit;)Ljava/util/concurrent/TimeUnit;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_163')">
+MetricsServlet.setupMetricsModule&#160;<span class='sym_p'><span>(&#160;ServletContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_163" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/MetricsServlet.setupMetricsModule:(Ljavax/servlet/ServletContext;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-servlets-4.2.38.jar</span>, <span class='cname'>PingServlet.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.servlets</span><br/>
+<span class="section" onclick="sC(this, 'c_164')">
+PingServlet.doGet&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>req</span></span>, <span>HttpServletResponse <span class='color_p'>resp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_164" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/PingServlet.doGet:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_165')">
+PingServlet.PingServlet&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_165" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/PingServlet.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-servlets-4.2.38.jar</span>, <span class='cname'>ThreadDumpServlet.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.servlets</span><br/>
+<span class="section" onclick="sC(this, 'c_166')">
+ThreadDumpServlet.doGet&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>req</span></span>, <span>HttpServletResponse <span class='color_p'>resp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_166" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/ThreadDumpServlet.doGet:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_167')">
+ThreadDumpServlet.init&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_167" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/ThreadDumpServlet.init:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_168')">
+ThreadDumpServlet.ThreadDumpServlet&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_168" style="display:none;">
+<span class='mngl'>com/codahale/metrics/servlets/ThreadDumpServlet.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='High_Risk_Problems'></a><a name='Type_Problems_High'></a>
+<h2>Problems with Data Types, High Severity <span class='failed'>&nbsp;8&nbsp;</span></h2><hr/>
+<span class='jar'>metrics-servlets-4.2.38.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.servlets</span><br/>
+<span class="section" onclick="sC(this, 'c_169')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> AdminServlet <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_169" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>AdminServlet</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_170')">
+[+] affected methods: 4 (5.3%)</span>
+<div id="c_170" style="display:none;">
+<div class='affected'><span class='iname_a'>AdminServlet.AdminServlet&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'AdminServlet' class.</div>
+<span class='iname_a'>AdminServlet.doGet&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <i>req</i></span>, <span>HttpServletResponse <i>resp</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'AdminServlet' class.</div>
+<span class='iname_a'>AdminServlet.init&#160;<span class='sym_p'><span>(&#160;ServletConfig <i>config</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'AdminServlet' class.</div>
+<span class='iname_a'>AdminServlet.service&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <i>req</i></span>, <span>HttpServletResponse <i>resp</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'AdminServlet' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_171')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> CpuProfileServlet <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_171" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>CpuProfileServlet</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_172')">
+[+] affected methods: 3 (3.9%)</span>
+<div id="c_172" style="display:none;">
+<div class='affected'><span class='iname_a'>CpuProfileServlet.CpuProfileServlet&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'CpuProfileServlet' class.</div>
+<span class='iname_a'>CpuProfileServlet.doGet&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <i>req</i></span>, <span>HttpServletResponse <i>resp</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'CpuProfileServlet' class.</div>
+<span class='iname_a'>CpuProfileServlet.doProfile&#160;<span class='sym_p'><span>(&#160;OutputStream <i>out</i></span>, <span>int <i>duration</i></span>, <span>int <i>frequency</i></span>, <span>Thread.State <i>state</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'CpuProfileServlet' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_173')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> HealthCheckServlet <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_173" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>HealthCheckServlet</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_174')">
+[+] affected methods: 5 (6.6%)</span>
+<div id="c_174" style="display:none;">
+<div class='affected'><span class='iname_a'>HealthCheckServlet.HealthCheckServlet&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'HealthCheckServlet' class.</div>
+<span class='iname_a'>HealthCheckServlet.HealthCheckServlet&#160;<span class='sym_p'><span>(&#160;HealthCheckRegistry <i>registry</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'HealthCheckServlet' class.</div>
+<span class='iname_a'>HealthCheckServlet.destroy&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'HealthCheckServlet' class.</div>
+<span class='iname_a'>HealthCheckServlet.doGet&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <i>req</i></span>, <span>HttpServletResponse <i>resp</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'HealthCheckServlet' class.</div>
+<span class='iname_a'>HealthCheckServlet.init&#160;<span class='sym_p'><span>(&#160;ServletConfig <i>config</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'HealthCheckServlet' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_175')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> HealthCheckServlet.ContextListener <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_175" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>HealthCheckServlet.ContextListener</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_176')">
+[+] affected methods: 7 (9.2%)</span>
+<div id="c_176" style="display:none;">
+<div class='affected'><span class='iname_a'>HealthCheckServlet.ContextListener.HealthCheckServlet.ContextListener&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'HealthCheckServlet.ContextListener' abstract class.</div>
+<span class='iname_a'>HealthCheckServlet.ContextListener.contextDestroyed&#160;<span class='sym_p'><span>(&#160;ServletContextEvent <i>event</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'HealthCheckServlet.ContextListener' abstract class.</div>
+<span class='iname_a'>HealthCheckServlet.ContextListener.contextInitialized&#160;<span class='sym_p'><span>(&#160;ServletContextEvent <i>event</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'HealthCheckServlet.ContextListener' abstract class.</div>
+<span class='iname_a'>HealthCheckServlet.ContextListener.getExecutorService&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'HealthCheckServlet.ContextListener' abstract class.</div>
+<span class='iname_a'>HealthCheckServlet.ContextListener.getHealthCheckFilter&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'HealthCheckServlet.ContextListener' abstract class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_177')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> MetricsServlet <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_177" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>MetricsServlet</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_178')">
+[+] affected methods: 7 (9.2%)</span>
+<div id="c_178" style="display:none;">
+<div class='affected'><span class='iname_a'>MetricsServlet.MetricsServlet&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'MetricsServlet' class.</div>
+<span class='iname_a'>MetricsServlet.MetricsServlet&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>registry</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'MetricsServlet' class.</div>
+<span class='iname_a'>MetricsServlet.doGet&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <i>req</i></span>, <span>HttpServletResponse <i>resp</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'MetricsServlet' class.</div>
+<span class='iname_a'>MetricsServlet.getWriter&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <i>request</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'MetricsServlet' class.</div>
+<span class='iname_a'>MetricsServlet.init&#160;<span class='sym_p'><span>(&#160;ServletConfig <i>config</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'MetricsServlet' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_179')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> MetricsServlet.ContextListener <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_179" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>MetricsServlet.ContextListener</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_180')">
+[+] affected methods: 9 (11.8%)</span>
+<div id="c_180" style="display:none;">
+<div class='affected'><span class='iname_a'>MetricsServlet.ContextListener.MetricsServlet.ContextListener&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'MetricsServlet.ContextListener' abstract class.</div>
+<span class='iname_a'>MetricsServlet.ContextListener.contextDestroyed&#160;<span class='sym_p'><span>(&#160;ServletContextEvent <i>event</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'MetricsServlet.ContextListener' abstract class.</div>
+<span class='iname_a'>MetricsServlet.ContextListener.contextInitialized&#160;<span class='sym_p'><span>(&#160;ServletContextEvent <i>event</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'MetricsServlet.ContextListener' abstract class.</div>
+<span class='iname_a'>MetricsServlet.ContextListener.getAllowedOrigin&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'MetricsServlet.ContextListener' abstract class.</div>
+<span class='iname_a'>MetricsServlet.ContextListener.getDurationUnit&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'MetricsServlet.ContextListener' abstract class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_181')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> PingServlet <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_181" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>PingServlet</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_182')">
+[+] affected methods: 2 (2.6%)</span>
+<div id="c_182" style="display:none;">
+<div class='affected'><span class='iname_a'>PingServlet.PingServlet&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'PingServlet' class.</div>
+<span class='iname_a'>PingServlet.doGet&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <i>req</i></span>, <span>HttpServletResponse <i>resp</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'PingServlet' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_183')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> ThreadDumpServlet <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_183" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>ThreadDumpServlet</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_184')">
+[+] affected methods: 3 (3.9%)</span>
+<div id="c_184" style="display:none;">
+<div class='affected'><span class='iname_a'>ThreadDumpServlet.ThreadDumpServlet&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'ThreadDumpServlet' class.</div>
+<span class='iname_a'>ThreadDumpServlet.doGet&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <i>req</i></span>, <span>HttpServletResponse <i>resp</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ThreadDumpServlet' class.</div>
+<span class='iname_a'>ThreadDumpServlet.init&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'ThreadDumpServlet' class.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Checked_Archives'></a><h2>Java Archives <span class='gray'>&nbsp;1&nbsp;</span></h2>
+<hr/><div class='jar_list'>
+metrics-servlets-4.2.38.jar<br/>
+</div><br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<br/><br/><br/>
+<hr/><div class='footer' align='right'><i>Generated by <a href='https://github.com/lvc/japi-compliance-checker'>Java API Compliance Checker</a> 2.4 &#160;</i></div><br/>
+</body></html>

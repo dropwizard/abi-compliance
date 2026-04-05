@@ -1,0 +1,11 @@
+{
+  "Affected": "30",
+  "Added": 20,
+  "Removed": 20,
+  "TotalProblems": 10,
+  "Source_Affected": "30",
+  "Source_TotalProblems": "12",
+  "Source_ReportPath": "compat_report/dropwizard-auth/3.0.16/4.0.0/581d7/src_compat_report.html",
+  "Archive1": "dropwizard-auth-3.0.16.jar",
+  "Archive2": "dropwizard-auth-4.0.0.jar"
+}

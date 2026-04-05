@@ -1,0 +1,562 @@
+<!-- kind:binary;verdict:incompatible;affected:28.3;added:10;removed:10;type_problems_high:3;type_problems_medium:0;type_problems_low:2;method_problems_high:0;method_problems_medium:0;method_problems_low:0;checked_methods:70;checked_types:14;tool_version:2.4 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="dropwizard-servlets, binary, compatibility" />
+<meta name="description" content="Binary compatibility report for the dropwizard-servlets library between 3.0.16 and 4.0.0 versions" />
+<title>dropwizard-servlets: 3.0.16 to 4.0.0 binary compatibility report</title>
+<style type="text/css">
+body {
+    font-family:Arial, sans-serif;
+    background-color:White;
+    color:Black;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+    white-space:nowrap;
+}
+div.symbols {
+    color:#003E69;
+}
+div.symbols i {
+    color:Brown;
+}
+span.section {
+    font-weight:bold;
+    cursor:pointer;
+    color:#003E69;
+    white-space:nowrap;
+    margin-left:0.3125em;
+}
+span:hover.section {
+    color:#336699;
+}
+span.sect_aff {
+    cursor:pointer;
+    padding-left:1.55em;
+    font-size:0.875em;
+    color:#cc3300;
+}
+span.ext {
+    font-weight:normal;
+}
+span.jar {
+    color:#cc3300;
+    font-size:0.875em;
+    font-weight:bold;
+}
+div.jar_list {
+    padding-left:0.4em;
+    font-size:0.94em;
+}
+span.pkg_t {
+    color:#408080;
+    font-size:0.875em;
+}
+span.pkg {
+    color:#408080;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.cname {
+    color:Green;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.iname_b {
+    font-weight:bold;
+}
+span.iname_a {
+    color:#333333;
+    font-weight:bold;
+    font-size:0.94em;
+}
+span.sym_p {
+    font-weight:normal;
+    white-space:normal;
+}
+span.sym_pd {
+    white-space:normal;
+}
+span.sym_p span, span.sym_pd span {
+    white-space:nowrap;
+}
+span.attr {
+    color:Black;
+    font-weight:normal;
+}
+span.deprecated {
+    color:Red;
+    font-weight:bold;
+    font-family:Monaco, monospace;
+}
+div.affect {
+    padding-left:1em;
+    padding-bottom:10px;
+    font-size:0.87em;
+    font-style:italic;
+    line-height:0.9em;
+}
+div.affected {
+    padding-left:2em;
+    padding-top:10px;
+}
+table.ptable {
+    border-collapse:collapse;
+    border:1px outset black;
+    margin-left:0.95em;
+    margin-top:3px;
+    margin-bottom:3px;
+    width:56.25em;
+}
+table.ptable td {
+    border:1px solid Gray;
+    padding:3px;
+    font-size:0.875em;
+    text-align:left;
+    vertical-align:top;
+    max-width:28em;
+    word-wrap:break-word;
+}
+table.ptable th {
+    background-color:#eeeeee;
+    font-weight:bold;
+    color:#333333;
+    font-family:Verdana, Arial;
+    font-size:0.875em;
+    border:1px solid Gray;
+    text-align:center;
+    vertical-align:top;
+    white-space:nowrap;
+    padding:3px;
+}
+table.summary {
+    border-collapse:collapse;
+    border:1px outset black;
+}
+table.summary th {
+    background-color:#eeeeee;
+    font-weight:normal;
+    text-align:left;
+    font-size:0.94em;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px;
+}
+table.summary td {
+    text-align:right;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px 5px 3px 10px;
+}
+span.mngl {
+    padding-left:1em;
+    font-size:0.875em;
+    cursor:text;
+    color:#444444;
+    font-weight:bold;
+}
+span.pleft {
+    padding-left:2.5em;
+}
+span.color_p {
+    font-style:italic;
+    color:Brown;
+}
+span.param {
+    font-style:italic;
+}
+span.focus_p {
+    font-style:italic;
+    background-color:#DCDCDC;
+}
+span.ttype {
+    font-weight:normal;
+}
+span.nowrap {
+    white-space:nowrap;
+}
+span.value {
+    white-space:nowrap;
+    font-weight:bold;
+}
+.passed {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.warning {
+    background-color:#F4F4AF;
+    font-weight:normal;
+}
+.failed {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.new {
+    background-color:#C6DEFF;
+    font-weight:normal;
+}
+
+.compatible {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.almost_compatible {
+    background-color:#FFDAA3;
+    font-weight:normal;
+}
+.incompatible {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.gray {
+    background-color:#DCDCDC;
+    font-weight:normal;
+}
+
+.top_ref {
+    font-size:0.69em;
+}
+.footer {
+    font-size:0.8125em;
+}
+
+</style>
+<script type="text/javascript" language="JavaScript">
+<!--
+function sC(header, id)
+{
+    e = document.getElementById(id);
+    if(e.style.display == 'none')
+    {
+        e.style.display = 'block';
+        e.style.visibility = 'visible';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[&minus;]");
+    }
+    else
+    {
+        e.style.display = 'none';
+        e.style.visibility = 'hidden';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[+]");
+    }
+}
+
+-->
+</script>
+</head>
+<body><a name='Top'></a><h1>Binary compatibility report for the <span style='color:Blue;'>dropwizard-servlets</span> library between <span style='color:Red;'>3.0.16</span> and <span style='color:Red;'>4.0.0</span> versions</h1>
+
+<h2>Test Info</h2><hr/>
+<table class='summary'>
+<tr><th>Library Name</th><td>dropwizard-servlets</td></tr>
+<tr><th>Version #1</th><td>3.0.16</td></tr>
+<tr><th>Version #2</th><td>4.0.0</td></tr>
+</table>
+<h2>Test Results</h2><hr/>
+<table class='summary'>
+<tr><th>Total Java Modules</th><td><a href='#Checked_Archives' style='color:Blue;'>1</a></td></tr>
+<tr><th>Total Methods / Classes</th><td>70 / 14</td></tr>
+<tr><th>Compatibility</th>
+<td class='incompatible'>71.7%</td>
+</tr>
+</table>
+<h2>Problem Summary</h2><hr/>
+<table class='summary'>
+<tr><th></th><th style='text-align:center;'>Severity</th><th style='text-align:center;'>Count</th></tr>
+<tr><th>Added Methods</th><td>-</td><td class='new'><a href='#Added' style='color:Blue;'>10</a></td></tr>
+<tr><th>Removed Methods</th><td>High</td><td class='failed'><a href='#Removed' style='color:Blue;'>10</a></td></tr>
+<tr><th rowspan='3'>Problems with<br/>Data Types</th><td>High</td><td class='failed'><a href='#Type_Problems_High' style='color:Blue;'>3</a></td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td class='warning'><a href='#Type_Problems_Low' style='color:Blue;'>2</a></td></tr>
+<tr><th rowspan='3'>Problems with<br/>Methods</th><td>High</td><td>0</td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+</table>
+
+<a name='Added'></a><h2>Added Methods <span class='new'>&nbsp;10&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-servlets-4.0.0.jar</span>, <span class='cname'>AssetServlet.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.servlets.assets</span><br/>
+<span class="section" onclick="sC(this, 'c_1')">
+AssetServlet.doGet&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>req</span></span>, <span>HttpServletResponse <span class='color_p'>resp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_1" style="display:none;">
+<span class='mngl'>io/dropwizard/servlets/assets/AssetServlet.doGet:(Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-servlets-4.0.0.jar</span>, <span class='cname'>CacheBustingFilter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.servlets</span><br/>
+<span class="section" onclick="sC(this, 'c_2')">
+CacheBustingFilter.doFilter&#160;<span class='sym_p'><span>(&#160;ServletRequest <span class='color_p'>request</span></span>, <span>ServletResponse <span class='color_p'>response</span></span>, <span>FilterChain <span class='color_p'>chain</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_2" style="display:none;">
+<span class='mngl'>io/dropwizard/servlets/CacheBustingFilter.doFilter:(Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;Ljakarta/servlet/FilterChain;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_3')">
+CacheBustingFilter.init&#160;<span class='sym_p'><span>(&#160;FilterConfig <span class='color_p'>filterConfig</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_3" style="display:none;">
+<span class='mngl'>io/dropwizard/servlets/CacheBustingFilter.init:(Ljakarta/servlet/FilterConfig;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-servlets-4.0.0.jar</span>, <span class='cname'>Servlets.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.servlets</span><br/>
+<span class="section" onclick="sC(this, 'c_4')">
+Servlets.getFullUrl&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>request</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_4" style="display:none;">
+<span class='mngl'>io/dropwizard/servlets/Servlets.getFullUrl:(Ljakarta/servlet/http/HttpServletRequest;)Ljava/lang/String;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-servlets-4.0.0.jar</span>, <span class='cname'>SlowRequestFilter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.servlets</span><br/>
+<span class="section" onclick="sC(this, 'c_5')">
+SlowRequestFilter.doFilter&#160;<span class='sym_p'><span>(&#160;ServletRequest <span class='color_p'>request</span></span>, <span>ServletResponse <span class='color_p'>response</span></span>, <span>FilterChain <span class='color_p'>chain</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_5" style="display:none;">
+<span class='mngl'>io/dropwizard/servlets/SlowRequestFilter.doFilter:(Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;Ljakarta/servlet/FilterChain;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_6')">
+SlowRequestFilter.init&#160;<span class='sym_p'><span>(&#160;FilterConfig <span class='color_p'>filterConfig</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_6" style="display:none;">
+<span class='mngl'>io/dropwizard/servlets/SlowRequestFilter.init:(Ljakarta/servlet/FilterConfig;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-servlets-4.0.0.jar</span>, <span class='cname'>TaskServlet.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.servlets.tasks</span><br/>
+<span class="section" onclick="sC(this, 'c_7')">
+TaskServlet.doGet&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>req</span></span>, <span>HttpServletResponse <span class='color_p'>resp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_7" style="display:none;">
+<span class='mngl'>io/dropwizard/servlets/tasks/TaskServlet.doGet:(Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_8')">
+TaskServlet.doPost&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>req</span></span>, <span>HttpServletResponse <span class='color_p'>resp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_8" style="display:none;">
+<span class='mngl'>io/dropwizard/servlets/tasks/TaskServlet.doPost:(Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-servlets-4.0.0.jar</span>, <span class='cname'>ThreadNameFilter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.servlets</span><br/>
+<span class="section" onclick="sC(this, 'c_9')">
+ThreadNameFilter.doFilter&#160;<span class='sym_p'><span>(&#160;ServletRequest <span class='color_p'>request</span></span>, <span>ServletResponse <span class='color_p'>response</span></span>, <span>FilterChain <span class='color_p'>chain</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_9" style="display:none;">
+<span class='mngl'>io/dropwizard/servlets/ThreadNameFilter.doFilter:(Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;Ljakarta/servlet/FilterChain;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_10')">
+ThreadNameFilter.init&#160;<span class='sym_p'><span>(&#160;FilterConfig <span class='color_p'>filterConfig</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_10" style="display:none;">
+<span class='mngl'>io/dropwizard/servlets/ThreadNameFilter.init:(Ljakarta/servlet/FilterConfig;)V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Removed'></a><a name='Withdrawn'></a><h2>Removed Methods <span class='failed'>&nbsp;10&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-servlets-3.0.16.jar</span>, <span class='cname'>AssetServlet.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.servlets.assets</span><br/>
+<span class="section" onclick="sC(this, 'c_11')">
+AssetServlet.doGet&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>req</span></span>, <span>HttpServletResponse <span class='color_p'>resp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_11" style="display:none;">
+<span class='mngl'>io/dropwizard/servlets/assets/AssetServlet.doGet:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-servlets-3.0.16.jar</span>, <span class='cname'>CacheBustingFilter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.servlets</span><br/>
+<span class="section" onclick="sC(this, 'c_12')">
+CacheBustingFilter.doFilter&#160;<span class='sym_p'><span>(&#160;ServletRequest <span class='color_p'>request</span></span>, <span>ServletResponse <span class='color_p'>response</span></span>, <span>FilterChain <span class='color_p'>chain</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_12" style="display:none;">
+<span class='mngl'>io/dropwizard/servlets/CacheBustingFilter.doFilter:(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljavax/servlet/FilterChain;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_13')">
+CacheBustingFilter.init&#160;<span class='sym_p'><span>(&#160;FilterConfig <span class='color_p'>filterConfig</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_13" style="display:none;">
+<span class='mngl'>io/dropwizard/servlets/CacheBustingFilter.init:(Ljavax/servlet/FilterConfig;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-servlets-3.0.16.jar</span>, <span class='cname'>Servlets.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.servlets</span><br/>
+<span class="section" onclick="sC(this, 'c_14')">
+Servlets.getFullUrl&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>request</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_14" style="display:none;">
+<span class='mngl'>io/dropwizard/servlets/Servlets.getFullUrl:(Ljavax/servlet/http/HttpServletRequest;)Ljava/lang/String;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-servlets-3.0.16.jar</span>, <span class='cname'>SlowRequestFilter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.servlets</span><br/>
+<span class="section" onclick="sC(this, 'c_15')">
+SlowRequestFilter.doFilter&#160;<span class='sym_p'><span>(&#160;ServletRequest <span class='color_p'>request</span></span>, <span>ServletResponse <span class='color_p'>response</span></span>, <span>FilterChain <span class='color_p'>chain</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_15" style="display:none;">
+<span class='mngl'>io/dropwizard/servlets/SlowRequestFilter.doFilter:(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljavax/servlet/FilterChain;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_16')">
+SlowRequestFilter.init&#160;<span class='sym_p'><span>(&#160;FilterConfig <span class='color_p'>filterConfig</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_16" style="display:none;">
+<span class='mngl'>io/dropwizard/servlets/SlowRequestFilter.init:(Ljavax/servlet/FilterConfig;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-servlets-3.0.16.jar</span>, <span class='cname'>TaskServlet.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.servlets.tasks</span><br/>
+<span class="section" onclick="sC(this, 'c_17')">
+TaskServlet.doGet&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>req</span></span>, <span>HttpServletResponse <span class='color_p'>resp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_17" style="display:none;">
+<span class='mngl'>io/dropwizard/servlets/tasks/TaskServlet.doGet:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_18')">
+TaskServlet.doPost&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>req</span></span>, <span>HttpServletResponse <span class='color_p'>resp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_18" style="display:none;">
+<span class='mngl'>io/dropwizard/servlets/tasks/TaskServlet.doPost:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-servlets-3.0.16.jar</span>, <span class='cname'>ThreadNameFilter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.servlets</span><br/>
+<span class="section" onclick="sC(this, 'c_19')">
+ThreadNameFilter.doFilter&#160;<span class='sym_p'><span>(&#160;ServletRequest <span class='color_p'>request</span></span>, <span>ServletResponse <span class='color_p'>response</span></span>, <span>FilterChain <span class='color_p'>chain</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_19" style="display:none;">
+<span class='mngl'>io/dropwizard/servlets/ThreadNameFilter.doFilter:(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljavax/servlet/FilterChain;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_20')">
+ThreadNameFilter.init&#160;<span class='sym_p'><span>(&#160;FilterConfig <span class='color_p'>filterConfig</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_20" style="display:none;">
+<span class='mngl'>io/dropwizard/servlets/ThreadNameFilter.init:(Ljavax/servlet/FilterConfig;)V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='High_Risk_Problems'></a><a name='Type_Problems_High'></a>
+<h2>Problems with Data Types, High Severity <span class='failed'>&nbsp;3&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-servlets-3.0.16.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.servlets</span><br/>
+<span class="section" onclick="sC(this, 'c_21')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> CacheBustingFilter <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_21" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Removed super-interface <b>javax.servlet.Filter</b>.</td>
+<td>A client program may be interrupted by <b>NoSuchMethodError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_22')">
+[+] affected methods: 2 (2.9%)</span>
+<div id="c_22" style="display:none;">
+<div class='affected'><span class='iname_a'>CacheBustingFilter.CacheBustingFilter&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'CacheBustingFilter' class.</div>
+<span class='iname_a'>CacheBustingFilter.destroy&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'CacheBustingFilter' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_23')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> SlowRequestFilter <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_23" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Removed super-interface <b>javax.servlet.Filter</b>.</td>
+<td>A client program may be interrupted by <b>NoSuchMethodError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_24')">
+[+] affected methods: 3 (4.3%)</span>
+<div id="c_24" style="display:none;">
+<div class='affected'><span class='iname_a'>SlowRequestFilter.SlowRequestFilter&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'SlowRequestFilter' class.</div>
+<span class='iname_a'>SlowRequestFilter.SlowRequestFilter&#160;<span class='sym_p'><span>(&#160;Duration <i>threshold</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'SlowRequestFilter' class.</div>
+<span class='iname_a'>SlowRequestFilter.destroy&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'SlowRequestFilter' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_25')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> ThreadNameFilter <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_25" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Removed super-interface <b>javax.servlet.Filter</b>.</td>
+<td>A client program may be interrupted by <b>NoSuchMethodError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_26')">
+[+] affected methods: 2 (2.9%)</span>
+<div id="c_26" style="display:none;">
+<div class='affected'><span class='iname_a'>ThreadNameFilter.ThreadNameFilter&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'ThreadNameFilter' class.</div>
+<span class='iname_a'>ThreadNameFilter.destroy&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'ThreadNameFilter' class.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Low_Risk_Problems'></a><a name='Type_Problems_Low'></a>
+<h2>Problems with Data Types, Low Severity <span class='warning'>&nbsp;2&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-servlets-3.0.16.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.servlets.assets</span><br/>
+<span class="section" onclick="sC(this, 'c_27')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> AssetServlet <span class='warning'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_27" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Superclass has been changed from <b>javax.servlet.http.HttpServlet</b> to <b>jakarta.servlet.http.HttpServlet</b>.</td>
+<td>1) Access of a client program to the fields or methods of the old super-class may be interrupted by <b>NoSuchFieldError</b> or <b>NoSuchMethodError</b> exceptions.<br/>2) A static field from a super-interface of a client class may hide a field (with the same name) inherited from new super-class and cause <b>IncompatibleClassChangeError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_28')">
+[+] affected methods: 9 (12.9%)</span>
+<div id="c_28" style="display:none;">
+<div class='affected'><span class='iname_a'>AssetServlet.AssetServlet&#160;<span class='sym_p'><span>(&#160;String <i>resourcePath</i></span>, <span>String <i>uriPath</i></span>, <span>String <i>indexFile</i></span>, <span>String <i>defaultMediaType</i></span>, <span>Charset <i>defaultCharset</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'AssetServlet' class.</div>
+<span class='iname_a'>AssetServlet.AssetServlet&#160;<span class='sym_p'><span>(&#160;String <i>resourcePath</i></span>, <span>String <i>uriPath</i></span>, <span>String <i>indexFile</i></span>, <span>Charset <i>defaultCharset</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'AssetServlet' class.</div>
+<span class='iname_a'>AssetServlet.getDefaultCharset&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'AssetServlet' class.</div>
+<span class='iname_a'>AssetServlet.getDefaultMediaType&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'AssetServlet' class.</div>
+<span class='iname_a'>AssetServlet.getIndexFile&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'AssetServlet' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<br/><span class='jar'>dropwizard-servlets-3.0.16.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.servlets.tasks</span><br/>
+<span class="section" onclick="sC(this, 'c_29')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> TaskServlet <span class='warning'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_29" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Superclass has been changed from <b>javax.servlet.http.HttpServlet</b> to <b>jakarta.servlet.http.HttpServlet</b>.</td>
+<td>1) Access of a client program to the fields or methods of the old super-class may be interrupted by <b>NoSuchFieldError</b> or <b>NoSuchMethodError</b> exceptions.<br/>2) A static field from a super-interface of a client class may hide a field (with the same name) inherited from new super-class and cause <b>IncompatibleClassChangeError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_30')">
+[+] affected methods: 4 (5.7%)</span>
+<div id="c_30" style="display:none;">
+<div class='affected'><span class='iname_a'>TaskServlet.TaskServlet&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>metricRegistry</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'TaskServlet' class.</div>
+<span class='iname_a'>TaskServlet.TaskServlet&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>metricRegistry</i></span>, <span>TaskConfiguration <i>taskConfiguration</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'TaskServlet' class.</div>
+<span class='iname_a'>TaskServlet.add&#160;<span class='sym_p'><span>(&#160;Task <i>task</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'TaskServlet' class.</div>
+<span class='iname_a'>TaskServlet.getTasks&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'TaskServlet' class.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Checked_Archives'></a><h2>Java Archives <span class='gray'>&nbsp;1&nbsp;</span></h2>
+<hr/><div class='jar_list'>
+dropwizard-servlets-3.0.16.jar<br/>
+</div><br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<br/><br/><br/>
+<hr/><div class='footer' align='right'><i>Generated by <a href='https://github.com/lvc/japi-compliance-checker'>Java API Compliance Checker</a> 2.4 &#160;</i></div><br/>
+</body></html>

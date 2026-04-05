@@ -1,0 +1,773 @@
+<!-- kind:source;verdict:incompatible;affected:5.5;added:33;removed:9;type_problems_high:1;type_problems_medium:0;type_problems_low:1;method_problems_high:0;method_problems_medium:2;method_problems_low:0;checked_methods:215;checked_types:23;tool_version:2.4 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="dropwizard-core, source, compatibility" />
+<meta name="description" content="Source compatibility report for the dropwizard-core library between 1.3.29 and 2.0.0 versions" />
+<title>dropwizard-core: 1.3.29 to 2.0.0 source compatibility report</title>
+<style type="text/css">
+body {
+    font-family:Arial, sans-serif;
+    background-color:White;
+    color:Black;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+    white-space:nowrap;
+}
+div.symbols {
+    color:#003E69;
+}
+div.symbols i {
+    color:Brown;
+}
+span.section {
+    font-weight:bold;
+    cursor:pointer;
+    color:#003E69;
+    white-space:nowrap;
+    margin-left:0.3125em;
+}
+span:hover.section {
+    color:#336699;
+}
+span.sect_aff {
+    cursor:pointer;
+    padding-left:1.55em;
+    font-size:0.875em;
+    color:#cc3300;
+}
+span.ext {
+    font-weight:normal;
+}
+span.jar {
+    color:#cc3300;
+    font-size:0.875em;
+    font-weight:bold;
+}
+div.jar_list {
+    padding-left:0.4em;
+    font-size:0.94em;
+}
+span.pkg_t {
+    color:#408080;
+    font-size:0.875em;
+}
+span.pkg {
+    color:#408080;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.cname {
+    color:Green;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.iname_b {
+    font-weight:bold;
+}
+span.iname_a {
+    color:#333333;
+    font-weight:bold;
+    font-size:0.94em;
+}
+span.sym_p {
+    font-weight:normal;
+    white-space:normal;
+}
+span.sym_pd {
+    white-space:normal;
+}
+span.sym_p span, span.sym_pd span {
+    white-space:nowrap;
+}
+span.attr {
+    color:Black;
+    font-weight:normal;
+}
+span.deprecated {
+    color:Red;
+    font-weight:bold;
+    font-family:Monaco, monospace;
+}
+div.affect {
+    padding-left:1em;
+    padding-bottom:10px;
+    font-size:0.87em;
+    font-style:italic;
+    line-height:0.9em;
+}
+div.affected {
+    padding-left:2em;
+    padding-top:10px;
+}
+table.ptable {
+    border-collapse:collapse;
+    border:1px outset black;
+    margin-left:0.95em;
+    margin-top:3px;
+    margin-bottom:3px;
+    width:56.25em;
+}
+table.ptable td {
+    border:1px solid Gray;
+    padding:3px;
+    font-size:0.875em;
+    text-align:left;
+    vertical-align:top;
+    max-width:28em;
+    word-wrap:break-word;
+}
+table.ptable th {
+    background-color:#eeeeee;
+    font-weight:bold;
+    color:#333333;
+    font-family:Verdana, Arial;
+    font-size:0.875em;
+    border:1px solid Gray;
+    text-align:center;
+    vertical-align:top;
+    white-space:nowrap;
+    padding:3px;
+}
+table.summary {
+    border-collapse:collapse;
+    border:1px outset black;
+}
+table.summary th {
+    background-color:#eeeeee;
+    font-weight:normal;
+    text-align:left;
+    font-size:0.94em;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px;
+}
+table.summary td {
+    text-align:right;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px 5px 3px 10px;
+}
+span.mngl {
+    padding-left:1em;
+    font-size:0.875em;
+    cursor:text;
+    color:#444444;
+    font-weight:bold;
+}
+span.pleft {
+    padding-left:2.5em;
+}
+span.color_p {
+    font-style:italic;
+    color:Brown;
+}
+span.param {
+    font-style:italic;
+}
+span.focus_p {
+    font-style:italic;
+    background-color:#DCDCDC;
+}
+span.ttype {
+    font-weight:normal;
+}
+span.nowrap {
+    white-space:nowrap;
+}
+span.value {
+    white-space:nowrap;
+    font-weight:bold;
+}
+.passed {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.warning {
+    background-color:#F4F4AF;
+    font-weight:normal;
+}
+.failed {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.new {
+    background-color:#C6DEFF;
+    font-weight:normal;
+}
+
+.compatible {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.almost_compatible {
+    background-color:#FFDAA3;
+    font-weight:normal;
+}
+.incompatible {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.gray {
+    background-color:#DCDCDC;
+    font-weight:normal;
+}
+
+.top_ref {
+    font-size:0.69em;
+}
+.footer {
+    font-size:0.8125em;
+}
+
+</style>
+<script type="text/javascript" language="JavaScript">
+<!--
+function sC(header, id)
+{
+    e = document.getElementById(id);
+    if(e.style.display == 'none')
+    {
+        e.style.display = 'block';
+        e.style.visibility = 'visible';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[&minus;]");
+    }
+    else
+    {
+        e.style.display = 'none';
+        e.style.visibility = 'hidden';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[+]");
+    }
+}
+
+-->
+</script>
+</head>
+<body><a name='Top'></a><h1>Source compatibility report for the <span style='color:Blue;'>dropwizard-core</span> library between <span style='color:Red;'>1.3.29</span> and <span style='color:Red;'>2.0.0</span> versions</h1>
+
+<h2>Test Info</h2><hr/>
+<table class='summary'>
+<tr><th>Library Name</th><td>dropwizard-core</td></tr>
+<tr><th>Version #1</th><td>1.3.29</td></tr>
+<tr><th>Version #2</th><td>2.0.0</td></tr>
+</table>
+<h2>Test Results</h2><hr/>
+<table class='summary'>
+<tr><th>Total Java Modules</th><td><a href='#Checked_Archives' style='color:Blue;'>1</a></td></tr>
+<tr><th>Total Methods / Classes</th><td>215 / 23</td></tr>
+<tr><th>Compatibility</th>
+<td class='warning'>94.5%</td>
+</tr>
+</table>
+<h2>Problem Summary</h2><hr/>
+<table class='summary'>
+<tr><th></th><th style='text-align:center;'>Severity</th><th style='text-align:center;'>Count</th></tr>
+<tr><th>Added Methods</th><td>-</td><td class='new'><a href='#Added' style='color:Blue;'>33</a></td></tr>
+<tr><th>Removed Methods</th><td>High</td><td class='failed'><a href='#Removed' style='color:Blue;'>9</a></td></tr>
+<tr><th rowspan='3'>Problems with<br/>Data Types</th><td>High</td><td class='failed'><a href='#Type_Problems_High' style='color:Blue;'>1</a></td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td class='warning'><a href='#Type_Problems_Low' style='color:Blue;'>1</a></td></tr>
+<tr><th rowspan='3'>Problems with<br/>Methods</th><td>High</td><td>0</td></tr>
+<tr><td>Medium</td><td class='failed'><a href='#Method_Problems_Medium' style='color:Blue;'>2</a></td></tr>
+<tr><td>Low</td><td>0</td></tr>
+<tr><th>Other Changes<br/>in Data Types</th><td>-</td><td class='passed'><a href='#Other_Changes_In_Types' style='color:Blue;'>3</a></td></tr>
+<tr><th>Other Changes<br/>in Methods</th><td>-</td><td class='passed'><a href='#Other_Changes_In_Methods' style='color:Blue;'>3</a></td></tr>
+</table>
+
+<a name='Added'></a><h2>Added Methods <span class='new'>&nbsp;33&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-core-2.0.0.jar</span>, <span class='cname'>AbstractServerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.server</span><br/>
+<span class="section" onclick="sC(this, 'c_56')">
+AbstractServerFactory.getDumpAfterStart&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_56" style="display:none;">
+<span class='mngl'>io/dropwizard/server/AbstractServerFactory.getDumpAfterStart:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_57')">
+AbstractServerFactory.getDumpBeforeStop&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_57" style="display:none;">
+<span class='mngl'>io/dropwizard/server/AbstractServerFactory.getDumpBeforeStop:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_58')">
+AbstractServerFactory.setDumpAfterStart&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>dumpAfterStart</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_58" style="display:none;">
+<span class='mngl'>io/dropwizard/server/AbstractServerFactory.setDumpAfterStart:(Z)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_59')">
+AbstractServerFactory.setDumpBeforeStop&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>dumpBeforeStop</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_59" style="display:none;">
+<span class='mngl'>io/dropwizard/server/AbstractServerFactory.setDumpBeforeStop:(Z)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-core-2.0.0.jar</span>, <span class='cname'>AdminEnvironment.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.setup</span><br/>
+<span class="section" onclick="sC(this, 'c_60')">
+AdminEnvironment.AdminEnvironment&#160;<span class='sym_p'><span>(&#160;MutableServletContextHandler <span class='color_p'>handler</span></span>, <span>HealthCheckRegistry <span class='color_p'>healthChecks</span></span>, <span>MetricRegistry <span class='color_p'>metricRegistry</span></span>, <span>AdminFactory <span class='color_p'>adminFactory</span></span>&#160;)</span></span>
+<br/>
+<div id="c_60" style="display:none;">
+<span class='mngl'>io/dropwizard/setup/AdminEnvironment.&quot;&lt;init&gt;&quot;:(Lio/dropwizard/jetty/MutableServletContextHandler;Lcom/codahale/metrics/health/HealthCheckRegistry;Lcom/codahale/metrics/MetricRegistry;Lio/dropwizard/setup/AdminFactory;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-core-2.0.0.jar</span>, <span class='cname'>AdminFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.setup</span><br/>
+<span class="section" onclick="sC(this, 'c_61')">
+AdminFactory.AdminFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_61" style="display:none;">
+<span class='mngl'>io/dropwizard/setup/AdminFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_62')">
+AdminFactory.getHealthChecks&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheckConfiguration</span></span>
+<br/>
+<div id="c_62" style="display:none;">
+<span class='mngl'>io/dropwizard/setup/AdminFactory.getHealthChecks:()Lio/dropwizard/setup/HealthCheckConfiguration;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_63')">
+AdminFactory.getTasks&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;TaskConfiguration</span></span>
+<br/>
+<div id="c_63" style="display:none;">
+<span class='mngl'>io/dropwizard/setup/AdminFactory.getTasks:()Lio/dropwizard/servlets/tasks/TaskConfiguration;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_64')">
+AdminFactory.setHealthChecks&#160;<span class='sym_p'><span>(&#160;HealthCheckConfiguration <span class='color_p'>healthChecks</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_64" style="display:none;">
+<span class='mngl'>io/dropwizard/setup/AdminFactory.setHealthChecks:(Lio/dropwizard/setup/HealthCheckConfiguration;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_65')">
+AdminFactory.setTasks&#160;<span class='sym_p'><span>(&#160;TaskConfiguration <span class='color_p'>tasks</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_65" style="display:none;">
+<span class='mngl'>io/dropwizard/setup/AdminFactory.setTasks:(Lio/dropwizard/servlets/tasks/TaskConfiguration;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_66')">
+AdminFactory.toString&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_66" style="display:none;">
+<span class='mngl'>io/dropwizard/setup/AdminFactory.toString:()Ljava/lang/String;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-core-2.0.0.jar</span>, <span class='cname'>Application.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard</span><br/>
+<span class="section" onclick="sC(this, 'c_67')">
+Application&lt;T&gt;.onFatalError&#160;<span class='sym_p'><span>(&#160;Throwable <span class='color_p'>t</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_67" style="display:none;">
+<span class='mngl'>io/dropwizard/Application.onFatalError:(Ljava/lang/Throwable;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-core-2.0.0.jar</span>, <span class='cname'>Bootstrap.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.setup</span><br/>
+<span class="section" onclick="sC(this, 'c_68')">
+Bootstrap&lt;T&gt;.getCommands&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;List&lt;Command&gt;</span></span>
+<br/>
+<div id="c_68" style="display:none;">
+<span class='mngl'>io/dropwizard/setup/Bootstrap.getCommands:()Ljava/util/List;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-core-2.0.0.jar</span>, <span class='cname'>Bundle.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard</span><br/>
+<span class="section" onclick="sC(this, 'c_69')">
+Bundle.run&#160;<span class='sym_p'><span>(&#160;Configuration <span class='color_p'>configuration</span></span>, <span>Environment <span class='color_p'>environment</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_69" style="display:none;">
+<span class='mngl'>io/dropwizard/Bundle.run:(Lio/dropwizard/Configuration;Lio/dropwizard/setup/Environment;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_70')">
+Bundle.run&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>Environment <span class='color_p'>p2</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_70" style="display:none;">
+<span class='mngl'>io/dropwizard/Bundle.run:(Ljava/lang/Object;Lio/dropwizard/setup/Environment;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-core-2.0.0.jar</span>, <span class='cname'>Cli.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.cli</span><br/>
+<span class="section" onclick="sC(this, 'c_71')">
+Cli.run&#160;<span class='sym_p'><span>(&#160;String... <span class='color_p'>arguments</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Optional&lt;Throwable&gt;</span></span>
+<br/>
+<div id="c_71" style="display:none;">
+<span class='mngl'>io/dropwizard/cli/Cli.run:([Ljava/lang/String;)Ljava/util/Optional;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-core-2.0.0.jar</span>, <span class='cname'>Configuration.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard</span><br/>
+<span class="section" onclick="sC(this, 'c_72')">
+Configuration.getAdminFactory&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;AdminFactory</span></span>
+<br/>
+<div id="c_72" style="display:none;">
+<span class='mngl'>io/dropwizard/Configuration.getAdminFactory:()Lio/dropwizard/setup/AdminFactory;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_73')">
+Configuration.setAdminFactory&#160;<span class='sym_p'><span>(&#160;AdminFactory <span class='color_p'>admin</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_73" style="display:none;">
+<span class='mngl'>io/dropwizard/Configuration.setAdminFactory:(Lio/dropwizard/setup/AdminFactory;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-core-2.0.0.jar</span>, <span class='cname'>Environment.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.setup</span><br/>
+<span class="section" onclick="sC(this, 'c_74')">
+Environment.Environment&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span></span>
+<br/>
+<div id="c_74" style="display:none;">
+<span class='mngl'>io/dropwizard/setup/Environment.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_75')">
+Environment.Environment&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>, <span>ObjectMapper <span class='color_p'>objectMapper</span></span>, <span>ValidatorFactory <span class='color_p'>validatorFactory</span></span>, <span>MetricRegistry <span class='color_p'>metricRegistry</span></span>, <span>ClassLoader <span class='color_p'>classLoader</span></span>, <span>HealthCheckRegistry <span class='color_p'>healthCheckRegistry</span></span>, <span>Configuration <span class='color_p'>configuration</span></span>&#160;)</span></span>
+<br/>
+<div id="c_75" style="display:none;">
+<span class='mngl'>io/dropwizard/setup/Environment.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;Lcom/fasterxml/jackson/databind/ObjectMapper;Ljavax/validation/ValidatorFactory;Lcom/codahale/metrics/MetricRegistry;Ljava/lang/ClassLoader;Lcom/codahale/metrics/health/HealthCheckRegistry;Lio/dropwizard/Configuration;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-core-2.0.0.jar</span>, <span class='cname'>HealthCheckConfiguration.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.setup</span><br/>
+<span class="section" onclick="sC(this, 'c_76')">
+HealthCheckConfiguration.getMaxThreads&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_76" style="display:none;">
+<span class='mngl'>io/dropwizard/setup/HealthCheckConfiguration.getMaxThreads:()I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_77')">
+HealthCheckConfiguration.getMinThreads&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_77" style="display:none;">
+<span class='mngl'>io/dropwizard/setup/HealthCheckConfiguration.getMinThreads:()I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_78')">
+HealthCheckConfiguration.getWorkQueueSize&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_78" style="display:none;">
+<span class='mngl'>io/dropwizard/setup/HealthCheckConfiguration.getWorkQueueSize:()I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_79')">
+HealthCheckConfiguration.HealthCheckConfiguration&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_79" style="display:none;">
+<span class='mngl'>io/dropwizard/setup/HealthCheckConfiguration.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_80')">
+HealthCheckConfiguration.setMaxThreads&#160;<span class='sym_p'><span>(&#160;int <span class='color_p'>maxThreads</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_80" style="display:none;">
+<span class='mngl'>io/dropwizard/setup/HealthCheckConfiguration.setMaxThreads:(I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_81')">
+HealthCheckConfiguration.setMinThreads&#160;<span class='sym_p'><span>(&#160;int <span class='color_p'>minThreads</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_81" style="display:none;">
+<span class='mngl'>io/dropwizard/setup/HealthCheckConfiguration.setMinThreads:(I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_82')">
+HealthCheckConfiguration.setWorkQueueSize&#160;<span class='sym_p'><span>(&#160;int <span class='color_p'>workQueueSize</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_82" style="display:none;">
+<span class='mngl'>io/dropwizard/setup/HealthCheckConfiguration.setWorkQueueSize:(I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_83')">
+HealthCheckConfiguration.toString&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_83" style="display:none;">
+<span class='mngl'>io/dropwizard/setup/HealthCheckConfiguration.toString:()Ljava/lang/String;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-core-2.0.0.jar</span>, <span class='cname'>InjectValidatorFeature.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_84')">
+InjectValidatorFeature.configure&#160;<span class='sym_p'><span>(&#160;FeatureContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_84" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/InjectValidatorFeature.configure:(Ljavax/ws/rs/core/FeatureContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_85')">
+InjectValidatorFeature.InjectValidatorFeature&#160;<span class='sym_p'><span>(&#160;ValidatorFactory <span class='color_p'>validatorFactory</span></span>&#160;)</span></span>
+<br/>
+<div id="c_85" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/InjectValidatorFeature.&quot;&lt;init&gt;&quot;:(Ljavax/validation/ValidatorFactory;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-core-2.0.0.jar</span>, <span class='cname'>SslReloadBundle.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.sslreload</span><br/>
+<span class="section" onclick="sC(this, 'c_86')">
+SslReloadBundle.run&#160;<span class='sym_p'><span>(&#160;Configuration <span class='color_p'>configuration</span></span>, <span>Environment <span class='color_p'>environment</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_86" style="display:none;">
+<span class='mngl'>io/dropwizard/sslreload/SslReloadBundle.run:(Lio/dropwizard/Configuration;Lio/dropwizard/setup/Environment;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_87')">
+SslReloadBundle.run&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>Environment <span class='color_p'>p2</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_87" style="display:none;">
+<span class='mngl'>io/dropwizard/sslreload/SslReloadBundle.run:(Ljava/lang/Object;Lio/dropwizard/setup/Environment;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-core-2.0.0.jar</span>, <span class='cname'>SslReloadTask.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.sslreload</span><br/>
+<span class="section" onclick="sC(this, 'c_88')">
+SslReloadTask.execute&#160;<span class='sym_p'><span>(&#160;Map&lt;String,List&lt;String&gt;&gt; <span class='color_p'>parameters</span></span>, <span>PrintWriter <span class='color_p'>output</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_88" style="display:none;">
+<span class='mngl'>io/dropwizard/sslreload/SslReloadTask.execute:(Ljava/util/Map;Ljava/io/PrintWriter;)V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Removed'></a><a name='Withdrawn'></a><h2>Removed Methods <span class='failed'>&nbsp;9&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-core-1.3.29.jar</span>, <span class='cname'>AdminEnvironment.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.setup</span><br/>
+<span class="section" onclick="sC(this, 'c_89')">
+AdminEnvironment.AdminEnvironment&#160;<span class='sym_p'><span>(&#160;MutableServletContextHandler <span class='color_p'>handler</span></span>, <span>HealthCheckRegistry <span class='color_p'>healthChecks</span></span>, <span>MetricRegistry <span class='color_p'>metricRegistry</span></span>&#160;)</span></span>
+<br/>
+<div id="c_89" style="display:none;">
+<span class='mngl'>io/dropwizard/setup/AdminEnvironment.&quot;&lt;init&gt;&quot;:(Lio/dropwizard/jetty/MutableServletContextHandler;Lcom/codahale/metrics/health/HealthCheckRegistry;Lcom/codahale/metrics/MetricRegistry;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-core-1.3.29.jar</span>, <span class='cname'>Bootstrap.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.setup</span><br/>
+<span class="section" onclick="sC(this, 'c_90')">
+Bootstrap&lt;T&gt;.addBundle&#160;<span class='sym_p'><span>(&#160;Bundle <span class='color_p'>bundle</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_90" style="display:none;">
+<span class='mngl'>io/dropwizard/setup/Bootstrap.addBundle:(Lio/dropwizard/Bundle;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_91')">
+Bootstrap&lt;T&gt;.getCommands&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ImmutableList&lt;Command&gt;</span></span>
+<br/>
+<div id="c_91" style="display:none;">
+<span class='mngl'>io/dropwizard/setup/Bootstrap.getCommands:()Lcom/google/common/collect/ImmutableList;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-core-1.3.29.jar</span>, <span class='cname'>Cli.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.cli</span><br/>
+<span class="section" onclick="sC(this, 'c_92')">
+Cli.run&#160;<span class='sym_p'><span>(&#160;String... <span class='color_p'>arguments</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_92" style="display:none;">
+<span class='mngl'>io/dropwizard/cli/Cli.run:([Ljava/lang/String;)Z</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-core-1.3.29.jar</span>, <span class='cname'>Environment.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.setup</span><br/>
+<span class="section" onclick="sC(this, 'c_93')">
+Environment.Environment&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>, <span>ObjectMapper <span class='color_p'>objectMapper</span></span>, <span>Validator <span class='color_p'>validator</span></span>, <span>MetricRegistry <span class='color_p'>metricRegistry</span></span>, <span>ClassLoader <span class='color_p'>classLoader</span></span>&#160;)</span></span>
+<br/>
+<div id="c_93" style="display:none;">
+<span class='mngl'>io/dropwizard/setup/Environment.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;Lcom/fasterxml/jackson/databind/ObjectMapper;Ljavax/validation/Validator;Lcom/codahale/metrics/MetricRegistry;Ljava/lang/ClassLoader;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_94')">
+Environment.Environment&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>, <span>ObjectMapper <span class='color_p'>objectMapper</span></span>, <span>Validator <span class='color_p'>validator</span></span>, <span>MetricRegistry <span class='color_p'>metricRegistry</span></span>, <span>ClassLoader <span class='color_p'>classLoader</span></span>, <span>HealthCheckRegistry <span class='color_p'>healthCheckRegistry</span></span>&#160;)</span></span>
+<br/>
+<div id="c_94" style="display:none;">
+<span class='mngl'>io/dropwizard/setup/Environment.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;Lcom/fasterxml/jackson/databind/ObjectMapper;Ljavax/validation/Validator;Lcom/codahale/metrics/MetricRegistry;Ljava/lang/ClassLoader;Lcom/codahale/metrics/health/HealthCheckRegistry;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-core-1.3.29.jar</span>, <span class='cname'>SslReloadBundle.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.sslreload</span><br/>
+<span class="section" onclick="sC(this, 'c_95')">
+SslReloadBundle.initialize&#160;<span class='sym_p'><span>(&#160;Bootstrap&lt;?&gt; <span class='color_p'>bootstrap</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_95" style="display:none;">
+<span class='mngl'>io/dropwizard/sslreload/SslReloadBundle.initialize:(Lio/dropwizard/setup/Bootstrap;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_96')">
+SslReloadBundle.run&#160;<span class='sym_p'><span>(&#160;Environment <span class='color_p'>environment</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_96" style="display:none;">
+<span class='mngl'>io/dropwizard/sslreload/SslReloadBundle.run:(Lio/dropwizard/setup/Environment;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-core-1.3.29.jar</span>, <span class='cname'>SslReloadTask.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.sslreload</span><br/>
+<span class="section" onclick="sC(this, 'c_97')">
+SslReloadTask.execute&#160;<span class='sym_p'><span>(&#160;ImmutableMultimap&lt;String,String&gt; <span class='color_p'>parameters</span></span>, <span>PrintWriter <span class='color_p'>output</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_97" style="display:none;">
+<span class='mngl'>io/dropwizard/sslreload/SslReloadTask.execute:(Lcom/google/common/collect/ImmutableMultimap;Ljava/io/PrintWriter;)V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='High_Risk_Problems'></a><a name='Type_Problems_High'></a>
+<h2>Problems with Data Types, High Severity <span class='failed'>&nbsp;1&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-core-1.3.29.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.sslreload</span><br/>
+<span class="section" onclick="sC(this, 'c_98')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> SslReloadBundle <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_98" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Removed super-interface <b>io.dropwizard.Bundle</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find method in class <b>SslReloadBundle</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_99')">
+[+] affected methods: 1 (0.5%)</span>
+<div id="c_99" style="display:none;">
+<div class='affected'><span class='iname_a'>SslReloadBundle.SslReloadBundle&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'SslReloadBundle' class.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Medium_Risk_Problems'></a><a name='Method_Problems_Medium'></a>
+<h2>Problems with Methods, Medium Severity <span class='failed'>&nbsp;2&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-core-1.3.29.jar</span>, <span class='cname'>Bootstrap.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.setup</span><br/>
+<span class="section" onclick="sC(this, 'c_100')">
+<span class='ext'>[+]</span> Bootstrap&lt;T&gt;.getCommands&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ImmutableList&lt;Command&gt;</span> <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_100" style="display:none;">
+<span class='mngl pleft'>io/dropwizard/setup/Bootstrap.getCommands:()Lcom/google/common/collect/ImmutableList;</span><br/>
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Return value type has been changed from <b>com.google.common.collect.ImmutableList&lt;io.dropwizard.cli.Command&gt;</b> to <b>java.util.List&lt;io.dropwizard.cli.Command&gt;</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: incompatible types: <b>java.util.List&lt;io.dropwizard.cli.Command&gt;</b> cannot be converted to <b>com.google.common.collect.ImmutableList&lt;io.dropwizard.cli.Command&gt;</b>.</td>
+</tr>
+</table><br/></div>
+
+<br/><span class='jar'>dropwizard-core-1.3.29.jar</span>, <span class='cname'>Cli.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.cli</span><br/>
+<span class="section" onclick="sC(this, 'c_101')">
+<span class='ext'>[+]</span> Cli.run&#160;<span class='sym_p'><span>(&#160;String... <span class='color_p'>arguments</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span> <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_101" style="display:none;">
+<span class='mngl pleft'>io/dropwizard/cli/Cli.run:([Ljava/lang/String;)Z</span><br/>
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Return value type has been changed from <b>boolean</b> to <b>java.util.Optional&lt;java.lang.Throwable&gt;</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: incompatible types: <b>java.util.Optional&lt;java.lang.Throwable&gt;</b> cannot be converted to <b>boolean</b>.</td>
+</tr>
+</table><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Low_Risk_Problems'></a><a name='Type_Problems_Low'></a>
+<h2>Problems with Data Types, Low Severity <span class='warning'>&nbsp;1&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-core-1.3.29.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.setup</span><br/>
+<span class="section" onclick="sC(this, 'c_102')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> ExceptionMapperBinder <span class='warning'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_102" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Superclass has been changed from <b>org.glassfish.hk2.utilities.binding.AbstractBinder</b> to <b>org.glassfish.jersey.internal.inject.AbstractBinder</b>.</td>
+<td>1) Recompilation of a client program may be terminated with the message: cannot find variable (or method) in <b>ExceptionMapperBinder</b>.<br/>2) A static field from a super-interface of a client class may hide a field (with the same name) inherited from new super-class. Recompilation of a client class may be terminated with the message: reference to variable is ambiguous.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_103')">
+[+] affected methods: 3 (1.4%)</span>
+<div id="c_103" style="display:none;">
+<div class='affected'><span class='iname_a'>ExceptionMapperBinder.ExceptionMapperBinder&#160;<span class='sym_p'><span>(&#160;boolean <i>showDetails</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'ExceptionMapperBinder' class.</div>
+<span class='iname_a'>ExceptionMapperBinder.configure&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'ExceptionMapperBinder' class.</div>
+<span class='iname_a'>ExceptionMapperBinder.isShowDetails&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'ExceptionMapperBinder' class.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Other_Changes'></a><a name='Other_Changes_In_Types'></a>
+<h2>Other Changes in Data Types <span class='passed'>&nbsp;3&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-core-1.3.29.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard</span><br/>
+<span class="section" onclick="sC(this, 'c_104')">
+<span class='ext'>[+]</span> <span class='ttype'>interface</span> Bundle <span class='passed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_104" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Method <span class='iname_b'><b>void</b> run&#160;<span class='sym_pd'><span>(&#160;Environment</span>&#160;)</span></span> became <b>default</b>.</td>
+<td>No effect.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_105')">
+[+] affected methods: 1 (0.5%)</span>
+<div id="c_105" style="display:none;">
+<div class='affected'><span class='iname_a'>Bundle.run&#160;<span class='sym_p'><span>(&#160;Environment <i>p1</i></span>&#160;)</span></span><br/><div class='affect'>This abstract method is from 'Bundle' interface.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_106')">
+<span class='ext'>[+]</span> <span class='ttype'>interface</span> ConfiguredBundle&lt;T&gt; <span class='passed'>&nbsp;2&nbsp;</span></span>
+<br/>
+<div id="c_106" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Method <span class='iname_b'><b>void</b> initialize&#160;<span class='sym_pd'><span>(&#160;Bootstrap&lt;?&gt;</span>&#160;)</span></span> became <b>default</b>.</td>
+<td>No effect.</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Method <span class='iname_b'><b>void</b> run&#160;<span class='sym_pd'><span>(&#160;T</span>, <span>Environment</span>&#160;)</span></span> became <b>default</b>.</td>
+<td>No effect.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_107')">
+[+] affected methods: 2 (0.9%)</span>
+<div id="c_107" style="display:none;">
+<div class='affected'><span class='iname_a'>ConfiguredBundle&lt;T&gt;.initialize&#160;<span class='sym_p'><span>(&#160;Bootstrap&lt;?&gt; <i>p1</i></span>&#160;)</span></span><br/><div class='affect'>This abstract method is from 'ConfiguredBundle&lt;T&gt;' interface.</div>
+<span class='iname_a'>ConfiguredBundle&lt;T&gt;.run&#160;<span class='sym_p'><span>(&#160;T <i>p1</i></span>, <span>Environment <i>p2</i></span>&#160;)</span></span><br/><div class='affect'>This abstract method is from 'ConfiguredBundle&lt;T&gt;' interface.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Other_Changes_In_Methods'></a>
+<h2>Other Changes in Methods <span class='passed'>&nbsp;3&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-core-1.3.29.jar</span>, <span class='cname'>Bundle.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard</span><br/>
+<span class="section" onclick="sC(this, 'c_108')">
+<span class='ext'>[+]</span> Bundle.run&#160;<span class='sym_p'><span>(&#160;Environment <span class='color_p'>p1</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span> <span class='passed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_108" style="display:none;">
+<span class='mngl pleft'>io/dropwizard/Bundle.run:(Lio/dropwizard/setup/Environment;)V</span><br/>
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Method became <b>default</b>.</td>
+<td>No effect.</td>
+</tr>
+</table><br/></div>
+
+<br/><span class='jar'>dropwizard-core-1.3.29.jar</span>, <span class='cname'>ConfiguredBundle.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard</span><br/>
+<span class="section" onclick="sC(this, 'c_109')">
+<span class='ext'>[+]</span> ConfiguredBundle&lt;T&gt;.initialize&#160;<span class='sym_p'><span>(&#160;Bootstrap&lt;?&gt; <span class='color_p'>p1</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span> <span class='passed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_109" style="display:none;">
+<span class='mngl pleft'>io/dropwizard/ConfiguredBundle.initialize:(Lio/dropwizard/setup/Bootstrap;)V</span><br/>
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Method became <b>default</b>.</td>
+<td>No effect.</td>
+</tr>
+</table><br/></div>
+
+<span class="section" onclick="sC(this, 'c_110')">
+<span class='ext'>[+]</span> ConfiguredBundle&lt;T&gt;.run&#160;<span class='sym_p'><span>(&#160;T <span class='color_p'>p1</span></span>, <span>Environment <span class='color_p'>p2</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span> <span class='passed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_110" style="display:none;">
+<span class='mngl pleft'>io/dropwizard/ConfiguredBundle.run:(Ljava/lang/Object;Lio/dropwizard/setup/Environment;)V</span><br/>
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Method became <b>default</b>.</td>
+<td>No effect.</td>
+</tr>
+</table><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Checked_Archives'></a><h2>Java Archives <span class='gray'>&nbsp;1&nbsp;</span></h2>
+<hr/><div class='jar_list'>
+dropwizard-core-1.3.29.jar<br/>
+</div><br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<br/><br/><br/>
+<hr/><div class='footer' align='right'><i>Generated by <a href='https://github.com/lvc/japi-compliance-checker'>Java API Compliance Checker</a> 2.4 &#160;</i></div><br/>
+</body></html>

@@ -1,0 +1,11 @@
+{
+  "Affected": "100",
+  "Added": 36,
+  "Removed": 40,
+  "TotalProblems": 8,
+  "Source_Affected": "100",
+  "Source_TotalProblems": "8",
+  "Source_ReportPath": "compat_report/metrics-servlets/4.2.37/5.0.0/ed280/src_compat_report.html",
+  "Archive1": "metrics-servlets-4.2.37.jar",
+  "Archive2": "metrics-servlets-5.0.0.jar"
+}
