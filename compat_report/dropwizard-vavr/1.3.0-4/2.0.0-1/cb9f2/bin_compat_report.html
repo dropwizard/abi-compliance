@@ -1,0 +1,1024 @@
+<!-- kind:binary;verdict:incompatible;affected:64.2;added:4;removed:50;type_problems_high:16;type_problems_medium:0;type_problems_low:0;method_problems_high:4;method_problems_medium:0;method_problems_low:0;checked_methods:85;checked_types:27;tool_version:2.4 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="dropwizard-vavr, binary, compatibility" />
+<meta name="description" content="Binary compatibility report for the dropwizard-vavr library between 1.3.0-4 and 2.0.0-1 versions" />
+<title>dropwizard-vavr: 1.3.0-4 to 2.0.0-1 binary compatibility report</title>
+<style type="text/css">
+body {
+    font-family:Arial, sans-serif;
+    background-color:White;
+    color:Black;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+    white-space:nowrap;
+}
+div.symbols {
+    color:#003E69;
+}
+div.symbols i {
+    color:Brown;
+}
+span.section {
+    font-weight:bold;
+    cursor:pointer;
+    color:#003E69;
+    white-space:nowrap;
+    margin-left:0.3125em;
+}
+span:hover.section {
+    color:#336699;
+}
+span.sect_aff {
+    cursor:pointer;
+    padding-left:1.55em;
+    font-size:0.875em;
+    color:#cc3300;
+}
+span.ext {
+    font-weight:normal;
+}
+span.jar {
+    color:#cc3300;
+    font-size:0.875em;
+    font-weight:bold;
+}
+div.jar_list {
+    padding-left:0.4em;
+    font-size:0.94em;
+}
+span.pkg_t {
+    color:#408080;
+    font-size:0.875em;
+}
+span.pkg {
+    color:#408080;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.cname {
+    color:Green;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.iname_b {
+    font-weight:bold;
+}
+span.iname_a {
+    color:#333333;
+    font-weight:bold;
+    font-size:0.94em;
+}
+span.sym_p {
+    font-weight:normal;
+    white-space:normal;
+}
+span.sym_pd {
+    white-space:normal;
+}
+span.sym_p span, span.sym_pd span {
+    white-space:nowrap;
+}
+span.attr {
+    color:Black;
+    font-weight:normal;
+}
+span.deprecated {
+    color:Red;
+    font-weight:bold;
+    font-family:Monaco, monospace;
+}
+div.affect {
+    padding-left:1em;
+    padding-bottom:10px;
+    font-size:0.87em;
+    font-style:italic;
+    line-height:0.9em;
+}
+div.affected {
+    padding-left:2em;
+    padding-top:10px;
+}
+table.ptable {
+    border-collapse:collapse;
+    border:1px outset black;
+    margin-left:0.95em;
+    margin-top:3px;
+    margin-bottom:3px;
+    width:56.25em;
+}
+table.ptable td {
+    border:1px solid Gray;
+    padding:3px;
+    font-size:0.875em;
+    text-align:left;
+    vertical-align:top;
+    max-width:28em;
+    word-wrap:break-word;
+}
+table.ptable th {
+    background-color:#eeeeee;
+    font-weight:bold;
+    color:#333333;
+    font-family:Verdana, Arial;
+    font-size:0.875em;
+    border:1px solid Gray;
+    text-align:center;
+    vertical-align:top;
+    white-space:nowrap;
+    padding:3px;
+}
+table.summary {
+    border-collapse:collapse;
+    border:1px outset black;
+}
+table.summary th {
+    background-color:#eeeeee;
+    font-weight:normal;
+    text-align:left;
+    font-size:0.94em;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px;
+}
+table.summary td {
+    text-align:right;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px 5px 3px 10px;
+}
+span.mngl {
+    padding-left:1em;
+    font-size:0.875em;
+    cursor:text;
+    color:#444444;
+    font-weight:bold;
+}
+span.pleft {
+    padding-left:2.5em;
+}
+span.color_p {
+    font-style:italic;
+    color:Brown;
+}
+span.param {
+    font-style:italic;
+}
+span.focus_p {
+    font-style:italic;
+    background-color:#DCDCDC;
+}
+span.ttype {
+    font-weight:normal;
+}
+span.nowrap {
+    white-space:nowrap;
+}
+span.value {
+    white-space:nowrap;
+    font-weight:bold;
+}
+.passed {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.warning {
+    background-color:#F4F4AF;
+    font-weight:normal;
+}
+.failed {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.new {
+    background-color:#C6DEFF;
+    font-weight:normal;
+}
+
+.compatible {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.almost_compatible {
+    background-color:#FFDAA3;
+    font-weight:normal;
+}
+.incompatible {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.gray {
+    background-color:#DCDCDC;
+    font-weight:normal;
+}
+
+.top_ref {
+    font-size:0.69em;
+}
+.footer {
+    font-size:0.8125em;
+}
+
+</style>
+<script type="text/javascript" language="JavaScript">
+<!--
+function sC(header, id)
+{
+    e = document.getElementById(id);
+    if(e.style.display == 'none')
+    {
+        e.style.display = 'block';
+        e.style.visibility = 'visible';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[&minus;]");
+    }
+    else
+    {
+        e.style.display = 'none';
+        e.style.visibility = 'hidden';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[+]");
+    }
+}
+
+-->
+</script>
+</head>
+<body><a name='Top'></a><h1>Binary compatibility report for the <span style='color:Blue;'>dropwizard-vavr</span> library between <span style='color:Red;'>1.3.0-4</span> and <span style='color:Red;'>2.0.0-1</span> versions</h1>
+
+<h2>Test Info</h2><hr/>
+<table class='summary'>
+<tr><th>Library Name</th><td>dropwizard-vavr</td></tr>
+<tr><th>Version #1</th><td>1.3.0-4</td></tr>
+<tr><th>Version #2</th><td>2.0.0-1</td></tr>
+</table>
+<h2>Test Results</h2><hr/>
+<table class='summary'>
+<tr><th>Total Java Modules</th><td><a href='#Checked_Archives' style='color:Blue;'>1</a></td></tr>
+<tr><th>Total Methods / Classes</th><td>85 / 27</td></tr>
+<tr><th>Compatibility</th>
+<td class='incompatible'>35.8%</td>
+</tr>
+</table>
+<h2>Problem Summary</h2><hr/>
+<table class='summary'>
+<tr><th></th><th style='text-align:center;'>Severity</th><th style='text-align:center;'>Count</th></tr>
+<tr><th>Added Methods</th><td>-</td><td class='new'><a href='#Added' style='color:Blue;'>4</a></td></tr>
+<tr><th>Removed Methods</th><td>High</td><td class='failed'><a href='#Removed' style='color:Blue;'>50</a></td></tr>
+<tr><th rowspan='3'>Problems with<br/>Data Types</th><td>High</td><td class='failed'><a href='#Type_Problems_High' style='color:Blue;'>16</a></td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+<tr><th rowspan='3'>Problems with<br/>Methods</th><td>High</td><td class='failed'><a href='#Method_Problems_High' style='color:Blue;'>4</a></td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+</table>
+
+<a name='Added'></a><h2>Added Methods <span class='new'>&nbsp;4&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-vavr-2.0.0-1.jar</span>, <span class='cname'>LazyParamConverterProvider.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.vavr.jersey</span><br/>
+<span class="section" onclick="sC(this, 'c_1')">
+LazyParamConverterProvider.LazyParamConverterProvider&#160;<span class='sym_p'><span>(&#160;InjectionManager <span class='color_p'>manager</span></span>&#160;)</span></span>
+<br/>
+<div id="c_1" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jersey/LazyParamConverterProvider.&quot;&lt;init&gt;&quot;:(Lorg/glassfish/jersey/internal/inject/InjectionManager;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-vavr-2.0.0-1.jar</span>, <span class='cname'>OptionParamConverterProvider.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.vavr.jersey</span><br/>
+<span class="section" onclick="sC(this, 'c_2')">
+OptionParamConverterProvider.OptionParamConverterProvider&#160;<span class='sym_p'><span>(&#160;InjectionManager <span class='color_p'>manager</span></span>&#160;)</span></span>
+<br/>
+<div id="c_2" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jersey/OptionParamConverterProvider.&quot;&lt;init&gt;&quot;:(Lorg/glassfish/jersey/internal/inject/InjectionManager;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-vavr-2.0.0-1.jar</span>, <span class='cname'>ValueValidatedValueExtractor.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.vavr.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_3')">
+ValueValidatedValueExtractor.extractValues&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>ValueExtractor.ValueReceiver <span class='color_p'>p2</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_3" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/validation/ValueValidatedValueExtractor.extractValues:(Ljava/lang/Object;Ljavax/validation/valueextraction/ValueExtractor$ValueReceiver;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_4')">
+ValueValidatedValueExtractor.extractValues&#160;<span class='sym_p'><span>(&#160;Value&lt;?&gt; <span class='color_p'>originalValue</span></span>, <span>ValueExtractor.ValueReceiver <span class='color_p'>receiver</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_4" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/validation/ValueValidatedValueExtractor.extractValues:(Lio/vavr/Value;Ljavax/validation/valueextraction/ValueExtractor$ValueReceiver;)V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Removed'></a><a name='Withdrawn'></a><h2>Removed Methods <span class='failed'>&nbsp;50&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-vavr-1.3.0-4.jar</span>, <span class='cname'>ArrayContainerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.vavr.jdbi</span><br/>
+<span class="section" onclick="sC(this, 'c_5')">
+ArrayContainerFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_5" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/ArrayContainerFactory.accepts:(Ljava/lang/Class;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_6')">
+ArrayContainerFactory.ArrayContainerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_6" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/ArrayContainerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_7')">
+ArrayContainerFactory.newContainerBuilderFor&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ContainerBuilder&lt;Array&lt;?&gt;&gt;</span></span>
+<br/>
+<div id="c_7" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/ArrayContainerFactory.newContainerBuilderFor:(Ljava/lang/Class;)Lorg/skife/jdbi/v2/ContainerBuilder;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-vavr-1.3.0-4.jar</span>, <span class='cname'>CollectionParamBinder.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.vavr.jersey</span><br/>
+<span class="section" onclick="sC(this, 'c_8')">
+CollectionParamBinder.CollectionParamBinder&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_8" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jersey/CollectionParamBinder.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_9')">
+CollectionParamBinder.configure&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_9" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jersey/CollectionParamBinder.configure:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-vavr-1.3.0-4.jar</span>, <span class='cname'>CollectionParamFeature.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.vavr.jersey</span><br/>
+<span class="section" onclick="sC(this, 'c_10')">
+CollectionParamFeature.CollectionParamFeature&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_10" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jersey/CollectionParamFeature.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_11')">
+CollectionParamFeature.configure&#160;<span class='sym_p'><span>(&#160;FeatureContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_11" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jersey/CollectionParamFeature.configure:(Ljavax/ws/rs/core/FeatureContext;)Z</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-vavr-1.3.0-4.jar</span>, <span class='cname'>IndexedSeqContainerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.vavr.jdbi</span><br/>
+<span class="section" onclick="sC(this, 'c_12')">
+IndexedSeqContainerFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_12" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/IndexedSeqContainerFactory.accepts:(Ljava/lang/Class;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_13')">
+IndexedSeqContainerFactory.IndexedSeqContainerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_13" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/IndexedSeqContainerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_14')">
+IndexedSeqContainerFactory.newContainerBuilderFor&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ContainerBuilder&lt;IndexedSeq&lt;?&gt;&gt;</span></span>
+<br/>
+<div id="c_14" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/IndexedSeqContainerFactory.newContainerBuilderFor:(Ljava/lang/Class;)Lorg/skife/jdbi/v2/ContainerBuilder;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-vavr-1.3.0-4.jar</span>, <span class='cname'>LazyParamConverterProvider.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.vavr.jersey</span><br/>
+<span class="section" onclick="sC(this, 'c_15')">
+LazyParamConverterProvider.LazyParamConverterProvider&#160;<span class='sym_p'><span>(&#160;ServiceLocator <span class='color_p'>locator</span></span>&#160;)</span></span>
+<br/>
+<div id="c_15" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jersey/LazyParamConverterProvider.&quot;&lt;init&gt;&quot;:(Lorg/glassfish/hk2/api/ServiceLocator;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-vavr-1.3.0-4.jar</span>, <span class='cname'>ListContainerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.vavr.jdbi</span><br/>
+<span class="section" onclick="sC(this, 'c_16')">
+ListContainerFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_16" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/ListContainerFactory.accepts:(Ljava/lang/Class;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_17')">
+ListContainerFactory.ListContainerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_17" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/ListContainerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_18')">
+ListContainerFactory.newContainerBuilderFor&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ContainerBuilder&lt;List&lt;?&gt;&gt;</span></span>
+<br/>
+<div id="c_18" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/ListContainerFactory.newContainerBuilderFor:(Ljava/lang/Class;)Lorg/skife/jdbi/v2/ContainerBuilder;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-vavr-1.3.0-4.jar</span>, <span class='cname'>OptionArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.vavr.jdbi</span><br/>
+<span class="section" onclick="sC(this, 'c_19')">
+OptionArgumentFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Object <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_19" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/OptionArgumentFactory.accepts:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_20')">
+OptionArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class <span class='color_p'>p1</span></span>, <span>Object <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_20" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/OptionArgumentFactory.build:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_21')">
+OptionArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Option&lt;?&gt; <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_21" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/OptionArgumentFactory.build:(Ljava/lang/Class;Lio/vavr/control/Option;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_22')">
+OptionArgumentFactory.OptionArgumentFactory&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>jdbcDriver</span></span>&#160;)</span></span>
+<br/>
+<div id="c_22" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/OptionArgumentFactory.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-vavr-1.3.0-4.jar</span>, <span class='cname'>OptionContainerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.vavr.jdbi</span><br/>
+<span class="section" onclick="sC(this, 'c_23')">
+OptionContainerFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_23" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/OptionContainerFactory.accepts:(Ljava/lang/Class;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_24')">
+OptionContainerFactory.newContainerBuilderFor&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ContainerBuilder&lt;Option&lt;?&gt;&gt;</span></span>
+<br/>
+<div id="c_24" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/OptionContainerFactory.newContainerBuilderFor:(Ljava/lang/Class;)Lorg/skife/jdbi/v2/ContainerBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_25')">
+OptionContainerFactory.OptionContainerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_25" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/OptionContainerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-vavr-1.3.0-4.jar</span>, <span class='cname'>OptionParamConverterProvider.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.vavr.jersey</span><br/>
+<span class="section" onclick="sC(this, 'c_26')">
+OptionParamConverterProvider.OptionParamConverterProvider&#160;<span class='sym_p'><span>(&#160;ServiceLocator <span class='color_p'>locator</span></span>&#160;)</span></span>
+<br/>
+<div id="c_26" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jersey/OptionParamConverterProvider.&quot;&lt;init&gt;&quot;:(Lorg/glassfish/hk2/api/ServiceLocator;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-vavr-1.3.0-4.jar</span>, <span class='cname'>QueueContainerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.vavr.jdbi</span><br/>
+<span class="section" onclick="sC(this, 'c_27')">
+QueueContainerFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_27" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/QueueContainerFactory.accepts:(Ljava/lang/Class;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_28')">
+QueueContainerFactory.newContainerBuilderFor&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ContainerBuilder&lt;Queue&lt;?&gt;&gt;</span></span>
+<br/>
+<div id="c_28" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/QueueContainerFactory.newContainerBuilderFor:(Ljava/lang/Class;)Lorg/skife/jdbi/v2/ContainerBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_29')">
+QueueContainerFactory.QueueContainerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_29" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/QueueContainerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-vavr-1.3.0-4.jar</span>, <span class='cname'>SeqContainerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.vavr.jdbi</span><br/>
+<span class="section" onclick="sC(this, 'c_30')">
+SeqContainerFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_30" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/SeqContainerFactory.accepts:(Ljava/lang/Class;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_31')">
+SeqContainerFactory.newContainerBuilderFor&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ContainerBuilder&lt;Seq&lt;?&gt;&gt;</span></span>
+<br/>
+<div id="c_31" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/SeqContainerFactory.newContainerBuilderFor:(Ljava/lang/Class;)Lorg/skife/jdbi/v2/ContainerBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_32')">
+SeqContainerFactory.SeqContainerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_32" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/SeqContainerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-vavr-1.3.0-4.jar</span>, <span class='cname'>SetContainerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.vavr.jdbi</span><br/>
+<span class="section" onclick="sC(this, 'c_33')">
+SetContainerFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_33" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/SetContainerFactory.accepts:(Ljava/lang/Class;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_34')">
+SetContainerFactory.newContainerBuilderFor&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ContainerBuilder&lt;Set&lt;?&gt;&gt;</span></span>
+<br/>
+<div id="c_34" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/SetContainerFactory.newContainerBuilderFor:(Ljava/lang/Class;)Lorg/skife/jdbi/v2/ContainerBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_35')">
+SetContainerFactory.SetContainerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_35" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/SetContainerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-vavr-1.3.0-4.jar</span>, <span class='cname'>StreamContainerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.vavr.jdbi</span><br/>
+<span class="section" onclick="sC(this, 'c_36')">
+StreamContainerFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_36" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/StreamContainerFactory.accepts:(Ljava/lang/Class;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_37')">
+StreamContainerFactory.newContainerBuilderFor&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ContainerBuilder&lt;Stream&lt;?&gt;&gt;</span></span>
+<br/>
+<div id="c_37" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/StreamContainerFactory.newContainerBuilderFor:(Ljava/lang/Class;)Lorg/skife/jdbi/v2/ContainerBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_38')">
+StreamContainerFactory.StreamContainerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_38" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/StreamContainerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-vavr-1.3.0-4.jar</span>, <span class='cname'>TreeContainerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.vavr.jdbi</span><br/>
+<span class="section" onclick="sC(this, 'c_39')">
+TreeContainerFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_39" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/TreeContainerFactory.accepts:(Ljava/lang/Class;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_40')">
+TreeContainerFactory.newContainerBuilderFor&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ContainerBuilder&lt;Tree&lt;?&gt;&gt;</span></span>
+<br/>
+<div id="c_40" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/TreeContainerFactory.newContainerBuilderFor:(Ljava/lang/Class;)Lorg/skife/jdbi/v2/ContainerBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_41')">
+TreeContainerFactory.TreeContainerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_41" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/TreeContainerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-vavr-1.3.0-4.jar</span>, <span class='cname'>ValueArgumentFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.vavr.jdbi</span><br/>
+<span class="section" onclick="sC(this, 'c_42')">
+ValueArgumentFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Object <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_42" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/ValueArgumentFactory.accepts:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_43')">
+ValueArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class <span class='color_p'>p1</span></span>, <span>Object <span class='color_p'>p2</span></span>, <span>StatementContext <span class='color_p'>p3</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_43" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/ValueArgumentFactory.build:(Ljava/lang/Class;Ljava/lang/Object;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_44')">
+ValueArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>expectedType</span></span>, <span>Value&lt;?&gt; <span class='color_p'>value</span></span>, <span>StatementContext <span class='color_p'>ctx</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Argument</span></span>
+<br/>
+<div id="c_44" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/ValueArgumentFactory.build:(Ljava/lang/Class;Lio/vavr/Value;Lorg/skife/jdbi/v2/StatementContext;)Lorg/skife/jdbi/v2/tweak/Argument;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_45')">
+ValueArgumentFactory.ValueArgumentFactory&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>jdbcDriver</span></span>&#160;)</span></span>
+<br/>
+<div id="c_45" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/ValueArgumentFactory.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-vavr-1.3.0-4.jar</span>, <span class='cname'>ValueValidatedValueUnwrapper.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.vavr.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_46')">
+ValueValidatedValueUnwrapper.getValidatedValueType&#160;<span class='sym_p'><span>(&#160;Type <span class='color_p'>type</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Type</span></span>
+<br/>
+<div id="c_46" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/validation/ValueValidatedValueUnwrapper.getValidatedValueType:(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_47')">
+ValueValidatedValueUnwrapper.handleValidatedValue&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_47" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/validation/ValueValidatedValueUnwrapper.handleValidatedValue:(Ljava/lang/Object;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_48')">
+ValueValidatedValueUnwrapper.handleValidatedValue&#160;<span class='sym_p'><span>(&#160;Value&lt;?&gt; <span class='color_p'>option</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_48" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/validation/ValueValidatedValueUnwrapper.handleValidatedValue:(Lio/vavr/Value;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_49')">
+ValueValidatedValueUnwrapper.ValueValidatedValueUnwrapper&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_49" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/validation/ValueValidatedValueUnwrapper.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-vavr-1.3.0-4.jar</span>, <span class='cname'>VavrDBIFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.vavr.jdbi</span><br/>
+<span class="section" onclick="sC(this, 'c_50')">
+VavrDBIFactory.build&#160;<span class='sym_p'><span>(&#160;Environment <span class='color_p'>environment</span></span>, <span>PooledDataSourceFactory <span class='color_p'>configuration</span></span>, <span>ManagedDataSource <span class='color_p'>dataSource</span></span>, <span>String <span class='color_p'>name</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;DBI</span></span>
+<br/>
+<div id="c_50" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/VavrDBIFactory.build:(Lio/dropwizard/setup/Environment;Lio/dropwizard/db/PooledDataSourceFactory;Lio/dropwizard/db/ManagedDataSource;Ljava/lang/String;)Lorg/skife/jdbi/v2/DBI;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_51')">
+VavrDBIFactory.VavrDBIFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_51" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/VavrDBIFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-vavr-1.3.0-4.jar</span>, <span class='cname'>VectorContainerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.vavr.jdbi</span><br/>
+<span class="section" onclick="sC(this, 'c_52')">
+VectorContainerFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_52" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/VectorContainerFactory.accepts:(Ljava/lang/Class;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_53')">
+VectorContainerFactory.newContainerBuilderFor&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>type</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ContainerBuilder&lt;Vector&lt;?&gt;&gt;</span></span>
+<br/>
+<div id="c_53" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/VectorContainerFactory.newContainerBuilderFor:(Ljava/lang/Class;)Lorg/skife/jdbi/v2/ContainerBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_54')">
+VectorContainerFactory.VectorContainerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_54" style="display:none;">
+<span class='mngl'>io/dropwizard/vavr/jdbi/VectorContainerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='High_Risk_Problems'></a><a name='Type_Problems_High'></a>
+<h2>Problems with Data Types, High Severity <span class='failed'>&nbsp;16&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-vavr-1.3.0-4.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.vavr.jdbi</span><br/>
+<span class="section" onclick="sC(this, 'c_55')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> ArrayContainerFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_55" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_56')">
+[+] affected methods: 3 (3.5%)</span>
+<div id="c_56" style="display:none;">
+<div class='affected'><span class='iname_a'>ArrayContainerFactory.ArrayContainerFactory&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'ArrayContainerFactory' class.</div>
+<span class='iname_a'>ArrayContainerFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>type</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ArrayContainerFactory' class.</div>
+<span class='iname_a'>ArrayContainerFactory.newContainerBuilderFor&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>type</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ArrayContainerFactory' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_57')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> IndexedSeqContainerFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_57" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_58')">
+[+] affected methods: 3 (3.5%)</span>
+<div id="c_58" style="display:none;">
+<div class='affected'><span class='iname_a'>IndexedSeqContainerFactory.IndexedSeqContainerFactory&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'IndexedSeqContainerFactory' class.</div>
+<span class='iname_a'>IndexedSeqContainerFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>type</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'IndexedSeqContainerFactory' class.</div>
+<span class='iname_a'>IndexedSeqContainerFactory.newContainerBuilderFor&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>type</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'IndexedSeqContainerFactory' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_59')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> ListContainerFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_59" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_60')">
+[+] affected methods: 3 (3.5%)</span>
+<div id="c_60" style="display:none;">
+<div class='affected'><span class='iname_a'>ListContainerFactory.ListContainerFactory&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'ListContainerFactory' class.</div>
+<span class='iname_a'>ListContainerFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>type</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ListContainerFactory' class.</div>
+<span class='iname_a'>ListContainerFactory.newContainerBuilderFor&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>type</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ListContainerFactory' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_61')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> OptionArgumentFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_61" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_62')">
+[+] affected methods: 4 (4.7%)</span>
+<div id="c_62" style="display:none;">
+<div class='affected'><span class='iname_a'>OptionArgumentFactory.OptionArgumentFactory&#160;<span class='sym_p'><span>(&#160;String <i>jdbcDriver</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'OptionArgumentFactory' class.</div>
+<span class='iname_a'>OptionArgumentFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>expectedType</i></span>, <span>Object <i>value</i></span>, <span>StatementContext <i>ctx</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'OptionArgumentFactory' class.</div>
+<span class='iname_a'>OptionArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>expectedType</i></span>, <span>Option&lt;?&gt; <i>value</i></span>, <span>StatementContext <i>ctx</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'OptionArgumentFactory' class.</div>
+<span class='iname_a'>OptionArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class <i>p1</i></span>, <span>Object <i>p2</i></span>, <span>StatementContext <i>p3</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'OptionArgumentFactory' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_63')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> OptionContainerFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_63" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_64')">
+[+] affected methods: 3 (3.5%)</span>
+<div id="c_64" style="display:none;">
+<div class='affected'><span class='iname_a'>OptionContainerFactory.OptionContainerFactory&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'OptionContainerFactory' class.</div>
+<span class='iname_a'>OptionContainerFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>type</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'OptionContainerFactory' class.</div>
+<span class='iname_a'>OptionContainerFactory.newContainerBuilderFor&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>type</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'OptionContainerFactory' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_65')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> QueueContainerFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_65" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_66')">
+[+] affected methods: 3 (3.5%)</span>
+<div id="c_66" style="display:none;">
+<div class='affected'><span class='iname_a'>QueueContainerFactory.QueueContainerFactory&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'QueueContainerFactory' class.</div>
+<span class='iname_a'>QueueContainerFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>type</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'QueueContainerFactory' class.</div>
+<span class='iname_a'>QueueContainerFactory.newContainerBuilderFor&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>type</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'QueueContainerFactory' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_67')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> SeqContainerFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_67" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_68')">
+[+] affected methods: 3 (3.5%)</span>
+<div id="c_68" style="display:none;">
+<div class='affected'><span class='iname_a'>SeqContainerFactory.SeqContainerFactory&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'SeqContainerFactory' class.</div>
+<span class='iname_a'>SeqContainerFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>type</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'SeqContainerFactory' class.</div>
+<span class='iname_a'>SeqContainerFactory.newContainerBuilderFor&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>type</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'SeqContainerFactory' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_69')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> SetContainerFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_69" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_70')">
+[+] affected methods: 3 (3.5%)</span>
+<div id="c_70" style="display:none;">
+<div class='affected'><span class='iname_a'>SetContainerFactory.SetContainerFactory&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'SetContainerFactory' class.</div>
+<span class='iname_a'>SetContainerFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>type</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'SetContainerFactory' class.</div>
+<span class='iname_a'>SetContainerFactory.newContainerBuilderFor&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>type</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'SetContainerFactory' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_71')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> StreamContainerFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_71" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_72')">
+[+] affected methods: 3 (3.5%)</span>
+<div id="c_72" style="display:none;">
+<div class='affected'><span class='iname_a'>StreamContainerFactory.StreamContainerFactory&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'StreamContainerFactory' class.</div>
+<span class='iname_a'>StreamContainerFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>type</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'StreamContainerFactory' class.</div>
+<span class='iname_a'>StreamContainerFactory.newContainerBuilderFor&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>type</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'StreamContainerFactory' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_73')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> TreeContainerFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_73" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_74')">
+[+] affected methods: 3 (3.5%)</span>
+<div id="c_74" style="display:none;">
+<div class='affected'><span class='iname_a'>TreeContainerFactory.TreeContainerFactory&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'TreeContainerFactory' class.</div>
+<span class='iname_a'>TreeContainerFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>type</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'TreeContainerFactory' class.</div>
+<span class='iname_a'>TreeContainerFactory.newContainerBuilderFor&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>type</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'TreeContainerFactory' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_75')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> ValueArgumentFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_75" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_76')">
+[+] affected methods: 4 (4.7%)</span>
+<div id="c_76" style="display:none;">
+<div class='affected'><span class='iname_a'>ValueArgumentFactory.ValueArgumentFactory&#160;<span class='sym_p'><span>(&#160;String <i>jdbcDriver</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'ValueArgumentFactory' class.</div>
+<span class='iname_a'>ValueArgumentFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>expectedType</i></span>, <span>Object <i>value</i></span>, <span>StatementContext <i>ctx</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ValueArgumentFactory' class.</div>
+<span class='iname_a'>ValueArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>expectedType</i></span>, <span>Value&lt;?&gt; <i>value</i></span>, <span>StatementContext <i>ctx</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ValueArgumentFactory' class.</div>
+<span class='iname_a'>ValueArgumentFactory.build&#160;<span class='sym_p'><span>(&#160;Class <i>p1</i></span>, <span>Object <i>p2</i></span>, <span>StatementContext <i>p3</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ValueArgumentFactory' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_77')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> VavrDBIFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_77" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_78')">
+[+] affected methods: 2 (2.4%)</span>
+<div id="c_78" style="display:none;">
+<div class='affected'><span class='iname_a'>VavrDBIFactory.VavrDBIFactory&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'VavrDBIFactory' class.</div>
+<span class='iname_a'>VavrDBIFactory.build&#160;<span class='sym_p'><span>(&#160;Environment <i>environment</i></span>, <span>PooledDataSourceFactory <i>configuration</i></span>, <span>ManagedDataSource <i>dataSource</i></span>, <span>String <i>name</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'VavrDBIFactory' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_79')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> VectorContainerFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_79" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_80')">
+[+] affected methods: 3 (3.5%)</span>
+<div id="c_80" style="display:none;">
+<div class='affected'><span class='iname_a'>VectorContainerFactory.VectorContainerFactory&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'VectorContainerFactory' class.</div>
+<span class='iname_a'>VectorContainerFactory.accepts&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>type</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'VectorContainerFactory' class.</div>
+<span class='iname_a'>VectorContainerFactory.newContainerBuilderFor&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <i>type</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'VectorContainerFactory' class.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><span class='jar'>dropwizard-vavr-1.3.0-4.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.vavr.jersey</span><br/>
+<span class="section" onclick="sC(this, 'c_81')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> CollectionParamBinder <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_81" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_82')">
+[+] affected methods: 2 (2.4%)</span>
+<div id="c_82" style="display:none;">
+<div class='affected'><span class='iname_a'>CollectionParamBinder.CollectionParamBinder&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'CollectionParamBinder' class.</div>
+<span class='iname_a'>CollectionParamBinder.configure&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'CollectionParamBinder' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_83')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> CollectionParamFeature <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_83" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_84')">
+[+] affected methods: 2 (2.4%)</span>
+<div id="c_84" style="display:none;">
+<div class='affected'><span class='iname_a'>CollectionParamFeature.CollectionParamFeature&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'CollectionParamFeature' class.</div>
+<span class='iname_a'>CollectionParamFeature.configure&#160;<span class='sym_p'><span>(&#160;FeatureContext <i>context</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'CollectionParamFeature' class.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><span class='jar'>dropwizard-vavr-1.3.0-4.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.vavr.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_85')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> ValueValidatedValueUnwrapper <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_85" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_86')">
+[+] affected methods: 4 (4.7%)</span>
+<div id="c_86" style="display:none;">
+<div class='affected'><span class='iname_a'>ValueValidatedValueUnwrapper.ValueValidatedValueUnwrapper&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'ValueValidatedValueUnwrapper' class.</div>
+<span class='iname_a'>ValueValidatedValueUnwrapper.getValidatedValueType&#160;<span class='sym_p'><span>(&#160;Type <i>type</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ValueValidatedValueUnwrapper' class.</div>
+<span class='iname_a'>ValueValidatedValueUnwrapper.handleValidatedValue&#160;<span class='sym_p'><span>(&#160;Value&lt;?&gt; <i>option</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ValueValidatedValueUnwrapper' class.</div>
+<span class='iname_a'>ValueValidatedValueUnwrapper.handleValidatedValue&#160;<span class='sym_p'><span>(&#160;Object <i>p1</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ValueValidatedValueUnwrapper' class.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Method_Problems_High'></a>
+<h2>Problems with Methods, High Severity <span class='failed'>&nbsp;4&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-vavr-1.3.0-4.jar</span>, <span class='cname'>VavrBundle.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.vavr</span><br/>
+<span class="section" onclick="sC(this, 'c_87')">
+<span class='ext'>[+]</span> VavrBundle.newValidatorConfiguration&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HibernateValidatorConfiguration</span> <span class='failed'>&nbsp;2&nbsp;</span></span>
+<br/>
+<div id="c_87" style="display:none;">
+<span class='mngl pleft'>io/dropwizard/vavr/VavrBundle.newValidatorConfiguration:()Lorg/hibernate/validator/HibernateValidatorConfiguration;</span><br/>
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Access level has been changed from <b>protected</b> to <b>private</b>.</td>
+<td>A client program may be interrupted by <b>IllegalAccessError</b> exception.</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Method became <b>static</b>.</td>
+<td>A client program may be interrupted by <b>NoSuchMethodError</b> exception.</td>
+</tr>
+</table><br/></div>
+
+<span class="section" onclick="sC(this, 'c_88')">
+<span class='ext'>[+]</span> VavrBundle.newValidatorFactory&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ValidatorFactory</span> <span class='failed'>&nbsp;2&nbsp;</span></span>
+<br/>
+<div id="c_88" style="display:none;">
+<span class='mngl pleft'>io/dropwizard/vavr/VavrBundle.newValidatorFactory:()Ljavax/validation/ValidatorFactory;</span><br/>
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Access level has been changed from <b>protected</b> to <b>private</b>.</td>
+<td>A client program may be interrupted by <b>IllegalAccessError</b> exception.</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Method became <b>static</b>.</td>
+<td>A client program may be interrupted by <b>NoSuchMethodError</b> exception.</td>
+</tr>
+</table><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Checked_Archives'></a><h2>Java Archives <span class='gray'>&nbsp;1&nbsp;</span></h2>
+<hr/><div class='jar_list'>
+dropwizard-vavr-1.3.0-4.jar<br/>
+</div><br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<br/><br/><br/>
+<hr/><div class='footer' align='right'><i>Generated by <a href='https://github.com/lvc/japi-compliance-checker'>Java API Compliance Checker</a> 2.4 &#160;</i></div><br/>
+</body></html>

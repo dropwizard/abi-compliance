@@ -1,0 +1,20 @@
+$VAR1 = {
+          'Installed' => {
+                           '5.0.0' => 'src/metrics-legacy-adapter-healthchecks/5.0.0',
+                           '5.0.1' => 'src/metrics-legacy-adapter-healthchecks/5.0.1',
+                           '5.0.2' => 'src/metrics-legacy-adapter-healthchecks/5.0.2',
+                           '5.0.3' => 'src/metrics-legacy-adapter-healthchecks/5.0.3',
+                           '5.0.4' => 'src/metrics-legacy-adapter-healthchecks/5.0.4',
+                           '5.0.5' => 'src/metrics-legacy-adapter-healthchecks/5.0.5',
+                           '5.0.6' => 'src/metrics-legacy-adapter-healthchecks/5.0.6'
+                         },
+          'Source' => {
+                        '5.0.0' => 'src/metrics-legacy-adapter-healthchecks/5.0.0/metrics-legacy-adapter-healthchecks-5.0.0.jar',
+                        '5.0.1' => 'src/metrics-legacy-adapter-healthchecks/5.0.1/metrics-legacy-adapter-healthchecks-5.0.1.jar',
+                        '5.0.2' => 'src/metrics-legacy-adapter-healthchecks/5.0.2/metrics-legacy-adapter-healthchecks-5.0.2.jar',
+                        '5.0.3' => 'src/metrics-legacy-adapter-healthchecks/5.0.3/metrics-legacy-adapter-healthchecks-5.0.3.jar',
+                        '5.0.4' => 'src/metrics-legacy-adapter-healthchecks/5.0.4/metrics-legacy-adapter-healthchecks-5.0.4.jar',
+                        '5.0.5' => 'src/metrics-legacy-adapter-healthchecks/5.0.5/metrics-legacy-adapter-healthchecks-5.0.5.jar',
+                        '5.0.6' => 'src/metrics-legacy-adapter-healthchecks/5.0.6/metrics-legacy-adapter-healthchecks-5.0.6.jar'
+                      }
+        };

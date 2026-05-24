@@ -1,0 +1,11 @@
+{
+  "Affected": "9.1",
+  "Added": 0,
+  "Removed": 1,
+  "TotalProblems": 1,
+  "Source_Affected": "9.1",
+  "Source_TotalProblems": "2",
+  "Source_ReportPath": "compat_report/dropwizard-migrations/1.3.29/2.0.0/c1aa7/src_compat_report.html",
+  "Archive1": "dropwizard-migrations-1.3.29.jar",
+  "Archive2": "dropwizard-migrations-2.0.0.jar"
+}

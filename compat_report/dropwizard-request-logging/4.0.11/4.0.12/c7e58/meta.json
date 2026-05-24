@@ -1,0 +1,11 @@
+{
+  "Affected": "22",
+  "Added": 1,
+  "Removed": 1,
+  "TotalProblems": 5,
+  "Source_Affected": "22",
+  "Source_TotalProblems": "5",
+  "Source_ReportPath": "compat_report/dropwizard-request-logging/4.0.11/4.0.12/c7e58/src_compat_report.html",
+  "Archive1": "dropwizard-request-logging-4.0.11.jar",
+  "Archive2": "dropwizard-request-logging-4.0.12.jar"
+}

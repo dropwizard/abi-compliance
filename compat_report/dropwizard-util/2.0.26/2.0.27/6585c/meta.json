@@ -1,0 +1,11 @@
+{
+  "Affected": "0",
+  "Added": 0,
+  "Removed": 0,
+  "TotalProblems": 0,
+  "Source_Affected": "0",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/dropwizard-util/2.0.26/2.0.27/6585c/src_compat_report.html",
+  "Archive1": "dropwizard-util-2.0.26.jar",
+  "Archive2": "dropwizard-util-2.0.27.jar"
+}

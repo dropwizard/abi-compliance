@@ -1,0 +1,791 @@
+<!-- kind:source;verdict:incompatible;affected:67.8;added:20;removed:20;type_problems_high:8;type_problems_medium:0;type_problems_low:0;method_problems_high:0;method_problems_medium:2;method_problems_low:0;checked_methods:79;checked_types:20;tool_version:2.4 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="dropwizard-validation, source, compatibility" />
+<meta name="description" content="Source compatibility report for the dropwizard-validation library between 3.0.17 and 4.0.0 versions" />
+<title>dropwizard-validation: 3.0.17 to 4.0.0 source compatibility report</title>
+<style type="text/css">
+body {
+    font-family:Arial, sans-serif;
+    background-color:White;
+    color:Black;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+    white-space:nowrap;
+}
+div.symbols {
+    color:#003E69;
+}
+div.symbols i {
+    color:Brown;
+}
+span.section {
+    font-weight:bold;
+    cursor:pointer;
+    color:#003E69;
+    white-space:nowrap;
+    margin-left:0.3125em;
+}
+span:hover.section {
+    color:#336699;
+}
+span.sect_aff {
+    cursor:pointer;
+    padding-left:1.55em;
+    font-size:0.875em;
+    color:#cc3300;
+}
+span.ext {
+    font-weight:normal;
+}
+span.jar {
+    color:#cc3300;
+    font-size:0.875em;
+    font-weight:bold;
+}
+div.jar_list {
+    padding-left:0.4em;
+    font-size:0.94em;
+}
+span.pkg_t {
+    color:#408080;
+    font-size:0.875em;
+}
+span.pkg {
+    color:#408080;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.cname {
+    color:Green;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.iname_b {
+    font-weight:bold;
+}
+span.iname_a {
+    color:#333333;
+    font-weight:bold;
+    font-size:0.94em;
+}
+span.sym_p {
+    font-weight:normal;
+    white-space:normal;
+}
+span.sym_pd {
+    white-space:normal;
+}
+span.sym_p span, span.sym_pd span {
+    white-space:nowrap;
+}
+span.attr {
+    color:Black;
+    font-weight:normal;
+}
+span.deprecated {
+    color:Red;
+    font-weight:bold;
+    font-family:Monaco, monospace;
+}
+div.affect {
+    padding-left:1em;
+    padding-bottom:10px;
+    font-size:0.87em;
+    font-style:italic;
+    line-height:0.9em;
+}
+div.affected {
+    padding-left:2em;
+    padding-top:10px;
+}
+table.ptable {
+    border-collapse:collapse;
+    border:1px outset black;
+    margin-left:0.95em;
+    margin-top:3px;
+    margin-bottom:3px;
+    width:56.25em;
+}
+table.ptable td {
+    border:1px solid Gray;
+    padding:3px;
+    font-size:0.875em;
+    text-align:left;
+    vertical-align:top;
+    max-width:28em;
+    word-wrap:break-word;
+}
+table.ptable th {
+    background-color:#eeeeee;
+    font-weight:bold;
+    color:#333333;
+    font-family:Verdana, Arial;
+    font-size:0.875em;
+    border:1px solid Gray;
+    text-align:center;
+    vertical-align:top;
+    white-space:nowrap;
+    padding:3px;
+}
+table.summary {
+    border-collapse:collapse;
+    border:1px outset black;
+}
+table.summary th {
+    background-color:#eeeeee;
+    font-weight:normal;
+    text-align:left;
+    font-size:0.94em;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px;
+}
+table.summary td {
+    text-align:right;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px 5px 3px 10px;
+}
+span.mngl {
+    padding-left:1em;
+    font-size:0.875em;
+    cursor:text;
+    color:#444444;
+    font-weight:bold;
+}
+span.pleft {
+    padding-left:2.5em;
+}
+span.color_p {
+    font-style:italic;
+    color:Brown;
+}
+span.param {
+    font-style:italic;
+}
+span.focus_p {
+    font-style:italic;
+    background-color:#DCDCDC;
+}
+span.ttype {
+    font-weight:normal;
+}
+span.nowrap {
+    white-space:nowrap;
+}
+span.value {
+    white-space:nowrap;
+    font-weight:bold;
+}
+.passed {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.warning {
+    background-color:#F4F4AF;
+    font-weight:normal;
+}
+.failed {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.new {
+    background-color:#C6DEFF;
+    font-weight:normal;
+}
+
+.compatible {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.almost_compatible {
+    background-color:#FFDAA3;
+    font-weight:normal;
+}
+.incompatible {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.gray {
+    background-color:#DCDCDC;
+    font-weight:normal;
+}
+
+.top_ref {
+    font-size:0.69em;
+}
+.footer {
+    font-size:0.8125em;
+}
+
+</style>
+<script type="text/javascript" language="JavaScript">
+<!--
+function sC(header, id)
+{
+    e = document.getElementById(id);
+    if(e.style.display == 'none')
+    {
+        e.style.display = 'block';
+        e.style.visibility = 'visible';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[&minus;]");
+    }
+    else
+    {
+        e.style.display = 'none';
+        e.style.visibility = 'hidden';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[+]");
+    }
+}
+
+-->
+</script>
+</head>
+<body><a name='Top'></a><h1>Source compatibility report for the <span style='color:Blue;'>dropwizard-validation</span> library between <span style='color:Red;'>3.0.17</span> and <span style='color:Red;'>4.0.0</span> versions</h1>
+
+<h2>Test Info</h2><hr/>
+<table class='summary'>
+<tr><th>Library Name</th><td>dropwizard-validation</td></tr>
+<tr><th>Version #1</th><td>3.0.17</td></tr>
+<tr><th>Version #2</th><td>4.0.0</td></tr>
+</table>
+<h2>Test Results</h2><hr/>
+<table class='summary'>
+<tr><th>Total Java Modules</th><td><a href='#Checked_Archives' style='color:Blue;'>1</a></td></tr>
+<tr><th>Total Methods / Classes</th><td>79 / 20</td></tr>
+<tr><th>Compatibility</th>
+<td class='incompatible'>32.2%</td>
+</tr>
+</table>
+<h2>Problem Summary</h2><hr/>
+<table class='summary'>
+<tr><th></th><th style='text-align:center;'>Severity</th><th style='text-align:center;'>Count</th></tr>
+<tr><th>Added Methods</th><td>-</td><td class='new'><a href='#Added' style='color:Blue;'>20</a></td></tr>
+<tr><th>Removed Methods</th><td>High</td><td class='failed'><a href='#Removed' style='color:Blue;'>20</a></td></tr>
+<tr><th rowspan='3'>Problems with<br/>Data Types</th><td>High</td><td class='failed'><a href='#Type_Problems_High' style='color:Blue;'>8</a></td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+<tr><th rowspan='3'>Problems with<br/>Methods</th><td>High</td><td>0</td></tr>
+<tr><td>Medium</td><td class='failed'><a href='#Method_Problems_Medium' style='color:Blue;'>2</a></td></tr>
+<tr><td>Low</td><td>0</td></tr>
+</table>
+
+<a name='Added'></a><h2>Added Methods <span class='new'>&nbsp;20&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-validation-4.0.0.jar</span>, <span class='cname'>BaseValidator.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_59')">
+BaseValidator.newValidator&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Validator</span></span>
+<br/>
+<div id="c_59" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/BaseValidator.newValidator:()Ljakarta/validation/Validator;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-validation-4.0.0.jar</span>, <span class='cname'>ConstraintViolations.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_60')">
+ConstraintViolations.format&#160;<span class='sym_p'><span>(&#160;ConstraintViolation&lt;T&gt; <span class='color_p'>v</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_60" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/ConstraintViolations.format:(Ljakarta/validation/ConstraintViolation;)Ljava/lang/String;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-validation-4.0.0.jar</span>, <span class='cname'>GuavaOptionalValueExtractor.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation.valuehandling</span><br/>
+<span class="section" onclick="sC(this, 'c_61')">
+GuavaOptionalValueExtractor.extractValues&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>ValueExtractor.ValueReceiver <span class='color_p'>p2</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_61" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/valuehandling/GuavaOptionalValueExtractor.extractValues:(Ljava/lang/Object;Ljakarta/validation/valueextraction/ValueExtractor$ValueReceiver;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_62')">
+GuavaOptionalValueExtractor.extractValues&#160;<span class='sym_p'><span>(&#160;Optional&lt;?&gt; <span class='color_p'>originalValue</span></span>, <span>ValueExtractor.ValueReceiver <span class='color_p'>receiver</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_62" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/valuehandling/GuavaOptionalValueExtractor.extractValues:(Lcom/google/common/base/Optional;Ljakarta/validation/valueextraction/ValueExtractor$ValueReceiver;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-validation-4.0.0.jar</span>, <span class='cname'>MaxDataSizeValidator.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_63')">
+MaxDataSizeValidator.isValid&#160;<span class='sym_p'><span>(&#160;DataSize <span class='color_p'>value</span></span>, <span>ConstraintValidatorContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_63" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/MaxDataSizeValidator.isValid:(Lio/dropwizard/util/DataSize;Ljakarta/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_64')">
+MaxDataSizeValidator.isValid&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>ConstraintValidatorContext <span class='color_p'>p2</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_64" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/MaxDataSizeValidator.isValid:(Ljava/lang/Object;Ljakarta/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-validation-4.0.0.jar</span>, <span class='cname'>MaxDurationValidator.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_65')">
+MaxDurationValidator.isValid&#160;<span class='sym_p'><span>(&#160;Duration <span class='color_p'>value</span></span>, <span>ConstraintValidatorContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_65" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/MaxDurationValidator.isValid:(Lio/dropwizard/util/Duration;Ljakarta/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_66')">
+MaxDurationValidator.isValid&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>ConstraintValidatorContext <span class='color_p'>p2</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_66" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/MaxDurationValidator.isValid:(Ljava/lang/Object;Ljakarta/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-validation-4.0.0.jar</span>, <span class='cname'>MethodValidator.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_67')">
+MethodValidator.isValid&#160;<span class='sym_p'><span>(&#160;Boolean <span class='color_p'>value</span></span>, <span>ConstraintValidatorContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_67" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/MethodValidator.isValid:(Ljava/lang/Boolean;Ljakarta/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_68')">
+MethodValidator.isValid&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>ConstraintValidatorContext <span class='color_p'>p2</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_68" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/MethodValidator.isValid:(Ljava/lang/Object;Ljakarta/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-validation-4.0.0.jar</span>, <span class='cname'>MinDataSizeValidator.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_69')">
+MinDataSizeValidator.isValid&#160;<span class='sym_p'><span>(&#160;DataSize <span class='color_p'>value</span></span>, <span>ConstraintValidatorContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_69" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/MinDataSizeValidator.isValid:(Lio/dropwizard/util/DataSize;Ljakarta/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_70')">
+MinDataSizeValidator.isValid&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>ConstraintValidatorContext <span class='color_p'>p2</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_70" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/MinDataSizeValidator.isValid:(Ljava/lang/Object;Ljakarta/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-validation-4.0.0.jar</span>, <span class='cname'>MinDurationValidator.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_71')">
+MinDurationValidator.isValid&#160;<span class='sym_p'><span>(&#160;Duration <span class='color_p'>value</span></span>, <span>ConstraintValidatorContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_71" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/MinDurationValidator.isValid:(Lio/dropwizard/util/Duration;Ljakarta/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_72')">
+MinDurationValidator.isValid&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>ConstraintValidatorContext <span class='color_p'>p2</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_72" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/MinDurationValidator.isValid:(Ljava/lang/Object;Ljakarta/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-validation-4.0.0.jar</span>, <span class='cname'>OneOfValidator.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_73')">
+OneOfValidator.isValid&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>value</span></span>, <span>ConstraintValidatorContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_73" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/OneOfValidator.isValid:(Ljava/lang/Object;Ljakarta/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-validation-4.0.0.jar</span>, <span class='cname'>PortRangeValidator.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_74')">
+PortRangeValidator.isValid&#160;<span class='sym_p'><span>(&#160;Integer <span class='color_p'>value</span></span>, <span>ConstraintValidatorContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_74" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/PortRangeValidator.isValid:(Ljava/lang/Integer;Ljakarta/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_75')">
+PortRangeValidator.isValid&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>ConstraintValidatorContext <span class='color_p'>p2</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_75" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/PortRangeValidator.isValid:(Ljava/lang/Object;Ljakarta/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-validation-4.0.0.jar</span>, <span class='cname'>SelfValidatingValidator.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation.selfvalidating</span><br/>
+<span class="section" onclick="sC(this, 'c_76')">
+SelfValidatingValidator.isValid&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>value</span></span>, <span>ConstraintValidatorContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_76" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/selfvalidating/SelfValidatingValidator.isValid:(Ljava/lang/Object;Ljakarta/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-validation-4.0.0.jar</span>, <span class='cname'>ViolationCollector.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation.selfvalidating</span><br/>
+<span class="section" onclick="sC(this, 'c_77')">
+ViolationCollector.getContext&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ConstraintValidatorContext</span></span>
+<br/>
+<div id="c_77" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/selfvalidating/ViolationCollector.getContext:()Ljakarta/validation/ConstraintValidatorContext;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_78')">
+ViolationCollector.ViolationCollector&#160;<span class='sym_p'><span>(&#160;ConstraintValidatorContext <span class='color_p'>constraintValidatorContext</span></span>&#160;)</span></span>
+<br/>
+<div id="c_78" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/selfvalidating/ViolationCollector.&quot;&lt;init&gt;&quot;:(Ljakarta/validation/ConstraintValidatorContext;)V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Removed'></a><a name='Withdrawn'></a><h2>Removed Methods <span class='failed'>&nbsp;20&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-validation-3.0.17.jar</span>, <span class='cname'>BaseValidator.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_79')">
+BaseValidator.newValidator&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Validator</span></span>
+<br/>
+<div id="c_79" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/BaseValidator.newValidator:()Ljavax/validation/Validator;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-validation-3.0.17.jar</span>, <span class='cname'>ConstraintViolations.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_80')">
+ConstraintViolations.format&#160;<span class='sym_p'><span>(&#160;ConstraintViolation&lt;T&gt; <span class='color_p'>v</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_80" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/ConstraintViolations.format:(Ljavax/validation/ConstraintViolation;)Ljava/lang/String;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-validation-3.0.17.jar</span>, <span class='cname'>GuavaOptionalValueExtractor.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation.valuehandling</span><br/>
+<span class="section" onclick="sC(this, 'c_81')">
+GuavaOptionalValueExtractor.extractValues&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>ValueExtractor.ValueReceiver <span class='color_p'>p2</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_81" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/valuehandling/GuavaOptionalValueExtractor.extractValues:(Ljava/lang/Object;Ljavax/validation/valueextraction/ValueExtractor$ValueReceiver;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_82')">
+GuavaOptionalValueExtractor.extractValues&#160;<span class='sym_p'><span>(&#160;Optional&lt;?&gt; <span class='color_p'>originalValue</span></span>, <span>ValueExtractor.ValueReceiver <span class='color_p'>receiver</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_82" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/valuehandling/GuavaOptionalValueExtractor.extractValues:(Lcom/google/common/base/Optional;Ljavax/validation/valueextraction/ValueExtractor$ValueReceiver;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-validation-3.0.17.jar</span>, <span class='cname'>MaxDataSizeValidator.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_83')">
+MaxDataSizeValidator.isValid&#160;<span class='sym_p'><span>(&#160;DataSize <span class='color_p'>value</span></span>, <span>ConstraintValidatorContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_83" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/MaxDataSizeValidator.isValid:(Lio/dropwizard/util/DataSize;Ljavax/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_84')">
+MaxDataSizeValidator.isValid&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>ConstraintValidatorContext <span class='color_p'>p2</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_84" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/MaxDataSizeValidator.isValid:(Ljava/lang/Object;Ljavax/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-validation-3.0.17.jar</span>, <span class='cname'>MaxDurationValidator.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_85')">
+MaxDurationValidator.isValid&#160;<span class='sym_p'><span>(&#160;Duration <span class='color_p'>value</span></span>, <span>ConstraintValidatorContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_85" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/MaxDurationValidator.isValid:(Lio/dropwizard/util/Duration;Ljavax/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_86')">
+MaxDurationValidator.isValid&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>ConstraintValidatorContext <span class='color_p'>p2</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_86" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/MaxDurationValidator.isValid:(Ljava/lang/Object;Ljavax/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-validation-3.0.17.jar</span>, <span class='cname'>MethodValidator.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_87')">
+MethodValidator.isValid&#160;<span class='sym_p'><span>(&#160;Boolean <span class='color_p'>value</span></span>, <span>ConstraintValidatorContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_87" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/MethodValidator.isValid:(Ljava/lang/Boolean;Ljavax/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_88')">
+MethodValidator.isValid&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>ConstraintValidatorContext <span class='color_p'>p2</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_88" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/MethodValidator.isValid:(Ljava/lang/Object;Ljavax/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-validation-3.0.17.jar</span>, <span class='cname'>MinDataSizeValidator.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_89')">
+MinDataSizeValidator.isValid&#160;<span class='sym_p'><span>(&#160;DataSize <span class='color_p'>value</span></span>, <span>ConstraintValidatorContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_89" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/MinDataSizeValidator.isValid:(Lio/dropwizard/util/DataSize;Ljavax/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_90')">
+MinDataSizeValidator.isValid&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>ConstraintValidatorContext <span class='color_p'>p2</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_90" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/MinDataSizeValidator.isValid:(Ljava/lang/Object;Ljavax/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-validation-3.0.17.jar</span>, <span class='cname'>MinDurationValidator.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_91')">
+MinDurationValidator.isValid&#160;<span class='sym_p'><span>(&#160;Duration <span class='color_p'>value</span></span>, <span>ConstraintValidatorContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_91" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/MinDurationValidator.isValid:(Lio/dropwizard/util/Duration;Ljavax/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_92')">
+MinDurationValidator.isValid&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>ConstraintValidatorContext <span class='color_p'>p2</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_92" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/MinDurationValidator.isValid:(Ljava/lang/Object;Ljavax/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-validation-3.0.17.jar</span>, <span class='cname'>OneOfValidator.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_93')">
+OneOfValidator.isValid&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>value</span></span>, <span>ConstraintValidatorContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_93" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/OneOfValidator.isValid:(Ljava/lang/Object;Ljavax/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-validation-3.0.17.jar</span>, <span class='cname'>PortRangeValidator.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_94')">
+PortRangeValidator.isValid&#160;<span class='sym_p'><span>(&#160;Integer <span class='color_p'>value</span></span>, <span>ConstraintValidatorContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_94" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/PortRangeValidator.isValid:(Ljava/lang/Integer;Ljavax/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_95')">
+PortRangeValidator.isValid&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>ConstraintValidatorContext <span class='color_p'>p2</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_95" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/PortRangeValidator.isValid:(Ljava/lang/Object;Ljavax/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-validation-3.0.17.jar</span>, <span class='cname'>SelfValidatingValidator.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation.selfvalidating</span><br/>
+<span class="section" onclick="sC(this, 'c_96')">
+SelfValidatingValidator.isValid&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>value</span></span>, <span>ConstraintValidatorContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_96" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/selfvalidating/SelfValidatingValidator.isValid:(Ljava/lang/Object;Ljavax/validation/ConstraintValidatorContext;)Z</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-validation-3.0.17.jar</span>, <span class='cname'>ViolationCollector.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation.selfvalidating</span><br/>
+<span class="section" onclick="sC(this, 'c_97')">
+ViolationCollector.getContext&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ConstraintValidatorContext</span></span>
+<br/>
+<div id="c_97" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/selfvalidating/ViolationCollector.getContext:()Ljavax/validation/ConstraintValidatorContext;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_98')">
+ViolationCollector.ViolationCollector&#160;<span class='sym_p'><span>(&#160;ConstraintValidatorContext <span class='color_p'>constraintValidatorContext</span></span>&#160;)</span></span>
+<br/>
+<div id="c_98" style="display:none;">
+<span class='mngl'>io/dropwizard/validation/selfvalidating/ViolationCollector.&quot;&lt;init&gt;&quot;:(Ljavax/validation/ConstraintValidatorContext;)V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='High_Risk_Problems'></a><a name='Type_Problems_High'></a>
+<h2>Problems with Data Types, High Severity <span class='failed'>&nbsp;8&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-validation-3.0.17.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_99')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> MaxDataSizeValidator <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_99" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Removed super-interface <b>javax.validation.ConstraintValidator&lt;MaxDataSize,io.dropwizard.util.DataSize&gt;</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find method in class <b>MaxDataSizeValidator</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_100')">
+[+] affected methods: 3 (3.8%)</span>
+<div id="c_100" style="display:none;">
+<div class='affected'><span class='iname_a'>MaxDataSizeValidator.MaxDataSizeValidator&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'MaxDataSizeValidator' class.</div>
+<span class='iname_a'>MaxDataSizeValidator.initialize&#160;<span class='sym_p'><span>(&#160;MaxDataSize <i>constraintAnnotation</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'MaxDataSizeValidator' class.</div>
+<span class='iname_a'>MaxDataSizeValidator.initialize&#160;<span class='sym_p'><span>(&#160;Annotation <i>p1</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'MaxDataSizeValidator' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_101')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> MaxDurationValidator <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_101" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Removed super-interface <b>javax.validation.ConstraintValidator&lt;MaxDuration,io.dropwizard.util.Duration&gt;</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find method in class <b>MaxDurationValidator</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_102')">
+[+] affected methods: 3 (3.8%)</span>
+<div id="c_102" style="display:none;">
+<div class='affected'><span class='iname_a'>MaxDurationValidator.MaxDurationValidator&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'MaxDurationValidator' class.</div>
+<span class='iname_a'>MaxDurationValidator.initialize&#160;<span class='sym_p'><span>(&#160;MaxDuration <i>constraintAnnotation</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'MaxDurationValidator' class.</div>
+<span class='iname_a'>MaxDurationValidator.initialize&#160;<span class='sym_p'><span>(&#160;Annotation <i>p1</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'MaxDurationValidator' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_103')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> MethodValidator <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_103" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Removed super-interface <b>javax.validation.ConstraintValidator&lt;ValidationMethod,java.lang.Boolean&gt;</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find method in class <b>MethodValidator</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_104')">
+[+] affected methods: 1 (1.3%)</span>
+<div id="c_104" style="display:none;">
+<div class='affected'><span class='iname_a'>MethodValidator.MethodValidator&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'MethodValidator' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_105')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> MinDataSizeValidator <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_105" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Removed super-interface <b>javax.validation.ConstraintValidator&lt;MinDataSize,io.dropwizard.util.DataSize&gt;</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find method in class <b>MinDataSizeValidator</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_106')">
+[+] affected methods: 3 (3.8%)</span>
+<div id="c_106" style="display:none;">
+<div class='affected'><span class='iname_a'>MinDataSizeValidator.MinDataSizeValidator&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'MinDataSizeValidator' class.</div>
+<span class='iname_a'>MinDataSizeValidator.initialize&#160;<span class='sym_p'><span>(&#160;MinDataSize <i>constraintAnnotation</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'MinDataSizeValidator' class.</div>
+<span class='iname_a'>MinDataSizeValidator.initialize&#160;<span class='sym_p'><span>(&#160;Annotation <i>p1</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'MinDataSizeValidator' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_107')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> MinDurationValidator <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_107" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Removed super-interface <b>javax.validation.ConstraintValidator&lt;MinDuration,io.dropwizard.util.Duration&gt;</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find method in class <b>MinDurationValidator</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_108')">
+[+] affected methods: 3 (3.8%)</span>
+<div id="c_108" style="display:none;">
+<div class='affected'><span class='iname_a'>MinDurationValidator.MinDurationValidator&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'MinDurationValidator' class.</div>
+<span class='iname_a'>MinDurationValidator.initialize&#160;<span class='sym_p'><span>(&#160;MinDuration <i>constraintAnnotation</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'MinDurationValidator' class.</div>
+<span class='iname_a'>MinDurationValidator.initialize&#160;<span class='sym_p'><span>(&#160;Annotation <i>p1</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'MinDurationValidator' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_109')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> OneOfValidator <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_109" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Removed super-interface <b>javax.validation.ConstraintValidator&lt;OneOf,java.lang.Object&gt;</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find method in class <b>OneOfValidator</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_110')">
+[+] affected methods: 3 (3.8%)</span>
+<div id="c_110" style="display:none;">
+<div class='affected'><span class='iname_a'>OneOfValidator.OneOfValidator&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'OneOfValidator' class.</div>
+<span class='iname_a'>OneOfValidator.initialize&#160;<span class='sym_p'><span>(&#160;OneOf <i>constraintAnnotation</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'OneOfValidator' class.</div>
+<span class='iname_a'>OneOfValidator.initialize&#160;<span class='sym_p'><span>(&#160;Annotation <i>p1</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'OneOfValidator' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_111')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> PortRangeValidator <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_111" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Removed super-interface <b>javax.validation.ConstraintValidator&lt;PortRange,java.lang.Integer&gt;</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find method in class <b>PortRangeValidator</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_112')">
+[+] affected methods: 3 (3.8%)</span>
+<div id="c_112" style="display:none;">
+<div class='affected'><span class='iname_a'>PortRangeValidator.PortRangeValidator&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'PortRangeValidator' class.</div>
+<span class='iname_a'>PortRangeValidator.initialize&#160;<span class='sym_p'><span>(&#160;PortRange <i>constraintAnnotation</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'PortRangeValidator' class.</div>
+<span class='iname_a'>PortRangeValidator.initialize&#160;<span class='sym_p'><span>(&#160;Annotation <i>p1</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'PortRangeValidator' class.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><span class='jar'>dropwizard-validation-3.0.17.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation.selfvalidating</span><br/>
+<span class="section" onclick="sC(this, 'c_113')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> SelfValidatingValidator <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_113" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Removed super-interface <b>javax.validation.ConstraintValidator&lt;SelfValidating,java.lang.Object&gt;</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find method in class <b>SelfValidatingValidator</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_114')">
+[+] affected methods: 1 (1.3%)</span>
+<div id="c_114" style="display:none;">
+<div class='affected'><span class='iname_a'>SelfValidatingValidator.SelfValidatingValidator&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'SelfValidatingValidator' class.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Medium_Risk_Problems'></a><a name='Method_Problems_Medium'></a>
+<h2>Problems with Methods, Medium Severity <span class='failed'>&nbsp;2&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-validation-3.0.17.jar</span>, <span class='cname'>BaseValidator.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_115')">
+<span class='ext'>[+]</span> BaseValidator.newValidator&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Validator</span> <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_115" style="display:none;">
+<span class='mngl pleft'>io/dropwizard/validation/BaseValidator.newValidator:()Ljavax/validation/Validator;</span><br/>
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Return value type has been changed from <b>javax.validation.Validator</b> to <b>jakarta.validation.Validator</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: incompatible types: <b>jakarta.validation.Validator</b> cannot be converted to <b>javax.validation.Validator</b>.</td>
+</tr>
+</table><br/></div>
+
+<br/><span class='jar'>dropwizard-validation-3.0.17.jar</span>, <span class='cname'>ViolationCollector.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.validation.selfvalidating</span><br/>
+<span class="section" onclick="sC(this, 'c_116')">
+<span class='ext'>[+]</span> ViolationCollector.getContext&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ConstraintValidatorContext</span> <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_116" style="display:none;">
+<span class='mngl pleft'>io/dropwizard/validation/selfvalidating/ViolationCollector.getContext:()Ljavax/validation/ConstraintValidatorContext;</span><br/>
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Return value type has been changed from <b>javax.validation.ConstraintValidatorContext</b> to <b>jakarta.validation.ConstraintValidatorContext</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: incompatible types: <b>jakarta.validation.ConstraintValidatorContext</b> cannot be converted to <b>javax.validation.ConstraintValidatorContext</b>.</td>
+</tr>
+</table><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Checked_Archives'></a><h2>Java Archives <span class='gray'>&nbsp;1&nbsp;</span></h2>
+<hr/><div class='jar_list'>
+dropwizard-validation-3.0.17.jar<br/>
+</div><br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<br/><br/><br/>
+<hr/><div class='footer' align='right'><i>Generated by <a href='https://github.com/lvc/japi-compliance-checker'>Java API Compliance Checker</a> 2.4 &#160;</i></div><br/>
+</body></html>

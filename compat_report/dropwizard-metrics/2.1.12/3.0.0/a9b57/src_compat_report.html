@@ -1,0 +1,1241 @@
+<!-- kind:source;verdict:incompatible;affected:100;added:59;removed:58;type_problems_high:9;type_problems_medium:0;type_problems_low:0;method_problems_high:0;method_problems_medium:0;method_problems_low:0;checked_methods:118;checked_types:18;tool_version:2.4 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="dropwizard-metrics, source, compatibility" />
+<meta name="description" content="Source compatibility report for the dropwizard-metrics library between 2.1.12 and 3.0.0 versions" />
+<title>dropwizard-metrics: 2.1.12 to 3.0.0 source compatibility report</title>
+<style type="text/css">
+body {
+    font-family:Arial, sans-serif;
+    background-color:White;
+    color:Black;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+    white-space:nowrap;
+}
+div.symbols {
+    color:#003E69;
+}
+div.symbols i {
+    color:Brown;
+}
+span.section {
+    font-weight:bold;
+    cursor:pointer;
+    color:#003E69;
+    white-space:nowrap;
+    margin-left:0.3125em;
+}
+span:hover.section {
+    color:#336699;
+}
+span.sect_aff {
+    cursor:pointer;
+    padding-left:1.55em;
+    font-size:0.875em;
+    color:#cc3300;
+}
+span.ext {
+    font-weight:normal;
+}
+span.jar {
+    color:#cc3300;
+    font-size:0.875em;
+    font-weight:bold;
+}
+div.jar_list {
+    padding-left:0.4em;
+    font-size:0.94em;
+}
+span.pkg_t {
+    color:#408080;
+    font-size:0.875em;
+}
+span.pkg {
+    color:#408080;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.cname {
+    color:Green;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.iname_b {
+    font-weight:bold;
+}
+span.iname_a {
+    color:#333333;
+    font-weight:bold;
+    font-size:0.94em;
+}
+span.sym_p {
+    font-weight:normal;
+    white-space:normal;
+}
+span.sym_pd {
+    white-space:normal;
+}
+span.sym_p span, span.sym_pd span {
+    white-space:nowrap;
+}
+span.attr {
+    color:Black;
+    font-weight:normal;
+}
+span.deprecated {
+    color:Red;
+    font-weight:bold;
+    font-family:Monaco, monospace;
+}
+div.affect {
+    padding-left:1em;
+    padding-bottom:10px;
+    font-size:0.87em;
+    font-style:italic;
+    line-height:0.9em;
+}
+div.affected {
+    padding-left:2em;
+    padding-top:10px;
+}
+table.ptable {
+    border-collapse:collapse;
+    border:1px outset black;
+    margin-left:0.95em;
+    margin-top:3px;
+    margin-bottom:3px;
+    width:56.25em;
+}
+table.ptable td {
+    border:1px solid Gray;
+    padding:3px;
+    font-size:0.875em;
+    text-align:left;
+    vertical-align:top;
+    max-width:28em;
+    word-wrap:break-word;
+}
+table.ptable th {
+    background-color:#eeeeee;
+    font-weight:bold;
+    color:#333333;
+    font-family:Verdana, Arial;
+    font-size:0.875em;
+    border:1px solid Gray;
+    text-align:center;
+    vertical-align:top;
+    white-space:nowrap;
+    padding:3px;
+}
+table.summary {
+    border-collapse:collapse;
+    border:1px outset black;
+}
+table.summary th {
+    background-color:#eeeeee;
+    font-weight:normal;
+    text-align:left;
+    font-size:0.94em;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px;
+}
+table.summary td {
+    text-align:right;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px 5px 3px 10px;
+}
+span.mngl {
+    padding-left:1em;
+    font-size:0.875em;
+    cursor:text;
+    color:#444444;
+    font-weight:bold;
+}
+span.pleft {
+    padding-left:2.5em;
+}
+span.color_p {
+    font-style:italic;
+    color:Brown;
+}
+span.param {
+    font-style:italic;
+}
+span.focus_p {
+    font-style:italic;
+    background-color:#DCDCDC;
+}
+span.ttype {
+    font-weight:normal;
+}
+span.nowrap {
+    white-space:nowrap;
+}
+span.value {
+    white-space:nowrap;
+    font-weight:bold;
+}
+.passed {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.warning {
+    background-color:#F4F4AF;
+    font-weight:normal;
+}
+.failed {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.new {
+    background-color:#C6DEFF;
+    font-weight:normal;
+}
+
+.compatible {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.almost_compatible {
+    background-color:#FFDAA3;
+    font-weight:normal;
+}
+.incompatible {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.gray {
+    background-color:#DCDCDC;
+    font-weight:normal;
+}
+
+.top_ref {
+    font-size:0.69em;
+}
+.footer {
+    font-size:0.8125em;
+}
+
+</style>
+<script type="text/javascript" language="JavaScript">
+<!--
+function sC(header, id)
+{
+    e = document.getElementById(id);
+    if(e.style.display == 'none')
+    {
+        e.style.display = 'block';
+        e.style.visibility = 'visible';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[&minus;]");
+    }
+    else
+    {
+        e.style.display = 'none';
+        e.style.visibility = 'hidden';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[+]");
+    }
+}
+
+-->
+</script>
+</head>
+<body><a name='Top'></a><h1>Source compatibility report for the <span style='color:Blue;'>dropwizard-metrics</span> library between <span style='color:Red;'>2.1.12</span> and <span style='color:Red;'>3.0.0</span> versions</h1>
+
+<h2>Test Info</h2><hr/>
+<table class='summary'>
+<tr><th>Library Name</th><td>dropwizard-metrics</td></tr>
+<tr><th>Version #1</th><td>2.1.12</td></tr>
+<tr><th>Version #2</th><td>3.0.0</td></tr>
+</table>
+<h2>Test Results</h2><hr/>
+<table class='summary'>
+<tr><th>Total Java Modules</th><td><a href='#Checked_Archives' style='color:Blue;'>1</a></td></tr>
+<tr><th>Total Methods / Classes</th><td>118 / 18</td></tr>
+<tr><th>Compatibility</th>
+<td class='incompatible'>0%</td>
+</tr>
+</table>
+<h2>Problem Summary</h2><hr/>
+<table class='summary'>
+<tr><th></th><th style='text-align:center;'>Severity</th><th style='text-align:center;'>Count</th></tr>
+<tr><th>Added Methods</th><td>-</td><td class='new'><a href='#Added' style='color:Blue;'>59</a></td></tr>
+<tr><th>Removed Methods</th><td>High</td><td class='failed'><a href='#Removed' style='color:Blue;'>58</a></td></tr>
+<tr><th rowspan='3'>Problems with<br/>Data Types</th><td>High</td><td class='failed'><a href='#Type_Problems_High' style='color:Blue;'>9</a></td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+<tr><th rowspan='3'>Problems with<br/>Methods</th><td>High</td><td>0</td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+</table>
+
+<a name='Added'></a><h2>Added Methods <span class='new'>&nbsp;59&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-metrics-3.0.0.jar</span>, <span class='cname'>BaseFormattedReporterFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics.common</span><br/>
+<span class="section" onclick="sC(this, 'c_136')">
+BaseFormattedReporterFactory.BaseFormattedReporterFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_136" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/BaseFormattedReporterFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_137')">
+BaseFormattedReporterFactory.getLocale&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Locale</span></span>
+<br/>
+<div id="c_137" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/BaseFormattedReporterFactory.getLocale:()Ljava/util/Locale;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_138')">
+BaseFormattedReporterFactory.setLocale&#160;<span class='sym_p'><span>(&#160;Locale <span class='color_p'>locale</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_138" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/BaseFormattedReporterFactory.setLocale:(Ljava/util/Locale;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-metrics-3.0.0.jar</span>, <span class='cname'>BaseReporterFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics.common</span><br/>
+<span class="section" onclick="sC(this, 'c_139')">
+BaseReporterFactory.BaseReporterFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_139" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/BaseReporterFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_140')">
+BaseReporterFactory.getDisabledAttributes&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;MetricAttribute&gt;</span></span>
+<br/>
+<div id="c_140" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/BaseReporterFactory.getDisabledAttributes:()Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_141')">
+BaseReporterFactory.getDurationUnit&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;TimeUnit</span></span>
+<br/>
+<div id="c_141" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/BaseReporterFactory.getDurationUnit:()Ljava/util/concurrent/TimeUnit;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_142')">
+BaseReporterFactory.getExcludes&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;String&gt;</span></span>
+<br/>
+<div id="c_142" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/BaseReporterFactory.getExcludes:()Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_143')">
+BaseReporterFactory.getExcludesAttributes&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;EnumSet&lt;MetricAttribute&gt;</span></span>
+<br/>
+<div id="c_143" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/BaseReporterFactory.getExcludesAttributes:()Ljava/util/EnumSet;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_144')">
+BaseReporterFactory.getFilter&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;MetricFilter</span></span>
+<br/>
+<div id="c_144" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/BaseReporterFactory.getFilter:()Lcom/codahale/metrics/MetricFilter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_145')">
+BaseReporterFactory.getFrequency&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Optional&lt;Duration&gt;</span></span>
+<br/>
+<div id="c_145" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/BaseReporterFactory.getFrequency:()Ljava/util/Optional;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_146')">
+BaseReporterFactory.getIncludes&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;String&gt;</span></span>
+<br/>
+<div id="c_146" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/BaseReporterFactory.getIncludes:()Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_147')">
+BaseReporterFactory.getIncludesAttributes&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;EnumSet&lt;MetricAttribute&gt;</span></span>
+<br/>
+<div id="c_147" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/BaseReporterFactory.getIncludesAttributes:()Ljava/util/EnumSet;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_148')">
+BaseReporterFactory.getRateUnit&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;TimeUnit</span></span>
+<br/>
+<div id="c_148" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/BaseReporterFactory.getRateUnit:()Ljava/util/concurrent/TimeUnit;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_149')">
+BaseReporterFactory.getUseRegexFilters&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_149" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/BaseReporterFactory.getUseRegexFilters:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_150')">
+BaseReporterFactory.getUseSubstringMatching&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_150" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/BaseReporterFactory.getUseSubstringMatching:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_151')">
+BaseReporterFactory.setDurationUnit&#160;<span class='sym_p'><span>(&#160;TimeUnit <span class='color_p'>durationUnit</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_151" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/BaseReporterFactory.setDurationUnit:(Ljava/util/concurrent/TimeUnit;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_152')">
+BaseReporterFactory.setExcludes&#160;<span class='sym_p'><span>(&#160;Set&lt;String&gt; <span class='color_p'>excludes</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_152" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/BaseReporterFactory.setExcludes:(Ljava/util/Set;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_153')">
+BaseReporterFactory.setExcludesAttributes&#160;<span class='sym_p'><span>(&#160;EnumSet&lt;MetricAttribute&gt; <span class='color_p'>excludesAttributes</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_153" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/BaseReporterFactory.setExcludesAttributes:(Ljava/util/EnumSet;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_154')">
+BaseReporterFactory.setFrequency&#160;<span class='sym_p'><span>(&#160;Optional&lt;Duration&gt; <span class='color_p'>frequency</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_154" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/BaseReporterFactory.setFrequency:(Ljava/util/Optional;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_155')">
+BaseReporterFactory.setIncludes&#160;<span class='sym_p'><span>(&#160;Set&lt;String&gt; <span class='color_p'>includes</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_155" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/BaseReporterFactory.setIncludes:(Ljava/util/Set;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_156')">
+BaseReporterFactory.setIncludesAttributes&#160;<span class='sym_p'><span>(&#160;EnumSet&lt;MetricAttribute&gt; <span class='color_p'>includesAttributes</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_156" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/BaseReporterFactory.setIncludesAttributes:(Ljava/util/EnumSet;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_157')">
+BaseReporterFactory.setRateUnit&#160;<span class='sym_p'><span>(&#160;TimeUnit <span class='color_p'>rateUnit</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_157" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/BaseReporterFactory.setRateUnit:(Ljava/util/concurrent/TimeUnit;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_158')">
+BaseReporterFactory.setUseRegexFilters&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>useRegexFilters</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_158" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/BaseReporterFactory.setUseRegexFilters:(Z)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_159')">
+BaseReporterFactory.setUseSubstringMatching&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>useSubstringMatching</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_159" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/BaseReporterFactory.setUseSubstringMatching:(Z)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-metrics-3.0.0.jar</span>, <span class='cname'>ConsoleReporterFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics.common</span><br/>
+<span class="section" onclick="sC(this, 'c_160')">
+ConsoleReporterFactory.build&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>registry</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ScheduledReporter</span></span>
+<br/>
+<div id="c_160" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/ConsoleReporterFactory.build:(Lcom/codahale/metrics/MetricRegistry;)Lcom/codahale/metrics/ScheduledReporter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_161')">
+ConsoleReporterFactory.ConsoleReporterFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_161" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/ConsoleReporterFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_162')">
+ConsoleReporterFactory.getOutput&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ConsoleReporterFactory.ConsoleStream</span></span>
+<br/>
+<div id="c_162" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/ConsoleReporterFactory.getOutput:()Lio/dropwizard/metrics/common/ConsoleReporterFactory$ConsoleStream;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_163')">
+ConsoleReporterFactory.getTimeZone&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;TimeZone</span></span>
+<br/>
+<div id="c_163" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/ConsoleReporterFactory.getTimeZone:()Ljava/util/TimeZone;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_164')">
+ConsoleReporterFactory.setOutput&#160;<span class='sym_p'><span>(&#160;ConsoleReporterFactory.ConsoleStream <span class='color_p'>stream</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_164" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/ConsoleReporterFactory.setOutput:(Lio/dropwizard/metrics/common/ConsoleReporterFactory$ConsoleStream;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_165')">
+ConsoleReporterFactory.setTimeZone&#160;<span class='sym_p'><span>(&#160;TimeZone <span class='color_p'>timeZone</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_165" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/ConsoleReporterFactory.setTimeZone:(Ljava/util/TimeZone;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-metrics-3.0.0.jar</span>, <span class='cname'>ConsoleStream.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics.common</span><br/>
+<span class="section" onclick="sC(this, 'c_166')">
+ConsoleReporterFactory.ConsoleStream.get&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;PrintStream</span></span>
+<br/>
+<div id="c_166" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/ConsoleReporterFactory.ConsoleStream.get:()Ljava/io/PrintStream;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_167')">
+ConsoleReporterFactory.ConsoleStream.valueOf&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ConsoleReporterFactory.ConsoleStream</span></span>
+<br/>
+<div id="c_167" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/ConsoleReporterFactory.ConsoleStream.valueOf:(Ljava/lang/String;)Lio/dropwizard/metrics/common/ConsoleReporterFactory$ConsoleStream;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_168')">
+ConsoleReporterFactory.ConsoleStream.values&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ConsoleReporterFactory.ConsoleStream[&#160;]</span></span>
+<br/>
+<div id="c_168" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/ConsoleReporterFactory.ConsoleStream.values:()[Lio/dropwizard/metrics/common/ConsoleReporterFactory$ConsoleStream;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-metrics-3.0.0.jar</span>, <span class='cname'>CsvReporterFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics.common</span><br/>
+<span class="section" onclick="sC(this, 'c_169')">
+CsvReporterFactory.build&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>registry</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ScheduledReporter</span></span>
+<br/>
+<div id="c_169" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/CsvReporterFactory.build:(Lcom/codahale/metrics/MetricRegistry;)Lcom/codahale/metrics/ScheduledReporter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_170')">
+CsvReporterFactory.CsvReporterFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_170" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/CsvReporterFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_171')">
+CsvReporterFactory.getFile&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;File</span></span>
+<br/>
+<div id="c_171" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/CsvReporterFactory.getFile:()Ljava/io/File;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_172')">
+CsvReporterFactory.setFile&#160;<span class='sym_p'><span>(&#160;File <span class='color_p'>file</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_172" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/CsvReporterFactory.setFile:(Ljava/io/File;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-metrics-3.0.0.jar</span>, <span class='cname'>MetricsFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics.common</span><br/>
+<span class="section" onclick="sC(this, 'c_173')">
+MetricsFactory.configure&#160;<span class='sym_p'><span>(&#160;LifecycleEnvironment <span class='color_p'>environment</span></span>, <span>MetricRegistry <span class='color_p'>registry</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_173" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/MetricsFactory.configure:(Lio/dropwizard/lifecycle/setup/LifecycleEnvironment;Lcom/codahale/metrics/MetricRegistry;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_174')">
+MetricsFactory.getFrequency&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Duration</span></span>
+<br/>
+<div id="c_174" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/MetricsFactory.getFrequency:()Lio/dropwizard/util/Duration;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_175')">
+MetricsFactory.getReporters&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;List&lt;ReporterFactory&gt;</span></span>
+<br/>
+<div id="c_175" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/MetricsFactory.getReporters:()Ljava/util/List;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_176')">
+MetricsFactory.isReportOnStop&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_176" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/MetricsFactory.isReportOnStop:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_177')">
+MetricsFactory.MetricsFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_177" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/MetricsFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_178')">
+MetricsFactory.setFrequency&#160;<span class='sym_p'><span>(&#160;Duration <span class='color_p'>frequency</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_178" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/MetricsFactory.setFrequency:(Lio/dropwizard/util/Duration;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_179')">
+MetricsFactory.setReporters&#160;<span class='sym_p'><span>(&#160;List&lt;ReporterFactory&gt; <span class='color_p'>reporters</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_179" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/MetricsFactory.setReporters:(Ljava/util/List;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_180')">
+MetricsFactory.setReportOnStop&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>reportOnStop</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_180" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/MetricsFactory.setReportOnStop:(Z)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_181')">
+MetricsFactory.toString&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_181" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/MetricsFactory.toString:()Ljava/lang/String;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-metrics-3.0.0.jar</span>, <span class='cname'>ReporterFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics.common</span><br/>
+<span class="section" onclick="sC(this, 'c_182')">
+ReporterFactory.build&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>p1</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ScheduledReporter</span></span>
+<br/>
+<div id="c_182" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/ReporterFactory.build:(Lcom/codahale/metrics/MetricRegistry;)Lcom/codahale/metrics/ScheduledReporter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_183')">
+ReporterFactory.getFrequency&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Optional&lt;Duration&gt;</span></span>
+<br/>
+<div id="c_183" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/ReporterFactory.getFrequency:()Ljava/util/Optional;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-metrics-3.0.0.jar</span>, <span class='cname'>ScheduledReporterManager.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics.common</span><br/>
+<span class="section" onclick="sC(this, 'c_184')">
+ScheduledReporterManager.ScheduledReporterManager&#160;<span class='sym_p'><span>(&#160;ScheduledReporter <span class='color_p'>reporter</span></span>, <span>Duration <span class='color_p'>period</span></span>&#160;)</span></span>
+<br/>
+<div id="c_184" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/ScheduledReporterManager.&quot;&lt;init&gt;&quot;:(Lcom/codahale/metrics/ScheduledReporter;Lio/dropwizard/util/Duration;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_185')">
+ScheduledReporterManager.ScheduledReporterManager&#160;<span class='sym_p'><span>(&#160;ScheduledReporter <span class='color_p'>reporter</span></span>, <span>Duration <span class='color_p'>period</span></span>, <span>boolean <span class='color_p'>reportOnStop</span></span>&#160;)</span></span>
+<br/>
+<div id="c_185" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/ScheduledReporterManager.&quot;&lt;init&gt;&quot;:(Lcom/codahale/metrics/ScheduledReporter;Lio/dropwizard/util/Duration;Z)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_186')">
+ScheduledReporterManager.start&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_186" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/ScheduledReporterManager.start:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_187')">
+ScheduledReporterManager.stop&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_187" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/ScheduledReporterManager.stop:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-metrics-3.0.0.jar</span>, <span class='cname'>Slf4jReporterFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics.common</span><br/>
+<span class="section" onclick="sC(this, 'c_188')">
+Slf4jReporterFactory.build&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>registry</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ScheduledReporter</span></span>
+<br/>
+<div id="c_188" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/Slf4jReporterFactory.build:(Lcom/codahale/metrics/MetricRegistry;)Lcom/codahale/metrics/ScheduledReporter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_189')">
+Slf4jReporterFactory.getLogger&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Logger</span></span>
+<br/>
+<div id="c_189" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/Slf4jReporterFactory.getLogger:()Lorg/slf4j/Logger;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_190')">
+Slf4jReporterFactory.getLoggerName&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_190" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/Slf4jReporterFactory.getLoggerName:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_191')">
+Slf4jReporterFactory.getMarkerName&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_191" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/Slf4jReporterFactory.getMarkerName:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_192')">
+Slf4jReporterFactory.setLoggerName&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>loggerName</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_192" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/Slf4jReporterFactory.setLoggerName:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_193')">
+Slf4jReporterFactory.setMarkerName&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>markerName</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_193" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/Slf4jReporterFactory.setMarkerName:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_194')">
+Slf4jReporterFactory.Slf4jReporterFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_194" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/common/Slf4jReporterFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Removed'></a><a name='Withdrawn'></a><h2>Removed Methods <span class='failed'>&nbsp;58&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-metrics-2.1.12.jar</span>, <span class='cname'>BaseFormattedReporterFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics</span><br/>
+<span class="section" onclick="sC(this, 'c_195')">
+BaseFormattedReporterFactory.BaseFormattedReporterFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_195" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/BaseFormattedReporterFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_196')">
+BaseFormattedReporterFactory.getLocale&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Locale</span></span>
+<br/>
+<div id="c_196" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/BaseFormattedReporterFactory.getLocale:()Ljava/util/Locale;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_197')">
+BaseFormattedReporterFactory.setLocale&#160;<span class='sym_p'><span>(&#160;Locale <span class='color_p'>locale</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_197" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/BaseFormattedReporterFactory.setLocale:(Ljava/util/Locale;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-metrics-2.1.12.jar</span>, <span class='cname'>BaseReporterFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics</span><br/>
+<span class="section" onclick="sC(this, 'c_198')">
+BaseReporterFactory.BaseReporterFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_198" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/BaseReporterFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_199')">
+BaseReporterFactory.getDisabledAttributes&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;MetricAttribute&gt;</span></span>
+<br/>
+<div id="c_199" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/BaseReporterFactory.getDisabledAttributes:()Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_200')">
+BaseReporterFactory.getDurationUnit&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;TimeUnit</span></span>
+<br/>
+<div id="c_200" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/BaseReporterFactory.getDurationUnit:()Ljava/util/concurrent/TimeUnit;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_201')">
+BaseReporterFactory.getExcludes&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;String&gt;</span></span>
+<br/>
+<div id="c_201" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/BaseReporterFactory.getExcludes:()Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_202')">
+BaseReporterFactory.getExcludesAttributes&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;EnumSet&lt;MetricAttribute&gt;</span></span>
+<br/>
+<div id="c_202" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/BaseReporterFactory.getExcludesAttributes:()Ljava/util/EnumSet;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_203')">
+BaseReporterFactory.getFilter&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;MetricFilter</span></span>
+<br/>
+<div id="c_203" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/BaseReporterFactory.getFilter:()Lcom/codahale/metrics/MetricFilter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_204')">
+BaseReporterFactory.getFrequency&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Optional&lt;Duration&gt;</span></span>
+<br/>
+<div id="c_204" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/BaseReporterFactory.getFrequency:()Ljava/util/Optional;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_205')">
+BaseReporterFactory.getIncludes&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;String&gt;</span></span>
+<br/>
+<div id="c_205" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/BaseReporterFactory.getIncludes:()Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_206')">
+BaseReporterFactory.getIncludesAttributes&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;EnumSet&lt;MetricAttribute&gt;</span></span>
+<br/>
+<div id="c_206" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/BaseReporterFactory.getIncludesAttributes:()Ljava/util/EnumSet;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_207')">
+BaseReporterFactory.getRateUnit&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;TimeUnit</span></span>
+<br/>
+<div id="c_207" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/BaseReporterFactory.getRateUnit:()Ljava/util/concurrent/TimeUnit;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_208')">
+BaseReporterFactory.getUseRegexFilters&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_208" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/BaseReporterFactory.getUseRegexFilters:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_209')">
+BaseReporterFactory.getUseSubstringMatching&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_209" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/BaseReporterFactory.getUseSubstringMatching:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_210')">
+BaseReporterFactory.setDurationUnit&#160;<span class='sym_p'><span>(&#160;TimeUnit <span class='color_p'>durationUnit</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_210" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/BaseReporterFactory.setDurationUnit:(Ljava/util/concurrent/TimeUnit;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_211')">
+BaseReporterFactory.setExcludes&#160;<span class='sym_p'><span>(&#160;Set&lt;String&gt; <span class='color_p'>excludes</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_211" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/BaseReporterFactory.setExcludes:(Ljava/util/Set;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_212')">
+BaseReporterFactory.setExcludesAttributes&#160;<span class='sym_p'><span>(&#160;EnumSet&lt;MetricAttribute&gt; <span class='color_p'>excludesAttributes</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_212" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/BaseReporterFactory.setExcludesAttributes:(Ljava/util/EnumSet;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_213')">
+BaseReporterFactory.setFrequency&#160;<span class='sym_p'><span>(&#160;Optional&lt;Duration&gt; <span class='color_p'>frequency</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_213" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/BaseReporterFactory.setFrequency:(Ljava/util/Optional;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_214')">
+BaseReporterFactory.setIncludes&#160;<span class='sym_p'><span>(&#160;Set&lt;String&gt; <span class='color_p'>includes</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_214" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/BaseReporterFactory.setIncludes:(Ljava/util/Set;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_215')">
+BaseReporterFactory.setIncludesAttributes&#160;<span class='sym_p'><span>(&#160;EnumSet&lt;MetricAttribute&gt; <span class='color_p'>includesAttributes</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_215" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/BaseReporterFactory.setIncludesAttributes:(Ljava/util/EnumSet;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_216')">
+BaseReporterFactory.setRateUnit&#160;<span class='sym_p'><span>(&#160;TimeUnit <span class='color_p'>rateUnit</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_216" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/BaseReporterFactory.setRateUnit:(Ljava/util/concurrent/TimeUnit;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_217')">
+BaseReporterFactory.setUseRegexFilters&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>useRegexFilters</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_217" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/BaseReporterFactory.setUseRegexFilters:(Z)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_218')">
+BaseReporterFactory.setUseSubstringMatching&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>useSubstringMatching</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_218" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/BaseReporterFactory.setUseSubstringMatching:(Z)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-metrics-2.1.12.jar</span>, <span class='cname'>ConsoleReporterFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics</span><br/>
+<span class="section" onclick="sC(this, 'c_219')">
+ConsoleReporterFactory.build&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>registry</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ScheduledReporter</span></span>
+<br/>
+<div id="c_219" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/ConsoleReporterFactory.build:(Lcom/codahale/metrics/MetricRegistry;)Lcom/codahale/metrics/ScheduledReporter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_220')">
+ConsoleReporterFactory.ConsoleReporterFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_220" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/ConsoleReporterFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_221')">
+ConsoleReporterFactory.getOutput&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ConsoleReporterFactory.ConsoleStream</span></span>
+<br/>
+<div id="c_221" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/ConsoleReporterFactory.getOutput:()Lio/dropwizard/metrics/ConsoleReporterFactory$ConsoleStream;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_222')">
+ConsoleReporterFactory.getTimeZone&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;TimeZone</span></span>
+<br/>
+<div id="c_222" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/ConsoleReporterFactory.getTimeZone:()Ljava/util/TimeZone;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_223')">
+ConsoleReporterFactory.setOutput&#160;<span class='sym_p'><span>(&#160;ConsoleReporterFactory.ConsoleStream <span class='color_p'>stream</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_223" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/ConsoleReporterFactory.setOutput:(Lio/dropwizard/metrics/ConsoleReporterFactory$ConsoleStream;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_224')">
+ConsoleReporterFactory.setTimeZone&#160;<span class='sym_p'><span>(&#160;TimeZone <span class='color_p'>timeZone</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_224" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/ConsoleReporterFactory.setTimeZone:(Ljava/util/TimeZone;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-metrics-2.1.12.jar</span>, <span class='cname'>ConsoleStream.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics</span><br/>
+<span class="section" onclick="sC(this, 'c_225')">
+ConsoleReporterFactory.ConsoleStream.get&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;PrintStream</span></span>
+<br/>
+<div id="c_225" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/ConsoleReporterFactory.ConsoleStream.get:()Ljava/io/PrintStream;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_226')">
+ConsoleReporterFactory.ConsoleStream.valueOf&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ConsoleReporterFactory.ConsoleStream</span></span>
+<br/>
+<div id="c_226" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/ConsoleReporterFactory.ConsoleStream.valueOf:(Ljava/lang/String;)Lio/dropwizard/metrics/ConsoleReporterFactory$ConsoleStream;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_227')">
+ConsoleReporterFactory.ConsoleStream.values&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ConsoleReporterFactory.ConsoleStream[&#160;]</span></span>
+<br/>
+<div id="c_227" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/ConsoleReporterFactory.ConsoleStream.values:()[Lio/dropwizard/metrics/ConsoleReporterFactory$ConsoleStream;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-metrics-2.1.12.jar</span>, <span class='cname'>CsvReporterFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics</span><br/>
+<span class="section" onclick="sC(this, 'c_228')">
+CsvReporterFactory.build&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>registry</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ScheduledReporter</span></span>
+<br/>
+<div id="c_228" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/CsvReporterFactory.build:(Lcom/codahale/metrics/MetricRegistry;)Lcom/codahale/metrics/ScheduledReporter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_229')">
+CsvReporterFactory.CsvReporterFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_229" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/CsvReporterFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_230')">
+CsvReporterFactory.getFile&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;File</span></span>
+<br/>
+<div id="c_230" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/CsvReporterFactory.getFile:()Ljava/io/File;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_231')">
+CsvReporterFactory.setFile&#160;<span class='sym_p'><span>(&#160;File <span class='color_p'>file</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_231" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/CsvReporterFactory.setFile:(Ljava/io/File;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-metrics-2.1.12.jar</span>, <span class='cname'>MetricsFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics</span><br/>
+<span class="section" onclick="sC(this, 'c_232')">
+MetricsFactory.configure&#160;<span class='sym_p'><span>(&#160;LifecycleEnvironment <span class='color_p'>environment</span></span>, <span>MetricRegistry <span class='color_p'>registry</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_232" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/MetricsFactory.configure:(Lio/dropwizard/lifecycle/setup/LifecycleEnvironment;Lcom/codahale/metrics/MetricRegistry;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_233')">
+MetricsFactory.getFrequency&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Duration</span></span>
+<br/>
+<div id="c_233" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/MetricsFactory.getFrequency:()Lio/dropwizard/util/Duration;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_234')">
+MetricsFactory.getReporters&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;List&lt;ReporterFactory&gt;</span></span>
+<br/>
+<div id="c_234" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/MetricsFactory.getReporters:()Ljava/util/List;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_235')">
+MetricsFactory.isReportOnStop&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_235" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/MetricsFactory.isReportOnStop:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_236')">
+MetricsFactory.MetricsFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_236" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/MetricsFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_237')">
+MetricsFactory.setFrequency&#160;<span class='sym_p'><span>(&#160;Duration <span class='color_p'>frequency</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_237" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/MetricsFactory.setFrequency:(Lio/dropwizard/util/Duration;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_238')">
+MetricsFactory.setReporters&#160;<span class='sym_p'><span>(&#160;List&lt;ReporterFactory&gt; <span class='color_p'>reporters</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_238" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/MetricsFactory.setReporters:(Ljava/util/List;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_239')">
+MetricsFactory.setReportOnStop&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>reportOnStop</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_239" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/MetricsFactory.setReportOnStop:(Z)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-metrics-2.1.12.jar</span>, <span class='cname'>ReporterFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics</span><br/>
+<span class="section" onclick="sC(this, 'c_240')">
+ReporterFactory.build&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>p1</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ScheduledReporter</span></span>
+<br/>
+<div id="c_240" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/ReporterFactory.build:(Lcom/codahale/metrics/MetricRegistry;)Lcom/codahale/metrics/ScheduledReporter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_241')">
+ReporterFactory.getFrequency&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Optional&lt;Duration&gt;</span></span>
+<br/>
+<div id="c_241" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/ReporterFactory.getFrequency:()Ljava/util/Optional;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-metrics-2.1.12.jar</span>, <span class='cname'>ScheduledReporterManager.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics</span><br/>
+<span class="section" onclick="sC(this, 'c_242')">
+ScheduledReporterManager.ScheduledReporterManager&#160;<span class='sym_p'><span>(&#160;ScheduledReporter <span class='color_p'>reporter</span></span>, <span>Duration <span class='color_p'>period</span></span>&#160;)</span></span>
+<br/>
+<div id="c_242" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/ScheduledReporterManager.&quot;&lt;init&gt;&quot;:(Lcom/codahale/metrics/ScheduledReporter;Lio/dropwizard/util/Duration;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_243')">
+ScheduledReporterManager.ScheduledReporterManager&#160;<span class='sym_p'><span>(&#160;ScheduledReporter <span class='color_p'>reporter</span></span>, <span>Duration <span class='color_p'>period</span></span>, <span>boolean <span class='color_p'>reportOnStop</span></span>&#160;)</span></span>
+<br/>
+<div id="c_243" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/ScheduledReporterManager.&quot;&lt;init&gt;&quot;:(Lcom/codahale/metrics/ScheduledReporter;Lio/dropwizard/util/Duration;Z)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_244')">
+ScheduledReporterManager.start&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_244" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/ScheduledReporterManager.start:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_245')">
+ScheduledReporterManager.stop&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_245" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/ScheduledReporterManager.stop:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-metrics-2.1.12.jar</span>, <span class='cname'>Slf4jReporterFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics</span><br/>
+<span class="section" onclick="sC(this, 'c_246')">
+Slf4jReporterFactory.build&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>registry</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ScheduledReporter</span></span>
+<br/>
+<div id="c_246" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/Slf4jReporterFactory.build:(Lcom/codahale/metrics/MetricRegistry;)Lcom/codahale/metrics/ScheduledReporter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_247')">
+Slf4jReporterFactory.getLogger&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Logger</span></span>
+<br/>
+<div id="c_247" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/Slf4jReporterFactory.getLogger:()Lorg/slf4j/Logger;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_248')">
+Slf4jReporterFactory.getLoggerName&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_248" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/Slf4jReporterFactory.getLoggerName:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_249')">
+Slf4jReporterFactory.getMarkerName&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_249" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/Slf4jReporterFactory.getMarkerName:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_250')">
+Slf4jReporterFactory.setLoggerName&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>loggerName</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_250" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/Slf4jReporterFactory.setLoggerName:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_251')">
+Slf4jReporterFactory.setMarkerName&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>markerName</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_251" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/Slf4jReporterFactory.setMarkerName:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_252')">
+Slf4jReporterFactory.Slf4jReporterFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_252" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics/Slf4jReporterFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='High_Risk_Problems'></a><a name='Type_Problems_High'></a>
+<h2>Problems with Data Types, High Severity <span class='failed'>&nbsp;9&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-metrics-2.1.12.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics</span><br/>
+<span class="section" onclick="sC(this, 'c_253')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> BaseFormattedReporterFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_253" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>BaseFormattedReporterFactory</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_254')">
+[+] affected methods: 3 (2.5%)</span>
+<div id="c_254" style="display:none;">
+<div class='affected'><span class='iname_a'>BaseFormattedReporterFactory.BaseFormattedReporterFactory&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'BaseFormattedReporterFactory' abstract class.</div>
+<span class='iname_a'>BaseFormattedReporterFactory.getLocale&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'BaseFormattedReporterFactory' abstract class.</div>
+<span class='iname_a'>BaseFormattedReporterFactory.setLocale&#160;<span class='sym_p'><span>(&#160;Locale <i>locale</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'BaseFormattedReporterFactory' abstract class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_255')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> BaseReporterFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_255" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>BaseReporterFactory</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_256')">
+[+] affected methods: 21 (17.8%)</span>
+<div id="c_256" style="display:none;">
+<div class='affected'><span class='iname_a'>BaseReporterFactory.BaseReporterFactory&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'BaseReporterFactory' abstract class.</div>
+<span class='iname_a'>BaseReporterFactory.getDisabledAttributes&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'BaseReporterFactory' abstract class.</div>
+<span class='iname_a'>BaseReporterFactory.getDurationUnit&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'BaseReporterFactory' abstract class.</div>
+<span class='iname_a'>BaseReporterFactory.getExcludes&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'BaseReporterFactory' abstract class.</div>
+<span class='iname_a'>BaseReporterFactory.getExcludesAttributes&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'BaseReporterFactory' abstract class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_257')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> ConsoleReporterFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_257" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>ConsoleReporterFactory</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_258')">
+[+] affected methods: 6 (5.1%)</span>
+<div id="c_258" style="display:none;">
+<div class='affected'><span class='iname_a'>ConsoleReporterFactory.ConsoleReporterFactory&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'ConsoleReporterFactory' class.</div>
+<span class='iname_a'>ConsoleReporterFactory.build&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>registry</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ConsoleReporterFactory' class.</div>
+<span class='iname_a'>ConsoleReporterFactory.getOutput&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'ConsoleReporterFactory' class.</div>
+<span class='iname_a'>ConsoleReporterFactory.getTimeZone&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'ConsoleReporterFactory' class.</div>
+<span class='iname_a'>ConsoleReporterFactory.setOutput&#160;<span class='sym_p'><span>(&#160;ConsoleReporterFactory.ConsoleStream <i>stream</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ConsoleReporterFactory' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_259')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> ConsoleReporterFactory.ConsoleStream <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_259" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>ConsoleReporterFactory.ConsoleStream</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_260')">
+[+] affected methods: 3 (2.5%)</span>
+<div id="c_260" style="display:none;">
+<div class='affected'><span class='iname_a'>ConsoleReporterFactory.ConsoleStream.get&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'ConsoleReporterFactory.ConsoleStream' class.</div>
+<span class='iname_a'>ConsoleReporterFactory.ConsoleStream.valueOf&#160;<span class='sym_p'><span>(&#160;String <i>name</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ConsoleReporterFactory.ConsoleStream' class.</div>
+<span class='iname_a'>ConsoleReporterFactory.ConsoleStream.values&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'ConsoleReporterFactory.ConsoleStream' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_261')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> CsvReporterFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_261" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>CsvReporterFactory</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_262')">
+[+] affected methods: 4 (3.4%)</span>
+<div id="c_262" style="display:none;">
+<div class='affected'><span class='iname_a'>CsvReporterFactory.CsvReporterFactory&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'CsvReporterFactory' class.</div>
+<span class='iname_a'>CsvReporterFactory.build&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>registry</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'CsvReporterFactory' class.</div>
+<span class='iname_a'>CsvReporterFactory.getFile&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'CsvReporterFactory' class.</div>
+<span class='iname_a'>CsvReporterFactory.setFile&#160;<span class='sym_p'><span>(&#160;File <i>file</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'CsvReporterFactory' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_263')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> MetricsFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_263" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>MetricsFactory</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_264')">
+[+] affected methods: 9 (7.6%)</span>
+<div id="c_264" style="display:none;">
+<div class='affected'><span class='iname_a'>MetricsFactory.MetricsFactory&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'MetricsFactory' class.</div>
+<span class='iname_a'>MetricsFactory.configure&#160;<span class='sym_p'><span>(&#160;LifecycleEnvironment <i>environment</i></span>, <span>MetricRegistry <i>registry</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'MetricsFactory' class.</div>
+<span class='iname_a'>MetricsFactory.getFrequency&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'MetricsFactory' class.</div>
+<span class='iname_a'>MetricsFactory.getReporters&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'MetricsFactory' class.</div>
+<span class='iname_a'>MetricsFactory.isReportOnStop&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'MetricsFactory' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_265')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> ScheduledReporterManager <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_265" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>ScheduledReporterManager</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_266')">
+[+] affected methods: 4 (3.4%)</span>
+<div id="c_266" style="display:none;">
+<div class='affected'><span class='iname_a'>ScheduledReporterManager.ScheduledReporterManager&#160;<span class='sym_p'><span>(&#160;ScheduledReporter <i>reporter</i></span>, <span>Duration <i>period</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'ScheduledReporterManager' class.</div>
+<span class='iname_a'>ScheduledReporterManager.ScheduledReporterManager&#160;<span class='sym_p'><span>(&#160;ScheduledReporter <i>reporter</i></span>, <span>Duration <i>period</i></span>, <span>boolean <i>reportOnStop</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'ScheduledReporterManager' class.</div>
+<span class='iname_a'>ScheduledReporterManager.start&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'ScheduledReporterManager' class.</div>
+<span class='iname_a'>ScheduledReporterManager.stop&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'ScheduledReporterManager' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_267')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> Slf4jReporterFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_267" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>Slf4jReporterFactory</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_268')">
+[+] affected methods: 7 (5.9%)</span>
+<div id="c_268" style="display:none;">
+<div class='affected'><span class='iname_a'>Slf4jReporterFactory.Slf4jReporterFactory&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'Slf4jReporterFactory' class.</div>
+<span class='iname_a'>Slf4jReporterFactory.build&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>registry</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'Slf4jReporterFactory' class.</div>
+<span class='iname_a'>Slf4jReporterFactory.getLogger&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'Slf4jReporterFactory' class.</div>
+<span class='iname_a'>Slf4jReporterFactory.getLoggerName&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'Slf4jReporterFactory' class.</div>
+<span class='iname_a'>Slf4jReporterFactory.getMarkerName&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'Slf4jReporterFactory' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_269')">
+<span class='ext'>[+]</span> <span class='ttype'>interface</span> ReporterFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_269" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This interface has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>ReporterFactory</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_270')">
+[+] affected methods: 2 (1.7%)</span>
+<div id="c_270" style="display:none;">
+<div class='affected'><span class='iname_a'>ReporterFactory.build&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>p1</i></span>&#160;)</span></span><br/><div class='affect'>This abstract method is from 'ReporterFactory' interface.</div>
+<span class='iname_a'>ReporterFactory.getFrequency&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This abstract method is from 'ReporterFactory' interface.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Checked_Archives'></a><h2>Java Archives <span class='gray'>&nbsp;1&nbsp;</span></h2>
+<hr/><div class='jar_list'>
+dropwizard-metrics-2.1.12.jar<br/>
+</div><br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<br/><br/><br/>
+<hr/><div class='footer' align='right'><i>Generated by <a href='https://github.com/lvc/japi-compliance-checker'>Java API Compliance Checker</a> 2.4 &#160;</i></div><br/>
+</body></html>

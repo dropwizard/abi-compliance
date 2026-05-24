@@ -1,0 +1,300 @@
+$VAR1 = {
+          'APIDump' => {
+                         '5.0.0' => {
+                                      'c6e62' => {
+                                                   'Archive' => 'metrics-legacy-adapter-5.0.0.jar',
+                                                   'Path' => 'api_dump/metrics-legacy-adapter/5.0.0/c6e62/API.dump.tar.gz',
+                                                   'TotalSymbols' => '343'
+                                                 }
+                                    },
+                         '5.0.1' => {
+                                      'de8aa' => {
+                                                   'Archive' => 'metrics-legacy-adapter-5.0.1.jar',
+                                                   'Path' => 'api_dump/metrics-legacy-adapter/5.0.1/de8aa/API.dump.tar.gz',
+                                                   'TotalSymbols' => '345'
+                                                 }
+                                    },
+                         '5.0.2' => {
+                                      'aa27b' => {
+                                                   'Archive' => 'metrics-legacy-adapter-5.0.2.jar',
+                                                   'Path' => 'api_dump/metrics-legacy-adapter/5.0.2/aa27b/API.dump.tar.gz',
+                                                   'TotalSymbols' => '345'
+                                                 }
+                                    },
+                         '5.0.3' => {
+                                      'd5327' => {
+                                                   'Archive' => 'metrics-legacy-adapter-5.0.3.jar',
+                                                   'Path' => 'api_dump/metrics-legacy-adapter/5.0.3/d5327/API.dump.tar.gz',
+                                                   'TotalSymbols' => '345'
+                                                 }
+                                    },
+                         '5.0.4' => {
+                                      'fb578' => {
+                                                   'Archive' => 'metrics-legacy-adapter-5.0.4.jar',
+                                                   'Path' => 'api_dump/metrics-legacy-adapter/5.0.4/fb578/API.dump.tar.gz',
+                                                   'TotalSymbols' => '345'
+                                                 }
+                                    },
+                         '5.0.5' => {
+                                      '91b79' => {
+                                                   'Archive' => 'metrics-legacy-adapter-5.0.5.jar',
+                                                   'Path' => 'api_dump/metrics-legacy-adapter/5.0.5/91b79/API.dump.tar.gz',
+                                                   'TotalSymbols' => '345'
+                                                 }
+                                    },
+                         '5.0.6' => {
+                                      'eedcc' => {
+                                                   'Archive' => 'metrics-legacy-adapter-5.0.6.jar',
+                                                   'Path' => 'api_dump/metrics-legacy-adapter/5.0.6/eedcc/API.dump.tar.gz',
+                                                   'TotalSymbols' => '345'
+                                                 }
+                                    }
+                       },
+          'APIReport' => {
+                           '5.0.0' => {
+                                        '5.0.1' => {
+                                                     'Added' => 2,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-legacy-adapter/5.0.0/5.0.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '5.0.1' => {
+                                        '5.0.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-legacy-adapter/5.0.1/5.0.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '5.0.2' => {
+                                        '5.0.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-legacy-adapter/5.0.2/5.0.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '5.0.3' => {
+                                        '5.0.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-legacy-adapter/5.0.3/5.0.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '5.0.4' => {
+                                        '5.0.5' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-legacy-adapter/5.0.4/5.0.5/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '5.0.5' => {
+                                        '5.0.6' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-legacy-adapter/5.0.5/5.0.6/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      }
+                         },
+          'APIReport_D' => {
+                             '5.0.0' => {
+                                          '5.0.1' => {
+                                                       '3a92c' => {
+                                                                    'Added' => 2,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-legacy-adapter-5.0.0.jar',
+                                                                    'Archive2' => 'metrics-legacy-adapter-5.0.1.jar',
+                                                                    'Path' => 'compat_report/metrics-legacy-adapter/5.0.0/5.0.1/3a92c/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-legacy-adapter/5.0.0/5.0.1/3a92c/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '5.0.1' => {
+                                          '5.0.2' => {
+                                                       '85cba' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-legacy-adapter-5.0.1.jar',
+                                                                    'Archive2' => 'metrics-legacy-adapter-5.0.2.jar',
+                                                                    'Path' => 'compat_report/metrics-legacy-adapter/5.0.1/5.0.2/85cba/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-legacy-adapter/5.0.1/5.0.2/85cba/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '5.0.2' => {
+                                          '5.0.3' => {
+                                                       '0eaea' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-legacy-adapter-5.0.2.jar',
+                                                                    'Archive2' => 'metrics-legacy-adapter-5.0.3.jar',
+                                                                    'Path' => 'compat_report/metrics-legacy-adapter/5.0.2/5.0.3/0eaea/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-legacy-adapter/5.0.2/5.0.3/0eaea/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '5.0.3' => {
+                                          '5.0.4' => {
+                                                       '925ea' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-legacy-adapter-5.0.3.jar',
+                                                                    'Archive2' => 'metrics-legacy-adapter-5.0.4.jar',
+                                                                    'Path' => 'compat_report/metrics-legacy-adapter/5.0.3/5.0.4/925ea/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-legacy-adapter/5.0.3/5.0.4/925ea/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '5.0.4' => {
+                                          '5.0.5' => {
+                                                       '0f931' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-legacy-adapter-5.0.4.jar',
+                                                                    'Archive2' => 'metrics-legacy-adapter-5.0.5.jar',
+                                                                    'Path' => 'compat_report/metrics-legacy-adapter/5.0.4/5.0.5/0f931/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-legacy-adapter/5.0.4/5.0.5/0f931/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '5.0.5' => {
+                                          '5.0.6' => {
+                                                       'df743' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-legacy-adapter-5.0.5.jar',
+                                                                    'Archive2' => 'metrics-legacy-adapter-5.0.6.jar',
+                                                                    'Path' => 'compat_report/metrics-legacy-adapter/5.0.5/5.0.6/df743/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-legacy-adapter/5.0.5/5.0.6/df743/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        }
+                           },
+          'Changelog' => {},
+          'Date' => {
+                      '5.0.0' => '01-2018-02 18:33',
+                      '5.0.1' => '20-2025-06 05:51',
+                      '5.0.2' => '20-2025-08 19:40',
+                      '5.0.3' => '28-2025-08 20:13',
+                      '5.0.4' => '31-2025-08 19:32',
+                      '5.0.5' => '15-2025-09 21:25',
+                      '5.0.6' => '25-2026-01 23:14'
+                    },
+          'Maintainer' => 'Dropwizard Metrics Committers',
+          'MaintainerUrl' => 'https://metrics.dropwizard.io/',
+          'PackageDiff' => {
+                             '5.0.0' => {
+                                          '5.0.1' => {
+                                                       'Changed' => '5.2',
+                                                       'Path' => 'package_diff/metrics-legacy-adapter/5.0.0/5.0.1/report.html'
+                                                     }
+                                        },
+                             '5.0.1' => {
+                                          '5.0.2' => {
+                                                       'Changed' => '0.1',
+                                                       'Path' => 'package_diff/metrics-legacy-adapter/5.0.1/5.0.2/report.html'
+                                                     }
+                                        },
+                             '5.0.2' => {
+                                          '5.0.3' => {
+                                                       'Changed' => '0.1',
+                                                       'Path' => 'package_diff/metrics-legacy-adapter/5.0.2/5.0.3/report.html'
+                                                     }
+                                        },
+                             '5.0.3' => {
+                                          '5.0.4' => {
+                                                       'Changed' => '0.1',
+                                                       'Path' => 'package_diff/metrics-legacy-adapter/5.0.3/5.0.4/report.html'
+                                                     }
+                                        },
+                             '5.0.4' => {
+                                          '5.0.5' => {
+                                                       'Changed' => '0.1',
+                                                       'Path' => 'package_diff/metrics-legacy-adapter/5.0.4/5.0.5/report.html'
+                                                     }
+                                        },
+                             '5.0.5' => {
+                                          '5.0.6' => {
+                                                       'Changed' => '0.1',
+                                                       'Path' => 'package_diff/metrics-legacy-adapter/5.0.5/5.0.6/report.html'
+                                                     }
+                                        }
+                           },
+          'Title' => 'metrics5-legacy-adapter'
+        };

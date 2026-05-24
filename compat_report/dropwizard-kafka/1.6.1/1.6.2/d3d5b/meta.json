@@ -1,0 +1,11 @@
+{
+  "Affected": "0",
+  "Added": 0,
+  "Removed": 0,
+  "TotalProblems": 0,
+  "Source_Affected": "0",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/dropwizard-kafka/1.6.1/1.6.2/d3d5b/src_compat_report.html",
+  "Archive1": "dropwizard-kafka-1.6.1.jar",
+  "Archive2": "dropwizard-kafka-1.6.2.jar"
+}

@@ -1,0 +1,1726 @@
+$VAR1 = {
+          'APIDump' => {
+                         '4.2.0' => {
+                                      'ada8e' => {
+                                                   'Archive' => 'metrics-jetty11-4.2.0.jar',
+                                                   'Path' => 'api_dump/metrics-jetty11/4.2.0/ada8e/API.dump.tar.gz',
+                                                   'TotalSymbols' => '39'
+                                                 }
+                                    },
+                         '4.2.1' => {
+                                      '7cc31' => {
+                                                   'Archive' => 'metrics-jetty11-4.2.1.jar',
+                                                   'Path' => 'api_dump/metrics-jetty11/4.2.1/7cc31/API.dump.tar.gz',
+                                                   'TotalSymbols' => '39'
+                                                 }
+                                    },
+                         '4.2.10' => {
+                                       '29276' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.10.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.10/29276/API.dump.tar.gz',
+                                                    'TotalSymbols' => '39'
+                                                  }
+                                     },
+                         '4.2.11' => {
+                                       '27415' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.11.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.11/27415/API.dump.tar.gz',
+                                                    'TotalSymbols' => '39'
+                                                  }
+                                     },
+                         '4.2.12' => {
+                                       '50667' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.12.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.12/50667/API.dump.tar.gz',
+                                                    'TotalSymbols' => '39'
+                                                  }
+                                     },
+                         '4.2.13' => {
+                                       '9ed8f' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.13.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.13/9ed8f/API.dump.tar.gz',
+                                                    'TotalSymbols' => '39'
+                                                  }
+                                     },
+                         '4.2.14' => {
+                                       '0f211' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.14.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.14/0f211/API.dump.tar.gz',
+                                                    'TotalSymbols' => '39'
+                                                  }
+                                     },
+                         '4.2.15' => {
+                                       '337fb' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.15.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.15/337fb/API.dump.tar.gz',
+                                                    'TotalSymbols' => '39'
+                                                  }
+                                     },
+                         '4.2.16' => {
+                                       'b65dd' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.16.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.16/b65dd/API.dump.tar.gz',
+                                                    'TotalSymbols' => '41'
+                                                  }
+                                     },
+                         '4.2.17' => {
+                                       '317ef' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.17.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.17/317ef/API.dump.tar.gz',
+                                                    'TotalSymbols' => '41'
+                                                  }
+                                     },
+                         '4.2.18' => {
+                                       '66341' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.18.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.18/66341/API.dump.tar.gz',
+                                                    'TotalSymbols' => '41'
+                                                  }
+                                     },
+                         '4.2.19' => {
+                                       '1fe92' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.19.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.19/1fe92/API.dump.tar.gz',
+                                                    'TotalSymbols' => '41'
+                                                  }
+                                     },
+                         '4.2.2' => {
+                                      '7d470' => {
+                                                   'Archive' => 'metrics-jetty11-4.2.2.jar',
+                                                   'Path' => 'api_dump/metrics-jetty11/4.2.2/7d470/API.dump.tar.gz',
+                                                   'TotalSymbols' => '39'
+                                                 }
+                                    },
+                         '4.2.20' => {
+                                       '0da5b' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.20.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.20/0da5b/API.dump.tar.gz',
+                                                    'TotalSymbols' => '47'
+                                                  }
+                                     },
+                         '4.2.21' => {
+                                       '305a1' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.21.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.21/305a1/API.dump.tar.gz',
+                                                    'TotalSymbols' => '47'
+                                                  }
+                                     },
+                         '4.2.22' => {
+                                       '6f7e3' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.22.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.22/6f7e3/API.dump.tar.gz',
+                                                    'TotalSymbols' => '47'
+                                                  }
+                                     },
+                         '4.2.23' => {
+                                       '3d257' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.23.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.23/3d257/API.dump.tar.gz',
+                                                    'TotalSymbols' => '47'
+                                                  }
+                                     },
+                         '4.2.24' => {
+                                       'b4992' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.24.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.24/b4992/API.dump.tar.gz',
+                                                    'TotalSymbols' => '47'
+                                                  }
+                                     },
+                         '4.2.25' => {
+                                       'ca63b' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.25.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.25/ca63b/API.dump.tar.gz',
+                                                    'TotalSymbols' => '47'
+                                                  }
+                                     },
+                         '4.2.26' => {
+                                       'df69f' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.26.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.26/df69f/API.dump.tar.gz',
+                                                    'TotalSymbols' => '47'
+                                                  }
+                                     },
+                         '4.2.27' => {
+                                       '5e943' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.27.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.27/5e943/API.dump.tar.gz',
+                                                    'TotalSymbols' => '47'
+                                                  }
+                                     },
+                         '4.2.28' => {
+                                       '952ac' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.28.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.28/952ac/API.dump.tar.gz',
+                                                    'TotalSymbols' => '47'
+                                                  }
+                                     },
+                         '4.2.29' => {
+                                       'c9870' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.29.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.29/c9870/API.dump.tar.gz',
+                                                    'TotalSymbols' => '47'
+                                                  }
+                                     },
+                         '4.2.3' => {
+                                      'ef22a' => {
+                                                   'Archive' => 'metrics-jetty11-4.2.3.jar',
+                                                   'Path' => 'api_dump/metrics-jetty11/4.2.3/ef22a/API.dump.tar.gz',
+                                                   'TotalSymbols' => '39'
+                                                 }
+                                    },
+                         '4.2.30' => {
+                                       '124cb' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.30.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.30/124cb/API.dump.tar.gz',
+                                                    'TotalSymbols' => '47'
+                                                  }
+                                     },
+                         '4.2.32' => {
+                                       '47ed7' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.32.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.32/47ed7/API.dump.tar.gz',
+                                                    'TotalSymbols' => '47'
+                                                  }
+                                     },
+                         '4.2.33' => {
+                                       'b98ce' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.33.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.33/b98ce/API.dump.tar.gz',
+                                                    'TotalSymbols' => '47'
+                                                  }
+                                     },
+                         '4.2.34' => {
+                                       '0aea4' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.34.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.34/0aea4/API.dump.tar.gz',
+                                                    'TotalSymbols' => '47'
+                                                  }
+                                     },
+                         '4.2.35' => {
+                                       '1b73a' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.35.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.35/1b73a/API.dump.tar.gz',
+                                                    'TotalSymbols' => '47'
+                                                  }
+                                     },
+                         '4.2.36' => {
+                                       '1f17c' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.36.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.36/1f17c/API.dump.tar.gz',
+                                                    'TotalSymbols' => '47'
+                                                  }
+                                     },
+                         '4.2.37' => {
+                                       '171ce' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.37.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.37/171ce/API.dump.tar.gz',
+                                                    'TotalSymbols' => '47'
+                                                  }
+                                     },
+                         '4.2.38' => {
+                                       '9fd36' => {
+                                                    'Archive' => 'metrics-jetty11-4.2.38.jar',
+                                                    'Path' => 'api_dump/metrics-jetty11/4.2.38/9fd36/API.dump.tar.gz',
+                                                    'TotalSymbols' => '47'
+                                                  }
+                                     },
+                         '4.2.4' => {
+                                      '661d9' => {
+                                                   'Archive' => 'metrics-jetty11-4.2.4.jar',
+                                                   'Path' => 'api_dump/metrics-jetty11/4.2.4/661d9/API.dump.tar.gz',
+                                                   'TotalSymbols' => '39'
+                                                 }
+                                    },
+                         '4.2.5' => {
+                                      '590d4' => {
+                                                   'Archive' => 'metrics-jetty11-4.2.5.jar',
+                                                   'Path' => 'api_dump/metrics-jetty11/4.2.5/590d4/API.dump.tar.gz',
+                                                   'TotalSymbols' => '39'
+                                                 }
+                                    },
+                         '4.2.6' => {
+                                      'd7d97' => {
+                                                   'Archive' => 'metrics-jetty11-4.2.6.jar',
+                                                   'Path' => 'api_dump/metrics-jetty11/4.2.6/d7d97/API.dump.tar.gz',
+                                                   'TotalSymbols' => '39'
+                                                 }
+                                    },
+                         '4.2.7' => {
+                                      '67000' => {
+                                                   'Archive' => 'metrics-jetty11-4.2.7.jar',
+                                                   'Path' => 'api_dump/metrics-jetty11/4.2.7/67000/API.dump.tar.gz',
+                                                   'TotalSymbols' => '39'
+                                                 }
+                                    },
+                         '4.2.8' => {
+                                      '12eb2' => {
+                                                   'Archive' => 'metrics-jetty11-4.2.8.jar',
+                                                   'Path' => 'api_dump/metrics-jetty11/4.2.8/12eb2/API.dump.tar.gz',
+                                                   'TotalSymbols' => '39'
+                                                 }
+                                    },
+                         '4.2.9' => {
+                                      '41835' => {
+                                                   'Archive' => 'metrics-jetty11-4.2.9.jar',
+                                                   'Path' => 'api_dump/metrics-jetty11/4.2.9/41835/API.dump.tar.gz',
+                                                   'TotalSymbols' => '39'
+                                                 }
+                                    }
+                       },
+          'APIReport' => {
+                           '4.2.0' => {
+                                        '4.2.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jetty11/4.2.0/4.2.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.2.1' => {
+                                        '4.2.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jetty11/4.2.1/4.2.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.2.10' => {
+                                         '4.2.11' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jetty11/4.2.10/4.2.11/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.11' => {
+                                         '4.2.12' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jetty11/4.2.11/4.2.12/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.12' => {
+                                         '4.2.13' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jetty11/4.2.12/4.2.13/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.13' => {
+                                         '4.2.14' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jetty11/4.2.13/4.2.14/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.14' => {
+                                         '4.2.15' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jetty11/4.2.14/4.2.15/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.15' => {
+                                         '4.2.16' => {
+                                                       'Added' => 2,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jetty11/4.2.15/4.2.16/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.16' => {
+                                         '4.2.17' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jetty11/4.2.16/4.2.17/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.17' => {
+                                         '4.2.18' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jetty11/4.2.17/4.2.18/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.18' => {
+                                         '4.2.19' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jetty11/4.2.18/4.2.19/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.19' => {
+                                         '4.2.20' => {
+                                                       'Added' => 6,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jetty11/4.2.19/4.2.20/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.2' => {
+                                        '4.2.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jetty11/4.2.2/4.2.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.2.20' => {
+                                         '4.2.21' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jetty11/4.2.20/4.2.21/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.21' => {
+                                         '4.2.22' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jetty11/4.2.21/4.2.22/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.22' => {
+                                         '4.2.23' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jetty11/4.2.22/4.2.23/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.23' => {
+                                         '4.2.24' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jetty11/4.2.23/4.2.24/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.24' => {
+                                         '4.2.25' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jetty11/4.2.24/4.2.25/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.25' => {
+                                         '4.2.26' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jetty11/4.2.25/4.2.26/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.26' => {
+                                         '4.2.27' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jetty11/4.2.26/4.2.27/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.27' => {
+                                         '4.2.28' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jetty11/4.2.27/4.2.28/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.28' => {
+                                         '4.2.29' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jetty11/4.2.28/4.2.29/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.29' => {
+                                         '4.2.30' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jetty11/4.2.29/4.2.30/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.3' => {
+                                        '4.2.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jetty11/4.2.3/4.2.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.2.30' => {
+                                         '4.2.32' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jetty11/4.2.30/4.2.32/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.32' => {
+                                         '4.2.33' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jetty11/4.2.32/4.2.33/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.33' => {
+                                         '4.2.34' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jetty11/4.2.33/4.2.34/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.34' => {
+                                         '4.2.35' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jetty11/4.2.34/4.2.35/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.35' => {
+                                         '4.2.36' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jetty11/4.2.35/4.2.36/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.36' => {
+                                         '4.2.37' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jetty11/4.2.36/4.2.37/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.37' => {
+                                         '4.2.38' => {
+                                                       'Added' => 0,
+                                                       'ArchivesAdded' => 0,
+                                                       'ArchivesAddedSymbols' => 0,
+                                                       'ArchivesRemoved' => 0,
+                                                       'ArchivesRemovedSymbols' => 0,
+                                                       'BC' => 100,
+                                                       'Path' => 'archives_report/metrics-jetty11/4.2.37/4.2.38/report.html',
+                                                       'Removed' => 0,
+                                                       'Source_BC' => 100,
+                                                       'Source_TotalProblems' => 0,
+                                                       'TotalArchives' => 1,
+                                                       'TotalProblems' => 0
+                                                     }
+                                       },
+                           '4.2.4' => {
+                                        '4.2.5' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jetty11/4.2.4/4.2.5/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.2.5' => {
+                                        '4.2.6' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jetty11/4.2.5/4.2.6/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.2.6' => {
+                                        '4.2.7' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jetty11/4.2.6/4.2.7/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.2.7' => {
+                                        '4.2.8' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jetty11/4.2.7/4.2.8/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.2.8' => {
+                                        '4.2.9' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/metrics-jetty11/4.2.8/4.2.9/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '4.2.9' => {
+                                        '4.2.10' => {
+                                                      'Added' => 0,
+                                                      'ArchivesAdded' => 0,
+                                                      'ArchivesAddedSymbols' => 0,
+                                                      'ArchivesRemoved' => 0,
+                                                      'ArchivesRemovedSymbols' => 0,
+                                                      'BC' => 100,
+                                                      'Path' => 'archives_report/metrics-jetty11/4.2.9/4.2.10/report.html',
+                                                      'Removed' => 0,
+                                                      'Source_BC' => 100,
+                                                      'Source_TotalProblems' => 0,
+                                                      'TotalArchives' => 1,
+                                                      'TotalProblems' => 0
+                                                    }
+                                      }
+                         },
+          'APIReport_D' => {
+                             '4.2.0' => {
+                                          '4.2.1' => {
+                                                       'b262a' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jetty11-4.2.0.jar',
+                                                                    'Archive2' => 'metrics-jetty11-4.2.1.jar',
+                                                                    'Path' => 'compat_report/metrics-jetty11/4.2.0/4.2.1/b262a/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.0/4.2.1/b262a/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.2.1' => {
+                                          '4.2.2' => {
+                                                       '7dd94' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jetty11-4.2.1.jar',
+                                                                    'Archive2' => 'metrics-jetty11-4.2.2.jar',
+                                                                    'Path' => 'compat_report/metrics-jetty11/4.2.1/4.2.2/7dd94/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.1/4.2.2/7dd94/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.2.10' => {
+                                           '4.2.11' => {
+                                                         '6376f' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jetty11-4.2.10.jar',
+                                                                      'Archive2' => 'metrics-jetty11-4.2.11.jar',
+                                                                      'Path' => 'compat_report/metrics-jetty11/4.2.10/4.2.11/6376f/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.10/4.2.11/6376f/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.11' => {
+                                           '4.2.12' => {
+                                                         '37694' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jetty11-4.2.11.jar',
+                                                                      'Archive2' => 'metrics-jetty11-4.2.12.jar',
+                                                                      'Path' => 'compat_report/metrics-jetty11/4.2.11/4.2.12/37694/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.11/4.2.12/37694/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.12' => {
+                                           '4.2.13' => {
+                                                         '856af' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jetty11-4.2.12.jar',
+                                                                      'Archive2' => 'metrics-jetty11-4.2.13.jar',
+                                                                      'Path' => 'compat_report/metrics-jetty11/4.2.12/4.2.13/856af/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.12/4.2.13/856af/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.13' => {
+                                           '4.2.14' => {
+                                                         '80230' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jetty11-4.2.13.jar',
+                                                                      'Archive2' => 'metrics-jetty11-4.2.14.jar',
+                                                                      'Path' => 'compat_report/metrics-jetty11/4.2.13/4.2.14/80230/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.13/4.2.14/80230/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.14' => {
+                                           '4.2.15' => {
+                                                         '65e9e' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jetty11-4.2.14.jar',
+                                                                      'Archive2' => 'metrics-jetty11-4.2.15.jar',
+                                                                      'Path' => 'compat_report/metrics-jetty11/4.2.14/4.2.15/65e9e/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.14/4.2.15/65e9e/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.15' => {
+                                           '4.2.16' => {
+                                                         'bf35f' => {
+                                                                      'Added' => 2,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jetty11-4.2.15.jar',
+                                                                      'Archive2' => 'metrics-jetty11-4.2.16.jar',
+                                                                      'Path' => 'compat_report/metrics-jetty11/4.2.15/4.2.16/bf35f/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.15/4.2.16/bf35f/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.16' => {
+                                           '4.2.17' => {
+                                                         '88d6f' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jetty11-4.2.16.jar',
+                                                                      'Archive2' => 'metrics-jetty11-4.2.17.jar',
+                                                                      'Path' => 'compat_report/metrics-jetty11/4.2.16/4.2.17/88d6f/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.16/4.2.17/88d6f/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.17' => {
+                                           '4.2.18' => {
+                                                         'e318c' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jetty11-4.2.17.jar',
+                                                                      'Archive2' => 'metrics-jetty11-4.2.18.jar',
+                                                                      'Path' => 'compat_report/metrics-jetty11/4.2.17/4.2.18/e318c/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.17/4.2.18/e318c/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.18' => {
+                                           '4.2.19' => {
+                                                         '619be' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jetty11-4.2.18.jar',
+                                                                      'Archive2' => 'metrics-jetty11-4.2.19.jar',
+                                                                      'Path' => 'compat_report/metrics-jetty11/4.2.18/4.2.19/619be/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.18/4.2.19/619be/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.19' => {
+                                           '4.2.20' => {
+                                                         'ced19' => {
+                                                                      'Added' => 6,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jetty11-4.2.19.jar',
+                                                                      'Archive2' => 'metrics-jetty11-4.2.20.jar',
+                                                                      'Path' => 'compat_report/metrics-jetty11/4.2.19/4.2.20/ced19/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.19/4.2.20/ced19/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.2' => {
+                                          '4.2.3' => {
+                                                       '2044c' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jetty11-4.2.2.jar',
+                                                                    'Archive2' => 'metrics-jetty11-4.2.3.jar',
+                                                                    'Path' => 'compat_report/metrics-jetty11/4.2.2/4.2.3/2044c/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.2/4.2.3/2044c/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.2.20' => {
+                                           '4.2.21' => {
+                                                         '18331' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jetty11-4.2.20.jar',
+                                                                      'Archive2' => 'metrics-jetty11-4.2.21.jar',
+                                                                      'Path' => 'compat_report/metrics-jetty11/4.2.20/4.2.21/18331/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.20/4.2.21/18331/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.21' => {
+                                           '4.2.22' => {
+                                                         '595c9' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jetty11-4.2.21.jar',
+                                                                      'Archive2' => 'metrics-jetty11-4.2.22.jar',
+                                                                      'Path' => 'compat_report/metrics-jetty11/4.2.21/4.2.22/595c9/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.21/4.2.22/595c9/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.22' => {
+                                           '4.2.23' => {
+                                                         '79af6' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jetty11-4.2.22.jar',
+                                                                      'Archive2' => 'metrics-jetty11-4.2.23.jar',
+                                                                      'Path' => 'compat_report/metrics-jetty11/4.2.22/4.2.23/79af6/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.22/4.2.23/79af6/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.23' => {
+                                           '4.2.24' => {
+                                                         'b3997' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jetty11-4.2.23.jar',
+                                                                      'Archive2' => 'metrics-jetty11-4.2.24.jar',
+                                                                      'Path' => 'compat_report/metrics-jetty11/4.2.23/4.2.24/b3997/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.23/4.2.24/b3997/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.24' => {
+                                           '4.2.25' => {
+                                                         '40bde' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jetty11-4.2.24.jar',
+                                                                      'Archive2' => 'metrics-jetty11-4.2.25.jar',
+                                                                      'Path' => 'compat_report/metrics-jetty11/4.2.24/4.2.25/40bde/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.24/4.2.25/40bde/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.25' => {
+                                           '4.2.26' => {
+                                                         '6ea02' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jetty11-4.2.25.jar',
+                                                                      'Archive2' => 'metrics-jetty11-4.2.26.jar',
+                                                                      'Path' => 'compat_report/metrics-jetty11/4.2.25/4.2.26/6ea02/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.25/4.2.26/6ea02/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.26' => {
+                                           '4.2.27' => {
+                                                         '08f34' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jetty11-4.2.26.jar',
+                                                                      'Archive2' => 'metrics-jetty11-4.2.27.jar',
+                                                                      'Path' => 'compat_report/metrics-jetty11/4.2.26/4.2.27/08f34/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.26/4.2.27/08f34/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.27' => {
+                                           '4.2.28' => {
+                                                         '096b3' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jetty11-4.2.27.jar',
+                                                                      'Archive2' => 'metrics-jetty11-4.2.28.jar',
+                                                                      'Path' => 'compat_report/metrics-jetty11/4.2.27/4.2.28/096b3/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.27/4.2.28/096b3/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.28' => {
+                                           '4.2.29' => {
+                                                         '49278' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jetty11-4.2.28.jar',
+                                                                      'Archive2' => 'metrics-jetty11-4.2.29.jar',
+                                                                      'Path' => 'compat_report/metrics-jetty11/4.2.28/4.2.29/49278/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.28/4.2.29/49278/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.29' => {
+                                           '4.2.30' => {
+                                                         'bb811' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jetty11-4.2.29.jar',
+                                                                      'Archive2' => 'metrics-jetty11-4.2.30.jar',
+                                                                      'Path' => 'compat_report/metrics-jetty11/4.2.29/4.2.30/bb811/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.29/4.2.30/bb811/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.3' => {
+                                          '4.2.4' => {
+                                                       'f638a' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jetty11-4.2.3.jar',
+                                                                    'Archive2' => 'metrics-jetty11-4.2.4.jar',
+                                                                    'Path' => 'compat_report/metrics-jetty11/4.2.3/4.2.4/f638a/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.3/4.2.4/f638a/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.2.30' => {
+                                           '4.2.32' => {
+                                                         '109c5' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jetty11-4.2.30.jar',
+                                                                      'Archive2' => 'metrics-jetty11-4.2.32.jar',
+                                                                      'Path' => 'compat_report/metrics-jetty11/4.2.30/4.2.32/109c5/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.30/4.2.32/109c5/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.32' => {
+                                           '4.2.33' => {
+                                                         'c5c11' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jetty11-4.2.32.jar',
+                                                                      'Archive2' => 'metrics-jetty11-4.2.33.jar',
+                                                                      'Path' => 'compat_report/metrics-jetty11/4.2.32/4.2.33/c5c11/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.32/4.2.33/c5c11/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.33' => {
+                                           '4.2.34' => {
+                                                         '141e4' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jetty11-4.2.33.jar',
+                                                                      'Archive2' => 'metrics-jetty11-4.2.34.jar',
+                                                                      'Path' => 'compat_report/metrics-jetty11/4.2.33/4.2.34/141e4/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.33/4.2.34/141e4/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.34' => {
+                                           '4.2.35' => {
+                                                         'e14e5' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jetty11-4.2.34.jar',
+                                                                      'Archive2' => 'metrics-jetty11-4.2.35.jar',
+                                                                      'Path' => 'compat_report/metrics-jetty11/4.2.34/4.2.35/e14e5/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.34/4.2.35/e14e5/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.35' => {
+                                           '4.2.36' => {
+                                                         'ab87f' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jetty11-4.2.35.jar',
+                                                                      'Archive2' => 'metrics-jetty11-4.2.36.jar',
+                                                                      'Path' => 'compat_report/metrics-jetty11/4.2.35/4.2.36/ab87f/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.35/4.2.36/ab87f/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.36' => {
+                                           '4.2.37' => {
+                                                         'e1653' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jetty11-4.2.36.jar',
+                                                                      'Archive2' => 'metrics-jetty11-4.2.37.jar',
+                                                                      'Path' => 'compat_report/metrics-jetty11/4.2.36/4.2.37/e1653/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.36/4.2.37/e1653/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.37' => {
+                                           '4.2.38' => {
+                                                         'dcb27' => {
+                                                                      'Added' => 0,
+                                                                      'Affected' => 0,
+                                                                      'Archive1' => 'metrics-jetty11-4.2.37.jar',
+                                                                      'Archive2' => 'metrics-jetty11-4.2.38.jar',
+                                                                      'Path' => 'compat_report/metrics-jetty11/4.2.37/4.2.38/dcb27/bin_compat_report.html',
+                                                                      'Removed' => 0,
+                                                                      'Source_Affected' => 0,
+                                                                      'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.37/4.2.38/dcb27/src_compat_report.html',
+                                                                      'Source_TotalProblems' => 0,
+                                                                      'TotalProblems' => 0
+                                                                    }
+                                                       }
+                                         },
+                             '4.2.4' => {
+                                          '4.2.5' => {
+                                                       '1659c' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jetty11-4.2.4.jar',
+                                                                    'Archive2' => 'metrics-jetty11-4.2.5.jar',
+                                                                    'Path' => 'compat_report/metrics-jetty11/4.2.4/4.2.5/1659c/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.4/4.2.5/1659c/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.2.5' => {
+                                          '4.2.6' => {
+                                                       '1e211' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jetty11-4.2.5.jar',
+                                                                    'Archive2' => 'metrics-jetty11-4.2.6.jar',
+                                                                    'Path' => 'compat_report/metrics-jetty11/4.2.5/4.2.6/1e211/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.5/4.2.6/1e211/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.2.6' => {
+                                          '4.2.7' => {
+                                                       '34721' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jetty11-4.2.6.jar',
+                                                                    'Archive2' => 'metrics-jetty11-4.2.7.jar',
+                                                                    'Path' => 'compat_report/metrics-jetty11/4.2.6/4.2.7/34721/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.6/4.2.7/34721/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.2.7' => {
+                                          '4.2.8' => {
+                                                       '1367b' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jetty11-4.2.7.jar',
+                                                                    'Archive2' => 'metrics-jetty11-4.2.8.jar',
+                                                                    'Path' => 'compat_report/metrics-jetty11/4.2.7/4.2.8/1367b/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.7/4.2.8/1367b/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.2.8' => {
+                                          '4.2.9' => {
+                                                       '8de34' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'metrics-jetty11-4.2.8.jar',
+                                                                    'Archive2' => 'metrics-jetty11-4.2.9.jar',
+                                                                    'Path' => 'compat_report/metrics-jetty11/4.2.8/4.2.9/8de34/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.8/4.2.9/8de34/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '4.2.9' => {
+                                          '4.2.10' => {
+                                                        '63964' => {
+                                                                     'Added' => 0,
+                                                                     'Affected' => 0,
+                                                                     'Archive1' => 'metrics-jetty11-4.2.9.jar',
+                                                                     'Archive2' => 'metrics-jetty11-4.2.10.jar',
+                                                                     'Path' => 'compat_report/metrics-jetty11/4.2.9/4.2.10/63964/bin_compat_report.html',
+                                                                     'Removed' => 0,
+                                                                     'Source_Affected' => 0,
+                                                                     'Source_ReportPath' => 'compat_report/metrics-jetty11/4.2.9/4.2.10/63964/src_compat_report.html',
+                                                                     'Source_TotalProblems' => 0,
+                                                                     'TotalProblems' => 0
+                                                                   }
+                                                      }
+                                        }
+                           },
+          'Changelog' => {},
+          'Date' => {
+                      '4.2.0' => '01-1980-02 00:00',
+                      '4.2.1' => '01-1980-02 00:00',
+                      '4.2.10' => '01-1980-02 00:00',
+                      '4.2.11' => '01-1980-02 00:00',
+                      '4.2.12' => '01-1980-02 00:00',
+                      '4.2.13' => '01-1980-02 00:00',
+                      '4.2.14' => '01-1980-02 00:00',
+                      '4.2.15' => '01-1980-02 00:00',
+                      '4.2.16' => '01-1980-02 00:00',
+                      '4.2.17' => '01-1980-02 00:00',
+                      '4.2.18' => '01-1980-02 00:00',
+                      '4.2.19' => '01-1980-02 00:00',
+                      '4.2.2' => '01-1980-02 00:00',
+                      '4.2.20' => '01-1980-02 00:00',
+                      '4.2.21' => '01-1980-02 00:00',
+                      '4.2.22' => '01-1980-02 00:00',
+                      '4.2.23' => '01-1980-02 00:00',
+                      '4.2.24' => '01-1980-02 00:00',
+                      '4.2.25' => '01-1980-02 00:00',
+                      '4.2.26' => '01-1980-02 00:00',
+                      '4.2.27' => '01-1980-02 00:00',
+                      '4.2.28' => '01-1980-02 00:00',
+                      '4.2.29' => '01-1980-02 00:00',
+                      '4.2.3' => '01-1980-02 00:00',
+                      '4.2.30' => '01-1980-02 00:00',
+                      '4.2.32' => '01-1980-02 00:00',
+                      '4.2.33' => '01-1980-02 00:00',
+                      '4.2.34' => '01-1980-02 00:00',
+                      '4.2.35' => '01-1980-02 00:00',
+                      '4.2.36' => '01-1980-02 00:00',
+                      '4.2.37' => '01-1980-02 00:00',
+                      '4.2.38' => '01-1980-02 00:00',
+                      '4.2.4' => '01-1980-02 00:00',
+                      '4.2.5' => '01-1980-02 00:00',
+                      '4.2.6' => '01-1980-02 00:00',
+                      '4.2.7' => '01-1980-02 00:00',
+                      '4.2.8' => '01-1980-02 00:00',
+                      '4.2.9' => '01-1980-02 00:00'
+                    },
+          'Maintainer' => 'Dropwizard Metrics Committers',
+          'MaintainerUrl' => 'https://metrics.dropwizard.io/',
+          'PackageDiff' => {
+                             '4.2.0' => {
+                                          '4.2.1' => {
+                                                       'Changed' => '1.3',
+                                                       'Path' => 'package_diff/metrics-jetty11/4.2.0/4.2.1/report.html'
+                                                     }
+                                        },
+                             '4.2.1' => {
+                                          '4.2.2' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jetty11/4.2.1/4.2.2/report.html'
+                                                     }
+                                        },
+                             '4.2.10' => {
+                                           '4.2.11' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jetty11/4.2.10/4.2.11/report.html'
+                                                       }
+                                         },
+                             '4.2.11' => {
+                                           '4.2.12' => {
+                                                         'Changed' => '0.1',
+                                                         'Path' => 'package_diff/metrics-jetty11/4.2.11/4.2.12/report.html'
+                                                       }
+                                         },
+                             '4.2.12' => {
+                                           '4.2.13' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jetty11/4.2.12/4.2.13/report.html'
+                                                       }
+                                         },
+                             '4.2.13' => {
+                                           '4.2.14' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jetty11/4.2.13/4.2.14/report.html'
+                                                       }
+                                         },
+                             '4.2.14' => {
+                                           '4.2.15' => {
+                                                         'Changed' => '0.1',
+                                                         'Path' => 'package_diff/metrics-jetty11/4.2.14/4.2.15/report.html'
+                                                       }
+                                         },
+                             '4.2.15' => {
+                                           '4.2.16' => {
+                                                         'Changed' => '4.9',
+                                                         'Path' => 'package_diff/metrics-jetty11/4.2.15/4.2.16/report.html'
+                                                       }
+                                         },
+                             '4.2.16' => {
+                                           '4.2.17' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jetty11/4.2.16/4.2.17/report.html'
+                                                       }
+                                         },
+                             '4.2.17' => {
+                                           '4.2.18' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jetty11/4.2.17/4.2.18/report.html'
+                                                       }
+                                         },
+                             '4.2.18' => {
+                                           '4.2.19' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jetty11/4.2.18/4.2.19/report.html'
+                                                       }
+                                         },
+                             '4.2.19' => {
+                                           '4.2.20' => {
+                                                         'Changed' => '5.3',
+                                                         'Path' => 'package_diff/metrics-jetty11/4.2.19/4.2.20/report.html'
+                                                       }
+                                         },
+                             '4.2.2' => {
+                                          '4.2.3' => {
+                                                       'Changed' => '0.1',
+                                                       'Path' => 'package_diff/metrics-jetty11/4.2.2/4.2.3/report.html'
+                                                     }
+                                        },
+                             '4.2.20' => {
+                                           '4.2.21' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jetty11/4.2.20/4.2.21/report.html'
+                                                       }
+                                         },
+                             '4.2.21' => {
+                                           '4.2.22' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jetty11/4.2.21/4.2.22/report.html'
+                                                       }
+                                         },
+                             '4.2.22' => {
+                                           '4.2.23' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jetty11/4.2.22/4.2.23/report.html'
+                                                       }
+                                         },
+                             '4.2.23' => {
+                                           '4.2.24' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jetty11/4.2.23/4.2.24/report.html'
+                                                       }
+                                         },
+                             '4.2.24' => {
+                                           '4.2.25' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jetty11/4.2.24/4.2.25/report.html'
+                                                       }
+                                         },
+                             '4.2.25' => {
+                                           '4.2.26' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jetty11/4.2.25/4.2.26/report.html'
+                                                       }
+                                         },
+                             '4.2.26' => {
+                                           '4.2.27' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jetty11/4.2.26/4.2.27/report.html'
+                                                       }
+                                         },
+                             '4.2.27' => {
+                                           '4.2.28' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jetty11/4.2.27/4.2.28/report.html'
+                                                       }
+                                         },
+                             '4.2.28' => {
+                                           '4.2.29' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jetty11/4.2.28/4.2.29/report.html'
+                                                       }
+                                         },
+                             '4.2.29' => {
+                                           '4.2.30' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jetty11/4.2.29/4.2.30/report.html'
+                                                       }
+                                         },
+                             '4.2.3' => {
+                                          '4.2.4' => {
+                                                       'Changed' => '0.2',
+                                                       'Path' => 'package_diff/metrics-jetty11/4.2.3/4.2.4/report.html'
+                                                     }
+                                        },
+                             '4.2.30' => {
+                                           '4.2.32' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jetty11/4.2.30/4.2.32/report.html'
+                                                       }
+                                         },
+                             '4.2.32' => {
+                                           '4.2.33' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jetty11/4.2.32/4.2.33/report.html'
+                                                       }
+                                         },
+                             '4.2.33' => {
+                                           '4.2.34' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jetty11/4.2.33/4.2.34/report.html'
+                                                       }
+                                         },
+                             '4.2.34' => {
+                                           '4.2.35' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jetty11/4.2.34/4.2.35/report.html'
+                                                       }
+                                         },
+                             '4.2.35' => {
+                                           '4.2.36' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jetty11/4.2.35/4.2.36/report.html'
+                                                       }
+                                         },
+                             '4.2.36' => {
+                                           '4.2.37' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jetty11/4.2.36/4.2.37/report.html'
+                                                       }
+                                         },
+                             '4.2.37' => {
+                                           '4.2.38' => {
+                                                         'Changed' => '0.2',
+                                                         'Path' => 'package_diff/metrics-jetty11/4.2.37/4.2.38/report.html'
+                                                       }
+                                         },
+                             '4.2.4' => {
+                                          '4.2.5' => {
+                                                       'Changed' => '0.2',
+                                                       'Path' => 'package_diff/metrics-jetty11/4.2.4/4.2.5/report.html'
+                                                     }
+                                        },
+                             '4.2.5' => {
+                                          '4.2.6' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/metrics-jetty11/4.2.5/4.2.6/report.html'
+                                                     }
+                                        },
+                             '4.2.6' => {
+                                          '4.2.7' => {
+                                                       'Changed' => '0.2',
+                                                       'Path' => 'package_diff/metrics-jetty11/4.2.6/4.2.7/report.html'
+                                                     }
+                                        },
+                             '4.2.7' => {
+                                          '4.2.8' => {
+                                                       'Changed' => '20.7',
+                                                       'Path' => 'package_diff/metrics-jetty11/4.2.7/4.2.8/report.html'
+                                                     }
+                                        },
+                             '4.2.8' => {
+                                          '4.2.9' => {
+                                                       'Changed' => '0.1',
+                                                       'Path' => 'package_diff/metrics-jetty11/4.2.8/4.2.9/report.html'
+                                                     }
+                                        },
+                             '4.2.9' => {
+                                          '4.2.10' => {
+                                                        'Changed' => '0.3',
+                                                        'Path' => 'package_diff/metrics-jetty11/4.2.9/4.2.10/report.html'
+                                                      }
+                                        }
+                           },
+          'Title' => 'Metrics 5.x Integration for Jetty 11.0 and higher'
+        };

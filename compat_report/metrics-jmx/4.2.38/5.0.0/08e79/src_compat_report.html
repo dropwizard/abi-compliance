@@ -1,0 +1,1173 @@
+<!-- kind:source;verdict:incompatible;affected:100;added:52;removed:51;type_problems_high:10;type_problems_medium:0;type_problems_low:0;method_problems_high:0;method_problems_medium:0;method_problems_low:0;checked_methods:103;checked_types:20;tool_version:2.4 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="metrics-jmx, source, compatibility" />
+<meta name="description" content="Source compatibility report for the metrics-jmx library between 4.2.38 and 5.0.0 versions" />
+<title>metrics-jmx: 4.2.38 to 5.0.0 source compatibility report</title>
+<style type="text/css">
+body {
+    font-family:Arial, sans-serif;
+    background-color:White;
+    color:Black;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+    white-space:nowrap;
+}
+div.symbols {
+    color:#003E69;
+}
+div.symbols i {
+    color:Brown;
+}
+span.section {
+    font-weight:bold;
+    cursor:pointer;
+    color:#003E69;
+    white-space:nowrap;
+    margin-left:0.3125em;
+}
+span:hover.section {
+    color:#336699;
+}
+span.sect_aff {
+    cursor:pointer;
+    padding-left:1.55em;
+    font-size:0.875em;
+    color:#cc3300;
+}
+span.ext {
+    font-weight:normal;
+}
+span.jar {
+    color:#cc3300;
+    font-size:0.875em;
+    font-weight:bold;
+}
+div.jar_list {
+    padding-left:0.4em;
+    font-size:0.94em;
+}
+span.pkg_t {
+    color:#408080;
+    font-size:0.875em;
+}
+span.pkg {
+    color:#408080;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.cname {
+    color:Green;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.iname_b {
+    font-weight:bold;
+}
+span.iname_a {
+    color:#333333;
+    font-weight:bold;
+    font-size:0.94em;
+}
+span.sym_p {
+    font-weight:normal;
+    white-space:normal;
+}
+span.sym_pd {
+    white-space:normal;
+}
+span.sym_p span, span.sym_pd span {
+    white-space:nowrap;
+}
+span.attr {
+    color:Black;
+    font-weight:normal;
+}
+span.deprecated {
+    color:Red;
+    font-weight:bold;
+    font-family:Monaco, monospace;
+}
+div.affect {
+    padding-left:1em;
+    padding-bottom:10px;
+    font-size:0.87em;
+    font-style:italic;
+    line-height:0.9em;
+}
+div.affected {
+    padding-left:2em;
+    padding-top:10px;
+}
+table.ptable {
+    border-collapse:collapse;
+    border:1px outset black;
+    margin-left:0.95em;
+    margin-top:3px;
+    margin-bottom:3px;
+    width:56.25em;
+}
+table.ptable td {
+    border:1px solid Gray;
+    padding:3px;
+    font-size:0.875em;
+    text-align:left;
+    vertical-align:top;
+    max-width:28em;
+    word-wrap:break-word;
+}
+table.ptable th {
+    background-color:#eeeeee;
+    font-weight:bold;
+    color:#333333;
+    font-family:Verdana, Arial;
+    font-size:0.875em;
+    border:1px solid Gray;
+    text-align:center;
+    vertical-align:top;
+    white-space:nowrap;
+    padding:3px;
+}
+table.summary {
+    border-collapse:collapse;
+    border:1px outset black;
+}
+table.summary th {
+    background-color:#eeeeee;
+    font-weight:normal;
+    text-align:left;
+    font-size:0.94em;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px;
+}
+table.summary td {
+    text-align:right;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px 5px 3px 10px;
+}
+span.mngl {
+    padding-left:1em;
+    font-size:0.875em;
+    cursor:text;
+    color:#444444;
+    font-weight:bold;
+}
+span.pleft {
+    padding-left:2.5em;
+}
+span.color_p {
+    font-style:italic;
+    color:Brown;
+}
+span.param {
+    font-style:italic;
+}
+span.focus_p {
+    font-style:italic;
+    background-color:#DCDCDC;
+}
+span.ttype {
+    font-weight:normal;
+}
+span.nowrap {
+    white-space:nowrap;
+}
+span.value {
+    white-space:nowrap;
+    font-weight:bold;
+}
+.passed {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.warning {
+    background-color:#F4F4AF;
+    font-weight:normal;
+}
+.failed {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.new {
+    background-color:#C6DEFF;
+    font-weight:normal;
+}
+
+.compatible {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.almost_compatible {
+    background-color:#FFDAA3;
+    font-weight:normal;
+}
+.incompatible {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.gray {
+    background-color:#DCDCDC;
+    font-weight:normal;
+}
+
+.top_ref {
+    font-size:0.69em;
+}
+.footer {
+    font-size:0.8125em;
+}
+
+</style>
+<script type="text/javascript" language="JavaScript">
+<!--
+function sC(header, id)
+{
+    e = document.getElementById(id);
+    if(e.style.display == 'none')
+    {
+        e.style.display = 'block';
+        e.style.visibility = 'visible';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[&minus;]");
+    }
+    else
+    {
+        e.style.display = 'none';
+        e.style.visibility = 'hidden';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[+]");
+    }
+}
+
+-->
+</script>
+</head>
+<body><a name='Top'></a><h1>Source compatibility report for the <span style='color:Blue;'>metrics-jmx</span> library between <span style='color:Red;'>4.2.38</span> and <span style='color:Red;'>5.0.0</span> versions</h1>
+
+<h2>Test Info</h2><hr/>
+<table class='summary'>
+<tr><th>Library Name</th><td>metrics-jmx</td></tr>
+<tr><th>Version #1</th><td>4.2.38</td></tr>
+<tr><th>Version #2</th><td>5.0.0</td></tr>
+</table>
+<h2>Test Results</h2><hr/>
+<table class='summary'>
+<tr><th>Total Java Modules</th><td><a href='#Checked_Archives' style='color:Blue;'>1</a></td></tr>
+<tr><th>Total Methods / Classes</th><td>103 / 20</td></tr>
+<tr><th>Compatibility</th>
+<td class='incompatible'>0%</td>
+</tr>
+</table>
+<h2>Problem Summary</h2><hr/>
+<table class='summary'>
+<tr><th></th><th style='text-align:center;'>Severity</th><th style='text-align:center;'>Count</th></tr>
+<tr><th>Added Methods</th><td>-</td><td class='new'><a href='#Added' style='color:Blue;'>52</a></td></tr>
+<tr><th>Removed Methods</th><td>High</td><td class='failed'><a href='#Removed' style='color:Blue;'>51</a></td></tr>
+<tr><th rowspan='3'>Problems with<br/>Data Types</th><td>High</td><td class='failed'><a href='#Type_Problems_High' style='color:Blue;'>10</a></td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+<tr><th rowspan='3'>Problems with<br/>Methods</th><td>High</td><td>0</td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+</table>
+
+<a name='Added'></a><h2>Added Methods <span class='new'>&nbsp;52&nbsp;</span></h2><hr/>
+<span class='jar'>metrics-jmx-5.0.0.jar</span>, <span class='cname'>Builder.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.jmx</span><br/>
+<span class="section" onclick="sC(this, 'c_124')">
+JmxReporter.Builder.build&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;JmxReporter</span></span>
+<br/>
+<div id="c_124" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.Builder.build:()Lio/dropwizard/metrics5/jmx/JmxReporter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_125')">
+JmxReporter.Builder.convertDurationsTo&#160;<span class='sym_p'><span>(&#160;TimeUnit <span class='color_p'>durationUnit</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;JmxReporter.Builder</span></span>
+<br/>
+<div id="c_125" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.Builder.convertDurationsTo:(Ljava/util/concurrent/TimeUnit;)Lio/dropwizard/metrics5/jmx/JmxReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_126')">
+JmxReporter.Builder.convertRatesTo&#160;<span class='sym_p'><span>(&#160;TimeUnit <span class='color_p'>rateUnit</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;JmxReporter.Builder</span></span>
+<br/>
+<div id="c_126" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.Builder.convertRatesTo:(Ljava/util/concurrent/TimeUnit;)Lio/dropwizard/metrics5/jmx/JmxReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_127')">
+JmxReporter.Builder.createsObjectNamesWith&#160;<span class='sym_p'><span>(&#160;ObjectNameFactory <span class='color_p'>onFactory</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;JmxReporter.Builder</span></span>
+<br/>
+<div id="c_127" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.Builder.createsObjectNamesWith:(Lio/dropwizard/metrics5/jmx/ObjectNameFactory;)Lio/dropwizard/metrics5/jmx/JmxReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_128')">
+JmxReporter.Builder.filter&#160;<span class='sym_p'><span>(&#160;MetricFilter <span class='color_p'>filter</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;JmxReporter.Builder</span></span>
+<br/>
+<div id="c_128" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.Builder.filter:(Lio/dropwizard/metrics5/MetricFilter;)Lio/dropwizard/metrics5/jmx/JmxReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_129')">
+JmxReporter.Builder.inDomain&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>domain</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;JmxReporter.Builder</span></span>
+<br/>
+<div id="c_129" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.Builder.inDomain:(Ljava/lang/String;)Lio/dropwizard/metrics5/jmx/JmxReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_130')">
+JmxReporter.Builder.registerWith&#160;<span class='sym_p'><span>(&#160;MBeanServer <span class='color_p'>mBeanServer</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;JmxReporter.Builder</span></span>
+<br/>
+<div id="c_130" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.Builder.registerWith:(Ljavax/management/MBeanServer;)Lio/dropwizard/metrics5/jmx/JmxReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_131')">
+JmxReporter.Builder.specificDurationUnits&#160;<span class='sym_p'><span>(&#160;Map&lt;String,TimeUnit&gt; <span class='color_p'>specificDurationUnits</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;JmxReporter.Builder</span></span>
+<br/>
+<div id="c_131" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.Builder.specificDurationUnits:(Ljava/util/Map;)Lio/dropwizard/metrics5/jmx/JmxReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_132')">
+JmxReporter.Builder.specificRateUnits&#160;<span class='sym_p'><span>(&#160;Map&lt;String,TimeUnit&gt; <span class='color_p'>specificRateUnits</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;JmxReporter.Builder</span></span>
+<br/>
+<div id="c_132" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.Builder.specificRateUnits:(Ljava/util/Map;)Lio/dropwizard/metrics5/jmx/JmxReporter$Builder;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-jmx-5.0.0.jar</span>, <span class='cname'>DefaultObjectNameFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.jmx</span><br/>
+<span class="section" onclick="sC(this, 'c_133')">
+DefaultObjectNameFactory.createName&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>type</span></span>, <span>String <span class='color_p'>domain</span></span>, <span>MetricName <span class='color_p'>name</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ObjectName</span></span>
+<br/>
+<div id="c_133" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/DefaultObjectNameFactory.createName:(Ljava/lang/String;Ljava/lang/String;Lio/dropwizard/metrics5/MetricName;)Ljavax/management/ObjectName;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_134')">
+DefaultObjectNameFactory.DefaultObjectNameFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_134" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/DefaultObjectNameFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-jmx-5.0.0.jar</span>, <span class='cname'>JmxCounterMBean.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.jmx</span><br/>
+<span class="section" onclick="sC(this, 'c_135')">
+JmxReporter.JmxCounterMBean.getCount&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_135" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxCounterMBean.getCount:()J</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-jmx-5.0.0.jar</span>, <span class='cname'>JmxGaugeMBean.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.jmx</span><br/>
+<span class="section" onclick="sC(this, 'c_136')">
+JmxReporter.JmxGaugeMBean.getValue&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_136" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxGaugeMBean.getValue:()Ljava/lang/Object;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-jmx-5.0.0.jar</span>, <span class='cname'>JmxHistogramMBean.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.jmx</span><br/>
+<span class="section" onclick="sC(this, 'c_137')">
+JmxReporter.JmxHistogramMBean.get50thPercentile&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_137" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxHistogramMBean.get50thPercentile:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_138')">
+JmxReporter.JmxHistogramMBean.get75thPercentile&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_138" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxHistogramMBean.get75thPercentile:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_139')">
+JmxReporter.JmxHistogramMBean.get95thPercentile&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_139" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxHistogramMBean.get95thPercentile:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_140')">
+JmxReporter.JmxHistogramMBean.get98thPercentile&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_140" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxHistogramMBean.get98thPercentile:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_141')">
+JmxReporter.JmxHistogramMBean.get999thPercentile&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_141" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxHistogramMBean.get999thPercentile:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_142')">
+JmxReporter.JmxHistogramMBean.get99thPercentile&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_142" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxHistogramMBean.get99thPercentile:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_143')">
+JmxReporter.JmxHistogramMBean.getCount&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_143" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxHistogramMBean.getCount:()J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_144')">
+JmxReporter.JmxHistogramMBean.getMax&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_144" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxHistogramMBean.getMax:()J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_145')">
+JmxReporter.JmxHistogramMBean.getMean&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_145" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxHistogramMBean.getMean:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_146')">
+JmxReporter.JmxHistogramMBean.getMin&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_146" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxHistogramMBean.getMin:()J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_147')">
+JmxReporter.JmxHistogramMBean.getSnapshotSize&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_147" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxHistogramMBean.getSnapshotSize:()J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_148')">
+JmxReporter.JmxHistogramMBean.getStdDev&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_148" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxHistogramMBean.getStdDev:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_149')">
+JmxReporter.JmxHistogramMBean.getSum&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_149" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxHistogramMBean.getSum:()J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_150')">
+JmxReporter.JmxHistogramMBean.values&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long[&#160;]</span></span>
+<br/>
+<div id="c_150" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxHistogramMBean.values:()[J</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-jmx-5.0.0.jar</span>, <span class='cname'>JmxMeterMBean.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.jmx</span><br/>
+<span class="section" onclick="sC(this, 'c_151')">
+JmxReporter.JmxMeterMBean.getCount&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_151" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxMeterMBean.getCount:()J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_152')">
+JmxReporter.JmxMeterMBean.getFifteenMinuteRate&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_152" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxMeterMBean.getFifteenMinuteRate:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_153')">
+JmxReporter.JmxMeterMBean.getFiveMinuteRate&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_153" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxMeterMBean.getFiveMinuteRate:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_154')">
+JmxReporter.JmxMeterMBean.getMeanRate&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_154" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxMeterMBean.getMeanRate:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_155')">
+JmxReporter.JmxMeterMBean.getOneMinuteRate&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_155" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxMeterMBean.getOneMinuteRate:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_156')">
+JmxReporter.JmxMeterMBean.getRateUnit&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_156" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxMeterMBean.getRateUnit:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_157')">
+JmxReporter.JmxMeterMBean.getSum&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_157" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxMeterMBean.getSum:()J</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-jmx-5.0.0.jar</span>, <span class='cname'>JmxReporter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.jmx</span><br/>
+<span class="section" onclick="sC(this, 'c_158')">
+JmxReporter.close&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_158" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.close:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_159')">
+JmxReporter.forRegistry&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>registry</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;JmxReporter.Builder</span></span>
+<br/>
+<div id="c_159" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.forRegistry:(Lio/dropwizard/metrics5/MetricRegistry;)Lio/dropwizard/metrics5/jmx/JmxReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_160')">
+JmxReporter.start&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_160" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.start:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_161')">
+JmxReporter.stop&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_161" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.stop:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-jmx-5.0.0.jar</span>, <span class='cname'>JmxTimerMBean.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.jmx</span><br/>
+<span class="section" onclick="sC(this, 'c_162')">
+JmxReporter.JmxTimerMBean.get50thPercentile&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_162" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxTimerMBean.get50thPercentile:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_163')">
+JmxReporter.JmxTimerMBean.get75thPercentile&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_163" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxTimerMBean.get75thPercentile:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_164')">
+JmxReporter.JmxTimerMBean.get95thPercentile&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_164" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxTimerMBean.get95thPercentile:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_165')">
+JmxReporter.JmxTimerMBean.get98thPercentile&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_165" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxTimerMBean.get98thPercentile:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_166')">
+JmxReporter.JmxTimerMBean.get999thPercentile&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_166" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxTimerMBean.get999thPercentile:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_167')">
+JmxReporter.JmxTimerMBean.get99thPercentile&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_167" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxTimerMBean.get99thPercentile:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_168')">
+JmxReporter.JmxTimerMBean.getDurationUnit&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_168" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxTimerMBean.getDurationUnit:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_169')">
+JmxReporter.JmxTimerMBean.getMax&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_169" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxTimerMBean.getMax:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_170')">
+JmxReporter.JmxTimerMBean.getMean&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_170" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxTimerMBean.getMean:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_171')">
+JmxReporter.JmxTimerMBean.getMin&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_171" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxTimerMBean.getMin:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_172')">
+JmxReporter.JmxTimerMBean.getStdDev&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_172" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxTimerMBean.getStdDev:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_173')">
+JmxReporter.JmxTimerMBean.values&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long[&#160;]</span></span>
+<br/>
+<div id="c_173" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.JmxTimerMBean.values:()[J</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-jmx-5.0.0.jar</span>, <span class='cname'>MetricMBean.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.jmx</span><br/>
+<span class="section" onclick="sC(this, 'c_174')">
+JmxReporter.MetricMBean.objectName&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ObjectName</span></span>
+<br/>
+<div id="c_174" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/JmxReporter.MetricMBean.objectName:()Ljavax/management/ObjectName;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-jmx-5.0.0.jar</span>, <span class='cname'>ObjectNameFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.jmx</span><br/>
+<span class="section" onclick="sC(this, 'c_175')">
+ObjectNameFactory.createName&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>p1</span></span>, <span>String <span class='color_p'>p2</span></span>, <span>MetricName <span class='color_p'>p3</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ObjectName</span></span>
+<br/>
+<div id="c_175" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/jmx/ObjectNameFactory.createName:(Ljava/lang/String;Ljava/lang/String;Lio/dropwizard/metrics5/MetricName;)Ljavax/management/ObjectName;</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Removed'></a><a name='Withdrawn'></a><h2>Removed Methods <span class='failed'>&nbsp;51&nbsp;</span></h2><hr/>
+<span class='jar'>metrics-jmx-4.2.38.jar</span>, <span class='cname'>Builder.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.jmx</span><br/>
+<span class="section" onclick="sC(this, 'c_176')">
+JmxReporter.Builder.build&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;JmxReporter</span></span>
+<br/>
+<div id="c_176" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.Builder.build:()Lcom/codahale/metrics/jmx/JmxReporter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_177')">
+JmxReporter.Builder.convertDurationsTo&#160;<span class='sym_p'><span>(&#160;TimeUnit <span class='color_p'>durationUnit</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;JmxReporter.Builder</span></span>
+<br/>
+<div id="c_177" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.Builder.convertDurationsTo:(Ljava/util/concurrent/TimeUnit;)Lcom/codahale/metrics/jmx/JmxReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_178')">
+JmxReporter.Builder.convertRatesTo&#160;<span class='sym_p'><span>(&#160;TimeUnit <span class='color_p'>rateUnit</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;JmxReporter.Builder</span></span>
+<br/>
+<div id="c_178" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.Builder.convertRatesTo:(Ljava/util/concurrent/TimeUnit;)Lcom/codahale/metrics/jmx/JmxReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_179')">
+JmxReporter.Builder.createsObjectNamesWith&#160;<span class='sym_p'><span>(&#160;ObjectNameFactory <span class='color_p'>onFactory</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;JmxReporter.Builder</span></span>
+<br/>
+<div id="c_179" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.Builder.createsObjectNamesWith:(Lcom/codahale/metrics/jmx/ObjectNameFactory;)Lcom/codahale/metrics/jmx/JmxReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_180')">
+JmxReporter.Builder.filter&#160;<span class='sym_p'><span>(&#160;MetricFilter <span class='color_p'>filter</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;JmxReporter.Builder</span></span>
+<br/>
+<div id="c_180" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.Builder.filter:(Lcom/codahale/metrics/MetricFilter;)Lcom/codahale/metrics/jmx/JmxReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_181')">
+JmxReporter.Builder.inDomain&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>domain</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;JmxReporter.Builder</span></span>
+<br/>
+<div id="c_181" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.Builder.inDomain:(Ljava/lang/String;)Lcom/codahale/metrics/jmx/JmxReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_182')">
+JmxReporter.Builder.registerWith&#160;<span class='sym_p'><span>(&#160;MBeanServer <span class='color_p'>mBeanServer</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;JmxReporter.Builder</span></span>
+<br/>
+<div id="c_182" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.Builder.registerWith:(Ljavax/management/MBeanServer;)Lcom/codahale/metrics/jmx/JmxReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_183')">
+JmxReporter.Builder.specificDurationUnits&#160;<span class='sym_p'><span>(&#160;Map&lt;String,TimeUnit&gt; <span class='color_p'>specificDurationUnits</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;JmxReporter.Builder</span></span>
+<br/>
+<div id="c_183" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.Builder.specificDurationUnits:(Ljava/util/Map;)Lcom/codahale/metrics/jmx/JmxReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_184')">
+JmxReporter.Builder.specificRateUnits&#160;<span class='sym_p'><span>(&#160;Map&lt;String,TimeUnit&gt; <span class='color_p'>specificRateUnits</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;JmxReporter.Builder</span></span>
+<br/>
+<div id="c_184" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.Builder.specificRateUnits:(Ljava/util/Map;)Lcom/codahale/metrics/jmx/JmxReporter$Builder;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-jmx-4.2.38.jar</span>, <span class='cname'>DefaultObjectNameFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.jmx</span><br/>
+<span class="section" onclick="sC(this, 'c_185')">
+DefaultObjectNameFactory.createName&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>type</span></span>, <span>String <span class='color_p'>domain</span></span>, <span>String <span class='color_p'>name</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ObjectName</span></span>
+<br/>
+<div id="c_185" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/DefaultObjectNameFactory.createName:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_186')">
+DefaultObjectNameFactory.DefaultObjectNameFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_186" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/DefaultObjectNameFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-jmx-4.2.38.jar</span>, <span class='cname'>JmxCounterMBean.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.jmx</span><br/>
+<span class="section" onclick="sC(this, 'c_187')">
+JmxReporter.JmxCounterMBean.getCount&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_187" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxCounterMBean.getCount:()J</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-jmx-4.2.38.jar</span>, <span class='cname'>JmxGaugeMBean.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.jmx</span><br/>
+<span class="section" onclick="sC(this, 'c_188')">
+JmxReporter.JmxGaugeMBean.getNumber&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Number</span></span>
+<br/>
+<div id="c_188" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxGaugeMBean.getNumber:()Ljava/lang/Number;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_189')">
+JmxReporter.JmxGaugeMBean.getValue&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_189" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxGaugeMBean.getValue:()Ljava/lang/Object;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-jmx-4.2.38.jar</span>, <span class='cname'>JmxHistogramMBean.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.jmx</span><br/>
+<span class="section" onclick="sC(this, 'c_190')">
+JmxReporter.JmxHistogramMBean.get50thPercentile&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_190" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxHistogramMBean.get50thPercentile:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_191')">
+JmxReporter.JmxHistogramMBean.get75thPercentile&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_191" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxHistogramMBean.get75thPercentile:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_192')">
+JmxReporter.JmxHistogramMBean.get95thPercentile&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_192" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxHistogramMBean.get95thPercentile:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_193')">
+JmxReporter.JmxHistogramMBean.get98thPercentile&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_193" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxHistogramMBean.get98thPercentile:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_194')">
+JmxReporter.JmxHistogramMBean.get999thPercentile&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_194" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxHistogramMBean.get999thPercentile:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_195')">
+JmxReporter.JmxHistogramMBean.get99thPercentile&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_195" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxHistogramMBean.get99thPercentile:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_196')">
+JmxReporter.JmxHistogramMBean.getCount&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_196" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxHistogramMBean.getCount:()J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_197')">
+JmxReporter.JmxHistogramMBean.getMax&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_197" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxHistogramMBean.getMax:()J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_198')">
+JmxReporter.JmxHistogramMBean.getMean&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_198" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxHistogramMBean.getMean:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_199')">
+JmxReporter.JmxHistogramMBean.getMin&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_199" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxHistogramMBean.getMin:()J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_200')">
+JmxReporter.JmxHistogramMBean.getSnapshotSize&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_200" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxHistogramMBean.getSnapshotSize:()J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_201')">
+JmxReporter.JmxHistogramMBean.getStdDev&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_201" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxHistogramMBean.getStdDev:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_202')">
+JmxReporter.JmxHistogramMBean.values&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long[&#160;]</span></span>
+<br/>
+<div id="c_202" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxHistogramMBean.values:()[J</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-jmx-4.2.38.jar</span>, <span class='cname'>JmxMeterMBean.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.jmx</span><br/>
+<span class="section" onclick="sC(this, 'c_203')">
+JmxReporter.JmxMeterMBean.getCount&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_203" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxMeterMBean.getCount:()J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_204')">
+JmxReporter.JmxMeterMBean.getFifteenMinuteRate&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_204" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxMeterMBean.getFifteenMinuteRate:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_205')">
+JmxReporter.JmxMeterMBean.getFiveMinuteRate&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_205" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxMeterMBean.getFiveMinuteRate:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_206')">
+JmxReporter.JmxMeterMBean.getMeanRate&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_206" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxMeterMBean.getMeanRate:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_207')">
+JmxReporter.JmxMeterMBean.getOneMinuteRate&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_207" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxMeterMBean.getOneMinuteRate:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_208')">
+JmxReporter.JmxMeterMBean.getRateUnit&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_208" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxMeterMBean.getRateUnit:()Ljava/lang/String;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-jmx-4.2.38.jar</span>, <span class='cname'>JmxReporter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.jmx</span><br/>
+<span class="section" onclick="sC(this, 'c_209')">
+JmxReporter.close&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_209" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.close:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_210')">
+JmxReporter.forRegistry&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>registry</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;JmxReporter.Builder</span></span>
+<br/>
+<div id="c_210" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.forRegistry:(Lcom/codahale/metrics/MetricRegistry;)Lcom/codahale/metrics/jmx/JmxReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_211')">
+JmxReporter.start&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_211" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.start:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_212')">
+JmxReporter.stop&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_212" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.stop:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-jmx-4.2.38.jar</span>, <span class='cname'>JmxTimerMBean.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.jmx</span><br/>
+<span class="section" onclick="sC(this, 'c_213')">
+JmxReporter.JmxTimerMBean.get50thPercentile&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_213" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxTimerMBean.get50thPercentile:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_214')">
+JmxReporter.JmxTimerMBean.get75thPercentile&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_214" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxTimerMBean.get75thPercentile:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_215')">
+JmxReporter.JmxTimerMBean.get95thPercentile&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_215" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxTimerMBean.get95thPercentile:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_216')">
+JmxReporter.JmxTimerMBean.get98thPercentile&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_216" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxTimerMBean.get98thPercentile:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_217')">
+JmxReporter.JmxTimerMBean.get999thPercentile&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_217" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxTimerMBean.get999thPercentile:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_218')">
+JmxReporter.JmxTimerMBean.get99thPercentile&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_218" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxTimerMBean.get99thPercentile:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_219')">
+JmxReporter.JmxTimerMBean.getDurationUnit&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_219" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxTimerMBean.getDurationUnit:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_220')">
+JmxReporter.JmxTimerMBean.getMax&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_220" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxTimerMBean.getMax:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_221')">
+JmxReporter.JmxTimerMBean.getMean&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_221" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxTimerMBean.getMean:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_222')">
+JmxReporter.JmxTimerMBean.getMin&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_222" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxTimerMBean.getMin:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_223')">
+JmxReporter.JmxTimerMBean.getStdDev&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;double</span></span>
+<br/>
+<div id="c_223" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxTimerMBean.getStdDev:()D</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_224')">
+JmxReporter.JmxTimerMBean.values&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long[&#160;]</span></span>
+<br/>
+<div id="c_224" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.JmxTimerMBean.values:()[J</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-jmx-4.2.38.jar</span>, <span class='cname'>MetricMBean.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.jmx</span><br/>
+<span class="section" onclick="sC(this, 'c_225')">
+JmxReporter.MetricMBean.objectName&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ObjectName</span></span>
+<br/>
+<div id="c_225" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/JmxReporter.MetricMBean.objectName:()Ljavax/management/ObjectName;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-jmx-4.2.38.jar</span>, <span class='cname'>ObjectNameFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.jmx</span><br/>
+<span class="section" onclick="sC(this, 'c_226')">
+ObjectNameFactory.createName&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>p1</span></span>, <span>String <span class='color_p'>p2</span></span>, <span>String <span class='color_p'>p3</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ObjectName</span></span>
+<br/>
+<div id="c_226" style="display:none;">
+<span class='mngl'>com/codahale/metrics/jmx/ObjectNameFactory.createName:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='High_Risk_Problems'></a><a name='Type_Problems_High'></a>
+<h2>Problems with Data Types, High Severity <span class='failed'>&nbsp;10&nbsp;</span></h2><hr/>
+<span class='jar'>metrics-jmx-4.2.38.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.jmx</span><br/>
+<span class="section" onclick="sC(this, 'c_227')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> DefaultObjectNameFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_227" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>DefaultObjectNameFactory</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_228')">
+[+] affected methods: 2 (1.9%)</span>
+<div id="c_228" style="display:none;">
+<div class='affected'><span class='iname_a'>DefaultObjectNameFactory.DefaultObjectNameFactory&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'DefaultObjectNameFactory' class.</div>
+<span class='iname_a'>DefaultObjectNameFactory.createName&#160;<span class='sym_p'><span>(&#160;String <i>type</i></span>, <span>String <i>domain</i></span>, <span>String <i>name</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'DefaultObjectNameFactory' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_229')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> JmxReporter <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_229" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>JmxReporter</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_230')">
+[+] affected methods: 4 (3.9%)</span>
+<div id="c_230" style="display:none;">
+<div class='affected'><span class='iname_a'>JmxReporter.close&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'JmxReporter' class.</div>
+<span class='iname_a'>JmxReporter.forRegistry&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>registry</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'JmxReporter' class.</div>
+<span class='iname_a'>JmxReporter.start&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'JmxReporter' class.</div>
+<span class='iname_a'>JmxReporter.stop&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'JmxReporter' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_231')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> JmxReporter.Builder <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_231" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>JmxReporter.Builder</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_232')">
+[+] affected methods: 9 (8.7%)</span>
+<div id="c_232" style="display:none;">
+<div class='affected'><span class='iname_a'>JmxReporter.Builder.build&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'JmxReporter.Builder' class.</div>
+<span class='iname_a'>JmxReporter.Builder.convertDurationsTo&#160;<span class='sym_p'><span>(&#160;TimeUnit <i>durationUnit</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'JmxReporter.Builder' class.</div>
+<span class='iname_a'>JmxReporter.Builder.convertRatesTo&#160;<span class='sym_p'><span>(&#160;TimeUnit <i>rateUnit</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'JmxReporter.Builder' class.</div>
+<span class='iname_a'>JmxReporter.Builder.createsObjectNamesWith&#160;<span class='sym_p'><span>(&#160;ObjectNameFactory <i>onFactory</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'JmxReporter.Builder' class.</div>
+<span class='iname_a'>JmxReporter.Builder.filter&#160;<span class='sym_p'><span>(&#160;MetricFilter <i>filter</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'JmxReporter.Builder' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_233')">
+<span class='ext'>[+]</span> <span class='ttype'>interface</span> JmxReporter.JmxCounterMBean <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_233" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This interface has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>JmxReporter.JmxCounterMBean</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_234')">
+[+] affected methods: 1 (1%)</span>
+<div id="c_234" style="display:none;">
+<div class='affected'><span class='iname_a'>JmxReporter.JmxCounterMBean.getCount&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This abstract method is from 'JmxReporter.JmxCounterMBean' interface.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_235')">
+<span class='ext'>[+]</span> <span class='ttype'>interface</span> JmxReporter.JmxGaugeMBean <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_235" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This interface has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>JmxReporter.JmxGaugeMBean</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_236')">
+[+] affected methods: 2 (1.9%)</span>
+<div id="c_236" style="display:none;">
+<div class='affected'><span class='iname_a'>JmxReporter.JmxGaugeMBean.getNumber&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This abstract method is from 'JmxReporter.JmxGaugeMBean' interface.</div>
+<span class='iname_a'>JmxReporter.JmxGaugeMBean.getValue&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This abstract method is from 'JmxReporter.JmxGaugeMBean' interface.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_237')">
+<span class='ext'>[+]</span> <span class='ttype'>interface</span> JmxReporter.JmxHistogramMBean <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_237" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This interface has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>JmxReporter.JmxHistogramMBean</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_238')">
+[+] affected methods: 13 (12.6%)</span>
+<div id="c_238" style="display:none;">
+<div class='affected'><span class='iname_a'>JmxReporter.JmxHistogramMBean.get50thPercentile&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This abstract method is from 'JmxReporter.JmxHistogramMBean' interface.</div>
+<span class='iname_a'>JmxReporter.JmxHistogramMBean.get75thPercentile&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This abstract method is from 'JmxReporter.JmxHistogramMBean' interface.</div>
+<span class='iname_a'>JmxReporter.JmxHistogramMBean.get95thPercentile&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This abstract method is from 'JmxReporter.JmxHistogramMBean' interface.</div>
+<span class='iname_a'>JmxReporter.JmxHistogramMBean.get98thPercentile&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This abstract method is from 'JmxReporter.JmxHistogramMBean' interface.</div>
+<span class='iname_a'>JmxReporter.JmxHistogramMBean.get999thPercentile&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This abstract method is from 'JmxReporter.JmxHistogramMBean' interface.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_239')">
+<span class='ext'>[+]</span> <span class='ttype'>interface</span> JmxReporter.JmxMeterMBean <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_239" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This interface has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>JmxReporter.JmxMeterMBean</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_240')">
+[+] affected methods: 6 (5.8%)</span>
+<div id="c_240" style="display:none;">
+<div class='affected'><span class='iname_a'>JmxReporter.JmxMeterMBean.getCount&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This abstract method is from 'JmxReporter.JmxMeterMBean' interface.</div>
+<span class='iname_a'>JmxReporter.JmxMeterMBean.getFifteenMinuteRate&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This abstract method is from 'JmxReporter.JmxMeterMBean' interface.</div>
+<span class='iname_a'>JmxReporter.JmxMeterMBean.getFiveMinuteRate&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This abstract method is from 'JmxReporter.JmxMeterMBean' interface.</div>
+<span class='iname_a'>JmxReporter.JmxMeterMBean.getMeanRate&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This abstract method is from 'JmxReporter.JmxMeterMBean' interface.</div>
+<span class='iname_a'>JmxReporter.JmxMeterMBean.getOneMinuteRate&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This abstract method is from 'JmxReporter.JmxMeterMBean' interface.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_241')">
+<span class='ext'>[+]</span> <span class='ttype'>interface</span> JmxReporter.JmxTimerMBean <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_241" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This interface has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>JmxReporter.JmxTimerMBean</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_242')">
+[+] affected methods: 12 (11.7%)</span>
+<div id="c_242" style="display:none;">
+<div class='affected'><span class='iname_a'>JmxReporter.JmxTimerMBean.get50thPercentile&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This abstract method is from 'JmxReporter.JmxTimerMBean' interface.</div>
+<span class='iname_a'>JmxReporter.JmxTimerMBean.get75thPercentile&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This abstract method is from 'JmxReporter.JmxTimerMBean' interface.</div>
+<span class='iname_a'>JmxReporter.JmxTimerMBean.get95thPercentile&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This abstract method is from 'JmxReporter.JmxTimerMBean' interface.</div>
+<span class='iname_a'>JmxReporter.JmxTimerMBean.get98thPercentile&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This abstract method is from 'JmxReporter.JmxTimerMBean' interface.</div>
+<span class='iname_a'>JmxReporter.JmxTimerMBean.get999thPercentile&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This abstract method is from 'JmxReporter.JmxTimerMBean' interface.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_243')">
+<span class='ext'>[+]</span> <span class='ttype'>interface</span> JmxReporter.MetricMBean <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_243" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This interface has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>JmxReporter.MetricMBean</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_244')">
+[+] affected methods: 1 (1%)</span>
+<div id="c_244" style="display:none;">
+<div class='affected'><span class='iname_a'>JmxReporter.MetricMBean.objectName&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This abstract method is from 'JmxReporter.MetricMBean' interface.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_245')">
+<span class='ext'>[+]</span> <span class='ttype'>interface</span> ObjectNameFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_245" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This interface has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>ObjectNameFactory</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_246')">
+[+] affected methods: 1 (1%)</span>
+<div id="c_246" style="display:none;">
+<div class='affected'><span class='iname_a'>ObjectNameFactory.createName&#160;<span class='sym_p'><span>(&#160;String <i>p1</i></span>, <span>String <i>p2</i></span>, <span>String <i>p3</i></span>&#160;)</span></span><br/><div class='affect'>This abstract method is from 'ObjectNameFactory' interface.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Checked_Archives'></a><h2>Java Archives <span class='gray'>&nbsp;1&nbsp;</span></h2>
+<hr/><div class='jar_list'>
+metrics-jmx-4.2.38.jar<br/>
+</div><br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<br/><br/><br/>
+<hr/><div class='footer' align='right'><i>Generated by <a href='https://github.com/lvc/japi-compliance-checker'>Java API Compliance Checker</a> 2.4 &#160;</i></div><br/>
+</body></html>

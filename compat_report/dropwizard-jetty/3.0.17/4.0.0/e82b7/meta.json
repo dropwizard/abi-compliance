@@ -1,0 +1,11 @@
+{
+  "Affected": "4.2",
+  "Added": 6,
+  "Removed": 8,
+  "TotalProblems": 2,
+  "Source_Affected": "4.2",
+  "Source_TotalProblems": "2",
+  "Source_ReportPath": "compat_report/dropwizard-jetty/3.0.17/4.0.0/e82b7/src_compat_report.html",
+  "Archive1": "dropwizard-jetty-3.0.17.jar",
+  "Archive2": "dropwizard-jetty-4.0.0.jar"
+}

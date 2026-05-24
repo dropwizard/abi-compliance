@@ -1,0 +1,11 @@
+{
+  "Affected": "15.1",
+  "Added": 0,
+  "Removed": 0,
+  "TotalProblems": 1,
+  "Source_Affected": "15.1",
+  "Source_TotalProblems": "2",
+  "Source_ReportPath": "compat_report/dropwizard-json-logging/2.1.12/3.0.0/da23d/src_compat_report.html",
+  "Archive1": "dropwizard-json-logging-2.1.12.jar",
+  "Archive2": "dropwizard-json-logging-3.0.0.jar"
+}

@@ -1,0 +1,11 @@
+{
+  "Affected": "0",
+  "Added": 0,
+  "Removed": 0,
+  "TotalProblems": 0,
+  "Source_Affected": "0",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/metrics-jdbi3/5.0.5/5.0.6/a5e2a/src_compat_report.html",
+  "Archive1": "metrics-jdbi3-5.0.5.jar",
+  "Archive2": "metrics-jdbi3-5.0.6.jar"
+}

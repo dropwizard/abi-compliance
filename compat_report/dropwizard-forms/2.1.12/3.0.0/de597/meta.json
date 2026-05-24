@@ -1,0 +1,11 @@
+{
+  "Affected": "100",
+  "Added": 2,
+  "Removed": 2,
+  "TotalProblems": 1,
+  "Source_Affected": "100",
+  "Source_TotalProblems": "1",
+  "Source_ReportPath": "compat_report/dropwizard-forms/2.1.12/3.0.0/de597/src_compat_report.html",
+  "Archive1": "dropwizard-forms-2.1.12.jar",
+  "Archive2": "dropwizard-forms-3.0.0.jar"
+}

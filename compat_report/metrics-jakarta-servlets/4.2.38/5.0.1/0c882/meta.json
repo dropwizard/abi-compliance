@@ -1,0 +1,11 @@
+{
+  "Affected": "100",
+  "Added": 40,
+  "Removed": 40,
+  "TotalProblems": 8,
+  "Source_Affected": "100",
+  "Source_TotalProblems": "8",
+  "Source_ReportPath": "compat_report/metrics-jakarta-servlets/4.2.38/5.0.1/0c882/src_compat_report.html",
+  "Archive1": "metrics-jakarta-servlets-4.2.38.jar",
+  "Archive2": "metrics-jakarta-servlets-5.0.1.jar"
+}

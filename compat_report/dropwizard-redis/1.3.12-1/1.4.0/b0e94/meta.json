@@ -1,0 +1,11 @@
+{
+  "Affected": "5.7",
+  "Added": 3,
+  "Removed": 6,
+  "TotalProblems": 7,
+  "Source_Affected": "5.8",
+  "Source_TotalProblems": "7",
+  "Source_ReportPath": "compat_report/dropwizard-redis/1.3.12-1/1.4.0/b0e94/src_compat_report.html",
+  "Archive1": "dropwizard-redis-1.3.12-1.jar",
+  "Archive2": "dropwizard-redis-1.4.0.jar"
+}

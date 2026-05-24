@@ -1,0 +1,11 @@
+{
+  "Affected": "12.5",
+  "Added": 2,
+  "Removed": 2,
+  "TotalProblems": 3,
+  "Source_Affected": "12.5",
+  "Source_TotalProblems": "4",
+  "Source_ReportPath": "compat_report/dropwizard-migrations/2.1.12/3.0.0/13550/src_compat_report.html",
+  "Archive1": "dropwizard-migrations-2.1.12.jar",
+  "Archive2": "dropwizard-migrations-3.0.0.jar"
+}

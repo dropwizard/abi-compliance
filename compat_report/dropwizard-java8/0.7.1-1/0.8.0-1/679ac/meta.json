@@ -1,0 +1,11 @@
+{
+  "Affected": "16.2",
+  "Added": 10,
+  "Removed": 6,
+  "TotalProblems": 2,
+  "Source_Affected": "16.2",
+  "Source_TotalProblems": "2",
+  "Source_ReportPath": "compat_report/dropwizard-java8/0.7.1-1/0.8.0-1/679ac/src_compat_report.html",
+  "Archive1": "dropwizard-java8-0.7.1-1.jar",
+  "Archive2": "dropwizard-java8-0.8.0-1.jar"
+}

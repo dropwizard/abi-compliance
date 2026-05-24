@@ -1,0 +1,11 @@
+{
+  "Affected": "0",
+  "Added": 0,
+  "Removed": 0,
+  "TotalProblems": 0,
+  "Source_Affected": "0",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/metrics-legacy-adapter/5.0.4/5.0.5/0f931/src_compat_report.html",
+  "Archive1": "metrics-legacy-adapter-5.0.4.jar",
+  "Archive2": "metrics-legacy-adapter-5.0.5.jar"
+}

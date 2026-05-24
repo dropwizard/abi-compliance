@@ -1,0 +1,1328 @@
+<!-- kind:binary;verdict:incompatible;affected:100;added:67;removed:71;type_problems_high:7;type_problems_medium:0;type_problems_low:0;method_problems_high:0;method_problems_medium:0;method_problems_low:0;checked_methods:138;checked_types:14;tool_version:2.4 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="metrics-graphite, binary, compatibility" />
+<meta name="description" content="Binary compatibility report for the metrics-graphite library between 4.2.38 and 5.0.0 versions" />
+<title>metrics-graphite: 4.2.38 to 5.0.0 binary compatibility report</title>
+<style type="text/css">
+body {
+    font-family:Arial, sans-serif;
+    background-color:White;
+    color:Black;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+    white-space:nowrap;
+}
+div.symbols {
+    color:#003E69;
+}
+div.symbols i {
+    color:Brown;
+}
+span.section {
+    font-weight:bold;
+    cursor:pointer;
+    color:#003E69;
+    white-space:nowrap;
+    margin-left:0.3125em;
+}
+span:hover.section {
+    color:#336699;
+}
+span.sect_aff {
+    cursor:pointer;
+    padding-left:1.55em;
+    font-size:0.875em;
+    color:#cc3300;
+}
+span.ext {
+    font-weight:normal;
+}
+span.jar {
+    color:#cc3300;
+    font-size:0.875em;
+    font-weight:bold;
+}
+div.jar_list {
+    padding-left:0.4em;
+    font-size:0.94em;
+}
+span.pkg_t {
+    color:#408080;
+    font-size:0.875em;
+}
+span.pkg {
+    color:#408080;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.cname {
+    color:Green;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.iname_b {
+    font-weight:bold;
+}
+span.iname_a {
+    color:#333333;
+    font-weight:bold;
+    font-size:0.94em;
+}
+span.sym_p {
+    font-weight:normal;
+    white-space:normal;
+}
+span.sym_pd {
+    white-space:normal;
+}
+span.sym_p span, span.sym_pd span {
+    white-space:nowrap;
+}
+span.attr {
+    color:Black;
+    font-weight:normal;
+}
+span.deprecated {
+    color:Red;
+    font-weight:bold;
+    font-family:Monaco, monospace;
+}
+div.affect {
+    padding-left:1em;
+    padding-bottom:10px;
+    font-size:0.87em;
+    font-style:italic;
+    line-height:0.9em;
+}
+div.affected {
+    padding-left:2em;
+    padding-top:10px;
+}
+table.ptable {
+    border-collapse:collapse;
+    border:1px outset black;
+    margin-left:0.95em;
+    margin-top:3px;
+    margin-bottom:3px;
+    width:56.25em;
+}
+table.ptable td {
+    border:1px solid Gray;
+    padding:3px;
+    font-size:0.875em;
+    text-align:left;
+    vertical-align:top;
+    max-width:28em;
+    word-wrap:break-word;
+}
+table.ptable th {
+    background-color:#eeeeee;
+    font-weight:bold;
+    color:#333333;
+    font-family:Verdana, Arial;
+    font-size:0.875em;
+    border:1px solid Gray;
+    text-align:center;
+    vertical-align:top;
+    white-space:nowrap;
+    padding:3px;
+}
+table.summary {
+    border-collapse:collapse;
+    border:1px outset black;
+}
+table.summary th {
+    background-color:#eeeeee;
+    font-weight:normal;
+    text-align:left;
+    font-size:0.94em;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px;
+}
+table.summary td {
+    text-align:right;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px 5px 3px 10px;
+}
+span.mngl {
+    padding-left:1em;
+    font-size:0.875em;
+    cursor:text;
+    color:#444444;
+    font-weight:bold;
+}
+span.pleft {
+    padding-left:2.5em;
+}
+span.color_p {
+    font-style:italic;
+    color:Brown;
+}
+span.param {
+    font-style:italic;
+}
+span.focus_p {
+    font-style:italic;
+    background-color:#DCDCDC;
+}
+span.ttype {
+    font-weight:normal;
+}
+span.nowrap {
+    white-space:nowrap;
+}
+span.value {
+    white-space:nowrap;
+    font-weight:bold;
+}
+.passed {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.warning {
+    background-color:#F4F4AF;
+    font-weight:normal;
+}
+.failed {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.new {
+    background-color:#C6DEFF;
+    font-weight:normal;
+}
+
+.compatible {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.almost_compatible {
+    background-color:#FFDAA3;
+    font-weight:normal;
+}
+.incompatible {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.gray {
+    background-color:#DCDCDC;
+    font-weight:normal;
+}
+
+.top_ref {
+    font-size:0.69em;
+}
+.footer {
+    font-size:0.8125em;
+}
+
+</style>
+<script type="text/javascript" language="JavaScript">
+<!--
+function sC(header, id)
+{
+    e = document.getElementById(id);
+    if(e.style.display == 'none')
+    {
+        e.style.display = 'block';
+        e.style.visibility = 'visible';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[&minus;]");
+    }
+    else
+    {
+        e.style.display = 'none';
+        e.style.visibility = 'hidden';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[+]");
+    }
+}
+
+-->
+</script>
+</head>
+<body><a name='Top'></a><h1>Binary compatibility report for the <span style='color:Blue;'>metrics-graphite</span> library between <span style='color:Red;'>4.2.38</span> and <span style='color:Red;'>5.0.0</span> versions</h1>
+
+<h2>Test Info</h2><hr/>
+<table class='summary'>
+<tr><th>Library Name</th><td>metrics-graphite</td></tr>
+<tr><th>Version #1</th><td>4.2.38</td></tr>
+<tr><th>Version #2</th><td>5.0.0</td></tr>
+</table>
+<h2>Test Results</h2><hr/>
+<table class='summary'>
+<tr><th>Total Java Modules</th><td><a href='#Checked_Archives' style='color:Blue;'>1</a></td></tr>
+<tr><th>Total Methods / Classes</th><td>138 / 14</td></tr>
+<tr><th>Compatibility</th>
+<td class='incompatible'>0%</td>
+</tr>
+</table>
+<h2>Problem Summary</h2><hr/>
+<table class='summary'>
+<tr><th></th><th style='text-align:center;'>Severity</th><th style='text-align:center;'>Count</th></tr>
+<tr><th>Added Methods</th><td>-</td><td class='new'><a href='#Added' style='color:Blue;'>67</a></td></tr>
+<tr><th>Removed Methods</th><td>High</td><td class='failed'><a href='#Removed' style='color:Blue;'>71</a></td></tr>
+<tr><th rowspan='3'>Problems with<br/>Data Types</th><td>High</td><td class='failed'><a href='#Type_Problems_High' style='color:Blue;'>7</a></td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+<tr><th rowspan='3'>Problems with<br/>Methods</th><td>High</td><td>0</td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+</table>
+
+<a name='Added'></a><h2>Added Methods <span class='new'>&nbsp;67&nbsp;</span></h2><hr/>
+<span class='jar'>metrics-graphite-5.0.0.jar</span>, <span class='cname'>Builder.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.graphite</span><br/>
+<span class="section" onclick="sC(this, 'c_1')">
+GraphiteReporter.Builder.build&#160;<span class='sym_p'><span>(&#160;Graphite <span class='color_p'>graphite</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;GraphiteReporter</span></span>
+<br/>
+<div id="c_1" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteReporter.Builder.build:(Lio/dropwizard/metrics5/graphite/Graphite;)Lio/dropwizard/metrics5/graphite/GraphiteReporter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_2')">
+GraphiteReporter.Builder.build&#160;<span class='sym_p'><span>(&#160;GraphiteSender <span class='color_p'>graphite</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;GraphiteReporter</span></span>
+<br/>
+<div id="c_2" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteReporter.Builder.build:(Lio/dropwizard/metrics5/graphite/GraphiteSender;)Lio/dropwizard/metrics5/graphite/GraphiteReporter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_3')">
+GraphiteReporter.Builder.convertDurationsTo&#160;<span class='sym_p'><span>(&#160;TimeUnit <span class='color_p'>durationUnit</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;GraphiteReporter.Builder</span></span>
+<br/>
+<div id="c_3" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteReporter.Builder.convertDurationsTo:(Ljava/util/concurrent/TimeUnit;)Lio/dropwizard/metrics5/graphite/GraphiteReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_4')">
+GraphiteReporter.Builder.convertRatesTo&#160;<span class='sym_p'><span>(&#160;TimeUnit <span class='color_p'>rateUnit</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;GraphiteReporter.Builder</span></span>
+<br/>
+<div id="c_4" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteReporter.Builder.convertRatesTo:(Ljava/util/concurrent/TimeUnit;)Lio/dropwizard/metrics5/graphite/GraphiteReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_5')">
+GraphiteReporter.Builder.disabledMetricAttributes&#160;<span class='sym_p'><span>(&#160;Set&lt;MetricAttribute&gt; <span class='color_p'>disabledMetricAttributes</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;GraphiteReporter.Builder</span></span>
+<br/>
+<div id="c_5" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteReporter.Builder.disabledMetricAttributes:(Ljava/util/Set;)Lio/dropwizard/metrics5/graphite/GraphiteReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_6')">
+GraphiteReporter.Builder.filter&#160;<span class='sym_p'><span>(&#160;MetricFilter <span class='color_p'>filter</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;GraphiteReporter.Builder</span></span>
+<br/>
+<div id="c_6" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteReporter.Builder.filter:(Lio/dropwizard/metrics5/MetricFilter;)Lio/dropwizard/metrics5/graphite/GraphiteReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_7')">
+GraphiteReporter.Builder.prefixedWith&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>prefix</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;GraphiteReporter.Builder</span></span>
+<br/>
+<div id="c_7" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteReporter.Builder.prefixedWith:(Ljava/lang/String;)Lio/dropwizard/metrics5/graphite/GraphiteReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_8')">
+GraphiteReporter.Builder.scheduleOn&#160;<span class='sym_p'><span>(&#160;ScheduledExecutorService <span class='color_p'>executor</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;GraphiteReporter.Builder</span></span>
+<br/>
+<div id="c_8" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteReporter.Builder.scheduleOn:(Ljava/util/concurrent/ScheduledExecutorService;)Lio/dropwizard/metrics5/graphite/GraphiteReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_9')">
+GraphiteReporter.Builder.shutdownExecutorOnStop&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>shutdownExecutorOnStop</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;GraphiteReporter.Builder</span></span>
+<br/>
+<div id="c_9" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteReporter.Builder.shutdownExecutorOnStop:(Z)Lio/dropwizard/metrics5/graphite/GraphiteReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_10')">
+GraphiteReporter.Builder.withClock&#160;<span class='sym_p'><span>(&#160;Clock <span class='color_p'>clock</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;GraphiteReporter.Builder</span></span>
+<br/>
+<div id="c_10" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteReporter.Builder.withClock:(Lio/dropwizard/metrics5/Clock;)Lio/dropwizard/metrics5/graphite/GraphiteReporter$Builder;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-graphite-5.0.0.jar</span>, <span class='cname'>Graphite.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.graphite</span><br/>
+<span class="section" onclick="sC(this, 'c_11')">
+Graphite.close&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_11" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/Graphite.close:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_12')">
+Graphite.connect&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_12" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/Graphite.connect:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_13')">
+Graphite.flush&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_13" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/Graphite.flush:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_14')">
+Graphite.getFailures&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_14" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/Graphite.getFailures:()I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_15')">
+Graphite.Graphite&#160;<span class='sym_p'><span>(&#160;InetSocketAddress <span class='color_p'>address</span></span>&#160;)</span></span>
+<br/>
+<div id="c_15" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/Graphite.&quot;&lt;init&gt;&quot;:(Ljava/net/InetSocketAddress;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_16')">
+Graphite.Graphite&#160;<span class='sym_p'><span>(&#160;InetSocketAddress <span class='color_p'>address</span></span>, <span>SocketFactory <span class='color_p'>socketFactory</span></span>&#160;)</span></span>
+<br/>
+<div id="c_16" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/Graphite.&quot;&lt;init&gt;&quot;:(Ljava/net/InetSocketAddress;Ljavax/net/SocketFactory;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_17')">
+Graphite.Graphite&#160;<span class='sym_p'><span>(&#160;InetSocketAddress <span class='color_p'>address</span></span>, <span>SocketFactory <span class='color_p'>socketFactory</span></span>, <span>Charset <span class='color_p'>charset</span></span>&#160;)</span></span>
+<br/>
+<div id="c_17" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/Graphite.&quot;&lt;init&gt;&quot;:(Ljava/net/InetSocketAddress;Ljavax/net/SocketFactory;Ljava/nio/charset/Charset;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_18')">
+Graphite.Graphite&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>hostname</span></span>, <span>int <span class='color_p'>port</span></span>&#160;)</span></span>
+<br/>
+<div id="c_18" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/Graphite.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_19')">
+Graphite.Graphite&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>hostname</span></span>, <span>int <span class='color_p'>port</span></span>, <span>SocketFactory <span class='color_p'>socketFactory</span></span>&#160;)</span></span>
+<br/>
+<div id="c_19" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/Graphite.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;ILjavax/net/SocketFactory;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_20')">
+Graphite.Graphite&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>hostname</span></span>, <span>int <span class='color_p'>port</span></span>, <span>SocketFactory <span class='color_p'>socketFactory</span></span>, <span>Charset <span class='color_p'>charset</span></span>&#160;)</span></span>
+<br/>
+<div id="c_20" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/Graphite.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;ILjavax/net/SocketFactory;Ljava/nio/charset/Charset;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_21')">
+Graphite.isConnected&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_21" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/Graphite.isConnected:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_22')">
+Graphite.sanitize&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>s</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_22" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/Graphite.sanitize:(Ljava/lang/String;)Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_23')">
+Graphite.send&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>, <span>String <span class='color_p'>value</span></span>, <span>long <span class='color_p'>timestamp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_23" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/Graphite.send:(Ljava/lang/String;Ljava/lang/String;J)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-graphite-5.0.0.jar</span>, <span class='cname'>GraphiteRabbitMQ.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.graphite</span><br/>
+<span class="section" onclick="sC(this, 'c_24')">
+GraphiteRabbitMQ.close&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_24" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteRabbitMQ.close:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_25')">
+GraphiteRabbitMQ.connect&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_25" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteRabbitMQ.connect:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_26')">
+GraphiteRabbitMQ.flush&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_26" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteRabbitMQ.flush:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_27')">
+GraphiteRabbitMQ.getFailures&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_27" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteRabbitMQ.getFailures:()I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_28')">
+GraphiteRabbitMQ.GraphiteRabbitMQ&#160;<span class='sym_p'><span>(&#160;ConnectionFactory <span class='color_p'>connectionFactory</span></span>, <span>String <span class='color_p'>exchange</span></span>&#160;)</span></span>
+<br/>
+<div id="c_28" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteRabbitMQ.&quot;&lt;init&gt;&quot;:(Lcom/rabbitmq/client/ConnectionFactory;Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_29')">
+GraphiteRabbitMQ.GraphiteRabbitMQ&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>rabbitHost</span></span>, <span>Integer <span class='color_p'>rabbitPort</span></span>, <span>String <span class='color_p'>rabbitUsername</span></span>, <span>String <span class='color_p'>rabbitPassword</span></span>, <span>String <span class='color_p'>exchange</span></span>&#160;)</span></span>
+<br/>
+<div id="c_29" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteRabbitMQ.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_30')">
+GraphiteRabbitMQ.GraphiteRabbitMQ&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>rabbitHost</span></span>, <span>Integer <span class='color_p'>rabbitPort</span></span>, <span>String <span class='color_p'>rabbitUsername</span></span>, <span>String <span class='color_p'>rabbitPassword</span></span>, <span>String <span class='color_p'>exchange</span></span>, <span>Integer <span class='color_p'>rabbitConnectionTimeoutMS</span></span>, <span>Integer <span class='color_p'>rabbitSocketTimeoutMS</span></span>, <span>Integer <span class='color_p'>rabbitRequestedHeartbeatInSeconds</span></span>&#160;)</span></span>
+<br/>
+<div id="c_30" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteRabbitMQ.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_31')">
+GraphiteRabbitMQ.isConnected&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_31" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteRabbitMQ.isConnected:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_32')">
+GraphiteRabbitMQ.sanitize&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>s</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_32" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteRabbitMQ.sanitize:(Ljava/lang/String;)Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_33')">
+GraphiteRabbitMQ.send&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>, <span>String <span class='color_p'>value</span></span>, <span>long <span class='color_p'>timestamp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_33" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteRabbitMQ.send:(Ljava/lang/String;Ljava/lang/String;J)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-graphite-5.0.0.jar</span>, <span class='cname'>GraphiteReporter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.graphite</span><br/>
+<span class="section" onclick="sC(this, 'c_34')">
+GraphiteReporter.format&#160;<span class='sym_p'><span>(&#160;double <span class='color_p'>v</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_34" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteReporter.format:(D)Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_35')">
+GraphiteReporter.forRegistry&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>registry</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;GraphiteReporter.Builder</span></span>
+<br/>
+<div id="c_35" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteReporter.forRegistry:(Lio/dropwizard/metrics5/MetricRegistry;)Lio/dropwizard/metrics5/graphite/GraphiteReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_36')">
+GraphiteReporter.GraphiteReporter&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>registry</span></span>, <span>GraphiteSender <span class='color_p'>graphite</span></span>, <span>Clock <span class='color_p'>clock</span></span>, <span>String <span class='color_p'>prefix</span></span>, <span>TimeUnit <span class='color_p'>rateUnit</span></span>, <span>TimeUnit <span class='color_p'>durationUnit</span></span>, <span>MetricFilter <span class='color_p'>filter</span></span>, <span>ScheduledExecutorService <span class='color_p'>executor</span></span>, <span>boolean <span class='color_p'>shutdownExecutorOnStop</span></span>, <span>Set&lt;MetricAttribute&gt; <span class='color_p'>disabledMetricAttributes</span></span>&#160;)</span></span>
+<br/>
+<div id="c_36" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteReporter.&quot;&lt;init&gt;&quot;:(Lio/dropwizard/metrics5/MetricRegistry;Lio/dropwizard/metrics5/graphite/GraphiteSender;Lio/dropwizard/metrics5/Clock;Ljava/lang/String;Ljava/util/concurrent/TimeUnit;Ljava/util/concurrent/TimeUnit;Lio/dropwizard/metrics5/MetricFilter;Ljava/util/concurrent/ScheduledExecutorService;ZLjava/util/Set;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_37')">
+GraphiteReporter.report&#160;<span class='sym_p'><span>(&#160;SortedMap&lt;MetricName,Gauge&gt; <span class='color_p'>gauges</span></span>, <span>SortedMap&lt;MetricName,Counter&gt; <span class='color_p'>counters</span></span>, <span>SortedMap&lt;MetricName,Histogram&gt; <span class='color_p'>histograms</span></span>, <span>SortedMap&lt;MetricName,Meter&gt; <span class='color_p'>meters</span></span>, <span>SortedMap&lt;MetricName,Timer&gt; <span class='color_p'>timers</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_37" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteReporter.report:(Ljava/util/SortedMap;Ljava/util/SortedMap;Ljava/util/SortedMap;Ljava/util/SortedMap;Ljava/util/SortedMap;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_38')">
+GraphiteReporter.stop&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_38" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteReporter.stop:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-graphite-5.0.0.jar</span>, <span class='cname'>GraphiteSender.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.graphite</span><br/>
+<span class="section" onclick="sC(this, 'c_39')">
+GraphiteSender.connect&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_39" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteSender.connect:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_40')">
+GraphiteSender.flush&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_40" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteSender.flush:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_41')">
+GraphiteSender.getFailures&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_41" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteSender.getFailures:()I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_42')">
+GraphiteSender.isConnected&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_42" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteSender.isConnected:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_43')">
+GraphiteSender.send&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>p1</span></span>, <span>String <span class='color_p'>p2</span></span>, <span>long <span class='color_p'>p3</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_43" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteSender.send:(Ljava/lang/String;Ljava/lang/String;J)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-graphite-5.0.0.jar</span>, <span class='cname'>GraphiteUDP.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.graphite</span><br/>
+<span class="section" onclick="sC(this, 'c_44')">
+GraphiteUDP.close&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_44" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteUDP.close:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_45')">
+GraphiteUDP.connect&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_45" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteUDP.connect:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_46')">
+GraphiteUDP.flush&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_46" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteUDP.flush:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_47')">
+GraphiteUDP.getFailures&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_47" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteUDP.getFailures:()I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_48')">
+GraphiteUDP.GraphiteUDP&#160;<span class='sym_p'><span>(&#160;InetSocketAddress <span class='color_p'>address</span></span>&#160;)</span></span>
+<br/>
+<div id="c_48" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteUDP.&quot;&lt;init&gt;&quot;:(Ljava/net/InetSocketAddress;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_49')">
+GraphiteUDP.GraphiteUDP&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>hostname</span></span>, <span>int <span class='color_p'>port</span></span>&#160;)</span></span>
+<br/>
+<div id="c_49" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteUDP.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_50')">
+GraphiteUDP.isConnected&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_50" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteUDP.isConnected:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_51')">
+GraphiteUDP.sanitize&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>s</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_51" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteUDP.sanitize:(Ljava/lang/String;)Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_52')">
+GraphiteUDP.send&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>, <span>String <span class='color_p'>value</span></span>, <span>long <span class='color_p'>timestamp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_52" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/GraphiteUDP.send:(Ljava/lang/String;Ljava/lang/String;J)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-graphite-5.0.0.jar</span>, <span class='cname'>PickledGraphite.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.metrics5.graphite</span><br/>
+<span class="section" onclick="sC(this, 'c_53')">
+PickledGraphite.close&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_53" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/PickledGraphite.close:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_54')">
+PickledGraphite.connect&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_54" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/PickledGraphite.connect:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_55')">
+PickledGraphite.flush&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_55" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/PickledGraphite.flush:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_56')">
+PickledGraphite.getFailures&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_56" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/PickledGraphite.getFailures:()I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_57')">
+PickledGraphite.isConnected&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_57" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/PickledGraphite.isConnected:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_58')">
+PickledGraphite.PickledGraphite&#160;<span class='sym_p'><span>(&#160;InetSocketAddress <span class='color_p'>address</span></span>&#160;)</span></span>
+<br/>
+<div id="c_58" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/PickledGraphite.&quot;&lt;init&gt;&quot;:(Ljava/net/InetSocketAddress;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_59')">
+PickledGraphite.PickledGraphite&#160;<span class='sym_p'><span>(&#160;InetSocketAddress <span class='color_p'>address</span></span>, <span>int <span class='color_p'>batchSize</span></span>&#160;)</span></span>
+<br/>
+<div id="c_59" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/PickledGraphite.&quot;&lt;init&gt;&quot;:(Ljava/net/InetSocketAddress;I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_60')">
+PickledGraphite.PickledGraphite&#160;<span class='sym_p'><span>(&#160;InetSocketAddress <span class='color_p'>address</span></span>, <span>SocketFactory <span class='color_p'>socketFactory</span></span>, <span>Charset <span class='color_p'>charset</span></span>, <span>int <span class='color_p'>batchSize</span></span>&#160;)</span></span>
+<br/>
+<div id="c_60" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/PickledGraphite.&quot;&lt;init&gt;&quot;:(Ljava/net/InetSocketAddress;Ljavax/net/SocketFactory;Ljava/nio/charset/Charset;I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_61')">
+PickledGraphite.PickledGraphite&#160;<span class='sym_p'><span>(&#160;InetSocketAddress <span class='color_p'>address</span></span>, <span>SocketFactory <span class='color_p'>socketFactory</span></span>, <span>int <span class='color_p'>batchSize</span></span>&#160;)</span></span>
+<br/>
+<div id="c_61" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/PickledGraphite.&quot;&lt;init&gt;&quot;:(Ljava/net/InetSocketAddress;Ljavax/net/SocketFactory;I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_62')">
+PickledGraphite.PickledGraphite&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>hostname</span></span>, <span>int <span class='color_p'>port</span></span>&#160;)</span></span>
+<br/>
+<div id="c_62" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/PickledGraphite.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_63')">
+PickledGraphite.PickledGraphite&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>hostname</span></span>, <span>int <span class='color_p'>port</span></span>, <span>int <span class='color_p'>batchSize</span></span>&#160;)</span></span>
+<br/>
+<div id="c_63" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/PickledGraphite.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;II)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_64')">
+PickledGraphite.PickledGraphite&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>hostname</span></span>, <span>int <span class='color_p'>port</span></span>, <span>SocketFactory <span class='color_p'>socketFactory</span></span>, <span>Charset <span class='color_p'>charset</span></span>, <span>int <span class='color_p'>batchSize</span></span>&#160;)</span></span>
+<br/>
+<div id="c_64" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/PickledGraphite.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;ILjavax/net/SocketFactory;Ljava/nio/charset/Charset;I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_65')">
+PickledGraphite.PickledGraphite&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>hostname</span></span>, <span>int <span class='color_p'>port</span></span>, <span>SocketFactory <span class='color_p'>socketFactory</span></span>, <span>int <span class='color_p'>batchSize</span></span>&#160;)</span></span>
+<br/>
+<div id="c_65" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/PickledGraphite.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;ILjavax/net/SocketFactory;I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_66')">
+PickledGraphite.sanitize&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>s</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_66" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/PickledGraphite.sanitize:(Ljava/lang/String;)Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_67')">
+PickledGraphite.send&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>, <span>String <span class='color_p'>value</span></span>, <span>long <span class='color_p'>timestamp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_67" style="display:none;">
+<span class='mngl'>io/dropwizard/metrics5/graphite/PickledGraphite.send:(Ljava/lang/String;Ljava/lang/String;J)V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Removed'></a><a name='Withdrawn'></a><h2>Removed Methods <span class='failed'>&nbsp;71&nbsp;</span></h2><hr/>
+<span class='jar'>metrics-graphite-4.2.38.jar</span>, <span class='cname'>Builder.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.graphite</span><br/>
+<span class="section" onclick="sC(this, 'c_68')">
+GraphiteReporter.Builder.addMetricAttributesAsTags&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>addMetricAttributesAsTags</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;GraphiteReporter.Builder</span></span>
+<br/>
+<div id="c_68" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteReporter.Builder.addMetricAttributesAsTags:(Z)Lcom/codahale/metrics/graphite/GraphiteReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_69')">
+GraphiteReporter.Builder.build&#160;<span class='sym_p'><span>(&#160;Graphite <span class='color_p'>graphite</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;GraphiteReporter</span></span>
+<br/>
+<div id="c_69" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteReporter.Builder.build:(Lcom/codahale/metrics/graphite/Graphite;)Lcom/codahale/metrics/graphite/GraphiteReporter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_70')">
+GraphiteReporter.Builder.build&#160;<span class='sym_p'><span>(&#160;GraphiteSender <span class='color_p'>graphite</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;GraphiteReporter</span></span>
+<br/>
+<div id="c_70" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteReporter.Builder.build:(Lcom/codahale/metrics/graphite/GraphiteSender;)Lcom/codahale/metrics/graphite/GraphiteReporter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_71')">
+GraphiteReporter.Builder.convertDurationsTo&#160;<span class='sym_p'><span>(&#160;TimeUnit <span class='color_p'>durationUnit</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;GraphiteReporter.Builder</span></span>
+<br/>
+<div id="c_71" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteReporter.Builder.convertDurationsTo:(Ljava/util/concurrent/TimeUnit;)Lcom/codahale/metrics/graphite/GraphiteReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_72')">
+GraphiteReporter.Builder.convertRatesTo&#160;<span class='sym_p'><span>(&#160;TimeUnit <span class='color_p'>rateUnit</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;GraphiteReporter.Builder</span></span>
+<br/>
+<div id="c_72" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteReporter.Builder.convertRatesTo:(Ljava/util/concurrent/TimeUnit;)Lcom/codahale/metrics/graphite/GraphiteReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_73')">
+GraphiteReporter.Builder.disabledMetricAttributes&#160;<span class='sym_p'><span>(&#160;Set&lt;MetricAttribute&gt; <span class='color_p'>disabledMetricAttributes</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;GraphiteReporter.Builder</span></span>
+<br/>
+<div id="c_73" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteReporter.Builder.disabledMetricAttributes:(Ljava/util/Set;)Lcom/codahale/metrics/graphite/GraphiteReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_74')">
+GraphiteReporter.Builder.filter&#160;<span class='sym_p'><span>(&#160;MetricFilter <span class='color_p'>filter</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;GraphiteReporter.Builder</span></span>
+<br/>
+<div id="c_74" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteReporter.Builder.filter:(Lcom/codahale/metrics/MetricFilter;)Lcom/codahale/metrics/graphite/GraphiteReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_75')">
+GraphiteReporter.Builder.prefixedWith&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>prefix</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;GraphiteReporter.Builder</span></span>
+<br/>
+<div id="c_75" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteReporter.Builder.prefixedWith:(Ljava/lang/String;)Lcom/codahale/metrics/graphite/GraphiteReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_76')">
+GraphiteReporter.Builder.scheduleOn&#160;<span class='sym_p'><span>(&#160;ScheduledExecutorService <span class='color_p'>executor</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;GraphiteReporter.Builder</span></span>
+<br/>
+<div id="c_76" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteReporter.Builder.scheduleOn:(Ljava/util/concurrent/ScheduledExecutorService;)Lcom/codahale/metrics/graphite/GraphiteReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_77')">
+GraphiteReporter.Builder.shutdownExecutorOnStop&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>shutdownExecutorOnStop</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;GraphiteReporter.Builder</span></span>
+<br/>
+<div id="c_77" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteReporter.Builder.shutdownExecutorOnStop:(Z)Lcom/codahale/metrics/graphite/GraphiteReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_78')">
+GraphiteReporter.Builder.withClock&#160;<span class='sym_p'><span>(&#160;Clock <span class='color_p'>clock</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;GraphiteReporter.Builder</span></span>
+<br/>
+<div id="c_78" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteReporter.Builder.withClock:(Lcom/codahale/metrics/Clock;)Lcom/codahale/metrics/graphite/GraphiteReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_79')">
+GraphiteReporter.Builder.withFloatingPointFormatter&#160;<span class='sym_p'><span>(&#160;DoubleFunction&lt;String&gt; <span class='color_p'>floatingPointFormatter</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;GraphiteReporter.Builder</span></span>
+<br/>
+<div id="c_79" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteReporter.Builder.withFloatingPointFormatter:(Ljava/util/function/DoubleFunction;)Lcom/codahale/metrics/graphite/GraphiteReporter$Builder;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-graphite-4.2.38.jar</span>, <span class='cname'>Graphite.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.graphite</span><br/>
+<span class="section" onclick="sC(this, 'c_80')">
+Graphite.close&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_80" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/Graphite.close:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_81')">
+Graphite.connect&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_81" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/Graphite.connect:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_82')">
+Graphite.flush&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_82" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/Graphite.flush:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_83')">
+Graphite.getFailures&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_83" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/Graphite.getFailures:()I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_84')">
+Graphite.Graphite&#160;<span class='sym_p'><span>(&#160;InetSocketAddress <span class='color_p'>address</span></span>&#160;)</span></span>
+<br/>
+<div id="c_84" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/Graphite.&quot;&lt;init&gt;&quot;:(Ljava/net/InetSocketAddress;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_85')">
+Graphite.Graphite&#160;<span class='sym_p'><span>(&#160;InetSocketAddress <span class='color_p'>address</span></span>, <span>SocketFactory <span class='color_p'>socketFactory</span></span>&#160;)</span></span>
+<br/>
+<div id="c_85" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/Graphite.&quot;&lt;init&gt;&quot;:(Ljava/net/InetSocketAddress;Ljavax/net/SocketFactory;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_86')">
+Graphite.Graphite&#160;<span class='sym_p'><span>(&#160;InetSocketAddress <span class='color_p'>address</span></span>, <span>SocketFactory <span class='color_p'>socketFactory</span></span>, <span>Charset <span class='color_p'>charset</span></span>&#160;)</span></span>
+<br/>
+<div id="c_86" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/Graphite.&quot;&lt;init&gt;&quot;:(Ljava/net/InetSocketAddress;Ljavax/net/SocketFactory;Ljava/nio/charset/Charset;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_87')">
+Graphite.Graphite&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>hostname</span></span>, <span>int <span class='color_p'>port</span></span>&#160;)</span></span>
+<br/>
+<div id="c_87" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/Graphite.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_88')">
+Graphite.Graphite&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>hostname</span></span>, <span>int <span class='color_p'>port</span></span>, <span>SocketFactory <span class='color_p'>socketFactory</span></span>&#160;)</span></span>
+<br/>
+<div id="c_88" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/Graphite.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;ILjavax/net/SocketFactory;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_89')">
+Graphite.Graphite&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>hostname</span></span>, <span>int <span class='color_p'>port</span></span>, <span>SocketFactory <span class='color_p'>socketFactory</span></span>, <span>Charset <span class='color_p'>charset</span></span>&#160;)</span></span>
+<br/>
+<div id="c_89" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/Graphite.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;ILjavax/net/SocketFactory;Ljava/nio/charset/Charset;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_90')">
+Graphite.isConnected&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_90" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/Graphite.isConnected:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_91')">
+Graphite.sanitize&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>s</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_91" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/Graphite.sanitize:(Ljava/lang/String;)Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_92')">
+Graphite.send&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>, <span>String <span class='color_p'>value</span></span>, <span>long <span class='color_p'>timestamp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_92" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/Graphite.send:(Ljava/lang/String;Ljava/lang/String;J)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-graphite-4.2.38.jar</span>, <span class='cname'>GraphiteRabbitMQ.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.graphite</span><br/>
+<span class="section" onclick="sC(this, 'c_93')">
+GraphiteRabbitMQ.close&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_93" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteRabbitMQ.close:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_94')">
+GraphiteRabbitMQ.connect&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_94" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteRabbitMQ.connect:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_95')">
+GraphiteRabbitMQ.flush&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_95" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteRabbitMQ.flush:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_96')">
+GraphiteRabbitMQ.getFailures&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_96" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteRabbitMQ.getFailures:()I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_97')">
+GraphiteRabbitMQ.GraphiteRabbitMQ&#160;<span class='sym_p'><span>(&#160;ConnectionFactory <span class='color_p'>connectionFactory</span></span>, <span>String <span class='color_p'>exchange</span></span>&#160;)</span></span>
+<br/>
+<div id="c_97" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteRabbitMQ.&quot;&lt;init&gt;&quot;:(Lcom/rabbitmq/client/ConnectionFactory;Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_98')">
+GraphiteRabbitMQ.GraphiteRabbitMQ&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>rabbitHost</span></span>, <span>Integer <span class='color_p'>rabbitPort</span></span>, <span>String <span class='color_p'>rabbitUsername</span></span>, <span>String <span class='color_p'>rabbitPassword</span></span>, <span>String <span class='color_p'>exchange</span></span>&#160;)</span></span>
+<br/>
+<div id="c_98" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteRabbitMQ.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_99')">
+GraphiteRabbitMQ.GraphiteRabbitMQ&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>rabbitHost</span></span>, <span>Integer <span class='color_p'>rabbitPort</span></span>, <span>String <span class='color_p'>rabbitUsername</span></span>, <span>String <span class='color_p'>rabbitPassword</span></span>, <span>String <span class='color_p'>exchange</span></span>, <span>Integer <span class='color_p'>rabbitConnectionTimeoutMS</span></span>, <span>Integer <span class='color_p'>rabbitSocketTimeoutMS</span></span>, <span>Integer <span class='color_p'>rabbitRequestedHeartbeatInSeconds</span></span>&#160;)</span></span>
+<br/>
+<div id="c_99" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteRabbitMQ.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_100')">
+GraphiteRabbitMQ.isConnected&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_100" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteRabbitMQ.isConnected:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_101')">
+GraphiteRabbitMQ.sanitize&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>s</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_101" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteRabbitMQ.sanitize:(Ljava/lang/String;)Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_102')">
+GraphiteRabbitMQ.send&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>, <span>String <span class='color_p'>value</span></span>, <span>long <span class='color_p'>timestamp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_102" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteRabbitMQ.send:(Ljava/lang/String;Ljava/lang/String;J)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-graphite-4.2.38.jar</span>, <span class='cname'>GraphiteReporter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.graphite</span><br/>
+<span class="section" onclick="sC(this, 'c_103')">
+GraphiteReporter.format&#160;<span class='sym_p'><span>(&#160;double <span class='color_p'>v</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_103" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteReporter.format:(D)Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_104')">
+GraphiteReporter.forRegistry&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>registry</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;GraphiteReporter.Builder</span></span>
+<br/>
+<div id="c_104" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteReporter.forRegistry:(Lcom/codahale/metrics/MetricRegistry;)Lcom/codahale/metrics/graphite/GraphiteReporter$Builder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_105')">
+GraphiteReporter.GraphiteReporter&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>registry</span></span>, <span>GraphiteSender <span class='color_p'>graphite</span></span>, <span>Clock <span class='color_p'>clock</span></span>, <span>String <span class='color_p'>prefix</span></span>, <span>TimeUnit <span class='color_p'>rateUnit</span></span>, <span>TimeUnit <span class='color_p'>durationUnit</span></span>, <span>MetricFilter <span class='color_p'>filter</span></span>, <span>ScheduledExecutorService <span class='color_p'>executor</span></span>, <span>boolean <span class='color_p'>shutdownExecutorOnStop</span></span>, <span>Set&lt;MetricAttribute&gt; <span class='color_p'>disabledMetricAttributes</span></span>&#160;)</span></span>
+<br/>
+<div id="c_105" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteReporter.&quot;&lt;init&gt;&quot;:(Lcom/codahale/metrics/MetricRegistry;Lcom/codahale/metrics/graphite/GraphiteSender;Lcom/codahale/metrics/Clock;Ljava/lang/String;Ljava/util/concurrent/TimeUnit;Ljava/util/concurrent/TimeUnit;Lcom/codahale/metrics/MetricFilter;Ljava/util/concurrent/ScheduledExecutorService;ZLjava/util/Set;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_106')">
+GraphiteReporter.GraphiteReporter&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>registry</span></span>, <span>GraphiteSender <span class='color_p'>graphite</span></span>, <span>Clock <span class='color_p'>clock</span></span>, <span>String <span class='color_p'>prefix</span></span>, <span>TimeUnit <span class='color_p'>rateUnit</span></span>, <span>TimeUnit <span class='color_p'>durationUnit</span></span>, <span>MetricFilter <span class='color_p'>filter</span></span>, <span>ScheduledExecutorService <span class='color_p'>executor</span></span>, <span>boolean <span class='color_p'>shutdownExecutorOnStop</span></span>, <span>Set&lt;MetricAttribute&gt; <span class='color_p'>disabledMetricAttributes</span></span>, <span>boolean <span class='color_p'>addMetricAttributesAsTags</span></span>&#160;)</span></span>
+<br/>
+<div id="c_106" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteReporter.&quot;&lt;init&gt;&quot;:(Lcom/codahale/metrics/MetricRegistry;Lcom/codahale/metrics/graphite/GraphiteSender;Lcom/codahale/metrics/Clock;Ljava/lang/String;Ljava/util/concurrent/TimeUnit;Ljava/util/concurrent/TimeUnit;Lcom/codahale/metrics/MetricFilter;Ljava/util/concurrent/ScheduledExecutorService;ZLjava/util/Set;Z)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_107')">
+GraphiteReporter.GraphiteReporter&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>registry</span></span>, <span>GraphiteSender <span class='color_p'>graphite</span></span>, <span>Clock <span class='color_p'>clock</span></span>, <span>String <span class='color_p'>prefix</span></span>, <span>TimeUnit <span class='color_p'>rateUnit</span></span>, <span>TimeUnit <span class='color_p'>durationUnit</span></span>, <span>MetricFilter <span class='color_p'>filter</span></span>, <span>ScheduledExecutorService <span class='color_p'>executor</span></span>, <span>boolean <span class='color_p'>shutdownExecutorOnStop</span></span>, <span>Set&lt;MetricAttribute&gt; <span class='color_p'>disabledMetricAttributes</span></span>, <span>boolean <span class='color_p'>addMetricAttributesAsTags</span></span>, <span>DoubleFunction&lt;String&gt; <span class='color_p'>floatingPointFormatter</span></span>&#160;)</span></span>
+<br/>
+<div id="c_107" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteReporter.&quot;&lt;init&gt;&quot;:(Lcom/codahale/metrics/MetricRegistry;Lcom/codahale/metrics/graphite/GraphiteSender;Lcom/codahale/metrics/Clock;Ljava/lang/String;Ljava/util/concurrent/TimeUnit;Ljava/util/concurrent/TimeUnit;Lcom/codahale/metrics/MetricFilter;Ljava/util/concurrent/ScheduledExecutorService;ZLjava/util/Set;ZLjava/util/function/DoubleFunction;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_108')">
+GraphiteReporter.report&#160;<span class='sym_p'><span>(&#160;SortedMap&lt;String,Gauge&gt; <span class='color_p'>gauges</span></span>, <span>SortedMap&lt;String,Counter&gt; <span class='color_p'>counters</span></span>, <span>SortedMap&lt;String,Histogram&gt; <span class='color_p'>histograms</span></span>, <span>SortedMap&lt;String,Meter&gt; <span class='color_p'>meters</span></span>, <span>SortedMap&lt;String,Timer&gt; <span class='color_p'>timers</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_108" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteReporter.report:(Ljava/util/SortedMap;Ljava/util/SortedMap;Ljava/util/SortedMap;Ljava/util/SortedMap;Ljava/util/SortedMap;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_109')">
+GraphiteReporter.stop&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_109" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteReporter.stop:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-graphite-4.2.38.jar</span>, <span class='cname'>GraphiteSender.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.graphite</span><br/>
+<span class="section" onclick="sC(this, 'c_110')">
+GraphiteSender.connect&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_110" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteSender.connect:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_111')">
+GraphiteSender.flush&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_111" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteSender.flush:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_112')">
+GraphiteSender.getFailures&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_112" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteSender.getFailures:()I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_113')">
+GraphiteSender.isConnected&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_113" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteSender.isConnected:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_114')">
+GraphiteSender.send&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>p1</span></span>, <span>String <span class='color_p'>p2</span></span>, <span>long <span class='color_p'>p3</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_114" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteSender.send:(Ljava/lang/String;Ljava/lang/String;J)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-graphite-4.2.38.jar</span>, <span class='cname'>GraphiteUDP.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.graphite</span><br/>
+<span class="section" onclick="sC(this, 'c_115')">
+GraphiteUDP.close&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_115" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteUDP.close:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_116')">
+GraphiteUDP.connect&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_116" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteUDP.connect:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_117')">
+GraphiteUDP.flush&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_117" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteUDP.flush:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_118')">
+GraphiteUDP.getFailures&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_118" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteUDP.getFailures:()I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_119')">
+GraphiteUDP.GraphiteUDP&#160;<span class='sym_p'><span>(&#160;InetSocketAddress <span class='color_p'>address</span></span>&#160;)</span></span>
+<br/>
+<div id="c_119" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteUDP.&quot;&lt;init&gt;&quot;:(Ljava/net/InetSocketAddress;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_120')">
+GraphiteUDP.GraphiteUDP&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>hostname</span></span>, <span>int <span class='color_p'>port</span></span>&#160;)</span></span>
+<br/>
+<div id="c_120" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteUDP.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_121')">
+GraphiteUDP.isConnected&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_121" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteUDP.isConnected:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_122')">
+GraphiteUDP.sanitize&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>s</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_122" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteUDP.sanitize:(Ljava/lang/String;)Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_123')">
+GraphiteUDP.send&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>, <span>String <span class='color_p'>value</span></span>, <span>long <span class='color_p'>timestamp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_123" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/GraphiteUDP.send:(Ljava/lang/String;Ljava/lang/String;J)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>metrics-graphite-4.2.38.jar</span>, <span class='cname'>PickledGraphite.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.graphite</span><br/>
+<span class="section" onclick="sC(this, 'c_124')">
+PickledGraphite.close&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_124" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/PickledGraphite.close:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_125')">
+PickledGraphite.connect&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_125" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/PickledGraphite.connect:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_126')">
+PickledGraphite.flush&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_126" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/PickledGraphite.flush:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_127')">
+PickledGraphite.getFailures&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_127" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/PickledGraphite.getFailures:()I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_128')">
+PickledGraphite.isConnected&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_128" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/PickledGraphite.isConnected:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_129')">
+PickledGraphite.PickledGraphite&#160;<span class='sym_p'><span>(&#160;InetSocketAddress <span class='color_p'>address</span></span>&#160;)</span></span>
+<br/>
+<div id="c_129" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/PickledGraphite.&quot;&lt;init&gt;&quot;:(Ljava/net/InetSocketAddress;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_130')">
+PickledGraphite.PickledGraphite&#160;<span class='sym_p'><span>(&#160;InetSocketAddress <span class='color_p'>address</span></span>, <span>int <span class='color_p'>batchSize</span></span>&#160;)</span></span>
+<br/>
+<div id="c_130" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/PickledGraphite.&quot;&lt;init&gt;&quot;:(Ljava/net/InetSocketAddress;I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_131')">
+PickledGraphite.PickledGraphite&#160;<span class='sym_p'><span>(&#160;InetSocketAddress <span class='color_p'>address</span></span>, <span>SocketFactory <span class='color_p'>socketFactory</span></span>, <span>Charset <span class='color_p'>charset</span></span>, <span>int <span class='color_p'>batchSize</span></span>&#160;)</span></span>
+<br/>
+<div id="c_131" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/PickledGraphite.&quot;&lt;init&gt;&quot;:(Ljava/net/InetSocketAddress;Ljavax/net/SocketFactory;Ljava/nio/charset/Charset;I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_132')">
+PickledGraphite.PickledGraphite&#160;<span class='sym_p'><span>(&#160;InetSocketAddress <span class='color_p'>address</span></span>, <span>SocketFactory <span class='color_p'>socketFactory</span></span>, <span>int <span class='color_p'>batchSize</span></span>&#160;)</span></span>
+<br/>
+<div id="c_132" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/PickledGraphite.&quot;&lt;init&gt;&quot;:(Ljava/net/InetSocketAddress;Ljavax/net/SocketFactory;I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_133')">
+PickledGraphite.PickledGraphite&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>hostname</span></span>, <span>int <span class='color_p'>port</span></span>&#160;)</span></span>
+<br/>
+<div id="c_133" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/PickledGraphite.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_134')">
+PickledGraphite.PickledGraphite&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>hostname</span></span>, <span>int <span class='color_p'>port</span></span>, <span>int <span class='color_p'>batchSize</span></span>&#160;)</span></span>
+<br/>
+<div id="c_134" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/PickledGraphite.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;II)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_135')">
+PickledGraphite.PickledGraphite&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>hostname</span></span>, <span>int <span class='color_p'>port</span></span>, <span>SocketFactory <span class='color_p'>socketFactory</span></span>, <span>Charset <span class='color_p'>charset</span></span>, <span>int <span class='color_p'>batchSize</span></span>&#160;)</span></span>
+<br/>
+<div id="c_135" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/PickledGraphite.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;ILjavax/net/SocketFactory;Ljava/nio/charset/Charset;I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_136')">
+PickledGraphite.PickledGraphite&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>hostname</span></span>, <span>int <span class='color_p'>port</span></span>, <span>SocketFactory <span class='color_p'>socketFactory</span></span>, <span>int <span class='color_p'>batchSize</span></span>&#160;)</span></span>
+<br/>
+<div id="c_136" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/PickledGraphite.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;ILjavax/net/SocketFactory;I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_137')">
+PickledGraphite.sanitize&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>s</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_137" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/PickledGraphite.sanitize:(Ljava/lang/String;)Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_138')">
+PickledGraphite.send&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>, <span>String <span class='color_p'>value</span></span>, <span>long <span class='color_p'>timestamp</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_138" style="display:none;">
+<span class='mngl'>com/codahale/metrics/graphite/PickledGraphite.send:(Ljava/lang/String;Ljava/lang/String;J)V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='High_Risk_Problems'></a><a name='Type_Problems_High'></a>
+<h2>Problems with Data Types, High Severity <span class='failed'>&nbsp;7&nbsp;</span></h2><hr/>
+<span class='jar'>metrics-graphite-4.2.38.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>com.codahale.metrics.graphite</span><br/>
+<span class="section" onclick="sC(this, 'c_139')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> Graphite <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_139" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_140')">
+[+] affected methods: 13 (9.4%)</span>
+<div id="c_140" style="display:none;">
+<div class='affected'><span class='iname_a'>Graphite.Graphite&#160;<span class='sym_p'><span>(&#160;String <i>hostname</i></span>, <span>int <i>port</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'Graphite' class.</div>
+<span class='iname_a'>Graphite.Graphite&#160;<span class='sym_p'><span>(&#160;String <i>hostname</i></span>, <span>int <i>port</i></span>, <span>SocketFactory <i>socketFactory</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'Graphite' class.</div>
+<span class='iname_a'>Graphite.Graphite&#160;<span class='sym_p'><span>(&#160;String <i>hostname</i></span>, <span>int <i>port</i></span>, <span>SocketFactory <i>socketFactory</i></span>, <span>Charset <i>charset</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'Graphite' class.</div>
+<span class='iname_a'>Graphite.Graphite&#160;<span class='sym_p'><span>(&#160;InetSocketAddress <i>address</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'Graphite' class.</div>
+<span class='iname_a'>Graphite.Graphite&#160;<span class='sym_p'><span>(&#160;InetSocketAddress <i>address</i></span>, <span>SocketFactory <i>socketFactory</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'Graphite' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_141')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> GraphiteRabbitMQ <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_141" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_142')">
+[+] affected methods: 10 (7.2%)</span>
+<div id="c_142" style="display:none;">
+<div class='affected'><span class='iname_a'>GraphiteRabbitMQ.GraphiteRabbitMQ&#160;<span class='sym_p'><span>(&#160;ConnectionFactory <i>connectionFactory</i></span>, <span>String <i>exchange</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'GraphiteRabbitMQ' class.</div>
+<span class='iname_a'>GraphiteRabbitMQ.GraphiteRabbitMQ&#160;<span class='sym_p'><span>(&#160;String <i>rabbitHost</i></span>, <span>Integer <i>rabbitPort</i></span>, <span>String <i>rabbitUsername</i></span>, <span>String <i>rabbitPassword</i></span>, <span>String <i>exchange</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'GraphiteRabbitMQ' class.</div>
+<span class='iname_a'>GraphiteRabbitMQ.GraphiteRabbitMQ&#160;<span class='sym_p'><span>(&#160;String <i>rabbitHost</i></span>, <span>Integer <i>rabbitPort</i></span>, <span>String <i>rabbitUsername</i></span>, <span>String <i>rabbitPassword</i></span>, <span>String <i>exchange</i></span>, <span>Integer <i>rabbitConnectionTimeoutMS</i></span>, <span>Integer <i>rabbitSocketTimeoutMS</i></span>, <span>Integer <i>rabbitRequestedHeartbeatInSeconds</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'GraphiteRabbitMQ' class.</div>
+<span class='iname_a'>GraphiteRabbitMQ.close&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'GraphiteRabbitMQ' class.</div>
+<span class='iname_a'>GraphiteRabbitMQ.connect&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'GraphiteRabbitMQ' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_143')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> GraphiteReporter <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_143" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_144')">
+[+] affected methods: 7 (5.1%)</span>
+<div id="c_144" style="display:none;">
+<div class='affected'><span class='iname_a'>GraphiteReporter.GraphiteReporter&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>registry</i></span>, <span>GraphiteSender <i>graphite</i></span>, <span>Clock <i>clock</i></span>, <span>String <i>prefix</i></span>, <span>TimeUnit <i>rateUnit</i></span>, <span>TimeUnit <i>durationUnit</i></span>, <span>MetricFilter <i>filter</i></span>, <span>ScheduledExecutorService <i>executor</i></span>, <span>boolean <i>shutdownExecutorOnStop</i></span>, <span>Set&lt;MetricAttribute&gt; <i>disabledMetricAttributes</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'GraphiteReporter' class.</div>
+<span class='iname_a'>GraphiteReporter.GraphiteReporter&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>registry</i></span>, <span>GraphiteSender <i>graphite</i></span>, <span>Clock <i>clock</i></span>, <span>String <i>prefix</i></span>, <span>TimeUnit <i>rateUnit</i></span>, <span>TimeUnit <i>durationUnit</i></span>, <span>MetricFilter <i>filter</i></span>, <span>ScheduledExecutorService <i>executor</i></span>, <span>boolean <i>shutdownExecutorOnStop</i></span>, <span>Set&lt;MetricAttribute&gt; <i>disabledMetricAttributes</i></span>, <span>boolean <i>addMetricAttributesAsTags</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'GraphiteReporter' class.</div>
+<span class='iname_a'>GraphiteReporter.GraphiteReporter&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>registry</i></span>, <span>GraphiteSender <i>graphite</i></span>, <span>Clock <i>clock</i></span>, <span>String <i>prefix</i></span>, <span>TimeUnit <i>rateUnit</i></span>, <span>TimeUnit <i>durationUnit</i></span>, <span>MetricFilter <i>filter</i></span>, <span>ScheduledExecutorService <i>executor</i></span>, <span>boolean <i>shutdownExecutorOnStop</i></span>, <span>Set&lt;MetricAttribute&gt; <i>disabledMetricAttributes</i></span>, <span>boolean <i>addMetricAttributesAsTags</i></span>, <span>DoubleFunction&lt;String&gt; <i>floatingPointFormatter</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'GraphiteReporter' class.</div>
+<span class='iname_a'>GraphiteReporter.format&#160;<span class='sym_p'><span>(&#160;double <i>v</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'GraphiteReporter' class.</div>
+<span class='iname_a'>GraphiteReporter.forRegistry&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>registry</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'GraphiteReporter' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_145')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> GraphiteReporter.Builder <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_145" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_146')">
+[+] affected methods: 12 (8.7%)</span>
+<div id="c_146" style="display:none;">
+<div class='affected'><span class='iname_a'>GraphiteReporter.Builder.addMetricAttributesAsTags&#160;<span class='sym_p'><span>(&#160;boolean <i>addMetricAttributesAsTags</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'GraphiteReporter.Builder' class.</div>
+<span class='iname_a'>GraphiteReporter.Builder.build&#160;<span class='sym_p'><span>(&#160;Graphite <i>graphite</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'GraphiteReporter.Builder' class.</div>
+<span class='iname_a'>GraphiteReporter.Builder.build&#160;<span class='sym_p'><span>(&#160;GraphiteSender <i>graphite</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'GraphiteReporter.Builder' class.</div>
+<span class='iname_a'>GraphiteReporter.Builder.convertDurationsTo&#160;<span class='sym_p'><span>(&#160;TimeUnit <i>durationUnit</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'GraphiteReporter.Builder' class.</div>
+<span class='iname_a'>GraphiteReporter.Builder.convertRatesTo&#160;<span class='sym_p'><span>(&#160;TimeUnit <i>rateUnit</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'GraphiteReporter.Builder' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_147')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> GraphiteUDP <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_147" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_148')">
+[+] affected methods: 9 (6.5%)</span>
+<div id="c_148" style="display:none;">
+<div class='affected'><span class='iname_a'>GraphiteUDP.GraphiteUDP&#160;<span class='sym_p'><span>(&#160;String <i>hostname</i></span>, <span>int <i>port</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'GraphiteUDP' class.</div>
+<span class='iname_a'>GraphiteUDP.GraphiteUDP&#160;<span class='sym_p'><span>(&#160;InetSocketAddress <i>address</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'GraphiteUDP' class.</div>
+<span class='iname_a'>GraphiteUDP.close&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'GraphiteUDP' class.</div>
+<span class='iname_a'>GraphiteUDP.connect&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'GraphiteUDP' class.</div>
+<span class='iname_a'>GraphiteUDP.flush&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'GraphiteUDP' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_149')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> PickledGraphite <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_149" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_150')">
+[+] affected methods: 15 (10.9%)</span>
+<div id="c_150" style="display:none;">
+<div class='affected'><span class='iname_a'>PickledGraphite.PickledGraphite&#160;<span class='sym_p'><span>(&#160;String <i>hostname</i></span>, <span>int <i>port</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'PickledGraphite' class.</div>
+<span class='iname_a'>PickledGraphite.PickledGraphite&#160;<span class='sym_p'><span>(&#160;String <i>hostname</i></span>, <span>int <i>port</i></span>, <span>int <i>batchSize</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'PickledGraphite' class.</div>
+<span class='iname_a'>PickledGraphite.PickledGraphite&#160;<span class='sym_p'><span>(&#160;String <i>hostname</i></span>, <span>int <i>port</i></span>, <span>SocketFactory <i>socketFactory</i></span>, <span>int <i>batchSize</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'PickledGraphite' class.</div>
+<span class='iname_a'>PickledGraphite.PickledGraphite&#160;<span class='sym_p'><span>(&#160;String <i>hostname</i></span>, <span>int <i>port</i></span>, <span>SocketFactory <i>socketFactory</i></span>, <span>Charset <i>charset</i></span>, <span>int <i>batchSize</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'PickledGraphite' class.</div>
+<span class='iname_a'>PickledGraphite.PickledGraphite&#160;<span class='sym_p'><span>(&#160;InetSocketAddress <i>address</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'PickledGraphite' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_151')">
+<span class='ext'>[+]</span> <span class='ttype'>interface</span> GraphiteSender <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_151" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This interface has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_152')">
+[+] affected methods: 5 (3.6%)</span>
+<div id="c_152" style="display:none;">
+<div class='affected'><span class='iname_a'>GraphiteSender.connect&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This abstract method is from 'GraphiteSender' interface.</div>
+<span class='iname_a'>GraphiteSender.flush&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This abstract method is from 'GraphiteSender' interface.</div>
+<span class='iname_a'>GraphiteSender.getFailures&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This abstract method is from 'GraphiteSender' interface.</div>
+<span class='iname_a'>GraphiteSender.isConnected&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This abstract method is from 'GraphiteSender' interface.</div>
+<span class='iname_a'>GraphiteSender.send&#160;<span class='sym_p'><span>(&#160;String <i>p1</i></span>, <span>String <i>p2</i></span>, <span>long <i>p3</i></span>&#160;)</span></span><br/><div class='affect'>This abstract method is from 'GraphiteSender' interface.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Checked_Archives'></a><h2>Java Archives <span class='gray'>&nbsp;1&nbsp;</span></h2>
+<hr/><div class='jar_list'>
+metrics-graphite-4.2.38.jar<br/>
+</div><br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<br/><br/><br/>
+<hr/><div class='footer' align='right'><i>Generated by <a href='https://github.com/lvc/japi-compliance-checker'>Java API Compliance Checker</a> 2.4 &#160;</i></div><br/>
+</body></html>

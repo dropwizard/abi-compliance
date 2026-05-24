@@ -1,0 +1,11 @@
+{
+  "Affected": "0.6",
+  "Added": 9,
+  "Removed": 1,
+  "TotalProblems": 1,
+  "Source_Affected": "0.6",
+  "Source_TotalProblems": "1",
+  "Source_ReportPath": "compat_report/dropwizard-client/1.3.29/2.0.0/1bc51/src_compat_report.html",
+  "Archive1": "dropwizard-client-1.3.29.jar",
+  "Archive2": "dropwizard-client-2.0.0.jar"
+}

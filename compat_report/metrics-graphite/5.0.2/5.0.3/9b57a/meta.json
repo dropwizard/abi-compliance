@@ -1,0 +1,11 @@
+{
+  "Affected": "0",
+  "Added": 0,
+  "Removed": 0,
+  "TotalProblems": 0,
+  "Source_Affected": "0",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/metrics-graphite/5.0.2/5.0.3/9b57a/src_compat_report.html",
+  "Archive1": "metrics-graphite-5.0.2.jar",
+  "Archive2": "metrics-graphite-5.0.3.jar"
+}
