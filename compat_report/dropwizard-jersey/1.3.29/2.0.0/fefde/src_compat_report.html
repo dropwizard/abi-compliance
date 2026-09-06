@@ -1,0 +1,1081 @@
+<!-- kind:source;verdict:incompatible;affected:13.5;added:40;removed:34;type_problems_high:9;type_problems_medium:0;type_problems_low:1;method_problems_high:0;method_problems_medium:2;method_problems_low:0;checked_methods:326;checked_types:87;tool_version:2.4 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="dropwizard-jersey, source, compatibility" />
+<meta name="description" content="Source compatibility report for the dropwizard-jersey library between 1.3.29 and 2.0.0 versions" />
+<title>dropwizard-jersey: 1.3.29 to 2.0.0 source compatibility report</title>
+<style type="text/css">
+body {
+    font-family:Arial, sans-serif;
+    background-color:White;
+    color:Black;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+    white-space:nowrap;
+}
+div.symbols {
+    color:#003E69;
+}
+div.symbols i {
+    color:Brown;
+}
+span.section {
+    font-weight:bold;
+    cursor:pointer;
+    color:#003E69;
+    white-space:nowrap;
+    margin-left:0.3125em;
+}
+span:hover.section {
+    color:#336699;
+}
+span.sect_aff {
+    cursor:pointer;
+    padding-left:1.55em;
+    font-size:0.875em;
+    color:#cc3300;
+}
+span.ext {
+    font-weight:normal;
+}
+span.jar {
+    color:#cc3300;
+    font-size:0.875em;
+    font-weight:bold;
+}
+div.jar_list {
+    padding-left:0.4em;
+    font-size:0.94em;
+}
+span.pkg_t {
+    color:#408080;
+    font-size:0.875em;
+}
+span.pkg {
+    color:#408080;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.cname {
+    color:Green;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.iname_b {
+    font-weight:bold;
+}
+span.iname_a {
+    color:#333333;
+    font-weight:bold;
+    font-size:0.94em;
+}
+span.sym_p {
+    font-weight:normal;
+    white-space:normal;
+}
+span.sym_pd {
+    white-space:normal;
+}
+span.sym_p span, span.sym_pd span {
+    white-space:nowrap;
+}
+span.attr {
+    color:Black;
+    font-weight:normal;
+}
+span.deprecated {
+    color:Red;
+    font-weight:bold;
+    font-family:Monaco, monospace;
+}
+div.affect {
+    padding-left:1em;
+    padding-bottom:10px;
+    font-size:0.87em;
+    font-style:italic;
+    line-height:0.9em;
+}
+div.affected {
+    padding-left:2em;
+    padding-top:10px;
+}
+table.ptable {
+    border-collapse:collapse;
+    border:1px outset black;
+    margin-left:0.95em;
+    margin-top:3px;
+    margin-bottom:3px;
+    width:56.25em;
+}
+table.ptable td {
+    border:1px solid Gray;
+    padding:3px;
+    font-size:0.875em;
+    text-align:left;
+    vertical-align:top;
+    max-width:28em;
+    word-wrap:break-word;
+}
+table.ptable th {
+    background-color:#eeeeee;
+    font-weight:bold;
+    color:#333333;
+    font-family:Verdana, Arial;
+    font-size:0.875em;
+    border:1px solid Gray;
+    text-align:center;
+    vertical-align:top;
+    white-space:nowrap;
+    padding:3px;
+}
+table.summary {
+    border-collapse:collapse;
+    border:1px outset black;
+}
+table.summary th {
+    background-color:#eeeeee;
+    font-weight:normal;
+    text-align:left;
+    font-size:0.94em;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px;
+}
+table.summary td {
+    text-align:right;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px 5px 3px 10px;
+}
+span.mngl {
+    padding-left:1em;
+    font-size:0.875em;
+    cursor:text;
+    color:#444444;
+    font-weight:bold;
+}
+span.pleft {
+    padding-left:2.5em;
+}
+span.color_p {
+    font-style:italic;
+    color:Brown;
+}
+span.param {
+    font-style:italic;
+}
+span.focus_p {
+    font-style:italic;
+    background-color:#DCDCDC;
+}
+span.ttype {
+    font-weight:normal;
+}
+span.nowrap {
+    white-space:nowrap;
+}
+span.value {
+    white-space:nowrap;
+    font-weight:bold;
+}
+.passed {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.warning {
+    background-color:#F4F4AF;
+    font-weight:normal;
+}
+.failed {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.new {
+    background-color:#C6DEFF;
+    font-weight:normal;
+}
+
+.compatible {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.almost_compatible {
+    background-color:#FFDAA3;
+    font-weight:normal;
+}
+.incompatible {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.gray {
+    background-color:#DCDCDC;
+    font-weight:normal;
+}
+
+.top_ref {
+    font-size:0.69em;
+}
+.footer {
+    font-size:0.8125em;
+}
+
+</style>
+<script type="text/javascript" language="JavaScript">
+<!--
+function sC(header, id)
+{
+    e = document.getElementById(id);
+    if(e.style.display == 'none')
+    {
+        e.style.display = 'block';
+        e.style.visibility = 'visible';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[&minus;]");
+    }
+    else
+    {
+        e.style.display = 'none';
+        e.style.visibility = 'hidden';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[+]");
+    }
+}
+
+-->
+</script>
+</head>
+<body><a name='Top'></a><h1>Source compatibility report for the <span style='color:Blue;'>dropwizard-jersey</span> library between <span style='color:Red;'>1.3.29</span> and <span style='color:Red;'>2.0.0</span> versions</h1>
+
+<h2>Test Info</h2><hr/>
+<table class='summary'>
+<tr><th>Library Name</th><td>dropwizard-jersey</td></tr>
+<tr><th>Version #1</th><td>1.3.29</td></tr>
+<tr><th>Version #2</th><td>2.0.0</td></tr>
+</table>
+<h2>Test Results</h2><hr/>
+<table class='summary'>
+<tr><th>Total Java Modules</th><td><a href='#Checked_Archives' style='color:Blue;'>1</a></td></tr>
+<tr><th>Total Methods / Classes</th><td>326 / 87</td></tr>
+<tr><th>Compatibility</th>
+<td class='almost_compatible'>86.5%</td>
+</tr>
+</table>
+<h2>Problem Summary</h2><hr/>
+<table class='summary'>
+<tr><th></th><th style='text-align:center;'>Severity</th><th style='text-align:center;'>Count</th></tr>
+<tr><th>Added Methods</th><td>-</td><td class='new'><a href='#Added' style='color:Blue;'>40</a></td></tr>
+<tr><th>Removed Methods</th><td>High</td><td class='failed'><a href='#Removed' style='color:Blue;'>34</a></td></tr>
+<tr><th rowspan='3'>Problems with<br/>Data Types</th><td>High</td><td class='failed'><a href='#Type_Problems_High' style='color:Blue;'>9</a></td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td class='warning'><a href='#Type_Problems_Low' style='color:Blue;'>1</a></td></tr>
+<tr><th rowspan='3'>Problems with<br/>Methods</th><td>High</td><td>0</td></tr>
+<tr><td>Medium</td><td class='failed'><a href='#Method_Problems_Medium' style='color:Blue;'>2</a></td></tr>
+<tr><td>Low</td><td>0</td></tr>
+</table>
+
+<a name='Added'></a><h2>Added Methods <span class='new'>&nbsp;40&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-jersey-2.0.0.jar</span>, <span class='cname'>AbstractParamConverter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.params</span><br/>
+<span class="section" onclick="sC(this, 'c_97')">
+AbstractParamConverter&lt;T&gt;.AbstractParamConverter&lt;T&gt;&#160;<span class='sym_p'><span>(&#160;Constructor&lt;T&gt; <span class='color_p'>constructor</span></span>, <span>String <span class='color_p'>parameterName</span></span>&#160;)</span></span>
+<br/>
+<div id="c_97" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/params/AbstractParamConverter.&quot;&lt;init&gt;&quot;:(Ljava/lang/reflect/Constructor;Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_98')">
+AbstractParamConverter&lt;T&gt;.fromString&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>value</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;T</span></span>
+<br/>
+<div id="c_98" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/params/AbstractParamConverter.fromString:(Ljava/lang/String;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_99')">
+AbstractParamConverter&lt;T&gt;.toString&#160;<span class='sym_p'><span>(&#160;T <span class='color_p'>value</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_99" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/params/AbstractParamConverter.toString:(Ljava/lang/Object;)Ljava/lang/String;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-2.0.0.jar</span>, <span class='cname'>DropwizardResourceConfig.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey</span><br/>
+<span class="section" onclick="sC(this, 'c_100')">
+DropwizardResourceConfig.forTesting&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;DropwizardResourceConfig</span></span>
+<br/>
+<div id="c_100" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/DropwizardResourceConfig.forTesting:()Lio/dropwizard/jersey/DropwizardResourceConfig;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_101')">
+DropwizardResourceConfig.getContextPath&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_101" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/DropwizardResourceConfig.getContextPath:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_102')">
+DropwizardResourceConfig.register&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>component</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ResourceConfig</span></span>
+<br/>
+<div id="c_102" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/DropwizardResourceConfig.register:(Ljava/lang/Object;)Lorg/glassfish/jersey/server/ResourceConfig;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_103')">
+DropwizardResourceConfig.register&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Configurable</span></span>
+<br/>
+<div id="c_103" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/DropwizardResourceConfig.register:(Ljava/lang/Object;)Ljavax/ws/rs/core/Configurable;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-2.0.0.jar</span>, <span class='cname'>EmptyOptionalNoContentExceptionMapper.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.optional</span><br/>
+<span class="section" onclick="sC(this, 'c_104')">
+EmptyOptionalNoContentExceptionMapper.EmptyOptionalNoContentExceptionMapper&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_104" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/EmptyOptionalNoContentExceptionMapper.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_105')">
+EmptyOptionalNoContentExceptionMapper.toResponse&#160;<span class='sym_p'><span>(&#160;EmptyOptionalException <span class='color_p'>exception</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Response</span></span>
+<br/>
+<div id="c_105" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/EmptyOptionalNoContentExceptionMapper.toResponse:(Lio/dropwizard/jersey/optional/EmptyOptionalException;)Ljavax/ws/rs/core/Response;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_106')">
+EmptyOptionalNoContentExceptionMapper.toResponse&#160;<span class='sym_p'><span>(&#160;Throwable <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Response</span></span>
+<br/>
+<div id="c_106" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/EmptyOptionalNoContentExceptionMapper.toResponse:(Ljava/lang/Throwable;)Ljavax/ws/rs/core/Response;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-2.0.0.jar</span>, <span class='cname'>FlashFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.sessions</span><br/>
+<span class="section" onclick="sC(this, 'c_107')">
+FlashFactory.FlashFactory&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>request</span></span>&#160;)</span></span>
+<br/>
+<div id="c_107" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/sessions/FlashFactory.&quot;&lt;init&gt;&quot;:(Ljavax/servlet/http/HttpServletRequest;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_108')">
+FlashFactory.provide&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>doNotCreate</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Flash&lt;?&gt;</span></span>
+<br/>
+<div id="c_108" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/sessions/FlashFactory.provide:(Z)Lio/dropwizard/jersey/sessions/Flash;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-2.0.0.jar</span>, <span class='cname'>FuzzyEnumParamConverter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_109')">
+FuzzyEnumParamConverter&lt;T&gt;.fromString&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>value</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;T</span></span>
+<br/>
+<div id="c_109" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/FuzzyEnumParamConverter.fromString:(Ljava/lang/String;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_110')">
+FuzzyEnumParamConverter&lt;T&gt;.toString&#160;<span class='sym_p'><span>(&#160;T <span class='color_p'>value</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_110" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/FuzzyEnumParamConverter.toString:(Ljava/lang/Object;)Ljava/lang/String;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-2.0.0.jar</span>, <span class='cname'>HibernateValidationBinder.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_111')">
+HibernateValidationBinder.configure&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_111" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/HibernateValidationBinder.configure:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_112')">
+HibernateValidationBinder.HibernateValidationBinder&#160;<span class='sym_p'><span>(&#160;Validator <span class='color_p'>validator</span></span>&#160;)</span></span>
+<br/>
+<div id="c_112" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/HibernateValidationBinder.&quot;&lt;init&gt;&quot;:(Ljavax/validation/Validator;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-2.0.0.jar</span>, <span class='cname'>HttpSessionFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.sessions</span><br/>
+<span class="section" onclick="sC(this, 'c_113')">
+HttpSessionFactory.HttpSessionFactory&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>request</span></span>&#160;)</span></span>
+<br/>
+<div id="c_113" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/sessions/HttpSessionFactory.&quot;&lt;init&gt;&quot;:(Ljavax/servlet/http/HttpServletRequest;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_114')">
+HttpSessionFactory.provide&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>doNotCreate</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HttpSession</span></span>
+<br/>
+<div id="c_114" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/sessions/HttpSessionFactory.provide:(Z)Ljavax/servlet/http/HttpSession;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-2.0.0.jar</span>, <span class='cname'>JacksonFeature.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.jackson</span><br/>
+<span class="section" onclick="sC(this, 'c_115')">
+JacksonFeature.configure&#160;<span class='sym_p'><span>(&#160;FeatureContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_115" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jackson/JacksonFeature.configure:(Ljavax/ws/rs/core/FeatureContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_116')">
+JacksonFeature.JacksonFeature&#160;<span class='sym_p'><span>(&#160;ObjectMapper <span class='color_p'>mapper</span></span>&#160;)</span></span>
+<br/>
+<div id="c_116" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jackson/JacksonFeature.&quot;&lt;init&gt;&quot;:(Lcom/fasterxml/jackson/databind/ObjectMapper;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-2.0.0.jar</span>, <span class='cname'>JerseyEnvironment.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.setup</span><br/>
+<span class="section" onclick="sC(this, 'c_117')">
+JerseyEnvironment.replace&#160;<span class='sym_p'><span>(&#160;Function&lt;ResourceConfig,Servlet&gt; <span class='color_p'>replace</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_117" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/setup/JerseyEnvironment.replace:(Ljava/util/function/Function;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-2.0.0.jar</span>, <span class='cname'>LoggingExceptionMapper.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.errors</span><br/>
+<span class="section" onclick="sC(this, 'c_118')">
+LoggingExceptionMapper&lt;E&gt;.LoggingExceptionMapper&lt;E&gt;&#160;<span class='sym_p'><span>(&#160;Logger <span class='color_p'>logger</span></span>&#160;)</span></span>
+<br/>
+<div id="c_118" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/errors/LoggingExceptionMapper.&quot;&lt;init&gt;&quot;:(Lorg/slf4j/Logger;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-2.0.0.jar</span>, <span class='cname'>MutableValidatorFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_119')">
+MutableValidatorFactory.getInstance&#160;<span class='sym_p'><span>(&#160;Class&lt;T&gt; <span class='color_p'>key</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;T</span></span>
+<br/>
+<div id="c_119" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/MutableValidatorFactory.getInstance:(Ljava/lang/Class;)Ljavax/validation/ConstraintValidator;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_120')">
+MutableValidatorFactory.MutableValidatorFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_120" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/MutableValidatorFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_121')">
+MutableValidatorFactory.releaseInstance&#160;<span class='sym_p'><span>(&#160;ConstraintValidator&lt;?,?&gt; <span class='color_p'>instance</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_121" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/MutableValidatorFactory.releaseInstance:(Ljavax/validation/ConstraintValidator;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_122')">
+MutableValidatorFactory.setValidatorFactory&#160;<span class='sym_p'><span>(&#160;ConstraintValidatorFactory <span class='color_p'>validatorFactory</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_122" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/MutableValidatorFactory.setValidatorFactory:(Ljavax/validation/ConstraintValidatorFactory;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-2.0.0.jar</span>, <span class='cname'>NonEmptyStringParamValueExtractor.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_123')">
+NonEmptyStringParamValueExtractor.extractValues&#160;<span class='sym_p'><span>(&#160;NonEmptyStringParam <span class='color_p'>originalValue</span></span>, <span>ValueExtractor.ValueReceiver <span class='color_p'>receiver</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_123" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/NonEmptyStringParamValueExtractor.extractValues:(Lio/dropwizard/jersey/params/NonEmptyStringParam;Ljavax/validation/valueextraction/ValueExtractor$ValueReceiver;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_124')">
+NonEmptyStringParamValueExtractor.extractValues&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>ValueExtractor.ValueReceiver <span class='color_p'>p2</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_124" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/NonEmptyStringParamValueExtractor.extractValues:(Ljava/lang/Object;Ljavax/validation/valueextraction/ValueExtractor$ValueReceiver;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-2.0.0.jar</span>, <span class='cname'>OptionalParamBinder.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.guava</span><br/>
+<span class="section" onclick="sC(this, 'c_125')">
+OptionalParamBinder.OptionalParamBinder&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_125" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/guava/OptionalParamBinder.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-2.0.0.jar</span>, <span class='cname'>OptionalParamBinder.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.optional</span><br/>
+<span class="section" onclick="sC(this, 'c_126')">
+OptionalParamBinder.OptionalParamBinder&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_126" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalParamBinder.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-2.0.0.jar</span>, <span class='cname'>OptionalParamConverterProvider.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.guava</span><br/>
+<span class="section" onclick="sC(this, 'c_127')">
+OptionalParamConverterProvider.OptionalParamConverterProvider&#160;<span class='sym_p'><span>(&#160;InjectionManager <span class='color_p'>manager</span></span>&#160;)</span></span>
+<br/>
+<div id="c_127" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/guava/OptionalParamConverterProvider.&quot;&lt;init&gt;&quot;:(Lorg/glassfish/jersey/internal/inject/InjectionManager;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-2.0.0.jar</span>, <span class='cname'>OptionalParamConverterProvider.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.optional</span><br/>
+<span class="section" onclick="sC(this, 'c_128')">
+OptionalParamConverterProvider.OptionalParamConverterProvider&#160;<span class='sym_p'><span>(&#160;InjectionManager <span class='color_p'>manager</span></span>&#160;)</span></span>
+<br/>
+<div id="c_128" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalParamConverterProvider.&quot;&lt;init&gt;&quot;:(Lorg/glassfish/jersey/internal/inject/InjectionManager;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-2.0.0.jar</span>, <span class='cname'>ParamValueExtractor.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_129')">
+ParamValueExtractor.extractValues&#160;<span class='sym_p'><span>(&#160;AbstractParam&lt;?&gt; <span class='color_p'>originalValue</span></span>, <span>ValueExtractor.ValueReceiver <span class='color_p'>receiver</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_129" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/ParamValueExtractor.extractValues:(Lio/dropwizard/jersey/params/AbstractParam;Ljavax/validation/valueextraction/ValueExtractor$ValueReceiver;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_130')">
+ParamValueExtractor.extractValues&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>, <span>ValueExtractor.ValueReceiver <span class='color_p'>p2</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_130" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/ParamValueExtractor.extractValues:(Ljava/lang/Object;Ljavax/validation/valueextraction/ValueExtractor$ValueReceiver;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-2.0.0.jar</span>, <span class='cname'>SessionFactoryProvider.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.sessions</span><br/>
+<span class="section" onclick="sC(this, 'c_131')">
+SessionFactoryProvider.createValueProvider&#160;<span class='sym_p'><span>(&#160;Parameter <span class='color_p'>parameter</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Function&lt;ContainerRequest,?&gt;</span></span>
+<br/>
+<div id="c_131" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/sessions/SessionFactoryProvider.createValueProvider:(Lorg/glassfish/jersey/server/model/Parameter;)Ljava/util/function/Function;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_132')">
+SessionFactoryProvider.SessionFactoryProvider&#160;<span class='sym_p'><span>(&#160;Provider&lt;MultivaluedParameterExtractorProvider&gt; <span class='color_p'>extractorProvider</span></span>, <span>InjectionManager <span class='color_p'>im</span></span>&#160;)</span></span>
+<br/>
+<div id="c_132" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/sessions/SessionFactoryProvider.&quot;&lt;init&gt;&quot;:(Ljavax/inject/Provider;Lorg/glassfish/jersey/internal/inject/InjectionManager;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-2.0.0.jar</span>, <span class='cname'>SpecificBinder.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey</span><br/>
+<span class="section" onclick="sC(this, 'c_133')">
+DropwizardResourceConfig.SpecificBinder.configure&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_133" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/DropwizardResourceConfig.SpecificBinder.configure:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_134')">
+DropwizardResourceConfig.SpecificBinder.DropwizardResourceConfig.SpecificBinder&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>object</span></span>, <span>Class&lt;?&gt; <span class='color_p'>clazz</span></span>&#160;)</span></span>
+<br/>
+<div id="c_134" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/DropwizardResourceConfig.SpecificBinder.&quot;&lt;init&gt;&quot;:(Ljava/lang/Object;Ljava/lang/Class;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-2.0.0.jar</span>, <span class='cname'>ValidationErrorMessage.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_135')">
+ValidationErrorMessage.getErrors&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;List&lt;String&gt;</span></span>
+<br/>
+<div id="c_135" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/ValidationErrorMessage.getErrors:()Ljava/util/List;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_136')">
+ValidationErrorMessage.ValidationErrorMessage&#160;<span class='sym_p'><span>(&#160;List&lt;String&gt; <span class='color_p'>errors</span></span>&#160;)</span></span>
+<br/>
+<div id="c_136" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/ValidationErrorMessage.&quot;&lt;init&gt;&quot;:(Ljava/util/List;)V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Removed'></a><a name='Withdrawn'></a><h2>Removed Methods <span class='failed'>&nbsp;34&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-jersey-1.3.29.jar</span>, <span class='cname'>DropwizardResourceConfig.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey</span><br/>
+<span class="section" onclick="sC(this, 'c_137')">
+DropwizardResourceConfig.DropwizardResourceConfig&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>testOnly</span></span>, <span>MetricRegistry <span class='color_p'>metricRegistry</span></span>&#160;)</span></span>
+<br/>
+<div id="c_137" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/DropwizardResourceConfig.&quot;&lt;init&gt;&quot;:(ZLcom/codahale/metrics/MetricRegistry;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_138')">
+DropwizardResourceConfig.logComponents&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_138" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/DropwizardResourceConfig.logComponents:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.3.29.jar</span>, <span class='cname'>EofExceptionWriterInterceptor.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.errors</span><br/>
+<span class="section" onclick="sC(this, 'c_139')">
+EofExceptionWriterInterceptor.aroundWriteTo&#160;<span class='sym_p'><span>(&#160;WriterInterceptorContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_139" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/errors/EofExceptionWriterInterceptor.aroundWriteTo:(Ljavax/ws/rs/ext/WriterInterceptorContext;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_140')">
+EofExceptionWriterInterceptor.EofExceptionWriterInterceptor&#160;<span class='sym_p'><span>(&#160;MetricRegistry <span class='color_p'>metricRegistry</span></span>&#160;)</span></span>
+<br/>
+<div id="c_140" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/errors/EofExceptionWriterInterceptor.&quot;&lt;init&gt;&quot;:(Lcom/codahale/metrics/MetricRegistry;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.3.29.jar</span>, <span class='cname'>FlashFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.sessions</span><br/>
+<span class="section" onclick="sC(this, 'c_141')">
+FlashFactory.FlashFactory&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>doNotCreate</span></span>&#160;)</span></span>
+<br/>
+<div id="c_141" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/sessions/FlashFactory.&quot;&lt;init&gt;&quot;:(Z)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_142')">
+FlashFactory.provide&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Flash&lt;?&gt;</span></span>
+<br/>
+<div id="c_142" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/sessions/FlashFactory.provide:()Lio/dropwizard/jersey/sessions/Flash;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_143')">
+FlashFactory.provide&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_143" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/sessions/FlashFactory.provide:()Ljava/lang/Object;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.3.29.jar</span>, <span class='cname'>HibernateValidationFeature.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_144')">
+HibernateValidationFeature.configure&#160;<span class='sym_p'><span>(&#160;FeatureContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_144" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/HibernateValidationFeature.configure:(Ljavax/ws/rs/core/FeatureContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_145')">
+HibernateValidationFeature.HibernateValidationFeature&#160;<span class='sym_p'><span>(&#160;Validator <span class='color_p'>validator</span></span>&#160;)</span></span>
+<br/>
+<div id="c_145" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/HibernateValidationFeature.&quot;&lt;init&gt;&quot;:(Ljavax/validation/Validator;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.3.29.jar</span>, <span class='cname'>HttpSessionFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.sessions</span><br/>
+<span class="section" onclick="sC(this, 'c_146')">
+HttpSessionFactory.HttpSessionFactory&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>doNotCreate</span></span>&#160;)</span></span>
+<br/>
+<div id="c_146" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/sessions/HttpSessionFactory.&quot;&lt;init&gt;&quot;:(Z)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_147')">
+HttpSessionFactory.provide&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HttpSession</span></span>
+<br/>
+<div id="c_147" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/sessions/HttpSessionFactory.provide:()Ljavax/servlet/http/HttpSession;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_148')">
+HttpSessionFactory.provide&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_148" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/sessions/HttpSessionFactory.provide:()Ljava/lang/Object;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.3.29.jar</span>, <span class='cname'>JacksonBinder.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.jackson</span><br/>
+<span class="section" onclick="sC(this, 'c_149')">
+JacksonBinder.configure&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_149" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jackson/JacksonBinder.configure:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_150')">
+JacksonBinder.JacksonBinder&#160;<span class='sym_p'><span>(&#160;ObjectMapper <span class='color_p'>mapper</span></span>&#160;)</span></span>
+<br/>
+<div id="c_150" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/jackson/JacksonBinder.&quot;&lt;init&gt;&quot;:(Lcom/fasterxml/jackson/databind/ObjectMapper;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.3.29.jar</span>, <span class='cname'>JerseyEnvironment.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.setup</span><br/>
+<span class="section" onclick="sC(this, 'c_151')">
+JerseyEnvironment.replace&#160;<span class='sym_p'><span>(&#160;Function&lt;ResourceConfig,Servlet&gt; <span class='color_p'>replace</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_151" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/setup/JerseyEnvironment.replace:(Lcom/google/common/base/Function;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.3.29.jar</span>, <span class='cname'>NonEmptyStringParamUnwrapper.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_152')">
+NonEmptyStringParamUnwrapper.getValidatedValueType&#160;<span class='sym_p'><span>(&#160;Type <span class='color_p'>type</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Type</span></span>
+<br/>
+<div id="c_152" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/NonEmptyStringParamUnwrapper.getValidatedValueType:(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_153')">
+NonEmptyStringParamUnwrapper.handleValidatedValue&#160;<span class='sym_p'><span>(&#160;NonEmptyStringParam <span class='color_p'>nonEmptyStringParam</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_153" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/NonEmptyStringParamUnwrapper.handleValidatedValue:(Lio/dropwizard/jersey/params/NonEmptyStringParam;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_154')">
+NonEmptyStringParamUnwrapper.handleValidatedValue&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_154" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/NonEmptyStringParamUnwrapper.handleValidatedValue:(Ljava/lang/Object;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_155')">
+NonEmptyStringParamUnwrapper.NonEmptyStringParamUnwrapper&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_155" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/NonEmptyStringParamUnwrapper.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.3.29.jar</span>, <span class='cname'>OptionalParamConverterProvider.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.guava</span><br/>
+<span class="section" onclick="sC(this, 'c_156')">
+OptionalParamConverterProvider.OptionalParamConverterProvider&#160;<span class='sym_p'><span>(&#160;ServiceLocator <span class='color_p'>locator</span></span>&#160;)</span></span>
+<br/>
+<div id="c_156" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/guava/OptionalParamConverterProvider.&quot;&lt;init&gt;&quot;:(Lorg/glassfish/hk2/api/ServiceLocator;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.3.29.jar</span>, <span class='cname'>OptionalParamConverterProvider.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.optional</span><br/>
+<span class="section" onclick="sC(this, 'c_157')">
+OptionalParamConverterProvider.OptionalParamConverterProvider&#160;<span class='sym_p'><span>(&#160;ServiceLocator <span class='color_p'>locator</span></span>&#160;)</span></span>
+<br/>
+<div id="c_157" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalParamConverterProvider.&quot;&lt;init&gt;&quot;:(Lorg/glassfish/hk2/api/ServiceLocator;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.3.29.jar</span>, <span class='cname'>OptionalParamFeature.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.guava</span><br/>
+<span class="section" onclick="sC(this, 'c_158')">
+OptionalParamFeature.configure&#160;<span class='sym_p'><span>(&#160;FeatureContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_158" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/guava/OptionalParamFeature.configure:(Ljavax/ws/rs/core/FeatureContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_159')">
+OptionalParamFeature.OptionalParamFeature&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_159" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/guava/OptionalParamFeature.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.3.29.jar</span>, <span class='cname'>OptionalParamFeature.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.optional</span><br/>
+<span class="section" onclick="sC(this, 'c_160')">
+OptionalParamFeature.configure&#160;<span class='sym_p'><span>(&#160;FeatureContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_160" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalParamFeature.configure:(Ljavax/ws/rs/core/FeatureContext;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_161')">
+OptionalParamFeature.OptionalParamFeature&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_161" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/optional/OptionalParamFeature.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.3.29.jar</span>, <span class='cname'>ParamValidatorUnwrapper.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_162')">
+ParamValidatorUnwrapper.getValidatedValueType&#160;<span class='sym_p'><span>(&#160;Type <span class='color_p'>type</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Type</span></span>
+<br/>
+<div id="c_162" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/ParamValidatorUnwrapper.getValidatedValueType:(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_163')">
+ParamValidatorUnwrapper.handleValidatedValue&#160;<span class='sym_p'><span>(&#160;AbstractParam&lt;?&gt; <span class='color_p'>abstractParam</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_163" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/ParamValidatorUnwrapper.handleValidatedValue:(Lio/dropwizard/jersey/params/AbstractParam;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_164')">
+ParamValidatorUnwrapper.handleValidatedValue&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Object</span></span>
+<br/>
+<div id="c_164" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/ParamValidatorUnwrapper.handleValidatedValue:(Ljava/lang/Object;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_165')">
+ParamValidatorUnwrapper.ParamValidatorUnwrapper&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_165" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/ParamValidatorUnwrapper.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.3.29.jar</span>, <span class='cname'>SessionFactoryProvider.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.sessions</span><br/>
+<span class="section" onclick="sC(this, 'c_166')">
+SessionFactoryProvider.createValueFactory&#160;<span class='sym_p'><span>(&#160;Parameter <span class='color_p'>parameter</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Factory&lt;?&gt;</span></span>
+<br/>
+<div id="c_166" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/sessions/SessionFactoryProvider.createValueFactory:(Lorg/glassfish/jersey/server/model/Parameter;)Lorg/glassfish/hk2/api/Factory;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_167')">
+SessionFactoryProvider.SessionFactoryProvider&#160;<span class='sym_p'><span>(&#160;MultivaluedParameterExtractorProvider <span class='color_p'>extractorProvider</span></span>, <span>ServiceLocator <span class='color_p'>injector</span></span>&#160;)</span></span>
+<br/>
+<div id="c_167" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/sessions/SessionFactoryProvider.&quot;&lt;init&gt;&quot;:(Lorg/glassfish/jersey/server/internal/inject/MultivaluedParameterExtractorProvider;Lorg/glassfish/hk2/api/ServiceLocator;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.3.29.jar</span>, <span class='cname'>SessionInjectionResolver.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.sessions</span><br/>
+<span class="section" onclick="sC(this, 'c_168')">
+SessionFactoryProvider.SessionInjectionResolver.SessionFactoryProvider.SessionInjectionResolver&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_168" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/sessions/SessionFactoryProvider.SessionInjectionResolver.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-jersey-1.3.29.jar</span>, <span class='cname'>ValidationErrorMessage.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_169')">
+ValidationErrorMessage.getErrors&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ImmutableList&lt;String&gt;</span></span>
+<br/>
+<div id="c_169" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/ValidationErrorMessage.getErrors:()Lcom/google/common/collect/ImmutableList;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_170')">
+ValidationErrorMessage.ValidationErrorMessage&#160;<span class='sym_p'><span>(&#160;ImmutableList&lt;String&gt; <span class='color_p'>errors</span></span>&#160;)</span></span>
+<br/>
+<div id="c_170" style="display:none;">
+<span class='mngl'>io/dropwizard/jersey/validation/ValidationErrorMessage.&quot;&lt;init&gt;&quot;:(Lcom/google/common/collect/ImmutableList;)V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='High_Risk_Problems'></a><a name='Type_Problems_High'></a>
+<h2>Problems with Data Types, High Severity <span class='failed'>&nbsp;9&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-jersey-1.3.29.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.errors</span><br/>
+<span class="section" onclick="sC(this, 'c_171')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> EofExceptionWriterInterceptor <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_171" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>EofExceptionWriterInterceptor</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_172')">
+[+] affected methods: 2 (0.6%)</span>
+<div id="c_172" style="display:none;">
+<div class='affected'><span class='iname_a'>EofExceptionWriterInterceptor.EofExceptionWriterInterceptor&#160;<span class='sym_p'><span>(&#160;MetricRegistry <i>metricRegistry</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'EofExceptionWriterInterceptor' class.</div>
+<span class='iname_a'>EofExceptionWriterInterceptor.aroundWriteTo&#160;<span class='sym_p'><span>(&#160;WriterInterceptorContext <i>context</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'EofExceptionWriterInterceptor' class.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><span class='jar'>dropwizard-jersey-1.3.29.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.filter</span><br/>
+<span class="section" onclick="sC(this, 'c_173')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> AllowedMethodsFilter <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_173" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Type of field <b>DEFAULT_ALLOWED_METHODS</b> has been changed from <b>com.google.common.collect.ImmutableSet&lt;java.lang.String&gt;</b> to <b>java.util.Set&lt;java.lang.String&gt;</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: incompatible types, found: <b>com.google.common.collect.ImmutableSet&lt;java.lang.String&gt;</b>, required: <b>java.util.Set&lt;java.lang.String&gt;</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_174')">
+[+] affected methods: 4 (1.2%)</span>
+<div id="c_174" style="display:none;">
+<div class='affected'><span class='iname_a'>AllowedMethodsFilter.AllowedMethodsFilter&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'AllowedMethodsFilter' class.</div>
+<span class='iname_a'>AllowedMethodsFilter.destroy&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'AllowedMethodsFilter' class.</div>
+<span class='iname_a'>AllowedMethodsFilter.doFilter&#160;<span class='sym_p'><span>(&#160;ServletRequest <i>request</i></span>, <span>ServletResponse <i>response</i></span>, <span>FilterChain <i>chain</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'AllowedMethodsFilter' class.</div>
+<span class='iname_a'>AllowedMethodsFilter.init&#160;<span class='sym_p'><span>(&#160;FilterConfig <i>config</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'AllowedMethodsFilter' class.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><span class='jar'>dropwizard-jersey-1.3.29.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.guava</span><br/>
+<span class="section" onclick="sC(this, 'c_175')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> OptionalParamFeature <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_175" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>OptionalParamFeature</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_176')">
+[+] affected methods: 2 (0.6%)</span>
+<div id="c_176" style="display:none;">
+<div class='affected'><span class='iname_a'>OptionalParamFeature.OptionalParamFeature&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'OptionalParamFeature' class.</div>
+<span class='iname_a'>OptionalParamFeature.configure&#160;<span class='sym_p'><span>(&#160;FeatureContext <i>context</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'OptionalParamFeature' class.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><span class='jar'>dropwizard-jersey-1.3.29.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.jackson</span><br/>
+<span class="section" onclick="sC(this, 'c_177')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> JacksonBinder <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_177" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>JacksonBinder</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_178')">
+[+] affected methods: 2 (0.6%)</span>
+<div id="c_178" style="display:none;">
+<div class='affected'><span class='iname_a'>JacksonBinder.JacksonBinder&#160;<span class='sym_p'><span>(&#160;ObjectMapper <i>mapper</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'JacksonBinder' class.</div>
+<span class='iname_a'>JacksonBinder.configure&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'JacksonBinder' class.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><span class='jar'>dropwizard-jersey-1.3.29.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.optional</span><br/>
+<span class="section" onclick="sC(this, 'c_179')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> OptionalParamFeature <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_179" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>OptionalParamFeature</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_180')">
+[+] affected methods: 2 (0.6%)</span>
+<div id="c_180" style="display:none;">
+<div class='affected'><span class='iname_a'>OptionalParamFeature.OptionalParamFeature&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'OptionalParamFeature' class.</div>
+<span class='iname_a'>OptionalParamFeature.configure&#160;<span class='sym_p'><span>(&#160;FeatureContext <i>context</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'OptionalParamFeature' class.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><span class='jar'>dropwizard-jersey-1.3.29.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.sessions</span><br/>
+<span class="section" onclick="sC(this, 'c_181')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> SessionFactoryProvider.SessionInjectionResolver <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_181" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>SessionFactoryProvider.SessionInjectionResolver</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_182')">
+[+] affected methods: 1 (0.3%)</span>
+<div id="c_182" style="display:none;">
+<div class='affected'><span class='iname_a'>SessionFactoryProvider.SessionInjectionResolver.SessionFactoryProvider.SessionInjectionResolver&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'SessionFactoryProvider.SessionInjectionResolver' class.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><span class='jar'>dropwizard-jersey-1.3.29.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_183')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> HibernateValidationFeature <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_183" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>HibernateValidationFeature</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_184')">
+[+] affected methods: 2 (0.6%)</span>
+<div id="c_184" style="display:none;">
+<div class='affected'><span class='iname_a'>HibernateValidationFeature.HibernateValidationFeature&#160;<span class='sym_p'><span>(&#160;Validator <i>validator</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'HibernateValidationFeature' class.</div>
+<span class='iname_a'>HibernateValidationFeature.configure&#160;<span class='sym_p'><span>(&#160;FeatureContext <i>context</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'HibernateValidationFeature' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_185')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> NonEmptyStringParamUnwrapper <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_185" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>NonEmptyStringParamUnwrapper</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_186')">
+[+] affected methods: 4 (1.2%)</span>
+<div id="c_186" style="display:none;">
+<div class='affected'><span class='iname_a'>NonEmptyStringParamUnwrapper.NonEmptyStringParamUnwrapper&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'NonEmptyStringParamUnwrapper' class.</div>
+<span class='iname_a'>NonEmptyStringParamUnwrapper.getValidatedValueType&#160;<span class='sym_p'><span>(&#160;Type <i>type</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'NonEmptyStringParamUnwrapper' class.</div>
+<span class='iname_a'>NonEmptyStringParamUnwrapper.handleValidatedValue&#160;<span class='sym_p'><span>(&#160;NonEmptyStringParam <i>nonEmptyStringParam</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'NonEmptyStringParamUnwrapper' class.</div>
+<span class='iname_a'>NonEmptyStringParamUnwrapper.handleValidatedValue&#160;<span class='sym_p'><span>(&#160;Object <i>p1</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'NonEmptyStringParamUnwrapper' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_187')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> ParamValidatorUnwrapper <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_187" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>ParamValidatorUnwrapper</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_188')">
+[+] affected methods: 4 (1.2%)</span>
+<div id="c_188" style="display:none;">
+<div class='affected'><span class='iname_a'>ParamValidatorUnwrapper.ParamValidatorUnwrapper&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'ParamValidatorUnwrapper' class.</div>
+<span class='iname_a'>ParamValidatorUnwrapper.getValidatedValueType&#160;<span class='sym_p'><span>(&#160;Type <i>type</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ParamValidatorUnwrapper' class.</div>
+<span class='iname_a'>ParamValidatorUnwrapper.handleValidatedValue&#160;<span class='sym_p'><span>(&#160;AbstractParam&lt;?&gt; <i>abstractParam</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ParamValidatorUnwrapper' class.</div>
+<span class='iname_a'>ParamValidatorUnwrapper.handleValidatedValue&#160;<span class='sym_p'><span>(&#160;Object <i>p1</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ParamValidatorUnwrapper' class.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Medium_Risk_Problems'></a><a name='Method_Problems_Medium'></a>
+<h2>Problems with Methods, Medium Severity <span class='failed'>&nbsp;2&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-jersey-1.3.29.jar</span>, <span class='cname'>NonEmptyStringParam.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.params</span><br/>
+<span class="section" onclick="sC(this, 'c_189')">
+<span class='ext'>[+]</span> NonEmptyStringParam.parse&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>input</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Optional&lt;String&gt;</span> <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_189" style="display:none;">
+<span class='mngl pleft'>io/dropwizard/jersey/params/NonEmptyStringParam.parse:(Ljava/lang/String;)Ljava/util/Optional;</span><br/>
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Removed <b>java.lang.Exception</b> exception thrown.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot override <span class='iname_b'>parse&#160;<span class='sym_pd'><span>(&#160;String</span>&#160;)</span></span> in <b>NonEmptyStringParam</b>; overridden method does not throw <b>java.lang.Exception</b>.</td>
+</tr>
+</table><br/></div>
+
+<br/><span class='jar'>dropwizard-jersey-1.3.29.jar</span>, <span class='cname'>ValidationErrorMessage.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.validation</span><br/>
+<span class="section" onclick="sC(this, 'c_190')">
+<span class='ext'>[+]</span> ValidationErrorMessage.getErrors&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ImmutableList&lt;String&gt;</span> <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_190" style="display:none;">
+<span class='mngl pleft'>io/dropwizard/jersey/validation/ValidationErrorMessage.getErrors:()Lcom/google/common/collect/ImmutableList;</span><br/>
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Return value type has been changed from <b>com.google.common.collect.ImmutableList&lt;java.lang.String&gt;</b> to <b>java.util.List&lt;java.lang.String&gt;</b>.</td>
+<td>Recompilation of a client program may be terminated with the message: incompatible types: <b>java.util.List&lt;java.lang.String&gt;</b> cannot be converted to <b>com.google.common.collect.ImmutableList&lt;java.lang.String&gt;</b>.</td>
+</tr>
+</table><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Low_Risk_Problems'></a><a name='Type_Problems_Low'></a>
+<h2>Problems with Data Types, Low Severity <span class='warning'>&nbsp;1&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-jersey-1.3.29.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.jersey.sessions</span><br/>
+<span class="section" onclick="sC(this, 'c_191')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> SessionFactoryProvider.Binder <span class='warning'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_191" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Superclass has been changed from <b>org.glassfish.hk2.utilities.binding.AbstractBinder</b> to <b>org.glassfish.jersey.internal.inject.AbstractBinder</b>.</td>
+<td>1) Recompilation of a client program may be terminated with the message: cannot find variable (or method) in <b>SessionFactoryProvider.Binder</b>.<br/>2) A static field from a super-interface of a client class may hide a field (with the same name) inherited from new super-class. Recompilation of a client class may be terminated with the message: reference to variable is ambiguous.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_192')">
+[+] affected methods: 2 (0.6%)</span>
+<div id="c_192" style="display:none;">
+<div class='affected'><span class='iname_a'>SessionFactoryProvider.Binder.SessionFactoryProvider.Binder&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'SessionFactoryProvider.Binder' class.</div>
+<span class='iname_a'>SessionFactoryProvider.Binder.configure&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'SessionFactoryProvider.Binder' class.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Checked_Archives'></a><h2>Java Archives <span class='gray'>&nbsp;1&nbsp;</span></h2>
+<hr/><div class='jar_list'>
+dropwizard-jersey-1.3.29.jar<br/>
+</div><br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<br/><br/><br/>
+<hr/><div class='footer' align='right'><i>Generated by <a href='https://github.com/lvc/japi-compliance-checker'>Java API Compliance Checker</a> 2.4 &#160;</i></div><br/>
+</body></html>

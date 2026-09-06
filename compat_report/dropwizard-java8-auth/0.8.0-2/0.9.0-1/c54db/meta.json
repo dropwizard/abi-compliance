@@ -1,0 +1,11 @@
+{
+  "Affected": "76.7",
+  "Added": 21,
+  "Removed": 33,
+  "TotalProblems": 6,
+  "Source_Affected": "76.7",
+  "Source_TotalProblems": "6",
+  "Source_ReportPath": "compat_report/dropwizard-java8-auth/0.8.0-2/0.9.0-1/c54db/src_compat_report.html",
+  "Archive1": "dropwizard-java8-auth-0.8.0-2.jar",
+  "Archive2": "dropwizard-java8-auth-0.9.0-1.jar"
+}

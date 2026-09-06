@@ -1,0 +1,11 @@
+{
+  "Affected": "0",
+  "Added": 0,
+  "Removed": 0,
+  "TotalProblems": 0,
+  "Source_Affected": "0",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/metrics-logback/4.1.14/4.1.15/d6e4d/src_compat_report.html",
+  "Archive1": "metrics-logback-4.1.14.jar",
+  "Archive2": "metrics-logback-4.1.15.jar"
+}

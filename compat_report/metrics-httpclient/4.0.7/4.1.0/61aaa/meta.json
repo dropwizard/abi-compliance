@@ -1,0 +1,11 @@
+{
+  "Affected": "0",
+  "Added": 12,
+  "Removed": 0,
+  "TotalProblems": 0,
+  "Source_Affected": "0",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/metrics-httpclient/4.0.7/4.1.0/61aaa/src_compat_report.html",
+  "Archive1": "metrics-httpclient-4.0.7.jar",
+  "Archive2": "metrics-httpclient-4.1.0.jar"
+}

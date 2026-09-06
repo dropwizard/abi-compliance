@@ -1,0 +1,901 @@
+<!-- kind:binary;verdict:incompatible;affected:60;added:33;removed:33;type_problems_high:6;type_problems_medium:0;type_problems_low:0;method_problems_high:0;method_problems_medium:0;method_problems_low:0;checked_methods:88;checked_types:25;tool_version:2.4 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="dropwizard-auth, binary, compatibility" />
+<meta name="description" content="Binary compatibility report for the dropwizard-auth library between 0.8.5 and 0.9.0 versions" />
+<title>dropwizard-auth: 0.8.5 to 0.9.0 binary compatibility report</title>
+<style type="text/css">
+body {
+    font-family:Arial, sans-serif;
+    background-color:White;
+    color:Black;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+    white-space:nowrap;
+}
+div.symbols {
+    color:#003E69;
+}
+div.symbols i {
+    color:Brown;
+}
+span.section {
+    font-weight:bold;
+    cursor:pointer;
+    color:#003E69;
+    white-space:nowrap;
+    margin-left:0.3125em;
+}
+span:hover.section {
+    color:#336699;
+}
+span.sect_aff {
+    cursor:pointer;
+    padding-left:1.55em;
+    font-size:0.875em;
+    color:#cc3300;
+}
+span.ext {
+    font-weight:normal;
+}
+span.jar {
+    color:#cc3300;
+    font-size:0.875em;
+    font-weight:bold;
+}
+div.jar_list {
+    padding-left:0.4em;
+    font-size:0.94em;
+}
+span.pkg_t {
+    color:#408080;
+    font-size:0.875em;
+}
+span.pkg {
+    color:#408080;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.cname {
+    color:Green;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.iname_b {
+    font-weight:bold;
+}
+span.iname_a {
+    color:#333333;
+    font-weight:bold;
+    font-size:0.94em;
+}
+span.sym_p {
+    font-weight:normal;
+    white-space:normal;
+}
+span.sym_pd {
+    white-space:normal;
+}
+span.sym_p span, span.sym_pd span {
+    white-space:nowrap;
+}
+span.attr {
+    color:Black;
+    font-weight:normal;
+}
+span.deprecated {
+    color:Red;
+    font-weight:bold;
+    font-family:Monaco, monospace;
+}
+div.affect {
+    padding-left:1em;
+    padding-bottom:10px;
+    font-size:0.87em;
+    font-style:italic;
+    line-height:0.9em;
+}
+div.affected {
+    padding-left:2em;
+    padding-top:10px;
+}
+table.ptable {
+    border-collapse:collapse;
+    border:1px outset black;
+    margin-left:0.95em;
+    margin-top:3px;
+    margin-bottom:3px;
+    width:56.25em;
+}
+table.ptable td {
+    border:1px solid Gray;
+    padding:3px;
+    font-size:0.875em;
+    text-align:left;
+    vertical-align:top;
+    max-width:28em;
+    word-wrap:break-word;
+}
+table.ptable th {
+    background-color:#eeeeee;
+    font-weight:bold;
+    color:#333333;
+    font-family:Verdana, Arial;
+    font-size:0.875em;
+    border:1px solid Gray;
+    text-align:center;
+    vertical-align:top;
+    white-space:nowrap;
+    padding:3px;
+}
+table.summary {
+    border-collapse:collapse;
+    border:1px outset black;
+}
+table.summary th {
+    background-color:#eeeeee;
+    font-weight:normal;
+    text-align:left;
+    font-size:0.94em;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px;
+}
+table.summary td {
+    text-align:right;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px 5px 3px 10px;
+}
+span.mngl {
+    padding-left:1em;
+    font-size:0.875em;
+    cursor:text;
+    color:#444444;
+    font-weight:bold;
+}
+span.pleft {
+    padding-left:2.5em;
+}
+span.color_p {
+    font-style:italic;
+    color:Brown;
+}
+span.param {
+    font-style:italic;
+}
+span.focus_p {
+    font-style:italic;
+    background-color:#DCDCDC;
+}
+span.ttype {
+    font-weight:normal;
+}
+span.nowrap {
+    white-space:nowrap;
+}
+span.value {
+    white-space:nowrap;
+    font-weight:bold;
+}
+.passed {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.warning {
+    background-color:#F4F4AF;
+    font-weight:normal;
+}
+.failed {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.new {
+    background-color:#C6DEFF;
+    font-weight:normal;
+}
+
+.compatible {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.almost_compatible {
+    background-color:#FFDAA3;
+    font-weight:normal;
+}
+.incompatible {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.gray {
+    background-color:#DCDCDC;
+    font-weight:normal;
+}
+
+.top_ref {
+    font-size:0.69em;
+}
+.footer {
+    font-size:0.8125em;
+}
+
+</style>
+<script type="text/javascript" language="JavaScript">
+<!--
+function sC(header, id)
+{
+    e = document.getElementById(id);
+    if(e.style.display == 'none')
+    {
+        e.style.display = 'block';
+        e.style.visibility = 'visible';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[&minus;]");
+    }
+    else
+    {
+        e.style.display = 'none';
+        e.style.visibility = 'hidden';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[+]");
+    }
+}
+
+-->
+</script>
+</head>
+<body><a name='Top'></a><h1>Binary compatibility report for the <span style='color:Blue;'>dropwizard-auth</span> library between <span style='color:Red;'>0.8.5</span> and <span style='color:Red;'>0.9.0</span> versions</h1>
+
+<h2>Test Info</h2><hr/>
+<table class='summary'>
+<tr><th>Library Name</th><td>dropwizard-auth</td></tr>
+<tr><th>Version #1</th><td>0.8.5</td></tr>
+<tr><th>Version #2</th><td>0.9.0</td></tr>
+</table>
+<h2>Test Results</h2><hr/>
+<table class='summary'>
+<tr><th>Total Java Modules</th><td><a href='#Checked_Archives' style='color:Blue;'>1</a></td></tr>
+<tr><th>Total Methods / Classes</th><td>88 / 25</td></tr>
+<tr><th>Compatibility</th>
+<td class='incompatible'>40%</td>
+</tr>
+</table>
+<h2>Problem Summary</h2><hr/>
+<table class='summary'>
+<tr><th></th><th style='text-align:center;'>Severity</th><th style='text-align:center;'>Count</th></tr>
+<tr><th>Added Methods</th><td>-</td><td class='new'><a href='#Added' style='color:Blue;'>33</a></td></tr>
+<tr><th>Removed Methods</th><td>High</td><td class='failed'><a href='#Removed' style='color:Blue;'>33</a></td></tr>
+<tr><th rowspan='3'>Problems with<br/>Data Types</th><td>High</td><td class='failed'><a href='#Type_Problems_High' style='color:Blue;'>6</a></td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+<tr><th rowspan='3'>Problems with<br/>Methods</th><td>High</td><td>0</td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+<tr><th>Other Changes<br/>in Data Types</th><td>-</td><td class='passed'><a href='#Other_Changes_In_Types' style='color:Blue;'>1</a></td></tr>
+</table>
+
+<a name='Added'></a><h2>Added Methods <span class='new'>&nbsp;33&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-auth-0.9.0.jar</span>, <span class='cname'>AuthDynamicFeature.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.auth</span><br/>
+<span class="section" onclick="sC(this, 'c_1')">
+AuthDynamicFeature.AuthDynamicFeature&#160;<span class='sym_p'><span>(&#160;ContainerRequestFilter <span class='color_p'>authFilter</span></span>&#160;)</span></span>
+<br/>
+<div id="c_1" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/AuthDynamicFeature.&quot;&lt;init&gt;&quot;:(Ljavax/ws/rs/container/ContainerRequestFilter;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_2')">
+AuthDynamicFeature.configure&#160;<span class='sym_p'><span>(&#160;ResourceInfo <span class='color_p'>resourceInfo</span></span>, <span>FeatureContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_2" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/AuthDynamicFeature.configure:(Ljavax/ws/rs/container/ResourceInfo;Ljavax/ws/rs/core/FeatureContext;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-auth-0.9.0.jar</span>, <span class='cname'>AuthFilter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.auth</span><br/>
+<span class="section" onclick="sC(this, 'c_3')">
+AuthFilter&lt;C,P&gt;.AuthFilter&lt;C,P&gt;&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_3" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/AuthFilter.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-auth-0.9.0.jar</span>, <span class='cname'>AuthFilterBuilder.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.auth</span><br/>
+<span class="section" onclick="sC(this, 'c_4')">
+AuthFilter.AuthFilterBuilder&lt;C,P,T&gt;.AuthFilter.AuthFilterBuilder&lt;C,P,T&gt;&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_4" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/AuthFilter.AuthFilterBuilder.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_5')">
+AuthFilter.AuthFilterBuilder&lt;C,P,T&gt;.buildAuthFilter&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;T</span></span>
+<br/>
+<div id="c_5" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/AuthFilter.AuthFilterBuilder.buildAuthFilter:()Lio/dropwizard/auth/AuthFilter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_6')">
+AuthFilter.AuthFilterBuilder&lt;C,P,T&gt;.newInstance&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;T</span></span>
+<br/>
+<div id="c_6" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/AuthFilter.AuthFilterBuilder.newInstance:()Lio/dropwizard/auth/AuthFilter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_7')">
+AuthFilter.AuthFilterBuilder&lt;C,P,T&gt;.setAuthenticator&#160;<span class='sym_p'><span>(&#160;Authenticator&lt;C,P&gt; <span class='color_p'>authenticator</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;AuthFilter.AuthFilterBuilder&lt;C,P,T&gt;</span></span>
+<br/>
+<div id="c_7" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/AuthFilter.AuthFilterBuilder.setAuthenticator:(Lio/dropwizard/auth/Authenticator;)Lio/dropwizard/auth/AuthFilter$AuthFilterBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_8')">
+AuthFilter.AuthFilterBuilder&lt;C,P,T&gt;.setAuthorizer&#160;<span class='sym_p'><span>(&#160;Authorizer&lt;P&gt; <span class='color_p'>authorizer</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;AuthFilter.AuthFilterBuilder&lt;C,P,T&gt;</span></span>
+<br/>
+<div id="c_8" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/AuthFilter.AuthFilterBuilder.setAuthorizer:(Lio/dropwizard/auth/Authorizer;)Lio/dropwizard/auth/AuthFilter$AuthFilterBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_9')">
+AuthFilter.AuthFilterBuilder&lt;C,P,T&gt;.setPrefix&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>prefix</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;AuthFilter.AuthFilterBuilder&lt;C,P,T&gt;</span></span>
+<br/>
+<div id="c_9" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/AuthFilter.AuthFilterBuilder.setPrefix:(Ljava/lang/String;)Lio/dropwizard/auth/AuthFilter$AuthFilterBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_10')">
+AuthFilter.AuthFilterBuilder&lt;C,P,T&gt;.setRealm&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>realm</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;AuthFilter.AuthFilterBuilder&lt;C,P,T&gt;</span></span>
+<br/>
+<div id="c_10" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/AuthFilter.AuthFilterBuilder.setRealm:(Ljava/lang/String;)Lio/dropwizard/auth/AuthFilter$AuthFilterBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_11')">
+AuthFilter.AuthFilterBuilder&lt;C,P,T&gt;.setUnauthorizedHandler&#160;<span class='sym_p'><span>(&#160;UnauthorizedHandler <span class='color_p'>unauthorizedHandler</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;AuthFilter.AuthFilterBuilder&lt;C,P,T&gt;</span></span>
+<br/>
+<div id="c_11" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/AuthFilter.AuthFilterBuilder.setUnauthorizedHandler:(Lio/dropwizard/auth/UnauthorizedHandler;)Lio/dropwizard/auth/AuthFilter$AuthFilterBuilder;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-auth-0.9.0.jar</span>, <span class='cname'>Authorizer.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.auth</span><br/>
+<span class="section" onclick="sC(this, 'c_12')">
+Authorizer&lt;P&gt;.authorize&#160;<span class='sym_p'><span>(&#160;P <span class='color_p'>p1</span></span>, <span>String <span class='color_p'>p2</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_12" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/Authorizer.authorize:(Ljava/security/Principal;Ljava/lang/String;)Z</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-auth-0.9.0.jar</span>, <span class='cname'>AuthValueFactoryProvider.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.auth</span><br/>
+<span class="section" onclick="sC(this, 'c_13')">
+AuthValueFactoryProvider&lt;T&gt;.AuthValueFactoryProvider&lt;T&gt;&#160;<span class='sym_p'><span>(&#160;MultivaluedParameterExtractorProvider <span class='color_p'>mpep</span></span>, <span>ServiceLocator <span class='color_p'>injector</span></span>, <span>AuthValueFactoryProvider.PrincipalClassProvider&lt;T&gt; <span class='color_p'>principalClassProvider</span></span>&#160;)</span></span>
+<br/>
+<div id="c_13" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/AuthValueFactoryProvider.&quot;&lt;init&gt;&quot;:(Lorg/glassfish/jersey/server/internal/inject/MultivaluedParameterExtractorProvider;Lorg/glassfish/hk2/api/ServiceLocator;Lio/dropwizard/auth/AuthValueFactoryProvider$PrincipalClassProvider;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_14')">
+AuthValueFactoryProvider&lt;T&gt;.createValueFactory&#160;<span class='sym_p'><span>(&#160;Parameter <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Factory</span></span>
+<br/>
+<div id="c_14" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/AuthValueFactoryProvider.createValueFactory:(Lorg/glassfish/jersey/server/model/Parameter;)Lorg/glassfish/hk2/api/Factory;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_15')">
+AuthValueFactoryProvider&lt;T&gt;.createValueFactory&#160;<span class='sym_p'><span>(&#160;Parameter <span class='color_p'>parameter</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;AbstractContainerRequestValueFactory&lt;?&gt;</span></span>
+<br/>
+<div id="c_15" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/AuthValueFactoryProvider.createValueFactory:(Lorg/glassfish/jersey/server/model/Parameter;)Lorg/glassfish/jersey/server/internal/inject/AbstractContainerRequestValueFactory;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-auth-0.9.0.jar</span>, <span class='cname'>BasicCredentialAuthFilter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.auth.basic</span><br/>
+<span class="section" onclick="sC(this, 'c_16')">
+BasicCredentialAuthFilter&lt;P&gt;.filter&#160;<span class='sym_p'><span>(&#160;ContainerRequestContext <span class='color_p'>requestContext</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_16" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/basic/BasicCredentialAuthFilter.filter:(Ljavax/ws/rs/container/ContainerRequestContext;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-auth-0.9.0.jar</span>, <span class='cname'>Binder.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.auth</span><br/>
+<span class="section" onclick="sC(this, 'c_17')">
+AuthValueFactoryProvider.Binder&lt;T&gt;.AuthValueFactoryProvider.Binder&lt;T&gt;&#160;<span class='sym_p'><span>(&#160;Class&lt;T&gt; <span class='color_p'>principalClass</span></span>&#160;)</span></span>
+<br/>
+<div id="c_17" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/AuthValueFactoryProvider.Binder.&quot;&lt;init&gt;&quot;:(Ljava/lang/Class;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_18')">
+AuthValueFactoryProvider.Binder&lt;T&gt;.configure&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_18" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/AuthValueFactoryProvider.Binder.configure:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-auth-0.9.0.jar</span>, <span class='cname'>Builder.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.auth.basic</span><br/>
+<span class="section" onclick="sC(this, 'c_19')">
+BasicCredentialAuthFilter.Builder&lt;P&gt;.BasicCredentialAuthFilter.Builder&lt;P&gt;&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_19" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/basic/BasicCredentialAuthFilter.Builder.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_20')">
+BasicCredentialAuthFilter.Builder&lt;P&gt;.newInstance&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;AuthFilter</span></span>
+<br/>
+<div id="c_20" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/basic/BasicCredentialAuthFilter.Builder.newInstance:()Lio/dropwizard/auth/AuthFilter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_21')">
+BasicCredentialAuthFilter.Builder&lt;P&gt;.newInstance&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;BasicCredentialAuthFilter&lt;P&gt;</span></span>
+<br/>
+<div id="c_21" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/basic/BasicCredentialAuthFilter.Builder.newInstance:()Lio/dropwizard/auth/basic/BasicCredentialAuthFilter;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-auth-0.9.0.jar</span>, <span class='cname'>Builder.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.auth.oauth</span><br/>
+<span class="section" onclick="sC(this, 'c_22')">
+OAuthCredentialAuthFilter.Builder&lt;P&gt;.newInstance&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;AuthFilter</span></span>
+<br/>
+<div id="c_22" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/oauth/OAuthCredentialAuthFilter.Builder.newInstance:()Lio/dropwizard/auth/AuthFilter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_23')">
+OAuthCredentialAuthFilter.Builder&lt;P&gt;.newInstance&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;OAuthCredentialAuthFilter&lt;P&gt;</span></span>
+<br/>
+<div id="c_23" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/oauth/OAuthCredentialAuthFilter.Builder.newInstance:()Lio/dropwizard/auth/oauth/OAuthCredentialAuthFilter;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_24')">
+OAuthCredentialAuthFilter.Builder&lt;P&gt;.OAuthCredentialAuthFilter.Builder&lt;P&gt;&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_24" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/oauth/OAuthCredentialAuthFilter.Builder.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-auth-0.9.0.jar</span>, <span class='cname'>ChainedAuthFilter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.auth.chained</span><br/>
+<span class="section" onclick="sC(this, 'c_25')">
+ChainedAuthFilter&lt;C,P&gt;.ChainedAuthFilter&lt;C,P&gt;&#160;<span class='sym_p'><span>(&#160;List&lt;AuthFilter&gt; <span class='color_p'>handlers</span></span>&#160;)</span></span>
+<br/>
+<div id="c_25" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/chained/ChainedAuthFilter.&quot;&lt;init&gt;&quot;:(Ljava/util/List;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_26')">
+ChainedAuthFilter&lt;C,P&gt;.filter&#160;<span class='sym_p'><span>(&#160;ContainerRequestContext <span class='color_p'>containerRequestContext</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_26" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/chained/ChainedAuthFilter.filter:(Ljavax/ws/rs/container/ContainerRequestContext;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-auth-0.9.0.jar</span>, <span class='cname'>OAuthCredentialAuthFilter.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.auth.oauth</span><br/>
+<span class="section" onclick="sC(this, 'c_27')">
+OAuthCredentialAuthFilter&lt;P&gt;.filter&#160;<span class='sym_p'><span>(&#160;ContainerRequestContext <span class='color_p'>requestContext</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_27" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/oauth/OAuthCredentialAuthFilter.filter:(Ljavax/ws/rs/container/ContainerRequestContext;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-auth-0.9.0.jar</span>, <span class='cname'>PermitAllAuthorizer.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.auth</span><br/>
+<span class="section" onclick="sC(this, 'c_28')">
+PermitAllAuthorizer&lt;P&gt;.authorize&#160;<span class='sym_p'><span>(&#160;P <span class='color_p'>principal</span></span>, <span>String <span class='color_p'>role</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_28" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/PermitAllAuthorizer.authorize:(Ljava/security/Principal;Ljava/lang/String;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_29')">
+PermitAllAuthorizer&lt;P&gt;.PermitAllAuthorizer&lt;P&gt;&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_29" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/PermitAllAuthorizer.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-auth-0.9.0.jar</span>, <span class='cname'>PrincipalImpl.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.auth</span><br/>
+<span class="section" onclick="sC(this, 'c_30')">
+PrincipalImpl.equals&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>o</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_30" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/PrincipalImpl.equals:(Ljava/lang/Object;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_31')">
+PrincipalImpl.getName&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_31" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/PrincipalImpl.getName:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_32')">
+PrincipalImpl.hashCode&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_32" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/PrincipalImpl.hashCode:()I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_33')">
+PrincipalImpl.PrincipalImpl&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span></span>
+<br/>
+<div id="c_33" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/PrincipalImpl.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Removed'></a><a name='Withdrawn'></a><h2>Removed Methods <span class='failed'>&nbsp;33&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-auth-0.8.5.jar</span>, <span class='cname'>AuthFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.auth</span><br/>
+<span class="section" onclick="sC(this, 'c_34')">
+AuthFactory&lt;C,P&gt;.authenticator&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Authenticator&lt;C,P&gt;</span></span>
+<br/>
+<div id="c_34" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/AuthFactory.authenticator:()Lio/dropwizard/auth/Authenticator;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_35')">
+AuthFactory&lt;C,P&gt;.AuthFactory&lt;C,P&gt;&#160;<span class='sym_p'><span>(&#160;Authenticator&lt;C,P&gt; <span class='color_p'>authenticator</span></span>&#160;)</span></span>
+<br/>
+<div id="c_35" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/AuthFactory.&quot;&lt;init&gt;&quot;:(Lio/dropwizard/auth/Authenticator;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_36')">
+AuthFactory&lt;C,P&gt;.binder&#160;<span class='sym_p'><span>(&#160;AuthFactory&lt;T,U&gt; <span class='color_p'>factory</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Binder</span></span>
+<br/>
+<div id="c_36" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/AuthFactory.binder:(Lio/dropwizard/auth/AuthFactory;)Lorg/glassfish/hk2/utilities/Binder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_37')">
+AuthFactory&lt;C,P&gt;.clone&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>p1</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;AuthFactory&lt;C,P&gt;</span></span>
+<br/>
+<div id="c_37" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/AuthFactory.clone:(Z)Lio/dropwizard/auth/AuthFactory;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_38')">
+AuthFactory&lt;C,P&gt;.getGeneratedClass&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Class&lt;P&gt;</span></span>
+<br/>
+<div id="c_38" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/AuthFactory.getGeneratedClass:()Ljava/lang/Class;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_39')">
+AuthFactory&lt;C,P&gt;.setRequest&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>p1</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_39" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/AuthFactory.setRequest:(Ljavax/servlet/http/HttpServletRequest;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-auth-0.8.5.jar</span>, <span class='cname'>AuthInjectionResolver.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.auth</span><br/>
+<span class="section" onclick="sC(this, 'c_40')">
+AuthFactoryProvider.AuthInjectionResolver.AuthFactoryProvider.AuthInjectionResolver&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_40" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/AuthFactoryProvider.AuthInjectionResolver.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-auth-0.8.5.jar</span>, <span class='cname'>BasicAuthFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.auth.basic</span><br/>
+<span class="section" onclick="sC(this, 'c_41')">
+BasicAuthFactory&lt;T&gt;.BasicAuthFactory&lt;T&gt;&#160;<span class='sym_p'><span>(&#160;Authenticator&lt;BasicCredentials,T&gt; <span class='color_p'>authenticator</span></span>, <span>String <span class='color_p'>realm</span></span>, <span>Class&lt;T&gt; <span class='color_p'>generatedClass</span></span>&#160;)</span></span>
+<br/>
+<div id="c_41" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/basic/BasicAuthFactory.&quot;&lt;init&gt;&quot;:(Lio/dropwizard/auth/Authenticator;Ljava/lang/String;Ljava/lang/Class;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_42')">
+BasicAuthFactory&lt;T&gt;.clone&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>required</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;AuthFactory&lt;BasicCredentials,T&gt;</span></span>
+<br/>
+<div id="c_42" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/basic/BasicAuthFactory.clone:(Z)Lio/dropwizard/auth/AuthFactory;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_43')">
+BasicAuthFactory&lt;T&gt;.getGeneratedClass&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Class&lt;T&gt;</span></span>
+<br/>
+<div id="c_43" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/basic/BasicAuthFactory.getGeneratedClass:()Ljava/lang/Class;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_44')">
+BasicAuthFactory&lt;T&gt;.prefix&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>prefix</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;BasicAuthFactory&lt;T&gt;</span></span>
+<br/>
+<div id="c_44" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/basic/BasicAuthFactory.prefix:(Ljava/lang/String;)Lio/dropwizard/auth/basic/BasicAuthFactory;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_45')">
+BasicAuthFactory&lt;T&gt;.provide&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;T</span></span>
+<br/>
+<div id="c_45" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/basic/BasicAuthFactory.provide:()Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_46')">
+BasicAuthFactory&lt;T&gt;.responseBuilder&#160;<span class='sym_p'><span>(&#160;UnauthorizedHandler <span class='color_p'>unauthorizedHandler</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;BasicAuthFactory&lt;T&gt;</span></span>
+<br/>
+<div id="c_46" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/basic/BasicAuthFactory.responseBuilder:(Lio/dropwizard/auth/UnauthorizedHandler;)Lio/dropwizard/auth/basic/BasicAuthFactory;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_47')">
+BasicAuthFactory&lt;T&gt;.setRequest&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>request</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_47" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/basic/BasicAuthFactory.setRequest:(Ljavax/servlet/http/HttpServletRequest;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-auth-0.8.5.jar</span>, <span class='cname'>Binder.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.auth</span><br/>
+<span class="section" onclick="sC(this, 'c_48')">
+AuthFactoryProvider.Binder&lt;T,U&gt;.AuthFactoryProvider.Binder&lt;T,U&gt;&#160;<span class='sym_p'><span>(&#160;AuthFactory&lt;T,U&gt; <span class='color_p'>factory</span></span>&#160;)</span></span>
+<br/>
+<div id="c_48" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/AuthFactoryProvider.Binder.&quot;&lt;init&gt;&quot;:(Lio/dropwizard/auth/AuthFactory;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_49')">
+AuthFactoryProvider.Binder&lt;T,U&gt;.configure&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_49" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/AuthFactoryProvider.Binder.configure:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-auth-0.8.5.jar</span>, <span class='cname'>ChainedAuthFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.auth</span><br/>
+<span class="section" onclick="sC(this, 'c_50')">
+ChainedAuthFactory&lt;T&gt;.addChainedProvider&#160;<span class='sym_p'><span>(&#160;AuthFactory&lt;?,T&gt; <span class='color_p'>provider</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_50" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/ChainedAuthFactory.addChainedProvider:(Lio/dropwizard/auth/AuthFactory;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_51')">
+ChainedAuthFactory&lt;T&gt;.authenticator&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Authenticator&lt;Object,T&gt;</span></span>
+<br/>
+<div id="c_51" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/ChainedAuthFactory.authenticator:()Lio/dropwizard/auth/Authenticator;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_52')">
+ChainedAuthFactory&lt;T&gt;.ChainedAuthFactory&lt;T&gt;&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_52" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/ChainedAuthFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_53')">
+ChainedAuthFactory&lt;T&gt;.ChainedAuthFactory&lt;T&gt;&#160;<span class='sym_p'><span>(&#160;AuthFactory&lt;?,T&gt;... <span class='color_p'>providers</span></span>&#160;)</span></span>
+<br/>
+<div id="c_53" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/ChainedAuthFactory.&quot;&lt;init&gt;&quot;:([Lio/dropwizard/auth/AuthFactory;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_54')">
+ChainedAuthFactory&lt;T&gt;.ChainedAuthFactory&lt;T&gt;&#160;<span class='sym_p'><span>(&#160;List&lt;AuthFactory&lt;?,T&gt;&gt; <span class='color_p'>factories</span></span>&#160;)</span></span>
+<br/>
+<div id="c_54" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/ChainedAuthFactory.&quot;&lt;init&gt;&quot;:(Ljava/util/List;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_55')">
+ChainedAuthFactory&lt;T&gt;.clone&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>required</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;AuthFactory&lt;Object,T&gt;</span></span>
+<br/>
+<div id="c_55" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/ChainedAuthFactory.clone:(Z)Lio/dropwizard/auth/AuthFactory;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_56')">
+ChainedAuthFactory&lt;T&gt;.getGeneratedClass&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Class&lt;T&gt;</span></span>
+<br/>
+<div id="c_56" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/ChainedAuthFactory.getGeneratedClass:()Ljava/lang/Class;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_57')">
+ChainedAuthFactory&lt;T&gt;.provide&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;T</span></span>
+<br/>
+<div id="c_57" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/ChainedAuthFactory.provide:()Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_58')">
+ChainedAuthFactory&lt;T&gt;.removeChainedProvider&#160;<span class='sym_p'><span>(&#160;AuthFactory&lt;?,T&gt; <span class='color_p'>provider</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_58" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/ChainedAuthFactory.removeChainedProvider:(Lio/dropwizard/auth/AuthFactory;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_59')">
+ChainedAuthFactory&lt;T&gt;.setRequest&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>request</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_59" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/ChainedAuthFactory.setRequest:(Ljavax/servlet/http/HttpServletRequest;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-auth-0.8.5.jar</span>, <span class='cname'>OAuthFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.auth.oauth</span><br/>
+<span class="section" onclick="sC(this, 'c_60')">
+OAuthFactory&lt;T&gt;.clone&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>required</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;AuthFactory&lt;String,T&gt;</span></span>
+<br/>
+<div id="c_60" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/oauth/OAuthFactory.clone:(Z)Lio/dropwizard/auth/AuthFactory;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_61')">
+OAuthFactory&lt;T&gt;.getGeneratedClass&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Class&lt;T&gt;</span></span>
+<br/>
+<div id="c_61" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/oauth/OAuthFactory.getGeneratedClass:()Ljava/lang/Class;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_62')">
+OAuthFactory&lt;T&gt;.OAuthFactory&lt;T&gt;&#160;<span class='sym_p'><span>(&#160;Authenticator&lt;String,T&gt; <span class='color_p'>authenticator</span></span>, <span>String <span class='color_p'>realm</span></span>, <span>Class&lt;T&gt; <span class='color_p'>generatedClass</span></span>&#160;)</span></span>
+<br/>
+<div id="c_62" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/oauth/OAuthFactory.&quot;&lt;init&gt;&quot;:(Lio/dropwizard/auth/Authenticator;Ljava/lang/String;Ljava/lang/Class;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_63')">
+OAuthFactory&lt;T&gt;.prefix&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>prefix</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;OAuthFactory&lt;T&gt;</span></span>
+<br/>
+<div id="c_63" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/oauth/OAuthFactory.prefix:(Ljava/lang/String;)Lio/dropwizard/auth/oauth/OAuthFactory;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_64')">
+OAuthFactory&lt;T&gt;.provide&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;T</span></span>
+<br/>
+<div id="c_64" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/oauth/OAuthFactory.provide:()Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_65')">
+OAuthFactory&lt;T&gt;.responseBuilder&#160;<span class='sym_p'><span>(&#160;UnauthorizedHandler <span class='color_p'>unauthorizedHandler</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;OAuthFactory&lt;T&gt;</span></span>
+<br/>
+<div id="c_65" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/oauth/OAuthFactory.responseBuilder:(Lio/dropwizard/auth/UnauthorizedHandler;)Lio/dropwizard/auth/oauth/OAuthFactory;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_66')">
+OAuthFactory&lt;T&gt;.setRequest&#160;<span class='sym_p'><span>(&#160;HttpServletRequest <span class='color_p'>request</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_66" style="display:none;">
+<span class='mngl'>io/dropwizard/auth/oauth/OAuthFactory.setRequest:(Ljavax/servlet/http/HttpServletRequest;)V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='High_Risk_Problems'></a><a name='Type_Problems_High'></a>
+<h2>Problems with Data Types, High Severity <span class='failed'>&nbsp;6&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-auth-0.8.5.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.auth</span><br/>
+<span class="section" onclick="sC(this, 'c_67')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> AuthFactory&lt;C,P&gt; <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_67" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_68')">
+[+] affected methods: 6 (6.8%)</span>
+<div id="c_68" style="display:none;">
+<div class='affected'><span class='iname_a'>AuthFactory&lt;C,P&gt;.AuthFactory&lt;C,P&gt;&#160;<span class='sym_p'><span>(&#160;Authenticator&lt;C,P&gt; <i>authenticator</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'AuthFactory&lt;C,P&gt;' abstract class.</div>
+<span class='iname_a'>AuthFactory&lt;C,P&gt;.authenticator&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'AuthFactory&lt;C,P&gt;' abstract class.</div>
+<span class='iname_a'>AuthFactory&lt;C,P&gt;.binder&#160;<span class='sym_p'><span>(&#160;AuthFactory&lt;T,U&gt; <i>factory</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'AuthFactory&lt;C,P&gt;' abstract class.</div>
+<span class='iname_a'>AuthFactory&lt;C,P&gt;.clone&#160;<span class='sym_p'><span>(&#160;boolean <i>p1</i></span>&#160;)</span></span><br/><div class='affect'>This abstract method is from 'AuthFactory&lt;C,P&gt;' abstract class.</div>
+<span class='iname_a'>AuthFactory&lt;C,P&gt;.getGeneratedClass&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This abstract method is from 'AuthFactory&lt;C,P&gt;' abstract class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_69')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> AuthFactoryProvider.AuthInjectionResolver <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_69" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_70')">
+[+] affected methods: 1 (1.1%)</span>
+<div id="c_70" style="display:none;">
+<div class='affected'><span class='iname_a'>AuthFactoryProvider.AuthInjectionResolver.AuthFactoryProvider.AuthInjectionResolver&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'AuthFactoryProvider.AuthInjectionResolver' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_71')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> AuthFactoryProvider.Binder&lt;T,U&gt; <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_71" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_72')">
+[+] affected methods: 2 (2.3%)</span>
+<div id="c_72" style="display:none;">
+<div class='affected'><span class='iname_a'>AuthFactoryProvider.Binder&lt;T,U&gt;.AuthFactoryProvider.Binder&lt;T,U&gt;&#160;<span class='sym_p'><span>(&#160;AuthFactory&lt;T,U&gt; <i>factory</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'AuthFactoryProvider.Binder&lt;T,U&gt;' class.</div>
+<span class='iname_a'>AuthFactoryProvider.Binder&lt;T,U&gt;.configure&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'AuthFactoryProvider.Binder&lt;T,U&gt;' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_73')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> ChainedAuthFactory&lt;T&gt; <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_73" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_74')">
+[+] affected methods: 10 (11.4%)</span>
+<div id="c_74" style="display:none;">
+<div class='affected'><span class='iname_a'>ChainedAuthFactory&lt;T&gt;.ChainedAuthFactory&lt;T&gt;&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'ChainedAuthFactory&lt;T&gt;' class.</div>
+<span class='iname_a'>ChainedAuthFactory&lt;T&gt;.ChainedAuthFactory&lt;T&gt;&#160;<span class='sym_p'><span>(&#160;AuthFactory&lt;?,T&gt;... <i>providers</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'ChainedAuthFactory&lt;T&gt;' class.</div>
+<span class='iname_a'>ChainedAuthFactory&lt;T&gt;.ChainedAuthFactory&lt;T&gt;&#160;<span class='sym_p'><span>(&#160;List&lt;AuthFactory&lt;?,T&gt;&gt; <i>factories</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'ChainedAuthFactory&lt;T&gt;' class.</div>
+<span class='iname_a'>ChainedAuthFactory&lt;T&gt;.addChainedProvider&#160;<span class='sym_p'><span>(&#160;AuthFactory&lt;?,T&gt; <i>provider</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ChainedAuthFactory&lt;T&gt;' class.</div>
+<span class='iname_a'>ChainedAuthFactory&lt;T&gt;.authenticator&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'ChainedAuthFactory&lt;T&gt;' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<br/><span class='jar'>dropwizard-auth-0.8.5.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.auth.basic</span><br/>
+<span class="section" onclick="sC(this, 'c_75')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> BasicAuthFactory&lt;T&gt; <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_75" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_76')">
+[+] affected methods: 7 (8%)</span>
+<div id="c_76" style="display:none;">
+<div class='affected'><span class='iname_a'>BasicAuthFactory&lt;T&gt;.BasicAuthFactory&lt;T&gt;&#160;<span class='sym_p'><span>(&#160;Authenticator&lt;BasicCredentials,T&gt; <i>authenticator</i></span>, <span>String <i>realm</i></span>, <span>Class&lt;T&gt; <i>generatedClass</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'BasicAuthFactory&lt;T&gt;' class.</div>
+<span class='iname_a'>BasicAuthFactory&lt;T&gt;.clone&#160;<span class='sym_p'><span>(&#160;boolean <i>required</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'BasicAuthFactory&lt;T&gt;' class.</div>
+<span class='iname_a'>BasicAuthFactory&lt;T&gt;.getGeneratedClass&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'BasicAuthFactory&lt;T&gt;' class.</div>
+<span class='iname_a'>BasicAuthFactory&lt;T&gt;.prefix&#160;<span class='sym_p'><span>(&#160;String <i>prefix</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'BasicAuthFactory&lt;T&gt;' class.</div>
+<span class='iname_a'>BasicAuthFactory&lt;T&gt;.provide&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'BasicAuthFactory&lt;T&gt;' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<br/><span class='jar'>dropwizard-auth-0.8.5.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.auth.oauth</span><br/>
+<span class="section" onclick="sC(this, 'c_77')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> OAuthFactory&lt;T&gt; <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_77" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_78')">
+[+] affected methods: 7 (8%)</span>
+<div id="c_78" style="display:none;">
+<div class='affected'><span class='iname_a'>OAuthFactory&lt;T&gt;.OAuthFactory&lt;T&gt;&#160;<span class='sym_p'><span>(&#160;Authenticator&lt;String,T&gt; <i>authenticator</i></span>, <span>String <i>realm</i></span>, <span>Class&lt;T&gt; <i>generatedClass</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'OAuthFactory&lt;T&gt;' class.</div>
+<span class='iname_a'>OAuthFactory&lt;T&gt;.clone&#160;<span class='sym_p'><span>(&#160;boolean <i>required</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'OAuthFactory&lt;T&gt;' class.</div>
+<span class='iname_a'>OAuthFactory&lt;T&gt;.getGeneratedClass&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'OAuthFactory&lt;T&gt;' class.</div>
+<span class='iname_a'>OAuthFactory&lt;T&gt;.prefix&#160;<span class='sym_p'><span>(&#160;String <i>prefix</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'OAuthFactory&lt;T&gt;' class.</div>
+<span class='iname_a'>OAuthFactory&lt;T&gt;.provide&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'OAuthFactory&lt;T&gt;' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Other_Changes'></a><a name='Other_Changes_In_Types'></a>
+<h2>Other Changes in Data Types <span class='passed'>&nbsp;1&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-auth-0.8.5.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.auth</span><br/>
+<span class="section" onclick="sC(this, 'c_79')">
+<span class='ext'>[+]</span> <span class='ttype'>@interface</span> Auth <span class='passed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_79" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Element <b>required</b> of type <b>boolean</b> with default value <b>1</b> has been removed from this annotation type.</td>
+<td>No effect.</td>
+</tr>
+</table><br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Checked_Archives'></a><h2>Java Archives <span class='gray'>&nbsp;1&nbsp;</span></h2>
+<hr/><div class='jar_list'>
+dropwizard-auth-0.8.5.jar<br/>
+</div><br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<br/><br/><br/>
+<hr/><div class='footer' align='right'><i>Generated by <a href='https://github.com/lvc/japi-compliance-checker'>Java API Compliance Checker</a> 2.4 &#160;</i></div><br/>
+</body></html>

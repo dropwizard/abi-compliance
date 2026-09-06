@@ -1,0 +1,208 @@
+$VAR1 = {
+          'APIDump' => {
+                         '0.7.0-1' => {
+                                        '5c6d7' => {
+                                                     'Archive' => 'dropwizard-java8-auth-0.7.0-1.jar',
+                                                     'Path' => 'api_dump/dropwizard-java8-auth/0.7.0-1/5c6d7/API.dump.tar.gz',
+                                                     'TotalSymbols' => '18'
+                                                   }
+                                      },
+                         '0.7.1-1' => {
+                                        'c2aa3' => {
+                                                     'Archive' => 'dropwizard-java8-auth-0.7.1-1.jar',
+                                                     'Path' => 'api_dump/dropwizard-java8-auth/0.7.1-1/c2aa3/API.dump.tar.gz',
+                                                     'TotalSymbols' => '18'
+                                                   }
+                                      },
+                         '0.8.0-1' => {
+                                        'bc012' => {
+                                                     'Archive' => 'dropwizard-java8-auth-0.8.0-1.jar',
+                                                     'Path' => 'api_dump/dropwizard-java8-auth/0.8.0-1/bc012/API.dump.tar.gz',
+                                                     'TotalSymbols' => '43'
+                                                   }
+                                      },
+                         '0.8.0-2' => {
+                                        '2c6ae' => {
+                                                     'Archive' => 'dropwizard-java8-auth-0.8.0-2.jar',
+                                                     'Path' => 'api_dump/dropwizard-java8-auth/0.8.0-2/2c6ae/API.dump.tar.gz',
+                                                     'TotalSymbols' => '43'
+                                                   }
+                                      },
+                         '0.9.0-1' => {
+                                        '50c48' => {
+                                                     'Archive' => 'dropwizard-java8-auth-0.9.0-1.jar',
+                                                     'Path' => 'api_dump/dropwizard-java8-auth/0.9.0-1/50c48/API.dump.tar.gz',
+                                                     'TotalSymbols' => '31'
+                                                   }
+                                      }
+                       },
+          'APIReport' => {
+                           '0.7.0-1' => {
+                                          '0.7.1-1' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/dropwizard-java8-auth/0.7.0-1/0.7.1-1/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                        },
+                           '0.7.1-1' => {
+                                          '0.8.0-1' => {
+                                                         'Added' => 33,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => '55.6',
+                                                         'Path' => 'archives_report/dropwizard-java8-auth/0.7.1-1/0.8.0-1/report.html',
+                                                         'Removed' => 8,
+                                                         'Source_BC' => '55.6',
+                                                         'Source_TotalProblems' => 2,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 2
+                                                       }
+                                        },
+                           '0.8.0-1' => {
+                                          '0.8.0-2' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/dropwizard-java8-auth/0.8.0-1/0.8.0-2/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                        },
+                           '0.8.0-2' => {
+                                          '0.9.0-1' => {
+                                                         'Added' => 21,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => '23.3',
+                                                         'Path' => 'archives_report/dropwizard-java8-auth/0.8.0-2/0.9.0-1/report.html',
+                                                         'Removed' => 33,
+                                                         'Source_BC' => '23.3',
+                                                         'Source_TotalProblems' => 6,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 6
+                                                       }
+                                        }
+                         },
+          'APIReport_D' => {
+                             '0.7.0-1' => {
+                                            '0.7.1-1' => {
+                                                           '717b0' => {
+                                                                        'Added' => 0,
+                                                                        'Affected' => 0,
+                                                                        'Archive1' => 'dropwizard-java8-auth-0.7.0-1.jar',
+                                                                        'Archive2' => 'dropwizard-java8-auth-0.7.1-1.jar',
+                                                                        'Path' => 'compat_report/dropwizard-java8-auth/0.7.0-1/0.7.1-1/717b0/bin_compat_report.html',
+                                                                        'Removed' => 0,
+                                                                        'Source_Affected' => 0,
+                                                                        'Source_ReportPath' => 'compat_report/dropwizard-java8-auth/0.7.0-1/0.7.1-1/717b0/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                          },
+                             '0.7.1-1' => {
+                                            '0.8.0-1' => {
+                                                           '32d29' => {
+                                                                        'Added' => 33,
+                                                                        'Affected' => '44.4',
+                                                                        'Archive1' => 'dropwizard-java8-auth-0.7.1-1.jar',
+                                                                        'Archive2' => 'dropwizard-java8-auth-0.8.0-1.jar',
+                                                                        'Path' => 'compat_report/dropwizard-java8-auth/0.7.1-1/0.8.0-1/32d29/bin_compat_report.html',
+                                                                        'Removed' => 8,
+                                                                        'Source_Affected' => '44.4',
+                                                                        'Source_ReportPath' => 'compat_report/dropwizard-java8-auth/0.7.1-1/0.8.0-1/32d29/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 2,
+                                                                        'TotalProblems' => 2
+                                                                      }
+                                                         }
+                                          },
+                             '0.8.0-1' => {
+                                            '0.8.0-2' => {
+                                                           '9f35e' => {
+                                                                        'Added' => 0,
+                                                                        'Affected' => 0,
+                                                                        'Archive1' => 'dropwizard-java8-auth-0.8.0-1.jar',
+                                                                        'Archive2' => 'dropwizard-java8-auth-0.8.0-2.jar',
+                                                                        'Path' => 'compat_report/dropwizard-java8-auth/0.8.0-1/0.8.0-2/9f35e/bin_compat_report.html',
+                                                                        'Removed' => 0,
+                                                                        'Source_Affected' => 0,
+                                                                        'Source_ReportPath' => 'compat_report/dropwizard-java8-auth/0.8.0-1/0.8.0-2/9f35e/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                          },
+                             '0.8.0-2' => {
+                                            '0.9.0-1' => {
+                                                           'c54db' => {
+                                                                        'Added' => 21,
+                                                                        'Affected' => '76.7',
+                                                                        'Archive1' => 'dropwizard-java8-auth-0.8.0-2.jar',
+                                                                        'Archive2' => 'dropwizard-java8-auth-0.9.0-1.jar',
+                                                                        'Path' => 'compat_report/dropwizard-java8-auth/0.8.0-2/0.9.0-1/c54db/bin_compat_report.html',
+                                                                        'Removed' => 33,
+                                                                        'Source_Affected' => '76.7',
+                                                                        'Source_ReportPath' => 'compat_report/dropwizard-java8-auth/0.8.0-2/0.9.0-1/c54db/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 6,
+                                                                        'TotalProblems' => 6
+                                                                      }
+                                                         }
+                                          }
+                           },
+          'Changelog' => {},
+          'Date' => {
+                      '0.7.0-1' => '02-2014-08 19:22',
+                      '0.7.1-1' => '12-2015-01 10:55',
+                      '0.8.0-1' => '06-2015-03 12:46',
+                      '0.8.0-2' => '12-2015-03 10:06',
+                      '0.9.0-1' => '29-2015-10 00:28'
+                    },
+          'Maintainer' => 'Dropwizard Committers',
+          'MaintainerUrl' => 'https://www.dropwizard.io/',
+          'PackageDiff' => {
+                             '0.7.0-1' => {
+                                            '0.7.1-1' => {
+                                                           'Changed' => '0.2',
+                                                           'Path' => 'package_diff/dropwizard-java8-auth/0.7.0-1/0.7.1-1/report.html'
+                                                         }
+                                          },
+                             '0.7.1-1' => {
+                                            '0.8.0-1' => {
+                                                           'Changed' => '44.6',
+                                                           'Path' => 'package_diff/dropwizard-java8-auth/0.7.1-1/0.8.0-1/report.html'
+                                                         }
+                                          },
+                             '0.8.0-1' => {
+                                            '0.8.0-2' => {
+                                                           'Changed' => '0.1',
+                                                           'Path' => 'package_diff/dropwizard-java8-auth/0.8.0-1/0.8.0-2/report.html'
+                                                         }
+                                          },
+                             '0.8.0-2' => {
+                                            '0.9.0-1' => {
+                                                           'Changed' => '54.2',
+                                                           'Path' => 'package_diff/dropwizard-java8-auth/0.8.0-2/0.9.0-1/report.html'
+                                                         }
+                                          }
+                           },
+          'Title' => 'Dropwizard Authentication with Java 8 support'
+        };

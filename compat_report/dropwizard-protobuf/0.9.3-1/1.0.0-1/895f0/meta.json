@@ -1,0 +1,11 @@
+{
+  "Affected": "0",
+  "Added": 0,
+  "Removed": 0,
+  "TotalProblems": 0,
+  "Source_Affected": "0",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/dropwizard-protobuf/0.9.3-1/1.0.0-1/895f0/src_compat_report.html",
+  "Archive1": "dropwizard-protobuf-0.9.3-1.jar",
+  "Archive2": "dropwizard-protobuf-1.0.0-1.jar"
+}

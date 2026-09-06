@@ -1,0 +1,1631 @@
+<!-- kind:binary;verdict:incompatible;affected:57.3;added:124;removed:55;type_problems_high:6;type_problems_medium:0;type_problems_low:0;method_problems_high:0;method_problems_medium:0;method_problems_low:0;checked_methods:295;checked_types:44;tool_version:2.4 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="dropwizard-kafka, binary, compatibility" />
+<meta name="description" content="Binary compatibility report for the dropwizard-kafka library between 1.3.12-1 and 1.3.12-2 versions" />
+<title>dropwizard-kafka: 1.3.12-1 to 1.3.12-2 binary compatibility report</title>
+<style type="text/css">
+body {
+    font-family:Arial, sans-serif;
+    background-color:White;
+    color:Black;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+    white-space:nowrap;
+}
+div.symbols {
+    color:#003E69;
+}
+div.symbols i {
+    color:Brown;
+}
+span.section {
+    font-weight:bold;
+    cursor:pointer;
+    color:#003E69;
+    white-space:nowrap;
+    margin-left:0.3125em;
+}
+span:hover.section {
+    color:#336699;
+}
+span.sect_aff {
+    cursor:pointer;
+    padding-left:1.55em;
+    font-size:0.875em;
+    color:#cc3300;
+}
+span.ext {
+    font-weight:normal;
+}
+span.jar {
+    color:#cc3300;
+    font-size:0.875em;
+    font-weight:bold;
+}
+div.jar_list {
+    padding-left:0.4em;
+    font-size:0.94em;
+}
+span.pkg_t {
+    color:#408080;
+    font-size:0.875em;
+}
+span.pkg {
+    color:#408080;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.cname {
+    color:Green;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.iname_b {
+    font-weight:bold;
+}
+span.iname_a {
+    color:#333333;
+    font-weight:bold;
+    font-size:0.94em;
+}
+span.sym_p {
+    font-weight:normal;
+    white-space:normal;
+}
+span.sym_pd {
+    white-space:normal;
+}
+span.sym_p span, span.sym_pd span {
+    white-space:nowrap;
+}
+span.attr {
+    color:Black;
+    font-weight:normal;
+}
+span.deprecated {
+    color:Red;
+    font-weight:bold;
+    font-family:Monaco, monospace;
+}
+div.affect {
+    padding-left:1em;
+    padding-bottom:10px;
+    font-size:0.87em;
+    font-style:italic;
+    line-height:0.9em;
+}
+div.affected {
+    padding-left:2em;
+    padding-top:10px;
+}
+table.ptable {
+    border-collapse:collapse;
+    border:1px outset black;
+    margin-left:0.95em;
+    margin-top:3px;
+    margin-bottom:3px;
+    width:56.25em;
+}
+table.ptable td {
+    border:1px solid Gray;
+    padding:3px;
+    font-size:0.875em;
+    text-align:left;
+    vertical-align:top;
+    max-width:28em;
+    word-wrap:break-word;
+}
+table.ptable th {
+    background-color:#eeeeee;
+    font-weight:bold;
+    color:#333333;
+    font-family:Verdana, Arial;
+    font-size:0.875em;
+    border:1px solid Gray;
+    text-align:center;
+    vertical-align:top;
+    white-space:nowrap;
+    padding:3px;
+}
+table.summary {
+    border-collapse:collapse;
+    border:1px outset black;
+}
+table.summary th {
+    background-color:#eeeeee;
+    font-weight:normal;
+    text-align:left;
+    font-size:0.94em;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px;
+}
+table.summary td {
+    text-align:right;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px 5px 3px 10px;
+}
+span.mngl {
+    padding-left:1em;
+    font-size:0.875em;
+    cursor:text;
+    color:#444444;
+    font-weight:bold;
+}
+span.pleft {
+    padding-left:2.5em;
+}
+span.color_p {
+    font-style:italic;
+    color:Brown;
+}
+span.param {
+    font-style:italic;
+}
+span.focus_p {
+    font-style:italic;
+    background-color:#DCDCDC;
+}
+span.ttype {
+    font-weight:normal;
+}
+span.nowrap {
+    white-space:nowrap;
+}
+span.value {
+    white-space:nowrap;
+    font-weight:bold;
+}
+.passed {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.warning {
+    background-color:#F4F4AF;
+    font-weight:normal;
+}
+.failed {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.new {
+    background-color:#C6DEFF;
+    font-weight:normal;
+}
+
+.compatible {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.almost_compatible {
+    background-color:#FFDAA3;
+    font-weight:normal;
+}
+.incompatible {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.gray {
+    background-color:#DCDCDC;
+    font-weight:normal;
+}
+
+.top_ref {
+    font-size:0.69em;
+}
+.footer {
+    font-size:0.8125em;
+}
+
+</style>
+<script type="text/javascript" language="JavaScript">
+<!--
+function sC(header, id)
+{
+    e = document.getElementById(id);
+    if(e.style.display == 'none')
+    {
+        e.style.display = 'block';
+        e.style.visibility = 'visible';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[&minus;]");
+    }
+    else
+    {
+        e.style.display = 'none';
+        e.style.visibility = 'hidden';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[+]");
+    }
+}
+
+-->
+</script>
+</head>
+<body><a name='Top'></a><h1>Binary compatibility report for the <span style='color:Blue;'>dropwizard-kafka</span> library between <span style='color:Red;'>1.3.12-1</span> and <span style='color:Red;'>1.3.12-2</span> versions</h1>
+
+<h2>Test Info</h2><hr/>
+<table class='summary'>
+<tr><th>Library Name</th><td>dropwizard-kafka</td></tr>
+<tr><th>Version #1</th><td>1.3.12-1</td></tr>
+<tr><th>Version #2</th><td>1.3.12-2</td></tr>
+</table>
+<h2>Test Results</h2><hr/>
+<table class='summary'>
+<tr><th>Total Java Modules</th><td><a href='#Checked_Archives' style='color:Blue;'>1</a></td></tr>
+<tr><th>Total Methods / Classes</th><td>295 / 44</td></tr>
+<tr><th>Compatibility</th>
+<td class='incompatible'>42.7%</td>
+</tr>
+</table>
+<h2>Problem Summary</h2><hr/>
+<table class='summary'>
+<tr><th></th><th style='text-align:center;'>Severity</th><th style='text-align:center;'>Count</th></tr>
+<tr><th>Added Methods</th><td>-</td><td class='new'><a href='#Added' style='color:Blue;'>124</a></td></tr>
+<tr><th>Removed Methods</th><td>High</td><td class='failed'><a href='#Removed' style='color:Blue;'>55</a></td></tr>
+<tr><th rowspan='3'>Problems with<br/>Data Types</th><td>High</td><td class='failed'><a href='#Type_Problems_High' style='color:Blue;'>6</a></td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+<tr><th rowspan='3'>Problems with<br/>Methods</th><td>High</td><td>0</td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+<tr><th>Other Changes<br/>in Data Types</th><td>-</td><td class='passed'><a href='#Other_Changes_In_Types' style='color:Blue;'>4</a></td></tr>
+</table>
+
+<a name='Added'></a><h2>Added Methods <span class='new'>&nbsp;124&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>BasicKafkaAdminClientFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka</span><br/>
+<span class="section" onclick="sC(this, 'c_1')">
+BasicKafkaAdminClientFactory.BasicKafkaAdminClientFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_1" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/BasicKafkaAdminClientFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_2')">
+BasicKafkaAdminClientFactory.build&#160;<span class='sym_p'><span>(&#160;HealthCheckRegistry <span class='color_p'>healthChecks</span></span>, <span>LifecycleEnvironment <span class='color_p'>lifecycle</span></span>, <span>Map&lt;String,Object&gt; <span class='color_p'>configOverrides</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;AdminClient</span></span>
+<br/>
+<div id="c_2" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/BasicKafkaAdminClientFactory.build:(Lcom/codahale/metrics/health/HealthCheckRegistry;Lio/dropwizard/lifecycle/setup/LifecycleEnvironment;Ljava/util/Map;)Lorg/apache/kafka/clients/admin/AdminClient;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_3')">
+BasicKafkaAdminClientFactory.isValidConfiguration&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_3" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/BasicKafkaAdminClientFactory.isValidConfiguration:()Z</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>ByteArrayDeserializerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka.deserializer</span><br/>
+<span class="section" onclick="sC(this, 'c_4')">
+ByteArrayDeserializerFactory.ByteArrayDeserializerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_4" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/ByteArrayDeserializerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_5')">
+ByteArrayDeserializerFactory.getDeserializerClass&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Class&lt;?&gt;</span></span>
+<br/>
+<div id="c_5" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/ByteArrayDeserializerFactory.getDeserializerClass:()Ljava/lang/Class;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>ByteArraySerializerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka.serializer</span><br/>
+<span class="section" onclick="sC(this, 'c_6')">
+ByteArraySerializerFactory.ByteArraySerializerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_6" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/ByteArraySerializerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_7')">
+ByteArraySerializerFactory.getSerializerClass&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Class&lt;?&gt;</span></span>
+<br/>
+<div id="c_7" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/ByteArraySerializerFactory.getSerializerClass:()Ljava/lang/Class;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>ByteBufferDeserializerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka.deserializer</span><br/>
+<span class="section" onclick="sC(this, 'c_8')">
+ByteBufferDeserializerFactory.ByteBufferDeserializerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_8" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/ByteBufferDeserializerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_9')">
+ByteBufferDeserializerFactory.getDeserializerClass&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Class&lt;?&gt;</span></span>
+<br/>
+<div id="c_9" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/ByteBufferDeserializerFactory.getDeserializerClass:()Ljava/lang/Class;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>ByteBufferSerializerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka.serializer</span><br/>
+<span class="section" onclick="sC(this, 'c_10')">
+ByteBufferSerializerFactory.ByteBufferSerializerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_10" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/ByteBufferSerializerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_11')">
+ByteBufferSerializerFactory.getSerializerClass&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Class&lt;?&gt;</span></span>
+<br/>
+<div id="c_11" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/ByteBufferSerializerFactory.getSerializerClass:()Ljava/lang/Class;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>BytesDeserializerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka.deserializer</span><br/>
+<span class="section" onclick="sC(this, 'c_12')">
+BytesDeserializerFactory.BytesDeserializerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_12" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/BytesDeserializerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_13')">
+BytesDeserializerFactory.getDeserializerClass&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Class&lt;?&gt;</span></span>
+<br/>
+<div id="c_13" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/BytesDeserializerFactory.getDeserializerClass:()Ljava/lang/Class;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>BytesSerializerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka.serializer</span><br/>
+<span class="section" onclick="sC(this, 'c_14')">
+BytesSerializerFactory.BytesSerializerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_14" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/BytesSerializerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_15')">
+BytesSerializerFactory.getSerializerClass&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Class&lt;?&gt;</span></span>
+<br/>
+<div id="c_15" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/BytesSerializerFactory.getSerializerClass:()Ljava/lang/Class;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>DeserializerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka.deserializer</span><br/>
+<span class="section" onclick="sC(this, 'c_16')">
+DeserializerFactory.build&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>isKey</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map&lt;String,Object&gt;</span></span>
+<br/>
+<div id="c_16" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/DeserializerFactory.build:(Z)Ljava/util/Map;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_17')">
+DeserializerFactory.DeserializerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_17" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/DeserializerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_18')">
+DeserializerFactory.getDeserializerClass&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Class&lt;?&gt;</span></span>
+<br/>
+<div id="c_18" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/DeserializerFactory.getDeserializerClass:()Ljava/lang/Class;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>DoubleDeserializerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka.deserializer</span><br/>
+<span class="section" onclick="sC(this, 'c_19')">
+DoubleDeserializerFactory.DoubleDeserializerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_19" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/DoubleDeserializerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_20')">
+DoubleDeserializerFactory.getDeserializerClass&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Class&lt;?&gt;</span></span>
+<br/>
+<div id="c_20" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/DoubleDeserializerFactory.getDeserializerClass:()Ljava/lang/Class;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>DoubleSerializerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka.serializer</span><br/>
+<span class="section" onclick="sC(this, 'c_21')">
+DoubleSerializerFactory.DoubleSerializerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_21" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/DoubleSerializerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_22')">
+DoubleSerializerFactory.getSerializerClass&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Class&lt;?&gt;</span></span>
+<br/>
+<div id="c_22" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/DoubleSerializerFactory.getSerializerClass:()Ljava/lang/Class;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>FloatDeserializerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka.deserializer</span><br/>
+<span class="section" onclick="sC(this, 'c_23')">
+FloatDeserializerFactory.FloatDeserializerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_23" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/FloatDeserializerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_24')">
+FloatDeserializerFactory.getDeserializerClass&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Class&lt;?&gt;</span></span>
+<br/>
+<div id="c_24" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/FloatDeserializerFactory.getDeserializerClass:()Ljava/lang/Class;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>FloatSerializerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka.serializer</span><br/>
+<span class="section" onclick="sC(this, 'c_25')">
+FloatSerializerFactory.FloatSerializerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_25" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/FloatSerializerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_26')">
+FloatSerializerFactory.getSerializerClass&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Class&lt;?&gt;</span></span>
+<br/>
+<div id="c_26" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/FloatSerializerFactory.getSerializerClass:()Ljava/lang/Class;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>IntegerDeserializerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka.deserializer</span><br/>
+<span class="section" onclick="sC(this, 'c_27')">
+IntegerDeserializerFactory.getDeserializerClass&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Class&lt;?&gt;</span></span>
+<br/>
+<div id="c_27" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/IntegerDeserializerFactory.getDeserializerClass:()Ljava/lang/Class;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_28')">
+IntegerDeserializerFactory.IntegerDeserializerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_28" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/IntegerDeserializerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>IntegerSerializerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka.serializer</span><br/>
+<span class="section" onclick="sC(this, 'c_29')">
+IntegerSerializerFactory.getSerializerClass&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Class&lt;?&gt;</span></span>
+<br/>
+<div id="c_29" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/IntegerSerializerFactory.getSerializerClass:()Ljava/lang/Class;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_30')">
+IntegerSerializerFactory.IntegerSerializerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_30" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/IntegerSerializerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>KafkaAdminClientFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka</span><br/>
+<span class="section" onclick="sC(this, 'c_31')">
+KafkaAdminClientFactory.build&#160;<span class='sym_p'><span>(&#160;HealthCheckRegistry <span class='color_p'>p1</span></span>, <span>LifecycleEnvironment <span class='color_p'>p2</span></span>, <span>Map&lt;String,Object&gt; <span class='color_p'>p3</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;AdminClient</span></span>
+<br/>
+<div id="c_31" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.build:(Lcom/codahale/metrics/health/HealthCheckRegistry;Lio/dropwizard/lifecycle/setup/LifecycleEnvironment;Ljava/util/Map;)Lorg/apache/kafka/clients/admin/AdminClient;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_32')">
+KafkaAdminClientFactory.buildAdminClient&#160;<span class='sym_p'><span>(&#160;Map&lt;String,Object&gt; <span class='color_p'>config</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;AdminClient</span></span>
+<br/>
+<div id="c_32" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.buildAdminClient:(Ljava/util/Map;)Lorg/apache/kafka/clients/admin/AdminClient;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_33')">
+KafkaAdminClientFactory.getBootstrapServers&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;String&gt;</span></span>
+<br/>
+<div id="c_33" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.getBootstrapServers:()Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_34')">
+KafkaAdminClientFactory.getClientDnsLookup&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ClientDnsLookup</span></span>
+<br/>
+<div id="c_34" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.getClientDnsLookup:()Lorg/apache/kafka/clients/ClientDnsLookup;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_35')">
+KafkaAdminClientFactory.getClientId&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_35" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.getClientId:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_36')">
+KafkaAdminClientFactory.getConnectionMaxIdle&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Duration</span></span>
+<br/>
+<div id="c_36" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.getConnectionMaxIdle:()Lio/dropwizard/util/Duration;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_37')">
+KafkaAdminClientFactory.getMetadataMaxAge&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Duration</span></span>
+<br/>
+<div id="c_37" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.getMetadataMaxAge:()Lio/dropwizard/util/Duration;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_38')">
+KafkaAdminClientFactory.getMetricsRecordingLevel&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Sensor.RecordingLevel</span></span>
+<br/>
+<div id="c_38" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.getMetricsRecordingLevel:()Lorg/apache/kafka/common/metrics/Sensor$RecordingLevel;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_39')">
+KafkaAdminClientFactory.getMetricsReporters&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;List&lt;Class&lt;?&gt;&gt;</span></span>
+<br/>
+<div id="c_39" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.getMetricsReporters:()Ljava/util/List;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_40')">
+KafkaAdminClientFactory.getMetricsSamples&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Integer</span></span>
+<br/>
+<div id="c_40" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.getMetricsSamples:()Ljava/lang/Integer;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_41')">
+KafkaAdminClientFactory.getMetricsSampleWindow&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Duration</span></span>
+<br/>
+<div id="c_41" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.getMetricsSampleWindow:()Lio/dropwizard/util/Duration;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_42')">
+KafkaAdminClientFactory.getName&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_42" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.getName:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_43')">
+KafkaAdminClientFactory.getReceiveBufferBytes&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Integer</span></span>
+<br/>
+<div id="c_43" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.getReceiveBufferBytes:()Ljava/lang/Integer;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_44')">
+KafkaAdminClientFactory.getReconnectBackoff&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Duration</span></span>
+<br/>
+<div id="c_44" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.getReconnectBackoff:()Lio/dropwizard/util/Duration;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_45')">
+KafkaAdminClientFactory.getReconnectBackoffMax&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Duration</span></span>
+<br/>
+<div id="c_45" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.getReconnectBackoffMax:()Lio/dropwizard/util/Duration;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_46')">
+KafkaAdminClientFactory.getRequestTimeout&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Duration</span></span>
+<br/>
+<div id="c_46" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.getRequestTimeout:()Lio/dropwizard/util/Duration;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_47')">
+KafkaAdminClientFactory.getRetries&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Integer</span></span>
+<br/>
+<div id="c_47" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.getRetries:()Ljava/lang/Integer;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_48')">
+KafkaAdminClientFactory.getRetryBackoff&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Duration</span></span>
+<br/>
+<div id="c_48" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.getRetryBackoff:()Lio/dropwizard/util/Duration;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_49')">
+KafkaAdminClientFactory.getSecurity&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;SecurityFactory</span></span>
+<br/>
+<div id="c_49" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.getSecurity:()Lio/dropwizard/kafka/security/SecurityFactory;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_50')">
+KafkaAdminClientFactory.getSendBufferBytes&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Integer</span></span>
+<br/>
+<div id="c_50" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.getSendBufferBytes:()Ljava/lang/Integer;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_51')">
+KafkaAdminClientFactory.KafkaAdminClientFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_51" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_52')">
+KafkaAdminClientFactory.manageAdminClient&#160;<span class='sym_p'><span>(&#160;LifecycleEnvironment <span class='color_p'>lifecycle</span></span>, <span>AdminClient <span class='color_p'>adminClient</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_52" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.manageAdminClient:(Lio/dropwizard/lifecycle/setup/LifecycleEnvironment;Lorg/apache/kafka/clients/admin/AdminClient;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_53')">
+KafkaAdminClientFactory.registerHealthCheck&#160;<span class='sym_p'><span>(&#160;HealthCheckRegistry <span class='color_p'>healthChecks</span></span>, <span>AdminClient <span class='color_p'>adminClient</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_53" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.registerHealthCheck:(Lcom/codahale/metrics/health/HealthCheckRegistry;Lorg/apache/kafka/clients/admin/AdminClient;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_54')">
+KafkaAdminClientFactory.setBootstrapServers&#160;<span class='sym_p'><span>(&#160;Set&lt;String&gt; <span class='color_p'>bootstrapServers</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_54" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.setBootstrapServers:(Ljava/util/Set;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_55')">
+KafkaAdminClientFactory.setClientDnsLookup&#160;<span class='sym_p'><span>(&#160;ClientDnsLookup <span class='color_p'>clientDnsLookup</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_55" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.setClientDnsLookup:(Lorg/apache/kafka/clients/ClientDnsLookup;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_56')">
+KafkaAdminClientFactory.setClientId&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>clientId</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_56" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.setClientId:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_57')">
+KafkaAdminClientFactory.setConnectionMaxIdle&#160;<span class='sym_p'><span>(&#160;Duration <span class='color_p'>connectionMaxIdle</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_57" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.setConnectionMaxIdle:(Lio/dropwizard/util/Duration;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_58')">
+KafkaAdminClientFactory.setMetadataMaxAge&#160;<span class='sym_p'><span>(&#160;Duration <span class='color_p'>metadataMaxAge</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_58" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.setMetadataMaxAge:(Lio/dropwizard/util/Duration;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_59')">
+KafkaAdminClientFactory.setMetricsRecordingLevel&#160;<span class='sym_p'><span>(&#160;Sensor.RecordingLevel <span class='color_p'>metricsRecordingLevel</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_59" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.setMetricsRecordingLevel:(Lorg/apache/kafka/common/metrics/Sensor$RecordingLevel;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_60')">
+KafkaAdminClientFactory.setMetricsReporters&#160;<span class='sym_p'><span>(&#160;List&lt;Class&lt;?&gt;&gt; <span class='color_p'>metricsReporters</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_60" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.setMetricsReporters:(Ljava/util/List;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_61')">
+KafkaAdminClientFactory.setMetricsSamples&#160;<span class='sym_p'><span>(&#160;Integer <span class='color_p'>metricsSamples</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_61" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.setMetricsSamples:(Ljava/lang/Integer;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_62')">
+KafkaAdminClientFactory.setMetricsSampleWindow&#160;<span class='sym_p'><span>(&#160;Duration <span class='color_p'>metricsSampleWindow</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_62" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.setMetricsSampleWindow:(Lio/dropwizard/util/Duration;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_63')">
+KafkaAdminClientFactory.setName&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_63" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.setName:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_64')">
+KafkaAdminClientFactory.setReceiveBufferBytes&#160;<span class='sym_p'><span>(&#160;Integer <span class='color_p'>receiveBufferBytes</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_64" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.setReceiveBufferBytes:(Ljava/lang/Integer;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_65')">
+KafkaAdminClientFactory.setReconnectBackoff&#160;<span class='sym_p'><span>(&#160;Duration <span class='color_p'>reconnectBackoff</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_65" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.setReconnectBackoff:(Lio/dropwizard/util/Duration;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_66')">
+KafkaAdminClientFactory.setReconnectBackoffMax&#160;<span class='sym_p'><span>(&#160;Duration <span class='color_p'>reconnectBackoffMax</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_66" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.setReconnectBackoffMax:(Lio/dropwizard/util/Duration;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_67')">
+KafkaAdminClientFactory.setRequestTimeout&#160;<span class='sym_p'><span>(&#160;Duration <span class='color_p'>requestTimeout</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_67" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.setRequestTimeout:(Lio/dropwizard/util/Duration;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_68')">
+KafkaAdminClientFactory.setRetries&#160;<span class='sym_p'><span>(&#160;Integer <span class='color_p'>retries</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_68" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.setRetries:(Ljava/lang/Integer;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_69')">
+KafkaAdminClientFactory.setRetryBackoff&#160;<span class='sym_p'><span>(&#160;Duration <span class='color_p'>retryBackoff</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_69" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.setRetryBackoff:(Lio/dropwizard/util/Duration;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_70')">
+KafkaAdminClientFactory.setSecurity&#160;<span class='sym_p'><span>(&#160;SecurityFactory <span class='color_p'>security</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_70" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.setSecurity:(Lio/dropwizard/kafka/security/SecurityFactory;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_71')">
+KafkaAdminClientFactory.setSendBufferBytes&#160;<span class='sym_p'><span>(&#160;Integer <span class='color_p'>sendBufferBytes</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_71" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaAdminClientFactory.setSendBufferBytes:(Ljava/lang/Integer;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>KafkaAdminClientManager.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka.managed</span><br/>
+<span class="section" onclick="sC(this, 'c_72')">
+KafkaAdminClientManager.KafkaAdminClientManager&#160;<span class='sym_p'><span>(&#160;AdminClient <span class='color_p'>adminClient</span></span>, <span>String <span class='color_p'>name</span></span>&#160;)</span></span>
+<br/>
+<div id="c_72" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/managed/KafkaAdminClientManager.&quot;&lt;init&gt;&quot;:(Lorg/apache/kafka/clients/admin/AdminClient;Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_73')">
+KafkaAdminClientManager.start&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_73" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/managed/KafkaAdminClientManager.start:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_74')">
+KafkaAdminClientManager.stop&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_74" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/managed/KafkaAdminClientManager.stop:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>KafkaAdminHealthCheck.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka.health</span><br/>
+<span class="section" onclick="sC(this, 'c_75')">
+KafkaAdminHealthCheck.check&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.Result</span></span>
+<br/>
+<div id="c_75" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/health/KafkaAdminHealthCheck.check:()Lcom/codahale/metrics/health/HealthCheck$Result;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_76')">
+KafkaAdminHealthCheck.KafkaAdminHealthCheck&#160;<span class='sym_p'><span>(&#160;AdminClient <span class='color_p'>adminClient</span></span>, <span>String <span class='color_p'>name</span></span>&#160;)</span></span>
+<br/>
+<div id="c_76" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/health/KafkaAdminHealthCheck.&quot;&lt;init&gt;&quot;:(Lorg/apache/kafka/clients/admin/AdminClient;Ljava/lang/String;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>KafkaConsumerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka</span><br/>
+<span class="section" onclick="sC(this, 'c_77')">
+KafkaConsumerFactory&lt;K,V&gt;.buildConsumer&#160;<span class='sym_p'><span>(&#160;Map&lt;String,Object&gt; <span class='color_p'>config</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Consumer&lt;K,V&gt;</span></span>
+<br/>
+<div id="c_77" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaConsumerFactory.buildConsumer:(Ljava/util/Map;)Lorg/apache/kafka/clients/consumer/Consumer;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_78')">
+KafkaConsumerFactory&lt;K,V&gt;.getKeyDeserializer&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;DeserializerFactory</span></span>
+<br/>
+<div id="c_78" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaConsumerFactory.getKeyDeserializer:()Lio/dropwizard/kafka/deserializer/DeserializerFactory;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_79')">
+KafkaConsumerFactory&lt;K,V&gt;.getValueDeserializer&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;DeserializerFactory</span></span>
+<br/>
+<div id="c_79" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaConsumerFactory.getValueDeserializer:()Lio/dropwizard/kafka/deserializer/DeserializerFactory;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_80')">
+KafkaConsumerFactory&lt;K,V&gt;.manageConsumer&#160;<span class='sym_p'><span>(&#160;LifecycleEnvironment <span class='color_p'>lifecycle</span></span>, <span>Consumer&lt;K,V&gt; <span class='color_p'>consumer</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_80" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaConsumerFactory.manageConsumer:(Lio/dropwizard/lifecycle/setup/LifecycleEnvironment;Lorg/apache/kafka/clients/consumer/Consumer;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_81')">
+KafkaConsumerFactory&lt;K,V&gt;.setKeyDeserializer&#160;<span class='sym_p'><span>(&#160;DeserializerFactory <span class='color_p'>keyDeserializer</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_81" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaConsumerFactory.setKeyDeserializer:(Lio/dropwizard/kafka/deserializer/DeserializerFactory;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_82')">
+KafkaConsumerFactory&lt;K,V&gt;.setValueDeserializer&#160;<span class='sym_p'><span>(&#160;DeserializerFactory <span class='color_p'>valueDeserializer</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_82" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaConsumerFactory.setValueDeserializer:(Lio/dropwizard/kafka/deserializer/DeserializerFactory;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>KafkaProducerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka</span><br/>
+<span class="section" onclick="sC(this, 'c_83')">
+KafkaProducerFactory&lt;K,V&gt;.buildProducer&#160;<span class='sym_p'><span>(&#160;Map&lt;String,Object&gt; <span class='color_p'>config</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Producer&lt;K,V&gt;</span></span>
+<br/>
+<div id="c_83" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaProducerFactory.buildProducer:(Ljava/util/Map;)Lorg/apache/kafka/clients/producer/Producer;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_84')">
+KafkaProducerFactory&lt;K,V&gt;.getKeySerializer&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;SerializerFactory</span></span>
+<br/>
+<div id="c_84" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaProducerFactory.getKeySerializer:()Lio/dropwizard/kafka/serializer/SerializerFactory;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_85')">
+KafkaProducerFactory&lt;K,V&gt;.getValueSerializer&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;SerializerFactory</span></span>
+<br/>
+<div id="c_85" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaProducerFactory.getValueSerializer:()Lio/dropwizard/kafka/serializer/SerializerFactory;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_86')">
+KafkaProducerFactory&lt;K,V&gt;.manageProducer&#160;<span class='sym_p'><span>(&#160;LifecycleEnvironment <span class='color_p'>lifecycle</span></span>, <span>Producer&lt;K,V&gt; <span class='color_p'>producer</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_86" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaProducerFactory.manageProducer:(Lio/dropwizard/lifecycle/setup/LifecycleEnvironment;Lorg/apache/kafka/clients/producer/Producer;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_87')">
+KafkaProducerFactory&lt;K,V&gt;.registerProducerHealthCheck&#160;<span class='sym_p'><span>(&#160;HealthCheckRegistry <span class='color_p'>healthChecks</span></span>, <span>Producer&lt;K,V&gt; <span class='color_p'>producer</span></span>, <span>Collection&lt;String&gt; <span class='color_p'>topics</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_87" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaProducerFactory.registerProducerHealthCheck:(Lcom/codahale/metrics/health/HealthCheckRegistry;Lorg/apache/kafka/clients/producer/Producer;Ljava/util/Collection;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_88')">
+KafkaProducerFactory&lt;K,V&gt;.setKeySerializer&#160;<span class='sym_p'><span>(&#160;SerializerFactory <span class='color_p'>keySerializer</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_88" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaProducerFactory.setKeySerializer:(Lio/dropwizard/kafka/serializer/SerializerFactory;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_89')">
+KafkaProducerFactory&lt;K,V&gt;.setValueSerializer&#160;<span class='sym_p'><span>(&#160;SerializerFactory <span class='color_p'>valueSerializer</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_89" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaProducerFactory.setValueSerializer:(Lio/dropwizard/kafka/serializer/SerializerFactory;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>LongDeserializerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka.deserializer</span><br/>
+<span class="section" onclick="sC(this, 'c_90')">
+LongDeserializerFactory.getDeserializerClass&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Class&lt;?&gt;</span></span>
+<br/>
+<div id="c_90" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/LongDeserializerFactory.getDeserializerClass:()Ljava/lang/Class;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_91')">
+LongDeserializerFactory.LongDeserializerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_91" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/LongDeserializerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>LongSerializerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka.serializer</span><br/>
+<span class="section" onclick="sC(this, 'c_92')">
+LongSerializerFactory.getSerializerClass&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Class&lt;?&gt;</span></span>
+<br/>
+<div id="c_92" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/LongSerializerFactory.getSerializerClass:()Ljava/lang/Class;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_93')">
+LongSerializerFactory.LongSerializerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_93" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/LongSerializerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>SerializerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka.serializer</span><br/>
+<span class="section" onclick="sC(this, 'c_94')">
+SerializerFactory.build&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>isKey</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map&lt;String,Object&gt;</span></span>
+<br/>
+<div id="c_94" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/SerializerFactory.build:(Z)Ljava/util/Map;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_95')">
+SerializerFactory.getSerializerClass&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Class&lt;?&gt;</span></span>
+<br/>
+<div id="c_95" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/SerializerFactory.getSerializerClass:()Ljava/lang/Class;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_96')">
+SerializerFactory.SerializerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_96" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/SerializerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>ShortDeserializerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka.deserializer</span><br/>
+<span class="section" onclick="sC(this, 'c_97')">
+ShortDeserializerFactory.getDeserializerClass&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Class&lt;?&gt;</span></span>
+<br/>
+<div id="c_97" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/ShortDeserializerFactory.getDeserializerClass:()Ljava/lang/Class;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_98')">
+ShortDeserializerFactory.ShortDeserializerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_98" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/ShortDeserializerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>ShortSerializerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka.serializer</span><br/>
+<span class="section" onclick="sC(this, 'c_99')">
+ShortSerializerFactory.getSerializerClass&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Class&lt;?&gt;</span></span>
+<br/>
+<div id="c_99" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/ShortSerializerFactory.getSerializerClass:()Ljava/lang/Class;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_100')">
+ShortSerializerFactory.ShortSerializerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_100" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/ShortSerializerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>StringDeserializerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka.deserializer</span><br/>
+<span class="section" onclick="sC(this, 'c_101')">
+StringDeserializerFactory.build&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>isKey</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map&lt;String,Object&gt;</span></span>
+<br/>
+<div id="c_101" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/StringDeserializerFactory.build:(Z)Ljava/util/Map;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_102')">
+StringDeserializerFactory.getDeserializerClass&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Class&lt;?&gt;</span></span>
+<br/>
+<div id="c_102" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/StringDeserializerFactory.getDeserializerClass:()Ljava/lang/Class;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_103')">
+StringDeserializerFactory.getEncoding&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_103" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/StringDeserializerFactory.getEncoding:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_104')">
+StringDeserializerFactory.isEncodingValid&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_104" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/StringDeserializerFactory.isEncodingValid:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_105')">
+StringDeserializerFactory.setEncoding&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>encoding</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_105" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/StringDeserializerFactory.setEncoding:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_106')">
+StringDeserializerFactory.StringDeserializerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_106" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/StringDeserializerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>StringSerializerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka.serializer</span><br/>
+<span class="section" onclick="sC(this, 'c_107')">
+StringSerializerFactory.build&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>isKey</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map&lt;String,Object&gt;</span></span>
+<br/>
+<div id="c_107" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/StringSerializerFactory.build:(Z)Ljava/util/Map;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_108')">
+StringSerializerFactory.getEncoding&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_108" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/StringSerializerFactory.getEncoding:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_109')">
+StringSerializerFactory.getSerializerClass&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Class&lt;?&gt;</span></span>
+<br/>
+<div id="c_109" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/StringSerializerFactory.getSerializerClass:()Ljava/lang/Class;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_110')">
+StringSerializerFactory.isEncodingValid&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_110" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/StringSerializerFactory.isEncodingValid:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_111')">
+StringSerializerFactory.setEncoding&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>encoding</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_111" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/StringSerializerFactory.setEncoding:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_112')">
+StringSerializerFactory.StringSerializerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_112" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/StringSerializerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>UUIDDeserializerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka.deserializer</span><br/>
+<span class="section" onclick="sC(this, 'c_113')">
+UUIDDeserializerFactory.build&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>isKey</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map&lt;String,Object&gt;</span></span>
+<br/>
+<div id="c_113" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/UUIDDeserializerFactory.build:(Z)Ljava/util/Map;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_114')">
+UUIDDeserializerFactory.getDeserializerClass&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Class&lt;?&gt;</span></span>
+<br/>
+<div id="c_114" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/UUIDDeserializerFactory.getDeserializerClass:()Ljava/lang/Class;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_115')">
+UUIDDeserializerFactory.getEncoding&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_115" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/UUIDDeserializerFactory.getEncoding:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_116')">
+UUIDDeserializerFactory.isEncodingValid&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_116" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/UUIDDeserializerFactory.isEncodingValid:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_117')">
+UUIDDeserializerFactory.setEncoding&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>encoding</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_117" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/UUIDDeserializerFactory.setEncoding:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_118')">
+UUIDDeserializerFactory.UUIDDeserializerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_118" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/deserializer/UUIDDeserializerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-2.jar</span>, <span class='cname'>UUIDSerializerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka.serializer</span><br/>
+<span class="section" onclick="sC(this, 'c_119')">
+UUIDSerializerFactory.build&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>isKey</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map&lt;String,Object&gt;</span></span>
+<br/>
+<div id="c_119" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/UUIDSerializerFactory.build:(Z)Ljava/util/Map;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_120')">
+UUIDSerializerFactory.getEncoding&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_120" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/UUIDSerializerFactory.getEncoding:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_121')">
+UUIDSerializerFactory.getSerializerClass&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Class&lt;?&gt;</span></span>
+<br/>
+<div id="c_121" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/UUIDSerializerFactory.getSerializerClass:()Ljava/lang/Class;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_122')">
+UUIDSerializerFactory.isEncodingValid&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_122" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/UUIDSerializerFactory.isEncodingValid:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_123')">
+UUIDSerializerFactory.setEncoding&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>encoding</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_123" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/UUIDSerializerFactory.setEncoding:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_124')">
+UUIDSerializerFactory.UUIDSerializerFactory&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_124" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/serializer/UUIDSerializerFactory.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Removed'></a><a name='Withdrawn'></a><h2>Removed Methods <span class='failed'>&nbsp;55&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-kafka-1.3.12-1.jar</span>, <span class='cname'>CheckableConsumer.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka</span><br/>
+<span class="section" onclick="sC(this, 'c_125')">
+CheckableConsumer&lt;K,V&gt;.assign&#160;<span class='sym_p'><span>(&#160;Collection&lt;TopicPartition&gt; <span class='color_p'>collection</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_125" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.assign:(Ljava/util/Collection;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_126')">
+CheckableConsumer&lt;K,V&gt;.assignment&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;TopicPartition&gt;</span></span>
+<br/>
+<div id="c_126" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.assignment:()Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_127')">
+CheckableConsumer&lt;K,V&gt;.beginningOffsets&#160;<span class='sym_p'><span>(&#160;Collection&lt;TopicPartition&gt; <span class='color_p'>collection</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map&lt;TopicPartition,Long&gt;</span></span>
+<br/>
+<div id="c_127" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.beginningOffsets:(Ljava/util/Collection;)Ljava/util/Map;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_128')">
+CheckableConsumer&lt;K,V&gt;.beginningOffsets&#160;<span class='sym_p'><span>(&#160;Collection&lt;TopicPartition&gt; <span class='color_p'>collection</span></span>, <span>Duration <span class='color_p'>duration</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map&lt;TopicPartition,Long&gt;</span></span>
+<br/>
+<div id="c_128" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.beginningOffsets:(Ljava/util/Collection;Ljava/time/Duration;)Ljava/util/Map;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_129')">
+CheckableConsumer&lt;K,V&gt;.CheckableConsumer&lt;K,V&gt;&#160;<span class='sym_p'><span>(&#160;Consumer&lt;K,V&gt; <span class='color_p'>delegatee</span></span>&#160;)</span></span>
+<br/>
+<div id="c_129" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.&quot;&lt;init&gt;&quot;:(Lorg/apache/kafka/clients/consumer/Consumer;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_130')">
+CheckableConsumer&lt;K,V&gt;.close&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_130" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.close:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_131')">
+CheckableConsumer&lt;K,V&gt;.close&#160;<span class='sym_p'><span>(&#160;Duration <span class='color_p'>duration</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_131" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.close:(Ljava/time/Duration;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_132')">
+CheckableConsumer&lt;K,V&gt;.close&#160;<span class='sym_p'><span>(&#160;long <span class='color_p'>l</span></span>, <span>TimeUnit <span class='color_p'>timeUnit</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_132" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.close:(JLjava/util/concurrent/TimeUnit;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_133')">
+CheckableConsumer&lt;K,V&gt;.commitAsync&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_133" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.commitAsync:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_134')">
+CheckableConsumer&lt;K,V&gt;.commitAsync&#160;<span class='sym_p'><span>(&#160;Map&lt;TopicPartition,OffsetAndMetadata&gt; <span class='color_p'>map</span></span>, <span>OffsetCommitCallback <span class='color_p'>offsetCommitCallback</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_134" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.commitAsync:(Ljava/util/Map;Lorg/apache/kafka/clients/consumer/OffsetCommitCallback;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_135')">
+CheckableConsumer&lt;K,V&gt;.commitAsync&#160;<span class='sym_p'><span>(&#160;OffsetCommitCallback <span class='color_p'>offsetCommitCallback</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_135" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.commitAsync:(Lorg/apache/kafka/clients/consumer/OffsetCommitCallback;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_136')">
+CheckableConsumer&lt;K,V&gt;.commitSync&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_136" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.commitSync:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_137')">
+CheckableConsumer&lt;K,V&gt;.commitSync&#160;<span class='sym_p'><span>(&#160;Duration <span class='color_p'>duration</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_137" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.commitSync:(Ljava/time/Duration;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_138')">
+CheckableConsumer&lt;K,V&gt;.commitSync&#160;<span class='sym_p'><span>(&#160;Map&lt;TopicPartition,OffsetAndMetadata&gt; <span class='color_p'>map</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_138" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.commitSync:(Ljava/util/Map;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_139')">
+CheckableConsumer&lt;K,V&gt;.commitSync&#160;<span class='sym_p'><span>(&#160;Map&lt;TopicPartition,OffsetAndMetadata&gt; <span class='color_p'>map</span></span>, <span>Duration <span class='color_p'>duration</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_139" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.commitSync:(Ljava/util/Map;Ljava/time/Duration;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_140')">
+CheckableConsumer&lt;K,V&gt;.committed&#160;<span class='sym_p'><span>(&#160;TopicPartition <span class='color_p'>topicPartition</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;OffsetAndMetadata</span></span>
+<br/>
+<div id="c_140" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.committed:(Lorg/apache/kafka/common/TopicPartition;)Lorg/apache/kafka/clients/consumer/OffsetAndMetadata;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_141')">
+CheckableConsumer&lt;K,V&gt;.committed&#160;<span class='sym_p'><span>(&#160;TopicPartition <span class='color_p'>topicPartition</span></span>, <span>Duration <span class='color_p'>duration</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;OffsetAndMetadata</span></span>
+<br/>
+<div id="c_141" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.committed:(Lorg/apache/kafka/common/TopicPartition;Ljava/time/Duration;)Lorg/apache/kafka/clients/consumer/OffsetAndMetadata;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_142')">
+CheckableConsumer&lt;K,V&gt;.endOffsets&#160;<span class='sym_p'><span>(&#160;Collection&lt;TopicPartition&gt; <span class='color_p'>collection</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map&lt;TopicPartition,Long&gt;</span></span>
+<br/>
+<div id="c_142" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.endOffsets:(Ljava/util/Collection;)Ljava/util/Map;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_143')">
+CheckableConsumer&lt;K,V&gt;.endOffsets&#160;<span class='sym_p'><span>(&#160;Collection&lt;TopicPartition&gt; <span class='color_p'>collection</span></span>, <span>Duration <span class='color_p'>duration</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map&lt;TopicPartition,Long&gt;</span></span>
+<br/>
+<div id="c_143" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.endOffsets:(Ljava/util/Collection;Ljava/time/Duration;)Ljava/util/Map;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_144')">
+CheckableConsumer&lt;K,V&gt;.isActive&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_144" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.isActive:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_145')">
+CheckableConsumer&lt;K,V&gt;.listTopics&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map&lt;String,List&lt;PartitionInfo&gt;&gt;</span></span>
+<br/>
+<div id="c_145" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.listTopics:()Ljava/util/Map;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_146')">
+CheckableConsumer&lt;K,V&gt;.listTopics&#160;<span class='sym_p'><span>(&#160;Duration <span class='color_p'>duration</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map&lt;String,List&lt;PartitionInfo&gt;&gt;</span></span>
+<br/>
+<div id="c_146" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.listTopics:(Ljava/time/Duration;)Ljava/util/Map;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_147')">
+CheckableConsumer&lt;K,V&gt;.metrics&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Metric&gt;</span></span>
+<br/>
+<div id="c_147" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.metrics:()Ljava/util/Map;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_148')">
+CheckableConsumer&lt;K,V&gt;.offsetsForTimes&#160;<span class='sym_p'><span>(&#160;Map&lt;TopicPartition,Long&gt; <span class='color_p'>map</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map&lt;TopicPartition,OffsetAndTimestamp&gt;</span></span>
+<br/>
+<div id="c_148" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.offsetsForTimes:(Ljava/util/Map;)Ljava/util/Map;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_149')">
+CheckableConsumer&lt;K,V&gt;.offsetsForTimes&#160;<span class='sym_p'><span>(&#160;Map&lt;TopicPartition,Long&gt; <span class='color_p'>map</span></span>, <span>Duration <span class='color_p'>duration</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map&lt;TopicPartition,OffsetAndTimestamp&gt;</span></span>
+<br/>
+<div id="c_149" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.offsetsForTimes:(Ljava/util/Map;Ljava/time/Duration;)Ljava/util/Map;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_150')">
+CheckableConsumer&lt;K,V&gt;.partitionsFor&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>s</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;List&lt;PartitionInfo&gt;</span></span>
+<br/>
+<div id="c_150" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.partitionsFor:(Ljava/lang/String;)Ljava/util/List;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_151')">
+CheckableConsumer&lt;K,V&gt;.partitionsFor&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>s</span></span>, <span>Duration <span class='color_p'>duration</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;List&lt;PartitionInfo&gt;</span></span>
+<br/>
+<div id="c_151" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.partitionsFor:(Ljava/lang/String;Ljava/time/Duration;)Ljava/util/List;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_152')">
+CheckableConsumer&lt;K,V&gt;.pause&#160;<span class='sym_p'><span>(&#160;Collection&lt;TopicPartition&gt; <span class='color_p'>collection</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_152" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.pause:(Ljava/util/Collection;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_153')">
+CheckableConsumer&lt;K,V&gt;.paused&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;TopicPartition&gt;</span></span>
+<br/>
+<div id="c_153" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.paused:()Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_154')">
+CheckableConsumer&lt;K,V&gt;.poll&#160;<span class='sym_p'><span>(&#160;Duration <span class='color_p'>duration</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ConsumerRecords&lt;K,V&gt;</span></span>
+<br/>
+<div id="c_154" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.poll:(Ljava/time/Duration;)Lorg/apache/kafka/clients/consumer/ConsumerRecords;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_155')">
+CheckableConsumer&lt;K,V&gt;.poll&#160;<span class='sym_p'><span>(&#160;long <span class='color_p'>l</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ConsumerRecords&lt;K,V&gt;</span></span>
+<br/>
+<div id="c_155" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.poll:(J)Lorg/apache/kafka/clients/consumer/ConsumerRecords;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_156')">
+CheckableConsumer&lt;K,V&gt;.position&#160;<span class='sym_p'><span>(&#160;TopicPartition <span class='color_p'>topicPartition</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_156" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.position:(Lorg/apache/kafka/common/TopicPartition;)J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_157')">
+CheckableConsumer&lt;K,V&gt;.position&#160;<span class='sym_p'><span>(&#160;TopicPartition <span class='color_p'>topicPartition</span></span>, <span>Duration <span class='color_p'>duration</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_157" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.position:(Lorg/apache/kafka/common/TopicPartition;Ljava/time/Duration;)J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_158')">
+CheckableConsumer&lt;K,V&gt;.resume&#160;<span class='sym_p'><span>(&#160;Collection&lt;TopicPartition&gt; <span class='color_p'>collection</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_158" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.resume:(Ljava/util/Collection;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_159')">
+CheckableConsumer&lt;K,V&gt;.seek&#160;<span class='sym_p'><span>(&#160;TopicPartition <span class='color_p'>topicPartition</span></span>, <span>long <span class='color_p'>l</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_159" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.seek:(Lorg/apache/kafka/common/TopicPartition;J)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_160')">
+CheckableConsumer&lt;K,V&gt;.seekToBeginning&#160;<span class='sym_p'><span>(&#160;Collection&lt;TopicPartition&gt; <span class='color_p'>collection</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_160" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.seekToBeginning:(Ljava/util/Collection;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_161')">
+CheckableConsumer&lt;K,V&gt;.seekToEnd&#160;<span class='sym_p'><span>(&#160;Collection&lt;TopicPartition&gt; <span class='color_p'>collection</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_161" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.seekToEnd:(Ljava/util/Collection;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_162')">
+CheckableConsumer&lt;K,V&gt;.subscribe&#160;<span class='sym_p'><span>(&#160;Collection&lt;String&gt; <span class='color_p'>collection</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_162" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.subscribe:(Ljava/util/Collection;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_163')">
+CheckableConsumer&lt;K,V&gt;.subscribe&#160;<span class='sym_p'><span>(&#160;Collection&lt;String&gt; <span class='color_p'>topics</span></span>, <span>ConsumerRebalanceListener <span class='color_p'>listener</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_163" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.subscribe:(Ljava/util/Collection;Lorg/apache/kafka/clients/consumer/ConsumerRebalanceListener;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_164')">
+CheckableConsumer&lt;K,V&gt;.subscribe&#160;<span class='sym_p'><span>(&#160;Pattern <span class='color_p'>pattern</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_164" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.subscribe:(Ljava/util/regex/Pattern;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_165')">
+CheckableConsumer&lt;K,V&gt;.subscribe&#160;<span class='sym_p'><span>(&#160;Pattern <span class='color_p'>pattern</span></span>, <span>ConsumerRebalanceListener <span class='color_p'>consumerRebalanceListener</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_165" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.subscribe:(Ljava/util/regex/Pattern;Lorg/apache/kafka/clients/consumer/ConsumerRebalanceListener;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_166')">
+CheckableConsumer&lt;K,V&gt;.subscription&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;String&gt;</span></span>
+<br/>
+<div id="c_166" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.subscription:()Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_167')">
+CheckableConsumer&lt;K,V&gt;.unsubscribe&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_167" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.unsubscribe:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_168')">
+CheckableConsumer&lt;K,V&gt;.wakeup&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_168" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/CheckableConsumer.wakeup:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-1.jar</span>, <span class='cname'>KafkaConsumerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka</span><br/>
+<span class="section" onclick="sC(this, 'c_169')">
+KafkaConsumerFactory&lt;K,V&gt;.createKafkaConsumerManager&#160;<span class='sym_p'><span>(&#160;Consumer <span class='color_p'>consumer</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Managed</span></span>
+<br/>
+<div id="c_169" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaConsumerFactory.createKafkaConsumerManager:(Lorg/apache/kafka/clients/consumer/Consumer;)Lio/dropwizard/lifecycle/Managed;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_170')">
+KafkaConsumerFactory&lt;K,V&gt;.getKeyDeserializerClass&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_170" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaConsumerFactory.getKeyDeserializerClass:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_171')">
+KafkaConsumerFactory&lt;K,V&gt;.getValueDeserializerClass&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_171" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaConsumerFactory.getValueDeserializerClass:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_172')">
+KafkaConsumerFactory&lt;K,V&gt;.setKeyDeserializerClass&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>keyDeserializerClass</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_172" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaConsumerFactory.setKeyDeserializerClass:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_173')">
+KafkaConsumerFactory&lt;K,V&gt;.setValueDeserializerClass&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>valueDeserializerClass</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_173" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaConsumerFactory.setValueDeserializerClass:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-1.jar</span>, <span class='cname'>KafkaConsumerHealthCheck.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka.health</span><br/>
+<span class="section" onclick="sC(this, 'c_174')">
+KafkaConsumerHealthCheck.check&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheck.Result</span></span>
+<br/>
+<div id="c_174" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/health/KafkaConsumerHealthCheck.check:()Lcom/codahale/metrics/health/HealthCheck$Result;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_175')">
+KafkaConsumerHealthCheck.KafkaConsumerHealthCheck&#160;<span class='sym_p'><span>(&#160;CheckableConsumer <span class='color_p'>consumer</span></span>&#160;)</span></span>
+<br/>
+<div id="c_175" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/health/KafkaConsumerHealthCheck.&quot;&lt;init&gt;&quot;:(Lio/dropwizard/kafka/CheckableConsumer;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-kafka-1.3.12-1.jar</span>, <span class='cname'>KafkaProducerFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka</span><br/>
+<span class="section" onclick="sC(this, 'c_176')">
+KafkaProducerFactory&lt;K,V&gt;.getKeySerializerClass&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_176" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaProducerFactory.getKeySerializerClass:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_177')">
+KafkaProducerFactory&lt;K,V&gt;.getValueSerializerClass&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_177" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaProducerFactory.getValueSerializerClass:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_178')">
+KafkaProducerFactory&lt;K,V&gt;.setKeySerializerClass&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>keySerializerClass</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_178" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaProducerFactory.setKeySerializerClass:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_179')">
+KafkaProducerFactory&lt;K,V&gt;.setValueSerializerClass&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>valueSerializerClass</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_179" style="display:none;">
+<span class='mngl'>io/dropwizard/kafka/KafkaProducerFactory.setValueSerializerClass:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='High_Risk_Problems'></a><a name='Type_Problems_High'></a>
+<h2>Problems with Data Types, High Severity <span class='failed'>&nbsp;6&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-kafka-1.3.12-1.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka</span><br/>
+<span class="section" onclick="sC(this, 'c_180')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> CheckableConsumer&lt;K,V&gt; <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_180" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_181')">
+[+] affected methods: 44 (14.9%)</span>
+<div id="c_181" style="display:none;">
+<div class='affected'><span class='iname_a'>CheckableConsumer&lt;K,V&gt;.CheckableConsumer&lt;K,V&gt;&#160;<span class='sym_p'><span>(&#160;Consumer&lt;K,V&gt; <i>delegatee</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'CheckableConsumer&lt;K,V&gt;' class.</div>
+<span class='iname_a'>CheckableConsumer&lt;K,V&gt;.assign&#160;<span class='sym_p'><span>(&#160;Collection&lt;TopicPartition&gt; <i>collection</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'CheckableConsumer&lt;K,V&gt;' class.</div>
+<span class='iname_a'>CheckableConsumer&lt;K,V&gt;.assignment&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'CheckableConsumer&lt;K,V&gt;' class.</div>
+<span class='iname_a'>CheckableConsumer&lt;K,V&gt;.beginningOffsets&#160;<span class='sym_p'><span>(&#160;Collection&lt;TopicPartition&gt; <i>collection</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'CheckableConsumer&lt;K,V&gt;' class.</div>
+<span class='iname_a'>CheckableConsumer&lt;K,V&gt;.beginningOffsets&#160;<span class='sym_p'><span>(&#160;Collection&lt;TopicPartition&gt; <i>collection</i></span>, <span>Duration <i>duration</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'CheckableConsumer&lt;K,V&gt;' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_182')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> KafkaConsumerFactory&lt;K,V&gt; <span class='failed'>&nbsp;2&nbsp;</span></span>
+<br/>
+<div id="c_182" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Field <b>keyDeserializerClass</b> of type <b>java.lang.String</b> has been removed from this class.</td>
+<td>A client program may be interrupted by <b>NoSuchFieldError</b> exception.</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Field <b>valueDeserializerClass</b> of type <b>java.lang.String</b> has been removed from this class.</td>
+<td>A client program may be interrupted by <b>NoSuchFieldError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_183')">
+[+] affected methods: 20 (6.8%)</span>
+<div id="c_183" style="display:none;">
+<div class='affected'><span class='iname_a'>KafkaConsumerBundle&lt;K,V,T&gt;.getKafkaConsumerFactory&#160;<span class='sym_p'><span>(&#160;T <i>p1</i></span>&#160;)</span></span><br/><div class='affect'>Return value  of this abstract method is of type 'KafkaConsumerFactory&lt;K,V&gt;'.</div>
+<span class='iname_a'>KafkaConsumerFactory&lt;K,V&gt;.KafkaConsumerFactory&lt;K,V&gt;&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'KafkaConsumerFactory&lt;K,V&gt;' abstract class.</div>
+<span class='iname_a'>KafkaConsumerFactory&lt;K,V&gt;.build&#160;<span class='sym_p'><span>(&#160;LifecycleEnvironment <i>lifecycle</i></span>, <span>HealthCheckRegistry <i>healthChecks</i></span>, <span>Tracing <i>tracing</i></span>, <span>ConsumerRebalanceListener <i>rebalanceListener</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'KafkaConsumerFactory&lt;K,V&gt;' abstract class.</div>
+<span class='iname_a'>KafkaConsumerFactory&lt;K,V&gt;.build&#160;<span class='sym_p'><span>(&#160;LifecycleEnvironment <i>p1</i></span>, <span>HealthCheckRegistry <i>p2</i></span>, <span>Tracing <i>p3</i></span>, <span>ConsumerRebalanceListener <i>p4</i></span>, <span>Map&lt;String,Object&gt; <i>p5</i></span>&#160;)</span></span><br/><div class='affect'>This abstract method is from 'KafkaConsumerFactory&lt;K,V&gt;' abstract class.</div>
+<span class='iname_a'>KafkaConsumerFactory&lt;K,V&gt;.createBaseKafkaConfigurations&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'KafkaConsumerFactory&lt;K,V&gt;' abstract class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_184')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> KafkaProducerFactory&lt;K,V&gt; <span class='failed'>&nbsp;2&nbsp;</span></span>
+<br/>
+<div id="c_184" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Field <b>keySerializerClass</b> of type <b>java.lang.String</b> has been removed from this class.</td>
+<td>A client program may be interrupted by <b>NoSuchFieldError</b> exception.</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Field <b>valueSerializerClass</b> of type <b>java.lang.String</b> has been removed from this class.</td>
+<td>A client program may be interrupted by <b>NoSuchFieldError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_185')">
+[+] affected methods: 23 (7.8%)</span>
+<div id="c_185" style="display:none;">
+<div class='affected'><span class='iname_a'>KafkaProducerBundle&lt;K,V,T&gt;.getKafkaProducerFactory&#160;<span class='sym_p'><span>(&#160;T <i>p1</i></span>&#160;)</span></span><br/><div class='affect'>Return value  of this abstract method is of type 'KafkaProducerFactory&lt;K,V&gt;'.</div>
+<span class='iname_a'>KafkaProducerFactory&lt;K,V&gt;.KafkaProducerFactory&lt;K,V&gt;&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'KafkaProducerFactory&lt;K,V&gt;' abstract class.</div>
+<span class='iname_a'>KafkaProducerFactory&lt;K,V&gt;.build&#160;<span class='sym_p'><span>(&#160;LifecycleEnvironment <i>lifecycle</i></span>, <span>HealthCheckRegistry <i>healthChecks</i></span>, <span>Collection&lt;String&gt; <i>rawTopics</i></span>, <span>Tracing <i>tracing</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'KafkaProducerFactory&lt;K,V&gt;' abstract class.</div>
+<span class='iname_a'>KafkaProducerFactory&lt;K,V&gt;.build&#160;<span class='sym_p'><span>(&#160;LifecycleEnvironment <i>p1</i></span>, <span>HealthCheckRegistry <i>p2</i></span>, <span>Collection&lt;String&gt; <i>p3</i></span>, <span>Tracing <i>p4</i></span>, <span>Map&lt;String,Object&gt; <i>p5</i></span>&#160;)</span></span><br/><div class='affect'>This abstract method is from 'KafkaProducerFactory&lt;K,V&gt;' abstract class.</div>
+<span class='iname_a'>KafkaProducerFactory&lt;K,V&gt;.createBaseKafkaConfigurations&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'KafkaProducerFactory&lt;K,V&gt;' abstract class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<br/><span class='jar'>dropwizard-kafka-1.3.12-1.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka.health</span><br/>
+<span class="section" onclick="sC(this, 'c_186')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> KafkaConsumerHealthCheck <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_186" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>A client program may be interrupted by <b>NoClassDefFoundError</b> exception.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_187')">
+[+] affected methods: 2 (0.7%)</span>
+<div id="c_187" style="display:none;">
+<div class='affected'><span class='iname_a'>KafkaConsumerHealthCheck.KafkaConsumerHealthCheck&#160;<span class='sym_p'><span>(&#160;CheckableConsumer <i>consumer</i></span>&#160;)</span></span><br/><div class='affect'>This constructor is from 'KafkaConsumerHealthCheck' class.</div>
+<span class='iname_a'>KafkaConsumerHealthCheck.check&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'KafkaConsumerHealthCheck' class.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Other_Changes'></a><a name='Other_Changes_In_Types'></a>
+<h2>Other Changes in Data Types <span class='passed'>&nbsp;4&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-kafka-1.3.12-1.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.kafka</span><br/>
+<span class="section" onclick="sC(this, 'c_188')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> KafkaConsumerFactory&lt;K,V&gt; <span class='passed'>&nbsp;2&nbsp;</span></span>
+<br/>
+<div id="c_188" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Field <b>keyDeserializer</b> has been added to this class.</td>
+<td>No effect.</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Field <b>valueDeserializer</b> has been added to this class.</td>
+<td>No effect.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_189')">
+[+] affected methods: 20 (6.8%)</span>
+<div id="c_189" style="display:none;">
+<div class='affected'><span class='iname_a'>KafkaConsumerBundle&lt;K,V,T&gt;.getKafkaConsumerFactory&#160;<span class='sym_p'><span>(&#160;T <i>p1</i></span>&#160;)</span></span><br/><div class='affect'>Return value  of this abstract method is of type 'KafkaConsumerFactory&lt;K,V&gt;'.</div>
+<span class='iname_a'>KafkaConsumerFactory&lt;K,V&gt;.KafkaConsumerFactory&lt;K,V&gt;&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'KafkaConsumerFactory&lt;K,V&gt;' abstract class.</div>
+<span class='iname_a'>KafkaConsumerFactory&lt;K,V&gt;.build&#160;<span class='sym_p'><span>(&#160;LifecycleEnvironment <i>lifecycle</i></span>, <span>HealthCheckRegistry <i>healthChecks</i></span>, <span>Tracing <i>tracing</i></span>, <span>ConsumerRebalanceListener <i>rebalanceListener</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'KafkaConsumerFactory&lt;K,V&gt;' abstract class.</div>
+<span class='iname_a'>KafkaConsumerFactory&lt;K,V&gt;.build&#160;<span class='sym_p'><span>(&#160;LifecycleEnvironment <i>p1</i></span>, <span>HealthCheckRegistry <i>p2</i></span>, <span>Tracing <i>p3</i></span>, <span>ConsumerRebalanceListener <i>p4</i></span>, <span>Map&lt;String,Object&gt; <i>p5</i></span>&#160;)</span></span><br/><div class='affect'>This abstract method is from 'KafkaConsumerFactory&lt;K,V&gt;' abstract class.</div>
+<span class='iname_a'>KafkaConsumerFactory&lt;K,V&gt;.createBaseKafkaConfigurations&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'KafkaConsumerFactory&lt;K,V&gt;' abstract class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_190')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> KafkaProducerFactory&lt;K,V&gt; <span class='passed'>&nbsp;2&nbsp;</span></span>
+<br/>
+<div id="c_190" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Field <b>keySerializer</b> has been added to this class.</td>
+<td>No effect.</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Field <b>valueSerializer</b> has been added to this class.</td>
+<td>No effect.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_191')">
+[+] affected methods: 23 (7.8%)</span>
+<div id="c_191" style="display:none;">
+<div class='affected'><span class='iname_a'>KafkaProducerBundle&lt;K,V,T&gt;.getKafkaProducerFactory&#160;<span class='sym_p'><span>(&#160;T <i>p1</i></span>&#160;)</span></span><br/><div class='affect'>Return value  of this abstract method is of type 'KafkaProducerFactory&lt;K,V&gt;'.</div>
+<span class='iname_a'>KafkaProducerFactory&lt;K,V&gt;.KafkaProducerFactory&lt;K,V&gt;&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'KafkaProducerFactory&lt;K,V&gt;' abstract class.</div>
+<span class='iname_a'>KafkaProducerFactory&lt;K,V&gt;.build&#160;<span class='sym_p'><span>(&#160;LifecycleEnvironment <i>lifecycle</i></span>, <span>HealthCheckRegistry <i>healthChecks</i></span>, <span>Collection&lt;String&gt; <i>rawTopics</i></span>, <span>Tracing <i>tracing</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'KafkaProducerFactory&lt;K,V&gt;' abstract class.</div>
+<span class='iname_a'>KafkaProducerFactory&lt;K,V&gt;.build&#160;<span class='sym_p'><span>(&#160;LifecycleEnvironment <i>p1</i></span>, <span>HealthCheckRegistry <i>p2</i></span>, <span>Collection&lt;String&gt; <i>p3</i></span>, <span>Tracing <i>p4</i></span>, <span>Map&lt;String,Object&gt; <i>p5</i></span>&#160;)</span></span><br/><div class='affect'>This abstract method is from 'KafkaProducerFactory&lt;K,V&gt;' abstract class.</div>
+<span class='iname_a'>KafkaProducerFactory&lt;K,V&gt;.createBaseKafkaConfigurations&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'KafkaProducerFactory&lt;K,V&gt;' abstract class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Checked_Archives'></a><h2>Java Archives <span class='gray'>&nbsp;1&nbsp;</span></h2>
+<hr/><div class='jar_list'>
+dropwizard-kafka-1.3.12-1.jar<br/>
+</div><br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<br/><br/><br/>
+<hr/><div class='footer' align='right'><i>Generated by <a href='https://github.com/lvc/japi-compliance-checker'>Java API Compliance Checker</a> 2.4 &#160;</i></div><br/>
+</body></html>

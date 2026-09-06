@@ -1,0 +1,11 @@
+{
+  "Affected": "0.5",
+  "Added": 1,
+  "Removed": 1,
+  "TotalProblems": 0,
+  "Source_Affected": "0.5",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/dropwizard-core/3.0.8/3.0.9/df987/src_compat_report.html",
+  "Archive1": "dropwizard-core-3.0.8.jar",
+  "Archive2": "dropwizard-core-3.0.9.jar"
+}

@@ -1,0 +1,11 @@
+{
+  "Affected": "7.5",
+  "Added": 3,
+  "Removed": 11,
+  "TotalProblems": 7,
+  "Source_Affected": "7.5",
+  "Source_TotalProblems": "7",
+  "Source_ReportPath": "compat_report/dropwizard-jetty/2.1.12/3.0.0/6fc06/src_compat_report.html",
+  "Archive1": "dropwizard-jetty-2.1.12.jar",
+  "Archive2": "dropwizard-jetty-3.0.0.jar"
+}

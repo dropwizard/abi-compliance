@@ -1,0 +1,11 @@
+{
+  "Affected": "0",
+  "Added": 0,
+  "Removed": 0,
+  "TotalProblems": 0,
+  "Source_Affected": "0",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/metrics-jvm/4.2.33/4.2.34/7cc6e/src_compat_report.html",
+  "Archive1": "metrics-jvm-4.2.33.jar",
+  "Archive2": "metrics-jvm-4.2.34.jar"
+}

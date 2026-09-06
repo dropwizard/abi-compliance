@@ -1,0 +1,11 @@
+{
+  "Affected": "0",
+  "Added": 1,
+  "Removed": 0,
+  "TotalProblems": 0,
+  "Source_Affected": "0",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/dropwizard-testing/1.3.25/1.3.26/b249a/src_compat_report.html",
+  "Archive1": "dropwizard-testing-1.3.25.jar",
+  "Archive2": "dropwizard-testing-1.3.26.jar"
+}

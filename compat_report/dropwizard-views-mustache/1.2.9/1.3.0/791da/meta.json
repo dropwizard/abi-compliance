@@ -1,0 +1,11 @@
+{
+  "Affected": "20",
+  "Added": 1,
+  "Removed": 1,
+  "TotalProblems": 0,
+  "Source_Affected": "20",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/dropwizard-views-mustache/1.2.9/1.3.0/791da/src_compat_report.html",
+  "Archive1": "dropwizard-views-mustache-1.2.9.jar",
+  "Archive2": "dropwizard-views-mustache-1.3.0.jar"
+}
