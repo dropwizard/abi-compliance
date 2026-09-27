@@ -1,0 +1,11 @@
+{
+  "Affected": "20",
+  "Added": 1,
+  "Removed": 1,
+  "TotalProblems": 0,
+  "Source_Affected": "20",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/dropwizard-views-freemarker/0.8.0/0.8.1/3cefc/src_compat_report.html",
+  "Archive1": "dropwizard-views-freemarker-0.8.0.jar",
+  "Archive2": "dropwizard-views-freemarker-0.8.1.jar"
+}

@@ -1,0 +1,861 @@
+<!-- kind:source;verdict:incompatible;affected:40.8;added:0;removed:55;type_problems_high:10;type_problems_medium:0;type_problems_low:0;method_problems_high:0;method_problems_medium:0;method_problems_low:0;checked_methods:142;checked_types:19;tool_version:2.4 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="dropwizard-util, source, compatibility" />
+<meta name="description" content="Source compatibility report for the dropwizard-util library between 2.1.12 and 3.0.0 versions" />
+<title>dropwizard-util: 2.1.12 to 3.0.0 source compatibility report</title>
+<style type="text/css">
+body {
+    font-family:Arial, sans-serif;
+    background-color:White;
+    color:Black;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+    white-space:nowrap;
+}
+div.symbols {
+    color:#003E69;
+}
+div.symbols i {
+    color:Brown;
+}
+span.section {
+    font-weight:bold;
+    cursor:pointer;
+    color:#003E69;
+    white-space:nowrap;
+    margin-left:0.3125em;
+}
+span:hover.section {
+    color:#336699;
+}
+span.sect_aff {
+    cursor:pointer;
+    padding-left:1.55em;
+    font-size:0.875em;
+    color:#cc3300;
+}
+span.ext {
+    font-weight:normal;
+}
+span.jar {
+    color:#cc3300;
+    font-size:0.875em;
+    font-weight:bold;
+}
+div.jar_list {
+    padding-left:0.4em;
+    font-size:0.94em;
+}
+span.pkg_t {
+    color:#408080;
+    font-size:0.875em;
+}
+span.pkg {
+    color:#408080;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.cname {
+    color:Green;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.iname_b {
+    font-weight:bold;
+}
+span.iname_a {
+    color:#333333;
+    font-weight:bold;
+    font-size:0.94em;
+}
+span.sym_p {
+    font-weight:normal;
+    white-space:normal;
+}
+span.sym_pd {
+    white-space:normal;
+}
+span.sym_p span, span.sym_pd span {
+    white-space:nowrap;
+}
+span.attr {
+    color:Black;
+    font-weight:normal;
+}
+span.deprecated {
+    color:Red;
+    font-weight:bold;
+    font-family:Monaco, monospace;
+}
+div.affect {
+    padding-left:1em;
+    padding-bottom:10px;
+    font-size:0.87em;
+    font-style:italic;
+    line-height:0.9em;
+}
+div.affected {
+    padding-left:2em;
+    padding-top:10px;
+}
+table.ptable {
+    border-collapse:collapse;
+    border:1px outset black;
+    margin-left:0.95em;
+    margin-top:3px;
+    margin-bottom:3px;
+    width:56.25em;
+}
+table.ptable td {
+    border:1px solid Gray;
+    padding:3px;
+    font-size:0.875em;
+    text-align:left;
+    vertical-align:top;
+    max-width:28em;
+    word-wrap:break-word;
+}
+table.ptable th {
+    background-color:#eeeeee;
+    font-weight:bold;
+    color:#333333;
+    font-family:Verdana, Arial;
+    font-size:0.875em;
+    border:1px solid Gray;
+    text-align:center;
+    vertical-align:top;
+    white-space:nowrap;
+    padding:3px;
+}
+table.summary {
+    border-collapse:collapse;
+    border:1px outset black;
+}
+table.summary th {
+    background-color:#eeeeee;
+    font-weight:normal;
+    text-align:left;
+    font-size:0.94em;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px;
+}
+table.summary td {
+    text-align:right;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px 5px 3px 10px;
+}
+span.mngl {
+    padding-left:1em;
+    font-size:0.875em;
+    cursor:text;
+    color:#444444;
+    font-weight:bold;
+}
+span.pleft {
+    padding-left:2.5em;
+}
+span.color_p {
+    font-style:italic;
+    color:Brown;
+}
+span.param {
+    font-style:italic;
+}
+span.focus_p {
+    font-style:italic;
+    background-color:#DCDCDC;
+}
+span.ttype {
+    font-weight:normal;
+}
+span.nowrap {
+    white-space:nowrap;
+}
+span.value {
+    white-space:nowrap;
+    font-weight:bold;
+}
+.passed {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.warning {
+    background-color:#F4F4AF;
+    font-weight:normal;
+}
+.failed {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.new {
+    background-color:#C6DEFF;
+    font-weight:normal;
+}
+
+.compatible {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.almost_compatible {
+    background-color:#FFDAA3;
+    font-weight:normal;
+}
+.incompatible {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.gray {
+    background-color:#DCDCDC;
+    font-weight:normal;
+}
+
+.top_ref {
+    font-size:0.69em;
+}
+.footer {
+    font-size:0.8125em;
+}
+
+</style>
+<script type="text/javascript" language="JavaScript">
+<!--
+function sC(header, id)
+{
+    e = document.getElementById(id);
+    if(e.style.display == 'none')
+    {
+        e.style.display = 'block';
+        e.style.visibility = 'visible';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[&minus;]");
+    }
+    else
+    {
+        e.style.display = 'none';
+        e.style.visibility = 'hidden';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[+]");
+    }
+}
+
+-->
+</script>
+</head>
+<body><a name='Top'></a><h1>Source compatibility report for the <span style='color:Blue;'>dropwizard-util</span> library between <span style='color:Red;'>2.1.12</span> and <span style='color:Red;'>3.0.0</span> versions</h1>
+
+<h2>Test Info</h2><hr/>
+<table class='summary'>
+<tr><th>Library Name</th><td>dropwizard-util</td></tr>
+<tr><th>Version #1</th><td>2.1.12</td></tr>
+<tr><th>Version #2</th><td>3.0.0</td></tr>
+</table>
+<h2>Test Results</h2><hr/>
+<table class='summary'>
+<tr><th>Total Java Modules</th><td><a href='#Checked_Archives' style='color:Blue;'>1</a></td></tr>
+<tr><th>Total Methods / Classes</th><td>142 / 19</td></tr>
+<tr><th>Compatibility</th>
+<td class='incompatible'>59.2%</td>
+</tr>
+</table>
+<h2>Problem Summary</h2><hr/>
+<table class='summary'>
+<tr><th></th><th style='text-align:center;'>Severity</th><th style='text-align:center;'>Count</th></tr>
+<tr><th>Added Methods</th><td>-</td><td>0</td></tr>
+<tr><th>Removed Methods</th><td>High</td><td class='failed'><a href='#Removed' style='color:Blue;'>55</a></td></tr>
+<tr><th rowspan='3'>Problems with<br/>Data Types</th><td>High</td><td class='failed'><a href='#Type_Problems_High' style='color:Blue;'>10</a></td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+<tr><th rowspan='3'>Problems with<br/>Methods</th><td>High</td><td>0</td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+</table>
+
+<a name='Removed'></a><a name='Withdrawn'></a><h2>Removed Methods <span class='failed'>&nbsp;55&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-util-2.1.12.jar</span>, <span class='cname'>ByteStreams.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.util</span><br/>
+<span class="section" onclick="sC(this, 'c_76')">
+ByteStreams.copy&#160;<span class='sym_p'><span>(&#160;InputStream <span class='color_p'>in</span></span>, <span>OutputStream <span class='color_p'>to</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span> <span class='deprecated'>*DEPRECATED*</span></span>
+<br/>
+<div id="c_76" style="display:none;">
+<span class='mngl'>io/dropwizard/util/ByteStreams.copy:(Ljava/io/InputStream;Ljava/io/OutputStream;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_77')">
+ByteStreams.toByteArray&#160;<span class='sym_p'><span>(&#160;InputStream <span class='color_p'>in</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;byte[&#160;]</span> <span class='deprecated'>*DEPRECATED*</span></span>
+<br/>
+<div id="c_77" style="display:none;">
+<span class='mngl'>io/dropwizard/util/ByteStreams.toByteArray:(Ljava/io/InputStream;)[B</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-util-2.1.12.jar</span>, <span class='cname'>CharStreams.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.util</span><br/>
+<span class="section" onclick="sC(this, 'c_78')">
+CharStreams.toString&#160;<span class='sym_p'><span>(&#160;Reader <span class='color_p'>reader</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_78" style="display:none;">
+<span class='mngl'>io/dropwizard/util/CharStreams.toString:(Ljava/io/Reader;)Ljava/lang/String;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-util-2.1.12.jar</span>, <span class='cname'>DataSize.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.util</span><br/>
+<span class="section" onclick="sC(this, 'c_79')">
+DataSize.fromSize&#160;<span class='sym_p'><span>(&#160;Size <span class='color_p'>size</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;DataSize</span> <span class='deprecated'>*DEPRECATED*</span></span>
+<br/>
+<div id="c_79" style="display:none;">
+<span class='mngl'>io/dropwizard/util/DataSize.fromSize:(Lio/dropwizard/util/Size;)Lio/dropwizard/util/DataSize;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_80')">
+DataSize.toSize&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Size</span> <span class='deprecated'>*DEPRECATED*</span></span>
+<br/>
+<div id="c_80" style="display:none;">
+<span class='mngl'>io/dropwizard/util/DataSize.toSize:()Lio/dropwizard/util/Size;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-util-2.1.12.jar</span>, <span class='cname'>JavaVersion.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.util</span><br/>
+<span class="section" onclick="sC(this, 'c_81')">
+JavaVersion.isJava8&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_81" style="display:none;">
+<span class='mngl'>io/dropwizard/util/JavaVersion.isJava8:()Z</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-util-2.1.12.jar</span>, <span class='cname'>Lists.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.util</span><br/>
+<span class="section" onclick="sC(this, 'c_82')">
+Lists.of&#160;<span class='sym_p'><span>(&#160;Iterable&lt;T&gt; <span class='color_p'>elements</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;List&lt;T&gt;</span></span>
+<br/>
+<div id="c_82" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Lists.of:(Ljava/lang/Iterable;)Ljava/util/List;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_83')">
+Lists.of&#160;<span class='sym_p'><span>(&#160;Iterator&lt;T&gt; <span class='color_p'>it</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;List&lt;T&gt;</span></span>
+<br/>
+<div id="c_83" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Lists.of:(Ljava/util/Iterator;)Ljava/util/List;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-util-2.1.12.jar</span>, <span class='cname'>Maps.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.util</span><br/>
+<span class="section" onclick="sC(this, 'c_84')">
+Maps.of&#160;<span class='sym_p'><span>(&#160;K <span class='color_p'>k1</span></span>, <span>V <span class='color_p'>v1</span></span>, <span>K <span class='color_p'>k2</span></span>, <span>V <span class='color_p'>v2</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map&lt;K,V&gt;</span></span>
+<br/>
+<div id="c_84" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Maps.of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_85')">
+Maps.of&#160;<span class='sym_p'><span>(&#160;K <span class='color_p'>k1</span></span>, <span>V <span class='color_p'>v1</span></span>, <span>K <span class='color_p'>k2</span></span>, <span>V <span class='color_p'>v2</span></span>, <span>K <span class='color_p'>k3</span></span>, <span>V <span class='color_p'>v3</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map&lt;K,V&gt;</span></span>
+<br/>
+<div id="c_85" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Maps.of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_86')">
+Maps.of&#160;<span class='sym_p'><span>(&#160;K <span class='color_p'>k1</span></span>, <span>V <span class='color_p'>v1</span></span>, <span>K <span class='color_p'>k2</span></span>, <span>V <span class='color_p'>v2</span></span>, <span>K <span class='color_p'>k3</span></span>, <span>V <span class='color_p'>v3</span></span>, <span>K <span class='color_p'>k4</span></span>, <span>V <span class='color_p'>v4</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map&lt;K,V&gt;</span></span>
+<br/>
+<div id="c_86" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Maps.of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_87')">
+Maps.of&#160;<span class='sym_p'><span>(&#160;K <span class='color_p'>k1</span></span>, <span>V <span class='color_p'>v1</span></span>, <span>K <span class='color_p'>k2</span></span>, <span>V <span class='color_p'>v2</span></span>, <span>K <span class='color_p'>k3</span></span>, <span>V <span class='color_p'>v3</span></span>, <span>K <span class='color_p'>k4</span></span>, <span>V <span class='color_p'>v4</span></span>, <span>K <span class='color_p'>k5</span></span>, <span>V <span class='color_p'>v5</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map&lt;K,V&gt;</span></span>
+<br/>
+<div id="c_87" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Maps.of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-util-2.1.12.jar</span>, <span class='cname'>Optionals.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.util</span><br/>
+<span class="section" onclick="sC(this, 'c_88')">
+Optionals.fromGuavaOptional&#160;<span class='sym_p'><span>(&#160;Optional&lt;T&gt; <span class='color_p'>guavaOptional</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Optional&lt;T&gt;</span></span>
+<br/>
+<div id="c_88" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Optionals.fromGuavaOptional:(Lcom/google/common/base/Optional;)Ljava/util/Optional;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_89')">
+Optionals.Optionals&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_89" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Optionals.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_90')">
+Optionals.toGuavaOptional&#160;<span class='sym_p'><span>(&#160;Optional&lt;T&gt; <span class='color_p'>optional</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Optional&lt;T&gt;</span></span>
+<br/>
+<div id="c_90" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Optionals.toGuavaOptional:(Ljava/util/Optional;)Lcom/google/common/base/Optional;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-util-2.1.12.jar</span>, <span class='cname'>Resources.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.util</span><br/>
+<span class="section" onclick="sC(this, 'c_91')">
+Resources.copy&#160;<span class='sym_p'><span>(&#160;URL <span class='color_p'>from</span></span>, <span>OutputStream <span class='color_p'>to</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span> <span class='deprecated'>*DEPRECATED*</span></span>
+<br/>
+<div id="c_91" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Resources.copy:(Ljava/net/URL;Ljava/io/OutputStream;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_92')">
+Resources.toByteArray&#160;<span class='sym_p'><span>(&#160;URL <span class='color_p'>url</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;byte[&#160;]</span> <span class='deprecated'>*DEPRECATED*</span></span>
+<br/>
+<div id="c_92" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Resources.toByteArray:(Ljava/net/URL;)[B</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_93')">
+Resources.toString&#160;<span class='sym_p'><span>(&#160;URL <span class='color_p'>url</span></span>, <span>Charset <span class='color_p'>charset</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span> <span class='deprecated'>*DEPRECATED*</span></span>
+<br/>
+<div id="c_93" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Resources.toString:(Ljava/net/URL;Ljava/nio/charset/Charset;)Ljava/lang/String;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-util-2.1.12.jar</span>, <span class='cname'>Sets.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.util</span><br/>
+<span class="section" onclick="sC(this, 'c_94')">
+Sets.of&#160;<span class='sym_p'><span>(&#160;Iterable&lt;T&gt; <span class='color_p'>elements</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;T&gt;</span></span>
+<br/>
+<div id="c_94" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Sets.of:(Ljava/lang/Iterable;)Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_95')">
+Sets.of&#160;<span class='sym_p'><span>(&#160;T <span class='color_p'>e1</span></span>, <span>T <span class='color_p'>e2</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;T&gt;</span></span>
+<br/>
+<div id="c_95" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Sets.of:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_96')">
+Sets.of&#160;<span class='sym_p'><span>(&#160;T <span class='color_p'>e1</span></span>, <span>T <span class='color_p'>e2</span></span>, <span>T <span class='color_p'>e3</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;T&gt;</span></span>
+<br/>
+<div id="c_96" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Sets.of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_97')">
+Sets.of&#160;<span class='sym_p'><span>(&#160;T <span class='color_p'>e1</span></span>, <span>T <span class='color_p'>e2</span></span>, <span>T <span class='color_p'>e3</span></span>, <span>T <span class='color_p'>e4</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;T&gt;</span></span>
+<br/>
+<div id="c_97" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Sets.of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_98')">
+Sets.of&#160;<span class='sym_p'><span>(&#160;T <span class='color_p'>e1</span></span>, <span>T <span class='color_p'>e2</span></span>, <span>T <span class='color_p'>e3</span></span>, <span>T <span class='color_p'>e4</span></span>, <span>T <span class='color_p'>e5</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;T&gt;</span></span>
+<br/>
+<div id="c_98" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Sets.of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_99')">
+Sets.of&#160;<span class='sym_p'><span>(&#160;T... <span class='color_p'>elements</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set&lt;T&gt;</span></span>
+<br/>
+<div id="c_99" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Sets.of:([Ljava/lang/Object;)Ljava/util/Set;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-util-2.1.12.jar</span>, <span class='cname'>Size.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.util</span><br/>
+<span class="section" onclick="sC(this, 'c_100')">
+Size.bytes&#160;<span class='sym_p'><span>(&#160;long <span class='color_p'>count</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Size</span></span>
+<br/>
+<div id="c_100" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Size.bytes:(J)Lio/dropwizard/util/Size;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_101')">
+Size.compareTo&#160;<span class='sym_p'><span>(&#160;Object <span class='color_p'>p1</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_101" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Size.compareTo:(Ljava/lang/Object;)I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_102')">
+Size.compareTo&#160;<span class='sym_p'><span>(&#160;Size <span class='color_p'>other</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;int</span></span>
+<br/>
+<div id="c_102" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Size.compareTo:(Lio/dropwizard/util/Size;)I</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_103')">
+Size.fromDataSize&#160;<span class='sym_p'><span>(&#160;DataSize <span class='color_p'>dataSize</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Size</span></span>
+<br/>
+<div id="c_103" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Size.fromDataSize:(Lio/dropwizard/util/DataSize;)Lio/dropwizard/util/Size;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_104')">
+Size.getQuantity&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_104" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Size.getQuantity:()J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_105')">
+Size.getUnit&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;SizeUnit</span></span>
+<br/>
+<div id="c_105" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Size.getUnit:()Lio/dropwizard/util/SizeUnit;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_106')">
+Size.gigabytes&#160;<span class='sym_p'><span>(&#160;long <span class='color_p'>count</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Size</span></span>
+<br/>
+<div id="c_106" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Size.gigabytes:(J)Lio/dropwizard/util/Size;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_107')">
+Size.kilobytes&#160;<span class='sym_p'><span>(&#160;long <span class='color_p'>count</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Size</span></span>
+<br/>
+<div id="c_107" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Size.kilobytes:(J)Lio/dropwizard/util/Size;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_108')">
+Size.megabytes&#160;<span class='sym_p'><span>(&#160;long <span class='color_p'>count</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Size</span></span>
+<br/>
+<div id="c_108" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Size.megabytes:(J)Lio/dropwizard/util/Size;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_109')">
+Size.parse&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>size</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Size</span></span>
+<br/>
+<div id="c_109" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Size.parse:(Ljava/lang/String;)Lio/dropwizard/util/Size;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_110')">
+Size.terabytes&#160;<span class='sym_p'><span>(&#160;long <span class='color_p'>count</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Size</span></span>
+<br/>
+<div id="c_110" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Size.terabytes:(J)Lio/dropwizard/util/Size;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_111')">
+Size.toBytes&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_111" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Size.toBytes:()J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_112')">
+Size.toDataSize&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;DataSize</span></span>
+<br/>
+<div id="c_112" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Size.toDataSize:()Lio/dropwizard/util/DataSize;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_113')">
+Size.toGigabytes&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_113" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Size.toGigabytes:()J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_114')">
+Size.toKilobytes&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_114" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Size.toKilobytes:()J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_115')">
+Size.toMegabytes&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_115" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Size.toMegabytes:()J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_116')">
+Size.toTerabytes&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_116" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Size.toTerabytes:()J</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-util-2.1.12.jar</span>, <span class='cname'>SizeUnit.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.util</span><br/>
+<span class="section" onclick="sC(this, 'c_117')">
+SizeUnit.convert&#160;<span class='sym_p'><span>(&#160;long <span class='color_p'>size</span></span>, <span>SizeUnit <span class='color_p'>unit</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_117" style="display:none;">
+<span class='mngl'>io/dropwizard/util/SizeUnit.convert:(JLio/dropwizard/util/SizeUnit;)J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_118')">
+SizeUnit.toBytes&#160;<span class='sym_p'><span>(&#160;long <span class='color_p'>l</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_118" style="display:none;">
+<span class='mngl'>io/dropwizard/util/SizeUnit.toBytes:(J)J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_119')">
+SizeUnit.toDataSizeUnit&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;DataSizeUnit</span></span>
+<br/>
+<div id="c_119" style="display:none;">
+<span class='mngl'>io/dropwizard/util/SizeUnit.toDataSizeUnit:()Lio/dropwizard/util/DataSizeUnit;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_120')">
+SizeUnit.toGigabytes&#160;<span class='sym_p'><span>(&#160;long <span class='color_p'>l</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_120" style="display:none;">
+<span class='mngl'>io/dropwizard/util/SizeUnit.toGigabytes:(J)J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_121')">
+SizeUnit.toKilobytes&#160;<span class='sym_p'><span>(&#160;long <span class='color_p'>l</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_121" style="display:none;">
+<span class='mngl'>io/dropwizard/util/SizeUnit.toKilobytes:(J)J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_122')">
+SizeUnit.toMegabytes&#160;<span class='sym_p'><span>(&#160;long <span class='color_p'>l</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_122" style="display:none;">
+<span class='mngl'>io/dropwizard/util/SizeUnit.toMegabytes:(J)J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_123')">
+SizeUnit.toTerabytes&#160;<span class='sym_p'><span>(&#160;long <span class='color_p'>l</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;long</span></span>
+<br/>
+<div id="c_123" style="display:none;">
+<span class='mngl'>io/dropwizard/util/SizeUnit.toTerabytes:(J)J</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_124')">
+SizeUnit.valueOf&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;SizeUnit</span></span>
+<br/>
+<div id="c_124" style="display:none;">
+<span class='mngl'>io/dropwizard/util/SizeUnit.valueOf:(Ljava/lang/String;)Lio/dropwizard/util/SizeUnit;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_125')">
+SizeUnit.values&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;SizeUnit[&#160;]</span></span>
+<br/>
+<div id="c_125" style="display:none;">
+<span class='mngl'>io/dropwizard/util/SizeUnit.values:()[Lio/dropwizard/util/SizeUnit;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-util-2.1.12.jar</span>, <span class='cname'>Strings.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.util</span><br/>
+<span class="section" onclick="sC(this, 'c_126')">
+Strings.emptyToNull&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>string</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_126" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Strings.emptyToNull:(Ljava/lang/String;)Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_127')">
+Strings.isNullOrEmpty&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>string</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_127" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Strings.isNullOrEmpty:(Ljava/lang/String;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_128')">
+Strings.nullToEmpty&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>string</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_128" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Strings.nullToEmpty:(Ljava/lang/String;)Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_129')">
+Strings.repeat&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>string</span></span>, <span>int <span class='color_p'>count</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_129" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Strings.repeat:(Ljava/lang/String;I)Ljava/lang/String;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-util-2.1.12.jar</span>, <span class='cname'>Throwables.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.util</span><br/>
+<span class="section" onclick="sC(this, 'c_130')">
+Throwables.getRootCause&#160;<span class='sym_p'><span>(&#160;Throwable <span class='color_p'>throwable</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Throwable</span> <span class='deprecated'>*DEPRECATED*</span></span>
+<br/>
+<div id="c_130" style="display:none;">
+<span class='mngl'>io/dropwizard/util/Throwables.getRootCause:(Ljava/lang/Throwable;)Ljava/lang/Throwable;</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='High_Risk_Problems'></a><a name='Type_Problems_High'></a>
+<h2>Problems with Data Types, High Severity <span class='failed'>&nbsp;10&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-util-2.1.12.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.util</span><br/>
+<span class="section" onclick="sC(this, 'c_131')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> ByteStreams <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_131" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>ByteStreams</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_132')">
+[+] affected methods: 2 (1.4%)</span>
+<div id="c_132" style="display:none;">
+<div class='affected'><span class='iname_a'>ByteStreams.copy&#160;<span class='sym_p'><span>(&#160;InputStream <i>in</i></span>, <span>OutputStream <i>to</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ByteStreams' class.</div>
+<span class='iname_a'>ByteStreams.toByteArray&#160;<span class='sym_p'><span>(&#160;InputStream <i>in</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'ByteStreams' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_133')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> CharStreams <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_133" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>CharStreams</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_134')">
+[+] affected methods: 1 (0.7%)</span>
+<div id="c_134" style="display:none;">
+<div class='affected'><span class='iname_a'>CharStreams.toString&#160;<span class='sym_p'><span>(&#160;Reader <i>reader</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'CharStreams' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_135')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> JavaVersion <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_135" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>JavaVersion</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_136')">
+[+] affected methods: 1 (0.7%)</span>
+<div id="c_136" style="display:none;">
+<div class='affected'><span class='iname_a'>JavaVersion.isJava8&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'JavaVersion' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_137')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> Lists <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_137" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>Lists</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_138')">
+[+] affected methods: 2 (1.4%)</span>
+<div id="c_138" style="display:none;">
+<div class='affected'><span class='iname_a'>Lists.of&#160;<span class='sym_p'><span>(&#160;Iterable&lt;T&gt; <i>elements</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'Lists' class.</div>
+<span class='iname_a'>Lists.of&#160;<span class='sym_p'><span>(&#160;Iterator&lt;T&gt; <i>it</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'Lists' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_139')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> Maps <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_139" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>Maps</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_140')">
+[+] affected methods: 4 (2.8%)</span>
+<div id="c_140" style="display:none;">
+<div class='affected'><span class='iname_a'>Maps.of&#160;<span class='sym_p'><span>(&#160;K <i>k1</i></span>, <span>V <i>v1</i></span>, <span>K <i>k2</i></span>, <span>V <i>v2</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'Maps' class.</div>
+<span class='iname_a'>Maps.of&#160;<span class='sym_p'><span>(&#160;K <i>k1</i></span>, <span>V <i>v1</i></span>, <span>K <i>k2</i></span>, <span>V <i>v2</i></span>, <span>K <i>k3</i></span>, <span>V <i>v3</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'Maps' class.</div>
+<span class='iname_a'>Maps.of&#160;<span class='sym_p'><span>(&#160;K <i>k1</i></span>, <span>V <i>v1</i></span>, <span>K <i>k2</i></span>, <span>V <i>v2</i></span>, <span>K <i>k3</i></span>, <span>V <i>v3</i></span>, <span>K <i>k4</i></span>, <span>V <i>v4</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'Maps' class.</div>
+<span class='iname_a'>Maps.of&#160;<span class='sym_p'><span>(&#160;K <i>k1</i></span>, <span>V <i>v1</i></span>, <span>K <i>k2</i></span>, <span>V <i>v2</i></span>, <span>K <i>k3</i></span>, <span>V <i>v3</i></span>, <span>K <i>k4</i></span>, <span>V <i>v4</i></span>, <span>K <i>k5</i></span>, <span>V <i>v5</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'Maps' class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_141')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> Optionals <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_141" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>Optionals</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_142')">
+[+] affected methods: 3 (2.1%)</span>
+<div id="c_142" style="display:none;">
+<div class='affected'><span class='iname_a'>Optionals.Optionals&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This constructor is from 'Optionals' abstract class.</div>
+<span class='iname_a'>Optionals.fromGuavaOptional&#160;<span class='sym_p'><span>(&#160;Optional&lt;T&gt; <i>guavaOptional</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'Optionals' abstract class.</div>
+<span class='iname_a'>Optionals.toGuavaOptional&#160;<span class='sym_p'><span>(&#160;Optional&lt;T&gt; <i>optional</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'Optionals' abstract class.</div>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_143')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> Sets <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_143" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>Sets</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_144')">
+[+] affected methods: 6 (4.2%)</span>
+<div id="c_144" style="display:none;">
+<div class='affected'><span class='iname_a'>Sets.of&#160;<span class='sym_p'><span>(&#160;T... <i>elements</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'Sets' class.</div>
+<span class='iname_a'>Sets.of&#160;<span class='sym_p'><span>(&#160;Iterable&lt;T&gt; <i>elements</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'Sets' class.</div>
+<span class='iname_a'>Sets.of&#160;<span class='sym_p'><span>(&#160;T <i>e1</i></span>, <span>T <i>e2</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'Sets' class.</div>
+<span class='iname_a'>Sets.of&#160;<span class='sym_p'><span>(&#160;T <i>e1</i></span>, <span>T <i>e2</i></span>, <span>T <i>e3</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'Sets' class.</div>
+<span class='iname_a'>Sets.of&#160;<span class='sym_p'><span>(&#160;T <i>e1</i></span>, <span>T <i>e2</i></span>, <span>T <i>e3</i></span>, <span>T <i>e4</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'Sets' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_145')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> Size <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_145" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>Size</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_146')">
+[+] affected methods: 20 (14.1%)</span>
+<div id="c_146" style="display:none;">
+<div class='affected'><span class='iname_a'>Size.bytes&#160;<span class='sym_p'><span>(&#160;long <i>count</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'Size' class.</div>
+<span class='iname_a'>Size.compareTo&#160;<span class='sym_p'><span>(&#160;Size <i>other</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'Size' class.</div>
+<span class='iname_a'>Size.compareTo&#160;<span class='sym_p'><span>(&#160;Object <i>p1</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'Size' class.</div>
+<span class='iname_a'>Size.equals&#160;<span class='sym_p'><span>(&#160;Object <i>obj</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'Size' class.</div>
+<span class='iname_a'>Size.fromDataSize&#160;<span class='sym_p'><span>(&#160;DataSize <i>dataSize</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'Size' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_147')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> SizeUnit <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_147" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>SizeUnit</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_148')">
+[+] affected methods: 9 (6.3%)</span>
+<div id="c_148" style="display:none;">
+<div class='affected'><span class='iname_a'>SizeUnit.convert&#160;<span class='sym_p'><span>(&#160;long <i>size</i></span>, <span>SizeUnit <i>unit</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'SizeUnit' class.</div>
+<span class='iname_a'>SizeUnit.toBytes&#160;<span class='sym_p'><span>(&#160;long <i>l</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'SizeUnit' class.</div>
+<span class='iname_a'>SizeUnit.toDataSizeUnit&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>This method is from 'SizeUnit' class.</div>
+<span class='iname_a'>SizeUnit.toGigabytes&#160;<span class='sym_p'><span>(&#160;long <i>l</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'SizeUnit' class.</div>
+<span class='iname_a'>SizeUnit.toKilobytes&#160;<span class='sym_p'><span>(&#160;long <i>l</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'SizeUnit' class.</div>
+ <b>...</b>
+<br/>
+</div></div>
+<br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_149')">
+<span class='ext'>[+]</span> <span class='ttype'>class</span> Strings <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_149" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>This class has been removed.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot find class <b>Strings</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_150')">
+[+] affected methods: 4 (2.8%)</span>
+<div id="c_150" style="display:none;">
+<div class='affected'><span class='iname_a'>Strings.emptyToNull&#160;<span class='sym_p'><span>(&#160;String <i>string</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'Strings' class.</div>
+<span class='iname_a'>Strings.isNullOrEmpty&#160;<span class='sym_p'><span>(&#160;String <i>string</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'Strings' class.</div>
+<span class='iname_a'>Strings.nullToEmpty&#160;<span class='sym_p'><span>(&#160;String <i>string</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'Strings' class.</div>
+<span class='iname_a'>Strings.repeat&#160;<span class='sym_p'><span>(&#160;String <i>string</i></span>, <span>int <i>count</i></span>&#160;)</span></span><br/><div class='affect'>This method is from 'Strings' class.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Checked_Archives'></a><h2>Java Archives <span class='gray'>&nbsp;1&nbsp;</span></h2>
+<hr/><div class='jar_list'>
+dropwizard-util-2.1.12.jar<br/>
+</div><br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<br/><br/><br/>
+<hr/><div class='footer' align='right'><i>Generated by <a href='https://github.com/lvc/japi-compliance-checker'>Java API Compliance Checker</a> 2.4 &#160;</i></div><br/>
+</body></html>

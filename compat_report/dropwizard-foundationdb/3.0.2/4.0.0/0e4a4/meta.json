@@ -1,0 +1,11 @@
+{
+  "Affected": "2.2",
+  "Added": 0,
+  "Removed": 3,
+  "TotalProblems": 0,
+  "Source_Affected": "2.2",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/dropwizard-foundationdb/3.0.2/4.0.0/0e4a4/src_compat_report.html",
+  "Archive1": "dropwizard-foundationdb-3.0.2.jar",
+  "Archive2": "dropwizard-foundationdb-4.0.0.jar"
+}

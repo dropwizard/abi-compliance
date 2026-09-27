@@ -1,0 +1,11 @@
+{
+  "Affected": "1.7",
+  "Added": 23,
+  "Removed": 0,
+  "TotalProblems": 1,
+  "Source_Affected": "3.4",
+  "Source_TotalProblems": "1",
+  "Source_ReportPath": "compat_report/dropwizard-health/1.6.0/1.7.1/130c3/src_compat_report.html",
+  "Archive1": "dropwizard-health-1.6.0.jar",
+  "Archive2": "dropwizard-health-1.7.1.jar"
+}
