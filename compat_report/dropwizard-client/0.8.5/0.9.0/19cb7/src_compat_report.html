@@ -1,0 +1,691 @@
+<!-- kind:source;verdict:incompatible;affected:0.6;added:59;removed:0;type_problems_high:0;type_problems_medium:0;type_problems_low:0;method_problems_high:0;method_problems_medium:1;method_problems_low:0;checked_methods:139;checked_types:12;tool_version:2.4 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="dropwizard-client, source, compatibility" />
+<meta name="description" content="Source compatibility report for the dropwizard-client library between 0.8.5 and 0.9.0 versions" />
+<title>dropwizard-client: 0.8.5 to 0.9.0 source compatibility report</title>
+<style type="text/css">
+body {
+    font-family:Arial, sans-serif;
+    background-color:White;
+    color:Black;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+    white-space:nowrap;
+}
+div.symbols {
+    color:#003E69;
+}
+div.symbols i {
+    color:Brown;
+}
+span.section {
+    font-weight:bold;
+    cursor:pointer;
+    color:#003E69;
+    white-space:nowrap;
+    margin-left:0.3125em;
+}
+span:hover.section {
+    color:#336699;
+}
+span.sect_aff {
+    cursor:pointer;
+    padding-left:1.55em;
+    font-size:0.875em;
+    color:#cc3300;
+}
+span.ext {
+    font-weight:normal;
+}
+span.jar {
+    color:#cc3300;
+    font-size:0.875em;
+    font-weight:bold;
+}
+div.jar_list {
+    padding-left:0.4em;
+    font-size:0.94em;
+}
+span.pkg_t {
+    color:#408080;
+    font-size:0.875em;
+}
+span.pkg {
+    color:#408080;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.cname {
+    color:Green;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.iname_b {
+    font-weight:bold;
+}
+span.iname_a {
+    color:#333333;
+    font-weight:bold;
+    font-size:0.94em;
+}
+span.sym_p {
+    font-weight:normal;
+    white-space:normal;
+}
+span.sym_pd {
+    white-space:normal;
+}
+span.sym_p span, span.sym_pd span {
+    white-space:nowrap;
+}
+span.attr {
+    color:Black;
+    font-weight:normal;
+}
+span.deprecated {
+    color:Red;
+    font-weight:bold;
+    font-family:Monaco, monospace;
+}
+div.affect {
+    padding-left:1em;
+    padding-bottom:10px;
+    font-size:0.87em;
+    font-style:italic;
+    line-height:0.9em;
+}
+div.affected {
+    padding-left:2em;
+    padding-top:10px;
+}
+table.ptable {
+    border-collapse:collapse;
+    border:1px outset black;
+    margin-left:0.95em;
+    margin-top:3px;
+    margin-bottom:3px;
+    width:56.25em;
+}
+table.ptable td {
+    border:1px solid Gray;
+    padding:3px;
+    font-size:0.875em;
+    text-align:left;
+    vertical-align:top;
+    max-width:28em;
+    word-wrap:break-word;
+}
+table.ptable th {
+    background-color:#eeeeee;
+    font-weight:bold;
+    color:#333333;
+    font-family:Verdana, Arial;
+    font-size:0.875em;
+    border:1px solid Gray;
+    text-align:center;
+    vertical-align:top;
+    white-space:nowrap;
+    padding:3px;
+}
+table.summary {
+    border-collapse:collapse;
+    border:1px outset black;
+}
+table.summary th {
+    background-color:#eeeeee;
+    font-weight:normal;
+    text-align:left;
+    font-size:0.94em;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px;
+}
+table.summary td {
+    text-align:right;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px 5px 3px 10px;
+}
+span.mngl {
+    padding-left:1em;
+    font-size:0.875em;
+    cursor:text;
+    color:#444444;
+    font-weight:bold;
+}
+span.pleft {
+    padding-left:2.5em;
+}
+span.color_p {
+    font-style:italic;
+    color:Brown;
+}
+span.param {
+    font-style:italic;
+}
+span.focus_p {
+    font-style:italic;
+    background-color:#DCDCDC;
+}
+span.ttype {
+    font-weight:normal;
+}
+span.nowrap {
+    white-space:nowrap;
+}
+span.value {
+    white-space:nowrap;
+    font-weight:bold;
+}
+.passed {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.warning {
+    background-color:#F4F4AF;
+    font-weight:normal;
+}
+.failed {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.new {
+    background-color:#C6DEFF;
+    font-weight:normal;
+}
+
+.compatible {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.almost_compatible {
+    background-color:#FFDAA3;
+    font-weight:normal;
+}
+.incompatible {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.gray {
+    background-color:#DCDCDC;
+    font-weight:normal;
+}
+
+.top_ref {
+    font-size:0.69em;
+}
+.footer {
+    font-size:0.8125em;
+}
+
+</style>
+<script type="text/javascript" language="JavaScript">
+<!--
+function sC(header, id)
+{
+    e = document.getElementById(id);
+    if(e.style.display == 'none')
+    {
+        e.style.display = 'block';
+        e.style.visibility = 'visible';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[&minus;]");
+    }
+    else
+    {
+        e.style.display = 'none';
+        e.style.visibility = 'hidden';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[+]");
+    }
+}
+
+-->
+</script>
+</head>
+<body><a name='Top'></a><h1>Source compatibility report for the <span style='color:Blue;'>dropwizard-client</span> library between <span style='color:Red;'>0.8.5</span> and <span style='color:Red;'>0.9.0</span> versions</h1>
+
+<h2>Test Info</h2><hr/>
+<table class='summary'>
+<tr><th>Library Name</th><td>dropwizard-client</td></tr>
+<tr><th>Version #1</th><td>0.8.5</td></tr>
+<tr><th>Version #2</th><td>0.9.0</td></tr>
+</table>
+<h2>Test Results</h2><hr/>
+<table class='summary'>
+<tr><th>Total Java Modules</th><td><a href='#Checked_Archives' style='color:Blue;'>1</a></td></tr>
+<tr><th>Total Methods / Classes</th><td>139 / 12</td></tr>
+<tr><th>Compatibility</th>
+<td class='warning'>99.4%</td>
+</tr>
+</table>
+<h2>Problem Summary</h2><hr/>
+<table class='summary'>
+<tr><th></th><th style='text-align:center;'>Severity</th><th style='text-align:center;'>Count</th></tr>
+<tr><th>Added Methods</th><td>-</td><td class='new'><a href='#Added' style='color:Blue;'>59</a></td></tr>
+<tr><th>Removed Methods</th><td>High</td><td>0</td></tr>
+<tr><th rowspan='3'>Problems with<br/>Data Types</th><td>High</td><td>0</td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+<tr><th rowspan='3'>Problems with<br/>Methods</th><td>High</td><td>0</td></tr>
+<tr><td>Medium</td><td class='failed'><a href='#Method_Problems_Medium' style='color:Blue;'>1</a></td></tr>
+<tr><td>Low</td><td>0</td></tr>
+</table>
+
+<a name='Added'></a><h2>Added Methods <span class='new'>&nbsp;59&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-client-0.9.0.jar</span>, <span class='cname'>AuthConfiguration.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.client.proxy</span><br/>
+<span class="section" onclick="sC(this, 'c_61')">
+AuthConfiguration.AuthConfiguration&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_61" style="display:none;">
+<span class='mngl'>io/dropwizard/client/proxy/AuthConfiguration.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_62')">
+AuthConfiguration.AuthConfiguration&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>username</span></span>, <span>String <span class='color_p'>password</span></span>&#160;)</span></span>
+<br/>
+<div id="c_62" style="display:none;">
+<span class='mngl'>io/dropwizard/client/proxy/AuthConfiguration.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_63')">
+AuthConfiguration.getPassword&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_63" style="display:none;">
+<span class='mngl'>io/dropwizard/client/proxy/AuthConfiguration.getPassword:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_64')">
+AuthConfiguration.getUsername&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_64" style="display:none;">
+<span class='mngl'>io/dropwizard/client/proxy/AuthConfiguration.getUsername:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_65')">
+AuthConfiguration.setPassword&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>password</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_65" style="display:none;">
+<span class='mngl'>io/dropwizard/client/proxy/AuthConfiguration.setPassword:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_66')">
+AuthConfiguration.setUsername&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>username</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_66" style="display:none;">
+<span class='mngl'>io/dropwizard/client/proxy/AuthConfiguration.setUsername:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-client-0.9.0.jar</span>, <span class='cname'>DropwizardSSLConnectionSocketFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.client</span><br/>
+<span class="section" onclick="sC(this, 'c_67')">
+DropwizardSSLConnectionSocketFactory.DropwizardSSLConnectionSocketFactory&#160;<span class='sym_p'><span>(&#160;TlsConfiguration <span class='color_p'>configuration</span></span>&#160;)</span></span>
+<br/>
+<div id="c_67" style="display:none;">
+<span class='mngl'>io/dropwizard/client/DropwizardSSLConnectionSocketFactory.&quot;&lt;init&gt;&quot;:(Lio/dropwizard/client/ssl/TlsConfiguration;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_68')">
+DropwizardSSLConnectionSocketFactory.getSocketFactory&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;SSLConnectionSocketFactory</span></span>
+<br/>
+<div id="c_68" style="display:none;">
+<span class='mngl'>io/dropwizard/client/DropwizardSSLConnectionSocketFactory.getSocketFactory:()Lorg/apache/http/conn/ssl/SSLConnectionSocketFactory;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-client-0.9.0.jar</span>, <span class='cname'>HttpClientBuilder.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.client</span><br/>
+<span class="section" onclick="sC(this, 'c_69')">
+HttpClientBuilder.disableContentCompression&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>disableContentCompression</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HttpClientBuilder</span></span>
+<br/>
+<div id="c_69" style="display:none;">
+<span class='mngl'>io/dropwizard/client/HttpClientBuilder.disableContentCompression:(Z)Lio/dropwizard/client/HttpClientBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_70')">
+HttpClientBuilder.using&#160;<span class='sym_p'><span>(&#160;RedirectStrategy <span class='color_p'>redirectStrategy</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HttpClientBuilder</span></span>
+<br/>
+<div id="c_70" style="display:none;">
+<span class='mngl'>io/dropwizard/client/HttpClientBuilder.using:(Lorg/apache/http/client/RedirectStrategy;)Lio/dropwizard/client/HttpClientBuilder;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-client-0.9.0.jar</span>, <span class='cname'>HttpClientConfiguration.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.client</span><br/>
+<span class="section" onclick="sC(this, 'c_71')">
+HttpClientConfiguration.getProxyConfiguration&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ProxyConfiguration</span></span>
+<br/>
+<div id="c_71" style="display:none;">
+<span class='mngl'>io/dropwizard/client/HttpClientConfiguration.getProxyConfiguration:()Lio/dropwizard/client/proxy/ProxyConfiguration;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_72')">
+HttpClientConfiguration.getTlsConfiguration&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;TlsConfiguration</span></span>
+<br/>
+<div id="c_72" style="display:none;">
+<span class='mngl'>io/dropwizard/client/HttpClientConfiguration.getTlsConfiguration:()Lio/dropwizard/client/ssl/TlsConfiguration;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_73')">
+HttpClientConfiguration.getValidateAfterInactivityPeriod&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Duration</span></span>
+<br/>
+<div id="c_73" style="display:none;">
+<span class='mngl'>io/dropwizard/client/HttpClientConfiguration.getValidateAfterInactivityPeriod:()Lio/dropwizard/util/Duration;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_74')">
+HttpClientConfiguration.setProxyConfiguration&#160;<span class='sym_p'><span>(&#160;ProxyConfiguration <span class='color_p'>proxyConfiguration</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_74" style="display:none;">
+<span class='mngl'>io/dropwizard/client/HttpClientConfiguration.setProxyConfiguration:(Lio/dropwizard/client/proxy/ProxyConfiguration;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_75')">
+HttpClientConfiguration.setTlsConfiguration&#160;<span class='sym_p'><span>(&#160;TlsConfiguration <span class='color_p'>tlsConfiguration</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_75" style="display:none;">
+<span class='mngl'>io/dropwizard/client/HttpClientConfiguration.setTlsConfiguration:(Lio/dropwizard/client/ssl/TlsConfiguration;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_76')">
+HttpClientConfiguration.setValidateAfterInactivityPeriod&#160;<span class='sym_p'><span>(&#160;Duration <span class='color_p'>validateAfterInactivityPeriod</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_76" style="display:none;">
+<span class='mngl'>io/dropwizard/client/HttpClientConfiguration.setValidateAfterInactivityPeriod:(Lio/dropwizard/util/Duration;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-client-0.9.0.jar</span>, <span class='cname'>NonProxyListProxyRoutePlanner.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.client.proxy</span><br/>
+<span class="section" onclick="sC(this, 'c_77')">
+NonProxyListProxyRoutePlanner.determineProxy&#160;<span class='sym_p'><span>(&#160;HttpHost <span class='color_p'>target</span></span>, <span>HttpRequest <span class='color_p'>request</span></span>, <span>HttpContext <span class='color_p'>context</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HttpHost</span></span>
+<br/>
+<div id="c_77" style="display:none;">
+<span class='mngl'>io/dropwizard/client/proxy/NonProxyListProxyRoutePlanner.determineProxy:(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpHost;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_78')">
+NonProxyListProxyRoutePlanner.getNonProxyHostPatterns&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;List&lt;Pattern&gt;</span></span>
+<br/>
+<div id="c_78" style="display:none;">
+<span class='mngl'>io/dropwizard/client/proxy/NonProxyListProxyRoutePlanner.getNonProxyHostPatterns:()Ljava/util/List;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_79')">
+NonProxyListProxyRoutePlanner.NonProxyListProxyRoutePlanner&#160;<span class='sym_p'><span>(&#160;HttpHost <span class='color_p'>proxy</span></span>, <span>List&lt;String&gt; <span class='color_p'>nonProxyHosts</span></span>&#160;)</span></span>
+<br/>
+<div id="c_79" style="display:none;">
+<span class='mngl'>io/dropwizard/client/proxy/NonProxyListProxyRoutePlanner.&quot;&lt;init&gt;&quot;:(Lorg/apache/http/HttpHost;Ljava/util/List;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_80')">
+NonProxyListProxyRoutePlanner.NonProxyListProxyRoutePlanner&#160;<span class='sym_p'><span>(&#160;HttpHost <span class='color_p'>proxy</span></span>, <span>SchemePortResolver <span class='color_p'>schemePortResolver</span></span>, <span>List&lt;String&gt; <span class='color_p'>nonProxyHosts</span></span>&#160;)</span></span>
+<br/>
+<div id="c_80" style="display:none;">
+<span class='mngl'>io/dropwizard/client/proxy/NonProxyListProxyRoutePlanner.&quot;&lt;init&gt;&quot;:(Lorg/apache/http/HttpHost;Lorg/apache/http/conn/SchemePortResolver;Ljava/util/List;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-client-0.9.0.jar</span>, <span class='cname'>ProxyConfiguration.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.client.proxy</span><br/>
+<span class="section" onclick="sC(this, 'c_81')">
+ProxyConfiguration.getAuth&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;AuthConfiguration</span></span>
+<br/>
+<div id="c_81" style="display:none;">
+<span class='mngl'>io/dropwizard/client/proxy/ProxyConfiguration.getAuth:()Lio/dropwizard/client/proxy/AuthConfiguration;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_82')">
+ProxyConfiguration.getHost&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_82" style="display:none;">
+<span class='mngl'>io/dropwizard/client/proxy/ProxyConfiguration.getHost:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_83')">
+ProxyConfiguration.getNonProxyHosts&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;List&lt;String&gt;</span></span>
+<br/>
+<div id="c_83" style="display:none;">
+<span class='mngl'>io/dropwizard/client/proxy/ProxyConfiguration.getNonProxyHosts:()Ljava/util/List;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_84')">
+ProxyConfiguration.getPort&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Integer</span></span>
+<br/>
+<div id="c_84" style="display:none;">
+<span class='mngl'>io/dropwizard/client/proxy/ProxyConfiguration.getPort:()Ljava/lang/Integer;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_85')">
+ProxyConfiguration.getScheme&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_85" style="display:none;">
+<span class='mngl'>io/dropwizard/client/proxy/ProxyConfiguration.getScheme:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_86')">
+ProxyConfiguration.ProxyConfiguration&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_86" style="display:none;">
+<span class='mngl'>io/dropwizard/client/proxy/ProxyConfiguration.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_87')">
+ProxyConfiguration.ProxyConfiguration&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>host</span></span>&#160;)</span></span>
+<br/>
+<div id="c_87" style="display:none;">
+<span class='mngl'>io/dropwizard/client/proxy/ProxyConfiguration.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_88')">
+ProxyConfiguration.ProxyConfiguration&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>host</span></span>, <span>int <span class='color_p'>port</span></span>&#160;)</span></span>
+<br/>
+<div id="c_88" style="display:none;">
+<span class='mngl'>io/dropwizard/client/proxy/ProxyConfiguration.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;I)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_89')">
+ProxyConfiguration.ProxyConfiguration&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>host</span></span>, <span>int <span class='color_p'>port</span></span>, <span>String <span class='color_p'>scheme</span></span>, <span>AuthConfiguration <span class='color_p'>auth</span></span>&#160;)</span></span>
+<br/>
+<div id="c_89" style="display:none;">
+<span class='mngl'>io/dropwizard/client/proxy/ProxyConfiguration.&quot;&lt;init&gt;&quot;:(Ljava/lang/String;ILjava/lang/String;Lio/dropwizard/client/proxy/AuthConfiguration;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_90')">
+ProxyConfiguration.setAuth&#160;<span class='sym_p'><span>(&#160;AuthConfiguration <span class='color_p'>auth</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_90" style="display:none;">
+<span class='mngl'>io/dropwizard/client/proxy/ProxyConfiguration.setAuth:(Lio/dropwizard/client/proxy/AuthConfiguration;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_91')">
+ProxyConfiguration.setHost&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>host</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_91" style="display:none;">
+<span class='mngl'>io/dropwizard/client/proxy/ProxyConfiguration.setHost:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_92')">
+ProxyConfiguration.setNonProxyHosts&#160;<span class='sym_p'><span>(&#160;List&lt;String&gt; <span class='color_p'>nonProxyHosts</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_92" style="display:none;">
+<span class='mngl'>io/dropwizard/client/proxy/ProxyConfiguration.setNonProxyHosts:(Ljava/util/List;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_93')">
+ProxyConfiguration.setPort&#160;<span class='sym_p'><span>(&#160;Integer <span class='color_p'>port</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_93" style="display:none;">
+<span class='mngl'>io/dropwizard/client/proxy/ProxyConfiguration.setPort:(Ljava/lang/Integer;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_94')">
+ProxyConfiguration.setScheme&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>scheme</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_94" style="display:none;">
+<span class='mngl'>io/dropwizard/client/proxy/ProxyConfiguration.setScheme:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-client-0.9.0.jar</span>, <span class='cname'>TlsConfiguration.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.client.ssl</span><br/>
+<span class="section" onclick="sC(this, 'c_95')">
+TlsConfiguration.getKeyStorePassword&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_95" style="display:none;">
+<span class='mngl'>io/dropwizard/client/ssl/TlsConfiguration.getKeyStorePassword:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_96')">
+TlsConfiguration.getKeyStorePath&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;File</span></span>
+<br/>
+<div id="c_96" style="display:none;">
+<span class='mngl'>io/dropwizard/client/ssl/TlsConfiguration.getKeyStorePath:()Ljava/io/File;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_97')">
+TlsConfiguration.getKeyStoreType&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_97" style="display:none;">
+<span class='mngl'>io/dropwizard/client/ssl/TlsConfiguration.getKeyStoreType:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_98')">
+TlsConfiguration.getProtocol&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_98" style="display:none;">
+<span class='mngl'>io/dropwizard/client/ssl/TlsConfiguration.getProtocol:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_99')">
+TlsConfiguration.getSupportedCiphers&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;List&lt;String&gt;</span></span>
+<br/>
+<div id="c_99" style="display:none;">
+<span class='mngl'>io/dropwizard/client/ssl/TlsConfiguration.getSupportedCiphers:()Ljava/util/List;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_100')">
+TlsConfiguration.getSupportedProtocols&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;List&lt;String&gt;</span></span>
+<br/>
+<div id="c_100" style="display:none;">
+<span class='mngl'>io/dropwizard/client/ssl/TlsConfiguration.getSupportedProtocols:()Ljava/util/List;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_101')">
+TlsConfiguration.getTrustStorePassword&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_101" style="display:none;">
+<span class='mngl'>io/dropwizard/client/ssl/TlsConfiguration.getTrustStorePassword:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_102')">
+TlsConfiguration.getTrustStorePath&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;File</span></span>
+<br/>
+<div id="c_102" style="display:none;">
+<span class='mngl'>io/dropwizard/client/ssl/TlsConfiguration.getTrustStorePath:()Ljava/io/File;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_103')">
+TlsConfiguration.getTrustStoreType&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;String</span></span>
+<br/>
+<div id="c_103" style="display:none;">
+<span class='mngl'>io/dropwizard/client/ssl/TlsConfiguration.getTrustStoreType:()Ljava/lang/String;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_104')">
+TlsConfiguration.isTrustSelfSignedCertificates&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_104" style="display:none;">
+<span class='mngl'>io/dropwizard/client/ssl/TlsConfiguration.isTrustSelfSignedCertificates:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_105')">
+TlsConfiguration.isValidKeyStorePassword&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_105" style="display:none;">
+<span class='mngl'>io/dropwizard/client/ssl/TlsConfiguration.isValidKeyStorePassword:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_106')">
+TlsConfiguration.isValidTrustStorePassword&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_106" style="display:none;">
+<span class='mngl'>io/dropwizard/client/ssl/TlsConfiguration.isValidTrustStorePassword:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_107')">
+TlsConfiguration.isVerifyHostname&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_107" style="display:none;">
+<span class='mngl'>io/dropwizard/client/ssl/TlsConfiguration.isVerifyHostname:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_108')">
+TlsConfiguration.setKeyStorePassword&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>keyStorePassword</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_108" style="display:none;">
+<span class='mngl'>io/dropwizard/client/ssl/TlsConfiguration.setKeyStorePassword:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_109')">
+TlsConfiguration.setKeyStorePath&#160;<span class='sym_p'><span>(&#160;File <span class='color_p'>keyStorePath</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_109" style="display:none;">
+<span class='mngl'>io/dropwizard/client/ssl/TlsConfiguration.setKeyStorePath:(Ljava/io/File;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_110')">
+TlsConfiguration.setKeyStoreType&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>keyStoreType</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_110" style="display:none;">
+<span class='mngl'>io/dropwizard/client/ssl/TlsConfiguration.setKeyStoreType:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_111')">
+TlsConfiguration.setProtocol&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>protocol</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_111" style="display:none;">
+<span class='mngl'>io/dropwizard/client/ssl/TlsConfiguration.setProtocol:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_112')">
+TlsConfiguration.setSupportedCiphers&#160;<span class='sym_p'><span>(&#160;List&lt;String&gt; <span class='color_p'>supportedCiphers</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_112" style="display:none;">
+<span class='mngl'>io/dropwizard/client/ssl/TlsConfiguration.setSupportedCiphers:(Ljava/util/List;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_113')">
+TlsConfiguration.setSupportedProtocols&#160;<span class='sym_p'><span>(&#160;List&lt;String&gt; <span class='color_p'>supportedProtocols</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_113" style="display:none;">
+<span class='mngl'>io/dropwizard/client/ssl/TlsConfiguration.setSupportedProtocols:(Ljava/util/List;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_114')">
+TlsConfiguration.setTrustSelfSignedCertificates&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>trustSelfSignedCertificates</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_114" style="display:none;">
+<span class='mngl'>io/dropwizard/client/ssl/TlsConfiguration.setTrustSelfSignedCertificates:(Z)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_115')">
+TlsConfiguration.setTrustStorePassword&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>trustStorePassword</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_115" style="display:none;">
+<span class='mngl'>io/dropwizard/client/ssl/TlsConfiguration.setTrustStorePassword:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_116')">
+TlsConfiguration.setTrustStorePath&#160;<span class='sym_p'><span>(&#160;File <span class='color_p'>trustStorePath</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_116" style="display:none;">
+<span class='mngl'>io/dropwizard/client/ssl/TlsConfiguration.setTrustStorePath:(Ljava/io/File;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_117')">
+TlsConfiguration.setTrustStoreType&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>trustStoreType</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_117" style="display:none;">
+<span class='mngl'>io/dropwizard/client/ssl/TlsConfiguration.setTrustStoreType:(Ljava/lang/String;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_118')">
+TlsConfiguration.setVerifyHostname&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>verifyHostname</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_118" style="display:none;">
+<span class='mngl'>io/dropwizard/client/ssl/TlsConfiguration.setVerifyHostname:(Z)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_119')">
+TlsConfiguration.TlsConfiguration&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_119" style="display:none;">
+<span class='mngl'>io/dropwizard/client/ssl/TlsConfiguration.&quot;&lt;init&gt;&quot;:()V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Medium_Risk_Problems'></a><a name='Method_Problems_Medium'></a>
+<h2>Problems with Methods, Medium Severity <span class='failed'>&nbsp;1&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-client-0.8.5.jar</span>, <span class='cname'>DropwizardApacheConnector.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.client</span><br/>
+<span class="section" onclick="sC(this, 'c_120')">
+<span class='ext'>[+]</span> DropwizardApacheConnector.apply&#160;<span class='sym_p'><span>(&#160;ClientRequest <span class='color_p'>jerseyRequest</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ClientResponse</span> <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_120" style="display:none;">
+<span class='mngl pleft'>io/dropwizard/client/DropwizardApacheConnector.apply:(Lorg/glassfish/jersey/client/ClientRequest;)Lorg/glassfish/jersey/client/ClientResponse;</span><br/>
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Removed <b>javax.ws.rs.ProcessingException</b> exception thrown.</td>
+<td>Recompilation of a client program may be terminated with the message: cannot override <span class='iname_b'>apply&#160;<span class='sym_pd'><span>(&#160;ClientRequest</span>&#160;)</span></span> in <b>DropwizardApacheConnector</b>; overridden method does not throw <b>javax.ws.rs.ProcessingException</b>.</td>
+</tr>
+</table><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Checked_Archives'></a><h2>Java Archives <span class='gray'>&nbsp;1&nbsp;</span></h2>
+<hr/><div class='jar_list'>
+dropwizard-client-0.8.5.jar<br/>
+</div><br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<br/><br/><br/>
+<hr/><div class='footer' align='right'><i>Generated by <a href='https://github.com/lvc/japi-compliance-checker'>Java API Compliance Checker</a> 2.4 &#160;</i></div><br/>
+</body></html>

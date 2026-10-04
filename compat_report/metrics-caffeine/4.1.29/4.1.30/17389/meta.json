@@ -1,0 +1,11 @@
+{
+  "Affected": "0",
+  "Added": 0,
+  "Removed": 0,
+  "TotalProblems": 0,
+  "Source_Affected": "0",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/metrics-caffeine/4.1.29/4.1.30/17389/src_compat_report.html",
+  "Archive1": "metrics-caffeine-4.1.29.jar",
+  "Archive2": "metrics-caffeine-4.1.30.jar"
+}

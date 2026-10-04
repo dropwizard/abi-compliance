@@ -1,0 +1,1910 @@
+$VAR1 = {
+          'APIDump' => {
+                         '0.7.0' => {
+                                      '1a87a' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-0.7.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/0.7.0/1a87a/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '0.7.1' => {
+                                      'def32' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-0.7.1.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/0.7.1/def32/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '0.8.0' => {
+                                      '24286' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-0.8.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/0.8.0/24286/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '0.8.1' => {
+                                      'f8bf8' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-0.8.1.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/0.8.1/f8bf8/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '0.8.2' => {
+                                      '67ffa' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-0.8.2.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/0.8.2/67ffa/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '0.8.3' => {
+                                      'ecaea' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-0.8.3.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/0.8.3/ecaea/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '0.8.4' => {
+                                      'd33a6' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-0.8.4.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/0.8.4/d33a6/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '0.8.5' => {
+                                      'd1b43' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-0.8.5.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/0.8.5/d1b43/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '0.9.0' => {
+                                      'b3577' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-0.9.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/0.9.0/b3577/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '0.9.1' => {
+                                      '231a6' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-0.9.1.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/0.9.1/231a6/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '0.9.2' => {
+                                      '17993' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-0.9.2.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/0.9.2/17993/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '0.9.3' => {
+                                      '3e2ce' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-0.9.3.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/0.9.3/3e2ce/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.0.0' => {
+                                      '15f42' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.0.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.0.0/15f42/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.0.1' => {
+                                      '197bb' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.0.1.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.0.1/197bb/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.0.2' => {
+                                      '5f90e' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.0.2.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.0.2/5f90e/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.0.3' => {
+                                      'e42ad' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.0.3.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.0.3/e42ad/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.0.4' => {
+                                      '15845' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.0.4.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.0.4/15845/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.0.5' => {
+                                      'eec84' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.0.5.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.0.5/eec84/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.0.6' => {
+                                      'e7ad7' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.0.6.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.0.6/e7ad7/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.0.7' => {
+                                      '3b2cc' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.0.7.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.0.7/3b2cc/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.0.8' => {
+                                      '0eb00' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.0.8.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.0.8/0eb00/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.0.9' => {
+                                      '581fb' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.0.9.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.0.9/581fb/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.1.0' => {
+                                      'a6936' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.1.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.1.0/a6936/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.1.1' => {
+                                      'f2f08' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.1.1.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.1.1/f2f08/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.1.2' => {
+                                      '3e9e3' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.1.2.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.1.2/3e9e3/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.1.3' => {
+                                      '4e2dc' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.1.3.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.1.3/4e2dc/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.1.4' => {
+                                      'd3100' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.1.4.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.1.4/d3100/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.1.5' => {
+                                      'e2b19' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.1.5.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.1.5/e2b19/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.1.6' => {
+                                      '641d5' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.1.6.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.1.6/641d5/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.1.7' => {
+                                      '9d015' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.1.7.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.1.7/9d015/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.1.8' => {
+                                      'f5e7d' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.1.8.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.1.8/f5e7d/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.2.0' => {
+                                      '5d9dc' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.2.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.2.0/5d9dc/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.2.1' => {
+                                      'b4a69' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.2.1.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.2.1/b4a69/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.2.2' => {
+                                      '0b094' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.2.2.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.2.2/0b094/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.2.3' => {
+                                      'fe34b' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.2.3.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.2.3/fe34b/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.2.4' => {
+                                      'bb3e3' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.2.4.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.2.4/bb3e3/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.2.5' => {
+                                      '8eac5' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.2.5.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.2.5/8eac5/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.2.6' => {
+                                      '9e093' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.2.6.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.2.6/9e093/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.2.7' => {
+                                      'e1c67' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.2.7.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.2.7/e1c67/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.2.8' => {
+                                      'df965' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.2.8.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.2.8/df965/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.2.9' => {
+                                      'bab55' => {
+                                                   'Archive' => 'dropwizard-metrics-ganglia-1.2.9.jar',
+                                                   'Path' => 'api_dump/dropwizard-metrics-ganglia/1.2.9/bab55/API.dump.tar.gz',
+                                                   'TotalSymbols' => '20'
+                                                 }
+                                    },
+                         '1.3.0-rc2' => {
+                                          'e39b0' => {
+                                                       'Archive' => 'dropwizard-metrics-ganglia-1.3.0-rc2.jar',
+                                                       'Path' => 'api_dump/dropwizard-metrics-ganglia/1.3.0-rc2/e39b0/API.dump.tar.gz',
+                                                       'TotalSymbols' => '20'
+                                                     }
+                                        }
+                       },
+          'APIReport' => {
+                           '0.7.0' => {
+                                        '0.7.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/0.7.0/0.7.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '0.7.1' => {
+                                        '0.8.0' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/0.7.1/0.8.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '0.8.0' => {
+                                        '0.8.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/0.8.0/0.8.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '0.8.1' => {
+                                        '0.8.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/0.8.1/0.8.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '0.8.2' => {
+                                        '0.8.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/0.8.2/0.8.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '0.8.3' => {
+                                        '0.8.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/0.8.3/0.8.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '0.8.4' => {
+                                        '0.8.5' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/0.8.4/0.8.5/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '0.8.5' => {
+                                        '0.9.0' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/0.8.5/0.9.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '0.9.0' => {
+                                        '0.9.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/0.9.0/0.9.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '0.9.1' => {
+                                        '0.9.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/0.9.1/0.9.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '0.9.2' => {
+                                        '0.9.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/0.9.2/0.9.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '0.9.3' => {
+                                        '1.0.0' => {
+                                                     'Added' => 2,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 90,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/0.9.3/1.0.0/report.html',
+                                                     'Removed' => 2,
+                                                     'Source_BC' => 90,
+                                                     'Source_TotalProblems' => 2,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 2
+                                                   }
+                                      },
+                           '1.0.0' => {
+                                        '1.0.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.0.0/1.0.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.0.1' => {
+                                        '1.0.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.0.1/1.0.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.0.2' => {
+                                        '1.0.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.0.2/1.0.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.0.3' => {
+                                        '1.0.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.0.3/1.0.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.0.4' => {
+                                        '1.0.5' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.0.4/1.0.5/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.0.5' => {
+                                        '1.0.6' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.0.5/1.0.6/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.0.6' => {
+                                        '1.0.7' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.0.6/1.0.7/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.0.7' => {
+                                        '1.0.8' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.0.7/1.0.8/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.0.8' => {
+                                        '1.0.9' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.0.8/1.0.9/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.0.9' => {
+                                        '1.1.0' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.0.9/1.1.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.1.0' => {
+                                        '1.1.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.1.0/1.1.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.1.1' => {
+                                        '1.1.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.1.1/1.1.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.1.2' => {
+                                        '1.1.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.1.2/1.1.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.1.3' => {
+                                        '1.1.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.1.3/1.1.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.1.4' => {
+                                        '1.1.5' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.1.4/1.1.5/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.1.5' => {
+                                        '1.1.6' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.1.5/1.1.6/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.1.6' => {
+                                        '1.1.7' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.1.6/1.1.7/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.1.7' => {
+                                        '1.1.8' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.1.7/1.1.8/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.1.8' => {
+                                        '1.2.0' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.1.8/1.2.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.2.0' => {
+                                        '1.2.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.2.0/1.2.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.2.1' => {
+                                        '1.2.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.2.1/1.2.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.2.2' => {
+                                        '1.2.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.2.2/1.2.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.2.3' => {
+                                        '1.2.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.2.3/1.2.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.2.4' => {
+                                        '1.2.5' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.2.4/1.2.5/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.2.5' => {
+                                        '1.2.6' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.2.5/1.2.6/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.2.6' => {
+                                        '1.2.7' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.2.6/1.2.7/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.2.7' => {
+                                        '1.2.8' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.2.7/1.2.8/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.2.8' => {
+                                        '1.2.9' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-metrics-ganglia/1.2.8/1.2.9/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.2.9' => {
+                                        '1.3.0-rc2' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/dropwizard-metrics-ganglia/1.2.9/1.3.0-rc2/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                      }
+                         },
+          'APIReport_D' => {
+                             '0.7.0' => {
+                                          '0.7.1' => {
+                                                       'db92e' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-0.7.0.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-0.7.1.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/0.7.0/0.7.1/db92e/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/0.7.0/0.7.1/db92e/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '0.7.1' => {
+                                          '0.8.0' => {
+                                                       '9c3ce' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-0.7.1.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-0.8.0.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/0.7.1/0.8.0/9c3ce/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/0.7.1/0.8.0/9c3ce/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '0.8.0' => {
+                                          '0.8.1' => {
+                                                       'f4eb9' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-0.8.0.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-0.8.1.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/0.8.0/0.8.1/f4eb9/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/0.8.0/0.8.1/f4eb9/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '0.8.1' => {
+                                          '0.8.2' => {
+                                                       'ab313' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-0.8.1.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-0.8.2.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/0.8.1/0.8.2/ab313/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/0.8.1/0.8.2/ab313/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '0.8.2' => {
+                                          '0.8.3' => {
+                                                       '39800' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-0.8.2.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-0.8.3.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/0.8.2/0.8.3/39800/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/0.8.2/0.8.3/39800/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '0.8.3' => {
+                                          '0.8.4' => {
+                                                       '53d45' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-0.8.3.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-0.8.4.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/0.8.3/0.8.4/53d45/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/0.8.3/0.8.4/53d45/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '0.8.4' => {
+                                          '0.8.5' => {
+                                                       '86e4a' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-0.8.4.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-0.8.5.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/0.8.4/0.8.5/86e4a/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/0.8.4/0.8.5/86e4a/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '0.8.5' => {
+                                          '0.9.0' => {
+                                                       '5120e' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-0.8.5.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-0.9.0.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/0.8.5/0.9.0/5120e/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/0.8.5/0.9.0/5120e/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '0.9.0' => {
+                                          '0.9.1' => {
+                                                       'f4c22' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-0.9.0.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-0.9.1.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/0.9.0/0.9.1/f4c22/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/0.9.0/0.9.1/f4c22/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '0.9.1' => {
+                                          '0.9.2' => {
+                                                       '90705' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-0.9.1.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-0.9.2.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/0.9.1/0.9.2/90705/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/0.9.1/0.9.2/90705/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '0.9.2' => {
+                                          '0.9.3' => {
+                                                       '2fdc0' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-0.9.2.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-0.9.3.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/0.9.2/0.9.3/2fdc0/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/0.9.2/0.9.3/2fdc0/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '0.9.3' => {
+                                          '1.0.0' => {
+                                                       'abb5e' => {
+                                                                    'Added' => 2,
+                                                                    'Affected' => 10,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-0.9.3.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.0.0.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/0.9.3/1.0.0/abb5e/bin_compat_report.html',
+                                                                    'Removed' => 2,
+                                                                    'Source_Affected' => 10,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/0.9.3/1.0.0/abb5e/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 2,
+                                                                    'TotalProblems' => 2
+                                                                  }
+                                                     }
+                                        },
+                             '1.0.0' => {
+                                          '1.0.1' => {
+                                                       'beb58' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.0.0.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.0.1.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.0.0/1.0.1/beb58/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.0.0/1.0.1/beb58/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.0.1' => {
+                                          '1.0.2' => {
+                                                       '89dc5' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.0.1.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.0.2.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.0.1/1.0.2/89dc5/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.0.1/1.0.2/89dc5/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.0.2' => {
+                                          '1.0.3' => {
+                                                       'c0f9a' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.0.2.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.0.3.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.0.2/1.0.3/c0f9a/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.0.2/1.0.3/c0f9a/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.0.3' => {
+                                          '1.0.4' => {
+                                                       '1f552' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.0.3.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.0.4.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.0.3/1.0.4/1f552/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.0.3/1.0.4/1f552/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.0.4' => {
+                                          '1.0.5' => {
+                                                       '1de05' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.0.4.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.0.5.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.0.4/1.0.5/1de05/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.0.4/1.0.5/1de05/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.0.5' => {
+                                          '1.0.6' => {
+                                                       '2fb37' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.0.5.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.0.6.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.0.5/1.0.6/2fb37/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.0.5/1.0.6/2fb37/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.0.6' => {
+                                          '1.0.7' => {
+                                                       'dcb45' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.0.6.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.0.7.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.0.6/1.0.7/dcb45/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.0.6/1.0.7/dcb45/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.0.7' => {
+                                          '1.0.8' => {
+                                                       '91d3d' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.0.7.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.0.8.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.0.7/1.0.8/91d3d/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.0.7/1.0.8/91d3d/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.0.8' => {
+                                          '1.0.9' => {
+                                                       '683ea' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.0.8.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.0.9.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.0.8/1.0.9/683ea/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.0.8/1.0.9/683ea/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.0.9' => {
+                                          '1.1.0' => {
+                                                       '0c339' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.0.9.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.1.0.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.0.9/1.1.0/0c339/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.0.9/1.1.0/0c339/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.1.0' => {
+                                          '1.1.1' => {
+                                                       'f540c' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.1.0.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.1.1.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.1.0/1.1.1/f540c/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.1.0/1.1.1/f540c/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.1.1' => {
+                                          '1.1.2' => {
+                                                       '60843' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.1.1.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.1.2.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.1.1/1.1.2/60843/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.1.1/1.1.2/60843/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.1.2' => {
+                                          '1.1.3' => {
+                                                       'bf145' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.1.2.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.1.3.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.1.2/1.1.3/bf145/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.1.2/1.1.3/bf145/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.1.3' => {
+                                          '1.1.4' => {
+                                                       'cc724' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.1.3.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.1.4.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.1.3/1.1.4/cc724/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.1.3/1.1.4/cc724/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.1.4' => {
+                                          '1.1.5' => {
+                                                       'f45eb' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.1.4.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.1.5.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.1.4/1.1.5/f45eb/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.1.4/1.1.5/f45eb/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.1.5' => {
+                                          '1.1.6' => {
+                                                       'bcf2e' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.1.5.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.1.6.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.1.5/1.1.6/bcf2e/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.1.5/1.1.6/bcf2e/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.1.6' => {
+                                          '1.1.7' => {
+                                                       'f4ce1' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.1.6.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.1.7.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.1.6/1.1.7/f4ce1/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.1.6/1.1.7/f4ce1/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.1.7' => {
+                                          '1.1.8' => {
+                                                       '496ac' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.1.7.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.1.8.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.1.7/1.1.8/496ac/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.1.7/1.1.8/496ac/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.1.8' => {
+                                          '1.2.0' => {
+                                                       '6541d' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.1.8.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.2.0.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.1.8/1.2.0/6541d/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.1.8/1.2.0/6541d/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.2.0' => {
+                                          '1.2.1' => {
+                                                       'c8ba9' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.2.0.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.2.1.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.2.0/1.2.1/c8ba9/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.2.0/1.2.1/c8ba9/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.2.1' => {
+                                          '1.2.2' => {
+                                                       '4ab36' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.2.1.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.2.2.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.2.1/1.2.2/4ab36/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.2.1/1.2.2/4ab36/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.2.2' => {
+                                          '1.2.3' => {
+                                                       '5e2fc' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.2.2.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.2.3.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.2.2/1.2.3/5e2fc/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.2.2/1.2.3/5e2fc/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.2.3' => {
+                                          '1.2.4' => {
+                                                       '9c6fd' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.2.3.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.2.4.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.2.3/1.2.4/9c6fd/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.2.3/1.2.4/9c6fd/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.2.4' => {
+                                          '1.2.5' => {
+                                                       'ce3b8' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.2.4.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.2.5.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.2.4/1.2.5/ce3b8/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.2.4/1.2.5/ce3b8/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.2.5' => {
+                                          '1.2.6' => {
+                                                       '7fb67' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.2.5.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.2.6.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.2.5/1.2.6/7fb67/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.2.5/1.2.6/7fb67/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.2.6' => {
+                                          '1.2.7' => {
+                                                       '495f2' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.2.6.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.2.7.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.2.6/1.2.7/495f2/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.2.6/1.2.7/495f2/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.2.7' => {
+                                          '1.2.8' => {
+                                                       'ad73d' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.2.7.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.2.8.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.2.7/1.2.8/ad73d/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.2.7/1.2.8/ad73d/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.2.8' => {
+                                          '1.2.9' => {
+                                                       '110fc' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-metrics-ganglia-1.2.8.jar',
+                                                                    'Archive2' => 'dropwizard-metrics-ganglia-1.2.9.jar',
+                                                                    'Path' => 'compat_report/dropwizard-metrics-ganglia/1.2.8/1.2.9/110fc/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.2.8/1.2.9/110fc/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.2.9' => {
+                                          '1.3.0-rc2' => {
+                                                           '3575f' => {
+                                                                        'Added' => 0,
+                                                                        'Affected' => 0,
+                                                                        'Archive1' => 'dropwizard-metrics-ganglia-1.2.9.jar',
+                                                                        'Archive2' => 'dropwizard-metrics-ganglia-1.3.0-rc2.jar',
+                                                                        'Path' => 'compat_report/dropwizard-metrics-ganglia/1.2.9/1.3.0-rc2/3575f/bin_compat_report.html',
+                                                                        'Removed' => 0,
+                                                                        'Source_Affected' => 0,
+                                                                        'Source_ReportPath' => 'compat_report/dropwizard-metrics-ganglia/1.2.9/1.3.0-rc2/3575f/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                        }
+                           },
+          'Changelog' => {},
+          'Date' => {
+                      '0.7.0' => '04-2014-04 17:47',
+                      '0.7.1' => '18-2014-06 11:42',
+                      '0.8.0' => '05-2015-03 11:01',
+                      '0.8.1' => '07-2015-04 09:08',
+                      '0.8.2' => '06-2015-07 14:27',
+                      '0.8.3' => '24-2015-08 09:43',
+                      '0.8.4' => '25-2015-08 22:02',
+                      '0.8.5' => '03-2015-11 17:18',
+                      '0.9.0' => '28-2015-10 16:39',
+                      '0.9.1' => '03-2015-11 16:49',
+                      '0.9.2' => '20-2016-01 12:11',
+                      '0.9.3' => '20-2016-06 17:01',
+                      '1.0.0' => '26-2016-07 15:25',
+                      '1.0.1' => '21-2016-09 17:34',
+                      '1.0.2' => '23-2016-09 20:28',
+                      '1.0.3' => '28-2016-10 19:37',
+                      '1.0.4' => '14-2016-11 19:14',
+                      '1.0.5' => '18-2016-11 12:10',
+                      '1.0.6' => '30-2017-01 20:09',
+                      '1.0.7' => '20-2017-03 19:49',
+                      '1.0.8' => '27-2017-06 09:32',
+                      '1.0.9' => '31-2017-07 13:35',
+                      '1.1.0' => '21-2017-03 11:07',
+                      '1.1.1' => '19-2017-05 14:19',
+                      '1.1.2' => '27-2017-06 10:05',
+                      '1.1.3' => '31-2017-07 14:08',
+                      '1.1.4' => '24-2017-08 10:59',
+                      '1.1.5' => '17-2017-10 14:57',
+                      '1.1.6' => '02-2017-11 09:12',
+                      '1.1.7' => '11-2018-02 10:50',
+                      '1.1.8' => '24-2018-06 21:06',
+                      '1.2.0' => '06-2017-10 15:15',
+                      '1.2.1' => '22-2017-11 13:36',
+                      '1.2.2' => '27-2017-11 09:26',
+                      '1.2.3' => '23-2018-01 00:01',
+                      '1.2.4' => '11-2018-02 11:34',
+                      '1.2.5' => '04-2018-04 17:49',
+                      '1.2.6' => '06-2018-05 23:30',
+                      '1.2.7' => '15-2018-06 09:38',
+                      '1.2.8' => '24-2018-06 20:20',
+                      '1.2.9' => '01-2018-10 09:00',
+                      '1.3.0-rc2' => '05-2018-01 21:14'
+                    },
+          'Maintainer' => 'Dropwizard Committers',
+          'MaintainerUrl' => 'https://www.dropwizard.io/',
+          'PackageDiff' => {
+                             '0.7.0' => {
+                                          '0.7.1' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/0.7.0/0.7.1/report.html'
+                                                     }
+                                        },
+                             '0.7.1' => {
+                                          '0.8.0' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/0.7.1/0.8.0/report.html'
+                                                     }
+                                        },
+                             '0.8.0' => {
+                                          '0.8.1' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/0.8.0/0.8.1/report.html'
+                                                     }
+                                        },
+                             '0.8.1' => {
+                                          '0.8.2' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/0.8.1/0.8.2/report.html'
+                                                     }
+                                        },
+                             '0.8.2' => {
+                                          '0.8.3' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/0.8.2/0.8.3/report.html'
+                                                     }
+                                        },
+                             '0.8.3' => {
+                                          '0.8.4' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/0.8.3/0.8.4/report.html'
+                                                     }
+                                        },
+                             '0.8.4' => {
+                                          '0.8.5' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/0.8.4/0.8.5/report.html'
+                                                     }
+                                        },
+                             '0.8.5' => {
+                                          '0.9.0' => {
+                                                       'Changed' => '1.4',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/0.8.5/0.9.0/report.html'
+                                                     }
+                                        },
+                             '0.9.0' => {
+                                          '0.9.1' => {
+                                                       'Changed' => '0.8',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/0.9.0/0.9.1/report.html'
+                                                     }
+                                        },
+                             '0.9.1' => {
+                                          '0.9.2' => {
+                                                       'Changed' => '0.5',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/0.9.1/0.9.2/report.html'
+                                                     }
+                                        },
+                             '0.9.2' => {
+                                          '0.9.3' => {
+                                                       'Changed' => '0.5',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/0.9.2/0.9.3/report.html'
+                                                     }
+                                        },
+                             '0.9.3' => {
+                                          '1.0.0' => {
+                                                       'Changed' => '2.2',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/0.9.3/1.0.0/report.html'
+                                                     }
+                                        },
+                             '1.0.0' => {
+                                          '1.0.1' => {
+                                                       'Changed' => '0.5',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.0.0/1.0.1/report.html'
+                                                     }
+                                        },
+                             '1.0.1' => {
+                                          '1.0.2' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.0.1/1.0.2/report.html'
+                                                     }
+                                        },
+                             '1.0.2' => {
+                                          '1.0.3' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.0.2/1.0.3/report.html'
+                                                     }
+                                        },
+                             '1.0.3' => {
+                                          '1.0.4' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.0.3/1.0.4/report.html'
+                                                     }
+                                        },
+                             '1.0.4' => {
+                                          '1.0.5' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.0.4/1.0.5/report.html'
+                                                     }
+                                        },
+                             '1.0.5' => {
+                                          '1.0.6' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.0.5/1.0.6/report.html'
+                                                     }
+                                        },
+                             '1.0.6' => {
+                                          '1.0.7' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.0.6/1.0.7/report.html'
+                                                     }
+                                        },
+                             '1.0.7' => {
+                                          '1.0.8' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.0.7/1.0.8/report.html'
+                                                     }
+                                        },
+                             '1.0.8' => {
+                                          '1.0.9' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.0.8/1.0.9/report.html'
+                                                     }
+                                        },
+                             '1.0.9' => {
+                                          '1.1.0' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.0.9/1.1.0/report.html'
+                                                     }
+                                        },
+                             '1.1.0' => {
+                                          '1.1.1' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.1.0/1.1.1/report.html'
+                                                     }
+                                        },
+                             '1.1.1' => {
+                                          '1.1.2' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.1.1/1.1.2/report.html'
+                                                     }
+                                        },
+                             '1.1.2' => {
+                                          '1.1.3' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.1.2/1.1.3/report.html'
+                                                     }
+                                        },
+                             '1.1.3' => {
+                                          '1.1.4' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.1.3/1.1.4/report.html'
+                                                     }
+                                        },
+                             '1.1.4' => {
+                                          '1.1.5' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.1.4/1.1.5/report.html'
+                                                     }
+                                        },
+                             '1.1.5' => {
+                                          '1.1.6' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.1.5/1.1.6/report.html'
+                                                     }
+                                        },
+                             '1.1.6' => {
+                                          '1.1.7' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.1.6/1.1.7/report.html'
+                                                     }
+                                        },
+                             '1.1.7' => {
+                                          '1.1.8' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.1.7/1.1.8/report.html'
+                                                     }
+                                        },
+                             '1.1.8' => {
+                                          '1.2.0' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.1.8/1.2.0/report.html'
+                                                     }
+                                        },
+                             '1.2.0' => {
+                                          '1.2.1' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.2.0/1.2.1/report.html'
+                                                     }
+                                        },
+                             '1.2.1' => {
+                                          '1.2.2' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.2.1/1.2.2/report.html'
+                                                     }
+                                        },
+                             '1.2.2' => {
+                                          '1.2.3' => {
+                                                       'Changed' => '0.5',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.2.2/1.2.3/report.html'
+                                                     }
+                                        },
+                             '1.2.3' => {
+                                          '1.2.4' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.2.3/1.2.4/report.html'
+                                                     }
+                                        },
+                             '1.2.4' => {
+                                          '1.2.5' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.2.4/1.2.5/report.html'
+                                                     }
+                                        },
+                             '1.2.5' => {
+                                          '1.2.6' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.2.5/1.2.6/report.html'
+                                                     }
+                                        },
+                             '1.2.6' => {
+                                          '1.2.7' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.2.6/1.2.7/report.html'
+                                                     }
+                                        },
+                             '1.2.7' => {
+                                          '1.2.8' => {
+                                                       'Changed' => '0.6',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.2.7/1.2.8/report.html'
+                                                     }
+                                        },
+                             '1.2.8' => {
+                                          '1.2.9' => {
+                                                       'Changed' => '0.5',
+                                                       'Path' => 'package_diff/dropwizard-metrics-ganglia/1.2.8/1.2.9/report.html'
+                                                     }
+                                        },
+                             '1.2.9' => {
+                                          '1.3.0-rc2' => {
+                                                           'Changed' => '0.5',
+                                                           'Path' => 'package_diff/dropwizard-metrics-ganglia/1.2.9/1.3.0-rc2/report.html'
+                                                         }
+                                        }
+                           },
+          'Title' => 'Dropwizard Metrics Support for Ganglia'
+        };

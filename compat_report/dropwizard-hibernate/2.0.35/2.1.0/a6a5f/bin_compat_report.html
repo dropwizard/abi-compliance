@@ -1,0 +1,563 @@
+<!-- kind:binary;verdict:compatible;affected:0;added:43;removed:0;type_problems_high:0;type_problems_medium:0;type_problems_low:0;method_problems_high:0;method_problems_medium:0;method_problems_low:0;checked_methods:109;checked_types:12;tool_version:2.4 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="dropwizard-hibernate, binary, compatibility" />
+<meta name="description" content="Binary compatibility report for the dropwizard-hibernate library between 2.0.35 and 2.1.0 versions" />
+<title>dropwizard-hibernate: 2.0.35 to 2.1.0 binary compatibility report</title>
+<style type="text/css">
+body {
+    font-family:Arial, sans-serif;
+    background-color:White;
+    color:Black;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+    white-space:nowrap;
+}
+div.symbols {
+    color:#003E69;
+}
+div.symbols i {
+    color:Brown;
+}
+span.section {
+    font-weight:bold;
+    cursor:pointer;
+    color:#003E69;
+    white-space:nowrap;
+    margin-left:0.3125em;
+}
+span:hover.section {
+    color:#336699;
+}
+span.sect_aff {
+    cursor:pointer;
+    padding-left:1.55em;
+    font-size:0.875em;
+    color:#cc3300;
+}
+span.ext {
+    font-weight:normal;
+}
+span.jar {
+    color:#cc3300;
+    font-size:0.875em;
+    font-weight:bold;
+}
+div.jar_list {
+    padding-left:0.4em;
+    font-size:0.94em;
+}
+span.pkg_t {
+    color:#408080;
+    font-size:0.875em;
+}
+span.pkg {
+    color:#408080;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.cname {
+    color:Green;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.iname_b {
+    font-weight:bold;
+}
+span.iname_a {
+    color:#333333;
+    font-weight:bold;
+    font-size:0.94em;
+}
+span.sym_p {
+    font-weight:normal;
+    white-space:normal;
+}
+span.sym_pd {
+    white-space:normal;
+}
+span.sym_p span, span.sym_pd span {
+    white-space:nowrap;
+}
+span.attr {
+    color:Black;
+    font-weight:normal;
+}
+span.deprecated {
+    color:Red;
+    font-weight:bold;
+    font-family:Monaco, monospace;
+}
+div.affect {
+    padding-left:1em;
+    padding-bottom:10px;
+    font-size:0.87em;
+    font-style:italic;
+    line-height:0.9em;
+}
+div.affected {
+    padding-left:2em;
+    padding-top:10px;
+}
+table.ptable {
+    border-collapse:collapse;
+    border:1px outset black;
+    margin-left:0.95em;
+    margin-top:3px;
+    margin-bottom:3px;
+    width:56.25em;
+}
+table.ptable td {
+    border:1px solid Gray;
+    padding:3px;
+    font-size:0.875em;
+    text-align:left;
+    vertical-align:top;
+    max-width:28em;
+    word-wrap:break-word;
+}
+table.ptable th {
+    background-color:#eeeeee;
+    font-weight:bold;
+    color:#333333;
+    font-family:Verdana, Arial;
+    font-size:0.875em;
+    border:1px solid Gray;
+    text-align:center;
+    vertical-align:top;
+    white-space:nowrap;
+    padding:3px;
+}
+table.summary {
+    border-collapse:collapse;
+    border:1px outset black;
+}
+table.summary th {
+    background-color:#eeeeee;
+    font-weight:normal;
+    text-align:left;
+    font-size:0.94em;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px;
+}
+table.summary td {
+    text-align:right;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px 5px 3px 10px;
+}
+span.mngl {
+    padding-left:1em;
+    font-size:0.875em;
+    cursor:text;
+    color:#444444;
+    font-weight:bold;
+}
+span.pleft {
+    padding-left:2.5em;
+}
+span.color_p {
+    font-style:italic;
+    color:Brown;
+}
+span.param {
+    font-style:italic;
+}
+span.focus_p {
+    font-style:italic;
+    background-color:#DCDCDC;
+}
+span.ttype {
+    font-weight:normal;
+}
+span.nowrap {
+    white-space:nowrap;
+}
+span.value {
+    white-space:nowrap;
+    font-weight:bold;
+}
+.passed {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.warning {
+    background-color:#F4F4AF;
+    font-weight:normal;
+}
+.failed {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.new {
+    background-color:#C6DEFF;
+    font-weight:normal;
+}
+
+.compatible {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.almost_compatible {
+    background-color:#FFDAA3;
+    font-weight:normal;
+}
+.incompatible {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.gray {
+    background-color:#DCDCDC;
+    font-weight:normal;
+}
+
+.top_ref {
+    font-size:0.69em;
+}
+.footer {
+    font-size:0.8125em;
+}
+
+</style>
+<script type="text/javascript" language="JavaScript">
+<!--
+function sC(header, id)
+{
+    e = document.getElementById(id);
+    if(e.style.display == 'none')
+    {
+        e.style.display = 'block';
+        e.style.visibility = 'visible';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[&minus;]");
+    }
+    else
+    {
+        e.style.display = 'none';
+        e.style.visibility = 'hidden';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[+]");
+    }
+}
+
+-->
+</script>
+</head>
+<body><a name='Top'></a><h1>Binary compatibility report for the <span style='color:Blue;'>dropwizard-hibernate</span> library between <span style='color:Red;'>2.0.35</span> and <span style='color:Red;'>2.1.0</span> versions</h1>
+
+<h2>Test Info</h2><hr/>
+<table class='summary'>
+<tr><th>Library Name</th><td>dropwizard-hibernate</td></tr>
+<tr><th>Version #1</th><td>2.0.35</td></tr>
+<tr><th>Version #2</th><td>2.1.0</td></tr>
+</table>
+<h2>Test Results</h2><hr/>
+<table class='summary'>
+<tr><th>Total Java Modules</th><td><a href='#Checked_Archives' style='color:Blue;'>1</a></td></tr>
+<tr><th>Total Methods / Classes</th><td>109 / 12</td></tr>
+<tr><th>Compatibility</th>
+<td class='compatible'>100%</td>
+</tr>
+</table>
+<h2>Problem Summary</h2><hr/>
+<table class='summary'>
+<tr><th></th><th style='text-align:center;'>Severity</th><th style='text-align:center;'>Count</th></tr>
+<tr><th>Added Methods</th><td>-</td><td class='new'><a href='#Added' style='color:Blue;'>43</a></td></tr>
+<tr><th>Removed Methods</th><td>High</td><td>0</td></tr>
+<tr><th rowspan='3'>Problems with<br/>Data Types</th><td>High</td><td>0</td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+<tr><th rowspan='3'>Problems with<br/>Methods</th><td>High</td><td>0</td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+</table>
+
+<a name='Added'></a><h2>Added Methods <span class='new'>&nbsp;43&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-hibernate-2.1.0.jar</span>, <span class='cname'>DualSessionFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.hibernate.dual</span><br/>
+<span class="section" onclick="sC(this, 'c_1')">
+DualSessionFactory.addNamedEntityGraph&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>graphName</span></span>, <span>EntityGraph&lt;T&gt; <span class='color_p'>entityGraph</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_1" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.addNamedEntityGraph:(Ljava/lang/String;Ljavax/persistence/EntityGraph;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_2')">
+DualSessionFactory.addNamedQuery&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>, <span>Query <span class='color_p'>query</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_2" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.addNamedQuery:(Ljava/lang/String;Ljavax/persistence/Query;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_3')">
+DualSessionFactory.close&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_3" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.close:()V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_4')">
+DualSessionFactory.containsFetchProfileDefinition&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_4" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.containsFetchProfileDefinition:(Ljava/lang/String;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_5')">
+DualSessionFactory.createEntityManager&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;EntityManager</span></span>
+<br/>
+<div id="c_5" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.createEntityManager:()Ljavax/persistence/EntityManager;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_6')">
+DualSessionFactory.createEntityManager&#160;<span class='sym_p'><span>(&#160;Map <span class='color_p'>map</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;EntityManager</span></span>
+<br/>
+<div id="c_6" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.createEntityManager:(Ljava/util/Map;)Ljavax/persistence/EntityManager;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_7')">
+DualSessionFactory.createEntityManager&#160;<span class='sym_p'><span>(&#160;SynchronizationType <span class='color_p'>synchronizationType</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;EntityManager</span></span>
+<br/>
+<div id="c_7" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.createEntityManager:(Ljavax/persistence/SynchronizationType;)Ljavax/persistence/EntityManager;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_8')">
+DualSessionFactory.createEntityManager&#160;<span class='sym_p'><span>(&#160;SynchronizationType <span class='color_p'>synchronizationType</span></span>, <span>Map <span class='color_p'>map</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;EntityManager</span></span>
+<br/>
+<div id="c_8" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.createEntityManager:(Ljavax/persistence/SynchronizationType;Ljava/util/Map;)Ljavax/persistence/EntityManager;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_9')">
+DualSessionFactory.current&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;SessionFactory</span></span>
+<br/>
+<div id="c_9" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.current:()Lorg/hibernate/SessionFactory;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_10')">
+DualSessionFactory.DualSessionFactory&#160;<span class='sym_p'><span>(&#160;SessionFactory <span class='color_p'>primary</span></span>, <span>SessionFactory <span class='color_p'>reader</span></span>&#160;)</span></span>
+<br/>
+<div id="c_10" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.&quot;&lt;init&gt;&quot;:(Lorg/hibernate/SessionFactory;Lorg/hibernate/SessionFactory;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_11')">
+DualSessionFactory.findEntityGraphsByType&#160;<span class='sym_p'><span>(&#160;Class&lt;T&gt; <span class='color_p'>entityClass</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;T&gt;&gt;</span></span>
+<br/>
+<div id="c_11" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.findEntityGraphsByType:(Ljava/lang/Class;)Ljava/util/List;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_12')">
+DualSessionFactory.getAllClassMetadata&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map&lt;String,ClassMetadata&gt;</span></span>
+<br/>
+<div id="c_12" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getAllClassMetadata:()Ljava/util/Map;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_13')">
+DualSessionFactory.getAllCollectionMetadata&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map</span></span>
+<br/>
+<div id="c_13" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getAllCollectionMetadata:()Ljava/util/Map;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_14')">
+DualSessionFactory.getCache&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Cache</span></span>
+<br/>
+<div id="c_14" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getCache:()Ljavax/persistence/Cache;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_15')">
+DualSessionFactory.getCache&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Cache</span></span>
+<br/>
+<div id="c_15" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getCache:()Lorg/hibernate/Cache;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_16')">
+DualSessionFactory.getClassMetadata&#160;<span class='sym_p'><span>(&#160;Class <span class='color_p'>entityClass</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ClassMetadata</span></span>
+<br/>
+<div id="c_16" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getClassMetadata:(Ljava/lang/Class;)Lorg/hibernate/metadata/ClassMetadata;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_17')">
+DualSessionFactory.getClassMetadata&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>entityName</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;ClassMetadata</span></span>
+<br/>
+<div id="c_17" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getClassMetadata:(Ljava/lang/String;)Lorg/hibernate/metadata/ClassMetadata;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_18')">
+DualSessionFactory.getCollectionMetadata&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>roleName</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;CollectionMetadata</span></span>
+<br/>
+<div id="c_18" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getCollectionMetadata:(Ljava/lang/String;)Lorg/hibernate/metadata/CollectionMetadata;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_19')">
+DualSessionFactory.getCriteriaBuilder&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;CriteriaBuilder</span></span>
+<br/>
+<div id="c_19" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getCriteriaBuilder:()Ljavax/persistence/criteria/CriteriaBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_20')">
+DualSessionFactory.getCurrentSession&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Session</span></span>
+<br/>
+<div id="c_20" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getCurrentSession:()Lorg/hibernate/Session;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_21')">
+DualSessionFactory.getDefinedFilterNames&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Set</span></span>
+<br/>
+<div id="c_21" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getDefinedFilterNames:()Ljava/util/Set;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_22')">
+DualSessionFactory.getFilterDefinition&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>filterName</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;FilterDefinition</span></span>
+<br/>
+<div id="c_22" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getFilterDefinition:(Ljava/lang/String;)Lorg/hibernate/engine/spi/FilterDefinition;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_23')">
+DualSessionFactory.getMetamodel&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Metamodel</span></span>
+<br/>
+<div id="c_23" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getMetamodel:()Ljavax/persistence/metamodel/Metamodel;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_24')">
+DualSessionFactory.getMetamodel&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Metamodel</span></span>
+<br/>
+<div id="c_24" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getMetamodel:()Lorg/hibernate/Metamodel;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_25')">
+DualSessionFactory.getPersistenceUnitUtil&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;PersistenceUnitUtil</span></span>
+<br/>
+<div id="c_25" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getPersistenceUnitUtil:()Ljavax/persistence/PersistenceUnitUtil;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_26')">
+DualSessionFactory.getProperties&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Map&lt;String,Object&gt;</span></span>
+<br/>
+<div id="c_26" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getProperties:()Ljava/util/Map;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_27')">
+DualSessionFactory.getReference&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Reference</span></span>
+<br/>
+<div id="c_27" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getReference:()Ljavax/naming/Reference;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_28')">
+DualSessionFactory.getSessionFactoryOptions&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;SessionFactoryOptions</span></span>
+<br/>
+<div id="c_28" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getSessionFactoryOptions:()Lorg/hibernate/boot/spi/SessionFactoryOptions;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_29')">
+DualSessionFactory.getStatistics&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Statistics</span></span>
+<br/>
+<div id="c_29" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getStatistics:()Lorg/hibernate/stat/Statistics;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_30')">
+DualSessionFactory.getTypeHelper&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;TypeHelper</span></span>
+<br/>
+<div id="c_30" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.getTypeHelper:()Lorg/hibernate/TypeHelper;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_31')">
+DualSessionFactory.isClosed&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_31" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.isClosed:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_32')">
+DualSessionFactory.isOpen&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_32" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.isOpen:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_33')">
+DualSessionFactory.openSession&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Session</span></span>
+<br/>
+<div id="c_33" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.openSession:()Lorg/hibernate/Session;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_34')">
+DualSessionFactory.openStatelessSession&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;StatelessSession</span></span>
+<br/>
+<div id="c_34" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.openStatelessSession:()Lorg/hibernate/StatelessSession;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_35')">
+DualSessionFactory.openStatelessSession&#160;<span class='sym_p'><span>(&#160;Connection <span class='color_p'>connection</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;StatelessSession</span></span>
+<br/>
+<div id="c_35" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.openStatelessSession:(Ljava/sql/Connection;)Lorg/hibernate/StatelessSession;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_36')">
+DualSessionFactory.prepare&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>readOnly</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;SessionFactory</span></span>
+<br/>
+<div id="c_36" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.prepare:(Z)Lorg/hibernate/SessionFactory;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_37')">
+DualSessionFactory.unwrap&#160;<span class='sym_p'><span>(&#160;Class&lt;T&gt; <span class='color_p'>cls</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;T</span></span>
+<br/>
+<div id="c_37" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.unwrap:(Ljava/lang/Class;)Ljava/lang/Object;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_38')">
+DualSessionFactory.withOptions&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;SessionBuilder</span></span>
+<br/>
+<div id="c_38" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.withOptions:()Lorg/hibernate/SessionBuilder;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_39')">
+DualSessionFactory.withStatelessOptions&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;StatelessSessionBuilder</span></span>
+<br/>
+<div id="c_39" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/DualSessionFactory.withStatelessOptions:()Lorg/hibernate/StatelessSessionBuilder;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-hibernate-2.1.0.jar</span>, <span class='cname'>HibernateBundle.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.hibernate.dual</span><br/>
+<span class="section" onclick="sC(this, 'c_40')">
+HibernateBundle&lt;T&gt;.getReadSourceFactory&#160;<span class='sym_p'><span>(&#160;T <span class='color_p'>p1</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;PooledDataSourceFactory</span></span>
+<br/>
+<div id="c_40" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/HibernateBundle.getReadSourceFactory:(Ljava/lang/Object;)Lio/dropwizard/db/PooledDataSourceFactory;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_41')">
+HibernateBundle&lt;T&gt;.HibernateBundle&lt;T&gt;&#160;<span class='sym_p'><span>(&#160;Class&lt;?&gt; <span class='color_p'>entity</span></span>, <span>Class&lt;?&gt;... <span class='color_p'>entities</span></span>&#160;)</span></span>
+<br/>
+<div id="c_41" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/HibernateBundle.&quot;&lt;init&gt;&quot;:(Ljava/lang/Class;[Ljava/lang/Class;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_42')">
+HibernateBundle&lt;T&gt;.HibernateBundle&lt;T&gt;&#160;<span class='sym_p'><span>(&#160;List&lt;Class&lt;?&gt;&gt; <span class='color_p'>entities</span></span>, <span>SessionFactoryFactory <span class='color_p'>sessionFactoryFactory</span></span>&#160;)</span></span>
+<br/>
+<div id="c_42" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/HibernateBundle.&quot;&lt;init&gt;&quot;:(Ljava/util/List;Lio/dropwizard/hibernate/SessionFactoryFactory;)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_43')">
+HibernateBundle&lt;T&gt;.run&#160;<span class='sym_p'><span>(&#160;T <span class='color_p'>configuration</span></span>, <span>Environment <span class='color_p'>environment</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_43" style="display:none;">
+<span class='mngl'>io/dropwizard/hibernate/dual/HibernateBundle.run:(Ljava/lang/Object;Lio/dropwizard/setup/Environment;)V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Checked_Archives'></a><h2>Java Archives <span class='gray'>&nbsp;1&nbsp;</span></h2>
+<hr/><div class='jar_list'>
+dropwizard-hibernate-2.0.35.jar<br/>
+</div><br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<br/><br/><br/>
+<hr/><div class='footer' align='right'><i>Generated by <a href='https://github.com/lvc/japi-compliance-checker'>Java API Compliance Checker</a> 2.4 &#160;</i></div><br/>
+</body></html>
