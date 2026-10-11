@@ -1,0 +1,11 @@
+{
+  "Affected": "10.3",
+  "Added": 6,
+  "Removed": 7,
+  "TotalProblems": 2,
+  "Source_Affected": "10.3",
+  "Source_TotalProblems": "4",
+  "Source_ReportPath": "compat_report/dropwizard-web/1.5.2/2.0.0/ed3ce/src_compat_report.html",
+  "Archive1": "dropwizard-web-1.5.2.jar",
+  "Archive2": "dropwizard-web-2.0.0.jar"
+}

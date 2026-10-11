@@ -1,0 +1,11 @@
+{
+  "Affected": "0",
+  "Added": 0,
+  "Removed": 0,
+  "TotalProblems": 0,
+  "Source_Affected": "0",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/dropwizard-jersey/4.0.8/4.0.9/a55c7/src_compat_report.html",
+  "Archive1": "dropwizard-jersey-4.0.8.jar",
+  "Archive2": "dropwizard-jersey-4.0.9.jar"
+}

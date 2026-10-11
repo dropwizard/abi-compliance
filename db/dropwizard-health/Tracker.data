@@ -1,0 +1,392 @@
+$VAR1 = {
+          'APIDump' => {
+                         '1.3.11-1' => {
+                                         'e8fa4' => {
+                                                      'Archive' => 'dropwizard-health-1.3.11-1.jar',
+                                                      'Path' => 'api_dump/dropwizard-health/1.3.11-1/e8fa4/API.dump.tar.gz',
+                                                      'TotalSymbols' => '69'
+                                                    }
+                                       },
+                         '1.3.15-1' => {
+                                         '411d6' => {
+                                                      'Archive' => 'dropwizard-health-1.3.15-1.jar',
+                                                      'Path' => 'api_dump/dropwizard-health/1.3.15-1/411d6/API.dump.tar.gz',
+                                                      'TotalSymbols' => '69'
+                                                    }
+                                       },
+                         '1.3.16-1' => {
+                                         '851eb' => {
+                                                      'Archive' => 'dropwizard-health-1.3.16-1.jar',
+                                                      'Path' => 'api_dump/dropwizard-health/1.3.16-1/851eb/API.dump.tar.gz',
+                                                      'TotalSymbols' => '69'
+                                                    }
+                                       },
+                         '1.4.0' => {
+                                      'e832e' => {
+                                                   'Archive' => 'dropwizard-health-1.4.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-health/1.4.0/e832e/API.dump.tar.gz',
+                                                   'TotalSymbols' => '85'
+                                                 }
+                                    },
+                         '1.5.0' => {
+                                      '576ab' => {
+                                                   'Archive' => 'dropwizard-health-1.5.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-health/1.5.0/576ab/API.dump.tar.gz',
+                                                   'TotalSymbols' => '85'
+                                                 }
+                                    },
+                         '1.6.0' => {
+                                      '50750' => {
+                                                   'Archive' => 'dropwizard-health-1.6.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-health/1.6.0/50750/API.dump.tar.gz',
+                                                   'TotalSymbols' => '87'
+                                                 }
+                                    },
+                         '1.7.1' => {
+                                      '86612' => {
+                                                   'Archive' => 'dropwizard-health-1.7.1.jar',
+                                                   'Path' => 'api_dump/dropwizard-health/1.7.1/86612/API.dump.tar.gz',
+                                                   'TotalSymbols' => '110'
+                                                 }
+                                    },
+                         '1.7.2' => {
+                                      '0bea0' => {
+                                                   'Archive' => 'dropwizard-health-1.7.2.jar',
+                                                   'Path' => 'api_dump/dropwizard-health/1.7.2/0bea0/API.dump.tar.gz',
+                                                   'TotalSymbols' => '110'
+                                                 }
+                                    },
+                         '1.7.3' => {
+                                      '065a9' => {
+                                                   'Archive' => 'dropwizard-health-1.7.3.jar',
+                                                   'Path' => 'api_dump/dropwizard-health/1.7.3/065a9/API.dump.tar.gz',
+                                                   'TotalSymbols' => '110'
+                                                 }
+                                    }
+                       },
+          'APIReport' => {
+                           '1.3.11-1' => {
+                                           '1.3.15-1' => {
+                                                           'Added' => 0,
+                                                           'ArchivesAdded' => 0,
+                                                           'ArchivesAddedSymbols' => 0,
+                                                           'ArchivesRemoved' => 0,
+                                                           'ArchivesRemovedSymbols' => 0,
+                                                           'BC' => 100,
+                                                           'Path' => 'archives_report/dropwizard-health/1.3.11-1/1.3.15-1/report.html',
+                                                           'Removed' => 0,
+                                                           'Source_BC' => 100,
+                                                           'Source_TotalProblems' => 0,
+                                                           'TotalArchives' => 1,
+                                                           'TotalProblems' => 0
+                                                         }
+                                         },
+                           '1.3.15-1' => {
+                                           '1.3.16-1' => {
+                                                           'Added' => 0,
+                                                           'ArchivesAdded' => 0,
+                                                           'ArchivesAddedSymbols' => 0,
+                                                           'ArchivesRemoved' => 0,
+                                                           'ArchivesRemovedSymbols' => 0,
+                                                           'BC' => 100,
+                                                           'Path' => 'archives_report/dropwizard-health/1.3.15-1/1.3.16-1/report.html',
+                                                           'Removed' => 0,
+                                                           'Source_BC' => 100,
+                                                           'Source_TotalProblems' => 0,
+                                                           'TotalArchives' => 1,
+                                                           'TotalProblems' => 0
+                                                         }
+                                         },
+                           '1.3.16-1' => {
+                                           '1.4.0' => {
+                                                        'Added' => 17,
+                                                        'ArchivesAdded' => 0,
+                                                        'ArchivesAddedSymbols' => 0,
+                                                        'ArchivesRemoved' => 0,
+                                                        'ArchivesRemovedSymbols' => 0,
+                                                        'BC' => '98.6',
+                                                        'Path' => 'archives_report/dropwizard-health/1.3.16-1/1.4.0/report.html',
+                                                        'Removed' => 1,
+                                                        'Source_BC' => '98.6',
+                                                        'Source_TotalProblems' => 0,
+                                                        'TotalArchives' => 1,
+                                                        'TotalProblems' => 0
+                                                      }
+                                         },
+                           '1.4.0' => {
+                                        '1.5.0' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-health/1.4.0/1.5.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.5.0' => {
+                                        '1.6.0' => {
+                                                     'Added' => 2,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-health/1.5.0/1.6.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.6.0' => {
+                                        '1.7.1' => {
+                                                     'Added' => 23,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => '98.3',
+                                                     'Path' => 'archives_report/dropwizard-health/1.6.0/1.7.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => '96.6',
+                                                     'Source_TotalProblems' => 1,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 1
+                                                   }
+                                      },
+                           '1.7.1' => {
+                                        '1.7.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-health/1.7.1/1.7.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '1.7.2' => {
+                                        '1.7.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-health/1.7.2/1.7.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      }
+                         },
+          'APIReport_D' => {
+                             '1.3.11-1' => {
+                                             '1.3.15-1' => {
+                                                             '255d5' => {
+                                                                          'Added' => 0,
+                                                                          'Affected' => 0,
+                                                                          'Archive1' => 'dropwizard-health-1.3.11-1.jar',
+                                                                          'Archive2' => 'dropwizard-health-1.3.15-1.jar',
+                                                                          'Path' => 'compat_report/dropwizard-health/1.3.11-1/1.3.15-1/255d5/bin_compat_report.html',
+                                                                          'Removed' => 0,
+                                                                          'Source_Affected' => 0,
+                                                                          'Source_ReportPath' => 'compat_report/dropwizard-health/1.3.11-1/1.3.15-1/255d5/src_compat_report.html',
+                                                                          'Source_TotalProblems' => 0,
+                                                                          'TotalProblems' => 0
+                                                                        }
+                                                           }
+                                           },
+                             '1.3.15-1' => {
+                                             '1.3.16-1' => {
+                                                             'f7192' => {
+                                                                          'Added' => 0,
+                                                                          'Affected' => 0,
+                                                                          'Archive1' => 'dropwizard-health-1.3.15-1.jar',
+                                                                          'Archive2' => 'dropwizard-health-1.3.16-1.jar',
+                                                                          'Path' => 'compat_report/dropwizard-health/1.3.15-1/1.3.16-1/f7192/bin_compat_report.html',
+                                                                          'Removed' => 0,
+                                                                          'Source_Affected' => 0,
+                                                                          'Source_ReportPath' => 'compat_report/dropwizard-health/1.3.15-1/1.3.16-1/f7192/src_compat_report.html',
+                                                                          'Source_TotalProblems' => 0,
+                                                                          'TotalProblems' => 0
+                                                                        }
+                                                           }
+                                           },
+                             '1.3.16-1' => {
+                                             '1.4.0' => {
+                                                          '74f9c' => {
+                                                                       'Added' => 17,
+                                                                       'Affected' => '1.4',
+                                                                       'Archive1' => 'dropwizard-health-1.3.16-1.jar',
+                                                                       'Archive2' => 'dropwizard-health-1.4.0.jar',
+                                                                       'Path' => 'compat_report/dropwizard-health/1.3.16-1/1.4.0/74f9c/bin_compat_report.html',
+                                                                       'Removed' => 1,
+                                                                       'Source_Affected' => '1.4',
+                                                                       'Source_ReportPath' => 'compat_report/dropwizard-health/1.3.16-1/1.4.0/74f9c/src_compat_report.html',
+                                                                       'Source_TotalProblems' => 0,
+                                                                       'TotalProblems' => 0
+                                                                     }
+                                                        }
+                                           },
+                             '1.4.0' => {
+                                          '1.5.0' => {
+                                                       '4068c' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-health-1.4.0.jar',
+                                                                    'Archive2' => 'dropwizard-health-1.5.0.jar',
+                                                                    'Path' => 'compat_report/dropwizard-health/1.4.0/1.5.0/4068c/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-health/1.4.0/1.5.0/4068c/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.5.0' => {
+                                          '1.6.0' => {
+                                                       'da148' => {
+                                                                    'Added' => 2,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-health-1.5.0.jar',
+                                                                    'Archive2' => 'dropwizard-health-1.6.0.jar',
+                                                                    'Path' => 'compat_report/dropwizard-health/1.5.0/1.6.0/da148/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-health/1.5.0/1.6.0/da148/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.6.0' => {
+                                          '1.7.1' => {
+                                                       '130c3' => {
+                                                                    'Added' => 23,
+                                                                    'Affected' => '1.7',
+                                                                    'Archive1' => 'dropwizard-health-1.6.0.jar',
+                                                                    'Archive2' => 'dropwizard-health-1.7.1.jar',
+                                                                    'Path' => 'compat_report/dropwizard-health/1.6.0/1.7.1/130c3/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => '3.4',
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-health/1.6.0/1.7.1/130c3/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 1,
+                                                                    'TotalProblems' => 1
+                                                                  }
+                                                     }
+                                        },
+                             '1.7.1' => {
+                                          '1.7.2' => {
+                                                       '18f76' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-health-1.7.1.jar',
+                                                                    'Archive2' => 'dropwizard-health-1.7.2.jar',
+                                                                    'Path' => 'compat_report/dropwizard-health/1.7.1/1.7.2/18f76/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-health/1.7.1/1.7.2/18f76/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '1.7.2' => {
+                                          '1.7.3' => {
+                                                       '899eb' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-health-1.7.2.jar',
+                                                                    'Archive2' => 'dropwizard-health-1.7.3.jar',
+                                                                    'Path' => 'compat_report/dropwizard-health/1.7.2/1.7.3/899eb/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-health/1.7.2/1.7.3/899eb/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        }
+                           },
+          'Changelog' => {},
+          'Date' => {
+                      '1.3.11-1' => '25-2019-05 19:15',
+                      '1.3.15-1' => '30-2019-09 18:09',
+                      '1.3.16-1' => '29-2019-10 23:22',
+                      '1.4.0' => '07-2019-11 02:27',
+                      '1.5.0' => '05-2020-01 21:41',
+                      '1.6.0' => '31-2020-08 17:34',
+                      '1.7.1' => '29-2021-06 22:17',
+                      '1.7.2' => '20-2022-04 21:16',
+                      '1.7.3' => '22-2023-02 22:12'
+                    },
+          'Maintainer' => 'Dropwizard Committers',
+          'MaintainerUrl' => 'https://www.dropwizard.io/',
+          'PackageDiff' => {
+                             '1.3.11-1' => {
+                                             '1.3.15-1' => {
+                                                             'Changed' => '0.9',
+                                                             'Path' => 'package_diff/dropwizard-health/1.3.11-1/1.3.15-1/report.html'
+                                                           }
+                                           },
+                             '1.3.15-1' => {
+                                             '1.3.16-1' => {
+                                                             'Changed' => '0.2',
+                                                             'Path' => 'package_diff/dropwizard-health/1.3.15-1/1.3.16-1/report.html'
+                                                           }
+                                           },
+                             '1.3.16-1' => {
+                                             '1.4.0' => {
+                                                          'Changed' => '17',
+                                                          'Path' => 'package_diff/dropwizard-health/1.3.16-1/1.4.0/report.html'
+                                                        }
+                                           },
+                             '1.4.0' => {
+                                          '1.5.0' => {
+                                                       'Changed' => '0.2',
+                                                       'Path' => 'package_diff/dropwizard-health/1.4.0/1.5.0/report.html'
+                                                     }
+                                        },
+                             '1.5.0' => {
+                                          '1.6.0' => {
+                                                       'Changed' => '5.9',
+                                                       'Path' => 'package_diff/dropwizard-health/1.5.0/1.6.0/report.html'
+                                                     }
+                                        },
+                             '1.6.0' => {
+                                          '1.7.1' => {
+                                                       'Changed' => '18.1',
+                                                       'Path' => 'package_diff/dropwizard-health/1.6.0/1.7.1/report.html'
+                                                     }
+                                        },
+                             '1.7.1' => {
+                                          '1.7.2' => {
+                                                       'Changed' => '0.5',
+                                                       'Path' => 'package_diff/dropwizard-health/1.7.1/1.7.2/report.html'
+                                                     }
+                                        },
+                             '1.7.2' => {
+                                          '1.7.3' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/dropwizard-health/1.7.2/1.7.3/report.html'
+                                                     }
+                                        }
+                           },
+          'Title' => 'Dropwizard Health'
+        };

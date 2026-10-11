@@ -1,0 +1,944 @@
+$VAR1 = {
+          'APIDump' => {
+                         '1.1.4-1' => {
+                                        '033c0' => {
+                                                     'Archive' => 'dropwizard-vavr-1.1.4-1.jar',
+                                                     'Path' => 'api_dump/dropwizard-vavr/1.1.4-1/033c0/API.dump.tar.gz',
+                                                     'TotalSymbols' => '72'
+                                                   }
+                                      },
+                         '1.2.4-1' => {
+                                        'cce63' => {
+                                                     'Archive' => 'dropwizard-vavr-1.2.4-1.jar',
+                                                     'Path' => 'api_dump/dropwizard-vavr/1.2.4-1/cce63/API.dump.tar.gz',
+                                                     'TotalSymbols' => '72'
+                                                   }
+                                      },
+                         '1.3.0-1' => {
+                                        '39d9b' => {
+                                                     'Archive' => 'dropwizard-vavr-1.3.0-1.jar',
+                                                     'Path' => 'api_dump/dropwizard-vavr/1.3.0-1/39d9b/API.dump.tar.gz',
+                                                     'TotalSymbols' => '72'
+                                                   }
+                                      },
+                         '1.3.0-2' => {
+                                        '53d9e' => {
+                                                     'Archive' => 'dropwizard-vavr-1.3.0-2.jar',
+                                                     'Path' => 'api_dump/dropwizard-vavr/1.3.0-2/53d9e/API.dump.tar.gz',
+                                                     'TotalSymbols' => '72'
+                                                   }
+                                      },
+                         '1.3.0-3' => {
+                                        '6ac52' => {
+                                                     'Archive' => 'dropwizard-vavr-1.3.0-3.jar',
+                                                     'Path' => 'api_dump/dropwizard-vavr/1.3.0-3/6ac52/API.dump.tar.gz',
+                                                     'TotalSymbols' => '75'
+                                                   }
+                                      },
+                         '1.3.0-4' => {
+                                        '8be89' => {
+                                                     'Archive' => 'dropwizard-vavr-1.3.0-4.jar',
+                                                     'Path' => 'api_dump/dropwizard-vavr/1.3.0-4/8be89/API.dump.tar.gz',
+                                                     'TotalSymbols' => '81'
+                                                   }
+                                      },
+                         '2.0.0-1' => {
+                                        '16090' => {
+                                                     'Archive' => 'dropwizard-vavr-2.0.0-1.jar',
+                                                     'Path' => 'api_dump/dropwizard-vavr/2.0.0-1/16090/API.dump.tar.gz',
+                                                     'TotalSymbols' => '33'
+                                                   }
+                                      },
+                         '2.0.11-1' => {
+                                         '1895c' => {
+                                                      'Archive' => 'dropwizard-vavr-2.0.11-1.jar',
+                                                      'Path' => 'api_dump/dropwizard-vavr/2.0.11-1/1895c/API.dump.tar.gz',
+                                                      'TotalSymbols' => '40'
+                                                    }
+                                       },
+                         '2.0.17-1' => {
+                                         '7444b' => {
+                                                      'Archive' => 'dropwizard-vavr-2.0.17-1.jar',
+                                                      'Path' => 'api_dump/dropwizard-vavr/2.0.17-1/7444b/API.dump.tar.gz',
+                                                      'TotalSymbols' => '40'
+                                                    }
+                                       },
+                         '2.0.21-1' => {
+                                         'a39fc' => {
+                                                      'Archive' => 'dropwizard-vavr-2.0.21-1.jar',
+                                                      'Path' => 'api_dump/dropwizard-vavr/2.0.21-1/a39fc/API.dump.tar.gz',
+                                                      'TotalSymbols' => '40'
+                                                    }
+                                       },
+                         '2.0.22-1' => {
+                                         '980dd' => {
+                                                      'Archive' => 'dropwizard-vavr-2.0.22-1.jar',
+                                                      'Path' => 'api_dump/dropwizard-vavr/2.0.22-1/980dd/API.dump.tar.gz',
+                                                      'TotalSymbols' => '40'
+                                                    }
+                                       },
+                         '2.0.23-1' => {
+                                         '5a03e' => {
+                                                      'Archive' => 'dropwizard-vavr-2.0.23-1.jar',
+                                                      'Path' => 'api_dump/dropwizard-vavr/2.0.23-1/5a03e/API.dump.tar.gz',
+                                                      'TotalSymbols' => '40'
+                                                    }
+                                       },
+                         '2.0.24-1' => {
+                                         '93e79' => {
+                                                      'Archive' => 'dropwizard-vavr-2.0.24-1.jar',
+                                                      'Path' => 'api_dump/dropwizard-vavr/2.0.24-1/93e79/API.dump.tar.gz',
+                                                      'TotalSymbols' => '40'
+                                                    }
+                                       },
+                         '2.0.29-1' => {
+                                         'd5c20' => {
+                                                      'Archive' => 'dropwizard-vavr-2.0.29-1.jar',
+                                                      'Path' => 'api_dump/dropwizard-vavr/2.0.29-1/d5c20/API.dump.tar.gz',
+                                                      'TotalSymbols' => '40'
+                                                    }
+                                       },
+                         '2.0.7-1' => {
+                                        '9f7b2' => {
+                                                     'Archive' => 'dropwizard-vavr-2.0.7-1.jar',
+                                                     'Path' => 'api_dump/dropwizard-vavr/2.0.7-1/9f7b2/API.dump.tar.gz',
+                                                     'TotalSymbols' => '33'
+                                                   }
+                                      },
+                         '2.1.0-1' => {
+                                        '2e2c2' => {
+                                                     'Archive' => 'dropwizard-vavr-2.1.0-1.jar',
+                                                     'Path' => 'api_dump/dropwizard-vavr/2.1.0-1/2e2c2/API.dump.tar.gz',
+                                                     'TotalSymbols' => '40'
+                                                   }
+                                      },
+                         '2.1.0-2' => {
+                                        '2f8ae' => {
+                                                     'Archive' => 'dropwizard-vavr-2.1.0-2.jar',
+                                                     'Path' => 'api_dump/dropwizard-vavr/2.1.0-2/2f8ae/API.dump.tar.gz',
+                                                     'TotalSymbols' => '40'
+                                                   }
+                                      },
+                         '3.0.0-1' => {
+                                        '9725c' => {
+                                                     'Archive' => 'dropwizard-vavr-3.0.0-1.jar',
+                                                     'Path' => 'api_dump/dropwizard-vavr/3.0.0-1/9725c/API.dump.tar.gz',
+                                                     'TotalSymbols' => '41'
+                                                   }
+                                      },
+                         '3.0.0-2' => {
+                                        '02bb9' => {
+                                                     'Archive' => 'dropwizard-vavr-3.0.0-2.jar',
+                                                     'Path' => 'api_dump/dropwizard-vavr/3.0.0-2/02bb9/API.dump.tar.gz',
+                                                     'TotalSymbols' => '41'
+                                                   }
+                                      },
+                         '4.0.0-1' => {
+                                        '7a411' => {
+                                                     'Archive' => 'dropwizard-vavr-4.0.0-1.jar',
+                                                     'Path' => 'api_dump/dropwizard-vavr/4.0.0-1/7a411/API.dump.tar.gz',
+                                                     'TotalSymbols' => '41'
+                                                   }
+                                      },
+                         '4.0.0-2' => {
+                                        '164b2' => {
+                                                     'Archive' => 'dropwizard-vavr-4.0.0-2.jar',
+                                                     'Path' => 'api_dump/dropwizard-vavr/4.0.0-2/164b2/API.dump.tar.gz',
+                                                     'TotalSymbols' => '41'
+                                                   }
+                                      }
+                       },
+          'APIReport' => {
+                           '1.1.4-1' => {
+                                          '1.2.4-1' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/dropwizard-vavr/1.1.4-1/1.2.4-1/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                        },
+                           '1.2.4-1' => {
+                                          '1.3.0-1' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/dropwizard-vavr/1.2.4-1/1.3.0-1/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                        },
+                           '1.3.0-1' => {
+                                          '1.3.0-2' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/dropwizard-vavr/1.3.0-1/1.3.0-2/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                        },
+                           '1.3.0-2' => {
+                                          '1.3.0-3' => {
+                                                         'Added' => 3,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/dropwizard-vavr/1.3.0-2/1.3.0-3/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                        },
+                           '1.3.0-3' => {
+                                          '1.3.0-4' => {
+                                                         'Added' => 4,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/dropwizard-vavr/1.3.0-3/1.3.0-4/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                        },
+                           '1.3.0-4' => {
+                                          '2.0.0-1' => {
+                                                         'Added' => 4,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => '35.8',
+                                                         'Path' => 'archives_report/dropwizard-vavr/1.3.0-4/2.0.0-1/report.html',
+                                                         'Removed' => 50,
+                                                         'Source_BC' => '35.8',
+                                                         'Source_TotalProblems' => 20,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 20
+                                                       }
+                                        },
+                           '2.0.0-1' => {
+                                          '2.0.7-1' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/dropwizard-vavr/2.0.0-1/2.0.7-1/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                        },
+                           '2.0.11-1' => {
+                                           '2.0.17-1' => {
+                                                           'Added' => 0,
+                                                           'ArchivesAdded' => 0,
+                                                           'ArchivesAddedSymbols' => 0,
+                                                           'ArchivesRemoved' => 0,
+                                                           'ArchivesRemovedSymbols' => 0,
+                                                           'BC' => 100,
+                                                           'Path' => 'archives_report/dropwizard-vavr/2.0.11-1/2.0.17-1/report.html',
+                                                           'Removed' => 0,
+                                                           'Source_BC' => 100,
+                                                           'Source_TotalProblems' => 0,
+                                                           'TotalArchives' => 1,
+                                                           'TotalProblems' => 0
+                                                         }
+                                         },
+                           '2.0.17-1' => {
+                                           '2.0.21-1' => {
+                                                           'Added' => 0,
+                                                           'ArchivesAdded' => 0,
+                                                           'ArchivesAddedSymbols' => 0,
+                                                           'ArchivesRemoved' => 0,
+                                                           'ArchivesRemovedSymbols' => 0,
+                                                           'BC' => 100,
+                                                           'Path' => 'archives_report/dropwizard-vavr/2.0.17-1/2.0.21-1/report.html',
+                                                           'Removed' => 0,
+                                                           'Source_BC' => 100,
+                                                           'Source_TotalProblems' => 0,
+                                                           'TotalArchives' => 1,
+                                                           'TotalProblems' => 0
+                                                         }
+                                         },
+                           '2.0.21-1' => {
+                                           '2.0.22-1' => {
+                                                           'Added' => 0,
+                                                           'ArchivesAdded' => 0,
+                                                           'ArchivesAddedSymbols' => 0,
+                                                           'ArchivesRemoved' => 0,
+                                                           'ArchivesRemovedSymbols' => 0,
+                                                           'BC' => 100,
+                                                           'Path' => 'archives_report/dropwizard-vavr/2.0.21-1/2.0.22-1/report.html',
+                                                           'Removed' => 0,
+                                                           'Source_BC' => 100,
+                                                           'Source_TotalProblems' => 0,
+                                                           'TotalArchives' => 1,
+                                                           'TotalProblems' => 0
+                                                         }
+                                         },
+                           '2.0.22-1' => {
+                                           '2.0.23-1' => {
+                                                           'Added' => 0,
+                                                           'ArchivesAdded' => 0,
+                                                           'ArchivesAddedSymbols' => 0,
+                                                           'ArchivesRemoved' => 0,
+                                                           'ArchivesRemovedSymbols' => 0,
+                                                           'BC' => 100,
+                                                           'Path' => 'archives_report/dropwizard-vavr/2.0.22-1/2.0.23-1/report.html',
+                                                           'Removed' => 0,
+                                                           'Source_BC' => 100,
+                                                           'Source_TotalProblems' => 0,
+                                                           'TotalArchives' => 1,
+                                                           'TotalProblems' => 0
+                                                         }
+                                         },
+                           '2.0.23-1' => {
+                                           '2.0.24-1' => {
+                                                           'Added' => 0,
+                                                           'ArchivesAdded' => 0,
+                                                           'ArchivesAddedSymbols' => 0,
+                                                           'ArchivesRemoved' => 0,
+                                                           'ArchivesRemovedSymbols' => 0,
+                                                           'BC' => 100,
+                                                           'Path' => 'archives_report/dropwizard-vavr/2.0.23-1/2.0.24-1/report.html',
+                                                           'Removed' => 0,
+                                                           'Source_BC' => 100,
+                                                           'Source_TotalProblems' => 0,
+                                                           'TotalArchives' => 1,
+                                                           'TotalProblems' => 0
+                                                         }
+                                         },
+                           '2.0.24-1' => {
+                                           '2.0.29-1' => {
+                                                           'Added' => 0,
+                                                           'ArchivesAdded' => 0,
+                                                           'ArchivesAddedSymbols' => 0,
+                                                           'ArchivesRemoved' => 0,
+                                                           'ArchivesRemovedSymbols' => 0,
+                                                           'BC' => 100,
+                                                           'Path' => 'archives_report/dropwizard-vavr/2.0.24-1/2.0.29-1/report.html',
+                                                           'Removed' => 0,
+                                                           'Source_BC' => 100,
+                                                           'Source_TotalProblems' => 0,
+                                                           'TotalArchives' => 1,
+                                                           'TotalProblems' => 0
+                                                         }
+                                         },
+                           '2.0.29-1' => {
+                                           '2.1.0-1' => {
+                                                          'Added' => 0,
+                                                          'ArchivesAdded' => 0,
+                                                          'ArchivesAddedSymbols' => 0,
+                                                          'ArchivesRemoved' => 0,
+                                                          'ArchivesRemovedSymbols' => 0,
+                                                          'BC' => 100,
+                                                          'Path' => 'archives_report/dropwizard-vavr/2.0.29-1/2.1.0-1/report.html',
+                                                          'Removed' => 0,
+                                                          'Source_BC' => 100,
+                                                          'Source_TotalProblems' => 0,
+                                                          'TotalArchives' => 1,
+                                                          'TotalProblems' => 0
+                                                        }
+                                         },
+                           '2.0.7-1' => {
+                                          '2.0.11-1' => {
+                                                          'Added' => 4,
+                                                          'ArchivesAdded' => 0,
+                                                          'ArchivesAddedSymbols' => 0,
+                                                          'ArchivesRemoved' => 0,
+                                                          'ArchivesRemovedSymbols' => 0,
+                                                          'BC' => 100,
+                                                          'Path' => 'archives_report/dropwizard-vavr/2.0.7-1/2.0.11-1/report.html',
+                                                          'Removed' => 0,
+                                                          'Source_BC' => 100,
+                                                          'Source_TotalProblems' => 0,
+                                                          'TotalArchives' => 1,
+                                                          'TotalProblems' => 0
+                                                        }
+                                        },
+                           '2.1.0-1' => {
+                                          '2.1.0-2' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/dropwizard-vavr/2.1.0-1/2.1.0-2/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                        },
+                           '2.1.0-2' => {
+                                          '3.0.0-1' => {
+                                                         'Added' => 3,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => '82.5',
+                                                         'Path' => 'archives_report/dropwizard-vavr/2.1.0-2/3.0.0-1/report.html',
+                                                         'Removed' => 2,
+                                                         'Source_BC' => '82.5',
+                                                         'Source_TotalProblems' => 1,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 1
+                                                       }
+                                        },
+                           '3.0.0-1' => {
+                                          '3.0.0-2' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/dropwizard-vavr/3.0.0-1/3.0.0-2/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                        },
+                           '3.0.0-2' => {
+                                          '4.0.0-1' => {
+                                                         'Added' => 20,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => '29.3',
+                                                         'Path' => 'archives_report/dropwizard-vavr/3.0.0-2/4.0.0-1/report.html',
+                                                         'Removed' => 20,
+                                                         'Source_BC' => '29.3',
+                                                         'Source_TotalProblems' => 14,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 14
+                                                       }
+                                        },
+                           '4.0.0-1' => {
+                                          '4.0.0-2' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/dropwizard-vavr/4.0.0-1/4.0.0-2/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                        }
+                         },
+          'APIReport_D' => {
+                             '1.1.4-1' => {
+                                            '1.2.4-1' => {
+                                                           'c3f1a' => {
+                                                                        'Added' => 0,
+                                                                        'Affected' => 0,
+                                                                        'Archive1' => 'dropwizard-vavr-1.1.4-1.jar',
+                                                                        'Archive2' => 'dropwizard-vavr-1.2.4-1.jar',
+                                                                        'Path' => 'compat_report/dropwizard-vavr/1.1.4-1/1.2.4-1/c3f1a/bin_compat_report.html',
+                                                                        'Removed' => 0,
+                                                                        'Source_Affected' => 0,
+                                                                        'Source_ReportPath' => 'compat_report/dropwizard-vavr/1.1.4-1/1.2.4-1/c3f1a/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                          },
+                             '1.2.4-1' => {
+                                            '1.3.0-1' => {
+                                                           'd63e9' => {
+                                                                        'Added' => 0,
+                                                                        'Affected' => 0,
+                                                                        'Archive1' => 'dropwizard-vavr-1.2.4-1.jar',
+                                                                        'Archive2' => 'dropwizard-vavr-1.3.0-1.jar',
+                                                                        'Path' => 'compat_report/dropwizard-vavr/1.2.4-1/1.3.0-1/d63e9/bin_compat_report.html',
+                                                                        'Removed' => 0,
+                                                                        'Source_Affected' => 0,
+                                                                        'Source_ReportPath' => 'compat_report/dropwizard-vavr/1.2.4-1/1.3.0-1/d63e9/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                          },
+                             '1.3.0-1' => {
+                                            '1.3.0-2' => {
+                                                           '1d617' => {
+                                                                        'Added' => 0,
+                                                                        'Affected' => 0,
+                                                                        'Archive1' => 'dropwizard-vavr-1.3.0-1.jar',
+                                                                        'Archive2' => 'dropwizard-vavr-1.3.0-2.jar',
+                                                                        'Path' => 'compat_report/dropwizard-vavr/1.3.0-1/1.3.0-2/1d617/bin_compat_report.html',
+                                                                        'Removed' => 0,
+                                                                        'Source_Affected' => 0,
+                                                                        'Source_ReportPath' => 'compat_report/dropwizard-vavr/1.3.0-1/1.3.0-2/1d617/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                          },
+                             '1.3.0-2' => {
+                                            '1.3.0-3' => {
+                                                           'f6fbc' => {
+                                                                        'Added' => 3,
+                                                                        'Affected' => 0,
+                                                                        'Archive1' => 'dropwizard-vavr-1.3.0-2.jar',
+                                                                        'Archive2' => 'dropwizard-vavr-1.3.0-3.jar',
+                                                                        'Path' => 'compat_report/dropwizard-vavr/1.3.0-2/1.3.0-3/f6fbc/bin_compat_report.html',
+                                                                        'Removed' => 0,
+                                                                        'Source_Affected' => 0,
+                                                                        'Source_ReportPath' => 'compat_report/dropwizard-vavr/1.3.0-2/1.3.0-3/f6fbc/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                          },
+                             '1.3.0-3' => {
+                                            '1.3.0-4' => {
+                                                           '88d6e' => {
+                                                                        'Added' => 4,
+                                                                        'Affected' => 0,
+                                                                        'Archive1' => 'dropwizard-vavr-1.3.0-3.jar',
+                                                                        'Archive2' => 'dropwizard-vavr-1.3.0-4.jar',
+                                                                        'Path' => 'compat_report/dropwizard-vavr/1.3.0-3/1.3.0-4/88d6e/bin_compat_report.html',
+                                                                        'Removed' => 0,
+                                                                        'Source_Affected' => 0,
+                                                                        'Source_ReportPath' => 'compat_report/dropwizard-vavr/1.3.0-3/1.3.0-4/88d6e/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                          },
+                             '1.3.0-4' => {
+                                            '2.0.0-1' => {
+                                                           'cb9f2' => {
+                                                                        'Added' => 4,
+                                                                        'Affected' => '64.2',
+                                                                        'Archive1' => 'dropwizard-vavr-1.3.0-4.jar',
+                                                                        'Archive2' => 'dropwizard-vavr-2.0.0-1.jar',
+                                                                        'Path' => 'compat_report/dropwizard-vavr/1.3.0-4/2.0.0-1/cb9f2/bin_compat_report.html',
+                                                                        'Removed' => 50,
+                                                                        'Source_Affected' => '64.2',
+                                                                        'Source_ReportPath' => 'compat_report/dropwizard-vavr/1.3.0-4/2.0.0-1/cb9f2/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 20,
+                                                                        'TotalProblems' => 20
+                                                                      }
+                                                         }
+                                          },
+                             '2.0.0-1' => {
+                                            '2.0.7-1' => {
+                                                           '8f43a' => {
+                                                                        'Added' => 0,
+                                                                        'Affected' => 0,
+                                                                        'Archive1' => 'dropwizard-vavr-2.0.0-1.jar',
+                                                                        'Archive2' => 'dropwizard-vavr-2.0.7-1.jar',
+                                                                        'Path' => 'compat_report/dropwizard-vavr/2.0.0-1/2.0.7-1/8f43a/bin_compat_report.html',
+                                                                        'Removed' => 0,
+                                                                        'Source_Affected' => 0,
+                                                                        'Source_ReportPath' => 'compat_report/dropwizard-vavr/2.0.0-1/2.0.7-1/8f43a/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                          },
+                             '2.0.11-1' => {
+                                             '2.0.17-1' => {
+                                                             '8f46e' => {
+                                                                          'Added' => 0,
+                                                                          'Affected' => 0,
+                                                                          'Archive1' => 'dropwizard-vavr-2.0.11-1.jar',
+                                                                          'Archive2' => 'dropwizard-vavr-2.0.17-1.jar',
+                                                                          'Path' => 'compat_report/dropwizard-vavr/2.0.11-1/2.0.17-1/8f46e/bin_compat_report.html',
+                                                                          'Removed' => 0,
+                                                                          'Source_Affected' => 0,
+                                                                          'Source_ReportPath' => 'compat_report/dropwizard-vavr/2.0.11-1/2.0.17-1/8f46e/src_compat_report.html',
+                                                                          'Source_TotalProblems' => 0,
+                                                                          'TotalProblems' => 0
+                                                                        }
+                                                           }
+                                           },
+                             '2.0.17-1' => {
+                                             '2.0.21-1' => {
+                                                             '4728f' => {
+                                                                          'Added' => 0,
+                                                                          'Affected' => 0,
+                                                                          'Archive1' => 'dropwizard-vavr-2.0.17-1.jar',
+                                                                          'Archive2' => 'dropwizard-vavr-2.0.21-1.jar',
+                                                                          'Path' => 'compat_report/dropwizard-vavr/2.0.17-1/2.0.21-1/4728f/bin_compat_report.html',
+                                                                          'Removed' => 0,
+                                                                          'Source_Affected' => 0,
+                                                                          'Source_ReportPath' => 'compat_report/dropwizard-vavr/2.0.17-1/2.0.21-1/4728f/src_compat_report.html',
+                                                                          'Source_TotalProblems' => 0,
+                                                                          'TotalProblems' => 0
+                                                                        }
+                                                           }
+                                           },
+                             '2.0.21-1' => {
+                                             '2.0.22-1' => {
+                                                             '2b6c1' => {
+                                                                          'Added' => 0,
+                                                                          'Affected' => 0,
+                                                                          'Archive1' => 'dropwizard-vavr-2.0.21-1.jar',
+                                                                          'Archive2' => 'dropwizard-vavr-2.0.22-1.jar',
+                                                                          'Path' => 'compat_report/dropwizard-vavr/2.0.21-1/2.0.22-1/2b6c1/bin_compat_report.html',
+                                                                          'Removed' => 0,
+                                                                          'Source_Affected' => 0,
+                                                                          'Source_ReportPath' => 'compat_report/dropwizard-vavr/2.0.21-1/2.0.22-1/2b6c1/src_compat_report.html',
+                                                                          'Source_TotalProblems' => 0,
+                                                                          'TotalProblems' => 0
+                                                                        }
+                                                           }
+                                           },
+                             '2.0.22-1' => {
+                                             '2.0.23-1' => {
+                                                             '95e06' => {
+                                                                          'Added' => 0,
+                                                                          'Affected' => 0,
+                                                                          'Archive1' => 'dropwizard-vavr-2.0.22-1.jar',
+                                                                          'Archive2' => 'dropwizard-vavr-2.0.23-1.jar',
+                                                                          'Path' => 'compat_report/dropwizard-vavr/2.0.22-1/2.0.23-1/95e06/bin_compat_report.html',
+                                                                          'Removed' => 0,
+                                                                          'Source_Affected' => 0,
+                                                                          'Source_ReportPath' => 'compat_report/dropwizard-vavr/2.0.22-1/2.0.23-1/95e06/src_compat_report.html',
+                                                                          'Source_TotalProblems' => 0,
+                                                                          'TotalProblems' => 0
+                                                                        }
+                                                           }
+                                           },
+                             '2.0.23-1' => {
+                                             '2.0.24-1' => {
+                                                             '8f8a9' => {
+                                                                          'Added' => 0,
+                                                                          'Affected' => 0,
+                                                                          'Archive1' => 'dropwizard-vavr-2.0.23-1.jar',
+                                                                          'Archive2' => 'dropwizard-vavr-2.0.24-1.jar',
+                                                                          'Path' => 'compat_report/dropwizard-vavr/2.0.23-1/2.0.24-1/8f8a9/bin_compat_report.html',
+                                                                          'Removed' => 0,
+                                                                          'Source_Affected' => 0,
+                                                                          'Source_ReportPath' => 'compat_report/dropwizard-vavr/2.0.23-1/2.0.24-1/8f8a9/src_compat_report.html',
+                                                                          'Source_TotalProblems' => 0,
+                                                                          'TotalProblems' => 0
+                                                                        }
+                                                           }
+                                           },
+                             '2.0.24-1' => {
+                                             '2.0.29-1' => {
+                                                             '11c8b' => {
+                                                                          'Added' => 0,
+                                                                          'Affected' => 0,
+                                                                          'Archive1' => 'dropwizard-vavr-2.0.24-1.jar',
+                                                                          'Archive2' => 'dropwizard-vavr-2.0.29-1.jar',
+                                                                          'Path' => 'compat_report/dropwizard-vavr/2.0.24-1/2.0.29-1/11c8b/bin_compat_report.html',
+                                                                          'Removed' => 0,
+                                                                          'Source_Affected' => 0,
+                                                                          'Source_ReportPath' => 'compat_report/dropwizard-vavr/2.0.24-1/2.0.29-1/11c8b/src_compat_report.html',
+                                                                          'Source_TotalProblems' => 0,
+                                                                          'TotalProblems' => 0
+                                                                        }
+                                                           }
+                                           },
+                             '2.0.29-1' => {
+                                             '2.1.0-1' => {
+                                                            '3c204' => {
+                                                                         'Added' => 0,
+                                                                         'Affected' => 0,
+                                                                         'Archive1' => 'dropwizard-vavr-2.0.29-1.jar',
+                                                                         'Archive2' => 'dropwizard-vavr-2.1.0-1.jar',
+                                                                         'Path' => 'compat_report/dropwizard-vavr/2.0.29-1/2.1.0-1/3c204/bin_compat_report.html',
+                                                                         'Removed' => 0,
+                                                                         'Source_Affected' => 0,
+                                                                         'Source_ReportPath' => 'compat_report/dropwizard-vavr/2.0.29-1/2.1.0-1/3c204/src_compat_report.html',
+                                                                         'Source_TotalProblems' => 0,
+                                                                         'TotalProblems' => 0
+                                                                       }
+                                                          }
+                                           },
+                             '2.0.7-1' => {
+                                            '2.0.11-1' => {
+                                                            '0454f' => {
+                                                                         'Added' => 4,
+                                                                         'Affected' => 0,
+                                                                         'Archive1' => 'dropwizard-vavr-2.0.7-1.jar',
+                                                                         'Archive2' => 'dropwizard-vavr-2.0.11-1.jar',
+                                                                         'Path' => 'compat_report/dropwizard-vavr/2.0.7-1/2.0.11-1/0454f/bin_compat_report.html',
+                                                                         'Removed' => 0,
+                                                                         'Source_Affected' => 0,
+                                                                         'Source_ReportPath' => 'compat_report/dropwizard-vavr/2.0.7-1/2.0.11-1/0454f/src_compat_report.html',
+                                                                         'Source_TotalProblems' => 0,
+                                                                         'TotalProblems' => 0
+                                                                       }
+                                                          }
+                                          },
+                             '2.1.0-1' => {
+                                            '2.1.0-2' => {
+                                                           '09adf' => {
+                                                                        'Added' => 0,
+                                                                        'Affected' => 0,
+                                                                        'Archive1' => 'dropwizard-vavr-2.1.0-1.jar',
+                                                                        'Archive2' => 'dropwizard-vavr-2.1.0-2.jar',
+                                                                        'Path' => 'compat_report/dropwizard-vavr/2.1.0-1/2.1.0-2/09adf/bin_compat_report.html',
+                                                                        'Removed' => 0,
+                                                                        'Source_Affected' => 0,
+                                                                        'Source_ReportPath' => 'compat_report/dropwizard-vavr/2.1.0-1/2.1.0-2/09adf/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                          },
+                             '2.1.0-2' => {
+                                            '3.0.0-1' => {
+                                                           'add80' => {
+                                                                        'Added' => 3,
+                                                                        'Affected' => '17.5',
+                                                                        'Archive1' => 'dropwizard-vavr-2.1.0-2.jar',
+                                                                        'Archive2' => 'dropwizard-vavr-3.0.0-1.jar',
+                                                                        'Path' => 'compat_report/dropwizard-vavr/2.1.0-2/3.0.0-1/add80/bin_compat_report.html',
+                                                                        'Removed' => 2,
+                                                                        'Source_Affected' => '17.5',
+                                                                        'Source_ReportPath' => 'compat_report/dropwizard-vavr/2.1.0-2/3.0.0-1/add80/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 1,
+                                                                        'TotalProblems' => 1
+                                                                      }
+                                                         }
+                                          },
+                             '3.0.0-1' => {
+                                            '3.0.0-2' => {
+                                                           'afdbf' => {
+                                                                        'Added' => 0,
+                                                                        'Affected' => 0,
+                                                                        'Archive1' => 'dropwizard-vavr-3.0.0-1.jar',
+                                                                        'Archive2' => 'dropwizard-vavr-3.0.0-2.jar',
+                                                                        'Path' => 'compat_report/dropwizard-vavr/3.0.0-1/3.0.0-2/afdbf/bin_compat_report.html',
+                                                                        'Removed' => 0,
+                                                                        'Source_Affected' => 0,
+                                                                        'Source_ReportPath' => 'compat_report/dropwizard-vavr/3.0.0-1/3.0.0-2/afdbf/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                          },
+                             '3.0.0-2' => {
+                                            '4.0.0-1' => {
+                                                           'c5201' => {
+                                                                        'Added' => 20,
+                                                                        'Affected' => '70.7',
+                                                                        'Archive1' => 'dropwizard-vavr-3.0.0-2.jar',
+                                                                        'Archive2' => 'dropwizard-vavr-4.0.0-1.jar',
+                                                                        'Path' => 'compat_report/dropwizard-vavr/3.0.0-2/4.0.0-1/c5201/bin_compat_report.html',
+                                                                        'Removed' => 20,
+                                                                        'Source_Affected' => '70.7',
+                                                                        'Source_ReportPath' => 'compat_report/dropwizard-vavr/3.0.0-2/4.0.0-1/c5201/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 14,
+                                                                        'TotalProblems' => 14
+                                                                      }
+                                                         }
+                                          },
+                             '4.0.0-1' => {
+                                            '4.0.0-2' => {
+                                                           '7a3c1' => {
+                                                                        'Added' => 0,
+                                                                        'Affected' => 0,
+                                                                        'Archive1' => 'dropwizard-vavr-4.0.0-1.jar',
+                                                                        'Archive2' => 'dropwizard-vavr-4.0.0-2.jar',
+                                                                        'Path' => 'compat_report/dropwizard-vavr/4.0.0-1/4.0.0-2/7a3c1/bin_compat_report.html',
+                                                                        'Removed' => 0,
+                                                                        'Source_Affected' => 0,
+                                                                        'Source_ReportPath' => 'compat_report/dropwizard-vavr/4.0.0-1/4.0.0-2/7a3c1/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                          }
+                           },
+          'Changelog' => {},
+          'Date' => {
+                      '1.1.4-1' => '25-2017-08 13:21',
+                      '1.2.4-1' => '16-2018-03 11:58',
+                      '1.3.0-1' => '16-2018-03 12:06',
+                      '1.3.0-2' => '24-2019-12 15:46',
+                      '1.3.0-3' => '16-2020-03 14:04',
+                      '1.3.0-4' => '07-2020-07 08:55',
+                      '2.0.0-1' => '17-2020-03 09:10',
+                      '2.0.11-1' => '07-2020-07 09:02',
+                      '2.0.17-1' => '20-2020-12 17:42',
+                      '2.0.21-1' => '08-2021-04 11:15',
+                      '2.0.22-1' => '29-2021-07 22:16',
+                      '2.0.23-1' => '29-2021-07 22:17',
+                      '2.0.24-1' => '29-2021-07 22:19',
+                      '2.0.29-1' => '20-2022-04 21:12',
+                      '2.0.7-1' => '10-2020-04 10:36',
+                      '2.1.0-1' => '28-2022-05 10:04',
+                      '2.1.0-2' => '09-2023-12 12:28',
+                      '3.0.0-1' => '01-2023-04 21:18',
+                      '3.0.0-2' => '09-2023-12 12:28',
+                      '4.0.0-1' => '01-2023-04 21:57',
+                      '4.0.0-2' => '09-2023-12 12:27'
+                    },
+          'Maintainer' => 'Dropwizard Committers',
+          'MaintainerUrl' => 'https://www.dropwizard.io/',
+          'PackageDiff' => {
+                             '1.1.4-1' => {
+                                            '1.2.4-1' => {
+                                                           'Changed' => '0.4',
+                                                           'Path' => 'package_diff/dropwizard-vavr/1.1.4-1/1.2.4-1/report.html'
+                                                         }
+                                          },
+                             '1.2.4-1' => {
+                                            '1.3.0-1' => {
+                                                           'Changed' => '0.1',
+                                                           'Path' => 'package_diff/dropwizard-vavr/1.2.4-1/1.3.0-1/report.html'
+                                                         }
+                                          },
+                             '1.3.0-1' => {
+                                            '1.3.0-2' => {
+                                                           'Changed' => '0.6',
+                                                           'Path' => 'package_diff/dropwizard-vavr/1.3.0-1/1.3.0-2/report.html'
+                                                         }
+                                          },
+                             '1.3.0-2' => {
+                                            '1.3.0-3' => {
+                                                           'Changed' => '4.1',
+                                                           'Path' => 'package_diff/dropwizard-vavr/1.3.0-2/1.3.0-3/report.html'
+                                                         }
+                                          },
+                             '1.3.0-3' => {
+                                            '1.3.0-4' => {
+                                                           'Changed' => '24.6',
+                                                           'Path' => 'package_diff/dropwizard-vavr/1.3.0-3/1.3.0-4/report.html'
+                                                         }
+                                          },
+                             '1.3.0-4' => {
+                                            '2.0.0-1' => {
+                                                           'Changed' => '55.6',
+                                                           'Path' => 'package_diff/dropwizard-vavr/1.3.0-4/2.0.0-1/report.html'
+                                                         }
+                                          },
+                             '2.0.0-1' => {
+                                            '2.0.7-1' => {
+                                                           'Changed' => '0.4',
+                                                           'Path' => 'package_diff/dropwizard-vavr/2.0.0-1/2.0.7-1/report.html'
+                                                         }
+                                          },
+                             '2.0.11-1' => {
+                                             '2.0.17-1' => {
+                                                             'Changed' => '1',
+                                                             'Path' => 'package_diff/dropwizard-vavr/2.0.11-1/2.0.17-1/report.html'
+                                                           }
+                                           },
+                             '2.0.17-1' => {
+                                             '2.0.21-1' => {
+                                                             'Changed' => '0.2',
+                                                             'Path' => 'package_diff/dropwizard-vavr/2.0.17-1/2.0.21-1/report.html'
+                                                           }
+                                           },
+                             '2.0.21-1' => {
+                                             '2.0.22-1' => {
+                                                             'Changed' => '0.3',
+                                                             'Path' => 'package_diff/dropwizard-vavr/2.0.21-1/2.0.22-1/report.html'
+                                                           }
+                                           },
+                             '2.0.22-1' => {
+                                             '2.0.23-1' => {
+                                                             'Changed' => '0.1',
+                                                             'Path' => 'package_diff/dropwizard-vavr/2.0.22-1/2.0.23-1/report.html'
+                                                           }
+                                           },
+                             '2.0.23-1' => {
+                                             '2.0.24-1' => {
+                                                             'Changed' => '0.1',
+                                                             'Path' => 'package_diff/dropwizard-vavr/2.0.23-1/2.0.24-1/report.html'
+                                                           }
+                                           },
+                             '2.0.24-1' => {
+                                             '2.0.29-1' => {
+                                                             'Changed' => '0.6',
+                                                             'Path' => 'package_diff/dropwizard-vavr/2.0.24-1/2.0.29-1/report.html'
+                                                           }
+                                           },
+                             '2.0.29-1' => {
+                                             '2.1.0-1' => {
+                                                            'Changed' => '0.2',
+                                                            'Path' => 'package_diff/dropwizard-vavr/2.0.29-1/2.1.0-1/report.html'
+                                                          }
+                                           },
+                             '2.0.7-1' => {
+                                            '2.0.11-1' => {
+                                                            'Changed' => '35.7',
+                                                            'Path' => 'package_diff/dropwizard-vavr/2.0.7-1/2.0.11-1/report.html'
+                                                          }
+                                          },
+                             '2.1.0-1' => {
+                                            '2.1.0-2' => {
+                                                           'Changed' => '9',
+                                                           'Path' => 'package_diff/dropwizard-vavr/2.1.0-1/2.1.0-2/report.html'
+                                                         }
+                                          },
+                             '2.1.0-2' => {
+                                            '3.0.0-1' => {
+                                                           'Changed' => '9.4',
+                                                           'Path' => 'package_diff/dropwizard-vavr/2.1.0-2/3.0.0-1/report.html'
+                                                         }
+                                          },
+                             '3.0.0-1' => {
+                                            '3.0.0-2' => {
+                                                           'Changed' => '8.9',
+                                                           'Path' => 'package_diff/dropwizard-vavr/3.0.0-1/3.0.0-2/report.html'
+                                                         }
+                                          },
+                             '3.0.0-2' => {
+                                            '4.0.0-1' => {
+                                                           'Changed' => '35.4',
+                                                           'Path' => 'package_diff/dropwizard-vavr/3.0.0-2/4.0.0-1/report.html'
+                                                         }
+                                          },
+                             '4.0.0-1' => {
+                                            '4.0.0-2' => {
+                                                           'Changed' => '8.9',
+                                                           'Path' => 'package_diff/dropwizard-vavr/4.0.0-1/4.0.0-2/report.html'
+                                                         }
+                                          }
+                           },
+          'Title' => 'Dropwizard Vavr Bundle'
+        };

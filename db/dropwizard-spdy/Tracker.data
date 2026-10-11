@@ -1,0 +1,530 @@
+$VAR1 = {
+          'APIDump' => {
+                         '0.7.0' => {
+                                      '93066' => {
+                                                   'Archive' => 'dropwizard-spdy-0.7.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-spdy/0.7.0/93066/API.dump.tar.gz',
+                                                   'TotalSymbols' => '21'
+                                                 }
+                                    },
+                         '0.7.1' => {
+                                      '7872e' => {
+                                                   'Archive' => 'dropwizard-spdy-0.7.1.jar',
+                                                   'Path' => 'api_dump/dropwizard-spdy/0.7.1/7872e/API.dump.tar.gz',
+                                                   'TotalSymbols' => '21'
+                                                 }
+                                    },
+                         '0.8.0' => {
+                                      '0fc82' => {
+                                                   'Archive' => 'dropwizard-spdy-0.8.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-spdy/0.8.0/0fc82/API.dump.tar.gz',
+                                                   'TotalSymbols' => '21'
+                                                 }
+                                    },
+                         '0.8.1' => {
+                                      'bb6c5' => {
+                                                   'Archive' => 'dropwizard-spdy-0.8.1.jar',
+                                                   'Path' => 'api_dump/dropwizard-spdy/0.8.1/bb6c5/API.dump.tar.gz',
+                                                   'TotalSymbols' => '21'
+                                                 }
+                                    },
+                         '0.8.2' => {
+                                      'f83c3' => {
+                                                   'Archive' => 'dropwizard-spdy-0.8.2.jar',
+                                                   'Path' => 'api_dump/dropwizard-spdy/0.8.2/f83c3/API.dump.tar.gz',
+                                                   'TotalSymbols' => '21'
+                                                 }
+                                    },
+                         '0.8.3' => {
+                                      '8681b' => {
+                                                   'Archive' => 'dropwizard-spdy-0.8.3.jar',
+                                                   'Path' => 'api_dump/dropwizard-spdy/0.8.3/8681b/API.dump.tar.gz',
+                                                   'TotalSymbols' => '21'
+                                                 }
+                                    },
+                         '0.8.4' => {
+                                      '4bd34' => {
+                                                   'Archive' => 'dropwizard-spdy-0.8.4.jar',
+                                                   'Path' => 'api_dump/dropwizard-spdy/0.8.4/4bd34/API.dump.tar.gz',
+                                                   'TotalSymbols' => '21'
+                                                 }
+                                    },
+                         '0.8.5' => {
+                                      '50d56' => {
+                                                   'Archive' => 'dropwizard-spdy-0.8.5.jar',
+                                                   'Path' => 'api_dump/dropwizard-spdy/0.8.5/50d56/API.dump.tar.gz',
+                                                   'TotalSymbols' => '21'
+                                                 }
+                                    },
+                         '0.9.0' => {
+                                      '52708' => {
+                                                   'Archive' => 'dropwizard-spdy-0.9.0.jar',
+                                                   'Path' => 'api_dump/dropwizard-spdy/0.9.0/52708/API.dump.tar.gz',
+                                                   'TotalSymbols' => '21'
+                                                 }
+                                    },
+                         '0.9.1' => {
+                                      '8b151' => {
+                                                   'Archive' => 'dropwizard-spdy-0.9.1.jar',
+                                                   'Path' => 'api_dump/dropwizard-spdy/0.9.1/8b151/API.dump.tar.gz',
+                                                   'TotalSymbols' => '21'
+                                                 }
+                                    },
+                         '0.9.2' => {
+                                      'bdab4' => {
+                                                   'Archive' => 'dropwizard-spdy-0.9.2.jar',
+                                                   'Path' => 'api_dump/dropwizard-spdy/0.9.2/bdab4/API.dump.tar.gz',
+                                                   'TotalSymbols' => '21'
+                                                 }
+                                    },
+                         '0.9.3' => {
+                                      'f6916' => {
+                                                   'Archive' => 'dropwizard-spdy-0.9.3.jar',
+                                                   'Path' => 'api_dump/dropwizard-spdy/0.9.3/f6916/API.dump.tar.gz',
+                                                   'TotalSymbols' => '21'
+                                                 }
+                                    }
+                       },
+          'APIReport' => {
+                           '0.7.0' => {
+                                        '0.7.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-spdy/0.7.0/0.7.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '0.7.1' => {
+                                        '0.8.0' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-spdy/0.7.1/0.8.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '0.8.0' => {
+                                        '0.8.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-spdy/0.8.0/0.8.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '0.8.1' => {
+                                        '0.8.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-spdy/0.8.1/0.8.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '0.8.2' => {
+                                        '0.8.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-spdy/0.8.2/0.8.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '0.8.3' => {
+                                        '0.8.4' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-spdy/0.8.3/0.8.4/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '0.8.4' => {
+                                        '0.8.5' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-spdy/0.8.4/0.8.5/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '0.8.5' => {
+                                        '0.9.0' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-spdy/0.8.5/0.9.0/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '0.9.0' => {
+                                        '0.9.1' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-spdy/0.9.0/0.9.1/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '0.9.1' => {
+                                        '0.9.2' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-spdy/0.9.1/0.9.2/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      },
+                           '0.9.2' => {
+                                        '0.9.3' => {
+                                                     'Added' => 0,
+                                                     'ArchivesAdded' => 0,
+                                                     'ArchivesAddedSymbols' => 0,
+                                                     'ArchivesRemoved' => 0,
+                                                     'ArchivesRemovedSymbols' => 0,
+                                                     'BC' => 100,
+                                                     'Path' => 'archives_report/dropwizard-spdy/0.9.2/0.9.3/report.html',
+                                                     'Removed' => 0,
+                                                     'Source_BC' => 100,
+                                                     'Source_TotalProblems' => 0,
+                                                     'TotalArchives' => 1,
+                                                     'TotalProblems' => 0
+                                                   }
+                                      }
+                         },
+          'APIReport_D' => {
+                             '0.7.0' => {
+                                          '0.7.1' => {
+                                                       '7ee1b' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-spdy-0.7.0.jar',
+                                                                    'Archive2' => 'dropwizard-spdy-0.7.1.jar',
+                                                                    'Path' => 'compat_report/dropwizard-spdy/0.7.0/0.7.1/7ee1b/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-spdy/0.7.0/0.7.1/7ee1b/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '0.7.1' => {
+                                          '0.8.0' => {
+                                                       '3fc4c' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-spdy-0.7.1.jar',
+                                                                    'Archive2' => 'dropwizard-spdy-0.8.0.jar',
+                                                                    'Path' => 'compat_report/dropwizard-spdy/0.7.1/0.8.0/3fc4c/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-spdy/0.7.1/0.8.0/3fc4c/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '0.8.0' => {
+                                          '0.8.1' => {
+                                                       'f76fa' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-spdy-0.8.0.jar',
+                                                                    'Archive2' => 'dropwizard-spdy-0.8.1.jar',
+                                                                    'Path' => 'compat_report/dropwizard-spdy/0.8.0/0.8.1/f76fa/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-spdy/0.8.0/0.8.1/f76fa/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '0.8.1' => {
+                                          '0.8.2' => {
+                                                       'cd972' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-spdy-0.8.1.jar',
+                                                                    'Archive2' => 'dropwizard-spdy-0.8.2.jar',
+                                                                    'Path' => 'compat_report/dropwizard-spdy/0.8.1/0.8.2/cd972/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-spdy/0.8.1/0.8.2/cd972/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '0.8.2' => {
+                                          '0.8.3' => {
+                                                       'a9161' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-spdy-0.8.2.jar',
+                                                                    'Archive2' => 'dropwizard-spdy-0.8.3.jar',
+                                                                    'Path' => 'compat_report/dropwizard-spdy/0.8.2/0.8.3/a9161/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-spdy/0.8.2/0.8.3/a9161/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '0.8.3' => {
+                                          '0.8.4' => {
+                                                       '3efa8' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-spdy-0.8.3.jar',
+                                                                    'Archive2' => 'dropwizard-spdy-0.8.4.jar',
+                                                                    'Path' => 'compat_report/dropwizard-spdy/0.8.3/0.8.4/3efa8/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-spdy/0.8.3/0.8.4/3efa8/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '0.8.4' => {
+                                          '0.8.5' => {
+                                                       'a126f' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-spdy-0.8.4.jar',
+                                                                    'Archive2' => 'dropwizard-spdy-0.8.5.jar',
+                                                                    'Path' => 'compat_report/dropwizard-spdy/0.8.4/0.8.5/a126f/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-spdy/0.8.4/0.8.5/a126f/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '0.8.5' => {
+                                          '0.9.0' => {
+                                                       '67364' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-spdy-0.8.5.jar',
+                                                                    'Archive2' => 'dropwizard-spdy-0.9.0.jar',
+                                                                    'Path' => 'compat_report/dropwizard-spdy/0.8.5/0.9.0/67364/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-spdy/0.8.5/0.9.0/67364/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '0.9.0' => {
+                                          '0.9.1' => {
+                                                       '8a784' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-spdy-0.9.0.jar',
+                                                                    'Archive2' => 'dropwizard-spdy-0.9.1.jar',
+                                                                    'Path' => 'compat_report/dropwizard-spdy/0.9.0/0.9.1/8a784/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-spdy/0.9.0/0.9.1/8a784/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '0.9.1' => {
+                                          '0.9.2' => {
+                                                       'f853e' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-spdy-0.9.1.jar',
+                                                                    'Archive2' => 'dropwizard-spdy-0.9.2.jar',
+                                                                    'Path' => 'compat_report/dropwizard-spdy/0.9.1/0.9.2/f853e/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-spdy/0.9.1/0.9.2/f853e/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        },
+                             '0.9.2' => {
+                                          '0.9.3' => {
+                                                       'ad1e8' => {
+                                                                    'Added' => 0,
+                                                                    'Affected' => 0,
+                                                                    'Archive1' => 'dropwizard-spdy-0.9.2.jar',
+                                                                    'Archive2' => 'dropwizard-spdy-0.9.3.jar',
+                                                                    'Path' => 'compat_report/dropwizard-spdy/0.9.2/0.9.3/ad1e8/bin_compat_report.html',
+                                                                    'Removed' => 0,
+                                                                    'Source_Affected' => 0,
+                                                                    'Source_ReportPath' => 'compat_report/dropwizard-spdy/0.9.2/0.9.3/ad1e8/src_compat_report.html',
+                                                                    'Source_TotalProblems' => 0,
+                                                                    'TotalProblems' => 0
+                                                                  }
+                                                     }
+                                        }
+                           },
+          'Changelog' => {},
+          'Date' => {
+                      '0.7.0' => '04-2014-04 17:44',
+                      '0.7.1' => '18-2014-06 11:36',
+                      '0.8.0' => '05-2015-03 10:59',
+                      '0.8.1' => '07-2015-04 09:06',
+                      '0.8.2' => '06-2015-07 14:26',
+                      '0.8.3' => '24-2015-08 09:42',
+                      '0.8.4' => '25-2015-08 22:01',
+                      '0.8.5' => '03-2015-11 17:16',
+                      '0.9.0' => '28-2015-10 16:37',
+                      '0.9.1' => '03-2015-11 16:47',
+                      '0.9.2' => '20-2016-01 12:08',
+                      '0.9.3' => '20-2016-06 16:59'
+                    },
+          'Maintainer' => 'Dropwizard Committers',
+          'MaintainerUrl' => 'https://www.dropwizard.io/',
+          'PackageDiff' => {
+                             '0.7.0' => {
+                                          '0.7.1' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/dropwizard-spdy/0.7.0/0.7.1/report.html'
+                                                     }
+                                        },
+                             '0.7.1' => {
+                                          '0.8.0' => {
+                                                       'Changed' => '2.1',
+                                                       'Path' => 'package_diff/dropwizard-spdy/0.7.1/0.8.0/report.html'
+                                                     }
+                                        },
+                             '0.8.0' => {
+                                          '0.8.1' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/dropwizard-spdy/0.8.0/0.8.1/report.html'
+                                                     }
+                                        },
+                             '0.8.1' => {
+                                          '0.8.2' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/dropwizard-spdy/0.8.1/0.8.2/report.html'
+                                                     }
+                                        },
+                             '0.8.2' => {
+                                          '0.8.3' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/dropwizard-spdy/0.8.2/0.8.3/report.html'
+                                                     }
+                                        },
+                             '0.8.3' => {
+                                          '0.8.4' => {
+                                                       'Changed' => '0.3',
+                                                       'Path' => 'package_diff/dropwizard-spdy/0.8.3/0.8.4/report.html'
+                                                     }
+                                        },
+                             '0.8.4' => {
+                                          '0.8.5' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/dropwizard-spdy/0.8.4/0.8.5/report.html'
+                                                     }
+                                        },
+                             '0.8.5' => {
+                                          '0.9.0' => {
+                                                       'Changed' => '1.5',
+                                                       'Path' => 'package_diff/dropwizard-spdy/0.8.5/0.9.0/report.html'
+                                                     }
+                                        },
+                             '0.9.0' => {
+                                          '0.9.1' => {
+                                                       'Changed' => '0.4',
+                                                       'Path' => 'package_diff/dropwizard-spdy/0.9.0/0.9.1/report.html'
+                                                     }
+                                        },
+                             '0.9.1' => {
+                                          '0.9.2' => {
+                                                       'Changed' => '0.5',
+                                                       'Path' => 'package_diff/dropwizard-spdy/0.9.1/0.9.2/report.html'
+                                                     }
+                                        },
+                             '0.9.2' => {
+                                          '0.9.3' => {
+                                                       'Changed' => '0.5',
+                                                       'Path' => 'package_diff/dropwizard-spdy/0.9.2/0.9.3/report.html'
+                                                     }
+                                        }
+                           },
+          'Title' => 'Dropwizard SPDY Support'
+        };

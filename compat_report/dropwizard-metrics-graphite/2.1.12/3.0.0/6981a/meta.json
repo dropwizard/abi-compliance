@@ -1,0 +1,11 @@
+{
+  "Affected": "0",
+  "Added": 0,
+  "Removed": 0,
+  "TotalProblems": 1,
+  "Source_Affected": "0",
+  "Source_TotalProblems": "1",
+  "Source_ReportPath": "compat_report/dropwizard-metrics-graphite/2.1.12/3.0.0/6981a/src_compat_report.html",
+  "Archive1": "dropwizard-metrics-graphite-2.1.12.jar",
+  "Archive2": "dropwizard-metrics-graphite-3.0.0.jar"
+}
