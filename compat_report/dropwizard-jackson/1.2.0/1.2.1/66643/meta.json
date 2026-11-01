@@ -1,0 +1,11 @@
+{
+  "Affected": "0",
+  "Added": 0,
+  "Removed": 0,
+  "TotalProblems": 0,
+  "Source_Affected": "0",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/dropwizard-jackson/1.2.0/1.2.1/66643/src_compat_report.html",
+  "Archive1": "dropwizard-jackson-1.2.0.jar",
+  "Archive2": "dropwizard-jackson-1.2.1.jar"
+}

@@ -1,0 +1,11 @@
+{
+  "Affected": "21.6",
+  "Added": 0,
+  "Removed": 11,
+  "TotalProblems": 2,
+  "Source_Affected": "21.6",
+  "Source_TotalProblems": "2",
+  "Source_ReportPath": "compat_report/dropwizard-cassandra/2.0.5/2.1.0/96683/src_compat_report.html",
+  "Archive1": "dropwizard-cassandra-2.0.5.jar",
+  "Archive2": "dropwizard-cassandra-2.1.0.jar"
+}

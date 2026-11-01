@@ -1,0 +1,11 @@
+{
+  "Affected": "3.1",
+  "Added": 31,
+  "Removed": 3,
+  "TotalProblems": 3,
+  "Source_Affected": "3.1",
+  "Source_TotalProblems": "3",
+  "Source_ReportPath": "compat_report/dropwizard-jersey/1.0.9/1.1.0/dafba/src_compat_report.html",
+  "Archive1": "dropwizard-jersey-1.0.9.jar",
+  "Archive2": "dropwizard-jersey-1.1.0.jar"
+}

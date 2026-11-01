@@ -1,0 +1,11 @@
+{
+  "Affected": "7.6",
+  "Added": 12,
+  "Removed": 12,
+  "TotalProblems": 6,
+  "Source_Affected": "7.6",
+  "Source_TotalProblems": "12",
+  "Source_ReportPath": "compat_report/dropwizard-kafka/1.8.4/3.0.0/88243/src_compat_report.html",
+  "Archive1": "dropwizard-kafka-1.8.4.jar",
+  "Archive2": "dropwizard-kafka-3.0.0.jar"
+}

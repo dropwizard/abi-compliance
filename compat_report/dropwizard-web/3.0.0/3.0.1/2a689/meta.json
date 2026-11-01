@@ -1,0 +1,11 @@
+{
+  "Affected": "0",
+  "Added": 1,
+  "Removed": 0,
+  "TotalProblems": 0,
+  "Source_Affected": "0",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/dropwizard-web/3.0.0/3.0.1/2a689/src_compat_report.html",
+  "Archive1": "dropwizard-web-3.0.0.jar",
+  "Archive2": "dropwizard-web-3.0.1.jar"
+}

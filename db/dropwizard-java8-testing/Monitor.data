@@ -1,0 +1,8 @@
+$VAR1 = {
+          'Installed' => {
+                           '0.9.0-1' => 'src/dropwizard-java8-testing/0.9.0-1'
+                         },
+          'Source' => {
+                        '0.9.0-1' => 'src/dropwizard-java8-testing/0.9.0-1/dropwizard-java8-testing-0.9.0-1.jar'
+                      }
+        };

@@ -1,0 +1,11 @@
+{
+  "Affected": "0",
+  "Added": 0,
+  "Removed": 0,
+  "TotalProblems": 0,
+  "Source_Affected": "0",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/metrics-jcache/4.1.19/4.1.20/6f3ac/src_compat_report.html",
+  "Archive1": "metrics-jcache-4.1.19.jar",
+  "Archive2": "metrics-jcache-4.1.20.jar"
+}

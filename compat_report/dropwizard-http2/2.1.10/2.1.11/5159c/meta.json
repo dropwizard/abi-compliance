@@ -1,0 +1,11 @@
+{
+  "Affected": "0",
+  "Added": 0,
+  "Removed": 0,
+  "TotalProblems": 0,
+  "Source_Affected": "0",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/dropwizard-http2/2.1.10/2.1.11/5159c/src_compat_report.html",
+  "Archive1": "dropwizard-http2-2.1.10.jar",
+  "Archive2": "dropwizard-http2-2.1.11.jar"
+}

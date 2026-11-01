@@ -1,0 +1,11 @@
+{
+  "Affected": "2.5",
+  "Added": 16,
+  "Removed": 1,
+  "TotalProblems": 8,
+  "Source_Affected": "3.7",
+  "Source_TotalProblems": "4",
+  "Source_ReportPath": "compat_report/dropwizard-discovery/0.7.1-3/0.7.1-5/a80d2/src_compat_report.html",
+  "Archive1": "dropwizard-discovery-0.7.1-3.jar",
+  "Archive2": "dropwizard-discovery-0.7.1-5.jar"
+}

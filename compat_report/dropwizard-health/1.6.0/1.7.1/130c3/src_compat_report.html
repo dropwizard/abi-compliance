@@ -1,0 +1,496 @@
+<!-- kind:source;verdict:incompatible;affected:3.4;added:23;removed:0;type_problems_high:1;type_problems_medium:0;type_problems_low:0;method_problems_high:0;method_problems_medium:0;method_problems_low:0;checked_methods:110;checked_types:19;tool_version:2.4 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="dropwizard-health, source, compatibility" />
+<meta name="description" content="Source compatibility report for the dropwizard-health library between 1.6.0 and 1.7.1 versions" />
+<title>dropwizard-health: 1.6.0 to 1.7.1 source compatibility report</title>
+<style type="text/css">
+body {
+    font-family:Arial, sans-serif;
+    background-color:White;
+    color:Black;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+    white-space:nowrap;
+}
+div.symbols {
+    color:#003E69;
+}
+div.symbols i {
+    color:Brown;
+}
+span.section {
+    font-weight:bold;
+    cursor:pointer;
+    color:#003E69;
+    white-space:nowrap;
+    margin-left:0.3125em;
+}
+span:hover.section {
+    color:#336699;
+}
+span.sect_aff {
+    cursor:pointer;
+    padding-left:1.55em;
+    font-size:0.875em;
+    color:#cc3300;
+}
+span.ext {
+    font-weight:normal;
+}
+span.jar {
+    color:#cc3300;
+    font-size:0.875em;
+    font-weight:bold;
+}
+div.jar_list {
+    padding-left:0.4em;
+    font-size:0.94em;
+}
+span.pkg_t {
+    color:#408080;
+    font-size:0.875em;
+}
+span.pkg {
+    color:#408080;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.cname {
+    color:Green;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.iname_b {
+    font-weight:bold;
+}
+span.iname_a {
+    color:#333333;
+    font-weight:bold;
+    font-size:0.94em;
+}
+span.sym_p {
+    font-weight:normal;
+    white-space:normal;
+}
+span.sym_pd {
+    white-space:normal;
+}
+span.sym_p span, span.sym_pd span {
+    white-space:nowrap;
+}
+span.attr {
+    color:Black;
+    font-weight:normal;
+}
+span.deprecated {
+    color:Red;
+    font-weight:bold;
+    font-family:Monaco, monospace;
+}
+div.affect {
+    padding-left:1em;
+    padding-bottom:10px;
+    font-size:0.87em;
+    font-style:italic;
+    line-height:0.9em;
+}
+div.affected {
+    padding-left:2em;
+    padding-top:10px;
+}
+table.ptable {
+    border-collapse:collapse;
+    border:1px outset black;
+    margin-left:0.95em;
+    margin-top:3px;
+    margin-bottom:3px;
+    width:56.25em;
+}
+table.ptable td {
+    border:1px solid Gray;
+    padding:3px;
+    font-size:0.875em;
+    text-align:left;
+    vertical-align:top;
+    max-width:28em;
+    word-wrap:break-word;
+}
+table.ptable th {
+    background-color:#eeeeee;
+    font-weight:bold;
+    color:#333333;
+    font-family:Verdana, Arial;
+    font-size:0.875em;
+    border:1px solid Gray;
+    text-align:center;
+    vertical-align:top;
+    white-space:nowrap;
+    padding:3px;
+}
+table.summary {
+    border-collapse:collapse;
+    border:1px outset black;
+}
+table.summary th {
+    background-color:#eeeeee;
+    font-weight:normal;
+    text-align:left;
+    font-size:0.94em;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px;
+}
+table.summary td {
+    text-align:right;
+    white-space:nowrap;
+    border:1px inset Gray;
+    padding:3px 5px 3px 10px;
+}
+span.mngl {
+    padding-left:1em;
+    font-size:0.875em;
+    cursor:text;
+    color:#444444;
+    font-weight:bold;
+}
+span.pleft {
+    padding-left:2.5em;
+}
+span.color_p {
+    font-style:italic;
+    color:Brown;
+}
+span.param {
+    font-style:italic;
+}
+span.focus_p {
+    font-style:italic;
+    background-color:#DCDCDC;
+}
+span.ttype {
+    font-weight:normal;
+}
+span.nowrap {
+    white-space:nowrap;
+}
+span.value {
+    white-space:nowrap;
+    font-weight:bold;
+}
+.passed {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.warning {
+    background-color:#F4F4AF;
+    font-weight:normal;
+}
+.failed {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.new {
+    background-color:#C6DEFF;
+    font-weight:normal;
+}
+
+.compatible {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.almost_compatible {
+    background-color:#FFDAA3;
+    font-weight:normal;
+}
+.incompatible {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.gray {
+    background-color:#DCDCDC;
+    font-weight:normal;
+}
+
+.top_ref {
+    font-size:0.69em;
+}
+.footer {
+    font-size:0.8125em;
+}
+
+</style>
+<script type="text/javascript" language="JavaScript">
+<!--
+function sC(header, id)
+{
+    e = document.getElementById(id);
+    if(e.style.display == 'none')
+    {
+        e.style.display = 'block';
+        e.style.visibility = 'visible';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[&minus;]");
+    }
+    else
+    {
+        e.style.display = 'none';
+        e.style.visibility = 'hidden';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi, "[+]");
+    }
+}
+
+-->
+</script>
+</head>
+<body><a name='Top'></a><h1>Source compatibility report for the <span style='color:Blue;'>dropwizard-health</span> library between <span style='color:Red;'>1.6.0</span> and <span style='color:Red;'>1.7.1</span> versions</h1>
+
+<h2>Test Info</h2><hr/>
+<table class='summary'>
+<tr><th>Library Name</th><td>dropwizard-health</td></tr>
+<tr><th>Version #1</th><td>1.6.0</td></tr>
+<tr><th>Version #2</th><td>1.7.1</td></tr>
+</table>
+<h2>Test Results</h2><hr/>
+<table class='summary'>
+<tr><th>Total Java Modules</th><td><a href='#Checked_Archives' style='color:Blue;'>1</a></td></tr>
+<tr><th>Total Methods / Classes</th><td>110 / 19</td></tr>
+<tr><th>Compatibility</th>
+<td class='warning'>96.6%</td>
+</tr>
+</table>
+<h2>Problem Summary</h2><hr/>
+<table class='summary'>
+<tr><th></th><th style='text-align:center;'>Severity</th><th style='text-align:center;'>Count</th></tr>
+<tr><th>Added Methods</th><td>-</td><td class='new'><a href='#Added' style='color:Blue;'>23</a></td></tr>
+<tr><th>Removed Methods</th><td>High</td><td>0</td></tr>
+<tr><th rowspan='3'>Problems with<br/>Data Types</th><td>High</td><td class='failed'><a href='#Type_Problems_High' style='color:Blue;'>1</a></td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+<tr><th rowspan='3'>Problems with<br/>Methods</th><td>High</td><td>0</td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+</table>
+
+<a name='Added'></a><h2>Added Methods <span class='new'>&nbsp;23&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-health-1.7.1.jar</span>, <span class='cname'>DefaultHealthServletFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.health.conf.response</span><br/>
+<span class="section" onclick="sC(this, 'c_26')">
+DefaultHealthServletFactory.build&#160;<span class='sym_p'><span>(&#160;HealthStatusChecker <span class='color_p'>healthStatusChecker</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HttpServlet</span></span>
+<br/>
+<div id="c_26" style="display:none;">
+<span class='mngl'>io/dropwizard/health/conf/response/DefaultHealthServletFactory.build:(Lio/dropwizard/health/core/HealthStatusChecker;)Ljavax/servlet/http/HttpServlet;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-health-1.7.1.jar</span>, <span class='cname'>DelayedShutdownHandler.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.health.shutdown</span><br/>
+<span class="section" onclick="sC(this, 'c_27')">
+DelayedShutdownHandler.DelayedShutdownHandler&#160;<span class='sym_p'><span>(&#160;ShutdownNotifier <span class='color_p'>shutdownNotifier</span></span>&#160;)</span></span>
+<br/>
+<div id="c_27" style="display:none;">
+<span class='mngl'>io/dropwizard/health/shutdown/DelayedShutdownHandler.&quot;&lt;init&gt;&quot;:(Lio/dropwizard/health/shutdown/ShutdownNotifier;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-health-1.7.1.jar</span>, <span class='cname'>HealthCheckBundle.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.health.core</span><br/>
+<span class="section" onclick="sC(this, 'c_28')">
+HealthCheckBundle&lt;C&gt;.createHealthCheckManager&#160;<span class='sym_p'><span>(&#160;List&lt;HealthCheckConfiguration&gt; <span class='color_p'>healthCheckConfigs</span></span>, <span>HealthCheckScheduler <span class='color_p'>scheduler</span></span>, <span>MetricRegistry <span class='color_p'>metrics</span></span>, <span>String <span class='color_p'>name</span></span>, <span>Duration <span class='color_p'>shutdownWaitPeriod</span></span>, <span>boolean <span class='color_p'>initialOverallState</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheckManager</span> <span class='deprecated'>*DEPRECATED*</span></span>
+<br/>
+<div id="c_28" style="display:none;">
+<span class='mngl'>io/dropwizard/health/core/HealthCheckBundle.createHealthCheckManager:(Ljava/util/List;Lio/dropwizard/health/core/HealthCheckScheduler;Lcom/codahale/metrics/MetricRegistry;Ljava/lang/String;Lio/dropwizard/util/Duration;Z)Lio/dropwizard/health/core/HealthCheckManager;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-health-1.7.1.jar</span>, <span class='cname'>HealthCheckConfiguration.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.health.conf</span><br/>
+<span class="section" onclick="sC(this, 'c_29')">
+HealthCheckConfiguration.getType&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheckType</span></span>
+<br/>
+<div id="c_29" style="display:none;">
+<span class='mngl'>io/dropwizard/health/conf/HealthCheckConfiguration.getType:()Lio/dropwizard/health/conf/HealthCheckType;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_30')">
+HealthCheckConfiguration.isInitialState&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_30" style="display:none;">
+<span class='mngl'>io/dropwizard/health/conf/HealthCheckConfiguration.isInitialState:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_31')">
+HealthCheckConfiguration.setInitialState&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>initialState</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_31" style="display:none;">
+<span class='mngl'>io/dropwizard/health/conf/HealthCheckConfiguration.setInitialState:(Z)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_32')">
+HealthCheckConfiguration.setType&#160;<span class='sym_p'><span>(&#160;HealthCheckType <span class='color_p'>type</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_32" style="display:none;">
+<span class='mngl'>io/dropwizard/health/conf/HealthCheckConfiguration.setType:(Lio/dropwizard/health/conf/HealthCheckType;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-health-1.7.1.jar</span>, <span class='cname'>HealthCheckManager.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.health.core</span><br/>
+<span class="section" onclick="sC(this, 'c_33')">
+HealthCheckManager.HealthCheckManager&#160;<span class='sym_p'><span>(&#160;List&lt;HealthCheckConfiguration&gt; <span class='color_p'>configs</span></span>, <span>HealthCheckScheduler <span class='color_p'>scheduler</span></span>, <span>MetricRegistry <span class='color_p'>metrics</span></span>, <span>Duration <span class='color_p'>shutdownWaitPeriod</span></span>, <span>boolean <span class='color_p'>initialOverallState</span></span>&#160;)</span></span>
+<br/>
+<div id="c_33" style="display:none;">
+<span class='mngl'>io/dropwizard/health/core/HealthCheckManager.&quot;&lt;init&gt;&quot;:(Ljava/util/List;Lio/dropwizard/health/core/HealthCheckScheduler;Lcom/codahale/metrics/MetricRegistry;Lio/dropwizard/util/Duration;Z)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_34')">
+HealthCheckManager.HealthCheckManager&#160;<span class='sym_p'><span>(&#160;List&lt;HealthCheckConfiguration&gt; <span class='color_p'>configs</span></span>, <span>HealthCheckScheduler <span class='color_p'>scheduler</span></span>, <span>MetricRegistry <span class='color_p'>metrics</span></span>, <span>String <span class='color_p'>managerName</span></span>, <span>Duration <span class='color_p'>shutdownWaitPeriod</span></span>, <span>boolean <span class='color_p'>initialOverallState</span></span>&#160;)</span> <span class='deprecated'>*DEPRECATED*</span></span>
+<br/>
+<div id="c_34" style="display:none;">
+<span class='mngl'>io/dropwizard/health/core/HealthCheckManager.&quot;&lt;init&gt;&quot;:(Ljava/util/List;Lio/dropwizard/health/core/HealthCheckScheduler;Lcom/codahale/metrics/MetricRegistry;Ljava/lang/String;Lio/dropwizard/util/Duration;Z)V</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_35')">
+HealthCheckManager.isHealthy&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_35" style="display:none;">
+<span class='mngl'>io/dropwizard/health/core/HealthCheckManager.isHealthy:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_36')">
+HealthCheckManager.isHealthy&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>type</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_36" style="display:none;">
+<span class='mngl'>io/dropwizard/health/core/HealthCheckManager.isHealthy:(Ljava/lang/String;)Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_37')">
+HealthCheckManager.notifyShutdownStarted&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_37" style="display:none;">
+<span class='mngl'>io/dropwizard/health/core/HealthCheckManager.notifyShutdownStarted:()V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-health-1.7.1.jar</span>, <span class='cname'>HealthCheckServlet.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.health.core</span><br/>
+<span class="section" onclick="sC(this, 'c_38')">
+HealthCheckServlet.HealthCheckServlet&#160;<span class='sym_p'><span>(&#160;HealthStatusChecker <span class='color_p'>healthStatusChecker</span></span>, <span>boolean <span class='color_p'>cacheControlEnabled</span></span>, <span>String <span class='color_p'>cacheControlValue</span></span>, <span>String <span class='color_p'>contentType</span></span>, <span>String <span class='color_p'>healthyValue</span></span>, <span>String <span class='color_p'>unhealthyValue</span></span>&#160;)</span></span>
+<br/>
+<div id="c_38" style="display:none;">
+<span class='mngl'>io/dropwizard/health/core/HealthCheckServlet.&quot;&lt;init&gt;&quot;:(Lio/dropwizard/health/core/HealthStatusChecker;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-health-1.7.1.jar</span>, <span class='cname'>HealthCheckType.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.health.conf</span><br/>
+<span class="section" onclick="sC(this, 'c_39')">
+HealthCheckType.valueOf&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>name</span></span>&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheckType</span></span>
+<br/>
+<div id="c_39" style="display:none;">
+<span class='mngl'>io/dropwizard/health/conf/HealthCheckType.valueOf:(Ljava/lang/String;)Lio/dropwizard/health/conf/HealthCheckType;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_40')">
+HealthCheckType.values&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[static]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HealthCheckType[&#160;]</span></span>
+<br/>
+<div id="c_40" style="display:none;">
+<span class='mngl'>io/dropwizard/health/conf/HealthCheckType.values:()[Lio/dropwizard/health/conf/HealthCheckType;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-health-1.7.1.jar</span>, <span class='cname'>HealthConfiguration.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.health.conf</span><br/>
+<span class="section" onclick="sC(this, 'c_41')">
+HealthConfiguration.isInitialOverallState&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_41" style="display:none;">
+<span class='mngl'>io/dropwizard/health/conf/HealthConfiguration.isInitialOverallState:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_42')">
+HealthConfiguration.setInitialOverallState&#160;<span class='sym_p'><span>(&#160;boolean <span class='color_p'>initialOverallState</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_42" style="display:none;">
+<span class='mngl'>io/dropwizard/health/conf/HealthConfiguration.setInitialOverallState:(Z)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-health-1.7.1.jar</span>, <span class='cname'>HealthServletFactory.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.health.conf.response</span><br/>
+<span class="section" onclick="sC(this, 'c_43')">
+HealthServletFactory.build&#160;<span class='sym_p'><span>(&#160;HealthStatusChecker <span class='color_p'>p1</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;HttpServlet</span></span>
+<br/>
+<div id="c_43" style="display:none;">
+<span class='mngl'>io/dropwizard/health/conf/response/HealthServletFactory.build:(Lio/dropwizard/health/core/HealthStatusChecker;)Ljavax/servlet/http/HttpServlet;</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-health-1.7.1.jar</span>, <span class='cname'>HealthStatusChecker.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.health.core</span><br/>
+<span class="section" onclick="sC(this, 'c_44')">
+HealthStatusChecker.isHealthy&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_44" style="display:none;">
+<span class='mngl'>io/dropwizard/health/core/HealthStatusChecker.isHealthy:()Z</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_45')">
+HealthStatusChecker.isHealthy&#160;<span class='sym_p'><span>(&#160;String <span class='color_p'>p1</span></span>&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;boolean</span></span>
+<br/>
+<div id="c_45" style="display:none;">
+<span class='mngl'>io/dropwizard/health/core/HealthStatusChecker.isHealthy:(Ljava/lang/String;)Z</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-health-1.7.1.jar</span>, <span class='cname'>Schedule.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.health.conf</span><br/>
+<span class="section" onclick="sC(this, 'c_46')">
+Schedule.getInitialDelay&#160;<span class='sym_p'>(&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;Duration</span></span>
+<br/>
+<div id="c_46" style="display:none;">
+<span class='mngl'>io/dropwizard/health/conf/Schedule.getInitialDelay:()Lio/dropwizard/util/Duration;</span><br/><br/></div>
+
+<span class="section" onclick="sC(this, 'c_47')">
+Schedule.setInitialDelay&#160;<span class='sym_p'><span>(&#160;Duration <span class='color_p'>initialDelay</span></span>&#160;)</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_47" style="display:none;">
+<span class='mngl'>io/dropwizard/health/conf/Schedule.setInitialDelay:(Lio/dropwizard/util/Duration;)V</span><br/><br/></div>
+
+<br/>
+<span class='jar'>dropwizard-health-1.7.1.jar</span>, <span class='cname'>ShutdownNotifier.class</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.health.shutdown</span><br/>
+<span class="section" onclick="sC(this, 'c_48')">
+ShutdownNotifier.notifyShutdownStarted&#160;<span class='sym_p'>(&#160;)</span> <span class='attr'>[abstract]</span><span class='sym_p nowrap'> &#160;<b>:</b>&#160;&#160;void</span></span>
+<br/>
+<div id="c_48" style="display:none;">
+<span class='mngl'>io/dropwizard/health/shutdown/ShutdownNotifier.notifyShutdownStarted:()V</span><br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='High_Risk_Problems'></a><a name='Type_Problems_High'></a>
+<h2>Problems with Data Types, High Severity <span class='failed'>&nbsp;1&nbsp;</span></h2><hr/>
+<span class='jar'>dropwizard-health-1.6.0.jar</span><br/>
+<span class='pkg_t'>package</span> <span class='pkg'>io.dropwizard.health.conf.response</span><br/>
+<span class="section" onclick="sC(this, 'c_49')">
+<span class='ext'>[+]</span> <span class='ttype'>interface</span> HealthServletFactory <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_49" style="display:none;">
+<table class='ptable'><tr><th width='2%'></th><th width='47%'>Change</th><th>Effect</th></tr><tr>
+<th>1</th>
+<td>Abstract method <span class='iname_b'><b>HttpServlet</b> build&#160;<span class='sym_pd'><span>(&#160;HealthStatusChecker</span>&#160;)</span></span> has been added to this interface.</td>
+<td>Recompilation of a client program may be terminated with the message: a client class C is not abstract and does not override abstract method <span class='iname_b'>build&#160;<span class='sym_pd'><span>(&#160;HealthStatusChecker</span>&#160;)</span></span> in <b>HealthServletFactory</b>.</td>
+</tr>
+</table><span class="sect_aff" onclick="sC(this, 'c_50')">
+[+] affected methods: 3 (2.7%)</span>
+<div id="c_50" style="display:none;">
+<div class='affected'><span class='iname_a'>io.dropwizard.health.conf.HealthConfiguration.getServletFactory&#160;<span class='sym_p'>(&#160;)</span></span><br/><div class='affect'>Return value  of this method is of type 'HealthServletFactory'.</div>
+<span class='iname_a'>io.dropwizard.health.conf.HealthConfiguration.setServletFactory&#160;<span class='sym_p'><span>(&#160;HealthServletFactory <span class='focus_p'>servletFactory</span></span>&#160;)</span></span><br/><div class='affect'>1st parameter 'servletFactory'  of this method is of type 'HealthServletFactory'.</div>
+<span class='iname_a'>HealthServletFactory.build&#160;<span class='sym_p'><span>(&#160;AtomicBoolean <i>p1</i></span>&#160;)</span></span><br/><div class='affect'>This abstract method is from 'HealthServletFactory' interface.</div>
+</div></div>
+<br/><br/></div>
+
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Checked_Archives'></a><h2>Java Archives <span class='gray'>&nbsp;1&nbsp;</span></h2>
+<hr/><div class='jar_list'>
+dropwizard-health-1.6.0.jar<br/>
+</div><br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<br/><br/><br/>
+<hr/><div class='footer' align='right'><i>Generated by <a href='https://github.com/lvc/japi-compliance-checker'>Java API Compliance Checker</a> 2.4 &#160;</i></div><br/>
+</body></html>

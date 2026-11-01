@@ -1,0 +1,11 @@
+{
+  "Affected": "0",
+  "Added": 0,
+  "Removed": 0,
+  "TotalProblems": 0,
+  "Source_Affected": "0",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/dropwizard-metrics/4.0.14/4.0.15/661c7/src_compat_report.html",
+  "Archive1": "dropwizard-metrics-4.0.14.jar",
+  "Archive2": "dropwizard-metrics-4.0.15.jar"
+}

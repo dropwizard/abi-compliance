@@ -1,0 +1,11 @@
+{
+  "Affected": "0",
+  "Added": 0,
+  "Removed": 0,
+  "TotalProblems": 0,
+  "Source_Affected": "0",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/metrics-httpasyncclient/4.2.1/4.2.2/94de6/src_compat_report.html",
+  "Archive1": "metrics-httpasyncclient-4.2.1.jar",
+  "Archive2": "metrics-httpasyncclient-4.2.2.jar"
+}
