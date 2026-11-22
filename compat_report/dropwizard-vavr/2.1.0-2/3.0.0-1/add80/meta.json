@@ -1,0 +1,11 @@
+{
+  "Affected": "17.5",
+  "Added": 3,
+  "Removed": 2,
+  "TotalProblems": 1,
+  "Source_Affected": "17.5",
+  "Source_TotalProblems": "1",
+  "Source_ReportPath": "compat_report/dropwizard-vavr/2.1.0-2/3.0.0-1/add80/src_compat_report.html",
+  "Archive1": "dropwizard-vavr-2.1.0-2.jar",
+  "Archive2": "dropwizard-vavr-3.0.0-1.jar"
+}

@@ -1,0 +1,11 @@
+{
+  "Affected": "5.7",
+  "Added": 11,
+  "Removed": 6,
+  "TotalProblems": 3,
+  "Source_Affected": "5.7",
+  "Source_TotalProblems": "3",
+  "Source_ReportPath": "compat_report/dropwizard-logging/1.1.8/1.2.0/bbc0b/src_compat_report.html",
+  "Archive1": "dropwizard-logging-1.1.8.jar",
+  "Archive2": "dropwizard-logging-1.2.0.jar"
+}

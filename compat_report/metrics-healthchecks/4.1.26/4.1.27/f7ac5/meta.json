@@ -1,0 +1,11 @@
+{
+  "Affected": "0",
+  "Added": 0,
+  "Removed": 0,
+  "TotalProblems": 0,
+  "Source_Affected": "0",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/metrics-healthchecks/4.1.26/4.1.27/f7ac5/src_compat_report.html",
+  "Archive1": "metrics-healthchecks-4.1.26.jar",
+  "Archive2": "metrics-healthchecks-4.1.27.jar"
+}

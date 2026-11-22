@@ -1,0 +1,36 @@
+$VAR1 = {
+          'Installed' => {
+                           '1.3.12-1' => 'src/dropwizard-web/1.3.12-1',
+                           '1.3.29-1' => 'src/dropwizard-web/1.3.29-1',
+                           '1.3.29-2' => 'src/dropwizard-web/1.3.29-2',
+                           '1.4.0' => 'src/dropwizard-web/1.4.0',
+                           '1.4.2' => 'src/dropwizard-web/1.4.2',
+                           '1.4.3' => 'src/dropwizard-web/1.4.3',
+                           '1.4.4' => 'src/dropwizard-web/1.4.4',
+                           '1.5.0' => 'src/dropwizard-web/1.5.0',
+                           '1.5.1' => 'src/dropwizard-web/1.5.1',
+                           '1.5.2' => 'src/dropwizard-web/1.5.2',
+                           '2.0.0' => 'src/dropwizard-web/2.0.0',
+                           '2.0.1' => 'src/dropwizard-web/2.0.1',
+                           '3.0.0' => 'src/dropwizard-web/3.0.0',
+                           '3.0.1' => 'src/dropwizard-web/3.0.1',
+                           '5.0.0' => 'src/dropwizard-web/5.0.0'
+                         },
+          'Source' => {
+                        '1.3.12-1' => 'src/dropwizard-web/1.3.12-1/dropwizard-web-1.3.12-1.jar',
+                        '1.3.29-1' => 'src/dropwizard-web/1.3.29-1/dropwizard-web-1.3.29-1.jar',
+                        '1.3.29-2' => 'src/dropwizard-web/1.3.29-2/dropwizard-web-1.3.29-2.jar',
+                        '1.4.0' => 'src/dropwizard-web/1.4.0/dropwizard-web-1.4.0.jar',
+                        '1.4.2' => 'src/dropwizard-web/1.4.2/dropwizard-web-1.4.2.jar',
+                        '1.4.3' => 'src/dropwizard-web/1.4.3/dropwizard-web-1.4.3.jar',
+                        '1.4.4' => 'src/dropwizard-web/1.4.4/dropwizard-web-1.4.4.jar',
+                        '1.5.0' => 'src/dropwizard-web/1.5.0/dropwizard-web-1.5.0.jar',
+                        '1.5.1' => 'src/dropwizard-web/1.5.1/dropwizard-web-1.5.1.jar',
+                        '1.5.2' => 'src/dropwizard-web/1.5.2/dropwizard-web-1.5.2.jar',
+                        '2.0.0' => 'src/dropwizard-web/2.0.0/dropwizard-web-2.0.0.jar',
+                        '2.0.1' => 'src/dropwizard-web/2.0.1/dropwizard-web-2.0.1.jar',
+                        '3.0.0' => 'src/dropwizard-web/3.0.0/dropwizard-web-3.0.0.jar',
+                        '3.0.1' => 'src/dropwizard-web/3.0.1/dropwizard-web-3.0.1.jar',
+                        '5.0.0' => 'src/dropwizard-web/5.0.0/dropwizard-web-5.0.0.jar'
+                      }
+        };

@@ -1,0 +1,208 @@
+$VAR1 = {
+          'APIDump' => {
+                         '0.7.0-1' => {
+                                        '2b924' => {
+                                                     'Archive' => 'dropwizard-java8-jdbi-0.7.0-1.jar',
+                                                     'Path' => 'api_dump/dropwizard-java8-jdbi/0.7.0-1/2b924/API.dump.tar.gz',
+                                                     'TotalSymbols' => '19'
+                                                   }
+                                      },
+                         '0.7.1-1' => {
+                                        '07d9b' => {
+                                                     'Archive' => 'dropwizard-java8-jdbi-0.7.1-1.jar',
+                                                     'Path' => 'api_dump/dropwizard-java8-jdbi/0.7.1-1/07d9b/API.dump.tar.gz',
+                                                     'TotalSymbols' => '19'
+                                                   }
+                                      },
+                         '0.8.0-1' => {
+                                        'b4016' => {
+                                                     'Archive' => 'dropwizard-java8-jdbi-0.8.0-1.jar',
+                                                     'Path' => 'api_dump/dropwizard-java8-jdbi/0.8.0-1/b4016/API.dump.tar.gz',
+                                                     'TotalSymbols' => '19'
+                                                   }
+                                      },
+                         '0.8.0-2' => {
+                                        '9b22a' => {
+                                                     'Archive' => 'dropwizard-java8-jdbi-0.8.0-2.jar',
+                                                     'Path' => 'api_dump/dropwizard-java8-jdbi/0.8.0-2/9b22a/API.dump.tar.gz',
+                                                     'TotalSymbols' => '19'
+                                                   }
+                                      },
+                         '0.9.0-1' => {
+                                        'c453b' => {
+                                                     'Archive' => 'dropwizard-java8-jdbi-0.9.0-1.jar',
+                                                     'Path' => 'api_dump/dropwizard-java8-jdbi/0.9.0-1/c453b/API.dump.tar.gz',
+                                                     'TotalSymbols' => '56'
+                                                   }
+                                      }
+                       },
+          'APIReport' => {
+                           '0.7.0-1' => {
+                                          '0.7.1-1' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/dropwizard-java8-jdbi/0.7.0-1/0.7.1-1/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                        },
+                           '0.7.1-1' => {
+                                          '0.8.0-1' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/dropwizard-java8-jdbi/0.7.1-1/0.8.0-1/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                        },
+                           '0.8.0-1' => {
+                                          '0.8.0-2' => {
+                                                         'Added' => 0,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => 100,
+                                                         'Path' => 'archives_report/dropwizard-java8-jdbi/0.8.0-1/0.8.0-2/report.html',
+                                                         'Removed' => 0,
+                                                         'Source_BC' => 100,
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                        },
+                           '0.8.0-2' => {
+                                          '0.9.0-1' => {
+                                                         'Added' => 38,
+                                                         'ArchivesAdded' => 0,
+                                                         'ArchivesAddedSymbols' => 0,
+                                                         'ArchivesRemoved' => 0,
+                                                         'ArchivesRemovedSymbols' => 0,
+                                                         'BC' => '94.7',
+                                                         'Path' => 'archives_report/dropwizard-java8-jdbi/0.8.0-2/0.9.0-1/report.html',
+                                                         'Removed' => 1,
+                                                         'Source_BC' => '94.7',
+                                                         'Source_TotalProblems' => 0,
+                                                         'TotalArchives' => 1,
+                                                         'TotalProblems' => 0
+                                                       }
+                                        }
+                         },
+          'APIReport_D' => {
+                             '0.7.0-1' => {
+                                            '0.7.1-1' => {
+                                                           '2c3bc' => {
+                                                                        'Added' => 0,
+                                                                        'Affected' => 0,
+                                                                        'Archive1' => 'dropwizard-java8-jdbi-0.7.0-1.jar',
+                                                                        'Archive2' => 'dropwizard-java8-jdbi-0.7.1-1.jar',
+                                                                        'Path' => 'compat_report/dropwizard-java8-jdbi/0.7.0-1/0.7.1-1/2c3bc/bin_compat_report.html',
+                                                                        'Removed' => 0,
+                                                                        'Source_Affected' => 0,
+                                                                        'Source_ReportPath' => 'compat_report/dropwizard-java8-jdbi/0.7.0-1/0.7.1-1/2c3bc/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                          },
+                             '0.7.1-1' => {
+                                            '0.8.0-1' => {
+                                                           'b9e85' => {
+                                                                        'Added' => 0,
+                                                                        'Affected' => 0,
+                                                                        'Archive1' => 'dropwizard-java8-jdbi-0.7.1-1.jar',
+                                                                        'Archive2' => 'dropwizard-java8-jdbi-0.8.0-1.jar',
+                                                                        'Path' => 'compat_report/dropwizard-java8-jdbi/0.7.1-1/0.8.0-1/b9e85/bin_compat_report.html',
+                                                                        'Removed' => 0,
+                                                                        'Source_Affected' => 0,
+                                                                        'Source_ReportPath' => 'compat_report/dropwizard-java8-jdbi/0.7.1-1/0.8.0-1/b9e85/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                          },
+                             '0.8.0-1' => {
+                                            '0.8.0-2' => {
+                                                           'b31f6' => {
+                                                                        'Added' => 0,
+                                                                        'Affected' => 0,
+                                                                        'Archive1' => 'dropwizard-java8-jdbi-0.8.0-1.jar',
+                                                                        'Archive2' => 'dropwizard-java8-jdbi-0.8.0-2.jar',
+                                                                        'Path' => 'compat_report/dropwizard-java8-jdbi/0.8.0-1/0.8.0-2/b31f6/bin_compat_report.html',
+                                                                        'Removed' => 0,
+                                                                        'Source_Affected' => 0,
+                                                                        'Source_ReportPath' => 'compat_report/dropwizard-java8-jdbi/0.8.0-1/0.8.0-2/b31f6/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                          },
+                             '0.8.0-2' => {
+                                            '0.9.0-1' => {
+                                                           '64ea9' => {
+                                                                        'Added' => 38,
+                                                                        'Affected' => '5.3',
+                                                                        'Archive1' => 'dropwizard-java8-jdbi-0.8.0-2.jar',
+                                                                        'Archive2' => 'dropwizard-java8-jdbi-0.9.0-1.jar',
+                                                                        'Path' => 'compat_report/dropwizard-java8-jdbi/0.8.0-2/0.9.0-1/64ea9/bin_compat_report.html',
+                                                                        'Removed' => 1,
+                                                                        'Source_Affected' => '5.3',
+                                                                        'Source_ReportPath' => 'compat_report/dropwizard-java8-jdbi/0.8.0-2/0.9.0-1/64ea9/src_compat_report.html',
+                                                                        'Source_TotalProblems' => 0,
+                                                                        'TotalProblems' => 0
+                                                                      }
+                                                         }
+                                          }
+                           },
+          'Changelog' => {},
+          'Date' => {
+                      '0.7.0-1' => '02-2014-08 19:25',
+                      '0.7.1-1' => '12-2015-01 11:00',
+                      '0.8.0-1' => '06-2015-03 12:48',
+                      '0.8.0-2' => '12-2015-03 10:09',
+                      '0.9.0-1' => '29-2015-10 00:28'
+                    },
+          'Maintainer' => 'Dropwizard Committers',
+          'MaintainerUrl' => 'https://www.dropwizard.io/',
+          'PackageDiff' => {
+                             '0.7.0-1' => {
+                                            '0.7.1-1' => {
+                                                           'Changed' => '0.6',
+                                                           'Path' => 'package_diff/dropwizard-java8-jdbi/0.7.0-1/0.7.1-1/report.html'
+                                                         }
+                                          },
+                             '0.7.1-1' => {
+                                            '0.8.0-1' => {
+                                                           'Changed' => '0.2',
+                                                           'Path' => 'package_diff/dropwizard-java8-jdbi/0.7.1-1/0.8.0-1/report.html'
+                                                         }
+                                          },
+                             '0.8.0-1' => {
+                                            '0.8.0-2' => {
+                                                           'Changed' => '0.2',
+                                                           'Path' => 'package_diff/dropwizard-java8-jdbi/0.8.0-1/0.8.0-2/report.html'
+                                                         }
+                                          },
+                             '0.8.0-2' => {
+                                            '0.9.0-1' => {
+                                                           'Changed' => '28.8',
+                                                           'Path' => 'package_diff/dropwizard-java8-jdbi/0.8.0-2/0.9.0-1/report.html'
+                                                         }
+                                          }
+                           },
+          'Title' => 'Dropwizard JDBI with Java 8 support'
+        };

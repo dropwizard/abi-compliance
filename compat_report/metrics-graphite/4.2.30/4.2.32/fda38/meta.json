@@ -1,0 +1,11 @@
+{
+  "Affected": "0",
+  "Added": 0,
+  "Removed": 0,
+  "TotalProblems": 0,
+  "Source_Affected": "0",
+  "Source_TotalProblems": "0",
+  "Source_ReportPath": "compat_report/metrics-graphite/4.2.30/4.2.32/fda38/src_compat_report.html",
+  "Archive1": "metrics-graphite-4.2.30.jar",
+  "Archive2": "metrics-graphite-4.2.32.jar"
+}
